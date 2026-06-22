@@ -1,0 +1,385 @@
+{
+  "schema_version": "1.1",
+  "section_id": "emprego",
+  "title": "Emprego",
+  "source": "Novo CAGED / MTE",
+  "reference": "Abr/2026",
+  "updated_at": "2026-06-22",
+  "capa_kpi": {
+    "id": "capa_emprego",
+    "label": "Saldo CAGED 12m",
+    "display_value": "+33.838",
+    "unit": "vagas",
+    "period": "12 meses",
+    "delta": {
+      "dir": "up",
+      "label": "estoque de 1986 mil vínculos"
+    }
+  },
+  "story": {
+    "headline": "Mercado de trabalho formal soma {{kpis[saldo_12m].display_value}} {{kpis[saldo_12m].unit}} em 12 meses.",
+    "lede": "Emprego — dados do Novo CAGED (MTE/SDIC) com estoque de vínculos formais da RAIS. Narrativa atualiza automaticamente conforme novos dados disponibilizam.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "Saldo de {{kpis[saldo_mensal].display_value}} {{kpis[saldo_mensal].unit}} no mês mais recente."
+      },
+      {
+        "tone": "neutral",
+        "text": "Estoque formal de {{kpis[estoque].display_value}} {{kpis[estoque].unit}}."
+      },
+      {
+        "tone": "neutral",
+        "text": "Intensidade tecnológica concentra {{kpis[baixa_intensidade_share].display_value}}% do estoque em atividades de baixa intensidade."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "saldo_mensal",
+      "label": "Saldo mensal",
+      "value": 5922,
+      "display_value": "+5.922",
+      "unit": "vagas",
+      "period": "Abr/2026"
+    },
+    {
+      "id": "saldo_12m",
+      "label": "Saldo 12 meses",
+      "value": 33838,
+      "display_value": "+33.838",
+      "unit": "vagas",
+      "period": "12 meses"
+    },
+    {
+      "id": "estoque",
+      "label": "Estoque formal",
+      "value": 1986268,
+      "display_value": "1.986",
+      "unit": "mil vínculos",
+      "period": "Abr/2026"
+    },
+    {
+      "id": "baixa_intensidade_share",
+      "label": "Participação baixa intensidade",
+      "value": 7.9,
+      "display_value": "7,9",
+      "unit": "%",
+      "period": "Abr/2026"
+    }
+  ],
+  "charts": [
+    {
+      "id": "saldo_mensal_serie",
+      "type": "diverging-bars",
+      "title": "Saldo mensal de vagas formais",
+      "subtitle": "Admissões − desligamentos, por mês",
+      "unit": "vagas",
+      "series": [
+        {
+          "id": "saldo",
+          "label": "Saldo",
+          "points": [
+            {
+              "t": 64,
+              "v": 1609
+            },
+            {
+              "t": 65,
+              "v": 7644
+            },
+            {
+              "t": 66,
+              "v": 7059
+            },
+            {
+              "t": 67,
+              "v": 3134
+            },
+            {
+              "t": 68,
+              "v": 5732
+            },
+            {
+              "t": 69,
+              "v": -2164
+            },
+            {
+              "t": 70,
+              "v": -8557
+            },
+            {
+              "t": 71,
+              "v": -24143
+            },
+            {
+              "t": 72,
+              "v": 10989
+            },
+            {
+              "t": 73,
+              "v": 15055
+            },
+            {
+              "t": 74,
+              "v": 11558
+            },
+            {
+              "t": 75,
+              "v": 5922
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "t": "202604",
+          "label": "+5.922 vagas"
+        }
+      ]
+    },
+    {
+      "id": "saldo_12m_serie",
+      "type": "area",
+      "title": "Saldo acumulado em 12 meses",
+      "subtitle": "Janela móvel — tendência do mercado de trabalho",
+      "unit": "vagas",
+      "series": [
+        {
+          "id": "acum",
+          "label": "Acumulado 12m",
+          "points": [
+            {
+              "t": "202505",
+              "v": 53978
+            },
+            {
+              "t": "202506",
+              "v": 53205
+            },
+            {
+              "t": "202507",
+              "v": 54939
+            },
+            {
+              "t": "202508",
+              "v": 53290
+            },
+            {
+              "t": "202509",
+              "v": 53668
+            },
+            {
+              "t": "202510",
+              "v": 51667
+            },
+            {
+              "t": "202511",
+              "v": 46638
+            },
+            {
+              "t": "202512",
+              "v": 45532
+            },
+            {
+              "t": "202601",
+              "v": 41763
+            },
+            {
+              "t": "202602",
+              "v": 36282
+            },
+            {
+              "t": "202603",
+              "v": 41377
+            },
+            {
+              "t": "202604",
+              "v": 33841
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "t": "202604",
+          "label": "+33.841 vagas"
+        }
+      ]
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "saldos_pos",
+      "title": "Maiores saldos positivos",
+      "metric_label": "Saldo em 12 meses",
+      "unit": "vagas",
+      "tone": "pos",
+      "items": [
+        {
+          "name": "Serviços de escritório, de apoio administrativo e outros serviços prestados às empresas",
+          "value": 5065,
+          "display_value": "+5.065"
+        },
+        {
+          "name": "Atividades de atenção à saúde humana",
+          "value": 4803,
+          "display_value": "+4.803"
+        },
+        {
+          "name": "Comércio varejista",
+          "value": 4203,
+          "display_value": "+4.203"
+        },
+        {
+          "name": "Fabricação de produtos alimentícios",
+          "value": 2295,
+          "display_value": "+2.295"
+        },
+        {
+          "name": "Alimentação",
+          "value": 2089,
+          "display_value": "+2.089"
+        }
+      ]
+    },
+    {
+      "id": "saldos_neg",
+      "title": "Maiores saldos negativos",
+      "metric_label": "Saldo em 12 meses",
+      "unit": "vagas",
+      "tone": "neg",
+      "items": [
+        {
+          "name": "Confecção de artigos do vestuário e acessórios",
+          "value": -1010,
+          "display_value": "−1.010"
+        },
+        {
+          "name": "Atividades de rádio e televisão",
+          "value": -743,
+          "display_value": "−743"
+        },
+        {
+          "name": "Atividades de organizações associativas",
+          "value": -740,
+          "display_value": "−740"
+        },
+        {
+          "name": "Atividades de serviços financeiros",
+          "value": -520,
+          "display_value": "−520"
+        },
+        {
+          "name": "Agricultura, pecuária e serviços relacionados",
+          "value": -412,
+          "display_value": "−412"
+        }
+      ]
+    },
+    {
+      "id": "estoque_top",
+      "title": "Maiores estoques",
+      "metric_label": "Estoque formal",
+      "unit": "mil vínculos",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "Administração pública, defesa e seguridade social",
+          "value": 298932,
+          "display_value": "298"
+        },
+        {
+          "name": "Comércio varejista",
+          "value": 209177,
+          "display_value": "209"
+        },
+        {
+          "name": "Educação",
+          "value": 166986,
+          "display_value": "166"
+        },
+        {
+          "name": "Agricultura, pecuária e serviços relacionados",
+          "value": 117773,
+          "display_value": "117"
+        },
+        {
+          "name": "Serviços de escritório, de apoio administrativo e outros serviços prestados às empresas",
+          "value": 112141,
+          "display_value": "112"
+        }
+      ]
+    }
+  ],
+  "breakdowns": [
+    {
+      "id": "intensidade_tec",
+      "title": "Composição do mercado de trabalho por intensidade tecnológica",
+      "dimension_label": "Participação no estoque",
+      "unit": "vínculos",
+      "items": [
+        {
+          "name": "Alta Intensidade Tecnológica",
+          "value": 17367,
+          "display_value": "17",
+          "share": 0.9
+        },
+        {
+          "name": "Média-Alta Intensidade Tecnológica",
+          "value": 28860,
+          "display_value": "29",
+          "share": 1.5
+        },
+        {
+          "name": "Média Intensidade Tecnológica",
+          "value": 74563,
+          "display_value": "75",
+          "share": 3.8
+        },
+        {
+          "name": "Baixa Intensidade Tecnológica",
+          "value": 156669,
+          "display_value": "157",
+          "share": 7.9
+        },
+        {
+          "name": "Indústrias Extrativas",
+          "value": 9656,
+          "display_value": "10",
+          "share": 0.5
+        },
+        {
+          "name": "Setor Primário",
+          "value": 119502,
+          "display_value": "120",
+          "share": 6.0
+        },
+        {
+          "name": "Infraestrutura e Utilities",
+          "value": 131796,
+          "display_value": "132",
+          "share": 6.6
+        },
+        {
+          "name": "Serviços Intensivos em Conhecimento",
+          "value": 390265,
+          "display_value": "390",
+          "share": 19.6
+        },
+        {
+          "name": "Serviços Menos Intensivos em Conhecimento",
+          "value": 758618,
+          "display_value": "759",
+          "share": 38.2
+        },
+        {
+          "name": "Administração Pública e Serviços Não-Mercado",
+          "value": 298972,
+          "display_value": "299",
+          "share": 15.1
+        }
+      ]
+    }
+  ]
+}
