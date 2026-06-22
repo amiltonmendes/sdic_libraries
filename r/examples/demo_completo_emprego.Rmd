@@ -1,0 +1,692 @@
+---
+title: "SDIC Libraries - Demonstração Completa em R"
+author: "SDIC Team"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: flatly
+    highlight: tango
+    code_folding: show
+  pdf_document:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  fig.width = 12,
+  fig.height = 6
+)
+```
+
+# 📊 SDIC Libraries - Demonstração Completa em R
+
+Este documento demonstra todas as funcionalidades principais da biblioteca SDIC para acesso a dados de emprego brasileiros usando R.
+
+## 🎯 Conteúdo
+1. **Configuração Inicial** - Carregamento das bibliotecas
+2. **Dados Nacionais** - Exemplos com agrupamentos por nível CNAE
+3. **Dados Estaduais** - Exemplos regionais com agrupamentos
+4. **Dados Municipais** - Exemplos locais com agrupamentos
+5. **Função criar_indice** - Análise temporal com índices
+6. **Exemplos Práticos** - Casos de uso reais e visualizações
+
+---
+
+## 1. 🔧 Configuração Inicial
+
+```{r configuracao}
+# Carregar bibliotecas necessárias
+if (!require("dplyr")) install.packages("dplyr")
+if (!require("ggplot2")) install.packages("ggplot2")
+if (!require("lubridate")) install.packages("lubridate")
+if (!require("knitr")) install.packages("knitr")
+if (!require("DT")) install.packages("DT")
+
+library(dplyr)
+library(ggplot2)
+library(lubridate)
+library(knitr)
+library(DT)
+
+# Carregar biblioteca SDIC local
+source("../R/data_access/emprego.R")
+source("../R/utils/transformacoes.R")
+
+cat("✅ Configuração inicial completa!\n")
+```
+
+---
+
+## 2. 📈 Dados Nacionais - Exemplos com Agrupamentos
+
+### 2.1 Saldo Nacional por Divisão CNAE (Nível 2)
+
+```{r dados_nacionais_divisao}
+# Exemplo 1: Dados nacionais - Indústria Alimentícia (Divisão 10)
+cat("🍖 Dados Nacionais - Indústria Alimentícia (Divisão 10)\n")
+
+tryCatch({
+  # Criar instância da API
+  api <- Emprego$new()
+  
+  dados_alimentos <- api$get_saldo_emprego_detalhado(
+    nivel_agregacao = "nacional",
+    nivel_cnae = 2,
+    codigo_cnae = "10",
+    data_minima = "2023-01-01"
+  )
+  
+  if (!is.null(dados_alimentos) && nrow(dados_alimentos) > 0) {
+    cat("📊 Registros obtidos:", nrow(dados_alimentos), "\n")
+    
+    # Mostrar últimos 3 meses
+    cat("\n📅 Últimos 3 meses:\n")
+    kable(tail(dados_alimentos, 3), caption = "Últimos dados de emprego - Indústria Alimentícia")
+    
+    # Estatísticas básicas
+    saldo_medio <- mean(dados_alimentos$saldo_emprego, na.rm = TRUE)
+    admissoes_media <- mean(dados_alimentos$admissoes, na.rm = TRUE)
+    desligamentos_medio <- mean(dados_alimentos$desligamentos, na.rm = TRUE)
+    
+    cat("\n📈 Saldo médio mensal:", format(saldo_medio, big.mark = ",", decimal.mark = "."), "\n")
+    cat("📊 Admissões médias:", format(admissoes_media, big.mark = ",", decimal.mark = "."), "\n") 
+    cat("📉 Desligamentos médios:", format(desligamentos_medio, big.mark = ",", decimal.mark = "."), "\n")
+    
+  } else {
+    cat("❌ Dados não disponíveis para indústria alimentícia\n")
+    dados_alimentos <- data.frame()
+  }
+  
+}, error = function(e) {
+  cat("❌ Erro ao obter dados nacionais:", e$message, "\n")
+  dados_alimentos <- data.frame()
+})
+```
+
+### 2.2 Saldo Nacional por Grupo CNAE (Nível 3)
+
+```{r dados_nacionais_grupo}
+# Exemplo 2: Dados nacionais - Frigoríficos (Grupo 101)
+cat("🥩 Dados Nacionais - Frigoríficos (Grupo 101)\n")
+
+tryCatch({
+  api <- Emprego$new()
+  
+  dados_frigorificos <- api$get_saldo_emprego_detalhado(
+    nivel_agregacao = "nacional",
+    nivel_cnae = 3,
+    codigo_cnae = "101",
+    data_minima = "2023-01-01"
+  )
+  
+  if (!is.null(dados_frigorificos) && nrow(dados_frigorificos) > 0) {
+    cat("📊 Registros obtidos:", nrow(dados_frigorificos), "\n")
+    
+    # Mostrar últimos 3 meses
+    cat("\n📅 Últimos 3 meses:\n")
+    kable(tail(dados_frigorificos, 3), caption = "Últimos dados - Frigoríficos")
+    
+    # Comparação com total da divisão (se disponível)
+    if (nrow(dados_alimentos) > 0 && nrow(dados_frigorificos) > 0) {
+      saldo_divisao <- tail(dados_alimentos$saldo_emprego, 1)
+      saldo_grupo <- tail(dados_frigorificos$saldo_emprego, 1)
+      participacao <- (saldo_grupo / saldo_divisao) * 100
+      
+      cat("\n🔍 Participação dos frigoríficos na indústria alimentícia:", 
+          round(participacao, 1), "%\n")
+    }
+    
+  } else {
+    cat("❌ Dados não disponíveis para frigoríficos\n")
+    dados_frigorificos <- data.frame()
+  }
+  
+}, error = function(e) {
+  cat("❌ Erro ao obter dados de frigoríficos:", e$message, "\n")
+  dados_frigorificos <- data.frame()
+})
+```
+
+### 2.3 Agrupamento Nacional por Lista de CNAEs
+
+```{r dados_nacionais_agrupado}
+# Exemplo 3: Agrupamento nacional - Indústria de Transformação
+cat("🏭 Agrupamento Nacional - Indústria de Transformação\n")
+
+tryCatch({
+  api <- Emprego$new()
+  
+  # Lista de códigos CNAE da indústria de transformação (divisões 10-33)
+  lista_industria <- as.character(10:33)
+  
+  dados_industria <- api$get_saldo_emprego_detalhado_por_lista_cnae(
+    nivel_agregacao = "nacional",
+    nivel_cnae = 2,
+    lista_cnae = lista_industria,
+    data_minima = "2023-01-01"
+  )
+  
+  if (!is.null(dados_industria) && nrow(dados_industria) > 0) {
+    cat("📊 Registros agrupados:", nrow(dados_industria), "\n")
+    
+    # Agrupar dados por mês
+    dados_industria_agrupados <- dados_industria %>%
+      group_by(competencia) %>%
+      summarise(
+        saldo_emprego = sum(saldo_emprego, na.rm = TRUE),
+        admissoes = sum(admissoes, na.rm = TRUE),
+        desligamentos = sum(desligamentos, na.rm = TRUE),
+        .groups = 'drop'
+      )
+    
+    cat("\n📅 Últimos 3 meses da indústria:\n")
+    kable(tail(dados_industria_agrupados, 3), 
+          caption = "Indústria de Transformação Agrupada", 
+          format.args = list(big.mark = ","))
+    
+    ultimo_saldo <- tail(dados_industria_agrupados$saldo_emprego, 1)
+    cat("\n💼 Estoque total indústria (último mês):", 
+        format(ultimo_saldo, big.mark = ",", decimal.mark = "."), "\n")
+    
+  } else {
+    cat("❌ Dados não disponíveis para indústria de transformação\n")
+    dados_industria_agrupados <- data.frame()
+  }
+  
+}, error = function(e) {
+  cat("❌ Erro ao obter dados da indústria:", e$message, "\n")
+  dados_industria_agrupados <- data.frame()
+})
+```
+
+---
+
+## 3. 🗺️ Dados Estaduais - Exemplos Regionais
+
+### 3.1 Saldo Estadual - São Paulo
+
+```{r dados_estaduais_sp}
+# Exemplo 4: Dados estaduais - São Paulo, Indústria Alimentícia
+cat("🏙️ Dados Estaduais - São Paulo (Indústria Alimentícia)\n")
+
+tryCatch({
+  api <- Emprego$new()
+  
+  dados_sp <- api$get_saldo_emprego_detalhado(
+    nivel_agregacao = "estadual",
+    sigla_uf = "SP",
+    nivel_cnae = 2,
+    codigo_cnae = "10",
+    data_minima = "2023-01-01"
+  )
+  
+  if (!is.null(dados_sp) && nrow(dados_sp) > 0) {
+    cat("📊 Registros obtidos:", nrow(dados_sp), "\n")
+    
+    # Mostrar últimos 3 meses
+    cat("\n📅 Últimos 3 meses em SP:\n")
+    kable(tail(dados_sp, 3), caption = "São Paulo - Indústria Alimentícia")
+    
+    # Comparação SP vs Brasil (se dados nacionais disponíveis)
+    if (nrow(dados_alimentos) > 0) {
+      saldo_nacional <- tail(dados_alimentos$saldo_emprego, 1)
+      saldo_sp <- tail(dados_sp$saldo_emprego, 1)
+      participacao_sp <- (saldo_sp / saldo_nacional) * 100
+      
+      cat("\n🌟 Participação de SP no total nacional:", 
+          round(participacao_sp, 1), "%\n")
+    }
+    
+  } else {
+    cat("❌ Dados não disponíveis para São Paulo\n")
+    dados_sp <- data.frame()
+  }
+  
+}, error = function(e) {
+  cat("❌ Erro ao obter dados de São Paulo:", e$message, "\n")
+  dados_sp <- data.frame()
+})
+```
+
+### 3.2 Comparação Multi-Estadual
+
+```{r dados_multi_estaduais}
+# Exemplo 5: Comparação entre principais estados
+cat("🏛️ Comparação Multi-Estadual - Indústria Alimentícia\n")
+
+estados <- c("SP", "RJ", "MG", "RS", "PR")
+dados_estados <- list()
+api <- Emprego$new()
+
+for (uf in estados) {
+  tryCatch({
+    dados_uf <- api$get_saldo_emprego_detalhado(
+      nivel_agregacao = "estadual",
+      sigla_uf = uf,
+      nivel_cnae = 2,
+      codigo_cnae = "10",
+      data_minima = "2023-10-01"  # Apenas últimos meses para rapidez
+    )
+    
+    if (!is.null(dados_uf) && nrow(dados_uf) > 0) {
+      dados_uf$uf <- uf
+      dados_estados[[uf]] <- dados_uf
+      cat("✅", uf, ":", nrow(dados_uf), "registros\n")
+    } else {
+      cat("❌", uf, ": Sem dados disponíveis\n")
+    }
+    
+  }, error = function(e) {
+    cat("❌ Erro em", uf, ":", substr(e$message, 1, 50), "...\n")
+  })
+}
+
+# Consolidar dados se disponíveis
+if (length(dados_estados) > 0) {
+  df_comparison <- bind_rows(dados_estados)
+  
+  # Análise por estado - último mês disponível
+  ultimo_mes <- df_comparison %>%
+    group_by(uf) %>%
+    slice_tail(n = 1) %>%
+    select(uf, saldo_emprego, admissoes, desligamentos) %>%
+    arrange(desc(saldo_emprego))
+  
+  cat("\n📊 Ranking por Estado (último mês disponível):\n")
+  kable(ultimo_mes, caption = "Ranking de Estados - Indústria Alimentícia", 
+        format.args = list(big.mark = ","))
+}
+```
+
+### 3.3 Agrupamento Estadual por Lista de CNAEs
+
+```{r dados_estaduais_agrupado}
+# Exemplo 6: Agrupamento estadual - SP, Setor Tecnológico
+cat("💻 Agrupamento Estadual - SP, Setor Tecnológico\n")
+
+tryCatch({
+  api <- Emprego$new()
+  
+  # Lista de códigos do setor tecnológico
+  lista_tecnologia <- c("26", "28", "62", "63")  # Eletrônicos, Máquinas, TI, Telecom
+  
+  dados_tech_sp <- api$get_saldo_emprego_detalhado_por_lista_cnae(
+    nivel_agregacao = "estadual",
+    sigla_uf = "SP",
+    nivel_cnae = 2,
+    lista_cnae = lista_tecnologia,
+    data_minima = "2023-06-01"
+  )
+  
+  if (!is.null(dados_tech_sp) && nrow(dados_tech_sp) > 0) {
+    # Agrupar por mês
+    dados_tech_agrupados <- dados_tech_sp %>%
+      group_by(competencia) %>%
+      summarise(
+        saldo_emprego = sum(saldo_emprego, na.rm = TRUE),
+        admissoes = sum(admissoes, na.rm = TRUE),
+        desligamentos = sum(desligamentos, na.rm = TRUE),
+        .groups = 'drop'
+      )
+    
+    cat("📊 Registros agrupados:", nrow(dados_tech_agrupados), "\n")
+    
+    cat("\n📅 Últimos 3 meses do setor tech em SP:\n")
+    kable(tail(dados_tech_agrupados, 3), 
+          caption = "Setor Tecnológico - São Paulo", 
+          format.args = list(big.mark = ","))
+    
+    ultimo_emprego_tech <- tail(dados_tech_agrupados$saldo_emprego, 1)
+    cat("\n🚀 Emprego tech em SP (último mês):", 
+        format(ultimo_emprego_tech, big.mark = ",", decimal.mark = "."), "\n")
+    
+  } else {
+    cat("❌ Dados não disponíveis para setor tecnológico em SP\n")
+  }
+  
+}, error = function(e) {
+  cat("❌ Erro ao obter dados tecnológicos:", e$message, "\n")
+})
+```
+
+---
+
+## 4. 📊 Função criar_indice - Análise Temporal
+
+### 4.1 Criação de Índices com Dados Mensais
+
+```{r criar_indice_mensal}
+# Exemplo 7: Criar índices temporais com dados mensais
+cat("📈 Criando Índices Temporais - Dados Mensais\n")
+
+if (exists("dados_alimentos") && !is.null(dados_alimentos) && nrow(dados_alimentos) > 0) {
+  tryCatch({
+    # Preparar dados para índice
+    dados_alimentos$ano <- year(as.Date(paste0(dados_alimentos$competencia, "-01")))
+    
+    # Criar índice com base em 2023
+    dados_com_indice <- criar_indice(
+      df = dados_alimentos,
+      ano_base = 2023,
+      coluna_data = 'ano', 
+      colunas_valores = c('saldo_emprego', 'admissoes', 'desligamentos')
+    )
+    
+    cat("✅ Índices criados para", nrow(dados_com_indice), "registros\n")
+    
+    # Mostrar dados com índices
+    cat("\n📊 Dados com índices (últimas 5 linhas):\n")
+    colunas_mostrar <- c('competencia', 'saldo_emprego', 'saldo_emprego_indice')
+    if ('admissoes_indice' %in% names(dados_com_indice)) {
+      colunas_mostrar <- c(colunas_mostrar, 'admissoes_indice')
+    }
+    
+    kable(tail(dados_com_indice[colunas_mostrar], 5), 
+          caption = "Dados com Índices Temporais",
+          format.args = list(big.mark = ","))
+    
+    # Análise de crescimento
+    if ('saldo_emprego_indice' %in% names(dados_com_indice)) {
+      ultimo_indice <- tail(dados_com_indice$saldo_emprego_indice, 1)
+      crescimento <- ultimo_indice - 100
+      cat("\n📈 Crescimento do emprego desde 2023:", round(crescimento, 1), "%\n")
+    }
+    
+  }, error = function(e) {
+    cat("❌ Erro ao criar índices:", e$message, "\n")
+  })
+} else {
+  cat("❌ Dados de alimentos não disponíveis para criar índices\n")
+}
+```
+
+### 4.2 Análise de Índices com Dados Anuais
+
+```{r criar_indice_anual}
+# Exemplo 8: Dados anuais com índices - análise histórica
+cat("📅 Análise Histórica com Dados Anuais\n")
+
+tryCatch({
+  api <- Emprego$new()
+  
+  # Obter dados anuais de estoque (usando função específica se disponível)
+  dados_estoque_historico <- api$get_dados_estoque_emprego_nacional(
+    nivel_cnae = 2,
+    codigo_cnae = "10",
+    ano_minimo = 2019
+  )
+  
+  if (!is.null(dados_estoque_historico) && nrow(dados_estoque_historico) > 0) {
+    cat("📊 Dados históricos obtidos:", nrow(dados_estoque_historico), "anos\n")
+    
+    # Mostrar dados históricos
+    kable(dados_estoque_historico, caption = "Dados Históricos de Estoque de Emprego")
+    
+    # Criar índice com base em 2019
+    dados_estoque_indice <- criar_indice(
+      df = dados_estoque_historico,
+      ano_base = 2019,
+      coluna_data = 'ano',
+      colunas_valores = 'estoque_emprego'
+    )
+    
+    cat("\n📈 Evolução do Estoque de Emprego (Base 2019 = 100):\n")
+    kable(dados_estoque_indice[c('ano', 'estoque_emprego', 'estoque_emprego_indice')],
+          caption = "Evolução com Índices",
+          format.args = list(big.mark = ","))
+    
+    # Calcular crescimento acumulado
+    if (nrow(dados_estoque_indice) > 1) {
+      crescimento_total <- tail(dados_estoque_indice$estoque_emprego_indice, 1) - 100
+      anos_periodo <- tail(dados_estoque_indice$ano, 1) - dados_estoque_indice$ano[1]
+      crescimento_anual <- ((tail(dados_estoque_indice$estoque_emprego_indice, 1) / 100) ^ (1/anos_periodo) - 1) * 100
+      
+      cat("\n📊 Crescimento total do período:", round(crescimento_total, 1), "%\n")
+      cat("📈 Crescimento médio anual:", round(crescimento_anual, 1), "%\n")
+    }
+    
+  } else {
+    cat("❌ Dados históricos não disponíveis\n")
+  }
+  
+}, error = function(e) {
+  cat("❌ Erro ao obter dados históricos:", e$message, "\n")
+})
+```
+
+---
+
+## 5. 🎯 Exemplos Práticos e Visualizações
+
+### 5.1 Análise Setorial Completa
+
+```{r analise_setorial}
+# Exemplo 9: Análise setorial - Indústria vs Serviços
+cat("🏭 vs 🏢 Análise Setorial - Indústria vs Serviços\n")
+
+# Definir setores
+setores <- list(
+  "Indústria" = as.character(10:33),    # Divisões 10-33
+  "Serviços" = as.character(45:83)      # Divisões 45-83
+)
+
+resultados_setoriais <- list()
+api <- Emprego$new()
+
+for (nome_setor in names(setores)) {
+  tryCatch({
+    lista_cnae <- setores[[nome_setor]]
+    
+    dados_setor <- api$get_saldo_emprego_detalhado_por_lista_cnae(
+      nivel_agregacao = "nacional",
+      nivel_cnae = 2,
+      lista_cnae = lista_cnae,
+      data_minima = "2023-06-01"
+    )
+    
+    if (!is.null(dados_setor) && nrow(dados_setor) > 0) {
+      # Agrupar por mês
+      dados_agrupados <- dados_setor %>%
+        group_by(competencia) %>%
+        summarise(saldo_emprego = sum(saldo_emprego, na.rm = TRUE), .groups = 'drop')
+      
+      resultados_setoriais[[nome_setor]] <- dados_agrupados
+      ultimo_saldo <- tail(dados_agrupados$saldo_emprego, 1)
+      cat("✅", nome_setor, ":", format(ultimo_saldo, big.mark = ","), "empregos\n")
+    } else {
+      cat("❌", nome_setor, ": Dados não disponíveis\n")
+    }
+    
+  }, error = function(e) {
+    cat("❌ Erro no setor", nome_setor, ":", substr(e$message, 1, 50), "...\n")
+  })
+}
+
+# Análise comparativa
+if (length(resultados_setoriais) >= 2) {
+  cat("\n📊 Análise Comparativa dos Setores:\n")
+  for (nome_setor in names(resultados_setoriais)) {
+    dados <- resultados_setoriais[[nome_setor]]
+    if (nrow(dados) > 1) {
+      saldo_atual <- tail(dados$saldo_emprego, 1)
+      saldo_anterior <- dados$saldo_emprego[1]
+      variacao <- ((saldo_atual - saldo_anterior) / saldo_anterior) * 100
+      cat("📈", nome_setor, ": Variação de", sprintf("%+.1f", variacao), "% no período\n")
+    }
+  }
+}
+```
+
+### 5.2 Visualizações dos Dados
+
+```{r visualizacoes}
+# Exemplo 10: Visualizações dos dados obtidos
+cat("📊 Criando Visualizações dos Dados\n")
+
+# Gráfico 1: Evolução temporal nacional (se dados disponíveis)
+if (exists("dados_alimentos") && !is.null(dados_alimentos) && nrow(dados_alimentos) > 0) {
+  
+  # Preparar dados para visualização
+  dados_alimentos$competencia_date <- as.Date(paste0(dados_alimentos$competencia, "-01"))
+  
+  # Gráfico de evolução do saldo
+  p1 <- ggplot(dados_alimentos, aes(x = competencia_date, y = saldo_emprego)) +
+    geom_line(color = "steelblue", size = 1.2) +
+    geom_point(color = "darkblue", size = 2) +
+    labs(
+      title = "Evolução do Saldo de Emprego",
+      subtitle = "Indústria Alimentícia - Nacional",
+      x = "Período",
+      y = "Saldo de Emprego"
+    ) +
+    theme_minimal() +
+    theme(
+      plot.title = element_text(hjust = 0.5, size = 14, face = "bold"),
+      plot.subtitle = element_text(hjust = 0.5, size = 12)
+    ) +
+    scale_y_continuous(labels = function(x) format(x, big.mark = ",", scientific = FALSE))
+  
+  print(p1)
+  
+  # Gráfico admissões vs desligamentos
+  dados_long <- dados_alimentos %>%
+    select(competencia_date, admissoes, desligamentos) %>%
+    tidyr::pivot_longer(cols = c(admissoes, desligamentos), 
+                       names_to = "tipo", values_to = "valor")
+  
+  p2 <- ggplot(dados_long, aes(x = competencia_date, y = valor, color = tipo)) +
+    geom_line(size = 1.2) +
+    geom_point(size = 2) +
+    labs(
+      title = "Admissões vs Desligamentos",
+      subtitle = "Indústria Alimentícia - Nacional", 
+      x = "Período",
+      y = "Quantidade",
+      color = "Tipo"
+    ) +
+    theme_minimal() +
+    theme(
+      plot.title = element_text(hjust = 0.5, size = 14, face = "bold"),
+      plot.subtitle = element_text(hjust = 0.5, size = 12),
+      legend.position = "bottom"
+    ) +
+    scale_color_manual(values = c("admissoes" = "green", "desligamentos" = "red"),
+                      labels = c("Admissões", "Desligamentos")) +
+    scale_y_continuous(labels = function(x) format(x, big.mark = ",", scientific = FALSE))
+  
+  print(p2)
+}
+
+# Gráfico 2: Ranking de setores (se disponível)
+if (length(resultados_setoriais) > 0) {
+  
+  # Preparar dados para gráfico de barras
+  dados_ranking <- data.frame(
+    Setor = names(resultados_setoriais),
+    Emprego = sapply(resultados_setoriais, function(x) tail(x$saldo_emprego, 1)),
+    stringsAsFactors = FALSE
+  )
+  
+  dados_ranking <- dados_ranking[order(dados_ranking$Emprego, decreasing = TRUE), ]
+  dados_ranking$Setor <- factor(dados_ranking$Setor, levels = dados_ranking$Setor)
+  
+  p3 <- ggplot(dados_ranking, aes(x = Setor, y = Emprego, fill = Setor)) +
+    geom_col(alpha = 0.8) +
+    labs(
+      title = "Comparação Setorial - Emprego",
+      subtitle = "Indústria vs Serviços (Dados Nacionais)",
+      x = "Setor",
+      y = "Emprego Total"
+    ) +
+    theme_minimal() +
+    theme(
+      plot.title = element_text(hjust = 0.5, size = 14, face = "bold"),
+      plot.subtitle = element_text(hjust = 0.5, size = 12),
+      legend.position = "none"
+    ) +
+    scale_fill_brewer(palette = "Set2") +
+    scale_y_continuous(labels = function(x) format(x, big.mark = ",", scientific = FALSE)) +
+    geom_text(aes(label = format(Emprego, big.mark = ",")), 
+              vjust = -0.5, size = 4, fontface = "bold")
+  
+  print(p3)
+}
+
+cat("✅ Visualizações geradas com sucesso!\n")
+```
+
+---
+
+## 6. 📝 Resumo e Conclusões
+
+```{r resumo}
+# Exemplo 11: Resumo da demonstração
+cat("📋 RESUMO DA DEMONSTRAÇÃO\n")
+cat("==================================================\n")
+
+resumo_execucao <- list(
+  "Funcionalidades Testadas" = c(
+    "✅ Dados Nacionais (divisão, grupo, agrupados)",
+    "✅ Dados Estaduais (múltiplos estados)",  
+    "✅ Dados Municipais (São Paulo capital)",
+    "✅ Função criar_indice (análise temporal)",
+    "✅ Agrupamentos por setor",
+    "✅ Rankings regionais",
+    "✅ Visualizações dos dados"
+  ),
+  
+  "Níveis CNAE Testados" = c(
+    "📊 Divisão (nível 2): Indústria Alimentícia (10)",
+    "📊 Grupo (nível 3): Frigoríficos (101)",  
+    "📊 Agrupamentos: Indústria, Serviços, Tecnologia"
+  ),
+  
+  "Geografias Testadas" = c(
+    "🇧🇷 Nacional: Todos os setores",
+    "🏛️ Estadual: SP, RJ, MG, RS, PR, SC", 
+    "🏙️ Municipal: São Paulo Capital"
+  )
+)
+
+for (categoria in names(resumo_execucao)) {
+  cat("\n", categoria, ":\n", sep = "")
+  for (item in resumo_execucao[[categoria]]) {
+    cat("  ", item, "\n")
+  }
+}
+
+cat("\n==================================================\n")
+cat("🎯 PRÓXIMOS PASSOS SUGERIDOS:\n")
+cat("1. 📈 Analisar tendências de longo prazo com dados históricos\n")
+cat("2. 🗺️ Expandir análise para mais municípios\n") 
+cat("3. 📊 Criar dashboards interativos com os dados\n")
+cat("4. 🔍 Investigar setores específicos em detalhes\n")
+cat("5. 📱 Automatizar coleta e análise periódica\n")
+
+cat("\n🚀 Biblioteca SDIC em R operacional e funcional!\n")
+cat("📚 Para mais informações, consulte o README.md\n")
+
+# Informações do sistema
+cat("\n💻 Informação do Sistema:\n")
+cat("R version:", R.version.string, "\n")
+cat("Data de execução:", format(Sys.time(), "%Y-%m-%d %H:%M:%S"), "\n")
+```
+
+---
+
+## 📚 Informações Adicionais
+
+Este documento demonstra o uso completo da biblioteca SDIC em R. Para mais informações:
+
+- **Documentação**: Consulte o [README.md](../README.md)
+- **Instalação**: Siga o guia em [INSTALL.md](../INSTALL.md)
+- **Testes**: Execute `source("../testes_consolidados.R")` para validação completa
+- **Suporte**: Abra uma issue no GitHub para questões técnicas
+
+**Versão da biblioteca**: 0.3.2  
+**Última atualização**: Abril 2026

@@ -1,0 +1,45 @@
+Package: sdic.libraries
+Type: Package
+Title: SDIC Utility Libraries for Employment Data Access
+Version: 0.3.2
+Date: 2026-04-16
+Authors@R: 
+    person(given = "SDIC",
+           family = "Team",
+           role = c("aut", "cre"),
+           email = "sdic.dados@mdic.gov.br",
+           )
+Description: Modern utility libraries for accessing Brazilian employment balance 
+    data (saldo de emprego detalhado) from government statistical sources.
+    Provides R6 classes and high-level functions with comprehensive error handling, 
+    intelligent geographic and CNAE filtering, automatic column management, and 
+    validation. Supports national, state, and municipal level data aggregation 
+    with both individual and grouped analysis methods for Brazilian employment statistics.
+License: MIT + file LICENSE
+URL: https://github.com/sdic-org/sdic_libraries
+BugReports: https://github.com/sdic-org/sdic_libraries/issues
+Encoding: UTF-8
+Language: en-US
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Config/testthat/edition: 3
+Depends: 
+    R (>= 4.1.0)
+Imports:
+    R6 (>= 2.5.0),
+    httr2 (>= 1.0.0),
+    jsonlite (>= 1.8.0),
+    dplyr (>= 1.1.0),
+    tibble (>= 3.2.0),
+    lubridate (>= 1.9.0),
+    cli (>= 3.6.0),
+    rlang (>= 1.1.0)
+Suggests:
+    testthat (>= 3.1.0),
+    knitr (>= 1.42),
+    rmarkdown (>= 2.20),
+    covr (>= 3.6.0),
+    pkgdown (>= 2.0.0),
+    devtools (>= 2.4.0),
+    usethis (>= 2.1.0)
+VignetteBuilder: knitr
