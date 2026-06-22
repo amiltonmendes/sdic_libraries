@@ -105,8 +105,8 @@ class Emprego:
         # Auto-carregar configuração com fallbacks inteligentes
         self.base_url = (
             base_url or                                      # 1. Parâmetro explícito
-            os.getenv('EMPLOYMENT_API_BASE_URL') or         # 2. Variável de ambiente
-            "https://api.example.com"                       # 3. URL genérica (configurar via env)
+            os.getenv('EMPLOYMENT_API_BASE_URL') or         # 2. Variável de ambiente / .env
+            "https://sdicapi.dados.ninja"               # 3. Endpoint público (DNS próprio)
         )
         
         self.timeout = int(os.getenv('API_TIMEOUT', str(timeout)))

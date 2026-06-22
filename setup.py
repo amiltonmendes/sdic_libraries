@@ -167,9 +167,9 @@ def test_installation():
 
 def create_sample_env():
     """Cria arquivo .env de exemplo"""
-    env_content = """# Configuração da API SDIC (opcional)
-# EMPLOYMENT_API_BASE_URL=https://sua-api.example.com
-# EMPLOYMENT_API_KEY=sua_chave_aqui  
+    env_content = """# Configuração pública da API SDIC (sem segredos)
+# Segredos (ex.: EMPLOYMENT_API_KEY) vão SOMENTE em .env.local (ignorado pelo git).
+EMPLOYMENT_API_BASE_URL=https://sdicapi.dados.ninja
 # API_TIMEOUT=30
 # LOG_LEVEL=INFO
 # SDIC_VERSION=0.3.1"""

@@ -154,11 +154,13 @@ Rscript testes_consolidados.R
 
 ## 🌍 Configuração de Ambiente
 
-> ⚠️ **Obrigatório antes do primeiro uso:** a URL da API não vem embutida na biblioteca
-> (por segurança). Defina `EMPLOYMENT_API_BASE_URL` apontando para o endpoint do seu
-> serviço. Sem isso, a biblioteca usa apenas o placeholder `https://api.example.com` e não
-> acessará dados reais. Opcionalmente defina `EMPLOYMENT_API_KEY` se a API exigir
-> autenticação. Em CI/CD, configure essas variáveis como *secrets* do pipeline.
+> ℹ️ **Funciona out-of-the-box:** o endpoint público (DNS próprio) já vem embutido e também
+> no `.env` versionado da raiz — não é preciso configurar nada para começar. Para sobrescrever,
+> defina `EMPLOYMENT_API_BASE_URL` (env do SO, `.env` ou `/etc/sdic/.env`).
+>
+> 🔒 **Segredos nunca no repositório:** o `.env` versionado guarda só a URL pública. Se a API
+> exigir `EMPLOYMENT_API_KEY`, coloque-a em **`.env.local`** (ignorado pelo git) ou como
+> *secret* do pipeline em CI/CD — nunca em arquivos versionados.
 
 ### Variáveis de Ambiente
 

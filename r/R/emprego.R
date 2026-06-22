@@ -52,7 +52,7 @@ Emprego <- R6::R6Class(
       # Configuração inteligente com fallbacks
       self$base_url <- base_url %||%
                        Sys.getenv("EMPLOYMENT_API_BASE_URL",
-                                  "https://api.example.com")  # Configure via env EMPLOYMENT_API_BASE_URL
+                                  "https://sdicapi.dados.ninja")  # Endpoint público (DNS próprio)
       
       self$timeout <- as.numeric(Sys.getenv("API_TIMEOUT", as.character(timeout)))
       self$api_key <- api_key %||% Sys.getenv("EMPLOYMENT_API_KEY", "")

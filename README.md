@@ -126,77 +126,68 @@ source("sdic_libraries/r/testes_consolidados.R")
 - ✅ **API de Emprego**: Conectividade básica funcional
 - ✅ **Demonstrações**: Exemplos práticos executados
 
-## ⚙️ Configuração necessária
+## ⚙️ Configuração
 
-> ⚠️ **Importante:** por segurança, a URL da API **não vem mais embutida** na biblioteca.
-> Antes do primeiro uso, defina o endpoint da API. Sem isso, a biblioteca usa apenas um
-> placeholder (`https://api.example.com`) e não acessará dados reais.
+A configuração pública é **centralizada em um único `.env` versionado** na raiz do projeto,
+e o endpoint padrão (DNS próprio) já vem embutido na biblioteca — **funciona out-of-the-box**.
+A URL é um domínio DNS e **não expõe** a conta de serviço nem o número de projeto da nuvem.
+
+Ordem de precedência (maior → menor):
+1. Parâmetro explícito no código (`Emprego(base_url=...)`)
+2. Variável de ambiente do SO / arquivo `.env`
+3. Default embutido (`https://sdicapi.dados.ninja`)
 
 Variáveis reconhecidas:
 
-| Variável | Obrigatória | Descrição |
-|----------|-------------|-----------|
-| `EMPLOYMENT_API_BASE_URL` | **Sim** | Endpoint base da API de emprego (ex.: a URL do seu serviço). |
-| `EMPLOYMENT_API_KEY` | Não | Token de autenticação, se a API exigir. |
-| `API_TIMEOUT` | Não | Timeout das requisições em segundos (padrão 30). |
+| Variável | Obrigatória | Onde fica | Descrição |
+|----------|-------------|-----------|-----------|
+| `EMPLOYMENT_API_BASE_URL` | Não (tem default) | `.env` versionado | Endpoint público da API (DNS). |
+| `EMPLOYMENT_API_KEY` | Não | **`.env.local` (ignorado)** | Token de autenticação, se a API exigir. |
+| `API_TIMEOUT` | Não | `.env` | Timeout das requisições em segundos (padrão 30). |
 
-**Via arquivo `.env`** (copie de `.env.example` e renomeie para `.env`):
+> 🔒 **Segredos nunca no repositório.** O `.env` versionado contém **apenas** configuração
+> pública (a URL). Qualquer segredo — como `EMPLOYMENT_API_KEY` — deve ir em **`.env.local`**,
+> que é ignorado pelo git. Em CI/CD, injete a chave como *secret* do pipeline.
 
-```bash
-EMPLOYMENT_API_BASE_URL=https://sua-api.example.com
-EMPLOYMENT_API_KEY=sua_chave_opcional
+**`.env` compartilhado em servidor** (opcional): a lib também lê `/etc/sdic/.env`, útil para
+configurar uma máquina inteira de uma vez.
+
+**Override pontual no código:**
+
+```python
+api = Emprego(base_url="https://sdicapi.dados.ninja")  # Python
 ```
-
-**Via variável de ambiente:**
-
-```bash
-# Python / shell
-export EMPLOYMENT_API_BASE_URL="https://sua-api.example.com"
-```
-
 ```r
-# R
-Sys.setenv(EMPLOYMENT_API_BASE_URL = "https://sua-api.example.com")
+api <- Emprego$new(base_url = "https://sdicapi.dados.ninja")  # R
 ```
-
-Em CI/CD, defina `EMPLOYMENT_API_BASE_URL` (e `EMPLOYMENT_API_KEY` se aplicável) como
-*secret*/variável do pipeline — nunca commite a URL real no repositório.
 
 ## ⚙️ Configuração Avançada
 
-### Variáveis de Ambiente
-
-Crie um arquivo `.env` para configuração personalizada:
-
-```bash
-# .env
-SDIC_API_URL=https://sua-api-customizada.com
-SDIC_API_KEY=sua_chave_opcional
-SDIC_TIMEOUT=30
-SDIC_VERSION=1.0.0
-```
+As variáveis de ambiente estão documentadas na seção [Configuração](#️-configuração) acima
+(`EMPLOYMENT_API_BASE_URL`, `EMPLOYMENT_API_KEY`, `API_TIMEOUT`). Abaixo, exemplos de
+configuração manual passando os parâmetros diretamente no construtor.
 
 ### Python - Configuração Manual
 
 ```python
 from sdic_libraries.data_access.emprego import Emprego
 
-# Configuração customizada
+# Configuração customizada (timeout e api_key são opcionais)
 api = Emprego(
-    base_url="https://api-alternativa.com",
+    base_url="https://sdicapi.dados.ninja",
     timeout=60,
-    api_key="sua_chave"
+    api_key="..."  # só se a API exigir autenticação
 )
 ```
 
 ### R - Configuração Manual
 
 ```r
-# Configuração customizada
+# Configuração customizada (timeout e api_key são opcionais)
 api <- Emprego$new(
-  base_url = "https://api-alternativa.com",
+  base_url = "https://sdicapi.dados.ninja",
   timeout = 60,
-  api_key = "sua_chave"
+  api_key = "..."  # só se a API exigir autenticação
 )
 ```
 
@@ -738,13 +729,17 @@ Para personalizar o comportamento, você ainda pode:
 - **Timeouts de requisição personalizados**
 - **Configuração via arquivos `.env`** (veja `.env.example`)
 
-**Exemplo de arquivo `.env`:**
+**Exemplo de `.env`** (versionado — apenas configuração pública):
 ```bash
-# Apenas renomeie .env.example para .env e personalize!
-EMPLOYMENT_API_BASE_URL=https://api.employment.gov.br/v1
-EMPLOYMENT_API_KEY=sua_chave_aqui
+EMPLOYMENT_API_BASE_URL=https://sdicapi.dados.ninja
 API_TIMEOUT=45
 LOG_LEVEL=DEBUG
+```
+
+**Segredos vão em `.env.local`** (ignorado pelo git), nunca no `.env` versionado:
+```bash
+# .env.local
+EMPLOYMENT_API_KEY=sua_chave_aqui
 ```
 
 ✅ **A biblioteca detecta e carrega automaticamente - personalização é 100% opcional!**
