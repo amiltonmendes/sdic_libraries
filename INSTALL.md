@@ -59,7 +59,7 @@ pip install -r requirements.txt
 pip install -e .
 
 # 4. Testar instalação
-python -c "from sdic_libraries.data_access.emprego import Emprego; print('✅ Instalação bem-sucedida!')"
+python -c "from sdic_libraries.dados.emprego import Emprego; print('✅ Instalação bem-sucedida!')"
 ```
 
 ### R (Passo a Passo)
@@ -72,7 +72,7 @@ install.packages(c(
 ))
 
 # 2. Carregar biblioteca local
-source("sdic_libraries/r/R/data_access/emprego.R")
+source("sdic_libraries/r/R/emprego.R")
 source("sdic_libraries/r/R/utils/transformacoes.R")
 
 # 3. Testar instalação
@@ -85,7 +85,7 @@ cat("✅ Instalação bem-sucedida!\n")
 ### Teste Rápido - Python
 
 ```python
-from sdic_libraries.data_access.emprego import get_saldo_emprego_nacional_mensal
+from sdic_libraries.dados.emprego import get_saldo_emprego_nacional_mensal
 from sdic_libraries.utils.transformacoes import criar_indice
 
 # Teste de conectividade
@@ -114,7 +114,7 @@ print(f"✅ Funções de transformação funcionais")
 
 ```r
 # Carregar bibliotecas
-source("sdic_libraries/r/R/data_access/emprego.R")
+source("sdic_libraries/r/R/emprego.R")
 source("sdic_libraries/r/R/utils/transformacoes.R")
 
 # Teste de conectividade
@@ -177,7 +177,7 @@ SDIC_VERSION=1.0.0
 ### Python - Configuração Personalizada
 
 ```python
-from sdic_libraries.data_access.emprego import Emprego
+from sdic_libraries.dados.emprego import Emprego
 import os
 
 # Opção 1: Através de parâmetros
@@ -232,7 +232,7 @@ pip install -r requirements.txt
 install.packages("devtools")
 
 # Solução 2: Carregar diretamente
-source("sdic_libraries/r/R/data_access/emprego.R")
+source("sdic_libraries/r/R/emprego.R")
 
 # Solução 3: Instalar dependências
 install.packages(c("R6", "httr2", "jsonlite", "dplyr"))
@@ -264,7 +264,7 @@ chmod +x install.R
 import logging
 logging.basicConfig(level=logging.DEBUG)
 
-from sdic_libraries.data_access.emprego import Emprego
+from sdic_libraries.dados.emprego import Emprego
 api = Emprego(debug=True)
 ```
 

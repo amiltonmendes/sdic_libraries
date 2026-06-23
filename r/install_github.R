@@ -58,10 +58,10 @@ tryCatch({
 cat("\n🧪 Testando instalação...\n")
 tryCatch({
   # Tentar carregar o arquivo principal
-  source_url <- "https://raw.githubusercontent.com/sdic-org/sdic_libraries/main/r/R/data_access/emprego.R"
+  source_url <- "https://raw.githubusercontent.com/sdic-org/sdic_libraries/main/r/R/emprego.R"
   cat("  - Testando carregamento via source...\n")
   cat("  - URL:", source_url, "\n")
-  cat("  - Para usar localmente: source('r/R/data_access/emprego.R')\n")
+  cat("  - Para usar localmente: source('r/R/emprego.R')\n")
   
   cat("✅ Teste concluído!\n")
 }, error = function(e) {
@@ -74,7 +74,7 @@ cat("====================\n")
 cat("# Carregar biblioteca via GitHub:\n")
 cat("library(sdic.libraries)\n\n")
 cat("# Ou carregar arquivo diretamente:\n")
-cat("source('https://raw.githubusercontent.com/sdic-org/sdic_libraries/main/r/R/data_access/emprego.R')\n\n")
+cat("source('https://raw.githubusercontent.com/sdic-org/sdic_libraries/main/r/R/emprego.R')\n\n")
 cat("# Usar a biblioteca:\n")
 cat("api <- Emprego$new()\n")
 cat("dados <- api$get_saldo_emprego_detalhado('nacional')\n")

@@ -22,7 +22,7 @@ import numpy as np
 
 # Importar todas as funções necessárias
 try:
-    from sdic_libraries.data_access.emprego import (
+    from sdic_libraries.dados.emprego import (
         # Principais funções wrapper
         get_saldo_emprego_nacional_mensal,
         get_saldo_emprego_nacional_anual,

@@ -1,7 +1,7 @@
 # Teste das melhorias implementadas na biblioteca SDIC de Emprego em R
 
 # Carregar funcoes locais
-source(here::here("R", "data_access", "emprego.R"))
+source(here::here("R", "emprego.R"))
 suppressMessages({
   library(dplyr)
   library(cli)

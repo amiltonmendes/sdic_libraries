@@ -144,7 +144,7 @@ def test_installation():
     
     # Teste Python
     python_test = (
-        "from sdic_libraries.data_access.emprego import Emprego; "
+        "from sdic_libraries.dados.emprego import Emprego; "
         "api = Emprego(); "
         "print('Biblioteca Python funcionando!'); "
         "api.close()"
@@ -226,10 +226,10 @@ def main():
         print("   2. Execute exemplos em python/examples/ e r/examples/")  
         print("   3. Configure .env (opcional) com suas credenciais")
         print("\n💡 Uso rápido Python:")
-        print("   from sdic_libraries.data_access.emprego import Emprego")
+        print("   from sdic_libraries.dados.emprego import Emprego")
         print("   api = Emprego(); dados = api.get_saldo_emprego_detalhado('nacional')")
         print("\n💡 Uso rápido R:")
-        print("   source('r/R/data_access/emprego.R')")
+        print("   source('r/R/emprego.R')")
         print("   api <- Emprego$new(); dados <- api$get_saldo_emprego_detalhado('nacional')")
     else:
         print(f"\n⚠️ Instalação com problemas. Consulte mensagens de erro acima.")

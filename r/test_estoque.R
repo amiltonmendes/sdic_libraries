@@ -35,7 +35,7 @@ tryCatch({
     .libPaths(c("r", .libPaths()))
     
     # Source direto das funções (como biblioteca em desenvolvimento)
-    source("r/R/data_access/emprego.R")
+    source("r/R/emprego.R")
     
     cat("✅ Biblioteca carregada\n")
     
@@ -168,7 +168,7 @@ tryCatch({
 test_cnae_column_filtering <- function() {
   cat("\n=== TESTE 6: Filtragem de colunas CNAE por nivel ===\n")
 
-  source("r/R/data_access/emprego.R")
+  source("r/R/emprego.R")
 
   # Nivel divisao: nao deve conter colunas de grupo/subclasse
   tryCatch({

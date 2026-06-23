@@ -121,7 +121,7 @@ class Emprego:
         self.logger = logging.getLogger(__name__)
         
         # Auto-detectar versão para User-Agent
-        version = os.getenv('SDIC_VERSION', '0.3.1')
+        version = os.getenv('SDIC_VERSION', '0.4.0')
         self.session.headers.update({
             'User-Agent': f'sdic-libraries/{version}',
             'Accept': 'application/json',

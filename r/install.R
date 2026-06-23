@@ -70,8 +70,8 @@ install_if_missing(dev_packages)
 cat("\n📚 Carregando biblioteca SDIC...\n")
 tryCatch({
   # Assumindo que estamos no diretório da biblioteca
-  if (file.exists("R/data_access/emprego.R")) {
-    source("R/data_access/emprego.R")
+  if (file.exists("R/emprego.R")) {
+    source("R/emprego.R")
     cat("✅ Biblioteca SDIC carregada com sucesso!\n")
   } else {
     cat("⚠️ Arquivo emprego.R não encontrado. Certifique-se de estar no diretório raiz da biblioteca.\n")
@@ -87,7 +87,7 @@ tryCatch({
   cat("✅ Classe Emprego criada com sucesso!\n")
   
   cat("\n📖 Como usar:\n")
-  cat("   source('R/data_access/emprego.R')  # Carregar biblioteca\n")
+  cat("   source('R/emprego.R')  # Carregar biblioteca\n")
   cat("   api <- Emprego$new()               # Criar cliente\n") 
   cat("   dados <- api$get_saldo_emprego_detalhado('nacional')  # Obter dados\n")
   

@@ -30,7 +30,7 @@ devtools::install_github("<SEU_USUARIO>/sdic_libraries", subdir="r")
 ### Python
 
 ```python
-from sdic_libraries.data_access.emprego import (
+from sdic_libraries.dados.emprego import (
     get_saldo_emprego_nacional_mensal,
   get_estoque_emprego_nacional
 )
@@ -66,7 +66,7 @@ indices = criar_indice(
 
 ```r
 # Carregar biblioteca
-source("sdic_libraries/r/R/data_access/emprego.R")
+source("sdic_libraries/r/R/emprego.R")
 source("sdic_libraries/r/R/utils/transformacoes.R")
 
 # Obter dados de saldo
@@ -106,6 +106,55 @@ dados_com_indice <- criar_indice(
 - ✅ **Filtragem por agregação**
 - ✅ **Validação de códigos CNAE**
 - ✅ **Tratamento amigável de erros**
+
+## 🗂️ Relatórios e Portal de Emprego por Estado (`dados.emprego.portal`)
+
+Além de consultar a API ao vivo, a biblioteca **lê os artefatos de emprego já
+publicados no GitHub Pages** pelo pipeline `cgid_cargas`. São dois produtos por UF:
+
+- **Relatório** (cache, dados brutos): `saldo` (CAGED mensal por divisão CNAE),
+  `estoque` (RAIS por divisão) e `acum12m_total`.
+- **Portal** (payload v1.1, pronto para apresentação): `capa_kpi`, `kpis`,
+  `charts`, `ranked_lists`, `breakdowns` — já em pt-BR.
+
+Há dois ambientes: `producao` (default) e `homologacao`. A URL base é configurável
+por `PORTAL_EMPREGO_BASE_URL` (default: `https://amiltonmendes.github.io/sdic_libraries`).
+
+### Python
+
+```python
+from sdic_libraries.dados.emprego.portal import (
+    get_relatorio_emprego_saldo_estadual,
+    get_relatorio_emprego_estoque_estadual,
+    get_portal_emprego_estadual,
+    get_portal_emprego_kpis_estadual,
+    listar_estados_disponiveis,
+)
+
+# Relatório (dados brutos do cache)
+saldo = get_relatorio_emprego_saldo_estadual("SP")            # DataFrame
+estoque = get_relatorio_emprego_estoque_estadual("SP")        # DataFrame
+
+# Portal (payload v1.1)
+payload = get_portal_emprego_estadual("SP")                   # dict completo
+kpis = get_portal_emprego_kpis_estadual("SP")                 # DataFrame
+
+# Ambiente de homologação e descoberta de UFs publicadas
+ufs = listar_estados_disponiveis(ambiente="homologacao")      # ['AC', 'AL', ...]
+```
+
+### R
+
+```r
+source("sdic_libraries/r/R/portal.R")  # (já incluído no pacote)
+
+saldo  <- get_relatorio_emprego_saldo_estadual("SP")          # tibble
+kpis   <- get_portal_emprego_kpis_estadual("SP")              # tibble
+ufs    <- listar_estados_disponiveis(ambiente = "homologacao")
+```
+
+> ℹ️ O caminho `sdic_libraries.data_access` foi renomeado para `sdic_libraries.dados`
+> na v0.4.0. Um alias `data_access` é mantido temporariamente (emite `DeprecationWarning`).
 
 ## 🧪 Testes
 
@@ -170,7 +219,7 @@ configuração manual passando os parâmetros diretamente no construtor.
 ### Python - Configuração Manual
 
 ```python
-from sdic_libraries.data_access.emprego import Emprego
+from sdic_libraries.dados.emprego import Emprego
 
 # Configuração customizada (timeout e api_key são opcionais)
 api = Emprego(
@@ -352,7 +401,7 @@ df_ti_sp <- get_saldo_emprego_estadual_mensal_agrupado(
 
 #### Python
 ```python
-from sdic_libraries.data_access.emprego import (
+from sdic_libraries.dados.emprego import (
     # Estoque nacional
   get_estoque_emprego_nacional,
   get_estoque_emprego_nacional_agrupado,
@@ -455,7 +504,7 @@ df_estoque_fin_rj <- dplyr::filter(df_estoque_fin_rj, as.integer(ano) >= 2020)
 
 #### Python
 ```python
-from sdic_libraries.data_access.emprego import Emprego
+from sdic_libraries.dados.emprego import Emprego
 
 # Context manager (recomendado)  
 with Emprego() as api:
@@ -482,7 +531,7 @@ with Emprego() as api:
     )
 
 # Funções de conveniência (baixo nível)
-from sdic_libraries.data_access.emprego import (
+from sdic_libraries.dados.emprego import (
     get_saldo_emprego_as_dataframe,
     get_saldo_emprego_detalhado_lista_cnae  
 )
@@ -710,7 +759,7 @@ As bibliotecas agora carregam automaticamente as variáveis de ambiente - **nenh
 **⚡ Uso sem configuração:**
 ```python
 # Python - funciona imediatamente!
-from sdic_libraries.data_access.emprego import Emprego
+from sdic_libraries.dados.emprego import Emprego
 api = Emprego()  # Configuração carregada automaticamente
 ```
 

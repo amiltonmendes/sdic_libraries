@@ -10,7 +10,7 @@ tryCatch({
     .libPaths(c("r", .libPaths()))
     
     # Source direto das funções (como biblioteca em desenvolvimento)
-    source("r/R/data_access/emprego.R")
+    source("r/R/emprego.R")
     
     cat("✅ Biblioteca carregada\n")
     

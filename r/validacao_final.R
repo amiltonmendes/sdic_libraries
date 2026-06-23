@@ -4,7 +4,7 @@ cat("\n🎯 VALIDAÇÃO FINAL DA HARMONIZAÇÃO PYTHON ↔ R\n")
 cat("======================================================================\n\n")
 
 # Carregar biblioteca
-source("r/R/data_access/emprego.R")
+source("r/R/emprego.R")
 
 # Inicializar API
 cat("📡 Inicializando connection with SDIC API...\n")

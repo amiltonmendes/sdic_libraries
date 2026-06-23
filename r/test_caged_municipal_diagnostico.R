@@ -4,7 +4,7 @@
 cat("=== DIAGNÓSTICO CAGED MUNICIPAL R ===\n\n")
 
 # Source das funções
-source("r/R/data_access/emprego.R")
+source("r/R/emprego.R")
 suppressMessages(library(tibble))
 
 cat("✅ Funções carregadas\n\n")

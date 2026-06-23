@@ -1,12 +1,12 @@
 # Teste simples para verificar se a implementacao R funciona corretamente
 
 # Carregando a biblioteca local (compatibilidade com estrutura atual)
-if (file.exists("R/data_access/emprego.R")) {
-  source("R/data_access/emprego.R")
-} else if (file.exists("r/R/data_access/emprego.R")) {
-  source("r/R/data_access/emprego.R")
+if (file.exists("R/emprego.R")) {
+  source("R/emprego.R")
+} else if (file.exists("r/R/emprego.R")) {
+  source("r/R/emprego.R")
 } else {
-  stop("Arquivo de origem nao encontrado: R/data_access/emprego.R")
+  stop("Arquivo de origem nao encontrado: R/emprego.R")
 }
 
 is_api_error <- function(msg) {

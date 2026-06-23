@@ -70,14 +70,14 @@ def main():
     if success_count == total_commands:
         print("🎉 Instalação da biblioteca SDIC Python concluída com SUCESSO!")
         print("\n📖 Como usar:")
-        print("   from sdic_libraries.data_access.emprego import Emprego")
+        print("   from sdic_libraries.dados.emprego import Emprego")
         print("   api = Emprego()")
         print("   dados = api.get_saldo_emprego_detalhado('nacional')")
         
         # Teste básico
         print("\n🧪 Teste básico...")
         try:
-            from sdic_libraries.data_access.emprego import Emprego
+            from sdic_libraries.dados.emprego import Emprego
             api = Emprego()
             api.close()
             print("✅ Importação da biblioteca funcionou perfeitamente!")

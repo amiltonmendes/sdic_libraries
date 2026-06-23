@@ -23,7 +23,7 @@ Este documento demonstra os métodos disponíveis para consulta de **estoque de 
 ```{r}
 library(dplyr)
 # Ajuste o caminho conforme necessário
-source('../R/data_access/emprego.R')
+source('../R/emprego.R')
 
 emprego <- Emprego()
 cat('Cliente inicializado com sucesso.\n')

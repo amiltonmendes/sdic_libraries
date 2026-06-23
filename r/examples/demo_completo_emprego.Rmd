@@ -54,7 +54,7 @@ library(knitr)
 library(DT)
 
 # Carregar biblioteca SDIC local
-source("../R/data_access/emprego.R")
+source("../R/emprego.R")
 source("../R/utils/transformacoes.R")
 
 cat("✅ Configuração inicial completa!\n")

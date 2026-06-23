@@ -94,7 +94,7 @@ def install_from_github():
     # Teste de importação
     print("\n🧪 Testando instalação...")
     test_success = run_command(
-        f"{sys.executable} -c \"from sdic_libraries.data_access.emprego import Emprego; print('✅ Import bem-sucedido')\"",
+        f"{sys.executable} -c \"from sdic_libraries.dados.emprego import Emprego; print('✅ Import bem-sucedido')\"",
         "Teste de importação"
     )
     
@@ -102,7 +102,7 @@ def install_from_github():
         print("\n🎉 INSTALAÇÃO CONCLUÍDA COM SUCESSO!")
         print("\n📖 EXEMPLOS DE USO:")
         print("=" * 50)
-        print("from sdic_libraries.data_access.emprego import Emprego")
+        print("from sdic_libraries.dados.emprego import Emprego")
         print("")
         print("# Usar a biblioteca:")
         print("with Emprego() as api:")

@@ -1,36 +1,25 @@
-"""
-Módulos de Acesso a Dados para várias fontes de dados do governo brasileiro
+"""Subpacote de emprego (CAGED/RAIS).
 
-Este pacote fornece acesso padronizado a dados de emprego e outros
-dados estatísticos de APIs do governo brasileiro.
-"""
+Reúne duas faces:
 
+- ``api``    — cliente da API ao vivo (``Emprego`` e funções ``get_*``).
+- ``portal`` — leitura dos artefatos publicados no GitHub Pages
+               (relatórios/cache e payloads do portal), por estado.
+
+Os símbolos públicos de ambos são reexportados aqui, de modo que
+``sdic_libraries.dados.emprego.<func>`` continue funcionando como antes,
+e ``sdic_libraries.dados.emprego.portal.<func>`` exponha as novas funções.
+"""
 from __future__ import annotations
 
-from . import emprego
-from .emprego import (
+from . import api
+from . import portal
+from .api import (
     Emprego,
     EmpregoAPIError,
-    PortalEmprego,
-    # Relatório (cache publicado — dados brutos por estado)
-    get_relatorio_emprego_estadual,
-    get_relatorio_emprego_saldo_estadual,
-    get_relatorio_emprego_estoque_estadual,
-    get_relatorio_emprego_metadata_estadual,
-    get_relatorio_emprego_saldo_todos_estados,
-    get_relatorio_emprego_estoque_todos_estados,
-    # Portal (payload v1.1 publicado por estado)
-    get_portal_emprego_estadual,
-    get_portal_emprego_capa_estadual,
-    get_portal_emprego_kpis_estadual,
-    get_portal_emprego_charts_estadual,
-    get_portal_emprego_ranked_lists_estadual,
-    get_portal_emprego_breakdowns_estadual,
-    get_portal_emprego_kpis_todos_estados,
-    listar_estados_disponiveis,
     # Funções nacionais
     get_saldo_emprego_nacional_mensal,
-    get_saldo_emprego_nacional_anual, 
+    get_saldo_emprego_nacional_anual,
     get_saldo_emprego_nacional_mensal_agrupado,
     # Funções estaduais
     get_saldo_emprego_estadual_mensal,
@@ -60,31 +49,36 @@ from .emprego import (
     _filter_cnae_columns_for_grouped_methods,
     _filter_cnae_columns_by_level,
 )
+from .portal import (
+    PortalEmprego,
+    # Relatório (cache — dados brutos)
+    get_relatorio_emprego_estadual,
+    get_relatorio_emprego_saldo_estadual,
+    get_relatorio_emprego_estoque_estadual,
+    get_relatorio_emprego_metadata_estadual,
+    get_relatorio_emprego_saldo_todos_estados,
+    get_relatorio_emprego_estoque_todos_estados,
+    # Portal (payload v1.1)
+    get_portal_emprego_estadual,
+    get_portal_emprego_capa_estadual,
+    get_portal_emprego_kpis_estadual,
+    get_portal_emprego_charts_estadual,
+    get_portal_emprego_ranked_lists_estadual,
+    get_portal_emprego_breakdowns_estadual,
+    get_portal_emprego_kpis_todos_estados,
+    # Descoberta
+    listar_estados_disponiveis,
+)
 
 __all__ = [
-    "emprego",
+    "api",
+    "portal",
     "Emprego",
     "EmpregoAPIError",
     "PortalEmprego",
-    # Relatório (cache publicado — dados brutos por estado)
-    "get_relatorio_emprego_estadual",
-    "get_relatorio_emprego_saldo_estadual",
-    "get_relatorio_emprego_estoque_estadual",
-    "get_relatorio_emprego_metadata_estadual",
-    "get_relatorio_emprego_saldo_todos_estados",
-    "get_relatorio_emprego_estoque_todos_estados",
-    # Portal (payload v1.1 publicado por estado)
-    "get_portal_emprego_estadual",
-    "get_portal_emprego_capa_estadual",
-    "get_portal_emprego_kpis_estadual",
-    "get_portal_emprego_charts_estadual",
-    "get_portal_emprego_ranked_lists_estadual",
-    "get_portal_emprego_breakdowns_estadual",
-    "get_portal_emprego_kpis_todos_estados",
-    "listar_estados_disponiveis",
     # Funções nacionais
     "get_saldo_emprego_nacional_mensal",
-    "get_saldo_emprego_nacional_anual", 
+    "get_saldo_emprego_nacional_anual",
     "get_saldo_emprego_nacional_mensal_agrupado",
     # Funções estaduais
     "get_saldo_emprego_estadual_mensal",
@@ -108,6 +102,23 @@ __all__ = [
     "get_saldo_caged_nacional",
     "get_saldo_caged_estadual",
     "get_saldo_caged_municipal",
+    # Relatório (portal — dados brutos)
+    "get_relatorio_emprego_estadual",
+    "get_relatorio_emprego_saldo_estadual",
+    "get_relatorio_emprego_estoque_estadual",
+    "get_relatorio_emprego_metadata_estadual",
+    "get_relatorio_emprego_saldo_todos_estados",
+    "get_relatorio_emprego_estoque_todos_estados",
+    # Portal (payload v1.1)
+    "get_portal_emprego_estadual",
+    "get_portal_emprego_capa_estadual",
+    "get_portal_emprego_kpis_estadual",
+    "get_portal_emprego_charts_estadual",
+    "get_portal_emprego_ranked_lists_estadual",
+    "get_portal_emprego_breakdowns_estadual",
+    "get_portal_emprego_kpis_todos_estados",
+    # Descoberta
+    "listar_estados_disponiveis",
     # Funções auxiliares
     "_validate_cnae_codes",
     "_filter_columns_by_aggregation",

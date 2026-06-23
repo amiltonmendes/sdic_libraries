@@ -29,10 +29,10 @@ if (file.exists("R/utils/transformacoes.R")) {
   stop("Arquivo transformacoes.R não encontrado")
 }
 
-if (file.exists("R/data_access/emprego.R")) {
-  source("R/data_access/emprego.R")
-} else if (file.exists("r/R/data_access/emprego.R")) {
-  source("r/R/data_access/emprego.R")
+if (file.exists("R/emprego.R")) {
+  source("R/emprego.R")
+} else if (file.exists("r/R/emprego.R")) {
+  source("r/R/emprego.R")
 } else {
   stop("Arquivo emprego.R não encontrado")
 }

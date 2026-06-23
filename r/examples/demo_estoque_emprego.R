@@ -9,7 +9,7 @@
 # Carregar pacotes necessários
 library(dplyr)
 # Se necessário, ajustar o caminho para o diretório R/
-source('../R/data_access/emprego.R')
+source('../R/emprego.R')
 
 # 1. Inicialização do cliente
 emprego <- Emprego()
