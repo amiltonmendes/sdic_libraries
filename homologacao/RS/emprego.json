@@ -3,12 +3,12 @@
   "section_id": "emprego",
   "title": "Emprego",
   "source": "Novo CAGED / MTE",
-  "reference": "Abr/2026",
-  "updated_at": "2026-06-22",
+  "reference": "Mai/2026",
+  "updated_at": "2026-07-25",
   "capa_kpi": {
     "id": "capa_emprego",
     "label": "Saldo CAGED 12m",
-    "display_value": "+16.658",
+    "display_value": "+10.546",
     "unit": "vagas",
     "period": "12 meses",
     "delta": {
@@ -38,16 +38,16 @@
     {
       "id": "saldo_mensal",
       "label": "Saldo mensal",
-      "value": -1396,
-      "display_value": "-1.396",
+      "value": -5657,
+      "display_value": "-5.657",
       "unit": "vagas",
-      "period": "Abr/2026"
+      "period": "Mai/2026"
     },
     {
       "id": "saldo_12m",
       "label": "Saldo 12 meses",
-      "value": 16658,
-      "display_value": "+16.658",
+      "value": 10546,
+      "display_value": "+10.546",
       "unit": "vagas",
       "period": "12 meses"
     },
@@ -57,7 +57,7 @@
       "value": 3326988,
       "display_value": "3.327",
       "unit": "mil vínculos",
-      "period": "Abr/2026"
+      "period": "Mai/2026"
     },
     {
       "id": "baixa_intensidade_share",
@@ -65,7 +65,7 @@
       "value": 11.2,
       "display_value": "11,2",
       "unit": "%",
-      "period": "Abr/2026"
+      "period": "Mai/2026"
     }
   ],
   "charts": [
@@ -81,60 +81,60 @@
           "label": "Saldo",
           "points": [
             {
-              "t": 64,
-              "v": -106
-            },
-            {
               "t": 65,
-              "v": 1534
+              "v": 1539
             },
             {
               "t": 66,
-              "v": 502
+              "v": 477
             },
             {
               "t": 67,
-              "v": -1519
+              "v": -1504
             },
             {
               "t": 68,
-              "v": 3860
+              "v": 3844
             },
             {
               "t": 69,
-              "v": 190
+              "v": 185
             },
             {
               "t": 70,
-              "v": 4365
+              "v": 4350
             },
             {
               "t": 71,
-              "v": -37629
+              "v": -37664
             },
             {
               "t": 72,
-              "v": 17938
+              "v": 17934
             },
             {
               "t": 73,
-              "v": 24862
+              "v": 24859
             },
             {
               "t": 74,
-              "v": 4057
+              "v": 4058
             },
             {
               "t": 75,
-              "v": -1396
+              "v": -1875
+            },
+            {
+              "t": 76,
+              "v": -5657
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202604",
-          "label": "+-1.396 vagas"
+          "t": "202605",
+          "label": "+-5.657 vagas"
         }
       ]
     },
@@ -150,60 +150,60 @@
           "label": "Acumulado 12m",
           "points": [
             {
-              "t": "202505",
-              "v": 90117
-            },
-            {
               "t": "202506",
-              "v": 100228
+              "v": 100238
             },
             {
               "t": "202507",
-              "v": 94070
+              "v": 94053
             },
             {
               "t": "202508",
-              "v": 81961
+              "v": 81958
             },
             {
               "t": "202509",
-              "v": 75501
+              "v": 75483
             },
             {
               "t": "202510",
-              "v": 61558
+              "v": 61534
             },
             {
               "t": "202511",
-              "v": 54161
+              "v": 54124
             },
             {
               "t": "202512",
-              "v": 45407
+              "v": 45336
             },
             {
               "t": "202601",
-              "v": 35955
+              "v": 35877
             },
             {
               "t": "202602",
-              "v": 30128
+              "v": 30044
             },
             {
               "t": "202603",
-              "v": 25011
+              "v": 24930
             },
             {
               "t": "202604",
-              "v": 16655
+              "v": 16091
+            },
+            {
+              "t": "202605",
+              "v": 10540
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202604",
-          "label": "+16.655 vagas"
+          "t": "202605",
+          "label": "+10.540 vagas"
         }
       ]
     }
@@ -218,28 +218,28 @@
       "items": [
         {
           "name": "Fabricação de produtos alimentícios",
-          "value": 5082,
-          "display_value": "+5.082"
+          "value": 4861,
+          "display_value": "+4.861"
         },
         {
           "name": "Serviços de escritório, de apoio administrativo e outros serviços prestados às empresas",
-          "value": 4371,
-          "display_value": "+4.371"
+          "value": 4197,
+          "display_value": "+4.197"
         },
         {
           "name": "Atividades de atenção à saúde humana",
-          "value": 3506,
-          "display_value": "+3.506"
-        },
-        {
-          "name": "Atividades de organizações associativas",
-          "value": 2817,
-          "display_value": "+2.817"
+          "value": 3330,
+          "display_value": "+3.330"
         },
         {
           "name": "Publicidade e pesquisa de mercado",
-          "value": 2760,
-          "display_value": "+2.760"
+          "value": 2921,
+          "display_value": "+2.921"
+        },
+        {
+          "name": "Atividades de organizações associativas",
+          "value": 2695,
+          "display_value": "+2.695"
         }
       ]
     },
@@ -252,28 +252,28 @@
       "items": [
         {
           "name": "Preparação de couros e fabricação de artefatos de couro",
-          "value": -5855,
-          "display_value": "−5.855"
-        },
-        {
-          "name": "Obras de infraestrutura",
-          "value": -2215,
-          "display_value": "−2.215"
-        },
-        {
-          "name": "Fabricação de veículos automotores, reboques e carrocerias",
-          "value": -2124,
-          "display_value": "−2.124"
+          "value": -6382,
+          "display_value": "−6.382"
         },
         {
           "name": "Fabricação de máquinas e equipamentos",
-          "value": -1679,
-          "display_value": "−1.679"
+          "value": -2337,
+          "display_value": "−2.337"
+        },
+        {
+          "name": "Fabricação de veículos automotores, reboques e carrocerias",
+          "value": -1676,
+          "display_value": "−1.676"
+        },
+        {
+          "name": "Obras de infraestrutura",
+          "value": -1542,
+          "display_value": "−1.542"
         },
         {
           "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
-          "value": -1510,
-          "display_value": "−1.510"
+          "value": -1514,
+          "display_value": "−1.514"
         }
       ]
     },

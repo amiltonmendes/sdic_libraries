@@ -3,12 +3,12 @@
   "section_id": "emprego",
   "title": "Emprego",
   "source": "Novo CAGED / MTE",
-  "reference": "Abr/2026",
-  "updated_at": "2026-06-22",
+  "reference": "Mai/2026",
+  "updated_at": "2026-07-25",
   "capa_kpi": {
     "id": "capa_emprego",
     "label": "Saldo CAGED 12m",
-    "display_value": "+60.433",
+    "display_value": "+55.133",
     "unit": "vagas",
     "period": "12 meses",
     "delta": {
@@ -38,16 +38,16 @@
     {
       "id": "saldo_mensal",
       "label": "Saldo mensal",
-      "value": 2335,
-      "display_value": "+2.335",
+      "value": 2210,
+      "display_value": "+2.210",
       "unit": "vagas",
-      "period": "Abr/2026"
+      "period": "Mai/2026"
     },
     {
       "id": "saldo_12m",
       "label": "Saldo 12 meses",
-      "value": 60433,
-      "display_value": "+60.433",
+      "value": 55133,
+      "display_value": "+55.133",
       "unit": "vagas",
       "period": "12 meses"
     },
@@ -57,7 +57,7 @@
       "value": 3806237,
       "display_value": "3.806",
       "unit": "mil vínculos",
-      "period": "Abr/2026"
+      "period": "Mai/2026"
     },
     {
       "id": "baixa_intensidade_share",
@@ -65,7 +65,7 @@
       "value": 12.1,
       "display_value": "12,1",
       "unit": "%",
-      "period": "Abr/2026"
+      "period": "Mai/2026"
     }
   ],
   "charts": [
@@ -81,60 +81,60 @@
           "label": "Saldo",
           "points": [
             {
-              "t": 64,
-              "v": 6730
-            },
-            {
               "t": 65,
-              "v": 9439
+              "v": 9452
             },
             {
               "t": 66,
-              "v": 8467
+              "v": 8448
             },
             {
               "t": 67,
-              "v": 6451
+              "v": 6457
             },
             {
               "t": 68,
-              "v": 12239
+              "v": 12229
             },
             {
               "t": 69,
-              "v": 8777
+              "v": 8742
             },
             {
               "t": 70,
-              "v": 1264
+              "v": 1249
             },
             {
               "t": 71,
-              "v": -51797
+              "v": -51844
             },
             {
               "t": 72,
-              "v": 18006
+              "v": 17958
             },
             {
               "t": 73,
-              "v": 22703
+              "v": 22698
             },
             {
               "t": 74,
-              "v": 15819
+              "v": 15800
             },
             {
               "t": 75,
-              "v": 2335
+              "v": 1734
+            },
+            {
+              "t": 76,
+              "v": 2210
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202604",
-          "label": "+2.335 vagas"
+          "t": "202605",
+          "label": "+2.210 vagas"
         }
       ]
     },
@@ -150,24 +150,20 @@
           "label": "Acumulado 12m",
           "points": [
             {
-              "t": "202505",
-              "v": 115496
-            },
-            {
               "t": "202506",
-              "v": 111132
+              "v": 111187
             },
             {
               "t": "202507",
-              "v": 105304
+              "v": 105341
             },
             {
               "t": "202508",
-              "v": 98562
+              "v": 98605
             },
             {
               "t": "202509",
-              "v": 95818
+              "v": 95852
             },
             {
               "t": "202510",
@@ -175,35 +171,39 @@
             },
             {
               "t": "202511",
-              "v": 91637
+              "v": 91620
             },
             {
               "t": "202512",
-              "v": 80266
+              "v": 80203
             },
             {
               "t": "202601",
-              "v": 81666
+              "v": 81549
             },
             {
               "t": "202602",
-              "v": 65213
+              "v": 65091
             },
             {
               "t": "202603",
-              "v": 74664
+              "v": 74523
             },
             {
               "t": "202604",
-              "v": 60409
+              "v": 59655
+            },
+            {
+              "t": "202605",
+              "v": 55133
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202604",
-          "label": "+60.409 vagas"
+          "t": "202605",
+          "label": "+55.133 vagas"
         }
       ]
     }
@@ -218,28 +218,28 @@
       "items": [
         {
           "name": "Fabricação de produtos alimentícios",
-          "value": 6592,
-          "display_value": "+6.592"
-        },
-        {
-          "name": "Comércio varejista",
-          "value": 6233,
-          "display_value": "+6.233"
+          "value": 6641,
+          "display_value": "+6.641"
         },
         {
           "name": "Atividades de atenção à saúde humana",
-          "value": 5808,
-          "display_value": "+5.808"
+          "value": 5908,
+          "display_value": "+5.908"
         },
         {
-          "name": "Atividades de vigilância, segurança e investigação",
-          "value": 4294,
-          "display_value": "+4.294"
+          "name": "Serviços para edifícios e atividades paisagísticas",
+          "value": 4608,
+          "display_value": "+4.608"
+        },
+        {
+          "name": "Comércio varejista",
+          "value": 4365,
+          "display_value": "+4.365"
         },
         {
           "name": "Seleção, agenciamento e locação de mão de obra",
-          "value": 4263,
-          "display_value": "+4.263"
+          "value": 4215,
+          "display_value": "+4.215"
         }
       ]
     },
@@ -252,28 +252,28 @@
       "items": [
         {
           "name": "Fabricação de produtos de madeira",
-          "value": -3019,
-          "display_value": "−3.019"
+          "value": -2813,
+          "display_value": "−2.813"
         },
         {
           "name": "Fabricação de veículos automotores, reboques e carrocerias",
-          "value": -1524,
-          "display_value": "−1.524"
+          "value": -1173,
+          "display_value": "−1.173"
         },
         {
           "name": "Produção florestal",
-          "value": -1033,
-          "display_value": "−1.033"
+          "value": -913,
+          "display_value": "−913"
+        },
+        {
+          "name": "Correio e outras atividades de entrega",
+          "value": -541,
+          "display_value": "−541"
         },
         {
           "name": "Fabricação de máquinas, aparelhos e materiais elétricos",
-          "value": -577,
-          "display_value": "−577"
-        },
-        {
-          "name": "Construção de edifícios",
-          "value": -501,
-          "display_value": "−501"
+          "value": -516,
+          "display_value": "−516"
         }
       ]
     },

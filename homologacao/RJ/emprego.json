@@ -3,12 +3,12 @@
   "section_id": "emprego",
   "title": "Emprego",
   "source": "Novo CAGED / MTE",
-  "reference": "Abr/2026",
-  "updated_at": "2026-06-22",
+  "reference": "Mai/2026",
+  "updated_at": "2026-07-25",
   "capa_kpi": {
     "id": "capa_emprego",
     "label": "Saldo CAGED 12m",
-    "display_value": "+103.001",
+    "display_value": "+98.312",
     "unit": "vagas",
     "period": "12 meses",
     "delta": {
@@ -38,16 +38,16 @@
     {
       "id": "saldo_mensal",
       "label": "Saldo mensal",
-      "value": 11741,
-      "display_value": "+11.741",
+      "value": 9195,
+      "display_value": "+9.195",
       "unit": "vagas",
-      "period": "Abr/2026"
+      "period": "Mai/2026"
     },
     {
       "id": "saldo_12m",
       "label": "Saldo 12 meses",
-      "value": 103001,
-      "display_value": "+103.001",
+      "value": 98312,
+      "display_value": "+98.312",
       "unit": "vagas",
       "period": "12 meses"
     },
@@ -57,7 +57,7 @@
       "value": 4871282,
       "display_value": "4.871",
       "unit": "mil vínculos",
-      "period": "Abr/2026"
+      "period": "Mai/2026"
     },
     {
       "id": "baixa_intensidade_share",
@@ -65,7 +65,7 @@
       "value": 2.8,
       "display_value": "2,8",
       "unit": "%",
-      "period": "Abr/2026"
+      "period": "Mai/2026"
     }
   ],
   "charts": [
@@ -81,60 +81,60 @@
           "label": "Saldo",
           "points": [
             {
-              "t": 64,
-              "v": 13279
-            },
-            {
               "t": 65,
-              "v": 14574
+              "v": 14580
             },
             {
               "t": 66,
-              "v": 5987
+              "v": 5964
             },
             {
               "t": 67,
-              "v": 17399
+              "v": 17375
             },
             {
               "t": 68,
-              "v": 15768
+              "v": 15742
             },
             {
               "t": 69,
-              "v": 7847
+              "v": 7832
             },
             {
               "t": 70,
-              "v": 19770
+              "v": 19750
             },
             {
               "t": 71,
-              "v": -25536
+              "v": -25606
             },
             {
               "t": 72,
-              "v": -13679
+              "v": -13747
             },
             {
               "t": 73,
-              "v": 11833
+              "v": 11836
             },
             {
               "t": 74,
-              "v": 24018
+              "v": 24042
             },
             {
               "t": 75,
-              "v": 11741
+              "v": 11349
+            },
+            {
+              "t": 76,
+              "v": 9195
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202604",
-          "label": "+11.741 vagas"
+          "t": "202605",
+          "label": "+9.195 vagas"
         }
       ]
     },
@@ -150,60 +150,60 @@
           "label": "Acumulado 12m",
           "points": [
             {
-              "t": "202505",
-              "v": 113403
-            },
-            {
               "t": "202506",
-              "v": 110847
+              "v": 110858
             },
             {
               "t": "202507",
-              "v": 106437
+              "v": 106422
             },
             {
               "t": "202508",
-              "v": 105753
+              "v": 105713
             },
             {
               "t": "202509",
-              "v": 102446
+              "v": 102375
             },
             {
               "t": "202510",
-              "v": 99972
+              "v": 99885
             },
             {
               "t": "202511",
-              "v": 106491
+              "v": 106378
             },
             {
               "t": "202512",
-              "v": 101146
+              "v": 101004
             },
             {
               "t": "202601",
-              "v": 99533
+              "v": 99317
             },
             {
               "t": "202602",
-              "v": 79400
+              "v": 79186
             },
             {
               "t": "202603",
-              "v": 109770
+              "v": 109570
             },
             {
               "t": "202604",
-              "v": 103001
+              "v": 102406
+            },
+            {
+              "t": "202605",
+              "v": 98312
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202604",
-          "label": "+103.001 vagas"
+          "t": "202605",
+          "label": "+98.312 vagas"
         }
       ]
     }
@@ -217,29 +217,29 @@
       "tone": "pos",
       "items": [
         {
-          "name": "Comércio varejista",
-          "value": 10651,
-          "display_value": "+10.651"
+          "name": "Atividades de organizações associativas",
+          "value": 10933,
+          "display_value": "+10.933"
         },
         {
-          "name": "Atividades de organizações associativas",
-          "value": 9360,
-          "display_value": "+9.360"
+          "name": "Comércio varejista",
+          "value": 9238,
+          "display_value": "+9.238"
         },
         {
           "name": "Serviços de arquitetura e engenharia, testes e análises técnicas",
-          "value": 7587,
-          "display_value": "+7.587"
+          "value": 7180,
+          "display_value": "+7.180"
         },
         {
           "name": "Alimentação",
-          "value": 6427,
-          "display_value": "+6.427"
+          "value": 6699,
+          "display_value": "+6.699"
         },
         {
           "name": "Serviços especializados para construção",
-          "value": 5580,
-          "display_value": "+5.580"
+          "value": 5782,
+          "display_value": "+5.782"
         }
       ]
     },
@@ -251,29 +251,29 @@
       "tone": "neg",
       "items": [
         {
-          "name": "Atividades dos serviços de tecnologia da informação",
-          "value": -1315,
-          "display_value": "−1.315"
-        },
-        {
-          "name": "Correio e outras atividades de entrega",
-          "value": -825,
-          "display_value": "−825"
-        },
-        {
           "name": "Coleta, tratamento e disposição de resíduos, recuperação de materiais",
-          "value": -699,
-          "display_value": "−699"
+          "value": -807,
+          "display_value": "−807"
+        },
+        {
+          "name": "Atividades dos serviços de tecnologia da informação",
+          "value": -731,
+          "display_value": "−731"
         },
         {
           "name": "Atividades de serviços financeiros",
-          "value": -480,
-          "display_value": "−480"
+          "value": -643,
+          "display_value": "−643"
         },
         {
-          "name": "Fabricação de produtos farmoquímicos e farmacêuticos",
-          "value": -245,
-          "display_value": "−245"
+          "name": "Correio e outras atividades de entrega",
+          "value": -540,
+          "display_value": "−540"
+        },
+        {
+          "name": "Fabricação de coque, de produtos derivados do petróleo e de biocombustíveis",
+          "value": -322,
+          "display_value": "−322"
         }
       ]
     },

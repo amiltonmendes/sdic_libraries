@@ -3,12 +3,12 @@
   "section_id": "emprego",
   "title": "Emprego",
   "source": "Novo CAGED / MTE",
-  "reference": "Abr/2026",
-  "updated_at": "2026-06-22",
+  "reference": "Mai/2026",
+  "updated_at": "2026-07-25",
   "capa_kpi": {
     "id": "capa_emprego",
     "label": "Saldo CAGED 12m",
-    "display_value": "+84.874",
+    "display_value": "+79.026",
     "unit": "vagas",
     "period": "12 meses",
     "delta": {
@@ -38,16 +38,16 @@
     {
       "id": "saldo_mensal",
       "label": "Saldo mensal",
-      "value": 8461,
-      "display_value": "+8.461",
+      "value": 7159,
+      "display_value": "+7.159",
       "unit": "vagas",
-      "period": "Abr/2026"
+      "period": "Mai/2026"
     },
     {
       "id": "saldo_12m",
       "label": "Saldo 12 meses",
-      "value": 84874,
-      "display_value": "+84.874",
+      "value": 79026,
+      "display_value": "+79.026",
       "unit": "vagas",
       "period": "12 meses"
     },
@@ -57,7 +57,7 @@
       "value": 3005986,
       "display_value": "3.006",
       "unit": "mil vínculos",
-      "period": "Abr/2026"
+      "period": "Mai/2026"
     },
     {
       "id": "baixa_intensidade_share",
@@ -65,7 +65,7 @@
       "value": 5.3,
       "display_value": "5,3",
       "unit": "%",
-      "period": "Abr/2026"
+      "period": "Mai/2026"
     }
   ],
   "charts": [
@@ -81,60 +81,60 @@
           "label": "Saldo",
           "points": [
             {
-              "t": 64,
-              "v": 13138
-            },
-            {
               "t": 65,
-              "v": 7408
+              "v": 7409
             },
             {
               "t": 66,
-              "v": 9760
+              "v": 9753
             },
             {
               "t": 67,
-              "v": 11335
+              "v": 11332
             },
             {
               "t": 68,
-              "v": 11543
+              "v": 11532
             },
             {
               "t": 69,
-              "v": 4986
+              "v": 4962
             },
             {
               "t": 70,
-              "v": 8619
+              "v": 8626
             },
             {
               "t": 71,
-              "v": -19874
+              "v": -19882
             },
             {
               "t": 72,
-              "v": 6486
+              "v": 6573
             },
             {
               "t": 73,
-              "v": 7524
+              "v": 7430
             },
             {
               "t": 74,
-              "v": 15488
+              "v": 15525
             },
             {
               "t": 75,
-              "v": 8461
+              "v": 8607
+            },
+            {
+              "t": 76,
+              "v": 7159
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202604",
-          "label": "+8.461 vagas"
+          "t": "202605",
+          "label": "+7.159 vagas"
         }
       ]
     },
@@ -150,12 +150,8 @@
           "label": "Acumulado 12m",
           "points": [
             {
-              "t": "202505",
-              "v": 99745
-            },
-            {
               "t": "202506",
-              "v": 97465
+              "v": 97473
             },
             {
               "t": "202507",
@@ -163,47 +159,51 @@
             },
             {
               "t": "202508",
-              "v": 91834
+              "v": 91832
             },
             {
               "t": "202509",
-              "v": 87957
+              "v": 87943
             },
             {
               "t": "202510",
-              "v": 93567
+              "v": 93528
             },
             {
               "t": "202511",
-              "v": 95108
+              "v": 95075
             },
             {
               "t": "202512",
-              "v": 94394
+              "v": 94353
             },
             {
               "t": "202601",
-              "v": 92747
+              "v": 92791
             },
             {
               "t": "202602",
-              "v": 79113
+              "v": 79061
             },
             {
               "t": "202603",
-              "v": 90915
+              "v": 90903
             },
             {
               "t": "202604",
-              "v": 84878
+              "v": 85011
+            },
+            {
+              "t": "202605",
+              "v": 79033
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202604",
-          "label": "+84.878 vagas"
+          "t": "202605",
+          "label": "+79.033 vagas"
         }
       ]
     }
@@ -218,28 +218,28 @@
       "items": [
         {
           "name": "Atividades de atenção à saúde humana",
-          "value": 10973,
-          "display_value": "+10.973"
+          "value": 11132,
+          "display_value": "+11.132"
         },
         {
           "name": "Serviços de escritório, de apoio administrativo e outros serviços prestados às empresas",
-          "value": 10171,
-          "display_value": "+10.171"
+          "value": 9821,
+          "display_value": "+9.821"
         },
         {
           "name": "Construção de edifícios",
-          "value": 9566,
-          "display_value": "+9.566"
+          "value": 9384,
+          "display_value": "+9.384"
         },
         {
           "name": "Serviços para edifícios e atividades paisagísticas",
-          "value": 7717,
-          "display_value": "+7.717"
+          "value": 7454,
+          "display_value": "+7.454"
         },
         {
           "name": "Comércio varejista",
-          "value": 5214,
-          "display_value": "+5.214"
+          "value": 4724,
+          "display_value": "+4.724"
         }
       ]
     },
@@ -251,29 +251,29 @@
       "tone": "neg",
       "items": [
         {
-          "name": "Fabricação de máquinas, aparelhos e materiais elétricos",
-          "value": -1123,
-          "display_value": "−1.123"
+          "name": "Agricultura, pecuária e serviços relacionados",
+          "value": -1170,
+          "display_value": "−1.170"
         },
         {
-          "name": "Coleta, tratamento e disposição de resíduos, recuperação de materiais",
-          "value": -784,
-          "display_value": "−784"
+          "name": "Fabricação de máquinas, aparelhos e materiais elétricos",
+          "value": -897,
+          "display_value": "−897"
+        },
+        {
+          "name": "Aluguéis não imobiliários e gestão de ativos intangíveis não financeiros",
+          "value": -679,
+          "display_value": "−679"
         },
         {
           "name": "Metalurgia",
-          "value": -594,
-          "display_value": "−594"
-        },
-        {
-          "name": "Armazenamento e atividades auxiliares dos transportes",
-          "value": -541,
-          "display_value": "−541"
+          "value": -585,
+          "display_value": "−585"
         },
         {
           "name": "Produção florestal",
-          "value": -519,
-          "display_value": "−519"
+          "value": -536,
+          "display_value": "−536"
         }
       ]
     },
