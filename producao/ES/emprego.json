@@ -3,12 +3,12 @@
   "section_id": "emprego",
   "title": "Emprego",
   "source": "Novo CAGED / MTE",
-  "reference": "Abr/2026",
-  "updated_at": "2026-06-22",
+  "reference": "Mai/2026",
+  "updated_at": "2026-07-25",
   "capa_kpi": {
     "id": "capa_emprego",
     "label": "Saldo CAGED 12m",
-    "display_value": "+13.414",
+    "display_value": "+15.596",
     "unit": "vagas",
     "period": "12 meses",
     "delta": {
@@ -38,16 +38,16 @@
     {
       "id": "saldo_mensal",
       "label": "Saldo mensal",
-      "value": 3611,
-      "display_value": "+3.611",
+      "value": 9532,
+      "display_value": "+9.532",
       "unit": "vagas",
-      "period": "Abr/2026"
+      "period": "Mai/2026"
     },
     {
       "id": "saldo_12m",
       "label": "Saldo 12 meses",
-      "value": 13414,
-      "display_value": "+13.414",
+      "value": 15596,
+      "display_value": "+15.596",
       "unit": "vagas",
       "period": "12 meses"
     },
@@ -57,7 +57,7 @@
       "value": 1127414,
       "display_value": "1.127",
       "unit": "mil vínculos",
-      "period": "Abr/2026"
+      "period": "Mai/2026"
     },
     {
       "id": "baixa_intensidade_share",
@@ -65,7 +65,7 @@
       "value": 4.9,
       "display_value": "4,9",
       "unit": "%",
-      "period": "Abr/2026"
+      "period": "Mai/2026"
     }
   ],
   "charts": [
@@ -81,60 +81,60 @@
           "label": "Saldo",
           "points": [
             {
-              "t": 64,
-              "v": 7310
-            },
-            {
               "t": 65,
-              "v": -3446
+              "v": -3445
             },
             {
               "t": 66,
-              "v": -2263
+              "v": -2260
             },
             {
               "t": 67,
-              "v": 908
+              "v": 902
             },
             {
               "t": 68,
-              "v": 3795
+              "v": 3793
             },
             {
               "t": 69,
-              "v": -190
+              "v": -189
             },
             {
               "t": 70,
-              "v": 971
+              "v": 974
             },
             {
               "t": 71,
-              "v": -10186
+              "v": -10190
             },
             {
               "t": 72,
-              "v": 2352
+              "v": 2359
             },
             {
               "t": 73,
-              "v": 3102
+              "v": 3107
             },
             {
               "t": 74,
-              "v": 7450
+              "v": 7477
             },
             {
               "t": 75,
-              "v": 3611
+              "v": 3536
+            },
+            {
+              "t": 76,
+              "v": 9532
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202604",
-          "label": "+3.611 vagas"
+          "t": "202605",
+          "label": "+9.532 vagas"
         }
       ]
     },
@@ -150,32 +150,28 @@
           "label": "Acumulado 12m",
           "points": [
             {
-              "t": "202505",
-              "v": 28904
-            },
-            {
               "t": "202506",
-              "v": 25281
+              "v": 25287
             },
             {
               "t": "202507",
-              "v": 23930
+              "v": 23941
             },
             {
               "t": "202508",
-              "v": 22259
+              "v": 22263
             },
             {
               "t": "202509",
-              "v": 20392
+              "v": 20394
             },
             {
               "t": "202510",
-              "v": 15856
+              "v": 15858
             },
             {
               "t": "202511",
-              "v": 16672
+              "v": 16677
             },
             {
               "t": "202512",
@@ -183,27 +179,31 @@
             },
             {
               "t": "202601",
-              "v": 15302
+              "v": 15308
             },
             {
               "t": "202602",
-              "v": 12571
+              "v": 12582
             },
             {
               "t": "202603",
-              "v": 18134
+              "v": 18171
             },
             {
               "t": "202604",
-              "v": 13414
+              "v": 13373
+            },
+            {
+              "t": "202605",
+              "v": 15600
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202604",
-          "label": "+13.414 vagas"
+          "t": "202605",
+          "label": "+15.600 vagas"
         }
       ]
     }
@@ -217,29 +217,29 @@
       "tone": "pos",
       "items": [
         {
-          "name": "Comércio varejista",
-          "value": 2674,
-          "display_value": "+2.674"
+          "name": "Atividades de atenção à saúde humana",
+          "value": 2800,
+          "display_value": "+2.800"
         },
         {
-          "name": "Atividades de atenção à saúde humana",
-          "value": 2565,
-          "display_value": "+2.565"
+          "name": "Comércio varejista",
+          "value": 2357,
+          "display_value": "+2.357"
         },
         {
           "name": "Comércio por atacado, exceto veículos automotores e motocicletas",
-          "value": 1815,
-          "display_value": "+1.815"
+          "value": 1957,
+          "display_value": "+1.957"
         },
         {
           "name": "Comércio e reparação de veículos automotores e motocicletas",
-          "value": 1726,
-          "display_value": "+1.726"
+          "value": 1727,
+          "display_value": "+1.727"
         },
         {
           "name": "Alimentação",
-          "value": 1540,
-          "display_value": "+1.540"
+          "value": 1518,
+          "display_value": "+1.518"
         }
       ]
     },
@@ -251,29 +251,29 @@
       "tone": "neg",
       "items": [
         {
-          "name": "Agricultura, pecuária e serviços relacionados",
-          "value": -2823,
-          "display_value": "−2.823"
-        },
-        {
           "name": "Seleção, agenciamento e locação de mão de obra",
-          "value": -1273,
-          "display_value": "−1.273"
+          "value": -1403,
+          "display_value": "−1.403"
         },
         {
           "name": "Confecção de artigos do vestuário e acessórios",
-          "value": -768,
-          "display_value": "−768"
+          "value": -749,
+          "display_value": "−749"
         },
         {
           "name": "Fabricação de outros equipamentos de transporte, exceto veículos automotores",
-          "value": -524,
-          "display_value": "−524"
+          "value": -546,
+          "display_value": "−546"
         },
         {
-          "name": "Serviços especializados para construção",
-          "value": -494,
-          "display_value": "−494"
+          "name": "Fabricação de máquinas e equipamentos",
+          "value": -483,
+          "display_value": "−483"
+        },
+        {
+          "name": "Produção florestal",
+          "value": -472,
+          "display_value": "−472"
         }
       ]
     },

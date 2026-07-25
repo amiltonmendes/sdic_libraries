@@ -3,12 +3,12 @@
   "section_id": "emprego",
   "title": "Emprego",
   "source": "Novo CAGED / MTE",
-  "reference": "Abr/2026",
-  "updated_at": "2026-06-22",
+  "reference": "Mai/2026",
+  "updated_at": "2026-07-25",
   "capa_kpi": {
     "id": "capa_emprego",
     "label": "Saldo CAGED 12m",
-    "display_value": "+24.125",
+    "display_value": "+22.119",
     "unit": "vagas",
     "period": "12 meses",
     "delta": {
@@ -38,16 +38,16 @@
     {
       "id": "saldo_mensal",
       "label": "Saldo mensal",
-      "value": 186,
-      "display_value": "+186",
+      "value": 1069,
+      "display_value": "+1.069",
       "unit": "vagas",
-      "period": "Abr/2026"
+      "period": "Mai/2026"
     },
     {
       "id": "saldo_12m",
       "label": "Saldo 12 meses",
-      "value": 24125,
-      "display_value": "+24.125",
+      "value": 22119,
+      "display_value": "+22.119",
       "unit": "vagas",
       "period": "12 meses"
     },
@@ -57,7 +57,7 @@
       "value": 1255349,
       "display_value": "1.255",
       "unit": "mil vínculos",
-      "period": "Abr/2026"
+      "period": "Mai/2026"
     },
     {
       "id": "baixa_intensidade_share",
@@ -65,7 +65,7 @@
       "value": 6.9,
       "display_value": "6,9",
       "unit": "%",
-      "period": "Abr/2026"
+      "period": "Mai/2026"
     }
   ],
   "charts": [
@@ -81,60 +81,60 @@
           "label": "Saldo",
           "points": [
             {
-              "t": 64,
-              "v": 3194
-            },
-            {
               "t": 65,
-              "v": 9408
+              "v": 9411
             },
             {
               "t": 66,
-              "v": 9660
+              "v": 9659
             },
             {
               "t": 67,
-              "v": 2732
+              "v": 2728
             },
             {
               "t": 68,
-              "v": 3777
+              "v": 3774
             },
             {
               "t": 69,
-              "v": -1615
+              "v": -1608
             },
             {
               "t": 70,
-              "v": -5922
+              "v": -5921
             },
             {
               "t": 71,
-              "v": -19292
+              "v": -19308
             },
             {
               "t": 72,
-              "v": 18967
+              "v": 18963
             },
             {
               "t": 73,
-              "v": 4881
+              "v": 4863
             },
             {
               "t": 74,
-              "v": -1851
+              "v": -1802
             },
             {
               "t": 75,
-              "v": 186
+              "v": 291
+            },
+            {
+              "t": 76,
+              "v": 1069
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202604",
-          "label": "+186 vagas"
+          "t": "202605",
+          "label": "+1.069 vagas"
         }
       ]
     },
@@ -150,60 +150,60 @@
           "label": "Acumulado 12m",
           "points": [
             {
-              "t": "202505",
-              "v": 26069
-            },
-            {
               "t": "202506",
-              "v": 25760
+              "v": 25774
             },
             {
               "t": "202507",
-              "v": 29588
+              "v": 29601
             },
             {
               "t": "202508",
-              "v": 28530
+              "v": 28539
             },
             {
               "t": "202509",
-              "v": 30506
+              "v": 30511
             },
             {
               "t": "202510",
-              "v": 29083
+              "v": 29094
             },
             {
               "t": "202511",
-              "v": 31061
+              "v": 31073
             },
             {
               "t": "202512",
-              "v": 31629
+              "v": 31623
             },
             {
               "t": "202601",
-              "v": 30657
+              "v": 30647
             },
             {
               "t": "202602",
-              "v": 25684
+              "v": 25653
             },
             {
               "t": "202603",
-              "v": 27158
+              "v": 27175
             },
             {
               "t": "202604",
-              "v": 24111
+              "v": 24233
+            },
+            {
+              "t": "202605",
+              "v": 22114
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202604",
-          "label": "+24.111 vagas"
+          "t": "202605",
+          "label": "+22.114 vagas"
         }
       ]
     }
@@ -217,29 +217,29 @@
       "tone": "pos",
       "items": [
         {
-          "name": "Agricultura, pecuária e serviços relacionados",
-          "value": 3497,
-          "display_value": "+3.497"
-        },
-        {
           "name": "Atividades de atenção à saúde humana",
-          "value": 2341,
-          "display_value": "+2.341"
+          "value": 2510,
+          "display_value": "+2.510"
         },
         {
-          "name": "Seleção, agenciamento e locação de mão de obra",
-          "value": 2207,
-          "display_value": "+2.207"
-        },
-        {
-          "name": "Fabricação de produtos alimentícios",
-          "value": 2015,
-          "display_value": "+2.015"
+          "name": "Agricultura, pecuária e serviços relacionados",
+          "value": 2347,
+          "display_value": "+2.347"
         },
         {
           "name": "Comércio varejista",
-          "value": 1901,
-          "display_value": "+1.901"
+          "value": 2319,
+          "display_value": "+2.319"
+        },
+        {
+          "name": "Seleção, agenciamento e locação de mão de obra",
+          "value": 2210,
+          "display_value": "+2.210"
+        },
+        {
+          "name": "Fabricação de produtos alimentícios",
+          "value": 1799,
+          "display_value": "+1.799"
         }
       ]
     },
@@ -252,28 +252,28 @@
       "items": [
         {
           "name": "Administração pública, defesa e seguridade social",
-          "value": -1248,
-          "display_value": "−1.248"
-        },
-        {
-          "name": "Obras de infraestrutura",
-          "value": -391,
-          "display_value": "−391"
+          "value": -1269,
+          "display_value": "−1.269"
         },
         {
           "name": "Fabricação de produtos químicos",
-          "value": -318,
-          "display_value": "−318"
+          "value": -320,
+          "display_value": "−320"
+        },
+        {
+          "name": "Obras de infraestrutura",
+          "value": -299,
+          "display_value": "−299"
         },
         {
           "name": "Extração de minerais não metálicos",
-          "value": -224,
-          "display_value": "−224"
+          "value": -230,
+          "display_value": "−230"
         },
         {
-          "name": "Armazenamento e atividades auxiliares dos transportes",
-          "value": -217,
-          "display_value": "−217"
+          "name": "Atividades imobiliárias",
+          "value": -139,
+          "display_value": "−139"
         }
       ]
     },
