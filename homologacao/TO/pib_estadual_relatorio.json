@@ -1,0 +1,492 @@
+{
+  "schema_version": "relatorio_v1",
+  "section_id": "pib_estadual",
+  "title": "PIB Estadual — dados para relatórios",
+  "source": "Contas Regionais e PIA / IBGE",
+  "reference": "2023",
+  "updated_at": "2026-07-30",
+  "composicao_serie": {
+    "id": "composicao_serie",
+    "title": "Evolução da composição setorial do VAB",
+    "type": "line",
+    "unit": "%",
+    "series": [
+      {
+        "id": "pct_agro",
+        "label": "Agropecuária",
+        "points": [
+          {
+            "t": 2010,
+            "v": 11.7
+          },
+          {
+            "t": 2011,
+            "v": 12.7
+          },
+          {
+            "t": 2012,
+            "v": 12.5
+          },
+          {
+            "t": 2013,
+            "v": 12.5
+          },
+          {
+            "t": 2014,
+            "v": 13.9
+          },
+          {
+            "t": 2015,
+            "v": 13.0
+          },
+          {
+            "t": 2016,
+            "v": 12.7
+          },
+          {
+            "t": 2017,
+            "v": 13.5
+          },
+          {
+            "t": 2018,
+            "v": 13.1
+          },
+          {
+            "t": 2019,
+            "v": 14.2
+          },
+          {
+            "t": 2020,
+            "v": 20.3
+          },
+          {
+            "t": 2021,
+            "v": 28.6
+          },
+          {
+            "t": 2022,
+            "v": 23.8
+          },
+          {
+            "t": 2023,
+            "v": 23.7
+          }
+        ]
+      },
+      {
+        "id": "pct_industria",
+        "label": "Indústria",
+        "points": [
+          {
+            "t": 2010,
+            "v": 21.0
+          },
+          {
+            "t": 2011,
+            "v": 19.4
+          },
+          {
+            "t": 2012,
+            "v": 18.5
+          },
+          {
+            "t": 2013,
+            "v": 16.6
+          },
+          {
+            "t": 2014,
+            "v": 15.8
+          },
+          {
+            "t": 2015,
+            "v": 14.5
+          },
+          {
+            "t": 2016,
+            "v": 13.3
+          },
+          {
+            "t": 2017,
+            "v": 14.7
+          },
+          {
+            "t": 2018,
+            "v": 12.3
+          },
+          {
+            "t": 2019,
+            "v": 11.9
+          },
+          {
+            "t": 2020,
+            "v": 11.2
+          },
+          {
+            "t": 2021,
+            "v": 10.7
+          },
+          {
+            "t": 2022,
+            "v": 12.4
+          },
+          {
+            "t": 2023,
+            "v": 13.4
+          }
+        ]
+      },
+      {
+        "id": "pct_servicos",
+        "label": "Serviços",
+        "points": [
+          {
+            "t": 2010,
+            "v": 28.3
+          },
+          {
+            "t": 2011,
+            "v": 27.1
+          },
+          {
+            "t": 2012,
+            "v": 27.1
+          },
+          {
+            "t": 2013,
+            "v": 28.7
+          },
+          {
+            "t": 2014,
+            "v": 29.5
+          },
+          {
+            "t": 2015,
+            "v": 31.9
+          },
+          {
+            "t": 2016,
+            "v": 31.5
+          },
+          {
+            "t": 2017,
+            "v": 31.2
+          },
+          {
+            "t": 2018,
+            "v": 31.2
+          },
+          {
+            "t": 2019,
+            "v": 31.7
+          },
+          {
+            "t": 2020,
+            "v": 29.4
+          },
+          {
+            "t": 2021,
+            "v": 24.9
+          },
+          {
+            "t": 2022,
+            "v": 27.5
+          },
+          {
+            "t": 2023,
+            "v": 25.8
+          }
+        ]
+      },
+      {
+        "id": "pct_apu",
+        "label": "Administração pública",
+        "points": [
+          {
+            "t": 2010,
+            "v": 30.3
+          },
+          {
+            "t": 2011,
+            "v": 32.0
+          },
+          {
+            "t": 2012,
+            "v": 31.2
+          },
+          {
+            "t": 2013,
+            "v": 32.3
+          },
+          {
+            "t": 2014,
+            "v": 31.1
+          },
+          {
+            "t": 2015,
+            "v": 30.4
+          },
+          {
+            "t": 2016,
+            "v": 31.7
+          },
+          {
+            "t": 2017,
+            "v": 29.6
+          },
+          {
+            "t": 2018,
+            "v": 31.2
+          },
+          {
+            "t": 2019,
+            "v": 30.8
+          },
+          {
+            "t": 2020,
+            "v": 28.9
+          },
+          {
+            "t": 2021,
+            "v": 26.5
+          },
+          {
+            "t": 2022,
+            "v": 26.9
+          },
+          {
+            "t": 2023,
+            "v": 26.7
+          }
+        ]
+      }
+    ]
+  },
+  "componentes_industriais": {
+    "id": "componentes_industriais",
+    "title": "Componentes do VAB industrial",
+    "unit": "bilhões de reais",
+    "items": [
+      {
+        "name": "Indústria de transformação",
+        "value": 3.3,
+        "display_value": "R$ 3,3 bi",
+        "pct_vab_industrial": 42.0,
+        "pct_vab_estadual": 5.6
+      },
+      {
+        "name": "Construção",
+        "value": 2.19,
+        "display_value": "R$ 2,2 bi",
+        "pct_vab_industrial": 27.9,
+        "pct_vab_estadual": 3.8
+      },
+      {
+        "name": "SIUP (eletricidade, gás e água)",
+        "value": 1.98,
+        "display_value": "R$ 2,0 bi",
+        "pct_vab_industrial": 25.1,
+        "pct_vab_estadual": 3.4
+      },
+      {
+        "name": "Indústria extrativa",
+        "value": 0.4,
+        "display_value": "R$ 0,4 bi",
+        "pct_vab_industrial": 5.0,
+        "pct_vab_estadual": 0.7
+      }
+    ]
+  },
+  "top_setores": {
+    "id": "top_setores",
+    "title": "Principais setores no PIB industrial",
+    "dimension_label": "Participação no VAB industrial",
+    "unit": "",
+    "items": [
+      {
+        "name": "Construção civil",
+        "value": 27.89,
+        "display_value": "27,9%",
+        "pct_vab_estadual": 3.75
+      },
+      {
+        "name": "SIUP (eletricidade, gás e água)",
+        "value": 25.11,
+        "display_value": "25,1%",
+        "pct_vab_estadual": 3.38
+      },
+      {
+        "name": "Fabricação de produtos alimentícios",
+        "value": 23.9,
+        "display_value": "23,9%",
+        "pct_vab_estadual": 3.214
+      },
+      {
+        "name": "Fabricação de produtos de minerais não metálicos",
+        "value": 6.43,
+        "display_value": "6,4%",
+        "pct_vab_estadual": 0.865
+      },
+      {
+        "name": "Ind. extrativa mineral",
+        "value": 5.04,
+        "display_value": "5,0%",
+        "pct_vab_estadual": 0.68
+      }
+    ]
+  },
+  "intensidade_tecnologica": {
+    "id": "intensidade_tecnologica",
+    "title": "Intensidade tecnológica da indústria de transformação",
+    "unit": "bilhões de reais",
+    "items": [
+      {
+        "name": "Média-Alta Intensidade Tecnológica",
+        "value": 0.29,
+        "display_value": "R$ 0,3 bi",
+        "pct_transformacao": 7.92,
+        "pct_vab_estadual": 0.447
+      },
+      {
+        "name": "Média-Baixa Intensidade Tecnológica",
+        "value": 1.01,
+        "display_value": "R$ 1,0 bi",
+        "pct_transformacao": 27.17,
+        "pct_vab_estadual": 1.533
+      },
+      {
+        "name": "Baixa Intensidade Tecnológica",
+        "value": 2.42,
+        "display_value": "R$ 2,4 bi",
+        "pct_transformacao": 64.92,
+        "pct_vab_estadual": 3.663
+      }
+    ]
+  },
+  "vti_divisoes_cnae": {
+    "id": "vti_divisoes_cnae",
+    "title": "VTI por divisão CNAE da indústria de transformação",
+    "dimension_label": "Valor da Transformação Industrial",
+    "unit": "bilhões de reais",
+    "items": [
+      {
+        "name": "10 — Fabricação de produtos alimentícios",
+        "cnae_divisao": "10",
+        "value": 2.309,
+        "display_value": "R$ 2,3 bi",
+        "pct_transformacao": 56.97
+      },
+      {
+        "name": "23 — Fabricação de produtos de minerais não metálicos",
+        "cnae_divisao": "23",
+        "value": 0.622,
+        "display_value": "R$ 0,6 bi",
+        "pct_transformacao": 15.34
+      },
+      {
+        "name": "20 — Fabricação de produtos químicos",
+        "cnae_divisao": "20",
+        "value": 0.268,
+        "display_value": "R$ 0,3 bi",
+        "pct_transformacao": 6.6
+      },
+      {
+        "name": "24 — Metalurgia",
+        "cnae_divisao": "24",
+        "value": 0.209,
+        "display_value": "R$ 0,2 bi",
+        "pct_transformacao": 5.16
+      },
+      {
+        "name": "25 — Fabricação de produtos de metal, exceto máquinas e equipamentos",
+        "cnae_divisao": "25",
+        "value": 0.095,
+        "display_value": "R$ 0,1 bi",
+        "pct_transformacao": 2.35
+      },
+      {
+        "name": "33 — Manutenção, reparação e instalação de máquinas e equipamentos",
+        "cnae_divisao": "33",
+        "value": 0.065,
+        "display_value": "R$ 0,1 bi",
+        "pct_transformacao": 1.6
+      },
+      {
+        "name": "15 — Preparação de couros e fabricação de artefatos de couro",
+        "cnae_divisao": "15",
+        "value": 0.027,
+        "display_value": "R$ 0,0 bi",
+        "pct_transformacao": 0.66
+      },
+      {
+        "name": "32 — Fabricação de produtos diversos",
+        "cnae_divisao": "32",
+        "value": 0.026,
+        "display_value": "R$ 0,0 bi",
+        "pct_transformacao": 0.64
+      },
+      {
+        "name": "29 — Fabricação de veículos automotores, reboques e carrocerias",
+        "cnae_divisao": "29",
+        "value": 0.025,
+        "display_value": "R$ 0,0 bi",
+        "pct_transformacao": 0.61
+      },
+      {
+        "name": "22 — Fabricação de produtos de borracha e de material plástico",
+        "cnae_divisao": "22",
+        "value": 0.022,
+        "display_value": "R$ 0,0 bi",
+        "pct_transformacao": 0.53
+      },
+      {
+        "name": "31 — Fabricação de móveis",
+        "cnae_divisao": "31",
+        "value": 0.016,
+        "display_value": "R$ 0,0 bi",
+        "pct_transformacao": 0.4
+      },
+      {
+        "name": "16 — Fabricação de produtos de madeira",
+        "cnae_divisao": "16",
+        "value": 0.013,
+        "display_value": "R$ 0,0 bi",
+        "pct_transformacao": 0.31
+      },
+      {
+        "name": "14 — Confecção de artigos do vestuário e acessórios",
+        "cnae_divisao": "14",
+        "value": 0.013,
+        "display_value": "R$ 0,0 bi",
+        "pct_transformacao": 0.31
+      },
+      {
+        "name": "18 — Impressão e reprodução de gravações",
+        "cnae_divisao": "18",
+        "value": 0.01,
+        "display_value": "R$ 0,0 bi",
+        "pct_transformacao": 0.23
+      },
+      {
+        "name": "11 — Fabricação de bebidas",
+        "cnae_divisao": "11",
+        "value": 0.004,
+        "display_value": "R$ 0,0 bi",
+        "pct_transformacao": 0.11
+      },
+      {
+        "name": "28 — Fabricação de máquinas e equipamentos",
+        "cnae_divisao": "28",
+        "value": 0.003,
+        "display_value": "R$ 0,0 bi",
+        "pct_transformacao": 0.07
+      },
+      {
+        "name": "13 — Fabricação de produtos têxteis",
+        "cnae_divisao": "13",
+        "value": 0.002,
+        "display_value": "R$ 0,0 bi",
+        "pct_transformacao": 0.04
+      }
+    ]
+  }
+}

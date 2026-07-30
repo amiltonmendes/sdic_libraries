@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.1",
+  "section_id": "pib_estadual",
+  "title": "PIB Estadual",
+  "source": "Contas Regionais e PIA / IBGE",
+  "reference": "2023",
+  "updated_at": "2026-07-30",
+  "capa_kpi": {
+    "id": "capa_pib_estadual",
+    "label": "PIB total",
+    "display_value": "R$ 591,7 bi",
+    "unit": "",
+    "period": "2023",
+    "delta": {
+      "dir": "up",
+      "label": "indústria 28,3%"
+    }
+  },
+  "story": {
+    "headline": "PIB estadual soma {{kpis[pib_total].display_value}} {{kpis[pib_total].unit}}.",
+    "lede": "Dados de Contas Regionais do IBGE (PIB a preços correntes), com a participação dos principais setores industriais detalhada a partir da Pesquisa Industrial Anual (PIA/IBGE).",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "Serviços participam com {{kpis[part_serv].display_value}}% do PIB."
+      },
+      {
+        "tone": "neutral",
+        "text": "Indústria representa {{kpis[part_ind].display_value}}% do valor adicionado."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "pib_total",
+      "label": "PIB total",
+      "value": 591.7086926152247,
+      "display_value": "591,7",
+      "unit": "bilhões de reais",
+      "period": "2023"
+    },
+    {
+      "id": "part_serv",
+      "label": "Participação serviços",
+      "value": 32.3,
+      "display_value": "32,3",
+      "unit": "%",
+      "period": "2023"
+    },
+    {
+      "id": "part_ind",
+      "label": "Participação indústria",
+      "value": 28.3,
+      "display_value": "28,3",
+      "unit": "%",
+      "period": "2023"
+    }
+  ],
+  "charts": [
+    {
+      "id": "pib_serie",
+      "type": "line",
+      "title": "Série PIB estadual",
+      "subtitle": "Produto Interno Bruto a preços correntes",
+      "unit": "bilhões de reais",
+      "series": [
+        {
+          "id": "pib",
+          "label": "PIB",
+          "points": [
+            {
+              "t": 2010,
+              "v": 192.9
+            },
+            {
+              "t": 2011,
+              "v": 218.9
+            },
+            {
+              "t": 2012,
+              "v": 242.9
+            },
+            {
+              "t": 2013,
+              "v": 287.7
+            },
+            {
+              "t": 2014,
+              "v": 301.1
+            },
+            {
+              "t": 2015,
+              "v": 326.6
+            },
+            {
+              "t": 2016,
+              "v": 351.3
+            },
+            {
+              "t": 2017,
+              "v": 366.0
+            },
+            {
+              "t": 2018,
+              "v": 382.6
+            },
+            {
+              "t": 2019,
+              "v": 405.6
+            },
+            {
+              "t": 2020,
+              "v": 426.4
+            },
+            {
+              "t": 2021,
+              "v": 474.6
+            },
+            {
+              "t": 2022,
+              "v": 537.7
+            },
+            {
+              "t": 2023,
+              "v": 591.7
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "t": 2023,
+          "label": "R$ 591,7 bi"
+        }
+      ]
+    }
+  ],
+  "ranked_lists": [],
+  "breakdowns": [
+    {
+      "id": "industria_subsetores",
+      "title": "Principais setores industriais",
+      "dimension_label": "Participação no PIB industrial",
+      "unit": "",
+      "acumulado": 67.8,
+      "items": [
+        {
+          "name": "Fabricação de produtos alimentícios",
+          "value": 20.16,
+          "display_value": "20,2%",
+          "share": null
+        },
+        {
+          "name": "Construção",
+          "value": 13.69,
+          "display_value": "13,7%",
+          "share": null
+        },
+        {
+          "name": "SIUP (eletricidade, gás e água)",
+          "value": 13.39,
+          "display_value": "13,4%",
+          "share": null
+        },
+        {
+          "name": "Fabricação de coque, de produtos derivados do petróleo e de biocombustíveis",
+          "value": 9.38,
+          "display_value": "9,4%",
+          "share": null
+        },
+        {
+          "name": "Fabricação de veículos automotores, reboques e carrocerias",
+          "value": 5.92,
+          "display_value": "5,9%",
+          "share": null
+        },
+        {
+          "name": "Fabricação de máquinas e equipamentos",
+          "value": 5.22,
+          "display_value": "5,2%",
+          "share": null
+        }
+      ]
+    }
+  ]
+}
