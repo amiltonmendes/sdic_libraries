@@ -1,0 +1,340 @@
+{
+  "schema_version": "relatorio_v1",
+  "section_id": "producao_industrial",
+  "title": "Produção Industrial — dados para relatórios",
+  "source": "PIM-PF (T.8888) e PIA (T.1849) / IBGE",
+  "reference": "2026-05-01",
+  "updated_at": "2026-07-30",
+  "uf": "GO",
+  "cobertura_pimpf": true,
+  "serie_indice": {
+    "id": "indice_producao",
+    "title": "Produção física industrial — número-índice",
+    "unit": "índice (2022 = 100)",
+    "series": {
+      "mes_data": ["2021-05-01", "2021-06-01", "2021-07-01", "2021-08-01", "2021-09-01", "2021-10-01", "2021-11-01", "2021-12-01", "2022-01-01", "2022-02-01", "2022-03-01", "2022-04-01", "2022-05-01", "2022-06-01", "2022-07-01", "2022-08-01", "2022-09-01", "2022-10-01", "2022-11-01", "2022-12-01", "2023-01-01", "2023-02-01", "2023-03-01", "2023-04-01", "2023-05-01", "2023-06-01", "2023-07-01", "2023-08-01", "2023-09-01", "2023-10-01", "2023-11-01", "2023-12-01", "2024-01-01", "2024-02-01", "2024-03-01", "2024-04-01", "2024-05-01", "2024-06-01", "2024-07-01", "2024-08-01", "2024-09-01", "2024-10-01", "2024-11-01", "2024-12-01", "2025-01-01", "2025-02-01", "2025-03-01", "2025-04-01", "2025-05-01", "2025-06-01", "2025-07-01", "2025-08-01", "2025-09-01", "2025-10-01", "2025-11-01", "2025-12-01", "2026-01-01", "2026-02-01", "2026-03-01", "2026-04-01", "2026-05-01"],
+      "brasil": [102.96, 102.41, 107.53, 108.81, 106.61, 104.57, 100.56, 92.3, 90.13, 89.77, 98.37, 94.63, 102.66, 101.8, 107.15, 110.72, 105.57, 105.86, 101.38, 91.95, 90.4, 87.43, 99.39, 92.04, 104.74, 101.89, 105.51, 111.27, 106.28, 107.01, 102.82, 92.73, 93.75, 92.36, 96.5, 99.72, 103.51, 105.19, 111.98, 113.83, 109.75, 113.57, 104.62, 94.03, 94.98, 93.5, 99.89, 99.26, 107, 103.78, 112.26, 112.98, 111.93, 113.1, 103.14, 93.9, 95.21, 92.81, 104.3, 101.98, 107.25],
+      "uf": [117.36, 120, 130.96, 133.29, 121.94, 106.68, 83.99, 78.83, 75.61, 78.63, 87.73, 86.52, 110.56, 113.43, 122.68, 128.27, 122.76, 104.13, 90.08, 79.6, 78.15, 76.1, 83.39, 84.92, 111.05, 120.53, 129.34, 136.57, 131.56, 118.49, 106.22, 95.3, 88.18, 86.06, 88.85, 94.01, 120, 118.77, 128.34, 132.41, 132.46, 121.03, 104.02, 92.74, 88.4, 87.29, 87.94, 97.95, 121.93, 119.44, 131.21, 136.11, 137.69, 134.9, 105.31, 92.62, 84.53, 82.86, 94.41, 103.53, 126.74]
+    }
+  },
+  "variacoes": [
+    {
+      "id": "11602",
+      "label": "PIMPF - Variação mês/mesmo mês do ano anterior (M/M-12)",
+      "reference": "2026-05-01",
+      "value": 3.9,
+      "display_value": "3.9%",
+      "unit": "%"
+    },
+    {
+      "id": "11603",
+      "label": "PIMPF - Variação acumulada no ano (em relação ao mesmo período do ano anterior)",
+      "reference": "2026-05-01",
+      "value": 1.8,
+      "display_value": "1.8%",
+      "unit": "%"
+    },
+    {
+      "id": "11604",
+      "label": "PIMPF - Variação acumulada em 12 meses (em relação ao período anterior de 12 meses)",
+      "reference": "2026-05-01",
+      "value": 2.7,
+      "display_value": "2.7%",
+      "unit": "%"
+    }
+  ],
+  "atividades_12m": [
+    {
+      "id": "atividades_12m",
+      "title": "Atividades industriais — variação acumulada em 12 meses",
+      "dimension_label": "Variação em 12 meses",
+      "unit": "%",
+      "reference": "2026-05-01",
+      "items": [
+        {
+          "name": "Fabricação de veículos automotores, reboques e carrocerias",
+          "value": 18.9,
+          "display_value": "18.9%"
+        },
+        {
+          "name": "Fabricação de produtos farmoquímicos e farmacêuticos",
+          "value": 10.8,
+          "display_value": "10.8%"
+        },
+        {
+          "name": "Fabricação de coque, de produtos derivados do petróleo e de biocombustíveis",
+          "value": 8.9,
+          "display_value": "8.9%"
+        },
+        {
+          "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
+          "value": 7.4,
+          "display_value": "7.4%"
+        },
+        {
+          "name": "Indústrias extrativas",
+          "value": 5,
+          "display_value": "5.0%"
+        },
+        {
+          "name": "Fabricação de celulose, papel e produtos de papel",
+          "value": 3.5,
+          "display_value": "3.5%"
+        },
+        {
+          "name": "Indústrias de transformação",
+          "value": 2.7,
+          "display_value": "2.7%"
+        },
+        {
+          "name": "Fabricação de produtos alimentícios",
+          "value": 2.6,
+          "display_value": "2.6%"
+        },
+        {
+          "name": "Confecção de artigos do vestuário e acessórios",
+          "value": 0.8,
+          "display_value": "0.8%"
+        },
+        {
+          "name": "Metalurgia",
+          "value": -0.6,
+          "display_value": "-0.6%"
+        },
+        {
+          "name": "Fabricação de produtos químicos",
+          "value": -5.1,
+          "display_value": "-5.1%"
+        },
+        {
+          "name": "Fabricação de bebidas",
+          "value": -5.9,
+          "display_value": "-5.9%"
+        },
+        {
+          "name": "Fabricação de produtos de minerais não metálicos",
+          "value": -12.7,
+          "display_value": "-12.7%"
+        },
+        {
+          "name": "Fabricação de máquinas e equipamentos",
+          "value": -22,
+          "display_value": "-22.0%"
+        }
+      ]
+    }
+  ],
+  "ano_ref_pia": 2023,
+  "vti_divisoes": [
+    {
+      "cnae": "Total",
+      "name": "Total",
+      "share": 1,
+      "display_value": "100.0%",
+      "vti": 64250104
+    },
+    {
+      "cnae": "C",
+      "name": "Indústrias de transformação",
+      "share": 0.9577,
+      "display_value": "95.8%",
+      "vti": 61533573
+    },
+    {
+      "cnae": "10",
+      "name": "Fabricação de produtos alimentícios",
+      "share": 0.4617,
+      "display_value": "46.2%",
+      "vti": 29662253
+    },
+    {
+      "cnae": "19",
+      "name": "Fabricação de coque, de produtos derivados do petróleo e de biocombustíveis",
+      "share": 0.1163,
+      "display_value": "11.6%",
+      "vti": 7471707
+    },
+    {
+      "cnae": "20",
+      "name": "Fabricação de produtos químicos",
+      "share": 0.0553,
+      "display_value": "5.5%",
+      "vti": 3553328
+    },
+    {
+      "cnae": "21",
+      "name": "Fabricação de produtos farmoquímicos e farmacêuticos",
+      "share": 0.0482,
+      "display_value": "4.8%",
+      "vti": 3095103
+    },
+    {
+      "cnae": "B",
+      "name": "Indústrias extrativas",
+      "share": 0.0423,
+      "display_value": "4.2%",
+      "vti": 2716531
+    },
+    {
+      "cnae": "11",
+      "name": "Fabricação de bebidas",
+      "share": 0.0345,
+      "display_value": "3.5%",
+      "vti": 2214610
+    },
+    {
+      "cnae": "29",
+      "name": "Fabricação de veículos automotores, reboques e carrocerias",
+      "share": 0.033,
+      "display_value": "3.3%",
+      "vti": 2122991
+    },
+    {
+      "cnae": "23",
+      "name": "Fabricação de produtos de minerais não-metálicos",
+      "share": 0.0322,
+      "display_value": "3.2%",
+      "vti": 2068024
+    },
+    {
+      "cnae": "25",
+      "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
+      "share": 0.0309,
+      "display_value": "3.1%",
+      "vti": 1983328
+    },
+    {
+      "cnae": "08",
+      "name": "Extração de minerais não-metálicos",
+      "share": 0.0253,
+      "display_value": "2.5%",
+      "vti": 1626761
+    },
+    {
+      "cnae": "24",
+      "name": "Metalurgia",
+      "share": 0.0232,
+      "display_value": "2.3%",
+      "vti": 1489242
+    },
+    {
+      "cnae": "14",
+      "name": "Confecção de artigos do vestuário e acessórios",
+      "share": 0.0211,
+      "display_value": "2.1%",
+      "vti": 1352678
+    },
+    {
+      "cnae": "28",
+      "name": "Fabricação de máquinas e equipamentos",
+      "share": 0.0177,
+      "display_value": "1.8%",
+      "vti": 1135435
+    },
+    {
+      "cnae": "17",
+      "name": "Fabricação de celulose, papel e produtos de papel",
+      "share": 0.0158,
+      "display_value": "1.6%",
+      "vti": 1017419
+    },
+    {
+      "cnae": "07",
+      "name": "Extração de minerais metálicos",
+      "share": 0.0148,
+      "display_value": "1.5%",
+      "vti": 950482
+    },
+    {
+      "cnae": "33",
+      "name": "Manutenção, reparação e instalação de máquinas e equipamentos",
+      "share": 0.0117,
+      "display_value": "1.2%",
+      "vti": 754119
+    },
+    {
+      "cnae": "31",
+      "name": "Fabricação de móveis",
+      "share": 0.0116,
+      "display_value": "1.2%",
+      "vti": 742158
+    },
+    {
+      "cnae": "22",
+      "name": "Fabricação de produtos de borracha e de material plástico",
+      "share": 0.0112,
+      "display_value": "1.1%",
+      "vti": 717312
+    },
+    {
+      "cnae": "15",
+      "name": "Preparação de couros e fabricação de artefatos de couro, artigos para viagem e calçados",
+      "share": 0.0111,
+      "display_value": "1.1%",
+      "vti": 714849
+    },
+    {
+      "cnae": "32",
+      "name": "Fabricação de produtos diversos",
+      "share": 0.0076,
+      "display_value": "0.8%",
+      "vti": 487634
+    },
+    {
+      "cnae": "27",
+      "name": "Fabricação de máquinas, aparelhos e materiais elétricos",
+      "share": 0.0054,
+      "display_value": "0.5%",
+      "vti": 348451
+    },
+    {
+      "cnae": "16",
+      "name": "Fabricação de produtos de madeira",
+      "share": 0.0033,
+      "display_value": "0.3%",
+      "vti": 210372
+    },
+    {
+      "cnae": "18",
+      "name": "Impressão e reprodução de gravações",
+      "share": 0.0031,
+      "display_value": "0.3%",
+      "vti": 202230
+    },
+    {
+      "cnae": "09",
+      "name": "Atividades de apoio à extração de minerais",
+      "share": 0.0022,
+      "display_value": "0.2%",
+      "vti": 139288
+    },
+    {
+      "cnae": "13",
+      "name": "Fabricação de produtos têxteis",
+      "share": 0.0019,
+      "display_value": "0.2%",
+      "vti": 125056
+    },
+    {
+      "cnae": "26",
+      "name": "Fabricação de equipamentos de informática, produtos eletrônicos e ópticos",
+      "share": 0.0008,
+      "display_value": "0.1%",
+      "vti": 48279
+    },
+    {
+      "cnae": "12",
+      "name": "Fabricação de produtos do fumo",
+      "share": 0.0001,
+      "display_value": "0.0%",
+      "vti": 8106
+    },
+    {
+      "cnae": "30",
+      "name": "Fabricação de outros equipamentos de transporte, exceto veículos automotores",
+      "share": 0.0001,
+      "display_value": "0.0%",
+      "vti": 8889
+    }
+  ]
+}

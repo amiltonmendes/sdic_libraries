@@ -1,0 +1,323 @@
+{
+  "schema_version": "relatorio_v1",
+  "section_id": "producao_industrial",
+  "title": "Produção Industrial — dados para relatórios",
+  "source": "PIM-PF (T.8888) e PIA (T.1849) / IBGE",
+  "reference": "2026-05-01",
+  "updated_at": "2026-07-30",
+  "uf": "CE",
+  "cobertura_pimpf": true,
+  "serie_indice": {
+    "id": "indice_producao",
+    "title": "Produção física industrial — número-índice",
+    "unit": "índice (2022 = 100)",
+    "series": {
+      "mes_data": ["2021-05-01", "2021-06-01", "2021-07-01", "2021-08-01", "2021-09-01", "2021-10-01", "2021-11-01", "2021-12-01", "2022-01-01", "2022-02-01", "2022-03-01", "2022-04-01", "2022-05-01", "2022-06-01", "2022-07-01", "2022-08-01", "2022-09-01", "2022-10-01", "2022-11-01", "2022-12-01", "2023-01-01", "2023-02-01", "2023-03-01", "2023-04-01", "2023-05-01", "2023-06-01", "2023-07-01", "2023-08-01", "2023-09-01", "2023-10-01", "2023-11-01", "2023-12-01", "2024-01-01", "2024-02-01", "2024-03-01", "2024-04-01", "2024-05-01", "2024-06-01", "2024-07-01", "2024-08-01", "2024-09-01", "2024-10-01", "2024-11-01", "2024-12-01", "2025-01-01", "2025-02-01", "2025-03-01", "2025-04-01", "2025-05-01", "2025-06-01", "2025-07-01", "2025-08-01", "2025-09-01", "2025-10-01", "2025-11-01", "2025-12-01", "2026-01-01", "2026-02-01", "2026-03-01", "2026-04-01", "2026-05-01"],
+      "brasil": [102.96, 102.41, 107.53, 108.81, 106.61, 104.57, 100.56, 92.3, 90.13, 89.77, 98.37, 94.63, 102.66, 101.8, 107.15, 110.72, 105.57, 105.86, 101.38, 91.95, 90.4, 87.43, 99.39, 92.04, 104.74, 101.89, 105.51, 111.27, 106.28, 107.01, 102.82, 92.73, 93.75, 92.36, 96.5, 99.72, 103.51, 105.19, 111.98, 113.83, 109.75, 113.57, 104.62, 94.03, 94.98, 93.5, 99.89, 99.26, 107, 103.78, 112.26, 112.98, 111.93, 113.1, 103.14, 93.9, 95.21, 92.81, 104.3, 101.98, 107.25],
+      "uf": [93.85, 101.88, 108.83, 116.69, 112.52, 119.07, 116.39, 96.96, 91.25, 91.11, 95.82, 92.24, 102.29, 105.31, 100.46, 112.99, 112.67, 102.6, 103.86, 89.4, 93.1, 83.13, 96.74, 85.01, 94.23, 90.54, 94.9, 98.34, 99.44, 105.83, 104.7, 94.9, 97.06, 95.19, 97.51, 95.35, 96.77, 99.48, 104.72, 115.42, 105.76, 114.84, 110.17, 87.12, 97.13, 94.78, 95.39, 90.78, 101.17, 99.64, 105.46, 109.91, 111.29, 115.6, 105.69, 87.21, 89.51, 85.92, 95.57, 90.38, 100.34]
+    }
+  },
+  "variacoes": [
+    {
+      "id": "11602",
+      "label": "PIMPF - Variação mês/mesmo mês do ano anterior (M/M-12)",
+      "reference": "2026-05-01",
+      "value": -0.8,
+      "display_value": "-0.8%",
+      "unit": "%"
+    },
+    {
+      "id": "11603",
+      "label": "PIMPF - Variação acumulada no ano (em relação ao mesmo período do ano anterior)",
+      "reference": "2026-05-01",
+      "value": -3.7,
+      "display_value": "-3.7%",
+      "unit": "%"
+    },
+    {
+      "id": "11604",
+      "label": "PIMPF - Variação acumulada em 12 meses (em relação ao período anterior de 12 meses)",
+      "reference": "2026-05-01",
+      "value": -1.7,
+      "display_value": "-1.7%",
+      "unit": "%"
+    }
+  ],
+  "atividades_12m": [
+    {
+      "id": "atividades_12m",
+      "title": "Atividades industriais — variação acumulada em 12 meses",
+      "dimension_label": "Variação em 12 meses",
+      "unit": "%",
+      "reference": "2026-05-01",
+      "items": [
+        {
+          "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
+          "value": 12.4,
+          "display_value": "12.4%"
+        },
+        {
+          "name": "Fabricação de coque, de produtos derivados do petróleo e de biocombustíveis",
+          "value": 7.3,
+          "display_value": "7.3%"
+        },
+        {
+          "name": "Fabricação de produtos químicos",
+          "value": 3.7,
+          "display_value": "3.7%"
+        },
+        {
+          "name": "Metalurgia",
+          "value": 2.6,
+          "display_value": "2.6%"
+        },
+        {
+          "name": "Fabricação de produtos alimentícios",
+          "value": 2.4,
+          "display_value": "2.4%"
+        },
+        {
+          "name": "Fabricação de produtos de minerais não metálicos",
+          "value": 0.7,
+          "display_value": "0.7%"
+        },
+        {
+          "name": "Preparação de couros e fabricação de artefatos de couro, artigos para viagem e calçados",
+          "value": -0.8,
+          "display_value": "-0.8%"
+        },
+        {
+          "name": "Indústrias de transformação",
+          "value": -1.7,
+          "display_value": "-1.7%"
+        },
+        {
+          "name": "Confecção de artigos do vestuário e acessórios",
+          "value": -6.8,
+          "display_value": "-6.8%"
+        },
+        {
+          "name": "Fabricação de bebidas",
+          "value": -7.7,
+          "display_value": "-7.7%"
+        },
+        {
+          "name": "Fabricação de produtos têxteis",
+          "value": -14.3,
+          "display_value": "-14.3%"
+        },
+        {
+          "name": "Fabricação de máquinas, aparelhos e materiais elétricos",
+          "value": -26.4,
+          "display_value": "-26.4%"
+        }
+      ]
+    }
+  ],
+  "ano_ref_pia": 2023,
+  "vti_divisoes": [
+    {
+      "cnae": "Total",
+      "name": "Total",
+      "share": 1,
+      "display_value": "100.0%",
+      "vti": 33147688
+    },
+    {
+      "cnae": "C",
+      "name": "Indústrias de transformação",
+      "share": 0.9832,
+      "display_value": "98.3%",
+      "vti": 32589230
+    },
+    {
+      "cnae": "10",
+      "name": "Fabricação de produtos alimentícios",
+      "share": 0.1703,
+      "display_value": "17.0%",
+      "vti": 5644422
+    },
+    {
+      "cnae": "15",
+      "name": "Preparação de couros e fabricação de artefatos de couro, artigos para viagem e calçados",
+      "share": 0.1583,
+      "display_value": "15.8%",
+      "vti": 5246309
+    },
+    {
+      "cnae": "19",
+      "name": "Fabricação de coque, de produtos derivados do petróleo e de biocombustíveis",
+      "share": 0.1369,
+      "display_value": "13.7%",
+      "vti": 4537625
+    },
+    {
+      "cnae": "24",
+      "name": "Metalurgia",
+      "share": 0.1144,
+      "display_value": "11.4%",
+      "vti": 3790850
+    },
+    {
+      "cnae": "14",
+      "name": "Confecção de artigos do vestuário e acessórios",
+      "share": 0.0674,
+      "display_value": "6.7%",
+      "vti": 2233985
+    },
+    {
+      "cnae": "23",
+      "name": "Fabricação de produtos de minerais não-metálicos",
+      "share": 0.0522,
+      "display_value": "5.2%",
+      "vti": 1729849
+    },
+    {
+      "cnae": "11",
+      "name": "Fabricação de bebidas",
+      "share": 0.0454,
+      "display_value": "4.5%",
+      "vti": 1505511
+    },
+    {
+      "cnae": "27",
+      "name": "Fabricação de máquinas, aparelhos e materiais elétricos",
+      "share": 0.0409,
+      "display_value": "4.1%",
+      "vti": 1356335
+    },
+    {
+      "cnae": "13",
+      "name": "Fabricação de produtos têxteis",
+      "share": 0.037,
+      "display_value": "3.7%",
+      "vti": 1227863
+    },
+    {
+      "cnae": "20",
+      "name": "Fabricação de produtos químicos",
+      "share": 0.0323,
+      "display_value": "3.2%",
+      "vti": 1070647
+    },
+    {
+      "cnae": "21",
+      "name": "Fabricação de produtos farmoquímicos e farmacêuticos",
+      "share": 0.0197,
+      "display_value": "2.0%",
+      "vti": 652714
+    },
+    {
+      "cnae": "25",
+      "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
+      "share": 0.0192,
+      "display_value": "1.9%",
+      "vti": 636955
+    },
+    {
+      "cnae": "17",
+      "name": "Fabricação de celulose, papel e produtos de papel",
+      "share": 0.0177,
+      "display_value": "1.8%",
+      "vti": 586329
+    },
+    {
+      "cnae": "B",
+      "name": "Indústrias extrativas",
+      "share": 0.0168,
+      "display_value": "1.7%",
+      "vti": 558458
+    },
+    {
+      "cnae": "33",
+      "name": "Manutenção, reparação e instalação de máquinas e equipamentos",
+      "share": 0.0166,
+      "display_value": "1.7%",
+      "vti": 550092
+    },
+    {
+      "cnae": "08",
+      "name": "Extração de minerais não-metálicos",
+      "share": 0.0152,
+      "display_value": "1.5%",
+      "vti": 503695
+    },
+    {
+      "cnae": "22",
+      "name": "Fabricação de produtos de borracha e de material plástico",
+      "share": 0.0121,
+      "display_value": "1.2%",
+      "vti": 400135
+    },
+    {
+      "cnae": "31",
+      "name": "Fabricação de móveis",
+      "share": 0.0102,
+      "display_value": "1.0%",
+      "vti": 339712
+    },
+    {
+      "cnae": "29",
+      "name": "Fabricação de veículos automotores, reboques e carrocerias",
+      "share": 0.0075,
+      "display_value": "0.8%",
+      "vti": 248997
+    },
+    {
+      "cnae": "18",
+      "name": "Impressão e reprodução de gravações",
+      "share": 0.0072,
+      "display_value": "0.7%",
+      "vti": 240035
+    },
+    {
+      "cnae": "32",
+      "name": "Fabricação de produtos diversos",
+      "share": 0.0055,
+      "display_value": "0.6%",
+      "vti": 182927
+    },
+    {
+      "cnae": "28",
+      "name": "Fabricação de máquinas e equipamentos",
+      "share": 0.0053,
+      "display_value": "0.5%",
+      "vti": 174440
+    },
+    {
+      "cnae": "26",
+      "name": "Fabricação de equipamentos de informática, produtos eletrônicos e ópticos",
+      "share": 0.0046,
+      "display_value": "0.5%",
+      "vti": 151455
+    },
+    {
+      "cnae": "30",
+      "name": "Fabricação de outros equipamentos de transporte, exceto veículos automotores",
+      "share": 0.0014,
+      "display_value": "0.1%",
+      "vti": 45349
+    },
+    {
+      "cnae": "16",
+      "name": "Fabricação de produtos de madeira",
+      "share": 0.0011,
+      "display_value": "0.1%",
+      "vti": 36357
+    },
+    {
+      "cnae": "09",
+      "name": "Atividades de apoio à extração de minerais",
+      "share": 0.0001,
+      "display_value": "0.0%",
+      "vti": 2249
+    },
+    {
+      "cnae": "12",
+      "name": "Fabricação de produtos do fumo",
+      "share": 0,
+      "display_value": "0.0%",
+      "vti": 337
+    }
+  ]
+}

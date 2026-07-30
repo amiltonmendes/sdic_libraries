@@ -1,0 +1,141 @@
+{
+  "schema_version": "1.1",
+  "section_id": "producao_industrial",
+  "title": "Produção Industrial",
+  "source": "PIM-PF (T.8888) e PIA (T.1849) / IBGE",
+  "reference": "2026-05-01",
+  "updated_at": "2026-07-30",
+  "uf": "SC",
+  "cobertura_pimpf": true,
+  "capa_kpi": {
+    "label": "Produção industrial — acumulado em 12 meses",
+    "value": -0.3,
+    "display_value": "-0.3%",
+    "reference": "2026-05-01"
+  },
+  "kpis": [
+    {
+      "id": "11602",
+      "label": "PIMPF - Variação mês/mesmo mês do ano anterior (M/M-12)",
+      "reference": "2026-05-01",
+      "value": 0.5,
+      "display_value": "0.5%",
+      "unit": "%"
+    },
+    {
+      "id": "11603",
+      "label": "PIMPF - Variação acumulada no ano (em relação ao mesmo período do ano anterior)",
+      "reference": "2026-05-01",
+      "value": -2.1,
+      "display_value": "-2.1%",
+      "unit": "%"
+    },
+    {
+      "id": "11604",
+      "label": "PIMPF - Variação acumulada em 12 meses (em relação ao período anterior de 12 meses)",
+      "reference": "2026-05-01",
+      "value": -0.3,
+      "display_value": "-0.3%",
+      "unit": "%"
+    }
+  ],
+  "charts": [
+    {
+      "id": "indice_producao",
+      "title": "Produção física industrial — número-índice",
+      "unit": "índice (2022 = 100)",
+      "series": {
+        "mes_data": ["2021-05-01", "2021-06-01", "2021-07-01", "2021-08-01", "2021-09-01", "2021-10-01", "2021-11-01", "2021-12-01", "2022-01-01", "2022-02-01", "2022-03-01", "2022-04-01", "2022-05-01", "2022-06-01", "2022-07-01", "2022-08-01", "2022-09-01", "2022-10-01", "2022-11-01", "2022-12-01", "2023-01-01", "2023-02-01", "2023-03-01", "2023-04-01", "2023-05-01", "2023-06-01", "2023-07-01", "2023-08-01", "2023-09-01", "2023-10-01", "2023-11-01", "2023-12-01", "2024-01-01", "2024-02-01", "2024-03-01", "2024-04-01", "2024-05-01", "2024-06-01", "2024-07-01", "2024-08-01", "2024-09-01", "2024-10-01", "2024-11-01", "2024-12-01", "2025-01-01", "2025-02-01", "2025-03-01", "2025-04-01", "2025-05-01", "2025-06-01", "2025-07-01", "2025-08-01", "2025-09-01", "2025-10-01", "2025-11-01", "2025-12-01", "2026-01-01", "2026-02-01", "2026-03-01", "2026-04-01", "2026-05-01"],
+        "brasil": [102.96, 102.41, 107.53, 108.81, 106.61, 104.57, 100.56, 92.3, 90.13, 89.77, 98.37, 94.63, 102.66, 101.8, 107.15, 110.72, 105.57, 105.86, 101.38, 91.95, 90.4, 87.43, 99.39, 92.04, 104.74, 101.89, 105.51, 111.27, 106.28, 107.01, 102.82, 92.73, 93.75, 92.36, 96.5, 99.72, 103.51, 105.19, 111.98, 113.83, 109.75, 113.57, 104.62, 94.03, 94.98, 93.5, 99.89, 99.26, 107, 103.78, 112.26, 112.98, 111.93, 113.1, 103.14, 93.9, 95.21, 92.81, 104.3, 101.98, 107.25],
+        "uf": [105.39, 103.07, 105.97, 110.04, 109.05, 104.68, 110.14, 86.01, 93.15, 97.32, 106.03, 96.46, 103.48, 101.06, 104.72, 109.4, 101.54, 101.29, 100.55, 84.98, 88.7, 92.94, 103.47, 90.88, 100.14, 100.33, 101.11, 109.83, 102.51, 105.8, 103.28, 88.19, 95.58, 99.05, 101.19, 106.7, 107.28, 103.3, 113.8, 113.72, 109.71, 119.29, 112.33, 93.91, 103.72, 104.85, 110.03, 106.34, 110.88, 106.54, 116.8, 111.24, 115.15, 121.15, 110.39, 92.63, 96.94, 98.93, 110.48, 106.97, 111.41]
+      }
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "atividades_12m",
+      "title": "Atividades industriais — variação acumulada em 12 meses",
+      "dimension_label": "Variação em 12 meses",
+      "unit": "%",
+      "reference": "2026-05-01",
+      "items": [
+        {
+          "name": "Fabricação de produtos alimentícios",
+          "value": 4.7,
+          "display_value": "4.7%"
+        },
+        {
+          "name": "Fabricação de produtos de borracha e de material plástico",
+          "value": 3.2,
+          "display_value": "3.2%"
+        },
+        {
+          "name": "Fabricação de produtos de minerais não metálicos",
+          "value": 3,
+          "display_value": "3.0%"
+        },
+        {
+          "name": "Fabricação de produtos químicos",
+          "value": 2.5,
+          "display_value": "2.5%"
+        },
+        {
+          "name": "Fabricação de máquinas, aparelhos e materiais elétricos",
+          "value": 0.9,
+          "display_value": "0.9%"
+        },
+        {
+          "name": "Fabricação de celulose, papel e produtos de papel",
+          "value": 0.8,
+          "display_value": "0.8%"
+        },
+        {
+          "name": "Indústrias de transformação",
+          "value": -0.3,
+          "display_value": "-0.3%"
+        },
+        {
+          "name": "Fabricação de produtos têxteis",
+          "value": -0.5,
+          "display_value": "-0.5%"
+        },
+        {
+          "name": "Fabricação de máquinas e equipamentos",
+          "value": -0.9,
+          "display_value": "-0.9%"
+        },
+        {
+          "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
+          "value": -1.7,
+          "display_value": "-1.7%"
+        },
+        {
+          "name": "Confecção de artigos do vestuário e acessórios",
+          "value": -2.5,
+          "display_value": "-2.5%"
+        },
+        {
+          "name": "Metalurgia",
+          "value": -2.7,
+          "display_value": "-2.7%"
+        },
+        {
+          "name": "Fabricação de produtos de madeira",
+          "value": -8.6,
+          "display_value": "-8.6%"
+        },
+        {
+          "name": "Fabricação de móveis",
+          "value": -13.4,
+          "display_value": "-13.4%"
+        },
+        {
+          "name": "Fabricação de veículos automotores, reboques e carrocerias",
+          "value": -16.9,
+          "display_value": "-16.9%"
+        }
+      ]
+    }
+  ],
+  "breakdowns": []
+}
