@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.1",
+  "section_id": "comercio_ue",
+  "title": "Comércio Exterior — União Europeia",
+  "source": "Comex Stat / MDIC",
+  "reference": "2025",
+  "updated_at": "2026-07-30",
+  "capa_kpi": {
+    "id": "capa_comercio",
+    "label": "Saldo comercial",
+    "display_value": "−US$ 1.682 mi",
+    "unit": "",
+    "period": "2025",
+    "delta": {
+      "dir": "down",
+      "label": "déficit comercial"
+    }
+  },
+  "story": {
+    "headline": "Comércio exterior: {{kpis[exportacoes].display_value}} {{kpis[exportacoes].unit}} em exportações.",
+    "lede": "Fluxos comerciais anuais — exportações e importações do estado (União Europeia, Comex Stat / MDIC), com destaque para os principais setores exportadores (ISIC).",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "Importações em {{kpis[importacoes].display_value}} {{kpis[importacoes].unit}} no ano."
+      },
+      {
+        "tone": "neutral",
+        "text": "Saldo comercial de {{kpis[saldo].display_value}} {{kpis[saldo].unit}} no ano."
+      },
+      {
+        "tone": "neutral",
+        "text": "Corrente de comércio (exp+imp) em {{kpis[corrente].display_value}} {{kpis[corrente].unit}}."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "exportacoes",
+      "label": "Exportações",
+      "value": 1728.78736,
+      "display_value": "US$ 1,7 bi",
+      "unit": "",
+      "period": "2025"
+    },
+    {
+      "id": "importacoes",
+      "label": "Importações",
+      "value": 3411.259163,
+      "display_value": "US$ 3,4 bi",
+      "unit": "",
+      "period": "2025"
+    },
+    {
+      "id": "saldo",
+      "label": "Saldo comercial",
+      "value": -1682.4718030000001,
+      "display_value": "−US$ 1.682 mi",
+      "unit": "",
+      "period": "2025"
+    },
+    {
+      "id": "corrente",
+      "label": "Corrente de comércio",
+      "value": 5140.046523,
+      "display_value": "US$ 5,1 bi",
+      "unit": "",
+      "period": "2025"
+    }
+  ],
+  "charts": [
+    {
+      "id": "balanca_anual",
+      "type": "multi-line",
+      "title": "Balança comercial anual",
+      "subtitle": "Exportações e importações por ano",
+      "unit": "milhões USD",
+      "series": [
+        {
+          "id": "exportacoes",
+          "label": "Exportações",
+          "points": [
+            {
+              "t": 2019,
+              "v": 1707.2
+            },
+            {
+              "t": 2020,
+              "v": 1395.4
+            },
+            {
+              "t": 2021,
+              "v": 1879.9
+            },
+            {
+              "t": 2022,
+              "v": 2201.6
+            },
+            {
+              "t": 2023,
+              "v": 1823.2
+            },
+            {
+              "t": 2024,
+              "v": 1875.6
+            },
+            {
+              "t": 2025,
+              "v": 1728.8
+            }
+          ]
+        },
+        {
+          "id": "importacoes",
+          "label": "Importações",
+          "points": [
+            {
+              "t": 2019,
+              "v": 1781.7
+            },
+            {
+              "t": 2020,
+              "v": 1681.3
+            },
+            {
+              "t": 2021,
+              "v": 2219.2
+            },
+            {
+              "t": 2022,
+              "v": 2176.7
+            },
+            {
+              "t": 2023,
+              "v": 2376.3
+            },
+            {
+              "t": 2024,
+              "v": 3090.3
+            },
+            {
+              "t": 2025,
+              "v": 3411.3
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "setores_exportacao",
+      "title": "Principais setores exportadores (ISIC)",
+      "metric_label": "Valor exportado",
+      "unit": "milhões USD",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "Fabricação de metais básicos",
+          "value": 798.7,
+          "display_value": "US$ 799 mi"
+        },
+        {
+          "name": "Fabricação de papel e produtos de papel",
+          "value": 201.7,
+          "display_value": "US$ 202 mi"
+        },
+        {
+          "name": "Fabricação de produtos alimentícios",
+          "value": 193.1,
+          "display_value": "US$ 193 mi"
+        },
+        {
+          "name": "Fabricação de produtos químicos",
+          "value": 143.2,
+          "display_value": "US$ 143 mi"
+        },
+        {
+          "name": "Fabricação de produtos farmacêuticos básicos e preparações farmacêuticas",
+          "value": 96.2,
+          "display_value": "US$ 96 mi"
+        }
+      ]
+    }
+  ],
+  "breakdowns": [
+    {
+      "id": "saldo_tec",
+      "title": "Saldo comercial por intensidade tecnológica",
+      "dimension_label": "Saldo",
+      "unit": "bilhões USD",
+      "items": [
+        {
+          "name": "Média-Baixa Tecnologia",
+          "value": 0.47,
+          "display_value": "+US$ 0,5 bi",
+          "share": null
+        },
+        {
+          "name": "Baixa Tecnologia",
+          "value": 0.11,
+          "display_value": "+US$ 0,1 bi",
+          "share": null
+        },
+        {
+          "name": "Alta Tecnologia",
+          "value": -0.83,
+          "display_value": "−US$ 0,8 bi",
+          "share": null
+        },
+        {
+          "name": "Média-Alta Tecnologia",
+          "value": -1.44,
+          "display_value": "−US$ 1,4 bi",
+          "share": null
+        }
+      ]
+    }
+  ]
+}
