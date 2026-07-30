@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.1",
+  "section_id": "pib_estadual",
+  "title": "PIB Estadual",
+  "source": "Contas Regionais e PIA / IBGE",
+  "reference": "2023",
+  "updated_at": "2026-07-30",
+  "capa_kpi": {
+    "id": "capa_pib_estadual",
+    "label": "PIB total",
+    "display_value": "R$ 857,7 bi",
+    "unit": "",
+    "period": "2023",
+    "delta": {
+      "dir": "up",
+      "label": "indústria 29,7%"
+    }
+  },
+  "story": {
+    "headline": "PIB estadual soma {{kpis[pib_total].display_value}} {{kpis[pib_total].unit}}.",
+    "lede": "Dados de Contas Regionais do IBGE (PIB a preços correntes), com a participação dos principais setores industriais detalhada a partir da Pesquisa Industrial Anual (PIA/IBGE).",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "Serviços participam com {{kpis[part_serv].display_value}}% do PIB."
+      },
+      {
+        "tone": "neutral",
+        "text": "Indústria representa {{kpis[part_ind].display_value}}% do valor adicionado."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "pib_total",
+      "label": "PIB total",
+      "value": 857.7172699772946,
+      "display_value": "857,7",
+      "unit": "bilhões de reais",
+      "period": "2023"
+    },
+    {
+      "id": "part_serv",
+      "label": "Participação serviços",
+      "value": 30.7,
+      "display_value": "30,7",
+      "unit": "%",
+      "period": "2023"
+    },
+    {
+      "id": "part_ind",
+      "label": "Participação indústria",
+      "value": 29.7,
+      "display_value": "29,7",
+      "unit": "%",
+      "period": "2023"
+    }
+  ],
+  "charts": [
+    {
+      "id": "pib_serie",
+      "type": "line",
+      "title": "Série PIB estadual",
+      "subtitle": "Produto Interno Bruto a preços correntes",
+      "unit": "bilhões de reais",
+      "series": [
+        {
+          "id": "pib",
+          "label": "PIB",
+          "points": [
+            {
+              "t": 2010,
+              "v": 305.2
+            },
+            {
+              "t": 2011,
+              "v": 349.6
+            },
+            {
+              "t": 2012,
+              "v": 387.1
+            },
+            {
+              "t": 2013,
+              "v": 428.8
+            },
+            {
+              "t": 2014,
+              "v": 454.2
+            },
+            {
+              "t": 2015,
+              "v": 457.4
+            },
+            {
+              "t": 2016,
+              "v": 478.5
+            },
+            {
+              "t": 2017,
+              "v": 505.1
+            },
+            {
+              "t": 2018,
+              "v": 538.8
+            },
+            {
+              "t": 2019,
+              "v": 571.5
+            },
+            {
+              "t": 2020,
+              "v": 601.1
+            },
+            {
+              "t": 2021,
+              "v": 754.1
+            },
+            {
+              "t": 2022,
+              "v": 801.0
+            },
+            {
+              "t": 2023,
+              "v": 857.7
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "t": 2023,
+          "label": "R$ 857,7 bi"
+        }
+      ]
+    }
+  ],
+  "ranked_lists": [],
+  "breakdowns": [
+    {
+      "id": "industria_subsetores",
+      "title": "Principais setores industriais",
+      "dimension_label": "Participação no PIB industrial",
+      "unit": "",
+      "acumulado": 68.5,
+      "items": [
+        {
+          "name": "Fabricação de produtos alimentícios",
+          "value": 15.44,
+          "display_value": "15,4%",
+          "share": null
+        },
+        {
+          "name": "Construção",
+          "value": 15.13,
+          "display_value": "15,1%",
+          "share": null
+        },
+        {
+          "name": "Indústria extrativa",
+          "value": 12.96,
+          "display_value": "13,0%",
+          "share": null
+        },
+        {
+          "name": "Metalurgia",
+          "value": 12.53,
+          "display_value": "12,5%",
+          "share": null
+        },
+        {
+          "name": "SIUP (eletricidade, gás e água)",
+          "value": 7.33,
+          "display_value": "7,3%",
+          "share": null
+        },
+        {
+          "name": "Fabricação de coque, de produtos derivados do petróleo e de biocombustíveis",
+          "value": 5.08,
+          "display_value": "5,1%",
+          "share": null
+        }
+      ]
+    }
+  ]
+}

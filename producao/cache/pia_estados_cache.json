@@ -1,0 +1,4546 @@
+{
+  "metadata": {
+    "schema_version": "2.0",
+    "gerado_em": "2026-07-30T17:01:10",
+    "reference": "2023",
+    "fonte": "PIA Empresa (SIDRA T.1849, n3/all) / IBGE"
+  },
+  "pia_vti": [
+    {
+      "uf_cod": "11",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 4027003.0,
+      "part_vti_transf": 71.84
+    },
+    {
+      "uf_cod": "11",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 172500.0,
+      "part_vti_transf": 3.08
+    },
+    {
+      "uf_cod": "11",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 2513.0,
+      "part_vti_transf": 0.04
+    },
+    {
+      "uf_cod": "11",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 36857.0,
+      "part_vti_transf": 0.66
+    },
+    {
+      "uf_cod": "11",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 199178.0,
+      "part_vti_transf": 3.55
+    },
+    {
+      "uf_cod": "11",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 284883.0,
+      "part_vti_transf": 5.08
+    },
+    {
+      "uf_cod": "11",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 9458.0,
+      "part_vti_transf": 0.17
+    },
+    {
+      "uf_cod": "11",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 23437.0,
+      "part_vti_transf": 0.42
+    },
+    {
+      "uf_cod": "11",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 54129.0,
+      "part_vti_transf": 0.97
+    },
+    {
+      "uf_cod": "11",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 33359.0,
+      "part_vti_transf": 0.6
+    },
+    {
+      "uf_cod": "11",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 250801.0,
+      "part_vti_transf": 4.47
+    },
+    {
+      "uf_cod": "11",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 102584.0,
+      "part_vti_transf": 1.83
+    },
+    {
+      "uf_cod": "11",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 134071.0,
+      "part_vti_transf": 2.39
+    },
+    {
+      "uf_cod": "11",
+      "ano_pia": 2023,
+      "cnae_divisao": "26",
+      "cnae_descricao": "Fabricação de equipamentos de informática; produtos eletrônicos e ópticos",
+      "vti_mil": 46.0,
+      "part_vti_transf": 0.0
+    },
+    {
+      "uf_cod": "11",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 990.0,
+      "part_vti_transf": 0.02
+    },
+    {
+      "uf_cod": "11",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 34065.0,
+      "part_vti_transf": 0.61
+    },
+    {
+      "uf_cod": "11",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 90439.0,
+      "part_vti_transf": 1.61
+    },
+    {
+      "uf_cod": "11",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 30429.0,
+      "part_vti_transf": 0.54
+    },
+    {
+      "uf_cod": "11",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 15360.0,
+      "part_vti_transf": 0.27
+    },
+    {
+      "uf_cod": "12",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 458996.0,
+      "part_vti_transf": 70.99
+    },
+    {
+      "uf_cod": "12",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 14301.0,
+      "part_vti_transf": 2.21
+    },
+    {
+      "uf_cod": "12",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 12130.0,
+      "part_vti_transf": 1.88
+    },
+    {
+      "uf_cod": "12",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 79801.0,
+      "part_vti_transf": 12.34
+    },
+    {
+      "uf_cod": "12",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 3316.0,
+      "part_vti_transf": 0.51
+    },
+    {
+      "uf_cod": "12",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 13285.0,
+      "part_vti_transf": 2.05
+    },
+    {
+      "uf_cod": "12",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 28912.0,
+      "part_vti_transf": 4.47
+    },
+    {
+      "uf_cod": "12",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 12566.0,
+      "part_vti_transf": 1.94
+    },
+    {
+      "uf_cod": "12",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 2017.0,
+      "part_vti_transf": 0.31
+    },
+    {
+      "uf_cod": "12",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 4791.0,
+      "part_vti_transf": 0.74
+    },
+    {
+      "uf_cod": "12",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 595.0,
+      "part_vti_transf": 0.09
+    },
+    {
+      "uf_cod": "12",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 5937.0,
+      "part_vti_transf": 0.92
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 907744.0,
+      "part_vti_transf": 1.56
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 8299936.0,
+      "part_vti_transf": 14.25
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 68123.0,
+      "part_vti_transf": 0.12
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 56697.0,
+      "part_vti_transf": 0.1
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 71466.0,
+      "part_vti_transf": 0.12
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 553232.0,
+      "part_vti_transf": 0.95
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 201865.0,
+      "part_vti_transf": 0.35
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "19",
+      "cnae_descricao": "Fabricação de coque; de produtos derivados do petróleo e de biocombustíveis",
+      "vti_mil": 539783.0,
+      "part_vti_transf": 0.93
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 1517635.0,
+      "part_vti_transf": 2.61
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "21",
+      "cnae_descricao": "Fabricação de produtos farmoquímicos e farmacêuticos",
+      "vti_mil": 1827242.0,
+      "part_vti_transf": 3.14
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 3878811.0,
+      "part_vti_transf": 6.66
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 403002.0,
+      "part_vti_transf": 0.69
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 562616.0,
+      "part_vti_transf": 0.97
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 3461352.0,
+      "part_vti_transf": 5.94
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "26",
+      "cnae_descricao": "Fabricação de equipamentos de informática; produtos eletrônicos e ópticos",
+      "vti_mil": 20186508.0,
+      "part_vti_transf": 34.66
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 1474701.0,
+      "part_vti_transf": 2.53
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 1674141.0,
+      "part_vti_transf": 2.87
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 869241.0,
+      "part_vti_transf": 1.49
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "30",
+      "cnae_descricao": "Fabricação de outros equipamentos de transporte; exceto veículos automotores",
+      "vti_mil": 8967561.0,
+      "part_vti_transf": 15.4
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 145760.0,
+      "part_vti_transf": 0.25
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 2419120.0,
+      "part_vti_transf": 4.15
+    },
+    {
+      "uf_cod": "13",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 149059.0,
+      "part_vti_transf": 0.26
+    },
+    {
+      "uf_cod": "14",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 135540.0,
+      "part_vti_transf": 56.8
+    },
+    {
+      "uf_cod": "14",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 11908.0,
+      "part_vti_transf": 4.99
+    },
+    {
+      "uf_cod": "14",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 3547.0,
+      "part_vti_transf": 1.49
+    },
+    {
+      "uf_cod": "14",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 5464.0,
+      "part_vti_transf": 2.29
+    },
+    {
+      "uf_cod": "14",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 14793.0,
+      "part_vti_transf": 6.2
+    },
+    {
+      "uf_cod": "14",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 7869.0,
+      "part_vti_transf": 3.3
+    },
+    {
+      "uf_cod": "14",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 13690.0,
+      "part_vti_transf": 5.74
+    },
+    {
+      "uf_cod": "14",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 8156.0,
+      "part_vti_transf": 3.42
+    },
+    {
+      "uf_cod": "14",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 4127.0,
+      "part_vti_transf": 1.73
+    },
+    {
+      "uf_cod": "14",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 2414.0,
+      "part_vti_transf": 1.01
+    },
+    {
+      "uf_cod": "14",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 3053.0,
+      "part_vti_transf": 1.28
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 6435557.0,
+      "part_vti_transf": 38.29
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 882762.0,
+      "part_vti_transf": 5.25
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 73396.0,
+      "part_vti_transf": 0.44
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 37189.0,
+      "part_vti_transf": 0.22
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 173287.0,
+      "part_vti_transf": 1.03
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 970296.0,
+      "part_vti_transf": 5.77
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 428397.0,
+      "part_vti_transf": 2.55
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 69941.0,
+      "part_vti_transf": 0.42
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "19",
+      "cnae_descricao": "Fabricação de coque; de produtos derivados do petróleo e de biocombustíveis",
+      "vti_mil": 239214.0,
+      "part_vti_transf": 1.42
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 1200029.0,
+      "part_vti_transf": 7.14
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 204270.0,
+      "part_vti_transf": 1.22
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 1432458.0,
+      "part_vti_transf": 8.52
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 3000226.0,
+      "part_vti_transf": 17.85
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 819580.0,
+      "part_vti_transf": 4.88
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "26",
+      "cnae_descricao": "Fabricação de equipamentos de informática; produtos eletrônicos e ópticos",
+      "vti_mil": 8.0,
+      "part_vti_transf": 0.0
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 21235.0,
+      "part_vti_transf": 0.13
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 34706.0,
+      "part_vti_transf": 0.21
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 38576.0,
+      "part_vti_transf": 0.23
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "30",
+      "cnae_descricao": "Fabricação de outros equipamentos de transporte; exceto veículos automotores",
+      "vti_mil": 69747.0,
+      "part_vti_transf": 0.42
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 138155.0,
+      "part_vti_transf": 0.82
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 17606.0,
+      "part_vti_transf": 0.1
+    },
+    {
+      "uf_cod": "15",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 519499.0,
+      "part_vti_transf": 3.09
+    },
+    {
+      "uf_cod": "16",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 116886.0,
+      "part_vti_transf": 25.43
+    },
+    {
+      "uf_cod": "16",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 6262.0,
+      "part_vti_transf": 1.36
+    },
+    {
+      "uf_cod": "16",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 1338.0,
+      "part_vti_transf": 0.29
+    },
+    {
+      "uf_cod": "16",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 3229.0,
+      "part_vti_transf": 0.7
+    },
+    {
+      "uf_cod": "16",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 228479.0,
+      "part_vti_transf": 49.71
+    },
+    {
+      "uf_cod": "16",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 3967.0,
+      "part_vti_transf": 0.86
+    },
+    {
+      "uf_cod": "16",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 5129.0,
+      "part_vti_transf": 1.12
+    },
+    {
+      "uf_cod": "16",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 35813.0,
+      "part_vti_transf": 7.79
+    },
+    {
+      "uf_cod": "16",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 8125.0,
+      "part_vti_transf": 1.77
+    },
+    {
+      "uf_cod": "16",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 915.0,
+      "part_vti_transf": 0.2
+    },
+    {
+      "uf_cod": "16",
+      "ano_pia": 2023,
+      "cnae_divisao": "30",
+      "cnae_descricao": "Fabricação de outros equipamentos de transporte; exceto veículos automotores",
+      "vti_mil": 5545.0,
+      "part_vti_transf": 1.21
+    },
+    {
+      "uf_cod": "16",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 4440.0,
+      "part_vti_transf": 0.97
+    },
+    {
+      "uf_cod": "16",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 6962.0,
+      "part_vti_transf": 1.51
+    },
+    {
+      "uf_cod": "16",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 6015.0,
+      "part_vti_transf": 1.31
+    },
+    {
+      "uf_cod": "17",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 2309252.0,
+      "part_vti_transf": 56.97
+    },
+    {
+      "uf_cod": "17",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 4492.0,
+      "part_vti_transf": 0.11
+    },
+    {
+      "uf_cod": "17",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 1587.0,
+      "part_vti_transf": 0.04
+    },
+    {
+      "uf_cod": "17",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 12549.0,
+      "part_vti_transf": 0.31
+    },
+    {
+      "uf_cod": "17",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 26805.0,
+      "part_vti_transf": 0.66
+    },
+    {
+      "uf_cod": "17",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 12643.0,
+      "part_vti_transf": 0.31
+    },
+    {
+      "uf_cod": "17",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 9508.0,
+      "part_vti_transf": 0.23
+    },
+    {
+      "uf_cod": "17",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 267573.0,
+      "part_vti_transf": 6.6
+    },
+    {
+      "uf_cod": "17",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 21516.0,
+      "part_vti_transf": 0.53
+    },
+    {
+      "uf_cod": "17",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 621839.0,
+      "part_vti_transf": 15.34
+    },
+    {
+      "uf_cod": "17",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 209160.0,
+      "part_vti_transf": 5.16
+    },
+    {
+      "uf_cod": "17",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 95160.0,
+      "part_vti_transf": 2.35
+    },
+    {
+      "uf_cod": "17",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 2757.0,
+      "part_vti_transf": 0.07
+    },
+    {
+      "uf_cod": "17",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 24604.0,
+      "part_vti_transf": 0.61
+    },
+    {
+      "uf_cod": "17",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 16019.0,
+      "part_vti_transf": 0.4
+    },
+    {
+      "uf_cod": "17",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 26093.0,
+      "part_vti_transf": 0.64
+    },
+    {
+      "uf_cod": "17",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 64662.0,
+      "part_vti_transf": 1.6
+    },
+    {
+      "uf_cod": "21",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 1409897.0,
+      "part_vti_transf": 13.96
+    },
+    {
+      "uf_cod": "21",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 1262389.0,
+      "part_vti_transf": 12.5
+    },
+    {
+      "uf_cod": "21",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 5695.0,
+      "part_vti_transf": 0.06
+    },
+    {
+      "uf_cod": "21",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 64889.0,
+      "part_vti_transf": 0.64
+    },
+    {
+      "uf_cod": "21",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 187989.0,
+      "part_vti_transf": 1.86
+    },
+    {
+      "uf_cod": "21",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 5207.0,
+      "part_vti_transf": 0.05
+    },
+    {
+      "uf_cod": "21",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 2490241.0,
+      "part_vti_transf": 24.66
+    },
+    {
+      "uf_cod": "21",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 46271.0,
+      "part_vti_transf": 0.46
+    },
+    {
+      "uf_cod": "21",
+      "ano_pia": 2023,
+      "cnae_divisao": "19",
+      "cnae_descricao": "Fabricação de coque; de produtos derivados do petróleo e de biocombustíveis",
+      "vti_mil": 304215.0,
+      "part_vti_transf": 3.01
+    },
+    {
+      "uf_cod": "21",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 850336.0,
+      "part_vti_transf": 8.42
+    },
+    {
+      "uf_cod": "21",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 49301.0,
+      "part_vti_transf": 0.49
+    },
+    {
+      "uf_cod": "21",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 782080.0,
+      "part_vti_transf": 7.74
+    },
+    {
+      "uf_cod": "21",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 2054161.0,
+      "part_vti_transf": 20.34
+    },
+    {
+      "uf_cod": "21",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 139964.0,
+      "part_vti_transf": 1.39
+    },
+    {
+      "uf_cod": "21",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 10900.0,
+      "part_vti_transf": 0.11
+    },
+    {
+      "uf_cod": "21",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 11877.0,
+      "part_vti_transf": 0.12
+    },
+    {
+      "uf_cod": "21",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 11932.0,
+      "part_vti_transf": 0.12
+    },
+    {
+      "uf_cod": "21",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 178573.0,
+      "part_vti_transf": 1.77
+    },
+    {
+      "uf_cod": "21",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 29901.0,
+      "part_vti_transf": 0.3
+    },
+    {
+      "uf_cod": "21",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 202068.0,
+      "part_vti_transf": 2.0
+    },
+    {
+      "uf_cod": "22",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 1769532.0,
+      "part_vti_transf": 46.66
+    },
+    {
+      "uf_cod": "22",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 370319.0,
+      "part_vti_transf": 9.76
+    },
+    {
+      "uf_cod": "22",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 2073.0,
+      "part_vti_transf": 0.05
+    },
+    {
+      "uf_cod": "22",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 79233.0,
+      "part_vti_transf": 2.09
+    },
+    {
+      "uf_cod": "22",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 14912.0,
+      "part_vti_transf": 0.39
+    },
+    {
+      "uf_cod": "22",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 23008.0,
+      "part_vti_transf": 0.61
+    },
+    {
+      "uf_cod": "22",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 21478.0,
+      "part_vti_transf": 0.57
+    },
+    {
+      "uf_cod": "22",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 70680.0,
+      "part_vti_transf": 1.86
+    },
+    {
+      "uf_cod": "22",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 196083.0,
+      "part_vti_transf": 5.17
+    },
+    {
+      "uf_cod": "22",
+      "ano_pia": 2023,
+      "cnae_divisao": "21",
+      "cnae_descricao": "Fabricação de produtos farmoquímicos e farmacêuticos",
+      "vti_mil": 24317.0,
+      "part_vti_transf": 0.64
+    },
+    {
+      "uf_cod": "22",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 38495.0,
+      "part_vti_transf": 1.02
+    },
+    {
+      "uf_cod": "22",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 218109.0,
+      "part_vti_transf": 5.75
+    },
+    {
+      "uf_cod": "22",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 140540.0,
+      "part_vti_transf": 3.71
+    },
+    {
+      "uf_cod": "22",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 88623.0,
+      "part_vti_transf": 2.34
+    },
+    {
+      "uf_cod": "22",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 213562.0,
+      "part_vti_transf": 5.63
+    },
+    {
+      "uf_cod": "22",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 9495.0,
+      "part_vti_transf": 0.25
+    },
+    {
+      "uf_cod": "22",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 14125.0,
+      "part_vti_transf": 0.37
+    },
+    {
+      "uf_cod": "22",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 92705.0,
+      "part_vti_transf": 2.44
+    },
+    {
+      "uf_cod": "22",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 30572.0,
+      "part_vti_transf": 0.81
+    },
+    {
+      "uf_cod": "22",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 251312.0,
+      "part_vti_transf": 6.63
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 5644422.0,
+      "part_vti_transf": 17.32
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 1505511.0,
+      "part_vti_transf": 4.62
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "12",
+      "cnae_descricao": "Fabricação de produtos do fumo",
+      "vti_mil": 337.0,
+      "part_vti_transf": 0.0
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 1227863.0,
+      "part_vti_transf": 3.77
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 2233985.0,
+      "part_vti_transf": 6.85
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 5246309.0,
+      "part_vti_transf": 16.1
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 36357.0,
+      "part_vti_transf": 0.11
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 586329.0,
+      "part_vti_transf": 1.8
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 240035.0,
+      "part_vti_transf": 0.74
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "19",
+      "cnae_descricao": "Fabricação de coque; de produtos derivados do petróleo e de biocombustíveis",
+      "vti_mil": 4537625.0,
+      "part_vti_transf": 13.92
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 1070647.0,
+      "part_vti_transf": 3.29
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "21",
+      "cnae_descricao": "Fabricação de produtos farmoquímicos e farmacêuticos",
+      "vti_mil": 652714.0,
+      "part_vti_transf": 2.0
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 400135.0,
+      "part_vti_transf": 1.23
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 1729849.0,
+      "part_vti_transf": 5.31
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 3790850.0,
+      "part_vti_transf": 11.63
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 636955.0,
+      "part_vti_transf": 1.95
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "26",
+      "cnae_descricao": "Fabricação de equipamentos de informática; produtos eletrônicos e ópticos",
+      "vti_mil": 151455.0,
+      "part_vti_transf": 0.46
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 1356335.0,
+      "part_vti_transf": 4.16
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 174440.0,
+      "part_vti_transf": 0.54
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 248997.0,
+      "part_vti_transf": 0.76
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "30",
+      "cnae_descricao": "Fabricação de outros equipamentos de transporte; exceto veículos automotores",
+      "vti_mil": 45349.0,
+      "part_vti_transf": 0.14
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 339712.0,
+      "part_vti_transf": 1.04
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 182927.0,
+      "part_vti_transf": 0.56
+    },
+    {
+      "uf_cod": "23",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 550092.0,
+      "part_vti_transf": 1.69
+    },
+    {
+      "uf_cod": "24",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 2092710.0,
+      "part_vti_transf": 20.43
+    },
+    {
+      "uf_cod": "24",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 301013.0,
+      "part_vti_transf": 2.94
+    },
+    {
+      "uf_cod": "24",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 240653.0,
+      "part_vti_transf": 2.35
+    },
+    {
+      "uf_cod": "24",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 739844.0,
+      "part_vti_transf": 7.22
+    },
+    {
+      "uf_cod": "24",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 2591.0,
+      "part_vti_transf": 0.03
+    },
+    {
+      "uf_cod": "24",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 17420.0,
+      "part_vti_transf": 0.17
+    },
+    {
+      "uf_cod": "24",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 32870.0,
+      "part_vti_transf": 0.32
+    },
+    {
+      "uf_cod": "24",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 56968.0,
+      "part_vti_transf": 0.56
+    },
+    {
+      "uf_cod": "24",
+      "ano_pia": 2023,
+      "cnae_divisao": "19",
+      "cnae_descricao": "Fabricação de coque; de produtos derivados do petróleo e de biocombustíveis",
+      "vti_mil": 3858902.0,
+      "part_vti_transf": 37.66
+    },
+    {
+      "uf_cod": "24",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 167579.0,
+      "part_vti_transf": 1.64
+    },
+    {
+      "uf_cod": "24",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 190545.0,
+      "part_vti_transf": 1.86
+    },
+    {
+      "uf_cod": "24",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 484779.0,
+      "part_vti_transf": 4.73
+    },
+    {
+      "uf_cod": "24",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 138465.0,
+      "part_vti_transf": 1.35
+    },
+    {
+      "uf_cod": "24",
+      "ano_pia": 2023,
+      "cnae_divisao": "26",
+      "cnae_descricao": "Fabricação de equipamentos de informática; produtos eletrônicos e ópticos",
+      "vti_mil": 1736.0,
+      "part_vti_transf": 0.02
+    },
+    {
+      "uf_cod": "24",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 50753.0,
+      "part_vti_transf": 0.5
+    },
+    {
+      "uf_cod": "24",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 20395.0,
+      "part_vti_transf": 0.2
+    },
+    {
+      "uf_cod": "24",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 29929.0,
+      "part_vti_transf": 0.29
+    },
+    {
+      "uf_cod": "24",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 69773.0,
+      "part_vti_transf": 0.68
+    },
+    {
+      "uf_cod": "24",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 73946.0,
+      "part_vti_transf": 0.72
+    },
+    {
+      "uf_cod": "24",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 1674622.0,
+      "part_vti_transf": 16.34
+    },
+    {
+      "uf_cod": "25",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 1341111.0,
+      "part_vti_transf": 19.15
+    },
+    {
+      "uf_cod": "25",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 249656.0,
+      "part_vti_transf": 3.57
+    },
+    {
+      "uf_cod": "25",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 510061.0,
+      "part_vti_transf": 7.28
+    },
+    {
+      "uf_cod": "25",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 121123.0,
+      "part_vti_transf": 1.73
+    },
+    {
+      "uf_cod": "25",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 1525395.0,
+      "part_vti_transf": 21.78
+    },
+    {
+      "uf_cod": "25",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 25169.0,
+      "part_vti_transf": 0.36
+    },
+    {
+      "uf_cod": "25",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 113478.0,
+      "part_vti_transf": 1.62
+    },
+    {
+      "uf_cod": "25",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 130883.0,
+      "part_vti_transf": 1.87
+    },
+    {
+      "uf_cod": "25",
+      "ano_pia": 2023,
+      "cnae_divisao": "19",
+      "cnae_descricao": "Fabricação de coque; de produtos derivados do petróleo e de biocombustíveis",
+      "vti_mil": 448074.0,
+      "part_vti_transf": 6.4
+    },
+    {
+      "uf_cod": "25",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 405797.0,
+      "part_vti_transf": 5.8
+    },
+    {
+      "uf_cod": "25",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 408407.0,
+      "part_vti_transf": 5.83
+    },
+    {
+      "uf_cod": "25",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 1132723.0,
+      "part_vti_transf": 16.18
+    },
+    {
+      "uf_cod": "25",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 52978.0,
+      "part_vti_transf": 0.76
+    },
+    {
+      "uf_cod": "25",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 182728.0,
+      "part_vti_transf": 2.61
+    },
+    {
+      "uf_cod": "25",
+      "ano_pia": 2023,
+      "cnae_divisao": "26",
+      "cnae_descricao": "Fabricação de equipamentos de informática; produtos eletrônicos e ópticos",
+      "vti_mil": 5877.0,
+      "part_vti_transf": 0.08
+    },
+    {
+      "uf_cod": "25",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 15299.0,
+      "part_vti_transf": 0.22
+    },
+    {
+      "uf_cod": "25",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 30081.0,
+      "part_vti_transf": 0.43
+    },
+    {
+      "uf_cod": "25",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 9004.0,
+      "part_vti_transf": 0.13
+    },
+    {
+      "uf_cod": "25",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 139203.0,
+      "part_vti_transf": 1.99
+    },
+    {
+      "uf_cod": "25",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 14487.0,
+      "part_vti_transf": 0.21
+    },
+    {
+      "uf_cod": "25",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 139309.0,
+      "part_vti_transf": 1.99
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 9672781.0,
+      "part_vti_transf": 22.04
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 3570346.0,
+      "part_vti_transf": 8.13
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "12",
+      "cnae_descricao": "Fabricação de produtos do fumo",
+      "vti_mil": 175.0,
+      "part_vti_transf": 0.0
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 460145.0,
+      "part_vti_transf": 1.05
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 873484.0,
+      "part_vti_transf": 1.99
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 241792.0,
+      "part_vti_transf": 0.55
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 177141.0,
+      "part_vti_transf": 0.4
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 707304.0,
+      "part_vti_transf": 1.61
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 266499.0,
+      "part_vti_transf": 0.61
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "19",
+      "cnae_descricao": "Fabricação de coque; de produtos derivados do petróleo e de biocombustíveis",
+      "vti_mil": 8183297.0,
+      "part_vti_transf": 18.64
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 4376580.0,
+      "part_vti_transf": 9.97
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "21",
+      "cnae_descricao": "Fabricação de produtos farmoquímicos e farmacêuticos",
+      "vti_mil": 307466.0,
+      "part_vti_transf": 0.7
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 1964876.0,
+      "part_vti_transf": 4.48
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 1720106.0,
+      "part_vti_transf": 3.92
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 1035571.0,
+      "part_vti_transf": 2.36
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 1485995.0,
+      "part_vti_transf": 3.39
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "26",
+      "cnae_descricao": "Fabricação de equipamentos de informática; produtos eletrônicos e ópticos",
+      "vti_mil": 39091.0,
+      "part_vti_transf": 0.09
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 1082639.0,
+      "part_vti_transf": 2.47
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 345318.0,
+      "part_vti_transf": 0.79
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 5806150.0,
+      "part_vti_transf": 13.23
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "30",
+      "cnae_descricao": "Fabricação de outros equipamentos de transporte; exceto veículos automotores",
+      "vti_mil": 109374.0,
+      "part_vti_transf": 0.25
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 538159.0,
+      "part_vti_transf": 1.23
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 265136.0,
+      "part_vti_transf": 0.6
+    },
+    {
+      "uf_cod": "26",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 666327.0,
+      "part_vti_transf": 1.52
+    },
+    {
+      "uf_cod": "27",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 4498623.0,
+      "part_vti_transf": 64.76
+    },
+    {
+      "uf_cod": "27",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 457799.0,
+      "part_vti_transf": 6.59
+    },
+    {
+      "uf_cod": "27",
+      "ano_pia": 2023,
+      "cnae_divisao": "12",
+      "cnae_descricao": "Fabricação de produtos do fumo",
+      "vti_mil": 19728.0,
+      "part_vti_transf": 0.28
+    },
+    {
+      "uf_cod": "27",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 19143.0,
+      "part_vti_transf": 0.28
+    },
+    {
+      "uf_cod": "27",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 28559.0,
+      "part_vti_transf": 0.41
+    },
+    {
+      "uf_cod": "27",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 4715.0,
+      "part_vti_transf": 0.07
+    },
+    {
+      "uf_cod": "27",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 12987.0,
+      "part_vti_transf": 0.19
+    },
+    {
+      "uf_cod": "27",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 67411.0,
+      "part_vti_transf": 0.97
+    },
+    {
+      "uf_cod": "27",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 44142.0,
+      "part_vti_transf": 0.64
+    },
+    {
+      "uf_cod": "27",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 516084.0,
+      "part_vti_transf": 7.43
+    },
+    {
+      "uf_cod": "27",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 694372.0,
+      "part_vti_transf": 10.0
+    },
+    {
+      "uf_cod": "27",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 223631.0,
+      "part_vti_transf": 3.22
+    },
+    {
+      "uf_cod": "27",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 11061.0,
+      "part_vti_transf": 0.16
+    },
+    {
+      "uf_cod": "27",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 114079.0,
+      "part_vti_transf": 1.64
+    },
+    {
+      "uf_cod": "27",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 10305.0,
+      "part_vti_transf": 0.15
+    },
+    {
+      "uf_cod": "27",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 30521.0,
+      "part_vti_transf": 0.44
+    },
+    {
+      "uf_cod": "27",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 12093.0,
+      "part_vti_transf": 0.17
+    },
+    {
+      "uf_cod": "27",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 57845.0,
+      "part_vti_transf": 0.83
+    },
+    {
+      "uf_cod": "27",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 9009.0,
+      "part_vti_transf": 0.13
+    },
+    {
+      "uf_cod": "27",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 113540.0,
+      "part_vti_transf": 1.63
+    },
+    {
+      "uf_cod": "28",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 1769655.0,
+      "part_vti_transf": 36.13
+    },
+    {
+      "uf_cod": "28",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 142162.0,
+      "part_vti_transf": 2.9
+    },
+    {
+      "uf_cod": "28",
+      "ano_pia": 2023,
+      "cnae_divisao": "12",
+      "cnae_descricao": "Fabricação de produtos do fumo",
+      "vti_mil": 11643.0,
+      "part_vti_transf": 0.24
+    },
+    {
+      "uf_cod": "28",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 375039.0,
+      "part_vti_transf": 7.66
+    },
+    {
+      "uf_cod": "28",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 70334.0,
+      "part_vti_transf": 1.44
+    },
+    {
+      "uf_cod": "28",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 194322.0,
+      "part_vti_transf": 3.97
+    },
+    {
+      "uf_cod": "28",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 36829.0,
+      "part_vti_transf": 0.75
+    },
+    {
+      "uf_cod": "28",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 42797.0,
+      "part_vti_transf": 0.87
+    },
+    {
+      "uf_cod": "28",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 17500.0,
+      "part_vti_transf": 0.36
+    },
+    {
+      "uf_cod": "28",
+      "ano_pia": 2023,
+      "cnae_divisao": "19",
+      "cnae_descricao": "Fabricação de coque; de produtos derivados do petróleo e de biocombustíveis",
+      "vti_mil": 100000.0,
+      "part_vti_transf": 2.04
+    },
+    {
+      "uf_cod": "28",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 643871.0,
+      "part_vti_transf": 13.15
+    },
+    {
+      "uf_cod": "28",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 137467.0,
+      "part_vti_transf": 2.81
+    },
+    {
+      "uf_cod": "28",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 769633.0,
+      "part_vti_transf": 15.71
+    },
+    {
+      "uf_cod": "28",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 15112.0,
+      "part_vti_transf": 0.31
+    },
+    {
+      "uf_cod": "28",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 255327.0,
+      "part_vti_transf": 5.21
+    },
+    {
+      "uf_cod": "28",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 101988.0,
+      "part_vti_transf": 2.08
+    },
+    {
+      "uf_cod": "28",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 16853.0,
+      "part_vti_transf": 0.34
+    },
+    {
+      "uf_cod": "28",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 66308.0,
+      "part_vti_transf": 1.35
+    },
+    {
+      "uf_cod": "28",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 46924.0,
+      "part_vti_transf": 0.96
+    },
+    {
+      "uf_cod": "28",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 37253.0,
+      "part_vti_transf": 0.76
+    },
+    {
+      "uf_cod": "28",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 45145.0,
+      "part_vti_transf": 0.92
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 10589750.0,
+      "part_vti_transf": 18.81
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 2427073.0,
+      "part_vti_transf": 4.31
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "12",
+      "cnae_descricao": "Fabricação de produtos do fumo",
+      "vti_mil": 165586.0,
+      "part_vti_transf": 0.29
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 1011624.0,
+      "part_vti_transf": 1.8
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 1216898.0,
+      "part_vti_transf": 2.16
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 2310736.0,
+      "part_vti_transf": 4.1
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 98618.0,
+      "part_vti_transf": 0.18
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 6610857.0,
+      "part_vti_transf": 11.74
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 131766.0,
+      "part_vti_transf": 0.23
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "19",
+      "cnae_descricao": "Fabricação de coque; de produtos derivados do petróleo e de biocombustíveis",
+      "vti_mil": 3799264.0,
+      "part_vti_transf": 6.75
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 9442805.0,
+      "part_vti_transf": 16.77
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "21",
+      "cnae_descricao": "Fabricação de produtos farmoquímicos e farmacêuticos",
+      "vti_mil": 216983.0,
+      "part_vti_transf": 0.39
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 4385596.0,
+      "part_vti_transf": 7.79
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 2075713.0,
+      "part_vti_transf": 3.69
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 3469185.0,
+      "part_vti_transf": 6.16
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 1677327.0,
+      "part_vti_transf": 2.98
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "26",
+      "cnae_descricao": "Fabricação de equipamentos de informática; produtos eletrônicos e ópticos",
+      "vti_mil": 897105.0,
+      "part_vti_transf": 1.59
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 2522905.0,
+      "part_vti_transf": 4.48
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 155977.0,
+      "part_vti_transf": 0.28
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 165209.0,
+      "part_vti_transf": 0.29
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "30",
+      "cnae_descricao": "Fabricação de outros equipamentos de transporte; exceto veículos automotores",
+      "vti_mil": 41712.0,
+      "part_vti_transf": 0.07
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 517363.0,
+      "part_vti_transf": 0.92
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 367605.0,
+      "part_vti_transf": 0.65
+    },
+    {
+      "uf_cod": "29",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 2012874.0,
+      "part_vti_transf": 3.57
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 49806196.0,
+      "part_vti_transf": 23.91
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 7525545.0,
+      "part_vti_transf": 3.61
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "12",
+      "cnae_descricao": "Fabricação de produtos do fumo",
+      "vti_mil": 2944155.0,
+      "part_vti_transf": 1.41
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 2249464.0,
+      "part_vti_transf": 1.08
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 3606841.0,
+      "part_vti_transf": 1.73
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 3112372.0,
+      "part_vti_transf": 1.49
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 1254979.0,
+      "part_vti_transf": 0.6
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 5265185.0,
+      "part_vti_transf": 2.53
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 908026.0,
+      "part_vti_transf": 0.44
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "19",
+      "cnae_descricao": "Fabricação de coque; de produtos derivados do petróleo e de biocombustíveis",
+      "vti_mil": 16387513.0,
+      "part_vti_transf": 7.87
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 12157359.0,
+      "part_vti_transf": 5.84
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "21",
+      "cnae_descricao": "Fabricação de produtos farmoquímicos e farmacêuticos",
+      "vti_mil": 4308685.0,
+      "part_vti_transf": 2.07
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 3547183.0,
+      "part_vti_transf": 1.7
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 9597012.0,
+      "part_vti_transf": 4.61
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 40410106.0,
+      "part_vti_transf": 19.4
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 8715742.0,
+      "part_vti_transf": 4.18
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "26",
+      "cnae_descricao": "Fabricação de equipamentos de informática; produtos eletrônicos e ópticos",
+      "vti_mil": 2725409.0,
+      "part_vti_transf": 1.31
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 5267652.0,
+      "part_vti_transf": 2.53
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 6230615.0,
+      "part_vti_transf": 2.99
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 13037284.0,
+      "part_vti_transf": 6.26
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "30",
+      "cnae_descricao": "Fabricação de outros equipamentos de transporte; exceto veículos automotores",
+      "vti_mil": 741815.0,
+      "part_vti_transf": 0.36
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 2686214.0,
+      "part_vti_transf": 1.29
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 1751379.0,
+      "part_vti_transf": 0.84
+    },
+    {
+      "uf_cod": "31",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 4076972.0,
+      "part_vti_transf": 1.96
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 3229944.0,
+      "part_vti_transf": 12.51
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 99292.0,
+      "part_vti_transf": 0.38
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 83464.0,
+      "part_vti_transf": 0.32
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 461358.0,
+      "part_vti_transf": 1.79
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 308605.0,
+      "part_vti_transf": 1.2
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 2082917.0,
+      "part_vti_transf": 8.07
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 223055.0,
+      "part_vti_transf": 0.86
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "19",
+      "cnae_descricao": "Fabricação de coque; de produtos derivados do petróleo e de biocombustíveis",
+      "vti_mil": 211302.0,
+      "part_vti_transf": 0.82
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 1360051.0,
+      "part_vti_transf": 5.27
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "21",
+      "cnae_descricao": "Fabricação de produtos farmoquímicos e farmacêuticos",
+      "vti_mil": 110827.0,
+      "part_vti_transf": 0.43
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 569362.0,
+      "part_vti_transf": 2.21
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 4445262.0,
+      "part_vti_transf": 17.22
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 5452468.0,
+      "part_vti_transf": 21.12
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 1493017.0,
+      "part_vti_transf": 5.78
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "26",
+      "cnae_descricao": "Fabricação de equipamentos de informática; produtos eletrônicos e ópticos",
+      "vti_mil": 54599.0,
+      "part_vti_transf": 0.21
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 933766.0,
+      "part_vti_transf": 3.62
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 232188.0,
+      "part_vti_transf": 0.9
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 497724.0,
+      "part_vti_transf": 1.93
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "30",
+      "cnae_descricao": "Fabricação de outros equipamentos de transporte; exceto veículos automotores",
+      "vti_mil": 398235.0,
+      "part_vti_transf": 1.54
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 453779.0,
+      "part_vti_transf": 1.76
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 310752.0,
+      "part_vti_transf": 1.2
+    },
+    {
+      "uf_cod": "32",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 2758180.0,
+      "part_vti_transf": 10.68
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 5321776.0,
+      "part_vti_transf": 3.7
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 4186759.0,
+      "part_vti_transf": 2.91
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "12",
+      "cnae_descricao": "Fabricação de produtos do fumo",
+      "vti_mil": 31040.0,
+      "part_vti_transf": 0.02
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 508236.0,
+      "part_vti_transf": 0.35
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 3660356.0,
+      "part_vti_transf": 2.55
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 201323.0,
+      "part_vti_transf": 0.14
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 105516.0,
+      "part_vti_transf": 0.07
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 1146768.0,
+      "part_vti_transf": 0.8
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 1240281.0,
+      "part_vti_transf": 0.86
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "19",
+      "cnae_descricao": "Fabricação de coque; de produtos derivados do petróleo e de biocombustíveis",
+      "vti_mil": 67742393.0,
+      "part_vti_transf": 47.12
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 9801329.0,
+      "part_vti_transf": 6.82
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "21",
+      "cnae_descricao": "Fabricação de produtos farmoquímicos e farmacêuticos",
+      "vti_mil": 4090940.0,
+      "part_vti_transf": 2.85
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 4739020.0,
+      "part_vti_transf": 3.3
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 3375669.0,
+      "part_vti_transf": 2.35
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 12437638.0,
+      "part_vti_transf": 8.65
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 3456953.0,
+      "part_vti_transf": 2.4
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "26",
+      "cnae_descricao": "Fabricação de equipamentos de informática; produtos eletrônicos e ópticos",
+      "vti_mil": 258744.0,
+      "part_vti_transf": 0.18
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 690689.0,
+      "part_vti_transf": 0.48
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 2487938.0,
+      "part_vti_transf": 1.73
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 6750751.0,
+      "part_vti_transf": 4.7
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "30",
+      "cnae_descricao": "Fabricação de outros equipamentos de transporte; exceto veículos automotores",
+      "vti_mil": 1447422.0,
+      "part_vti_transf": 1.01
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 695712.0,
+      "part_vti_transf": 0.48
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 1925636.0,
+      "part_vti_transf": 1.34
+    },
+    {
+      "uf_cod": "33",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 7448998.0,
+      "part_vti_transf": 5.18
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 124435386.0,
+      "part_vti_transf": 17.46
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 10539752.0,
+      "part_vti_transf": 1.48
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "12",
+      "cnae_descricao": "Fabricação de produtos do fumo",
+      "vti_mil": 59137.0,
+      "part_vti_transf": 0.01
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 10673695.0,
+      "part_vti_transf": 1.5
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 11974265.0,
+      "part_vti_transf": 1.68
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 3303945.0,
+      "part_vti_transf": 0.46
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 3819827.0,
+      "part_vti_transf": 0.54
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 27417007.0,
+      "part_vti_transf": 3.85
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 4786583.0,
+      "part_vti_transf": 0.67
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "19",
+      "cnae_descricao": "Fabricação de coque; de produtos derivados do petróleo e de biocombustíveis",
+      "vti_mil": 95018249.0,
+      "part_vti_transf": 13.33
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 79275592.0,
+      "part_vti_transf": 11.12
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "21",
+      "cnae_descricao": "Fabricação de produtos farmoquímicos e farmacêuticos",
+      "vti_mil": 29963553.0,
+      "part_vti_transf": 4.2
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 37260236.0,
+      "part_vti_transf": 5.23
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 22430010.0,
+      "part_vti_transf": 3.15
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 22468566.0,
+      "part_vti_transf": 3.15
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 24298496.0,
+      "part_vti_transf": 3.41
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "26",
+      "cnae_descricao": "Fabricação de equipamentos de informática; produtos eletrônicos e ópticos",
+      "vti_mil": 15758063.0,
+      "part_vti_transf": 2.21
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 20793477.0,
+      "part_vti_transf": 2.92
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 55340909.0,
+      "part_vti_transf": 7.77
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 74232072.0,
+      "part_vti_transf": 10.42
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "30",
+      "cnae_descricao": "Fabricação de outros equipamentos de transporte; exceto veículos automotores",
+      "vti_mil": 13072477.0,
+      "part_vti_transf": 1.83
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 4952919.0,
+      "part_vti_transf": 0.69
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 10555179.0,
+      "part_vti_transf": 1.48
+    },
+    {
+      "uf_cod": "35",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 10251638.0,
+      "part_vti_transf": 1.44
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 45038513.0,
+      "part_vti_transf": 27.8
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 5413161.0,
+      "part_vti_transf": 3.34
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "12",
+      "cnae_descricao": "Fabricação de produtos do fumo",
+      "vti_mil": 64494.0,
+      "part_vti_transf": 0.04
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 1457843.0,
+      "part_vti_transf": 0.9
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 2622180.0,
+      "part_vti_transf": 1.62
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 917780.0,
+      "part_vti_transf": 0.57
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 5966667.0,
+      "part_vti_transf": 3.68
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 10294555.0,
+      "part_vti_transf": 6.36
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 1313514.0,
+      "part_vti_transf": 0.81
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "19",
+      "cnae_descricao": "Fabricação de coque; de produtos derivados do petróleo e de biocombustíveis",
+      "vti_mil": 20946805.0,
+      "part_vti_transf": 12.93
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 10357392.0,
+      "part_vti_transf": 6.39
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "21",
+      "cnae_descricao": "Fabricação de produtos farmoquímicos e farmacêuticos",
+      "vti_mil": 2161574.0,
+      "part_vti_transf": 1.33
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 4547477.0,
+      "part_vti_transf": 2.81
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 4784299.0,
+      "part_vti_transf": 2.95
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 1917066.0,
+      "part_vti_transf": 1.18
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 4611403.0,
+      "part_vti_transf": 2.85
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "26",
+      "cnae_descricao": "Fabricação de equipamentos de informática; produtos eletrônicos e ópticos",
+      "vti_mil": 1148957.0,
+      "part_vti_transf": 0.71
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 4861810.0,
+      "part_vti_transf": 3.0
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 11658066.0,
+      "part_vti_transf": 7.2
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 13235649.0,
+      "part_vti_transf": 8.17
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "30",
+      "cnae_descricao": "Fabricação de outros equipamentos de transporte; exceto veículos automotores",
+      "vti_mil": 311581.0,
+      "part_vti_transf": 0.19
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 4032776.0,
+      "part_vti_transf": 2.49
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 2827547.0,
+      "part_vti_transf": 1.75
+    },
+    {
+      "uf_cod": "41",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 1494841.0,
+      "part_vti_transf": 0.92
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 25268065.0,
+      "part_vti_transf": 20.08
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 1695745.0,
+      "part_vti_transf": 1.35
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "12",
+      "cnae_descricao": "Fabricação de produtos do fumo",
+      "vti_mil": 157829.0,
+      "part_vti_transf": 0.13
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 7991172.0,
+      "part_vti_transf": 6.35
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 11301956.0,
+      "part_vti_transf": 8.98
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 584448.0,
+      "part_vti_transf": 0.46
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 5698361.0,
+      "part_vti_transf": 4.53
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 6298947.0,
+      "part_vti_transf": 5.01
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 835935.0,
+      "part_vti_transf": 0.66
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "19",
+      "cnae_descricao": "Fabricação de coque; de produtos derivados do petróleo e de biocombustíveis",
+      "vti_mil": 129276.0,
+      "part_vti_transf": 0.1
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 4511540.0,
+      "part_vti_transf": 3.59
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "21",
+      "cnae_descricao": "Fabricação de produtos farmoquímicos e farmacêuticos",
+      "vti_mil": 238664.0,
+      "part_vti_transf": 0.19
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 7274533.0,
+      "part_vti_transf": 5.78
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 5598047.0,
+      "part_vti_transf": 4.45
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 5902663.0,
+      "part_vti_transf": 4.69
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 5441098.0,
+      "part_vti_transf": 4.32
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "26",
+      "cnae_descricao": "Fabricação de equipamentos de informática; produtos eletrônicos e ópticos",
+      "vti_mil": 1104649.0,
+      "part_vti_transf": 0.88
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 11624022.0,
+      "part_vti_transf": 9.24
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 9375643.0,
+      "part_vti_transf": 7.45
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 6672954.0,
+      "part_vti_transf": 5.3
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "30",
+      "cnae_descricao": "Fabricação de outros equipamentos de transporte; exceto veículos automotores",
+      "vti_mil": 2601305.0,
+      "part_vti_transf": 2.07
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 2324203.0,
+      "part_vti_transf": 1.85
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 1742972.0,
+      "part_vti_transf": 1.39
+    },
+    {
+      "uf_cod": "42",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 1456647.0,
+      "part_vti_transf": 1.16
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 28674273.0,
+      "part_vti_transf": 19.24
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 3421820.0,
+      "part_vti_transf": 2.3
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "12",
+      "cnae_descricao": "Fabricação de produtos do fumo",
+      "vti_mil": 4569743.0,
+      "part_vti_transf": 3.07
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 1300104.0,
+      "part_vti_transf": 0.87
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 1278262.0,
+      "part_vti_transf": 0.86
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 8224885.0,
+      "part_vti_transf": 5.52
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 2103197.0,
+      "part_vti_transf": 1.41
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 5136368.0,
+      "part_vti_transf": 3.45
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 780255.0,
+      "part_vti_transf": 0.52
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "19",
+      "cnae_descricao": "Fabricação de coque; de produtos derivados do petróleo e de biocombustíveis",
+      "vti_mil": 11411195.0,
+      "part_vti_transf": 7.66
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 11509962.0,
+      "part_vti_transf": 7.72
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "21",
+      "cnae_descricao": "Fabricação de produtos farmoquímicos e farmacêuticos",
+      "vti_mil": 731864.0,
+      "part_vti_transf": 0.49
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 6246742.0,
+      "part_vti_transf": 4.19
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 4442597.0,
+      "part_vti_transf": 2.98
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 2238844.0,
+      "part_vti_transf": 1.5
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 10567516.0,
+      "part_vti_transf": 7.09
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "26",
+      "cnae_descricao": "Fabricação de equipamentos de informática; produtos eletrônicos e ópticos",
+      "vti_mil": 1271257.0,
+      "part_vti_transf": 0.85
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 2276429.0,
+      "part_vti_transf": 1.53
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 23140712.0,
+      "part_vti_transf": 15.53
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 9609134.0,
+      "part_vti_transf": 6.45
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "30",
+      "cnae_descricao": "Fabricação de outros equipamentos de transporte; exceto veículos automotores",
+      "vti_mil": 629131.0,
+      "part_vti_transf": 0.42
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 5091137.0,
+      "part_vti_transf": 3.42
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 2631161.0,
+      "part_vti_transf": 1.77
+    },
+    {
+      "uf_cod": "43",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 1759166.0,
+      "part_vti_transf": 1.18
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 12925169.0,
+      "part_vti_transf": 37.91
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 430528.0,
+      "part_vti_transf": 1.26
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "12",
+      "cnae_descricao": "Fabricação de produtos do fumo",
+      "vti_mil": 1789.0,
+      "part_vti_transf": 0.01
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 241274.0,
+      "part_vti_transf": 0.71
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 317254.0,
+      "part_vti_transf": 0.93
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 586788.0,
+      "part_vti_transf": 1.72
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 315366.0,
+      "part_vti_transf": 0.93
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 7098453.0,
+      "part_vti_transf": 20.82
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 27265.0,
+      "part_vti_transf": 0.08
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "19",
+      "cnae_descricao": "Fabricação de coque; de produtos derivados do petróleo e de biocombustíveis",
+      "vti_mil": 7412170.0,
+      "part_vti_transf": 21.74
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 825797.0,
+      "part_vti_transf": 2.42
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "21",
+      "cnae_descricao": "Fabricação de produtos farmoquímicos e farmacêuticos",
+      "vti_mil": 39257.0,
+      "part_vti_transf": 0.12
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 325038.0,
+      "part_vti_transf": 0.95
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 631083.0,
+      "part_vti_transf": 1.85
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 827856.0,
+      "part_vti_transf": 2.43
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 520941.0,
+      "part_vti_transf": 1.53
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 139236.0,
+      "part_vti_transf": 0.41
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 560368.0,
+      "part_vti_transf": 1.64
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 90366.0,
+      "part_vti_transf": 0.27
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 79877.0,
+      "part_vti_transf": 0.23
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 317748.0,
+      "part_vti_transf": 0.93
+    },
+    {
+      "uf_cod": "50",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 376304.0,
+      "part_vti_transf": 1.1
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 19086075.0,
+      "part_vti_transf": 52.22
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 1790723.0,
+      "part_vti_transf": 4.9
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 186553.0,
+      "part_vti_transf": 0.51
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 146261.0,
+      "part_vti_transf": 0.4
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 310704.0,
+      "part_vti_transf": 0.85
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 822128.0,
+      "part_vti_transf": 2.25
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 27104.0,
+      "part_vti_transf": 0.07
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 136623.0,
+      "part_vti_transf": 0.37
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "19",
+      "cnae_descricao": "Fabricação de coque; de produtos derivados do petróleo e de biocombustíveis",
+      "vti_mil": 5124905.0,
+      "part_vti_transf": 14.02
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 3625085.0,
+      "part_vti_transf": 9.92
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 291122.0,
+      "part_vti_transf": 0.8
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 1863619.0,
+      "part_vti_transf": 5.1
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 1010116.0,
+      "part_vti_transf": 2.76
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 734517.0,
+      "part_vti_transf": 2.01
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "26",
+      "cnae_descricao": "Fabricação de equipamentos de informática; produtos eletrônicos e ópticos",
+      "vti_mil": 12275.0,
+      "part_vti_transf": 0.03
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 225318.0,
+      "part_vti_transf": 0.62
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 257403.0,
+      "part_vti_transf": 0.7
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 60826.0,
+      "part_vti_transf": 0.17
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "30",
+      "cnae_descricao": "Fabricação de outros equipamentos de transporte; exceto veículos automotores",
+      "vti_mil": 4411.0,
+      "part_vti_transf": 0.01
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 302917.0,
+      "part_vti_transf": 0.83
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 93433.0,
+      "part_vti_transf": 0.26
+    },
+    {
+      "uf_cod": "51",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 438580.0,
+      "part_vti_transf": 1.2
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 29662253.0,
+      "part_vti_transf": 48.2
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 2214610.0,
+      "part_vti_transf": 3.6
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "12",
+      "cnae_descricao": "Fabricação de produtos do fumo",
+      "vti_mil": 8106.0,
+      "part_vti_transf": 0.01
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 125056.0,
+      "part_vti_transf": 0.2
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 1352678.0,
+      "part_vti_transf": 2.2
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 714849.0,
+      "part_vti_transf": 1.16
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 210372.0,
+      "part_vti_transf": 0.34
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 1017419.0,
+      "part_vti_transf": 1.65
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 202230.0,
+      "part_vti_transf": 0.33
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "19",
+      "cnae_descricao": "Fabricação de coque; de produtos derivados do petróleo e de biocombustíveis",
+      "vti_mil": 7471707.0,
+      "part_vti_transf": 12.14
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 3553328.0,
+      "part_vti_transf": 5.77
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "21",
+      "cnae_descricao": "Fabricação de produtos farmoquímicos e farmacêuticos",
+      "vti_mil": 3095103.0,
+      "part_vti_transf": 5.03
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 717312.0,
+      "part_vti_transf": 1.17
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 2068024.0,
+      "part_vti_transf": 3.36
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 1489242.0,
+      "part_vti_transf": 2.42
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 1983328.0,
+      "part_vti_transf": 3.22
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "26",
+      "cnae_descricao": "Fabricação de equipamentos de informática; produtos eletrônicos e ópticos",
+      "vti_mil": 48279.0,
+      "part_vti_transf": 0.08
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 348451.0,
+      "part_vti_transf": 0.57
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 1135435.0,
+      "part_vti_transf": 1.85
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 2122991.0,
+      "part_vti_transf": 3.45
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "30",
+      "cnae_descricao": "Fabricação de outros equipamentos de transporte; exceto veículos automotores",
+      "vti_mil": 8889.0,
+      "part_vti_transf": 0.01
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 742158.0,
+      "part_vti_transf": 1.21
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 487634.0,
+      "part_vti_transf": 0.79
+    },
+    {
+      "uf_cod": "52",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 754119.0,
+      "part_vti_transf": 1.23
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação de produtos alimentícios",
+      "vti_mil": 1163946.0,
+      "part_vti_transf": 26.38
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação de bebidas",
+      "vti_mil": 392944.0,
+      "part_vti_transf": 8.91
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "13",
+      "cnae_descricao": "Fabricação de produtos têxteis",
+      "vti_mil": 19011.0,
+      "part_vti_transf": 0.43
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção de artigos do vestuário e acessórios",
+      "vti_mil": 73551.0,
+      "part_vti_transf": 1.67
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação de couros e fabricação de artefatos de couro",
+      "vti_mil": 474.0,
+      "part_vti_transf": 0.01
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação de produtos de madeira",
+      "vti_mil": 6809.0,
+      "part_vti_transf": 0.15
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "17",
+      "cnae_descricao": "Fabricação de celulose; papel e produtos de papel",
+      "vti_mil": 20301.0,
+      "part_vti_transf": 0.46
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão e reprodução de gravações",
+      "vti_mil": 138337.0,
+      "part_vti_transf": 3.14
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "19",
+      "cnae_descricao": "Fabricação de coque; de produtos derivados do petróleo e de biocombustíveis",
+      "vti_mil": 9717.0,
+      "part_vti_transf": 0.22
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação de produtos químicos",
+      "vti_mil": 62232.0,
+      "part_vti_transf": 1.41
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "21",
+      "cnae_descricao": "Fabricação de produtos farmoquímicos e farmacêuticos",
+      "vti_mil": 577902.0,
+      "part_vti_transf": 13.1
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação de produtos de borracha e de material plástico",
+      "vti_mil": 59031.0,
+      "part_vti_transf": 1.34
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação de produtos de minerais não metálicos",
+      "vti_mil": 1220880.0,
+      "part_vti_transf": 27.67
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "24",
+      "cnae_descricao": "Metalurgia",
+      "vti_mil": 28658.0,
+      "part_vti_transf": 0.65
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação de produtos de metal; exceto máquinas e equipamentos",
+      "vti_mil": 226745.0,
+      "part_vti_transf": 5.14
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "26",
+      "cnae_descricao": "Fabricação de equipamentos de informática; produtos eletrônicos e ópticos",
+      "vti_mil": 6733.0,
+      "part_vti_transf": 0.15
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação de máquinas; aparelhos e materiais elétricos",
+      "vti_mil": 26848.0,
+      "part_vti_transf": 0.61
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "28",
+      "cnae_descricao": "Fabricação de máquinas e equipamentos",
+      "vti_mil": 65161.0,
+      "part_vti_transf": 1.48
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação de veículos automotores; reboques e carrocerias",
+      "vti_mil": 6069.0,
+      "part_vti_transf": 0.14
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação de móveis",
+      "vti_mil": 57699.0,
+      "part_vti_transf": 1.31
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação de produtos diversos",
+      "vti_mil": 104866.0,
+      "part_vti_transf": 2.38
+    },
+    {
+      "uf_cod": "53",
+      "ano_pia": 2023,
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção; reparação e instalação de máquinas e equipamentos",
+      "vti_mil": 144289.0,
+      "part_vti_transf": 3.27
+    }
+  ]
+}

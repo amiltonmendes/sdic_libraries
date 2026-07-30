@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.1",
+  "section_id": "pib_estadual",
+  "title": "PIB Estadual",
+  "source": "Contas Regionais e PIA / IBGE",
+  "reference": "2023",
+  "updated_at": "2026-07-30",
+  "capa_kpi": {
+    "id": "capa_pib_estadual",
+    "label": "PIB total",
+    "display_value": "R$ 381,2 bi",
+    "unit": "",
+    "period": "2023",
+    "delta": {
+      "dir": "up",
+      "label": "indústria 25,1%"
+    }
+  },
+  "story": {
+    "headline": "PIB estadual soma {{kpis[pib_total].display_value}} {{kpis[pib_total].unit}}.",
+    "lede": "Dados de Contas Regionais do IBGE (PIB a preços correntes), com a participação dos principais setores industriais detalhada a partir da Pesquisa Industrial Anual (PIA/IBGE).",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "Serviços participam com {{kpis[part_serv].display_value}}% do PIB."
+      },
+      {
+        "tone": "neutral",
+        "text": "Indústria representa {{kpis[part_ind].display_value}}% do valor adicionado."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "pib_total",
+      "label": "PIB total",
+      "value": 381.16266490021684,
+      "display_value": "381,2",
+      "unit": "bilhões de reais",
+      "period": "2023"
+    },
+    {
+      "id": "part_serv",
+      "label": "Participação serviços",
+      "value": 28.1,
+      "display_value": "28,1",
+      "unit": "%",
+      "period": "2023"
+    },
+    {
+      "id": "part_ind",
+      "label": "Participação indústria",
+      "value": 25.1,
+      "display_value": "25,1",
+      "unit": "%",
+      "period": "2023"
+    }
+  ],
+  "charts": [
+    {
+      "id": "pib_serie",
+      "type": "line",
+      "title": "Série PIB estadual",
+      "subtitle": "Produto Interno Bruto a preços correntes",
+      "unit": "bilhões de reais",
+      "series": [
+        {
+          "id": "pib",
+          "label": "PIB",
+          "points": [
+            {
+              "t": 2010,
+              "v": 135.4
+            },
+            {
+              "t": 2011,
+              "v": 145.7
+            },
+            {
+              "t": 2012,
+              "v": 159.3
+            },
+            {
+              "t": 2013,
+              "v": 178.3
+            },
+            {
+              "t": 2014,
+              "v": 196.2
+            },
+            {
+              "t": 2015,
+              "v": 216.0
+            },
+            {
+              "t": 2016,
+              "v": 228.3
+            },
+            {
+              "t": 2017,
+              "v": 236.1
+            },
+            {
+              "t": 2018,
+              "v": 250.5
+            },
+            {
+              "t": 2019,
+              "v": 256.5
+            },
+            {
+              "t": 2020,
+              "v": 268.2
+            },
+            {
+              "t": 2021,
+              "v": 307.3
+            },
+            {
+              "t": 2022,
+              "v": 353.6
+            },
+            {
+              "t": 2023,
+              "v": 381.2
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "t": 2023,
+          "label": "R$ 381,2 bi"
+        }
+      ]
+    }
+  ],
+  "ranked_lists": [],
+  "breakdowns": [
+    {
+      "id": "industria_subsetores",
+      "title": "Principais setores industriais",
+      "dimension_label": "Participação no PIB industrial",
+      "unit": "",
+      "acumulado": 68.3,
+      "items": [
+        {
+          "name": "Construção",
+          "value": 17.74,
+          "display_value": "17,7%",
+          "share": null
+        },
+        {
+          "name": "SIUP (eletricidade, gás e água)",
+          "value": 17.3,
+          "display_value": "17,3%",
+          "share": null
+        },
+        {
+          "name": "Fabricação de produtos alimentícios",
+          "value": 11.37,
+          "display_value": "11,4%",
+          "share": null
+        },
+        {
+          "name": "Fabricação de produtos químicos",
+          "value": 10.13,
+          "display_value": "10,1%",
+          "share": null
+        },
+        {
+          "name": "Fabricação de celulose, papel e produtos de papel",
+          "value": 7.09,
+          "display_value": "7,1%",
+          "share": null
+        },
+        {
+          "name": "Fabricação de produtos de borracha e de material plástico",
+          "value": 4.71,
+          "display_value": "4,7%",
+          "share": null
+        }
+      ]
+    }
+  ]
+}
