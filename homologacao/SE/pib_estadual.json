@@ -4,7 +4,7 @@
   "title": "PIB Estadual",
   "source": "Contas Regionais e PIA / IBGE",
   "reference": "2023",
-  "updated_at": "2026-07-30",
+  "updated_at": "2026-07-31",
   "capa_kpi": {
     "id": "capa_pib_estadual",
     "label": "PIB total",
@@ -27,6 +27,10 @@
       {
         "tone": "neutral",
         "text": "Indústria representa {{kpis[part_ind].display_value}}% do valor adicionado."
+      },
+      {
+        "tone": "neutral",
+        "text": "Principal setor industrial: SIUP (eletricidade, gás e água) (46,8% do PIB industrial)."
       }
     ]
   },
