@@ -4,7 +4,7 @@
   "title": "Comércio Exterior — União Europeia",
   "source": "Comex Stat / MDIC",
   "reference": "2025",
-  "updated_at": "2026-07-30",
+  "updated_at": "2026-07-31",
   "capa_kpi": {
     "id": "capa_comercio",
     "label": "Saldo comercial",
@@ -17,20 +17,24 @@
     }
   },
   "story": {
-    "headline": "Comércio exterior: {{kpis[exportacoes].display_value}} {{kpis[exportacoes].unit}} em exportações.",
+    "headline": "Comércio exterior: {{kpis[exportacoes].display_value}} em exportações.",
     "lede": "Fluxos comerciais anuais — exportações e importações do estado (União Europeia, Comex Stat / MDIC), com destaque para os principais setores exportadores (ISIC).",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "Importações em {{kpis[importacoes].display_value}} {{kpis[importacoes].unit}} no ano."
+        "text": "Importações em {{kpis[importacoes].display_value}} no ano."
+      },
+      {
+        "tone": "neg",
+        "text": "Saldo comercial de {{kpis[saldo].display_value}} no ano."
       },
       {
         "tone": "neutral",
-        "text": "Saldo comercial de {{kpis[saldo].display_value}} {{kpis[saldo].unit}} no ano."
+        "text": "Corrente de comércio (exp+imp) em {{kpis[corrente].display_value}}."
       },
       {
         "tone": "neutral",
-        "text": "Corrente de comércio (exp+imp) em {{kpis[corrente].display_value}} {{kpis[corrente].unit}}."
+        "text": "Principal setor exportador: Fabricação de produtos alimentícios (US$ 2,27 bi)."
       }
     ]
   },
