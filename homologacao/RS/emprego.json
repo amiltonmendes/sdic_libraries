@@ -4,7 +4,7 @@
   "title": "Emprego",
   "source": "Novo CAGED / MTE",
   "reference": "Mai/2026",
-  "updated_at": "2026-07-30",
+  "updated_at": "2026-07-31",
   "capa_kpi": {
     "id": "capa_emprego",
     "label": "Saldo CAGED 12m",
@@ -21,7 +21,7 @@
     "lede": "Emprego — dados do Novo CAGED (MTE/SDIC) com estoque de vínculos formais da RAIS. Narrativa atualiza automaticamente conforme novos dados disponibilizam.",
     "highlights": [
       {
-        "tone": "pos",
+        "tone": "neg",
         "text": "Saldo de {{kpis[saldo_mensal].display_value}} {{kpis[saldo_mensal].unit}} no mês mais recente."
       },
       {
@@ -31,6 +31,10 @@
       {
         "tone": "neutral",
         "text": "Intensidade tecnológica concentra {{kpis[baixa_intensidade_share].display_value}}% do estoque em atividades de baixa intensidade."
+      },
+      {
+        "tone": "pos",
+        "text": "Atividade com maior saldo: Fabricação de produtos alimentícios (+4.861 vagas)."
       }
     ]
   },

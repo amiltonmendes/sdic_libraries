@@ -4,7 +4,7 @@
   "title": "Emprego",
   "source": "Novo CAGED / MTE",
   "reference": "Mai/2026",
-  "updated_at": "2026-07-30",
+  "updated_at": "2026-07-31",
   "capa_kpi": {
     "id": "capa_emprego",
     "label": "Saldo CAGED 12m",
@@ -31,6 +31,10 @@
       {
         "tone": "neutral",
         "text": "Intensidade tecnológica concentra {{kpis[baixa_intensidade_share].display_value}}% do estoque em atividades de baixa intensidade."
+      },
+      {
+        "tone": "pos",
+        "text": "Atividade com maior saldo: Construção de edifícios (+2.991 vagas)."
       }
     ]
   },
