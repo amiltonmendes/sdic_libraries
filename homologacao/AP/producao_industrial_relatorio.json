@@ -2,9 +2,9 @@
   "schema_version": "relatorio_v1",
   "section_id": "producao_industrial",
   "title": "Produção Industrial — dados para relatórios",
-  "source": "PIM-PF (T.8888) e PIA (T.1849) / IBGE",
+  "source": "PIM-PF + PIA / IBGE",
   "reference": "2026-05-01",
-  "updated_at": "2026-07-30",
+  "updated_at": "2026-07-31",
   "uf": "AP",
   "cobertura_pimpf": false,
   "serie_indice": [],
@@ -16,133 +16,133 @@
       "cnae": "Total",
       "name": "Total",
       "share": 1,
-      "display_value": "100.0%",
+      "display_value": "100,0%",
       "vti": 514770
     },
     {
       "cnae": "C",
       "name": "Indústrias de transformação",
       "share": 0.8929,
-      "display_value": "89.3%",
+      "display_value": "89,3%",
       "vti": 459623
     },
     {
       "cnae": "16",
       "name": "Fabricação de produtos de madeira",
       "share": 0.4438,
-      "display_value": "44.4%",
+      "display_value": "44,4%",
       "vti": 228479
     },
     {
       "cnae": "10",
       "name": "Fabricação de produtos alimentícios",
       "share": 0.2271,
-      "display_value": "22.7%",
+      "display_value": "22,7%",
       "vti": 116886
     },
     {
       "cnae": "B",
       "name": "Indústrias extrativas",
       "share": 0.1071,
-      "display_value": "10.7%",
+      "display_value": "10,7%",
       "vti": 55147
     },
     {
       "cnae": "08",
       "name": "Extração de minerais não-metálicos",
       "share": 0.0787,
-      "display_value": "7.9%",
+      "display_value": "7,9%",
       "vti": 40520
     },
     {
       "cnae": "23",
       "name": "Fabricação de produtos de minerais não-metálicos",
       "share": 0.0696,
-      "display_value": "7.0%",
+      "display_value": "7,0%",
       "vti": 35813
     },
     {
       "cnae": "07",
       "name": "Extração de minerais metálicos",
       "share": 0.0284,
-      "display_value": "2.8%",
+      "display_value": "2,8%",
       "vti": 14627
     },
     {
       "cnae": "25",
       "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
       "share": 0.0158,
-      "display_value": "1.6%",
+      "display_value": "1,6%",
       "vti": 8125
     },
     {
       "cnae": "32",
       "name": "Fabricação de produtos diversos",
       "share": 0.0135,
-      "display_value": "1.4%",
+      "display_value": "1,4%",
       "vti": 6962
     },
     {
       "cnae": "11",
       "name": "Fabricação de bebidas",
       "share": 0.0122,
-      "display_value": "1.2%",
+      "display_value": "1,2%",
       "vti": 6262
     },
     {
       "cnae": "33",
       "name": "Manutenção, reparação e instalação de máquinas e equipamentos",
       "share": 0.0117,
-      "display_value": "1.2%",
+      "display_value": "1,2%",
       "vti": 6015
     },
     {
       "cnae": "30",
       "name": "Fabricação de outros equipamentos de transporte, exceto veículos automotores",
       "share": 0.0108,
-      "display_value": "1.1%",
+      "display_value": "1,1%",
       "vti": 5545
     },
     {
       "cnae": "20",
       "name": "Fabricação de produtos químicos",
       "share": 0.01,
-      "display_value": "1.0%",
+      "display_value": "1,0%",
       "vti": 5129
     },
     {
       "cnae": "31",
       "name": "Fabricação de móveis",
       "share": 0.0086,
-      "display_value": "0.9%",
+      "display_value": "0,9%",
       "vti": 4440
     },
     {
       "cnae": "18",
       "name": "Impressão e reprodução de gravações",
       "share": 0.0077,
-      "display_value": "0.8%",
+      "display_value": "0,8%",
       "vti": 3967
     },
     {
       "cnae": "14",
       "name": "Confecção de artigos do vestuário e acessórios",
       "share": 0.0063,
-      "display_value": "0.6%",
+      "display_value": "0,6%",
       "vti": 3229
     },
     {
       "cnae": "13",
       "name": "Fabricação de produtos têxteis",
       "share": 0.0026,
-      "display_value": "0.3%",
+      "display_value": "0,3%",
       "vti": 1338
     },
     {
       "cnae": "29",
       "name": "Fabricação de veículos automotores, reboques e carrocerias",
       "share": 0.0018,
-      "display_value": "0.2%",
+      "display_value": "0,2%",
       "vti": 915
     }
   ]

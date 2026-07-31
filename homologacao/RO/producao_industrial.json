@@ -2,12 +2,26 @@
   "schema_version": "1.1",
   "section_id": "producao_industrial",
   "title": "Produção Industrial",
-  "source": "PIM-PF (T.8888) e PIA (T.1849) / IBGE",
+  "source": "PIM-PF + PIA / IBGE",
   "reference": "2026-05-01",
-  "updated_at": "2026-07-30",
+  "updated_at": "2026-07-31",
   "uf": "RO",
   "cobertura_pimpf": false,
   "capa_kpi": {},
+  "story": {
+    "headline": "Produção industrial: sem divulgação estadual da PIM-PF.",
+    "lede": "A Pesquisa Industrial Mensal (PIM-PF/IBGE) só é divulgada para as unidades da federação com amostra estadual, e este estado não está entre elas. A seção apresenta a composição do valor da transformação industrial a partir da Pesquisa Industrial Anual (PIA/IBGE).",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "Sem série mensal de produção física para este estado."
+      },
+      {
+        "tone": "neutral",
+        "text": "A composição industrial por divisão CNAE segue disponível pela PIA."
+      }
+    ]
+  },
   "kpis": [],
   "charts": [],
   "ranked_lists": [],

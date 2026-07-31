@@ -2,9 +2,9 @@
   "schema_version": "relatorio_v1",
   "section_id": "producao_industrial",
   "title": "Produção Industrial — dados para relatórios",
-  "source": "PIM-PF (T.8888) e PIA (T.1849) / IBGE",
+  "source": "PIM-PF + PIA / IBGE",
   "reference": "2026-05-01",
-  "updated_at": "2026-07-30",
+  "updated_at": "2026-07-31",
   "uf": "RR",
   "cobertura_pimpf": false,
   "serie_indice": [],
@@ -16,98 +16,98 @@
       "cnae": "Total",
       "name": "Total",
       "share": 1,
-      "display_value": "100.0%",
+      "display_value": "100,0%",
       "vti": 250891
     },
     {
       "cnae": "C",
       "name": "Indústrias de transformação",
       "share": 0.9511,
-      "display_value": "95.1%",
+      "display_value": "95,1%",
       "vti": 238610
     },
     {
       "cnae": "10",
       "name": "Fabricação de produtos alimentícios",
       "share": 0.5402,
-      "display_value": "54.0%",
+      "display_value": "54,0%",
       "vti": 135540
     },
     {
       "cnae": "16",
       "name": "Fabricação de produtos de madeira",
       "share": 0.059,
-      "display_value": "5.9%",
+      "display_value": "5,9%",
       "vti": 14793
     },
     {
       "cnae": "23",
       "name": "Fabricação de produtos de minerais não-metálicos",
       "share": 0.0546,
-      "display_value": "5.5%",
+      "display_value": "5,5%",
       "vti": 13690
     },
     {
       "cnae": "B",
       "name": "Indústrias extrativas",
       "share": 0.0489,
-      "display_value": "4.9%",
+      "display_value": "4,9%",
       "vti": 12281
     },
     {
       "cnae": "11",
       "name": "Fabricação de bebidas",
       "share": 0.0475,
-      "display_value": "4.8%",
+      "display_value": "4,8%",
       "vti": 11908
     },
     {
       "cnae": "25",
       "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
       "share": 0.0325,
-      "display_value": "3.2%",
+      "display_value": "3,2%",
       "vti": 8156
     },
     {
       "cnae": "18",
       "name": "Impressão e reprodução de gravações",
       "share": 0.0314,
-      "display_value": "3.1%",
+      "display_value": "3,1%",
       "vti": 7869
     },
     {
       "cnae": "14",
       "name": "Confecção de artigos do vestuário e acessórios",
       "share": 0.0218,
-      "display_value": "2.2%",
+      "display_value": "2,2%",
       "vti": 5464
     },
     {
       "cnae": "28",
       "name": "Fabricação de máquinas e equipamentos",
       "share": 0.0164,
-      "display_value": "1.6%",
+      "display_value": "1,6%",
       "vti": 4127
     },
     {
       "cnae": "13",
       "name": "Fabricação de produtos têxteis",
       "share": 0.0141,
-      "display_value": "1.4%",
+      "display_value": "1,4%",
       "vti": 3547
     },
     {
       "cnae": "33",
       "name": "Manutenção, reparação e instalação de máquinas e equipamentos",
       "share": 0.0122,
-      "display_value": "1.2%",
+      "display_value": "1,2%",
       "vti": 3053
     },
     {
       "cnae": "32",
       "name": "Fabricação de produtos diversos",
       "share": 0.0096,
-      "display_value": "1.0%",
+      "display_value": "1,0%",
       "vti": 2414
     }
   ]

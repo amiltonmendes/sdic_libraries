@@ -2,9 +2,9 @@
   "schema_version": "relatorio_v1",
   "section_id": "producao_industrial",
   "title": "Produção Industrial — dados para relatórios",
-  "source": "PIM-PF (T.8888) e PIA (T.1849) / IBGE",
+  "source": "PIM-PF + PIA / IBGE",
   "reference": "2026-05-01",
-  "updated_at": "2026-07-30",
+  "updated_at": "2026-07-31",
   "uf": "PB",
   "cobertura_pimpf": false,
   "serie_indice": [],
@@ -16,175 +16,175 @@
       "cnae": "Total",
       "name": "Total",
       "share": 1,
-      "display_value": "100.0%",
+      "display_value": "100,0%",
       "vti": 7380968
     },
     {
       "cnae": "C",
       "name": "Indústrias de transformação",
       "share": 0.9487,
-      "display_value": "94.9%",
+      "display_value": "94,9%",
       "vti": 7002513
     },
     {
       "cnae": "15",
       "name": "Preparação de couros e fabricação de artefatos de couro, artigos para viagem e calçados",
       "share": 0.2067,
-      "display_value": "20.7%",
+      "display_value": "20,7%",
       "vti": 1525395
     },
     {
       "cnae": "10",
       "name": "Fabricação de produtos alimentícios",
       "share": 0.1817,
-      "display_value": "18.2%",
+      "display_value": "18,2%",
       "vti": 1341111
     },
     {
       "cnae": "23",
       "name": "Fabricação de produtos de minerais não-metálicos",
       "share": 0.1535,
-      "display_value": "15.3%",
+      "display_value": "15,3%",
       "vti": 1132723
     },
     {
       "cnae": "13",
       "name": "Fabricação de produtos têxteis",
       "share": 0.0691,
-      "display_value": "6.9%",
+      "display_value": "6,9%",
       "vti": 510061
     },
     {
       "cnae": "19",
       "name": "Fabricação de coque, de produtos derivados do petróleo e de biocombustíveis",
       "share": 0.0607,
-      "display_value": "6.1%",
+      "display_value": "6,1%",
       "vti": 448074
     },
     {
       "cnae": "22",
       "name": "Fabricação de produtos de borracha e de material plástico",
       "share": 0.0553,
-      "display_value": "5.5%",
+      "display_value": "5,5%",
       "vti": 408407
     },
     {
       "cnae": "20",
       "name": "Fabricação de produtos químicos",
       "share": 0.055,
-      "display_value": "5.5%",
+      "display_value": "5,5%",
       "vti": 405797
     },
     {
       "cnae": "B",
       "name": "Indústrias extrativas",
       "share": 0.0513,
-      "display_value": "5.1%",
+      "display_value": "5,1%",
       "vti": 378455
     },
     {
       "cnae": "08",
       "name": "Extração de minerais não-metálicos",
       "share": 0.0509,
-      "display_value": "5.1%",
+      "display_value": "5,1%",
       "vti": 375645
     },
     {
       "cnae": "11",
       "name": "Fabricação de bebidas",
       "share": 0.0338,
-      "display_value": "3.4%",
+      "display_value": "3,4%",
       "vti": 249656
     },
     {
       "cnae": "25",
       "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
       "share": 0.0248,
-      "display_value": "2.5%",
+      "display_value": "2,5%",
       "vti": 182728
     },
     {
       "cnae": "31",
       "name": "Fabricação de móveis",
       "share": 0.0189,
-      "display_value": "1.9%",
+      "display_value": "1,9%",
       "vti": 139203
     },
     {
       "cnae": "33",
       "name": "Manutenção, reparação e instalação de máquinas e equipamentos",
       "share": 0.0189,
-      "display_value": "1.9%",
+      "display_value": "1,9%",
       "vti": 139309
     },
     {
       "cnae": "18",
       "name": "Impressão e reprodução de gravações",
       "share": 0.0177,
-      "display_value": "1.8%",
+      "display_value": "1,8%",
       "vti": 130883
     },
     {
       "cnae": "14",
       "name": "Confecção de artigos do vestuário e acessórios",
       "share": 0.0164,
-      "display_value": "1.6%",
+      "display_value": "1,6%",
       "vti": 121123
     },
     {
       "cnae": "17",
       "name": "Fabricação de celulose, papel e produtos de papel",
       "share": 0.0154,
-      "display_value": "1.5%",
+      "display_value": "1,5%",
       "vti": 113478
     },
     {
       "cnae": "24",
       "name": "Metalurgia",
       "share": 0.0072,
-      "display_value": "0.7%",
+      "display_value": "0,7%",
       "vti": 52978
     },
     {
       "cnae": "28",
       "name": "Fabricação de máquinas e equipamentos",
       "share": 0.0041,
-      "display_value": "0.4%",
+      "display_value": "0,4%",
       "vti": 30081
     },
     {
       "cnae": "16",
       "name": "Fabricação de produtos de madeira",
       "share": 0.0034,
-      "display_value": "0.3%",
+      "display_value": "0,3%",
       "vti": 25169
     },
     {
       "cnae": "27",
       "name": "Fabricação de máquinas, aparelhos e materiais elétricos",
       "share": 0.0021,
-      "display_value": "0.2%",
+      "display_value": "0,2%",
       "vti": 15299
     },
     {
       "cnae": "32",
       "name": "Fabricação de produtos diversos",
       "share": 0.002,
-      "display_value": "0.2%",
+      "display_value": "0,2%",
       "vti": 14487
     },
     {
       "cnae": "29",
       "name": "Fabricação de veículos automotores, reboques e carrocerias",
       "share": 0.0012,
-      "display_value": "0.1%",
+      "display_value": "0,1%",
       "vti": 9004
     },
     {
       "cnae": "26",
       "name": "Fabricação de equipamentos de informática, produtos eletrônicos e ópticos",
       "share": 0.0008,
-      "display_value": "0.1%",
+      "display_value": "0,1%",
       "vti": 5877
     }
   ]

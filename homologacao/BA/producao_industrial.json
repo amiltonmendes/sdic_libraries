@@ -2,41 +2,79 @@
   "schema_version": "1.1",
   "section_id": "producao_industrial",
   "title": "Produção Industrial",
-  "source": "PIM-PF (T.8888) e PIA (T.1849) / IBGE",
+  "source": "PIM-PF + PIA / IBGE",
   "reference": "2026-05-01",
-  "updated_at": "2026-07-30",
+  "updated_at": "2026-07-31",
   "uf": "BA",
   "cobertura_pimpf": true,
   "capa_kpi": {
     "label": "Produção industrial — acumulado em 12 meses",
     "value": -2.1,
-    "display_value": "-2.1%",
+    "display_value": "-2,1%",
     "reference": "2026-05-01"
+  },
+  "story": {
+    "headline": "Produção industrial acumula {{kpis[var_12m].display_value}} em 12 meses.",
+    "lede": "Produção física da indústria (PIM-PF/IBGE), em número-índice com base 100 = 2022, e composição do valor da transformação industrial pela Pesquisa Industrial Anual.",
+    "highlights": [
+      {
+        "tone": "neg",
+        "text": "No mês mais recente, a produção variou {{kpis[var_mes].display_value}} ante o mesmo mês do ano anterior."
+      },
+      {
+        "tone": "neg",
+        "text": "No acumulado do ano, {{kpis[var_ano].display_value}}."
+      },
+      {
+        "tone": "neutral",
+        "text": "Índice de produção física em {{kpis[indice].display_value}} pontos, ante {{kpis[indice_brasil].display_value}} do Brasil (base 100 = 2022)."
+      },
+      {
+        "tone": "pos",
+        "text": "Destaque em 12 meses: Indústrias extrativas (8,8%)."
+      }
+    ]
   },
   "kpis": [
     {
-      "id": "11602",
-      "label": "PIMPF - Variação mês/mesmo mês do ano anterior (M/M-12)",
+      "id": "var_mes",
+      "label": "Variação no mês (ante igual mês do ano anterior)",
       "reference": "2026-05-01",
       "value": -7.1,
-      "display_value": "-7.1%",
-      "unit": "%"
+      "display_value": "-7,1%",
+      "unit": ""
     },
     {
-      "id": "11603",
-      "label": "PIMPF - Variação acumulada no ano (em relação ao mesmo período do ano anterior)",
+      "id": "var_ano",
+      "label": "Variação acumulada no ano",
       "reference": "2026-05-01",
       "value": -5.1,
-      "display_value": "-5.1%",
-      "unit": "%"
+      "display_value": "-5,1%",
+      "unit": ""
     },
     {
-      "id": "11604",
-      "label": "PIMPF - Variação acumulada em 12 meses (em relação ao período anterior de 12 meses)",
+      "id": "var_12m",
+      "label": "Variação acumulada em 12 meses",
       "reference": "2026-05-01",
       "value": -2.1,
-      "display_value": "-2.1%",
-      "unit": "%"
+      "display_value": "-2,1%",
+      "unit": ""
+    },
+    {
+      "id": "indice",
+      "label": "Índice de produção física",
+      "reference": "2026-05-01",
+      "value": 92.4,
+      "display_value": "92,4",
+      "unit": "pontos (base 100 = 2022)"
+    },
+    {
+      "id": "indice_brasil",
+      "label": "Índice de produção física — Brasil",
+      "reference": "2026-05-01",
+      "value": 107.25,
+      "display_value": "107,3",
+      "unit": "pontos (base 100 = 2022)"
     }
   ],
   "charts": [
@@ -62,62 +100,62 @@
         {
           "name": "Indústrias extrativas",
           "value": 8.8,
-          "display_value": "8.8%"
+          "display_value": "8,8%"
         },
         {
           "name": "Fabricação de produtos alimentícios",
           "value": 4.3,
-          "display_value": "4.3%"
+          "display_value": "4,3%"
         },
         {
           "name": "Fabricação de produtos de minerais não metálicos",
           "value": 1.7,
-          "display_value": "1.7%"
+          "display_value": "1,7%"
         },
         {
           "name": "Fabricação de celulose, papel e produtos de papel",
           "value": -0.5,
-          "display_value": "-0.5%"
+          "display_value": "-0,5%"
         },
         {
           "name": "Fabricação de produtos de borracha e de material plástico",
           "value": -1.7,
-          "display_value": "-1.7%"
+          "display_value": "-1,7%"
         },
         {
           "name": "Fabricação de coque, de produtos derivados do petróleo e de biocombustíveis",
           "value": -1.8,
-          "display_value": "-1.8%"
+          "display_value": "-1,8%"
         },
         {
           "name": "Indústrias de transformação",
           "value": -2.6,
-          "display_value": "-2.6%"
+          "display_value": "-2,6%"
         },
         {
           "name": "Fabricação de bebidas",
           "value": -4.8,
-          "display_value": "-4.8%"
+          "display_value": "-4,8%"
         },
         {
           "name": "Metalurgia",
           "value": -5.8,
-          "display_value": "-5.8%"
+          "display_value": "-5,8%"
         },
         {
           "name": "Fabricação de produtos químicos",
           "value": -6.9,
-          "display_value": "-6.9%"
+          "display_value": "-6,9%"
         },
         {
           "name": "Fabricação de máquinas, aparelhos e materiais elétricos",
           "value": -18.7,
-          "display_value": "-18.7%"
+          "display_value": "-18,7%"
         },
         {
           "name": "Preparação de couros e fabricação de artefatos de couro, artigos para viagem e calçados",
           "value": -19.4,
-          "display_value": "-19.4%"
+          "display_value": "-19,4%"
         }
       ]
     }
