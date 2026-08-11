@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.2",
+  "n_politicas": 9,
+  "recursos": {
+    "value": 52276256006.76,
+    "display_value": "R$ 52,28 bi"
+  },
+  "atendimentos": {
+    "value": 7621,
+    "display_value": "7.621"
+  },
+  "top_politicas": [
+    {
+      "id": "p_mais_p",
+      "sigla": "P+P",
+      "nome": "Plano Mais Produção",
+      "display_value": "R$ 51,39 bi"
+    },
+    {
+      "id": "depreciacao_acelerada",
+      "sigla": "DA",
+      "nome": "Depreciação Acelerada",
+      "display_value": "R$ 870,0 mi"
+    },
+    {
+      "id": "acoes_diben",
+      "sigla": "Ações DIBEN",
+      "nome": "Ações DIBEN",
+      "display_value": "R$ 13,3 mi"
+    }
+  ],
+  "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
+  "uf": "PR",
+  "nome_uf": "Paraná",
+  "ranking_nacional": {
+    "metrica": "recursos",
+    "posicao": 3,
+    "de": 27,
+    "share": 8.22,
+    "display": "3º de 27 UFs em recursos mobilizados"
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "PR",
+    "regra": "com_recursos",
+    "headline": "Paraná soma R$ 52,28 bi em 9 políticas da SDIC com dado próprio do estado.",
+    "lede": "Paraná é o 3º do país em recursos mobilizados, com 8,2% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 51,39 bi), DA (R$ 870,0 mi) e Ações DIBEN (R$ 13,3 mi). As políticas não monetárias somam 7.621 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "3ª posição nacional em recursos mobilizados (8,2% do total das UFs)."
+      }
+    ]
+  }
+}

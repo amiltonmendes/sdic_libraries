@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "naval",
+  "nome": "Depreciação Acelerada — Indústria Naval",
+  "sigla": "Naval",
+  "categoria": "Incentivo fiscal — renovação de frota naval (navios-tanque)",
+  "source": "SDIC/DIAM — relatório-síntese (20260806, transcrito)",
+  "reference": "acumulado",
+  "updated_at": "2026-08-06",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Benefício fiscal",
+    "display_value": "R$ 2,40 bi",
+    "unit": "",
+    "period": "acumulado",
+    "delta": {
+      "dir": "up",
+      "label": "16 embarcações elegíveis"
+    },
+    "value": 2400000000.0
+  },
+  "story": {
+    "escopo": "nacional",
+    "headline": "Incentivo à indústria naval concedeu {{kpis[beneficio].display_value}} em benefício fiscal para a renovação de 16 navios-tanque.",
+    "lede": "Antecipação da depreciação fiscal de navios-tanque, reduzindo a carga tributária nos primeiros anos após a aquisição da embarcação e melhorando o fluxo de caixa das empresas do setor de transporte aquaviário e petróleo e gás.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "16 embarcações consideradas elegíveis ao incentivo até o momento."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "beneficio",
+      "label": "Benefício fiscal",
+      "value": 2400000000.0,
+      "display_value": "R$ 2,40 bi",
+      "unit": "",
+      "period": "acumulado"
+    },
+    {
+      "id": "embarcacoes",
+      "label": "Embarcações elegíveis",
+      "value": 16,
+      "display_value": "16",
+      "unit": "embarcações",
+      "period": "acumulado"
+    }
+  ],
+  "ranked_lists": [],
+  "charts": [],
+  "breakdowns": [],
+  "_nota_dados_minimos": "Único dado recebido é um snapshot agregado (2 números) — sem série temporal, sem UF, sem lista de embarcações/empresas. Suficiente para 1 KPI de capa, não para breakdown.",
+  "competencia": "2026A",
+  "data_aceitacao": "2026-08-06",
+  "geo": {
+    "nivel": "nacional",
+    "fallback": true,
+    "regiao": "Nordeste"
+  }
+}

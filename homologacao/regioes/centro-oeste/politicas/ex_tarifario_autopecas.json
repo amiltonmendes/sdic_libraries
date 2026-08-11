@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "ex_tarifario_autopecas",
+  "nome": "Ex-Tarifário — Autopeças",
+  "sigla": "Ex-Tarifário Autopeças",
+  "categoria": "Redução tarifária — competitividade da cadeia automotiva",
+  "source": "SDIC/DIAM — ListadeAutopecasNaoProduzidas_site.xlsx",
+  "reference": "vigentes em 2026-08",
+  "updated_at": "2026-08",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Ex-tarifários de autopeças vigentes",
+    "display_value": "10.556 códigos",
+    "unit": "",
+    "period": "ago/2026",
+    "delta": {
+      "dir": "up",
+      "label": "9.458 no Anexo I"
+    },
+    "value": null
+  },
+  "story": {
+    "escopo": "nacional",
+    "headline": "10.556 ex-tarifários de autopeças estão vigentes, reduzindo o Imposto de Importação para peças sem produção nacional equivalente ou com produção doméstica insuficiente.",
+    "lede": "Regime de exceção tarifária (Resolução Gecex 368/22) para autopeças sem produção nacional equivalente, aumentando a competitividade da indústria automotiva instalada no Brasil. Anexo I: peças do 38º Protocolo do Acordo de Complementação Econômica nº 14. Anexo II: peças grafadas como Bens de Capital ou Bens de Informática/Telecom na TEC.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "10.556 códigos vigentes: 9.458 no Anexo I e 1.098 no Anexo II."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "total",
+      "label": "Total de ex-tarifários vigentes",
+      "value": 10556,
+      "display_value": "10.556",
+      "unit": "códigos NCM",
+      "period": "ago/2026"
+    },
+    {
+      "id": "anexo1",
+      "label": "Vigentes no Anexo I",
+      "value": 9458,
+      "display_value": "9.458",
+      "unit": "códigos",
+      "period": "ago/2026"
+    },
+    {
+      "id": "anexo2",
+      "label": "Vigentes no Anexo II",
+      "value": 1098,
+      "display_value": "1.098",
+      "unit": "códigos",
+      "period": "ago/2026"
+    }
+  ],
+  "ranked_lists": [],
+  "charts": [],
+  "breakdowns": [
+    {
+      "id": "por_anexo",
+      "title": "Distribuição por anexo",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "items": [
+        {
+          "name": "Anexo I",
+          "value": 9458,
+          "display_value": "9.458",
+          "share": 89.6
+        },
+        {
+          "name": "Anexo II",
+          "value": 1098,
+          "display_value": "1.098",
+          "share": 10.4
+        }
+      ]
+    }
+  ],
+  "_nota_granularidade": "Fonte é um catálogo de códigos NCM (sem CNPJ/UF), assim como Ex-Tarifário BK/BIT. Colunas de resolução/vigência permitiriam evolução por ano, mas a data de início de vigência não veio nesta planilha (só 'Fim da Vigência') — pendente para próxima entrega.",
+  "competencia": "2026M08",
+  "data_aceitacao": "2026-08-10",
+  "geo": {
+    "nivel": "nacional",
+    "fallback": true,
+    "regiao": "Centro-Oeste"
+  }
+}

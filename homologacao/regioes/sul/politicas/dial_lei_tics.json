@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "dial_lei_tics",
+  "nome": "Lei de Informática (Lei de TICs)",
+  "sigla": "Lei de TICs",
+  "categoria": "Incentivo fiscal — indústria de tecnologia da informação e comunicação",
+  "source": "SDIC/DIAL — DIAL_-_anexo.xlsx (Missão 4)",
+  "reference": "2020-2025 (trimestral)",
+  "updated_at": "2026-08-10",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Crédito financeiro concedido",
+    "display_value": "R$ 36.450",
+    "unit": "",
+    "period": "2020-2025",
+    "delta": {
+      "dir": "up",
+      "label": "8.468 certificados emitidos"
+    },
+    "value": 36450.0
+  },
+  "story": {
+    "escopo": "nacional",
+    "headline": "Lei de TICs já concedeu {{kpis[credito].display_value}} em crédito financeiro e viabilizou {{kpis[investimento].display_value}} em investimentos de P&D&I, com 8.468 certificados emitidos desde 2020.",
+    "lede": "Incentivo fiscal para empresas de bens e serviços de tecnologia da informação e comunicação, condicionado a investimentos em pesquisa, desenvolvimento e inovação (P&D&I). Série trimestral, sem granularidade estadual na fonte.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "8.468 certificados emitidos entre 2020 e 2025."
+      },
+      {
+        "tone": "pos",
+        "text": "R$ 13.953 investidos em P&D&I no período."
+      },
+      {
+        "tone": "neutral",
+        "text": "R$ 36.450 em crédito financeiro concedido no total."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "certificados",
+      "label": "Certificados emitidos",
+      "value": 8468,
+      "display_value": "8.468",
+      "unit": "certificados",
+      "period": "2020-2025"
+    },
+    {
+      "id": "investimento",
+      "label": "Investimento em P&D&I",
+      "value": 13953.32,
+      "display_value": "R$ 13.953",
+      "unit": "",
+      "period": "2020-2025"
+    },
+    {
+      "id": "credito",
+      "label": "Crédito financeiro concedido",
+      "value": 36450.25,
+      "display_value": "R$ 36.450",
+      "unit": "",
+      "period": "2020-2025"
+    }
+  ],
+  "ranked_lists": [],
+  "breakdowns": [],
+  "charts": [
+    {
+      "id": "credito_trimestral",
+      "type": "line",
+      "title": "Crédito financeiro por período",
+      "subtitle": "Trimestral + regime anual, 2020-2025",
+      "unit": "milhões de reais",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "credito",
+          "label": "Crédito (R$ mi)",
+          "points": [
+            {
+              "t": "2020 1° Trimestre",
+              "v": 773.81
+            },
+            {
+              "t": "2020 2° Trimestre",
+              "v": 868.06
+            },
+            {
+              "t": "2020 3° Trimestre",
+              "v": 1166.7
+            },
+            {
+              "t": "2020 4° Trimestre",
+              "v": 1992.89
+            },
+            {
+              "t": "2020 Regime Anual",
+              "v": 356.1
+            },
+            {
+              "t": "2021 1° Trimestre",
+              "v": 1548.64
+            },
+            {
+              "t": "2021 2° Trimestre",
+              "v": 1394.47
+            },
+            {
+              "t": "2021 3° Trimestre",
+              "v": 1751.87
+            },
+            {
+              "t": "2021 4° Trimestre",
+              "v": 2048.01
+            },
+            {
+              "t": "2021 Regime Anual",
+              "v": 497.76
+            },
+            {
+              "t": "2022 1° Trimestre",
+              "v": 1581.27
+            },
+            {
+              "t": "2022 2° Trimestre",
+              "v": 1685.04
+            },
+            {
+              "t": "2022 3° Trimestre",
+              "v": 1626.1
+            },
+            {
+              "t": "2022 4° Trimestre",
+              "v": 1740.63
+            },
+            {
+              "t": "2022 Regime Anual",
+              "v": 786.69
+            },
+            {
+              "t": "2023 1° Trimestre",
+              "v": 1419.84
+            },
+            {
+              "t": "2023 2° Trimestre",
+              "v": 1168.74
+            },
+            {
+              "t": "2023 3° Trimestre",
+              "v": 1021.13
+            },
+            {
+              "t": "2023 4° Trimestre",
+              "v": 1145.03
+            },
+            {
+              "t": "2023 Regime Anual",
+              "v": 709.3
+            },
+            {
+              "t": "2024 1° Trimestre",
+              "v": 1223.71
+            },
+            {
+              "t": "2024 2° Trimestre",
+              "v": 1371.4
+            },
+            {
+              "t": "2024 3° Trimestre",
+              "v": 1480.4
+            },
+            {
+              "t": "2024 4° Trimestre",
+              "v": 1620.3
+            },
+            {
+              "t": "2024 Regime Anual",
+              "v": 756.25
+            },
+            {
+              "t": "2025 1° Trimestre",
+              "v": 1455.35
+            },
+            {
+              "t": "2025 2° Trimestre",
+              "v": 1552.48
+            },
+            {
+              "t": "2025 3° Trimestre",
+              "v": 1708.28
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    }
+  ],
+  "_nota_uf": "Série é nacional, sem recorte por UF na fonte.",
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-08-10",
+  "geo": {
+    "nivel": "nacional",
+    "fallback": true,
+    "regiao": "Sul"
+  }
+}

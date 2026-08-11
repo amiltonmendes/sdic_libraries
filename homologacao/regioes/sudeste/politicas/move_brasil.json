@@ -1,0 +1,106 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "move_brasil",
+  "nome": "Move Brasil",
+  "sigla": "Move Brasil",
+  "categoria": "Financiamento — renovação de frota e veículos de trabalhadores de plataforma",
+  "source": "SDIC/DIAM — relatório-síntese (20260805/20260806, transcrito)",
+  "reference": "2026",
+  "updated_at": "2026-08-06",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Recursos mobilizados (Caminhões + App/Táxi)",
+    "display_value": "R$ 25,63 bi",
+    "unit": "",
+    "period": "2026",
+    "delta": {
+      "dir": "up",
+      "label": "5.062 reservas MotoAPP no FGO"
+    },
+    "value": 25630000000.0
+  },
+  "story": {
+    "escopo": "nacional",
+    "headline": "Move Brasil mobilizou {{kpis[recursos].display_value}} em financiamento para renovação de frota, além de 5.062 reservas para motociclistas de aplicativo aderirem ao programa.",
+    "lede": "Programa de financiamento em condições especiais para renovação de veículos — caminhões, ônibus e implementos rodoviários; carros de motoristas de aplicativo e taxistas; e motocicletas/bicicletas elétricas de entregadores e motofretistas, com garantia do FGO.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "Caminhões, ônibus e implementos: R$ 23,17 bi aprovados, 21.908 operações."
+      },
+      {
+        "tone": "pos",
+        "text": "App/Táxi: R$ 2,46 bi consumidos, 7.966 operações contratadas."
+      },
+      {
+        "tone": "neutral",
+        "text": "MotoAPP e entregadores: 5.062 reservas registradas no FGO, programa em fase inicial de adesão."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "recursos",
+      "label": "Recursos mobilizados (Caminhões + App/Táxi)",
+      "value": 25630000000.0,
+      "display_value": "R$ 25,63 bi",
+      "unit": "",
+      "period": "2026"
+    },
+    {
+      "id": "recursos_caminhoes",
+      "label": "Aprovado — Caminhões/Ônibus/Implementos",
+      "value": 23170000000.0,
+      "display_value": "R$ 23,17 bi",
+      "unit": "",
+      "period": "2026"
+    },
+    {
+      "id": "recursos_app_taxi",
+      "label": "Consumido — App/Táxi",
+      "value": 2460000000.0,
+      "display_value": "R$ 2,46 bi",
+      "unit": "",
+      "period": "2026"
+    },
+    {
+      "id": "reservas_motoapp",
+      "label": "Reservas registradas (FGO) — MotoAPP",
+      "value": 5062,
+      "display_value": "5.062",
+      "unit": "reservas",
+      "period": "2026"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "por_modalidade",
+      "title": "Recursos por modalidade (Caminhões e App/Táxi)",
+      "metric_label": "Recursos",
+      "unit": "reais",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "Caminhões, Ônibus e Implementos",
+          "value": 23170000000.0,
+          "display_value": "R$ 23,17 bi"
+        },
+        {
+          "name": "Motoristas de Aplicativo e Taxistas",
+          "value": 2460000000.0,
+          "display_value": "R$ 2,46 bi"
+        }
+      ]
+    }
+  ],
+  "charts": [],
+  "breakdowns": [],
+  "_nota_agregacao": "KPI de 'recursos' soma só Caminhões (aprovado) e App/Táxi (consumido), ambos em R$. MotoAPP mede reservas (contagem) e fica separado, para não distorcer o total. Sem breakdown geográfico: só Caminhões tem corte regional, cobrindo parte dos recursos — misturar deixaria o recorte por UF/região enganoso.",
+  "competencia": "2026A",
+  "data_aceitacao": "2026-08-10",
+  "geo": {
+    "nivel": "nacional",
+    "fallback": true,
+    "regiao": "Sudeste"
+  }
+}

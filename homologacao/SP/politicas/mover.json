@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "mover",
+  "nome": "Mover — Mobilidade Verde e Inovação",
+  "sigla": "MOVER",
+  "categoria": "Incentivo fiscal — descarbonização e inovação automotiva",
+  "source": "SDIC/DIAM — EmpresasHabilitadas_MOVER.xlsx + Creditos_MOVER.xlsx",
+  "reference": "2024-2028",
+  "updated_at": "2026-08-10",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Empresas habilitadas",
+    "display_value": "131 habilitações",
+    "unit": "",
+    "period": "acumulado",
+    "delta": {
+      "dir": "up",
+      "label": "46,1% do total nacional · 1ª entre 10 UFs"
+    },
+    "value": 131
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "SP",
+    "regra": "lider",
+    "headline": "São Paulo lidera o país: 131 habilitações, 46,1% do total nacional.",
+    "lede": "São Paulo ocupa a 1ª posição entre as 10 UFs com registro e responde por 46,1% do programa no país. Dentro do Sudeste, que soma 160 habilitações, a participação de São Paulo é de 81,9%, a maior da região. 4,6× a média por UF com registro (28 habilitações). Programa Mover busca impulsionar o desenvolvimento tecnológico, ampliar a competitividade da indústria automotiva nacional, fortalecer a integração às cadeias globais de valor e acelerar a descarbonização da mobilidade.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "1ª posição nacional entre as 10 UFs com registro, com 46,1% do total."
+      },
+      {
+        "tone": "pos",
+        "text": "81,9% de tudo que o Sudeste registra no programa — maior participação da região."
+      },
+      {
+        "tone": "neutral",
+        "text": "Concentração: as três maiores UFs somam 79,6% do programa."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "habilitacoes",
+      "label": "Habilitações totais",
+      "value": 284,
+      "display_value": "284",
+      "unit": "habilitações",
+      "period": "acumulado"
+    },
+    {
+      "id": "valor_creditos_planilha",
+      "label": "Créditos autorizados (planilha)",
+      "value": 8414600630.89,
+      "display_value": "R$ 8,41 bi",
+      "unit": "",
+      "period": "2024-2028"
+    },
+    {
+      "id": "fabricantes",
+      "label": "Habilitações como Fabricante",
+      "value": 206,
+      "display_value": "206",
+      "unit": "habilitações",
+      "period": "acumulado"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "por_modalidade",
+      "title": "Habilitações por modalidade",
+      "metric_label": "Habilitações",
+      "unit": "habilitações",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "Fabricante",
+          "value": 206,
+          "display_value": "206 habilitações"
+        },
+        {
+          "name": "Projeto Relocalização",
+          "value": 48,
+          "display_value": "48 habilitações"
+        },
+        {
+          "name": "Projeto Novo Produto",
+          "value": 22,
+          "display_value": "22 habilitações"
+        },
+        {
+          "name": "Serviço P&D",
+          "value": 6,
+          "display_value": "6 habilitações"
+        },
+        {
+          "name": "Projeto Reciclagem",
+          "value": 2,
+          "display_value": "2 habilitações"
+        }
+      ]
+    },
+    {
+      "id": "por_situacao",
+      "title": "Habilitações por situação",
+      "metric_label": "Habilitações",
+      "unit": "habilitações",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "Habilitação Ativa",
+          "value": 265,
+          "display_value": "265 habilitações"
+        },
+        {
+          "name": "Habilitação Cancelada / Empresa Desabilitada",
+          "value": 7,
+          "display_value": "7 habilitações"
+        },
+        {
+          "name": "Habilitação Suspensa",
+          "value": 6,
+          "display_value": "6 habilitações"
+        },
+        {
+          "name": "Término de vigência",
+          "value": 6,
+          "display_value": "6 habilitações"
+        }
+      ]
+    }
+  ],
+  "charts": [],
+  "breakdowns": [],
+  "_nota_divergencia": "O docx-resumo (AÇÕES DIAM, 06/08/2026) cita: investimentos anunciados R$ 190 bi, benefício total R$ 19.3 bi, 282 habilitações totais, 10 estados contemplados. A soma de Creditos_MOVER.xlsx (R$ 8.41 bi) e a contagem de EmpresasHabilitadas_MOVER.xlsx (284 habilitações, 10 UFs) não batem exatamente com os números do resumo — publicamos os valores calculados a partir das planilhas (mais granulares e auditáveis) e registramos aqui os números do resumo para conferência.",
+  "_nota_anonimizacao": "4 de 339 lançamentos de crédito não puderam ser cruzados a uma UF (CNPJ não encontrado em EmpresasHabilitadas_MOVER.xlsx) — não afeta o total nacional, só fica fora do breakdown por UF. Nenhum nome de empresa incluído no JSON de saída.",
+  "competencia": "2026A",
+  "data_aceitacao": "2026-08-10",
+  "geo": {
+    "nivel": "uf",
+    "fallback": false,
+    "uf": "SP",
+    "regiao": "Sudeste"
+  },
+  "story_nacional": {
+    "escopo": "nacional",
+    "headline": "Programa Mover já soma {{kpis[habilitacoes].display_value}} habilitações em 10 UFs, impulsionando o desenvolvimento tecnológico e a descarbonização da indústria automotiva.",
+    "lede": "Programa Mover busca impulsionar o desenvolvimento tecnológico, ampliar a competitividade da indústria automotiva nacional, fortalecer a integração às cadeias globais de valor e acelerar a descarbonização da mobilidade. Habilitações e créditos fiscais autorizados por UF da matriz da empresa.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "284 empresas habilitadas, sendo 206 como fabricantes."
+      },
+      {
+        "tone": "pos",
+        "text": "São Paulo concentra 131 habilitações (46% do total)."
+      },
+      {
+        "tone": "neutral",
+        "text": "R$ 8,41 bi em créditos autorizados (2024-2028) — valor da planilha de créditos; o relatório-síntese cita R$ 19,3 bi de benefício total (ver nota metodológica)."
+      }
+    ]
+  }
+}

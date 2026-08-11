@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "depreciacao_acelerada",
+  "nome": "Depreciação Acelerada",
+  "sigla": "DA",
+  "categoria": "Incentivo fiscal — renovação de máquinas e equipamentos",
+  "source": "SDIC/DINTE — base bruta de deferimentos",
+  "reference": "2024-2026",
+  "updated_at": "2026-08-07",
+  "capa_kpi": {
+    "id": "capa_da",
+    "label": "Investimento incentivado",
+    "display_value": "R$ 423,8 mi",
+    "unit": "",
+    "period": "2024-2026",
+    "delta": {
+      "dir": "flat",
+      "label": "4,9% do total nacional · 4ª entre 5 regiões"
+    },
+    "value": 423828108.22
+  },
+  "story": {
+    "escopo": "regiao",
+    "regiao": "Nordeste",
+    "uf": "AL",
+    "regra": "em_uf",
+    "headline": "Sem corte por estado: o Nordeste registra R$ 423,8 mi (4,9% do total nacional).",
+    "lede": "A fonte desta política não desce ao nível de UF — o número acima é da região Nordeste, que inclui Alagoas. É a 4ª colocação entre as 5 macrorregiões com registro. Programa de depreciação acelerada — incentivo à renovação do parque de máquinas e equipamentos (âmbito do acordo Mercosul–UE).",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "4ª entre as 5 macrorregiões com registro, com 4,9% do total nacional."
+      },
+      {
+        "tone": "neutral",
+        "text": "Dado regional: a fonte não permite separar o valor de Alagoas."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "capex",
+      "label": "Investimento incentivado",
+      "value": 8628426988.68,
+      "display_value": "R$ 8,63 bi",
+      "unit": "",
+      "period": "2024-2026"
+    },
+    {
+      "id": "beneficio",
+      "label": "Benefício fiscal (estimativa preliminar)",
+      "value": 1466832588.08,
+      "display_value": "R$ 1,47 bi",
+      "unit": "",
+      "period": "2024-2026"
+    },
+    {
+      "id": "pedidos",
+      "label": "Pedidos deferidos",
+      "value": 7227,
+      "display_value": "7.227",
+      "unit": "pedidos",
+      "period": "2024-2026"
+    },
+    {
+      "id": "empresas",
+      "label": "Empresas beneficiadas",
+      "value": 751,
+      "display_value": "751",
+      "unit": "empresas",
+      "period": "2024-2026"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "top_setores",
+      "title": "Maiores setores por investimento incentivado",
+      "metric_label": "Investimento",
+      "unit": "reais",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "Transportes Terrestre",
+          "value": 1117513789.43,
+          "display_value": "R$ 1,12 bi"
+        },
+        {
+          "name": "Fabricação de Produtos Alimentícios",
+          "value": 1008574390.08,
+          "display_value": "R$ 1,01 bi"
+        },
+        {
+          "name": "Fabricação de produtos de borracha e de material plástico",
+          "value": 714888085.01,
+          "display_value": "R$ 714,9 mi"
+        },
+        {
+          "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
+          "value": 622228232.5,
+          "display_value": "R$ 622,2 mi"
+        },
+        {
+          "name": "Fabricação de máquinas, aparelhos e materiais elétricos",
+          "value": 615809421.51,
+          "display_value": "R$ 615,8 mi"
+        }
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "id": "investimento_anual",
+      "type": "area",
+      "title": "Investimento incentivado por ano",
+      "subtitle": "Valor do bem, por ano do requerimento",
+      "unit": "bilhões de reais",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "investimento",
+          "label": "Investimento",
+          "points": [
+            {
+              "t": 2024,
+              "v": 0.906
+            },
+            {
+              "t": 2025,
+              "v": 6.495
+            },
+            {
+              "t": 2026,
+              "v": 1.227
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "t": 2026,
+          "label": "Ano parcial — dados até jul/ago de 2026"
+        }
+      ]
+    }
+  ],
+  "breakdowns": [
+    {
+      "id": "capex_setor",
+      "title": "Investimento incentivado por setor (CNAE)",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "items": [
+        {
+          "name": "Transportes Terrestre",
+          "value": 1117513789.43,
+          "display_value": "R$ 1,12 bi",
+          "share": 13.0
+        },
+        {
+          "name": "Fabricação de Produtos Alimentícios",
+          "value": 1008574390.08,
+          "display_value": "R$ 1,01 bi",
+          "share": 11.7
+        },
+        {
+          "name": "Fabricação de produtos de borracha e de material plástico",
+          "value": 714888085.01,
+          "display_value": "R$ 714,9 mi",
+          "share": 8.3
+        },
+        {
+          "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
+          "value": 622228232.5,
+          "display_value": "R$ 622,2 mi",
+          "share": 7.2
+        },
+        {
+          "name": "Fabricação de máquinas, aparelhos e materiais elétricos",
+          "value": 615809421.51,
+          "display_value": "R$ 615,8 mi",
+          "share": 7.1
+        },
+        {
+          "name": "Fabricação de biocombustíveis",
+          "value": 612015006.91,
+          "display_value": "R$ 612,0 mi",
+          "share": 7.1
+        },
+        {
+          "name": "Fabricação de máquinas e equipamentos",
+          "value": 556444283.79,
+          "display_value": "R$ 556,4 mi",
+          "share": 6.4
+        },
+        {
+          "name": "Fabricação de Produtos Têxteis",
+          "value": 481738300.06,
+          "display_value": "R$ 481,7 mi",
+          "share": 5.6
+        },
+        {
+          "name": "Demais setores",
+          "value": 2899215479.39,
+          "display_value": "R$ 2,90 bi",
+          "share": 33.6
+        }
+      ]
+    }
+  ],
+  "_nota_metodologica": "Valor do BF recalculado como 17% fixo sobre Valor do Bem (não a coluna original da planilha, que também é 17% constante em 100% das linhas — sugerindo premissa simplificada, não cálculo tributário real/marginal). Comparação com versão anterior do indicador (recorte de SP) sugeriu benefício real próximo de 34%. Publicado como estimativa preliminar por decisão confirmada com o time; ajustar TAXA_BF_FIXA neste script quando a metodologia correta for validada.",
+  "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas agregados por UF/setor.",
+  "competencia": "2026M08",
+  "data_aceitacao": "2026-08-07",
+  "geo": {
+    "nivel": "regiao",
+    "fallback": true,
+    "uf": "AL",
+    "regiao": "Nordeste"
+  },
+  "story_nacional": {
+    "escopo": "nacional",
+    "headline": "Depreciação acelerada incentivou {{kpis[capex].display_value}} em máquinas e equipamentos entre 2024 e 2026, com {{kpis[beneficio].display_value}} de benefício fiscal (estimativa preliminar).",
+    "lede": "Programa de depreciação acelerada — incentivo à renovação do parque de máquinas e equipamentos (âmbito do acordo Mercosul–UE). Investimento incentivado e benefício fiscal por UF e setor (CNAE).",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "7.227 pedidos deferidos, de 751 empresas."
+      },
+      {
+        "tone": "neutral",
+        "text": "São Paulo concentra 28,9% do investimento nacional."
+      },
+      {
+        "tone": "neutral",
+        "text": "Benefício fiscal calculado com taxa fixa preliminar de 17% — valor sujeito a revisão metodológica."
+      }
+    ]
+  }
+}

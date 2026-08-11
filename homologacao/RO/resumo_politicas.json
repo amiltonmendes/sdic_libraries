@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.2",
+  "n_politicas": 6,
+  "recursos": {
+    "value": 7054628287.360001,
+    "display_value": "R$ 7,05 bi"
+  },
+  "atendimentos": {
+    "value": 1957,
+    "display_value": "1.957"
+  },
+  "top_politicas": [
+    {
+      "id": "p_mais_p",
+      "sigla": "P+P",
+      "nome": "Plano Mais Produção",
+      "display_value": "R$ 7,05 bi"
+    },
+    {
+      "id": "depreciacao_acelerada",
+      "sigla": "DA",
+      "nome": "Depreciação Acelerada",
+      "display_value": "R$ 4,0 mi"
+    }
+  ],
+  "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
+  "uf": "RO",
+  "nome_uf": "Rondônia",
+  "ranking_nacional": {
+    "metrica": "recursos",
+    "posicao": 18,
+    "de": 27,
+    "share": 1.11,
+    "display": "18º de 27 UFs em recursos mobilizados"
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "RO",
+    "regra": "com_recursos",
+    "headline": "Rondônia soma R$ 7,05 bi em 6 políticas da SDIC com dado próprio do estado.",
+    "lede": "Rondônia é o 18º do país em recursos mobilizados, com 1,1% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 7,05 bi) e DA (R$ 4,0 mi). As políticas não monetárias somam 1.957 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "18ª posição nacional em recursos mobilizados (1,1% do total das UFs)."
+      }
+    ]
+  }
+}

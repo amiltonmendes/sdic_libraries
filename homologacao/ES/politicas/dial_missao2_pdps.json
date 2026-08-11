@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "dial_missao2_pdps",
+  "nome": "Parcerias para o Desenvolvimento Produtivo — Saúde",
+  "sigla": "PDP Saúde",
+  "categoria": "Complexo econômico-industrial da saúde",
+  "source": "SDIC/DIAL — DIAL_-_anexo.xlsx (Missão 2)",
+  "reference": "acumulado",
+  "updated_at": "2026-08-10",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Parcerias (PDPs)",
+    "display_value": "98",
+    "unit": "",
+    "period": "acumulado",
+    "delta": {
+      "dir": "up",
+      "label": "72,1% do total nacional · 1ª entre 3 regiões"
+    },
+    "value": 98
+  },
+  "story": {
+    "escopo": "regiao",
+    "regiao": "Sudeste",
+    "uf": "ES",
+    "regra": "em_uf",
+    "headline": "Sem corte por estado: o Sudeste registra 98 parcerias (72,1% do total nacional).",
+    "lede": "A fonte desta política não desce ao nível de UF — o número acima é da região Sudeste, que inclui o Espírito Santo. É a 1ª colocação entre as 3 macrorregiões com registro. Parcerias entre laboratórios públicos e parceiros privados para internalização da produção de medicamentos e insumos estratégicos de saúde no Brasil, reduzindo a dependência de importação.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "1ª entre as 3 macrorregiões com registro, com 72,1% do total nacional."
+      },
+      {
+        "tone": "neutral",
+        "text": "Dado regional: a fonte não permite separar o valor do Espírito Santo."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "parcerias",
+      "label": "Parcerias (PDPs)",
+      "value": 136,
+      "display_value": "136",
+      "unit": "parcerias",
+      "period": "acumulado"
+    },
+    {
+      "id": "produtos",
+      "label": "Produtos distintos",
+      "value": 81,
+      "display_value": "81",
+      "unit": "produtos",
+      "period": "acumulado"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "por_instituicao",
+      "title": "Parcerias por instituição pública",
+      "metric_label": "Parcerias",
+      "unit": "parcerias",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "Fiocruz/Bio-Manguinhos",
+          "value": 23,
+          "display_value": "23 parcerias"
+        },
+        {
+          "name": "LAFEPE",
+          "value": 20,
+          "display_value": "20 parcerias"
+        },
+        {
+          "name": "Fiocruz/Farmanguinhos",
+          "value": 19,
+          "display_value": "19 parcerias"
+        },
+        {
+          "name": "Butantan",
+          "value": 13,
+          "display_value": "13 parcerias"
+        },
+        {
+          "name": "FURP",
+          "value": 11,
+          "display_value": "11 parcerias"
+        },
+        {
+          "name": "FUNED",
+          "value": 9,
+          "display_value": "9 parcerias"
+        },
+        {
+          "name": "LFM",
+          "value": 9,
+          "display_value": "9 parcerias"
+        },
+        {
+          "name": "Bahiafarma",
+          "value": 8,
+          "display_value": "8 parcerias"
+        }
+      ]
+    }
+  ],
+  "charts": [],
+  "breakdowns": [],
+  "_nota_anonimizacao": "Nomes de parceiros privados (laboratórios) omitidos do JSON — apenas a instituição pública é reportada. Poucos laboratórios privados concentram a maioria das parcerias; nomeá-los por produto se aproximaria de expor posição comercial individual.",
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-08-10",
+  "geo": {
+    "nivel": "regiao",
+    "fallback": true,
+    "uf": "ES",
+    "regiao": "Sudeste"
+  },
+  "story_nacional": {
+    "escopo": "nacional",
+    "headline": "136 Parcerias para o Desenvolvimento Produtivo (PDP) já viabilizaram a produção nacional de {{kpis[produtos].display_value}} medicamentos e insumos de saúde, em 8 UFs.",
+    "lede": "Parcerias entre laboratórios públicos e parceiros privados para internalização da produção de medicamentos e insumos estratégicos de saúde no Brasil, reduzindo a dependência de importação.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "136 parcerias ativas cobrindo 81 produtos, em 8 estados."
+      },
+      {
+        "tone": "neutral",
+        "text": "Fiocruz/Bio-Manguinhos lidera com 23 parcerias."
+      }
+    ]
+  }
+}

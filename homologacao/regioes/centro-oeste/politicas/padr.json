@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "padr",
+  "nome": "Política Automotiva de Desenvolvimento Regional",
+  "sigla": "PADR",
+  "categoria": "Incentivo fiscal — desenvolvimento regional da indústria automotiva",
+  "source": "SDIC/DIAM — relatório-síntese (20260806, transcrito)",
+  "reference": "2020-2025",
+  "updated_at": "2026-08-06",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Investimentos produtivos",
+    "display_value": "R$ 6,41 bi",
+    "unit": "",
+    "period": "2020-2025",
+    "delta": {
+      "dir": "up",
+      "label": "empregos diretos: 9388 → 16307"
+    },
+    "value": 6410000000.0
+  },
+  "story": {
+    "escopo": "nacional",
+    "headline": "PADR gerou {{kpis[investimento].display_value}} em investimentos produtivos e {{kpis[empregos_2025].display_value}} empregos diretos em 2025, um crescimento de 74% desde 2020, nas regiões Norte, Nordeste e Centro-Oeste.",
+    "lede": "Instrumento de política industrial para fortalecer a indústria automotiva no Norte, Nordeste e Centro-Oeste, via incentivos fiscais condicionados a investimentos produtivos e projetos de P&D.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "Empregos diretos cresceram de 9388 (2020) para 16307 (2025) — alta de ~74%."
+      },
+      {
+        "tone": "pos",
+        "text": "Investimento em P&D somou R$ 1,76 bi no período, com pico de R$ 552,5 mi em 2024."
+      },
+      {
+        "tone": "neutral",
+        "text": "Benefícios fiscais somaram R$ 50,60 bi, com valor atípico de R$ 26,2 bi em 2023."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "investimento",
+      "label": "Investimentos produtivos (2020-2025)",
+      "value": 6410000000.0,
+      "display_value": "R$ 6,41 bi",
+      "unit": "",
+      "period": "2020-2025"
+    },
+    {
+      "id": "investimento_pd",
+      "label": "Investimento em P&D (2020-2025)",
+      "value": 1760000000.0,
+      "display_value": "R$ 1,76 bi",
+      "unit": "",
+      "period": "2020-2025"
+    },
+    {
+      "id": "beneficio",
+      "label": "Benefício fiscal concedido (2020-2025)",
+      "value": 50600000000.0,
+      "display_value": "R$ 50,60 bi",
+      "unit": "",
+      "period": "2020-2025"
+    },
+    {
+      "id": "empregos_2025",
+      "label": "Empregos diretos (2025)",
+      "value": 16307,
+      "display_value": "16.307",
+      "unit": "empregos",
+      "period": "2025"
+    }
+  ],
+  "ranked_lists": [],
+  "breakdowns": [],
+  "charts": [
+    {
+      "id": "investimento_anual",
+      "type": "bars",
+      "title": "Investimento produtivo por ano",
+      "subtitle": "Anos com dado disponível no relatório-síntese",
+      "unit": "reais",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "investimento",
+          "label": "Investimento",
+          "points": [
+            {
+              "t": 2022,
+              "v": 765500000.0
+            },
+            {
+              "t": 2024,
+              "v": 1360000000.0
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "t": 2023,
+          "label": "Benefício fiscal atípico: R$ 26,2 bi (não é investimento produtivo)"
+        }
+      ]
+    }
+  ],
+  "_nota_serie_incompleta": "O relatório-síntese só cita valores de investimento produtivo para 2020, 2022 e 2024 (mín/máx da série) — 2021, 2023 e 2025 não têm valor individual informado, só o total do período. O gráfico anual fica com lacunas até recebermos a série completa.",
+  "_nota_uf": "Fonte não traz UF/região — série é só nacional.",
+  "competencia": "2026A",
+  "data_aceitacao": "2026-08-06",
+  "geo": {
+    "nivel": "nacional",
+    "fallback": true,
+    "regiao": "Centro-Oeste"
+  }
+}

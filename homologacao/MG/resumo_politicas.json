@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.2",
+  "n_politicas": 7,
+  "recursos": {
+    "value": 59332388950.72,
+    "display_value": "R$ 59,33 bi"
+  },
+  "atendimentos": {
+    "value": 21558,
+    "display_value": "21.558"
+  },
+  "top_politicas": [
+    {
+      "id": "p_mais_p",
+      "sigla": "P+P",
+      "nome": "Plano Mais Produção",
+      "display_value": "R$ 57,79 bi"
+    },
+    {
+      "id": "depreciacao_acelerada",
+      "sigla": "DA",
+      "nome": "Depreciação Acelerada",
+      "display_value": "R$ 1,55 bi"
+    }
+  ],
+  "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
+  "uf": "MG",
+  "nome_uf": "Minas Gerais",
+  "ranking_nacional": {
+    "metrica": "recursos",
+    "posicao": 2,
+    "de": 27,
+    "share": 9.33,
+    "display": "2º de 27 UFs em recursos mobilizados"
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "MG",
+    "regra": "com_recursos",
+    "headline": "Minas Gerais soma R$ 59,33 bi em 7 políticas da SDIC com dado próprio do estado.",
+    "lede": "Minas Gerais é o 2º do país em recursos mobilizados, com 9,3% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 57,79 bi) e DA (R$ 1,55 bi). As políticas não monetárias somam 21.558 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "2ª posição nacional em recursos mobilizados (9,3% do total das UFs)."
+      }
+    ]
+  }
+}

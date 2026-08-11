@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "capacitacao_textil_senai_rn",
+  "nome": "Capacitação Têxtil — Convênio SENAI-RN",
+  "sigla": "Capacitação Têxtil RN",
+  "categoria": "Qualificação profissional — setor têxtil",
+  "source": "SDIC/DIBEN/CGBS via SENAI-RN",
+  "reference": "acumulado",
+  "updated_at": "2026-07-07",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Trabalhadores capacitados",
+    "display_value": "1.410",
+    "unit": "",
+    "period": "acumulado",
+    "delta": {
+      "dir": "up",
+      "label": "100,0% do total nacional"
+    },
+    "value": 1410
+  },
+  "story": {
+    "escopo": "regiao",
+    "regiao": "Nordeste",
+    "uf": "SE",
+    "regra": "em_uf",
+    "headline": "Sem corte por estado: o Nordeste registra 1.410 trabalhadores capacitados (100,0% do total nacional).",
+    "lede": "A fonte desta política não desce ao nível de UF — o número acima é da região Nordeste, que inclui Sergipe. Cursos de qualificação profissional para aumento da empregabilidade e fortalecimento do setor têxtil no RN.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "Dado regional: a fonte não permite separar o valor de Sergipe."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "trabalhadores",
+      "label": "Trabalhadores capacitados",
+      "value": 1410,
+      "display_value": "1.410",
+      "unit": "trabalhadores",
+      "period": "acumulado"
+    },
+    {
+      "id": "valor",
+      "label": "Investimento total",
+      "value": 2844381.0,
+      "display_value": "R$ 2,8 mi",
+      "unit": "",
+      "period": "acumulado"
+    }
+  ],
+  "ranked_lists": [],
+  "charts": [],
+  "breakdowns": [],
+  "_nota_uf": "100% concentrado no RN (única UF na base) — breakdown por_uf tem 1 item só, de propósito.",
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-07-07",
+  "geo": {
+    "nivel": "regiao",
+    "fallback": true,
+    "uf": "SE",
+    "regiao": "Nordeste"
+  },
+  "story_nacional": {
+    "escopo": "nacional",
+    "headline": "Convênio com o SENAI-RN qualificou {{kpis[trabalhadores].display_value}} trabalhadores do setor têxtil no Rio Grande do Norte.",
+    "lede": "Cursos de qualificação profissional para aumento da empregabilidade e fortalecimento do setor têxtil no RN.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "1.410 trabalhadores capacitados, todos no RN."
+      },
+      {
+        "tone": "neutral",
+        "text": "R$ 2,8 mi investidos no convênio."
+      }
+    ]
+  }
+}

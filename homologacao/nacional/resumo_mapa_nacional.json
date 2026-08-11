@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.2",
+  "n_politicas": 21,
+  "recursos": {
+    "value": 1572417336450.0,
+    "display_value": "R$ 1,57 tri"
+  },
+  "atendimentos": {
+    "value": 156679,
+    "display_value": "156.679"
+  },
+  "top_politicas": [
+    {
+      "id": "p_mais_p",
+      "sigla": "P+P",
+      "nome": "Plano Mais Produção",
+      "display_value": "R$ 709,37 bi"
+    },
+    {
+      "id": "acoes_diben",
+      "sigla": "Ações DIBEN",
+      "nome": "Ações DIBEN",
+      "display_value": "R$ 407,02 bi"
+    },
+    {
+      "id": "fgi",
+      "sigla": "FGI",
+      "nome": "FGI — Fundo Garantidor para Investimentos",
+      "display_value": "R$ 264 bi"
+    },
+    {
+      "id": "fgo",
+      "sigla": "FGO",
+      "nome": "FGO — Fundo Garantidor de Operações",
+      "display_value": "R$ 143 bi"
+    },
+    {
+      "id": "move_brasil",
+      "sigla": "Move Brasil",
+      "nome": "Move Brasil",
+      "display_value": "R$ 25,63 bi"
+    },
+    {
+      "id": "depreciacao_acelerada",
+      "sigla": "DA",
+      "nome": "Depreciação Acelerada",
+      "display_value": "R$ 8,63 bi"
+    }
+  ],
+  "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
+  "story": {
+    "escopo": "nacional",
+    "regra": "normal",
+    "headline": "Brasil: R$ 1,57 tri mobilizados em 21 políticas da SDIC.",
+    "lede": "As maiores são P+P (R$ 709,37 bi), Ações DIBEN (R$ 407,02 bi) e FGI (R$ 264 bi). As políticas não monetárias somam 156.679 projetos, empresas e atendimentos. Soma entre políticas de unidades diferentes — ver nota metodológica.",
+    "highlights": []
+  },
+  "todas_politicas": [
+    {
+      "id": "acoes_diben",
+      "sigla": "Ações DIBEN",
+      "nome": "Ações DIBEN",
+      "regionalizavel": true,
+      "display_value": "R$ 407,02 bi"
+    },
+    {
+      "id": "b_mais_p",
+      "sigla": "B+P",
+      "nome": "Brasil Mais Produtivo",
+      "regionalizavel": true,
+      "display_value": "137.572 empresas"
+    },
+    {
+      "id": "capacitacao_textil_senai_rn",
+      "sigla": "Capacitação Têxtil RN",
+      "nome": "Capacitação Têxtil — Convênio SENAI-RN",
+      "regionalizavel": true,
+      "display_value": "1.410"
+    },
+    {
+      "id": "construa_brasil",
+      "sigla": "Construa Brasil",
+      "nome": "Construa Brasil",
+      "regionalizavel": true,
+      "display_value": "16.105"
+    },
+    {
+      "id": "construcao_galpoes_industriais",
+      "sigla": "Galpões Industriais",
+      "nome": "Construção de Galpões Industriais",
+      "regionalizavel": true,
+      "display_value": "31 galpões"
+    },
+    {
+      "id": "depreciacao_acelerada",
+      "sigla": "DA",
+      "nome": "Depreciação Acelerada",
+      "regionalizavel": true,
+      "display_value": "R$ 8,63 bi"
+    },
+    {
+      "id": "naval",
+      "sigla": "Naval",
+      "nome": "Depreciação Acelerada — Indústria Naval",
+      "regionalizavel": false,
+      "display_value": "R$ 2,40 bi"
+    },
+    {
+      "id": "decos_ecommerce_br",
+      "sigla": "E-commerce.BR",
+      "nome": "E-commerce.BR",
+      "regionalizavel": true,
+      "display_value": "664 empresas"
+    },
+    {
+      "id": "decos_empreendedoras_tech",
+      "sigla": "Empreendedoras Tech",
+      "nome": "Empreendedoras Tech",
+      "regionalizavel": true,
+      "display_value": "185 empresas"
+    },
+    {
+      "id": "ex_tarifario_autopecas",
+      "sigla": "Ex-Tarifário Autopeças",
+      "nome": "Ex-Tarifário — Autopeças",
+      "regionalizavel": false,
+      "display_value": "10.556 códigos"
+    },
+    {
+      "id": "ex_tarifario_bk_bit",
+      "sigla": "Ex-Tarifário BK/BIT",
+      "nome": "Ex-Tarifário — Bens de Capital e Bens de Informática/Telecom",
+      "regionalizavel": false,
+      "display_value": "7.418 códigos"
+    },
+    {
+      "id": "fgi",
+      "sigla": "FGI",
+      "nome": "FGI — Fundo Garantidor para Investimentos",
+      "regionalizavel": false,
+      "display_value": "R$ 264 bi"
+    },
+    {
+      "id": "fgo",
+      "sigla": "FGO",
+      "nome": "FGO — Fundo Garantidor de Operações",
+      "regionalizavel": false,
+      "display_value": "R$ 143 bi"
+    },
+    {
+      "id": "dial_lei_tics",
+      "sigla": "Lei de TICs",
+      "nome": "Lei de Informática (Lei de TICs)",
+      "regionalizavel": false,
+      "display_value": "R$ 36.450"
+    },
+    {
+      "id": "move_brasil",
+      "sigla": "Move Brasil",
+      "nome": "Move Brasil",
+      "regionalizavel": false,
+      "display_value": "R$ 25,63 bi"
+    },
+    {
+      "id": "mover",
+      "sigla": "MOVER",
+      "nome": "Mover — Mobilidade Verde e Inovação",
+      "regionalizavel": true,
+      "display_value": "284 habilitações"
+    },
+    {
+      "id": "dial_padis",
+      "sigla": "PADIS",
+      "nome": "PADIS — Semicondutores e Componentes",
+      "regionalizavel": false,
+      "display_value": "R$ 517,3 mi"
+    },
+    {
+      "id": "dial_missao2_pdps",
+      "sigla": "PDP Saúde",
+      "nome": "Parcerias para o Desenvolvimento Produtivo — Saúde",
+      "regionalizavel": true,
+      "display_value": "136 parcerias"
+    },
+    {
+      "id": "p_mais_p",
+      "sigla": "P+P",
+      "nome": "Plano Mais Produção",
+      "regionalizavel": true,
+      "display_value": "R$ 709,37 bi"
+    },
+    {
+      "id": "padr",
+      "sigla": "PADR",
+      "nome": "Política Automotiva de Desenvolvimento Regional",
+      "regionalizavel": false,
+      "display_value": "R$ 6,41 bi"
+    },
+    {
+      "id": "reiq",
+      "sigla": "REIQ",
+      "nome": "REIQ — Regime Especial da Indústria Química",
+      "regionalizavel": true,
+      "display_value": "R$ 5,44 bi"
+    }
+  ]
+}

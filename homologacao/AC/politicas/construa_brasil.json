@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "construa_brasil",
+  "nome": "Construa Brasil",
+  "sigla": "Construa Brasil",
+  "categoria": "Capacitação, digitalização e desburocratização — construção civil",
+  "source": "SDIC/DIBEN/CGDC via ENAP, em parceria com ABDI",
+  "reference": "2023-2026",
+  "updated_at": "2026-08-07",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Profissionais certificados",
+    "display_value": "63",
+    "unit": "",
+    "period": "2025-2026",
+    "delta": {
+      "dir": "flat",
+      "label": "0,4% do total nacional · 25ª entre 27 UFs"
+    },
+    "value": 63
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "AC",
+    "regra": "meio",
+    "headline": "63 profissionais certificados no Acre — 0,4% do total nacional, 25ª posição entre as 27 UFs com registro.",
+    "lede": "Acre ocupa a 25ª posição entre as 27 UFs com registro e responde por 0,4% do programa no país. Dentro do Norte, que soma 1.225 profissionais certificados, a participação do Acre é de 5,1%. Abaixo da média por UF com registro (596 profissionais certificados). Programa de capacitação, digitalização e desburocratização da construção civil.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "25ª posição nacional entre as 27 UFs com registro, com 0,4% do total."
+      },
+      {
+        "tone": "neutral",
+        "text": "5,1% de tudo que o Norte registra no programa."
+      },
+      {
+        "tone": "neutral",
+        "text": "Concentração: as três maiores UFs somam 37,7% do programa."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "certificados",
+      "label": "Certificados emitidos (cursos EAD)",
+      "value": 16105,
+      "display_value": "16.105",
+      "unit": "certificados",
+      "period": "2025-2026"
+    },
+    {
+      "id": "valor",
+      "label": "Investimento total no programa",
+      "value": 5591352.77,
+      "display_value": "R$ 5,6 mi",
+      "unit": "",
+      "period": "2023-2026"
+    },
+    {
+      "id": "labs",
+      "label": "Laboratórios BIM implantados",
+      "value": 4,
+      "display_value": "4",
+      "unit": "laboratórios",
+      "period": "2023-2026"
+    },
+    {
+      "id": "instituicoes",
+      "label": "Instituições em mentoria BIM",
+      "value": 10,
+      "display_value": "10",
+      "unit": "instituições",
+      "period": "2026"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "por_modalidade",
+      "title": "Certificados por modalidade",
+      "metric_label": "Certificados",
+      "unit": "certificados",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "Desburocratização da Construção Civil",
+          "value": 3430,
+          "display_value": "3.430"
+        },
+        {
+          "name": "Digitalização (BIM EAD)",
+          "value": 10664,
+          "display_value": "10.664"
+        },
+        {
+          "name": "Construção Industrializada",
+          "value": 2011,
+          "display_value": "2.011"
+        }
+      ]
+    }
+  ],
+  "charts": [],
+  "breakdowns": [],
+  "_nota_agregacao": "KPI de 'certificados' soma só as 3 modalidades com mesma unidade de medida. Laboratórios, instituições em mentoria e piloto têm unidades diferentes e ficam separados.",
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-07-07",
+  "geo": {
+    "nivel": "uf",
+    "fallback": false,
+    "uf": "AC",
+    "regiao": "Norte"
+  },
+  "story_nacional": {
+    "escopo": "nacional",
+    "headline": "Construa Brasil já certificou {{kpis[certificados].display_value}} profissionais em 27 UFs, com {{kpis[valor].display_value}} investidos em 6 frentes de capacitação e digitalização.",
+    "lede": "Programa de capacitação, digitalização e desburocratização da construção civil. Reúne cursos EAD (via ENAP), laboratórios e mentorias BIM em universidades, e um piloto de consultoria para PMEs (com a ABDI).",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "16.105 certificados emitidos nas 3 modalidades de curso EAD, presentes em todas as 27 UFs."
+      },
+      {
+        "tone": "neutral",
+        "text": "4 laboratórios BIM e mentoria em 10 instituições de ensino superior público."
+      },
+      {
+        "tone": "neutral",
+        "text": "Piloto BIM na Prática vai atender ~60 PMEs em 8 estados a partir de 2026."
+      }
+    ]
+  }
+}

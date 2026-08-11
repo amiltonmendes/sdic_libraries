@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "fgi",
+  "nome": "FGI — Fundo Garantidor para Investimentos",
+  "sigla": "FGI",
+  "categoria": "Garantia de crédito para MPMEs",
+  "source": "SDIC/DIBEN/CGCF — Conselho de Participação em Fundos Garantidores (CPFGMPME)",
+  "reference": "2023-2026",
+  "updated_at": "2026-07-31",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Crédito viabilizado",
+    "display_value": "R$ 264 bi",
+    "unit": "",
+    "period": "2023-2026 (até 31/jul)",
+    "delta": {
+      "dir": "up",
+      "label": "651.000 operações apoiadas"
+    },
+    "value": 264000000000.0
+  },
+  "story": {
+    "escopo": "nacional",
+    "headline": "FGI já viabilizou {{kpis[valor].display_value}} em crédito para micro, pequenas e médias empresas, com 2 em cada 3 operações destinadas a MEIs, micro e pequenas empresas.",
+    "lede": "Fundo Garantidor para Investimentos amplia a oferta de crédito para MPMEs por meio de garantias que reduzem o risco de inadimplência para os bancos. Gestão do CPFGMPME.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "651.000 operações de crédito apoiadas entre 2023 e 2026."
+      },
+      {
+        "tone": "pos",
+        "text": "22% das operações destinadas a MEIs/Microempresas e 45% a Pequenas Empresas (67% do total para pequenos negócios)."
+      },
+      {
+        "tone": "neutral",
+        "text": "R$ 122 bi em crédito só em 2025 — o melhor ano da série."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "valor",
+      "label": "Crédito total viabilizado",
+      "value": 264000000000.0,
+      "display_value": "R$ 264 bi",
+      "unit": "",
+      "period": "2023-2026"
+    },
+    {
+      "id": "operacoes",
+      "label": "Operações apoiadas",
+      "value": 651000,
+      "display_value": "651.000",
+      "unit": "operações",
+      "period": "2023-2026"
+    },
+    {
+      "id": "share_mpe",
+      "label": "Participação de MEI/Micro/Pequenas",
+      "value": 67,
+      "display_value": "67",
+      "unit": "%",
+      "period": "acumulado"
+    }
+  ],
+  "charts": [
+    {
+      "id": "credito_anual",
+      "type": "area",
+      "title": "Crédito viabilizado por ano",
+      "subtitle": "Evolução anual do valor contratado via FGI",
+      "unit": "bilhões de reais",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "valor",
+          "label": "Valor (R$ bi)",
+          "points": [
+            {
+              "t": 2023,
+              "v": 41.0
+            },
+            {
+              "t": 2024,
+              "v": 54.0
+            },
+            {
+              "t": 2025,
+              "v": 122.0
+            },
+            {
+              "t": 2026,
+              "v": 46.0
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "t": 2026,
+          "label": "Parcial — até 31/07/2026"
+        }
+      ]
+    },
+    {
+      "id": "operacoes_anual",
+      "type": "bars",
+      "title": "Operações apoiadas por ano",
+      "subtitle": "Número de operações de crédito com garantia FGI",
+      "unit": "operações",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "operacoes",
+          "label": "Operações",
+          "points": [
+            {
+              "t": 2023,
+              "v": 127000
+            },
+            {
+              "t": 2024,
+              "v": 134000
+            },
+            {
+              "t": 2025,
+              "v": 275000
+            },
+            {
+              "t": 2026,
+              "v": 115000
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "t": 2026,
+          "label": "Parcial — até 31/07/2026"
+        }
+      ]
+    }
+  ],
+  "ranked_lists": [],
+  "breakdowns": [
+    {
+      "id": "por_porte",
+      "title": "Distribuição por porte da empresa",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "items": [
+        {
+          "name": "Pequenas Empresas",
+          "value": 45,
+          "display_value": "45%",
+          "share": 45
+        },
+        {
+          "name": "MEI e Microempresas",
+          "value": 22,
+          "display_value": "22%",
+          "share": 22
+        },
+        {
+          "name": "Demais portes",
+          "value": 33,
+          "display_value": "33%",
+          "share": 33
+        }
+      ]
+    }
+  ],
+  "_nota_fonte_dados": "Série numérica transcrita manualmente de texto livre (ver docstring deste script) — não há coluna estruturada na fonte original.",
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-07-07",
+  "geo": {
+    "nivel": "nacional",
+    "fallback": true,
+    "regiao": "Sudeste"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.2",
+  "n_politicas": 6,
+  "recursos": {
+    "value": 8311313699.3,
+    "display_value": "R$ 8,31 bi"
+  },
+  "atendimentos": {
+    "value": 3277,
+    "display_value": "3.277"
+  },
+  "top_politicas": [
+    {
+      "id": "p_mais_p",
+      "sigla": "P+P",
+      "nome": "Plano Mais Produção",
+      "display_value": "R$ 8,24 bi"
+    },
+    {
+      "id": "depreciacao_acelerada",
+      "sigla": "DA",
+      "nome": "Depreciação Acelerada",
+      "display_value": "R$ 68,9 mi"
+    }
+  ],
+  "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
+  "uf": "ES",
+  "nome_uf": "Espírito Santo",
+  "ranking_nacional": {
+    "metrica": "recursos",
+    "posicao": 17,
+    "de": 27,
+    "share": 1.31,
+    "display": "17º de 27 UFs em recursos mobilizados"
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "ES",
+    "regra": "com_recursos",
+    "headline": "Espírito Santo soma R$ 8,31 bi em 6 políticas da SDIC com dado próprio do estado.",
+    "lede": "Espírito Santo é o 17º do país em recursos mobilizados, com 1,3% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 8,24 bi) e DA (R$ 68,9 mi). As políticas não monetárias somam 3.277 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "17ª posição nacional em recursos mobilizados (1,3% do total das UFs)."
+      }
+    ]
+  }
+}

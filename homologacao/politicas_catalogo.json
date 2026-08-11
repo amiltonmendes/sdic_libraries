@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.2",
+  "updated_at": "2026-08-10",
+  "politicas_catalogo": [
+    {
+      "id": "acoes_diben",
+      "file": "politicas/acoes_diben.json",
+      "nome": "Ações DIBEN",
+      "sigla": "Ações DIBEN",
+      "categoria": "Crédito, infraestrutura e qualificação — iniciativas diretas da DIBEN",
+      "regionalizavel": true
+    },
+    {
+      "id": "b_mais_p",
+      "file": "politicas/b_mais_p.json",
+      "nome": "Brasil Mais Produtivo",
+      "sigla": "B+P",
+      "categoria": "Extensionismo industrial e ganho de produtividade",
+      "regionalizavel": true
+    },
+    {
+      "id": "capacitacao_textil_senai_rn",
+      "file": "politicas/capacitacao_textil_senai_rn.json",
+      "nome": "Capacitação Têxtil — Convênio SENAI-RN",
+      "sigla": "Capacitação Têxtil RN",
+      "categoria": "Qualificação profissional — setor têxtil",
+      "regionalizavel": true
+    },
+    {
+      "id": "construa_brasil",
+      "file": "politicas/construa_brasil.json",
+      "nome": "Construa Brasil",
+      "sigla": "Construa Brasil",
+      "categoria": "Capacitação, digitalização e desburocratização — construção civil",
+      "regionalizavel": true
+    },
+    {
+      "id": "construcao_galpoes_industriais",
+      "file": "politicas/construcao_galpoes_industriais.json",
+      "nome": "Construção de Galpões Industriais",
+      "sigla": "Galpões Industriais",
+      "categoria": "Infraestrutura para desenvolvimento industrial",
+      "regionalizavel": true
+    },
+    {
+      "id": "depreciacao_acelerada",
+      "file": "politicas/depreciacao_acelerada.json",
+      "nome": "Depreciação Acelerada",
+      "sigla": "DA",
+      "categoria": "Incentivo fiscal — renovação de máquinas e equipamentos",
+      "regionalizavel": true
+    },
+    {
+      "id": "naval",
+      "file": "politicas/naval.json",
+      "nome": "Depreciação Acelerada — Indústria Naval",
+      "sigla": "Naval",
+      "categoria": "Incentivo fiscal — renovação de frota naval (navios-tanque)",
+      "regionalizavel": false
+    },
+    {
+      "id": "decos_ecommerce_br",
+      "file": "politicas/decos_ecommerce_br.json",
+      "nome": "E-commerce.BR",
+      "sigla": "E-commerce.BR",
+      "categoria": "Digitalização de pequenos negócios — comércio eletrônico",
+      "regionalizavel": true
+    },
+    {
+      "id": "decos_empreendedoras_tech",
+      "file": "politicas/decos_empreendedoras_tech.json",
+      "nome": "Empreendedoras Tech",
+      "sigla": "Empreendedoras Tech",
+      "categoria": "Capacitação e apoio a negócios liderados por mulheres — tecnologia",
+      "regionalizavel": true
+    },
+    {
+      "id": "ex_tarifario_autopecas",
+      "file": "politicas/ex_tarifario_autopecas.json",
+      "nome": "Ex-Tarifário — Autopeças",
+      "sigla": "Ex-Tarifário Autopeças",
+      "categoria": "Redução tarifária — competitividade da cadeia automotiva",
+      "regionalizavel": false
+    },
+    {
+      "id": "ex_tarifario_bk_bit",
+      "file": "politicas/ex_tarifario_bk_bit.json",
+      "nome": "Ex-Tarifário — Bens de Capital e Bens de Informática/Telecom",
+      "sigla": "Ex-Tarifário BK/BIT",
+      "categoria": "Redução tarifária — investimento produtivo",
+      "regionalizavel": false
+    },
+    {
+      "id": "fgi",
+      "file": "politicas/fgi.json",
+      "nome": "FGI — Fundo Garantidor para Investimentos",
+      "sigla": "FGI",
+      "categoria": "Garantia de crédito para MPMEs",
+      "regionalizavel": false
+    },
+    {
+      "id": "fgo",
+      "file": "politicas/fgo.json",
+      "nome": "FGO — Fundo Garantidor de Operações",
+      "sigla": "FGO",
+      "categoria": "Garantia de crédito para MPMEs",
+      "regionalizavel": false
+    },
+    {
+      "id": "dial_lei_tics",
+      "file": "politicas/dial_lei_tics.json",
+      "nome": "Lei de Informática (Lei de TICs)",
+      "sigla": "Lei de TICs",
+      "categoria": "Incentivo fiscal — indústria de tecnologia da informação e comunicação",
+      "regionalizavel": false
+    },
+    {
+      "id": "move_brasil",
+      "file": "politicas/move_brasil.json",
+      "nome": "Move Brasil",
+      "sigla": "Move Brasil",
+      "categoria": "Financiamento — renovação de frota e veículos de trabalhadores de plataforma",
+      "regionalizavel": false
+    },
+    {
+      "id": "mover",
+      "file": "politicas/mover.json",
+      "nome": "Mover — Mobilidade Verde e Inovação",
+      "sigla": "MOVER",
+      "categoria": "Incentivo fiscal — descarbonização e inovação automotiva",
+      "regionalizavel": true
+    },
+    {
+      "id": "dial_padis",
+      "file": "politicas/dial_padis.json",
+      "nome": "PADIS — Semicondutores e Componentes",
+      "sigla": "PADIS",
+      "categoria": "Incentivo fiscal — indústria de semicondutores",
+      "regionalizavel": false
+    },
+    {
+      "id": "dial_missao2_pdps",
+      "file": "politicas/dial_missao2_pdps.json",
+      "nome": "Parcerias para o Desenvolvimento Produtivo — Saúde",
+      "sigla": "PDP Saúde",
+      "categoria": "Complexo econômico-industrial da saúde",
+      "regionalizavel": true
+    },
+    {
+      "id": "p_mais_p",
+      "file": "politicas/p_mais_p.json",
+      "nome": "Plano Mais Produção",
+      "sigla": "P+P",
+      "categoria": "Financiamento à neoindustrialização",
+      "regionalizavel": true
+    },
+    {
+      "id": "padr",
+      "file": "politicas/padr.json",
+      "nome": "Política Automotiva de Desenvolvimento Regional",
+      "sigla": "PADR",
+      "categoria": "Incentivo fiscal — desenvolvimento regional da indústria automotiva",
+      "regionalizavel": false
+    },
+    {
+      "id": "reiq",
+      "file": "politicas/reiq.json",
+      "nome": "REIQ — Regime Especial da Indústria Química",
+      "sigla": "REIQ",
+      "categoria": "Incentivo fiscal — cadeia petroquímica",
+      "regionalizavel": true
+    }
+  ]
+}

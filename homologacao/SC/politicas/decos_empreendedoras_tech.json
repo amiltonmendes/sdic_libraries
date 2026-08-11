@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "decos_empreendedoras_tech",
+  "nome": "Empreendedoras Tech",
+  "sigla": "Empreendedoras Tech",
+  "categoria": "Capacitação e apoio a negócios liderados por mulheres — tecnologia",
+  "source": "SDIC/DECOS — Decos.docx (tabela 2023-2025, transcrito)",
+  "reference": "2023-2025",
+  "updated_at": "2026-08-10",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Empresas atendidas",
+    "display_value": "17 empresas",
+    "unit": "",
+    "period": "2023-2025",
+    "delta": {
+      "dir": "up",
+      "label": "9,2% do total nacional · 3ª entre 26 UFs"
+    },
+    "value": 17
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "SC",
+    "regra": "top",
+    "headline": "Santa Catarina é o 3º do país: 17 empresas, 9,2% do total nacional.",
+    "lede": "Santa Catarina ocupa a 3ª posição entre as 26 UFs com registro e responde por 9,2% do programa no país. Dentro do Sul, que soma 43 empresas, a participação de Santa Catarina é de 39,5%. 2,4× a média por UF com registro (7 empresas). Programa nacional de apoio a empreendedoras da área de tecnologia, com abrangência em todas as cinco regiões do país.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "3ª posição nacional entre as 26 UFs com registro, com 9,2% do total."
+      },
+      {
+        "tone": "neutral",
+        "text": "39,5% de tudo que o Sul registra no programa."
+      },
+      {
+        "tone": "neutral",
+        "text": "Concentração: as três maiores UFs somam 34,1% do programa."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "empresas",
+      "label": "Empresas atendidas",
+      "value": 185,
+      "display_value": "185",
+      "unit": "empresas",
+      "period": "2023-2025"
+    }
+  ],
+  "ranked_lists": [],
+  "charts": [],
+  "breakdowns": [],
+  "competencia": "2026A",
+  "data_aceitacao": "2026-08-10",
+  "geo": {
+    "nivel": "uf",
+    "fallback": false,
+    "uf": "SC",
+    "regiao": "Sul"
+  },
+  "story_nacional": {
+    "escopo": "nacional",
+    "headline": "Empreendedoras Tech já atendeu {{kpis[empresas].display_value}} negócios liderados por mulheres em todo o país, entre 2023 e 2025.",
+    "lede": "Programa nacional de apoio a empreendedoras da área de tecnologia, com abrangência em todas as cinco regiões do país.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "185 empresas atendidas, com a região Sudeste concentrando 57 (31%)."
+      },
+      {
+        "tone": "neutral",
+        "text": "São Paulo é a UF com mais empresas atendidas (27)."
+      }
+    ]
+  }
+}

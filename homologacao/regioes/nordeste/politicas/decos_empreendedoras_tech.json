@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "decos_empreendedoras_tech",
+  "nome": "Empreendedoras Tech",
+  "sigla": "Empreendedoras Tech",
+  "categoria": "Capacitação e apoio a negócios liderados por mulheres — tecnologia",
+  "source": "SDIC/DECOS — Decos.docx (tabela 2023-2025, transcrito)",
+  "reference": "2023-2025",
+  "updated_at": "2026-08-10",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Empresas atendidas",
+    "display_value": "54",
+    "unit": "",
+    "period": "2023-2025",
+    "delta": {
+      "dir": "up",
+      "label": "29,2% do total nacional · 2ª entre 5 regiões"
+    },
+    "value": 54
+  },
+  "story": {
+    "escopo": "regiao",
+    "regiao": "Nordeste",
+    "uf": null,
+    "regra": "normal",
+    "headline": "Nordeste responde por 54 empresas — 29,2% do total nacional.",
+    "lede": "É a 2ª colocação entre as 5 macrorregiões com registro. Programa nacional de apoio a empreendedoras da área de tecnologia, com abrangência em todas as cinco regiões do país.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "2ª entre as 5 macrorregiões com registro, com 29,2% do total nacional."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "empresas",
+      "label": "Empresas atendidas",
+      "value": 185,
+      "display_value": "185",
+      "unit": "empresas",
+      "period": "2023-2025"
+    }
+  ],
+  "ranked_lists": [],
+  "charts": [],
+  "breakdowns": [],
+  "competencia": "2026A",
+  "data_aceitacao": "2026-08-10",
+  "geo": {
+    "nivel": "regiao",
+    "fallback": false,
+    "regiao": "Nordeste"
+  },
+  "story_nacional": {
+    "escopo": "nacional",
+    "headline": "Empreendedoras Tech já atendeu {{kpis[empresas].display_value}} negócios liderados por mulheres em todo o país, entre 2023 e 2025.",
+    "lede": "Programa nacional de apoio a empreendedoras da área de tecnologia, com abrangência em todas as cinco regiões do país.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "185 empresas atendidas, com a região Sudeste concentrando 57 (31%)."
+      },
+      {
+        "tone": "neutral",
+        "text": "São Paulo é a UF com mais empresas atendidas (27)."
+      }
+    ]
+  }
+}

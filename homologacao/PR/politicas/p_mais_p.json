@@ -1,0 +1,299 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "p_mais_p",
+  "nome": "Plano Mais Produção",
+  "sigla": "P+P",
+  "categoria": "Financiamento à neoindustrialização",
+  "source": "SDIC — consolidado NIB/GAIA (BNDES, Finep, BASA, BNB, Caixa, BB)",
+  "reference": "2023-2026",
+  "updated_at": "2026-08-07",
+  "capa_kpi": {
+    "id": "capa_pp",
+    "label": "Plano Mais Produção",
+    "display_value": "R$ 51,39 bi",
+    "unit": "",
+    "period": "2023-2026",
+    "delta": {
+      "dir": "up",
+      "label": "8,3% do total nacional · 3ª entre 27 UFs"
+    },
+    "value": 51393034245.93
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "PR",
+    "regra": "top",
+    "headline": "Paraná é o 3º do país: R$ 51,39 bi, 8,3% do total nacional.",
+    "lede": "Paraná ocupa a 3ª posição entre as 27 UFs com registro e responde por 8,3% do programa no país. Dentro do Sul, que soma R$ 135,14 bi, a participação do Paraná é de 38,0%, a maior da região. 2,2× a média por UF com registro (R$ 23,04 bi). Financiamento à neoindustrialização via BNDES, Finep, BASA, BNB, Caixa e BB — recursos contratados por missão da Nova Indústria Brasil (NIB) e eixo de atuação (produtividade, verde, inovação, exportação).",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "3ª posição nacional entre as 27 UFs com registro, com 8,3% do total."
+      },
+      {
+        "tone": "pos",
+        "text": "38,0% de tudo que o Sul registra no programa — maior participação da região."
+      },
+      {
+        "tone": "neutral",
+        "text": "Concentração: as três maiores UFs somam 49,9% do programa."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "contratado",
+      "label": "Total contratado",
+      "value": 709366652138.51,
+      "display_value": "R$ 709,37 bi",
+      "unit": "",
+      "period": "2023-2026"
+    },
+    {
+      "id": "projetos",
+      "label": "Projetos",
+      "value": 494431,
+      "display_value": "494.431",
+      "unit": "projetos",
+      "period": "2023-2026"
+    },
+    {
+      "id": "ticket_medio",
+      "label": "Ticket médio",
+      "value": 1434713.1392,
+      "display_value": "R$ 1,4 mi",
+      "unit": "por projeto",
+      "period": "2023-2026"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "top_missoes",
+      "title": "Missões da NIB por volume de recursos",
+      "metric_label": "Valor contratado",
+      "unit": "reais",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "Agro industrial",
+          "value": 147389380094.5,
+          "display_value": "R$ 147,39 bi",
+          "share": 20.8
+        },
+        {
+          "name": "Saúde",
+          "value": 27657144941.93,
+          "display_value": "R$ 27,66 bi",
+          "share": 3.9
+        },
+        {
+          "name": "Infraestrutura",
+          "value": 310912379807.16,
+          "display_value": "R$ 310,91 bi",
+          "share": 43.8
+        },
+        {
+          "name": "Transformação Digital",
+          "value": 122429618982.84,
+          "display_value": "R$ 122,43 bi",
+          "share": 17.3
+        },
+        {
+          "name": "Descarbonização",
+          "value": 70520459050.12,
+          "display_value": "R$ 70,52 bi",
+          "share": 9.9
+        },
+        {
+          "name": "Defesa",
+          "value": 30457669261.96,
+          "display_value": "R$ 30,46 bi",
+          "share": 4.3
+        }
+      ]
+    },
+    {
+      "id": "top_eixos",
+      "title": "Eixos por volume de recursos",
+      "metric_label": "Valor contratado",
+      "unit": "reais",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "Produtividade",
+          "value": 452595754536.51,
+          "display_value": "R$ 452,60 bi",
+          "share": 63.8
+        },
+        {
+          "name": "Não informado",
+          "value": 87368217785.2,
+          "display_value": "R$ 87,37 bi",
+          "share": 12.3
+        },
+        {
+          "name": "Inovação",
+          "value": 72333328906.09,
+          "display_value": "R$ 72,33 bi",
+          "share": 10.2
+        },
+        {
+          "name": "Verde",
+          "value": 50599848943.57,
+          "display_value": "R$ 50,60 bi",
+          "share": 7.1
+        },
+        {
+          "name": "Exportação",
+          "value": 46469501967.14,
+          "display_value": "R$ 46,47 bi",
+          "share": 6.6
+        }
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "id": "contratado_anual",
+      "type": "area",
+      "title": "Contratação anual",
+      "subtitle": "Evolução anual dos recursos contratados",
+      "unit": "bilhões de reais",
+      "series": [
+        {
+          "id": "contratado",
+          "label": "Valor contratado",
+          "points": [
+            {
+              "t": 2023,
+              "v": 179.132
+            },
+            {
+              "t": 2024,
+              "v": 228.609
+            },
+            {
+              "t": 2025,
+              "v": 248.389
+            },
+            {
+              "t": 2026,
+              "v": 53.236
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    }
+  ],
+  "breakdowns": [
+    {
+      "id": "por_missao",
+      "title": "Distribuição por missão da NIB",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "items": [
+        {
+          "name": "Agro industrial",
+          "value": 147389380094.5,
+          "display_value": "R$ 147,39 bi",
+          "share": 20.8
+        },
+        {
+          "name": "Saúde",
+          "value": 27657144941.93,
+          "display_value": "R$ 27,66 bi",
+          "share": 3.9
+        },
+        {
+          "name": "Infraestrutura",
+          "value": 310912379807.16,
+          "display_value": "R$ 310,91 bi",
+          "share": 43.8
+        },
+        {
+          "name": "Transformação Digital",
+          "value": 122429618982.84,
+          "display_value": "R$ 122,43 bi",
+          "share": 17.3
+        },
+        {
+          "name": "Descarbonização",
+          "value": 70520459050.12,
+          "display_value": "R$ 70,52 bi",
+          "share": 9.9
+        },
+        {
+          "name": "Defesa",
+          "value": 30457669261.96,
+          "display_value": "R$ 30,46 bi",
+          "share": 4.3
+        }
+      ]
+    },
+    {
+      "id": "por_eixo",
+      "title": "Distribuição por eixo de atuação",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "items": [
+        {
+          "name": "Produtividade",
+          "value": 452595754536.51,
+          "display_value": "R$ 452,60 bi",
+          "share": 63.8
+        },
+        {
+          "name": "Não informado",
+          "value": 87368217785.2,
+          "display_value": "R$ 87,37 bi",
+          "share": 12.3
+        },
+        {
+          "name": "Inovação",
+          "value": 72333328906.09,
+          "display_value": "R$ 72,33 bi",
+          "share": 10.2
+        },
+        {
+          "name": "Verde",
+          "value": 50599848943.57,
+          "display_value": "R$ 50,60 bi",
+          "share": 7.1
+        },
+        {
+          "name": "Exportação",
+          "value": 46469501967.14,
+          "display_value": "R$ 46,47 bi",
+          "share": 6.6
+        }
+      ]
+    }
+  ],
+  "_nota_fonte": "Consolidado a partir de dados_painel_2026T1.json (pipeline novo/, período 2026T1), 1901 registros agregados por ano × fonte × eixo × missão × UF. 13 registros sem UF resolvida ficam fora do breakdown por_uf, mas contam nos totais nacionais.",
+  "geo": {
+    "nivel": "uf",
+    "fallback": false,
+    "uf": "PR",
+    "regiao": "Sul"
+  },
+  "story_nacional": {
+    "escopo": "nacional",
+    "headline": "Plano Mais Produção soma {{kpis[contratado].display_value}} em recursos contratados.",
+    "lede": "Financiamento à neoindustrialização via BNDES, Finep, BASA, BNB, Caixa e BB — recursos contratados por missão da Nova Indústria Brasil (NIB) e eixo de atuação (produtividade, verde, inovação, exportação).",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "494.431 projetos contratados em todo o país, 2023-2026."
+      },
+      {
+        "tone": "neutral",
+        "text": "Ticket médio de R$ 1,4 mi por projeto."
+      },
+      {
+        "tone": "neutral",
+        "text": "27 unidades da federação com recursos contratados diretamente."
+      }
+    ]
+  }
+}

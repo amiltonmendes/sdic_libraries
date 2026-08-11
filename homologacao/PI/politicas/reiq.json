@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "reiq",
+  "nome": "REIQ — Regime Especial da Indústria Química",
+  "sigla": "REIQ",
+  "categoria": "Incentivo fiscal — cadeia petroquímica",
+  "source": "SDIC/DINTE",
+  "reference": "2024-2026",
+  "updated_at": "2026-08-07",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Investimento total aprovado",
+    "display_value": "R$ 469,0 mi",
+    "unit": "",
+    "period": "2024-2026",
+    "delta": {
+      "dir": "flat",
+      "label": "8,6% do total nacional · 3ª entre 4 regiões"
+    },
+    "value": 469028498.42
+  },
+  "story": {
+    "escopo": "regiao",
+    "regiao": "Nordeste",
+    "uf": "PI",
+    "regra": "em_uf",
+    "headline": "Sem corte por estado: o Nordeste registra R$ 469,0 mi (8,6% do total nacional).",
+    "lede": "A fonte desta política não desce ao nível de UF — o número acima é da região Nordeste, que inclui o Piauí. É a 3ª colocação entre as 4 macrorregiões com registro. Regime Especial da Indústria Química — incentivo fiscal a projetos de expansão, modernização e diversificação da cadeia petroquímica brasileira.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "3ª entre as 4 macrorregiões com registro, com 8,6% do total nacional."
+      },
+      {
+        "tone": "neutral",
+        "text": "Dado regional: a fonte não permite separar o valor do Piauí."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "investimento",
+      "label": "Investimento total aprovado",
+      "value": 5440934697.94,
+      "display_value": "R$ 5,44 bi",
+      "unit": "",
+      "period": "2024-2026"
+    },
+    {
+      "id": "aprovado_reiq",
+      "label": "Valor aprovado no REIQ",
+      "value": 1765330298.79,
+      "display_value": "R$ 1,77 bi",
+      "unit": "",
+      "period": "2024-2026"
+    },
+    {
+      "id": "empregos",
+      "label": "Empregos indiretos gerados",
+      "value": 14660,
+      "display_value": "14.660",
+      "unit": "empregos",
+      "period": "2024-2026"
+    },
+    {
+      "id": "projetos",
+      "label": "Projetos aprovados",
+      "value": 29,
+      "display_value": "29",
+      "unit": "projetos",
+      "period": "2024-2026"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "por_status",
+      "title": "Projetos por status",
+      "metric_label": "Projetos",
+      "unit": "projetos",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "Em execução",
+          "value": 25,
+          "display_value": "25 projetos"
+        },
+        {
+          "name": "Encerrado",
+          "value": 3,
+          "display_value": "3 projetos"
+        },
+        {
+          "name": "Processo concluído",
+          "value": 1,
+          "display_value": "1 projetos"
+        }
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "id": "investimento_anual",
+      "type": "bars",
+      "title": "Investimento aprovado por ano",
+      "subtitle": "Data de aprovação do projeto",
+      "unit": "bilhões de reais",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "investimento",
+          "label": "Investimento",
+          "points": [
+            {
+              "t": 2024,
+              "v": 0.655
+            },
+            {
+              "t": 2025,
+              "v": 4.73
+            },
+            {
+              "t": 2026,
+              "v": 0.056
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "t": 2025,
+          "label": "Inclui megaprojeto único de R$ 4,25 bi (RJ)"
+        },
+        {
+          "t": 2026,
+          "label": "Ano parcial"
+        }
+      ]
+    }
+  ],
+  "breakdowns": [],
+  "_nota_concentracao": "1 único projeto (Braskem, RJ) responde por 78% do investimento total e 97% dos empregos indiretos — sempre contextualizar o total nacional citando esse outlier.",
+  "_nota_anonimizacao": "Nenhum nome de empresa ou município incluído. Com só 7 empresas na base, e 1 única empresa dominando várias UFs, UF é o limite seguro de granularidade — não há nível intermediário anônimo entre 'nacional' e 'empresa individual'.",
+  "competencia": "2026A",
+  "data_aceitacao": "2026-08-07",
+  "geo": {
+    "nivel": "regiao",
+    "fallback": true,
+    "uf": "PI",
+    "regiao": "Nordeste"
+  },
+  "story_nacional": {
+    "escopo": "nacional",
+    "headline": "REIQ viabilizou {{kpis[investimento].display_value}} em investimentos na cadeia petroquímica, com {{kpis[empregos].display_value}} empregos indiretos gerados.",
+    "lede": "Regime Especial da Indústria Química — incentivo fiscal a projetos de expansão, modernização e diversificação da cadeia petroquímica brasileira.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "29 projetos aprovados, somando R$ 5,44 bi."
+      },
+      {
+        "tone": "pos",
+        "text": "14.660 empregos indiretos gerados, concentrados em um único grande projeto."
+      },
+      {
+        "tone": "neutral",
+        "text": "Setor extremamente concentrado: 7 empresas participantes na base."
+      }
+    ]
+  }
+}

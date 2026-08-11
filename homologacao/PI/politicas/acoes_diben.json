@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "acoes_diben",
+  "nome": "Ações DIBEN",
+  "sigla": "Ações DIBEN",
+  "categoria": "Crédito, infraestrutura e qualificação — iniciativas diretas da DIBEN",
+  "source": "SDIC/DIBEN — CGCF (FGI, FGO) e CGBS (Galpões, Capacitação Têxtil)",
+  "reference": "2023-2026",
+  "updated_at": "2026-08-07",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Recursos mobilizados",
+    "display_value": "R$ 3,3 mi",
+    "unit": "",
+    "period": "2023-2026",
+    "delta": {
+      "dir": "flat",
+      "label": "20,0% do total nacional · 2ª entre 2 regiões"
+    },
+    "value": 3321881.0
+  },
+  "story": {
+    "escopo": "regiao",
+    "regiao": "Nordeste",
+    "uf": "PI",
+    "regra": "em_uf",
+    "headline": "Sem corte por estado: o Nordeste registra R$ 3,3 mi (20,0% do total nacional).",
+    "lede": "A fonte desta política não desce ao nível de UF — o número acima é da região Nordeste, que inclui o Piauí. É a 2ª colocação entre as 2 macrorregiões com registro. Conjunto de iniciativas diretas da DIBEN: garantia de crédito para MPMEs (FGI e FGO), construção de galpões industriais e capacitação de mão de obra.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "2ª entre as 2 macrorregiões com registro, com 20,0% do total nacional."
+      },
+      {
+        "tone": "neutral",
+        "text": "Dado regional: a fonte não permite separar o valor do Piauí."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "valor",
+      "label": "Recursos mobilizados (total)",
+      "value": 407016581101.0,
+      "display_value": "R$ 407,02 bi",
+      "unit": "",
+      "period": "2023-2026"
+    },
+    {
+      "id": "valor_credito",
+      "label": "Crédito garantido (FGI+FGO)",
+      "value": 407000000000.0,
+      "display_value": "R$ 407,00 bi",
+      "unit": "",
+      "period": "2023-2026"
+    },
+    {
+      "id": "valor_infra",
+      "label": "Infraestrutura e qualificação (Galpões+Capacitação)",
+      "value": 16581101.0,
+      "display_value": "R$ 16,6 mi",
+      "unit": "",
+      "period": "acumulado"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "por_acao",
+      "title": "Recursos mobilizados por ação",
+      "metric_label": "Valor",
+      "unit": "reais",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "FGI — Fundo Garantidor para Investimentos",
+          "value": 264000000000.0,
+          "display_value": "R$ 264,00 bi"
+        },
+        {
+          "name": "FGO — Fundo Garantidor de Operações",
+          "value": 143000000000.0,
+          "display_value": "R$ 143,00 bi"
+        },
+        {
+          "name": "Construção de Galpões Industriais",
+          "value": 13736720.0,
+          "display_value": "R$ 13,7 mi"
+        },
+        {
+          "name": "Capacitação Têxtil (SENAI-RN)",
+          "value": 2844381.0,
+          "display_value": "R$ 2,8 mi"
+        }
+      ]
+    }
+  ],
+  "charts": [],
+  "breakdowns": [],
+  "_nota_agregacao": "FGI e FGO concentram 99,99% do valor mobilizado e não têm granularidade por UF na fonte. O breakdown por_uf cobre apenas as ações localizadas — não é cobertura territorial da política como um todo.",
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-07-07",
+  "geo": {
+    "nivel": "regiao",
+    "fallback": true,
+    "uf": "PI",
+    "regiao": "Nordeste"
+  },
+  "story_nacional": {
+    "escopo": "nacional",
+    "headline": "Ações DIBEN mobilizaram {{kpis[valor].display_value}} entre crédito garantido, infraestrutura industrial e qualificação profissional.",
+    "lede": "Conjunto de iniciativas diretas da DIBEN: garantia de crédito para MPMEs (FGI e FGO), construção de galpões industriais e capacitação de mão de obra. As frentes têm naturezas muito diferentes — crédito nacional vs. infraestrutura local — e não devem ser lidas como um único indicador de impacto.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "R$ 407,00 bi em crédito garantido a MPMEs via FGI e FGO (99,99% do total mobilizado)."
+      },
+      {
+        "tone": "neutral",
+        "text": "31 galpões industriais construídos (R$ 13,7 mi) e 1.410 trabalhadores capacitados no setor têxtil (R$ 2,8 mi)."
+      },
+      {
+        "tone": "neutral",
+        "text": "FGI e FGO são de alcance nacional; Galpões e Capacitação Têxtil são ações localizadas (PR/BA e RN)."
+      }
+    ]
+  }
+}

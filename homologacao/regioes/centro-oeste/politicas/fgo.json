@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "fgo",
+  "nome": "FGO — Fundo Garantidor de Operações",
+  "sigla": "FGO",
+  "categoria": "Garantia de crédito para MPMEs",
+  "source": "SDIC/DIBEN/CGCF — Conselho de Participação em Fundos Garantidores (CPFGMPME)",
+  "reference": "2023-2026",
+  "updated_at": "2026-07-31",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Crédito contratado",
+    "display_value": "R$ 143 bi",
+    "unit": "",
+    "period": "2023-2026 (até 31/jul)",
+    "delta": {
+      "dir": "up",
+      "label": "4,9 milhões de operações apoiadas"
+    },
+    "value": 143000000000.0
+  },
+  "story": {
+    "escopo": "nacional",
+    "headline": "FGO impulsionou {{kpis[valor].display_value}} em crédito para quase 5 milhões de mutuários entre 2023 e 2026.",
+    "lede": "Fundo Garantidor de Operações reduz o risco de crédito para bancos, ampliando o acesso a financiamento por MPMEs. Gestão do CPFGMPME.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "4,9 milhões de operações de crédito apoiadas entre 2023 e 2026."
+      },
+      {
+        "tone": "pos",
+        "text": "2026 já soma 2,10 milhões de mutuários e R$ 45,36 bi contratados — maior volume anual da série, mesmo parcial."
+      },
+      {
+        "tone": "neutral",
+        "text": "2025 teve o menor número de mutuários da série (410 mil) — vale investigar a causa da queda."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "valor",
+      "label": "Crédito total contratado",
+      "value": 143000000000.0,
+      "display_value": "R$ 143 bi",
+      "unit": "",
+      "period": "2023-2026"
+    },
+    {
+      "id": "mutuarios",
+      "label": "Mutuários atendidos",
+      "value": 4900000,
+      "display_value": "4,9 mi",
+      "unit": "mutuários",
+      "period": "2023-2026"
+    }
+  ],
+  "charts": [
+    {
+      "id": "credito_anual",
+      "type": "area",
+      "title": "Crédito contratado por ano",
+      "subtitle": "Evolução anual do valor contratado via FGO",
+      "unit": "bilhões de reais",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "valor",
+          "label": "Valor (R$ bi)",
+          "points": [
+            {
+              "t": 2023,
+              "v": 34.47
+            },
+            {
+              "t": 2024,
+              "v": 36.52
+            },
+            {
+              "t": 2025,
+              "v": 26.65
+            },
+            {
+              "t": 2026,
+              "v": 45.36
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "t": 2026,
+          "label": "Parcial — até 31/07/2026"
+        }
+      ]
+    },
+    {
+      "id": "mutuarios_anual",
+      "type": "bars",
+      "title": "Mutuários atendidos por ano",
+      "subtitle": "Número de mutuários com operação garantida via FGO",
+      "unit": "mutuários",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "mutuarios",
+          "label": "Mutuários",
+          "points": [
+            {
+              "t": 2023,
+              "v": 1100000
+            },
+            {
+              "t": 2024,
+              "v": 1280000
+            },
+            {
+              "t": 2025,
+              "v": 410300
+            },
+            {
+              "t": 2026,
+              "v": 2100000
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "t": 2026,
+          "label": "Parcial — até 31/07/2026"
+        },
+        {
+          "t": 2025,
+          "label": "Queda atípica — investigar"
+        }
+      ]
+    }
+  ],
+  "ranked_lists": [],
+  "breakdowns": [],
+  "_nota_fonte_dados": "Série numérica transcrita manualmente de texto livre (ver docstring deste script) — não há coluna estruturada na fonte original.",
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-07-07",
+  "geo": {
+    "nivel": "nacional",
+    "fallback": true,
+    "regiao": "Centro-Oeste"
+  }
+}

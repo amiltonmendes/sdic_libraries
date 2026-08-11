@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.2",
+  "n_politicas": 7,
+  "recursos": {
+    "value": 9238172693.93,
+    "display_value": "R$ 9,24 bi"
+  },
+  "atendimentos": {
+    "value": 1651,
+    "display_value": "1.651"
+  },
+  "top_politicas": [
+    {
+      "id": "p_mais_p",
+      "sigla": "P+P",
+      "nome": "Plano Mais Produção",
+      "display_value": "R$ 9,08 bi"
+    },
+    {
+      "id": "depreciacao_acelerada",
+      "sigla": "DA",
+      "nome": "Depreciação Acelerada",
+      "display_value": "R$ 97,3 mi"
+    },
+    {
+      "id": "reiq",
+      "sigla": "REIQ",
+      "nome": "REIQ — Regime Especial da Indústria Química",
+      "display_value": "R$ 60,7 mi"
+    }
+  ],
+  "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
+  "uf": "AM",
+  "nome_uf": "Amazonas",
+  "ranking_nacional": {
+    "metrica": "recursos",
+    "posicao": 15,
+    "de": 27,
+    "share": 1.45,
+    "display": "15º de 27 UFs em recursos mobilizados"
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "AM",
+    "regra": "com_recursos",
+    "headline": "Amazonas soma R$ 9,24 bi em 7 políticas da SDIC com dado próprio do estado.",
+    "lede": "Amazonas é o 15º do país em recursos mobilizados, com 1,5% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 9,08 bi), DA (R$ 97,3 mi) e REIQ (R$ 60,7 mi). As políticas não monetárias somam 1.651 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "15ª posição nacional em recursos mobilizados (1,5% do total das UFs)."
+      }
+    ]
+  }
+}

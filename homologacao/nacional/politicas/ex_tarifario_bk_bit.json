@@ -1,0 +1,229 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "ex_tarifario_bk_bit",
+  "nome": "Ex-Tarifário — Bens de Capital e Bens de Informática/Telecom",
+  "sigla": "Ex-Tarifário BK/BIT",
+  "categoria": "Redução tarifária — investimento produtivo",
+  "source": "SDIC/DIAM — Ex-Tarifários_Vigentes.xlsx",
+  "reference": "vigentes em 2026-07",
+  "updated_at": "2026-07",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Ex-tarifários vigentes",
+    "display_value": "7.418 códigos",
+    "unit": "",
+    "period": "jul/2026",
+    "delta": {
+      "dir": "up",
+      "label": "2616 concedidos como 'Novo'"
+    },
+    "value": null
+  },
+  "story": {
+    "escopo": "nacional",
+    "headline": "7.418 ex-tarifários de Bens de Capital e Bens de Informática/Telecomunicações estão vigentes, reduzindo temporariamente o Imposto de Importação para viabilizar investimentos no país.",
+    "lede": "Regime de exceção tarifária (Resolução Gecex 512/23) que reduz temporariamente a alíquota do Imposto de Importação para códigos NCM classificados como Bens de Capital (BK) ou Bens de Informática e Telecomunicações (BIT), com concessão discricionária conforme requisitos da norma.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "7.418 códigos NCM com ex-tarifário vigente."
+      },
+      {
+        "tone": "neutral",
+        "text": "3469 são renovações de vigência anterior; 2616 são concessões novas."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "vigentes",
+      "label": "Ex-tarifários vigentes",
+      "value": 7418,
+      "display_value": "7.418",
+      "unit": "códigos NCM",
+      "period": "jul/2026"
+    },
+    {
+      "id": "novos",
+      "label": "Concedidos como 'Novo'",
+      "value": 2616,
+      "display_value": "2.616",
+      "unit": "códigos",
+      "period": "jul/2026"
+    },
+    {
+      "id": "renovados",
+      "label": "Renovações",
+      "value": 3469,
+      "display_value": "3.469",
+      "unit": "códigos",
+      "period": "jul/2026"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "por_isic_divisao",
+      "title": "Setores (ISIC divisão) com mais ex-tarifários",
+      "metric_label": "Códigos",
+      "unit": "códigos",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "28 — Fabricação de máquinas e equipamentos",
+          "value": 5177,
+          "display_value": "5177 códigos"
+        },
+        {
+          "name": "26 — Fabricação de equipamentos de informática, eletrônicos e ópticos",
+          "value": 1215,
+          "display_value": "1215 códigos"
+        },
+        {
+          "name": "27 — Fabricação de máquinas, aparelhos e materiais elétricos",
+          "value": 879,
+          "display_value": "879 códigos"
+        },
+        {
+          "name": "30 — Fabricação de outros equipamentos de transporte",
+          "value": 63,
+          "display_value": "63 códigos"
+        },
+        {
+          "name": "29 — Fabricação de veículos automotores, reboques e carrocerias",
+          "value": 56,
+          "display_value": "56 códigos"
+        },
+        {
+          "name": "25 — Fabricação de produtos de metal",
+          "value": 22,
+          "display_value": "22 códigos"
+        },
+        {
+          "name": "Outras divisões",
+          "value": 6,
+          "display_value": "6 códigos"
+        }
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "id": "vigencias_por_ano",
+      "type": "stacked-bars",
+      "title": "Início de vigência por ano",
+      "subtitle": "Ano em que o ex-tarifário passou a vigorar, por setor (ISIC divisão)",
+      "unit": "códigos",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "28",
+          "label": "28 — Fabricação de máquinas e equipamentos",
+          "points": [
+            {
+              "t": 2025,
+              "v": 2595
+            },
+            {
+              "t": 2026,
+              "v": 2582
+            }
+          ]
+        },
+        {
+          "id": "26",
+          "label": "26 — Fabricação de equipamentos de informática, eletrônicos e ópticos",
+          "points": [
+            {
+              "t": 2025,
+              "v": 484
+            },
+            {
+              "t": 2026,
+              "v": 731
+            }
+          ]
+        },
+        {
+          "id": "27",
+          "label": "27 — Fabricação de máquinas, aparelhos e materiais elétricos",
+          "points": [
+            {
+              "t": 2025,
+              "v": 449
+            },
+            {
+              "t": 2026,
+              "v": 430
+            }
+          ]
+        },
+        {
+          "id": "30",
+          "label": "30 — Fabricação de outros equipamentos de transporte",
+          "points": [
+            {
+              "t": 2025,
+              "v": 29
+            },
+            {
+              "t": 2026,
+              "v": 34
+            }
+          ]
+        },
+        {
+          "id": "29",
+          "label": "29 — Fabricação de veículos automotores, reboques e carrocerias",
+          "points": [
+            {
+              "t": 2025,
+              "v": 8
+            },
+            {
+              "t": 2026,
+              "v": 48
+            }
+          ]
+        },
+        {
+          "id": "25",
+          "label": "25 — Fabricação de produtos de metal",
+          "points": [
+            {
+              "t": 2025,
+              "v": 14
+            },
+            {
+              "t": 2026,
+              "v": 8
+            }
+          ]
+        },
+        {
+          "id": "outras_divisões",
+          "label": "Outras divisões",
+          "points": [
+            {
+              "t": 2025,
+              "v": 5
+            },
+            {
+              "t": 2026,
+              "v": 1
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    }
+  ],
+  "breakdowns": [],
+  "_nota_granularidade": "Fonte é um catálogo de códigos NCM (sem CNPJ/UF) — indicadores possíveis são de volume/composição do regime, não de beneficiários. Sem risco de anonimização.",
+  "_nota_isic": "Setor = divisão ISIC Rev.4 do capítulo NCM (ver common/isic.py, fonte ComexStat/MDIC). Mostra as 6 divisões com mais códigos; o resto agrupa em 'Outras divisões'.",
+  "competencia": "2026M07",
+  "data_aceitacao": "2026-07-31",
+  "geo": {
+    "nivel": "nacional",
+    "fallback": false
+  }
+}

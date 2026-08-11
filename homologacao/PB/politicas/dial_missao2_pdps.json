@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "dial_missao2_pdps",
+  "nome": "Parcerias para o Desenvolvimento Produtivo — Saúde",
+  "sigla": "PDP Saúde",
+  "categoria": "Complexo econômico-industrial da saúde",
+  "source": "SDIC/DIAL — DIAL_-_anexo.xlsx (Missão 2)",
+  "reference": "acumulado",
+  "updated_at": "2026-08-10",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Parcerias (PDPs)",
+    "display_value": "2 parcerias",
+    "unit": "",
+    "period": "acumulado",
+    "delta": {
+      "dir": "flat",
+      "label": "1,5% do total nacional · 8ª entre 8 UFs"
+    },
+    "value": 2
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "PB",
+    "regra": "meio",
+    "headline": "2 parcerias na Paraíba — 1,5% do total nacional, 8ª posição entre as 8 UFs com registro.",
+    "lede": "Paraíba ocupa a 8ª posição entre as 8 UFs com registro e responde por 1,5% do programa no país. Dentro do Nordeste, que soma 35 parcerias, a participação da Paraíba é de 5,7%. Abaixo da média por UF com registro (17 parcerias). Parcerias entre laboratórios públicos e parceiros privados para internalização da produção de medicamentos e insumos estratégicos de saúde no Brasil, reduzindo a dependência de importação.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "8ª posição nacional entre as 8 UFs com registro, com 1,5% do total."
+      },
+      {
+        "tone": "neutral",
+        "text": "5,7% de tudo que o Nordeste registra no programa."
+      },
+      {
+        "tone": "neutral",
+        "text": "Concentração: as três maiores UFs somam 80,9% do programa."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "parcerias",
+      "label": "Parcerias (PDPs)",
+      "value": 136,
+      "display_value": "136",
+      "unit": "parcerias",
+      "period": "acumulado"
+    },
+    {
+      "id": "produtos",
+      "label": "Produtos distintos",
+      "value": 81,
+      "display_value": "81",
+      "unit": "produtos",
+      "period": "acumulado"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "por_instituicao",
+      "title": "Parcerias por instituição pública",
+      "metric_label": "Parcerias",
+      "unit": "parcerias",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "Fiocruz/Bio-Manguinhos",
+          "value": 23,
+          "display_value": "23 parcerias"
+        },
+        {
+          "name": "LAFEPE",
+          "value": 20,
+          "display_value": "20 parcerias"
+        },
+        {
+          "name": "Fiocruz/Farmanguinhos",
+          "value": 19,
+          "display_value": "19 parcerias"
+        },
+        {
+          "name": "Butantan",
+          "value": 13,
+          "display_value": "13 parcerias"
+        },
+        {
+          "name": "FURP",
+          "value": 11,
+          "display_value": "11 parcerias"
+        },
+        {
+          "name": "FUNED",
+          "value": 9,
+          "display_value": "9 parcerias"
+        },
+        {
+          "name": "LFM",
+          "value": 9,
+          "display_value": "9 parcerias"
+        },
+        {
+          "name": "Bahiafarma",
+          "value": 8,
+          "display_value": "8 parcerias"
+        }
+      ]
+    }
+  ],
+  "charts": [],
+  "breakdowns": [],
+  "_nota_anonimizacao": "Nomes de parceiros privados (laboratórios) omitidos do JSON — apenas a instituição pública é reportada. Poucos laboratórios privados concentram a maioria das parcerias; nomeá-los por produto se aproximaria de expor posição comercial individual.",
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-08-10",
+  "geo": {
+    "nivel": "uf",
+    "fallback": false,
+    "uf": "PB",
+    "regiao": "Nordeste"
+  },
+  "story_nacional": {
+    "escopo": "nacional",
+    "headline": "136 Parcerias para o Desenvolvimento Produtivo (PDP) já viabilizaram a produção nacional de {{kpis[produtos].display_value}} medicamentos e insumos de saúde, em 8 UFs.",
+    "lede": "Parcerias entre laboratórios públicos e parceiros privados para internalização da produção de medicamentos e insumos estratégicos de saúde no Brasil, reduzindo a dependência de importação.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "136 parcerias ativas cobrindo 81 produtos, em 8 estados."
+      },
+      {
+        "tone": "neutral",
+        "text": "Fiocruz/Bio-Manguinhos lidera com 23 parcerias."
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.2",
+  "n_politicas": 12,
+  "recursos": {
+    "value": 89302017091.83,
+    "display_value": "R$ 89,30 bi"
+  },
+  "atendimentos": {
+    "value": 30362,
+    "display_value": "30.362"
+  },
+  "top_politicas": [
+    {
+      "id": "p_mais_p",
+      "sigla": "P+P",
+      "nome": "Plano Mais Produção",
+      "display_value": "R$ 88,41 bi"
+    },
+    {
+      "id": "reiq",
+      "sigla": "REIQ",
+      "nome": "REIQ — Regime Especial da Indústria Química",
+      "display_value": "R$ 469,0 mi"
+    },
+    {
+      "id": "depreciacao_acelerada",
+      "sigla": "DA",
+      "nome": "Depreciação Acelerada",
+      "display_value": "R$ 423,8 mi"
+    },
+    {
+      "id": "acoes_diben",
+      "sigla": "Ações DIBEN",
+      "nome": "Ações DIBEN",
+      "display_value": "R$ 3,3 mi"
+    }
+  ],
+  "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
+  "story": {
+    "escopo": "regiao",
+    "regra": "normal",
+    "headline": "Nordeste: R$ 89,30 bi mobilizados em 12 políticas da SDIC.",
+    "lede": "As maiores são P+P (R$ 88,41 bi), REIQ (R$ 469,0 mi) e DA (R$ 423,8 mi). As políticas não monetárias somam 30.362 projetos, empresas e atendimentos. Soma entre políticas de unidades diferentes — ver nota metodológica.",
+    "highlights": []
+  },
+  "regiao": "Nordeste"
+}

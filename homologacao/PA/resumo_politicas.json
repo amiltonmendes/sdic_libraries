@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.2",
+  "n_politicas": 5,
+  "recursos": {
+    "value": 13117696870.529999,
+    "display_value": "R$ 13,12 bi"
+  },
+  "atendimentos": {
+    "value": 3487,
+    "display_value": "3.487"
+  },
+  "top_politicas": [
+    {
+      "id": "p_mais_p",
+      "sigla": "P+P",
+      "nome": "Plano Mais Produção",
+      "display_value": "R$ 13,11 bi"
+    },
+    {
+      "id": "depreciacao_acelerada",
+      "sigla": "DA",
+      "nome": "Depreciação Acelerada",
+      "display_value": "R$ 9,3 mi"
+    }
+  ],
+  "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
+  "uf": "PA",
+  "nome_uf": "Pará",
+  "ranking_nacional": {
+    "metrica": "recursos",
+    "posicao": 12,
+    "de": 27,
+    "share": 2.06,
+    "display": "12º de 27 UFs em recursos mobilizados"
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "PA",
+    "regra": "com_recursos",
+    "headline": "Pará soma R$ 13,12 bi em 5 políticas da SDIC com dado próprio do estado.",
+    "lede": "Pará é o 12º do país em recursos mobilizados, com 2,1% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 13,11 bi) e DA (R$ 9,3 mi). As políticas não monetárias somam 3.487 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "12ª posição nacional em recursos mobilizados (2,1% do total das UFs)."
+      }
+    ]
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "dial_padis",
+  "nome": "PADIS — Semicondutores e Componentes",
+  "sigla": "PADIS",
+  "categoria": "Incentivo fiscal — indústria de semicondutores",
+  "source": "SDIC/DIAL — DIAL_-_anexo.xlsx (Missão 4)",
+  "reference": "2020-2025",
+  "updated_at": "2026-08-10",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Investimento em P&D",
+    "display_value": "R$ 517,3 mi",
+    "unit": "",
+    "period": "2020-2025",
+    "delta": {
+      "dir": "up",
+      "label": "R$ 1,31 bi em crédito financeiro"
+    },
+    "value": 517299999.99999994
+  },
+  "story": {
+    "escopo": "nacional",
+    "headline": "PADIS viabilizou {{kpis[investimento].display_value}} em investimento de P&D no setor de semicondutores entre 2020 e 2025, com salto de R$ 68 mi (2024) para R$ 188 mi (2025).",
+    "lede": "Programa de Apoio ao Desenvolvimento Tecnológico da Indústria de Semicondutores — incentivo fiscal para empresas de componentes e circuitos eletrônicos, condicionado a investimento em P&D.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "R$ 517,3 mi em investimento de P&D acumulado (2020-2025)."
+      },
+      {
+        "tone": "pos",
+        "text": "Investimento em P&D quase triplicou de 2024 (R$ 68 mi) para 2025 (R$ 188 mi)."
+      },
+      {
+        "tone": "neutral",
+        "text": "R$ 11,17 bi em faturamento de contrapartida das empresas beneficiárias no período."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "investimento",
+      "label": "Investimento em P&D (2020-2025)",
+      "value": 517259205.07,
+      "display_value": "R$ 517,3 mi",
+      "unit": "",
+      "period": "2020-2025"
+    },
+    {
+      "id": "credito",
+      "label": "Crédito financeiro (2020-2025)",
+      "value": 1311413088.67,
+      "display_value": "R$ 1,31 bi",
+      "unit": "",
+      "period": "2020-2025"
+    },
+    {
+      "id": "faturamento_contrapartida",
+      "label": "Faturamento de contrapartida",
+      "value": 11169202711.83,
+      "display_value": "R$ 11,17 bi",
+      "unit": "",
+      "period": "2020-2025"
+    }
+  ],
+  "ranked_lists": [],
+  "breakdowns": [],
+  "charts": [
+    {
+      "id": "investimento_anual",
+      "type": "bars",
+      "title": "Investimento em P&D por ano",
+      "subtitle": "2020-2025",
+      "unit": "reais",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "investimento",
+          "label": "Investimento",
+          "points": [
+            {
+              "t": 2020,
+              "v": 10474724.09
+            },
+            {
+              "t": 2021,
+              "v": 110468795.77
+            },
+            {
+              "t": 2022,
+              "v": 77403073.86
+            },
+            {
+              "t": 2023,
+              "v": 62581755.16
+            },
+            {
+              "t": 2024,
+              "v": 67998584.66
+            },
+            {
+              "t": 2025,
+              "v": 188332271.53
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    },
+    {
+      "id": "credito_anual",
+      "type": "bars",
+      "title": "Crédito financeiro por ano",
+      "subtitle": "2020-2025",
+      "unit": "reais",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "credito",
+          "label": "Crédito",
+          "points": [
+            {
+              "t": 2020,
+              "v": 167000000.0
+            },
+            {
+              "t": 2021,
+              "v": 272599472.08
+            },
+            {
+              "t": 2022,
+              "v": 148925086.34
+            },
+            {
+              "t": 2023,
+              "v": 87266103.22
+            },
+            {
+              "t": 2024,
+              "v": 150884161.37
+            },
+            {
+              "t": 2025,
+              "v": 484738265.66
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    }
+  ],
+  "_nota_uf": "Série é nacional, sem recorte por UF na fonte. 'Pessoal alocado em P&D' de 2025 veio vazio ('-') na fonte — não incluído como KPI.",
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-08-10",
+  "geo": {
+    "nivel": "nacional",
+    "fallback": true,
+    "regiao": "Nordeste"
+  }
+}

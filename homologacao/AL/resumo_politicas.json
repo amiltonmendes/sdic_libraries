@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.2",
+  "n_politicas": 6,
+  "recursos": {
+    "value": 5290852394.23,
+    "display_value": "R$ 5,29 bi"
+  },
+  "atendimentos": {
+    "value": 3181,
+    "display_value": "3.181"
+  },
+  "top_politicas": [
+    {
+      "id": "p_mais_p",
+      "sigla": "P+P",
+      "nome": "Plano Mais Produção",
+      "display_value": "R$ 5,21 bi"
+    },
+    {
+      "id": "reiq",
+      "sigla": "REIQ",
+      "nome": "REIQ — Regime Especial da Indústria Química",
+      "display_value": "R$ 79,8 mi"
+    }
+  ],
+  "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
+  "uf": "AL",
+  "nome_uf": "Alagoas",
+  "ranking_nacional": {
+    "metrica": "recursos",
+    "posicao": 21,
+    "de": 27,
+    "share": 0.83,
+    "display": "21º de 27 UFs em recursos mobilizados"
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "AL",
+    "regra": "com_recursos",
+    "headline": "Alagoas soma R$ 5,29 bi em 6 políticas da SDIC com dado próprio do estado.",
+    "lede": "Alagoas é o 21º do país em recursos mobilizados, com 0,8% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 5,21 bi) e REIQ (R$ 79,8 mi). As políticas não monetárias somam 3.181 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "21ª posição nacional em recursos mobilizados (0,8% do total das UFs)."
+      }
+    ]
+  }
+}

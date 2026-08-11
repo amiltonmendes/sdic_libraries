@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.2",
+  "n_politicas": 8,
+  "recursos": {
+    "value": 295903843122.25,
+    "display_value": "R$ 295,90 bi"
+  },
+  "atendimentos": {
+    "value": 78441,
+    "display_value": "78.441"
+  },
+  "top_politicas": [
+    {
+      "id": "p_mais_p",
+      "sigla": "P+P",
+      "nome": "Plano Mais Produção",
+      "display_value": "R$ 287,29 bi"
+    },
+    {
+      "id": "reiq",
+      "sigla": "REIQ",
+      "nome": "REIQ — Regime Especial da Indústria Química",
+      "display_value": "R$ 4,43 bi"
+    },
+    {
+      "id": "depreciacao_acelerada",
+      "sigla": "DA",
+      "nome": "Depreciação Acelerada",
+      "display_value": "R$ 4,19 bi"
+    }
+  ],
+  "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
+  "story": {
+    "escopo": "regiao",
+    "regra": "normal",
+    "headline": "Sudeste: R$ 295,90 bi mobilizados em 8 políticas da SDIC.",
+    "lede": "As maiores são P+P (R$ 287,29 bi), REIQ (R$ 4,43 bi) e DA (R$ 4,19 bi). As políticas não monetárias somam 78.441 projetos, empresas e atendimentos. Soma entre políticas de unidades diferentes — ver nota metodológica.",
+    "highlights": []
+  },
+  "regiao": "Sudeste"
+}

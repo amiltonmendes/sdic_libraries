@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "decos_empreendedoras_tech",
+  "nome": "Empreendedoras Tech",
+  "sigla": "Empreendedoras Tech",
+  "categoria": "Capacitação e apoio a negócios liderados por mulheres — tecnologia",
+  "source": "SDIC/DECOS — Decos.docx (tabela 2023-2025, transcrito)",
+  "reference": "2023-2025",
+  "updated_at": "2026-08-10",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Empresas atendidas",
+    "display_value": "7 empresas",
+    "unit": "",
+    "period": "2023-2025",
+    "delta": {
+      "dir": "flat",
+      "label": "3,8% do total nacional · 10ª entre 26 UFs"
+    },
+    "value": 7
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "DF",
+    "regra": "meio",
+    "headline": "7 empresas no Distrito Federal — 3,8% do total nacional, 10ª posição entre as 26 UFs com registro.",
+    "lede": "Distrito Federal ocupa a 10ª posição entre as 26 UFs com registro e responde por 3,8% do programa no país. Dentro do Centro-Oeste, que soma 14 empresas, a participação do Distrito Federal é de 50,0%, a maior da região. Em linha com a média por UF com registro (7 empresas). Programa nacional de apoio a empreendedoras da área de tecnologia, com abrangência em todas as cinco regiões do país.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "10ª posição nacional entre as 26 UFs com registro, com 3,8% do total."
+      },
+      {
+        "tone": "pos",
+        "text": "50,0% de tudo que o Centro-Oeste registra no programa — maior participação da região."
+      },
+      {
+        "tone": "neutral",
+        "text": "Concentração: as três maiores UFs somam 34,1% do programa."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "empresas",
+      "label": "Empresas atendidas",
+      "value": 185,
+      "display_value": "185",
+      "unit": "empresas",
+      "period": "2023-2025"
+    }
+  ],
+  "ranked_lists": [],
+  "charts": [],
+  "breakdowns": [],
+  "competencia": "2026A",
+  "data_aceitacao": "2026-08-10",
+  "geo": {
+    "nivel": "uf",
+    "fallback": false,
+    "uf": "DF",
+    "regiao": "Centro-Oeste"
+  },
+  "story_nacional": {
+    "escopo": "nacional",
+    "headline": "Empreendedoras Tech já atendeu {{kpis[empresas].display_value}} negócios liderados por mulheres em todo o país, entre 2023 e 2025.",
+    "lede": "Programa nacional de apoio a empreendedoras da área de tecnologia, com abrangência em todas as cinco regiões do país.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "185 empresas atendidas, com a região Sudeste concentrando 57 (31%)."
+      },
+      {
+        "tone": "neutral",
+        "text": "São Paulo é a UF com mais empresas atendidas (27)."
+      }
+    ]
+  }
+}

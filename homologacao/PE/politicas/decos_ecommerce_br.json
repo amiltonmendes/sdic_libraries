@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "decos_ecommerce_br",
+  "nome": "E-commerce.BR",
+  "sigla": "E-commerce.BR",
+  "categoria": "Digitalização de pequenos negócios — comércio eletrônico",
+  "source": "SDIC/DECOS — Decos.docx (1º Edital, transcrito)",
+  "reference": "1º Edital — Etapa Piloto",
+  "updated_at": "2026-08-10",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Empresas atendidas (piloto)",
+    "display_value": "202",
+    "unit": "",
+    "period": "1º Edital — Etapa Piloto",
+    "delta": {
+      "dir": "flat",
+      "label": "30,4% do total nacional · 2ª entre 3 regiões"
+    },
+    "value": 202
+  },
+  "story": {
+    "escopo": "regiao",
+    "regiao": "Nordeste",
+    "uf": "PE",
+    "regra": "em_uf",
+    "headline": "Sem corte por estado: o Nordeste registra 202 empresas (30,4% do total nacional).",
+    "lede": "A fonte desta política não desce ao nível de UF — o número acima é da região Nordeste, que inclui Pernambuco. É a 2ª colocação entre as 3 macrorregiões com registro. Programa de digitalização do comércio para pequenos negócios das regiões Norte, Nordeste e Centro-Oeste, via soluções de e-commerce contratadas com parceiros locais.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "2ª entre as 3 macrorregiões com registro, com 30,4% do total nacional."
+      },
+      {
+        "tone": "neutral",
+        "text": "Dado regional: a fonte não permite separar o valor de Pernambuco."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "empresas",
+      "label": "Empresas atendidas (piloto)",
+      "value": 664,
+      "display_value": "664",
+      "unit": "empresas",
+      "period": "1º Edital"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "por_solucao",
+      "title": "Empresas por solução contratada",
+      "metric_label": "Empresas",
+      "unit": "empresas",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "LicitAI (MS)",
+          "value": 217,
+          "display_value": "217 empresas"
+        },
+        {
+          "name": "SocialSync (RO)",
+          "value": 81,
+          "display_value": "81 empresas"
+        },
+        {
+          "name": "Saúde Positiva (PB)",
+          "value": 77,
+          "display_value": "77 empresas"
+        },
+        {
+          "name": "REDEcomércio Digital / Elo Digital (GO)",
+          "value": 58,
+          "display_value": "58 empresas"
+        },
+        {
+          "name": "Agreste Digital (AL)",
+          "value": 54,
+          "display_value": "54 empresas"
+        },
+        {
+          "name": "GO+Ecommerce (GO)",
+          "value": 53,
+          "display_value": "53 empresas"
+        },
+        {
+          "name": "Ecommerce Mais Produtivo (MS)",
+          "value": 53,
+          "display_value": "53 empresas"
+        },
+        {
+          "name": "Made In Piauí (PI)",
+          "value": 42,
+          "display_value": "42 empresas"
+        },
+        {
+          "name": "Quipu / Venda Certa (BA)",
+          "value": 29,
+          "display_value": "29 empresas"
+        }
+      ]
+    }
+  ],
+  "charts": [],
+  "breakdowns": [],
+  "_nota_edital": "2º Edital ainda em análise de propostas — este JSON cobre só o 1º Edital (piloto). Atualizar quando os resultados do 2º Edital forem publicados.",
+  "competencia": "2026A",
+  "data_aceitacao": "2026-08-10",
+  "geo": {
+    "nivel": "regiao",
+    "fallback": true,
+    "uf": "PE",
+    "regiao": "Nordeste"
+  },
+  "story_nacional": {
+    "escopo": "nacional",
+    "headline": "E-commerce.BR concluiu a etapa piloto do 1º Edital com {{kpis[empresas].display_value}} em 7 estados do Norte, Nordeste e Centro-Oeste.",
+    "lede": "Programa de digitalização do comércio para pequenos negócios das regiões Norte, Nordeste e Centro-Oeste, via soluções de e-commerce contratadas com parceiros locais. Contabiliza apenas empresas que concluíram integralmente as etapas do projeto.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "664 empresas concluíram integralmente o piloto, em 7 UFs."
+      },
+      {
+        "tone": "neutral",
+        "text": "Mato Grosso do Sul lidera com 270 empresas atendidas."
+      },
+      {
+        "tone": "neutral",
+        "text": "2º Edital com propostas em análise — pode incluir novos estados do Norte, Nordeste e Centro-Oeste."
+      }
+    ]
+  }
+}

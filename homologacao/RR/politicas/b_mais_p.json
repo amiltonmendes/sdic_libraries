@@ -1,0 +1,267 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "b_mais_p",
+  "nome": "Brasil Mais Produtivo",
+  "sigla": "B+P",
+  "categoria": "Extensionismo industrial e ganho de produtividade",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "reference": "2023-2026",
+  "updated_at": "2026-08-04",
+  "capa_kpi": {
+    "id": "capa_bp",
+    "label": "Empresas atendidas",
+    "display_value": "1.516 atendimentos",
+    "unit": "",
+    "period": "acumulado",
+    "delta": {
+      "dir": "flat",
+      "label": "1,0% do total nacional · 23ª entre 27 UFs"
+    },
+    "value": 1516
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "RR",
+    "regra": "meio",
+    "headline": "1.516 atendimentos em Roraima — 1,0% do total nacional, 23ª posição entre as 27 UFs com registro.",
+    "lede": "Roraima ocupa a 23ª posição entre as 27 UFs com registro e responde por 1,0% do programa no país. Dentro do Norte, que soma 10.790 atendimentos, a participação de Roraima é de 14,1%. Abaixo da média por UF com registro (5.731 atendimentos). Programa nacional de extensionismo industrial que combina consultoria técnica (SENAI), apoio a micro e pequenos negócios (SEBRAE/ALI), inovação aplicada (EMBRAPII) e financiamento (BNDES) para elevar a produtividade da indústria brasileira.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "23ª posição nacional entre as 27 UFs com registro, com 1,0% do total."
+      },
+      {
+        "tone": "neutral",
+        "text": "14,1% de tudo que o Norte registra no programa."
+      },
+      {
+        "tone": "neutral",
+        "text": "Concentração: as três maiores UFs somam 50,4% do programa."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "empresas",
+      "label": "Empresas atendidas",
+      "value": 137572,
+      "display_value": "137.572",
+      "unit": "empresas",
+      "period": "acumulado"
+    },
+    {
+      "id": "atendimentos",
+      "label": "Atendimentos realizados",
+      "value": 154741,
+      "display_value": "154.741",
+      "unit": "atendimentos",
+      "period": "acumulado"
+    },
+    {
+      "id": "investimento",
+      "label": "Investimento mobilizado",
+      "value": 682164430.35,
+      "display_value": "R$ 682,2 mi",
+      "unit": "",
+      "period": "acumulado"
+    },
+    {
+      "id": "ganho_lean",
+      "label": "Ganho mediano de produtividade (indústria)",
+      "value": 32.2,
+      "display_value": "32,2",
+      "unit": "%",
+      "period": "concluintes SENAI"
+    }
+  ],
+  "ranked_lists": [],
+  "charts": [
+    {
+      "id": "atendimentos_anual",
+      "type": "area",
+      "title": "Atendimentos B+P por ano",
+      "subtitle": "Soma de SENAI + SEBRAE + EMBRAPII + BNDES, por ano de início/contratação",
+      "unit": "atendimentos",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "atendimentos",
+          "label": "Atendimentos",
+          "points": [
+            {
+              "t": 2024,
+              "v": 55984
+            },
+            {
+              "t": 2025,
+              "v": 56590
+            },
+            {
+              "t": 2026,
+              "v": 41426
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "t": 2026,
+          "label": "Ano parcial — dados até jul/ago de 2026"
+        }
+      ]
+    },
+    {
+      "id": "evolucao_anual_top_ufs",
+      "type": "line",
+      "title": "Evolução anual de atendimentos — 6 maiores UFs",
+      "subtitle": "SENAI + SEBRAE + EMBRAPII + BNDES, por ano de início/contratação",
+      "unit": "atendimentos",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "sp",
+          "label": "São Paulo (SP)",
+          "points": [
+            {
+              "t": 2024,
+              "v": 17155
+            },
+            {
+              "t": 2025,
+              "v": 13708
+            },
+            {
+              "t": 2026,
+              "v": 12800
+            }
+          ]
+        },
+        {
+          "id": "mg",
+          "label": "Minas Gerais (MG)",
+          "points": [
+            {
+              "t": 2024,
+              "v": 5982
+            },
+            {
+              "t": 2025,
+              "v": 7828
+            },
+            {
+              "t": 2026,
+              "v": 5978
+            }
+          ]
+        },
+        {
+          "id": "sc",
+          "label": "Santa Catarina (SC)",
+          "points": [
+            {
+              "t": 2024,
+              "v": 5227
+            },
+            {
+              "t": 2025,
+              "v": 4958
+            },
+            {
+              "t": 2026,
+              "v": 3848
+            }
+          ]
+        },
+        {
+          "id": "go",
+          "label": "Goiás (GO)",
+          "points": [
+            {
+              "t": 2024,
+              "v": 3073
+            },
+            {
+              "t": 2025,
+              "v": 3300
+            },
+            {
+              "t": 2026,
+              "v": 2643
+            }
+          ]
+        },
+        {
+          "id": "pr",
+          "label": "Paraná (PR)",
+          "points": [
+            {
+              "t": 2024,
+              "v": 2525
+            },
+            {
+              "t": 2025,
+              "v": 2189
+            },
+            {
+              "t": 2026,
+              "v": 1615
+            }
+          ]
+        },
+        {
+          "id": "pe",
+          "label": "Pernambuco (PE)",
+          "points": [
+            {
+              "t": 2024,
+              "v": 2533
+            },
+            {
+              "t": 2025,
+              "v": 1496
+            },
+            {
+              "t": 2026,
+              "v": 1484
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "t": 2026,
+          "label": "Ano parcial — dados até jul/ago de 2026"
+        }
+      ]
+    }
+  ],
+  "breakdowns": [],
+  "_nota_anonimizacao": "Sem CNPJ, nome de empresa ou município em nenhum nível do JSON — apenas contagens agregadas por UF ou nacionais.",
+  "competencia": "2026T3",
+  "data_aceitacao": "2026-08-04",
+  "geo": {
+    "nivel": "uf",
+    "fallback": false,
+    "uf": "RR",
+    "regiao": "Norte"
+  },
+  "story_nacional": {
+    "escopo": "nacional",
+    "headline": "Brasil Mais Produtivo já chegou a {{kpis[empresas].display_value}} em todo o país, com ganho mediano de {{kpis[ganho_lean].display_value}} de produtividade nas indústrias atendidas.",
+    "lede": "Programa nacional de extensionismo industrial que combina consultoria técnica (SENAI), apoio a micro e pequenos negócios (SEBRAE/ALI), inovação aplicada (EMBRAPII) e financiamento (BNDES) para elevar a produtividade da indústria brasileira. Dados agregados por UF.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+      },
+      {
+        "tone": "pos",
+        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
+      },
+      {
+        "tone": "neutral",
+        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+      }
+    ]
+  }
+}

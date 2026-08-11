@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.2",
+  "n_politicas": 7,
+  "recursos": {
+    "value": 5209417702.4,
+    "display_value": "R$ 5,21 bi"
+  },
+  "atendimentos": {
+    "value": 2375,
+    "display_value": "2.375"
+  },
+  "top_politicas": [
+    {
+      "id": "p_mais_p",
+      "sigla": "P+P",
+      "nome": "Plano Mais Produção",
+      "display_value": "R$ 5,19 bi"
+    },
+    {
+      "id": "depreciacao_acelerada",
+      "sigla": "DA",
+      "nome": "Depreciação Acelerada",
+      "display_value": "R$ 21,8 mi"
+    }
+  ],
+  "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
+  "uf": "PB",
+  "nome_uf": "Paraíba",
+  "ranking_nacional": {
+    "metrica": "recursos",
+    "posicao": 22,
+    "de": 27,
+    "share": 0.82,
+    "display": "22º de 27 UFs em recursos mobilizados"
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "PB",
+    "regra": "com_recursos",
+    "headline": "Paraíba soma R$ 5,21 bi em 7 políticas da SDIC com dado próprio do estado.",
+    "lede": "Paraíba é a 22ª do país em recursos mobilizados, com 0,8% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 5,19 bi) e DA (R$ 21,8 mi). As políticas não monetárias somam 2.375 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "22ª posição nacional em recursos mobilizados (0,8% do total das UFs)."
+      }
+    ]
+  }
+}

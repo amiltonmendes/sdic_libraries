@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.2",
+  "n_politicas": 21,
+  "recursos": {
+    "value": 1572417336450.0,
+    "display_value": "R$ 1,57 tri"
+  },
+  "atendimentos": {
+    "value": 156679,
+    "display_value": "156.679"
+  },
+  "top_politicas": [
+    {
+      "id": "p_mais_p",
+      "sigla": "P+P",
+      "nome": "Plano Mais Produção",
+      "display_value": "R$ 709,37 bi"
+    },
+    {
+      "id": "acoes_diben",
+      "sigla": "Ações DIBEN",
+      "nome": "Ações DIBEN",
+      "display_value": "R$ 407,02 bi"
+    },
+    {
+      "id": "fgi",
+      "sigla": "FGI",
+      "nome": "FGI — Fundo Garantidor para Investimentos",
+      "display_value": "R$ 264 bi"
+    },
+    {
+      "id": "fgo",
+      "sigla": "FGO",
+      "nome": "FGO — Fundo Garantidor de Operações",
+      "display_value": "R$ 143 bi"
+    },
+    {
+      "id": "move_brasil",
+      "sigla": "Move Brasil",
+      "nome": "Move Brasil",
+      "display_value": "R$ 25,63 bi"
+    },
+    {
+      "id": "depreciacao_acelerada",
+      "sigla": "DA",
+      "nome": "Depreciação Acelerada",
+      "display_value": "R$ 8,63 bi"
+    }
+  ],
+  "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
+  "story": {
+    "escopo": "nacional",
+    "regra": "normal",
+    "headline": "Brasil: R$ 1,57 tri mobilizados em 21 políticas da SDIC.",
+    "lede": "As maiores são P+P (R$ 709,37 bi), Ações DIBEN (R$ 407,02 bi) e FGI (R$ 264 bi). As políticas não monetárias somam 156.679 projetos, empresas e atendimentos. Soma entre políticas de unidades diferentes — ver nota metodológica.",
+    "highlights": []
+  }
+}

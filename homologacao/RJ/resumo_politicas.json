@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.2",
+  "n_politicas": 8,
+  "recursos": {
+    "value": 24648215105.5,
+    "display_value": "R$ 24,65 bi"
+  },
+  "atendimentos": {
+    "value": 6597,
+    "display_value": "6.597"
+  },
+  "top_politicas": [
+    {
+      "id": "p_mais_p",
+      "sigla": "P+P",
+      "nome": "Plano Mais Produção",
+      "display_value": "R$ 20,27 bi"
+    },
+    {
+      "id": "reiq",
+      "sigla": "REIQ",
+      "nome": "REIQ — Regime Especial da Indústria Química",
+      "display_value": "R$ 4,31 bi"
+    },
+    {
+      "id": "depreciacao_acelerada",
+      "sigla": "DA",
+      "nome": "Depreciação Acelerada",
+      "display_value": "R$ 75,5 mi"
+    }
+  ],
+  "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
+  "uf": "RJ",
+  "nome_uf": "Rio de Janeiro",
+  "ranking_nacional": {
+    "metrica": "recursos",
+    "posicao": 8,
+    "de": 27,
+    "share": 3.88,
+    "display": "8º de 27 UFs em recursos mobilizados"
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "RJ",
+    "regra": "com_recursos",
+    "headline": "Rio de Janeiro soma R$ 24,65 bi em 8 políticas da SDIC com dado próprio do estado.",
+    "lede": "Rio de Janeiro é o 8º do país em recursos mobilizados, com 3,9% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 20,27 bi), REIQ (R$ 4,31 bi) e DA (R$ 75,5 mi). As políticas não monetárias somam 6.597 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "8ª posição nacional em recursos mobilizados (3,9% do total das UFs)."
+      }
+    ]
+  }
+}

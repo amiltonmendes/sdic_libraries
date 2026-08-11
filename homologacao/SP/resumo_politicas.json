@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.2",
+  "n_politicas": 8,
+  "recursos": {
+    "value": 203611925366.73,
+    "display_value": "R$ 203,61 bi"
+  },
+  "atendimentos": {
+    "value": 47009,
+    "display_value": "47.009"
+  },
+  "top_politicas": [
+    {
+      "id": "p_mais_p",
+      "sigla": "P+P",
+      "nome": "Plano Mais Produção",
+      "display_value": "R$ 200,99 bi"
+    },
+    {
+      "id": "depreciacao_acelerada",
+      "sigla": "DA",
+      "nome": "Depreciação Acelerada",
+      "display_value": "R$ 2,50 bi"
+    },
+    {
+      "id": "reiq",
+      "sigla": "REIQ",
+      "nome": "REIQ — Regime Especial da Indústria Química",
+      "display_value": "R$ 121,0 mi"
+    }
+  ],
+  "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
+  "uf": "SP",
+  "nome_uf": "São Paulo",
+  "ranking_nacional": {
+    "metrica": "recursos",
+    "posicao": 1,
+    "de": 27,
+    "share": 32.01,
+    "display": "1º de 27 UFs em recursos mobilizados"
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "SP",
+    "regra": "com_recursos",
+    "headline": "São Paulo soma R$ 203,61 bi em 8 políticas da SDIC com dado próprio do estado.",
+    "lede": "São Paulo é o 1º do país em recursos mobilizados, com 32,0% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 200,99 bi), DA (R$ 2,50 bi) e REIQ (R$ 121,0 mi). As políticas não monetárias somam 47.009 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "1ª posição nacional em recursos mobilizados (32,0% do total das UFs)."
+      }
+    ]
+  }
+}

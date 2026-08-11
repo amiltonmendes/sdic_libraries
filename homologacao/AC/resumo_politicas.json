@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.2",
+  "n_politicas": 3,
+  "recursos": {
+    "value": 1119100631.13,
+    "display_value": "R$ 1,12 bi"
+  },
+  "atendimentos": {
+    "value": 1160,
+    "display_value": "1.160"
+  },
+  "top_politicas": [
+    {
+      "id": "p_mais_p",
+      "sigla": "P+P",
+      "nome": "Plano Mais Produção",
+      "display_value": "R$ 1,12 bi"
+    }
+  ],
+  "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
+  "uf": "AC",
+  "nome_uf": "Acre",
+  "ranking_nacional": {
+    "metrica": "recursos",
+    "posicao": 26,
+    "de": 27,
+    "share": 0.18,
+    "display": "26º de 27 UFs em recursos mobilizados"
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "AC",
+    "regra": "com_recursos",
+    "headline": "Acre soma R$ 1,12 bi em 3 políticas da SDIC com dado próprio do estado.",
+    "lede": "Acre é o 26º do país em recursos mobilizados, com 0,2% do que as políticas registram em todas as UFs. A maior é P+P (R$ 1,12 bi). As políticas não monetárias somam 1.160 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "26ª posição nacional em recursos mobilizados (0,2% do total das UFs)."
+      }
+    ]
+  }
+}
