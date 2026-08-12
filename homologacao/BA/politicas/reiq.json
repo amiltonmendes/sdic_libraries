@@ -9,7 +9,7 @@
   "updated_at": "2026-08-07",
   "capa_kpi": {
     "id": "capa",
-    "label": "Investimento total aprovado",
+    "label": "Investimento total mobilizado",
     "display_value": "R$ 289,8 mi",
     "unit": "",
     "period": "2024-2026",
@@ -18,6 +18,14 @@
       "label": "5,3% do total nacional · 3ª entre 7 UFs"
     },
     "value": 289829258.49
+  },
+  "capa_kpi_secundario": {
+    "id": "capa_beneficiado",
+    "label": "Investimento total beneficiado (aprovado no REIQ)",
+    "display_value": "R$ 252,6 mi",
+    "unit": "",
+    "period": "2024-2026",
+    "value": 252622936.32
   },
   "story": {
     "escopo": "uf",
@@ -43,15 +51,15 @@
   "kpis": [
     {
       "id": "investimento",
-      "label": "Investimento total aprovado",
+      "label": "Investimento total mobilizado",
       "value": 5440934697.94,
       "display_value": "R$ 5,44 bi",
       "unit": "",
       "period": "2024-2026"
     },
     {
-      "id": "aprovado_reiq",
-      "label": "Valor aprovado no REIQ",
+      "id": "beneficiado",
+      "label": "Investimento total beneficiado (aprovado no REIQ)",
       "value": 1765330298.79,
       "display_value": "R$ 1,77 bi",
       "unit": "",
@@ -104,7 +112,7 @@
     {
       "id": "investimento_anual",
       "type": "bars",
-      "title": "Investimento aprovado por ano",
+      "title": "Investimento mobilizado por ano",
       "subtitle": "Data de aprovação do projeto",
       "unit": "bilhões de reais",
       "x_kind": "category",
@@ -153,12 +161,16 @@
   },
   "story_nacional": {
     "escopo": "nacional",
-    "headline": "REIQ viabilizou {{kpis[investimento].display_value}} em investimentos na cadeia petroquímica, com {{kpis[empregos].display_value}} empregos indiretos gerados.",
+    "headline": "REIQ mobilizou {{kpis[investimento].display_value}} em investimentos na cadeia petroquímica, dos quais {{kpis[beneficiado].display_value}} foram efetivamente beneficiados pelo regime, com {{kpis[empregos].display_value}} empregos indiretos gerados.",
     "lede": "Regime Especial da Indústria Química — incentivo fiscal a projetos de expansão, modernização e diversificação da cadeia petroquímica brasileira.",
     "highlights": [
       {
         "tone": "pos",
-        "text": "29 projetos aprovados, somando R$ 5,44 bi."
+        "text": "29 projetos aprovados, somando R$ 5,44 bi mobilizados."
+      },
+      {
+        "tone": "neutral",
+        "text": "Do total mobilizado, R$ 1,77 bi foram efetivamente aprovados e beneficiados pelo regime fiscal do REIQ."
       },
       {
         "tone": "pos",
