@@ -3,12 +3,12 @@
   "section_id": "emprego",
   "title": "Emprego",
   "source": "Novo CAGED / MTE",
-  "reference": "Mai/2026",
-  "updated_at": "2026-08-06",
+  "reference": "Jun/2026",
+  "updated_at": "2026-08-13",
   "capa_kpi": {
     "id": "capa_emprego",
     "label": "Saldo CAGED 12m",
-    "display_value": "+46.779",
+    "display_value": "+41.913",
     "unit": "vagas",
     "period": "12 meses",
     "delta": {
@@ -21,7 +21,7 @@
     "lede": "Emprego — dados do Novo CAGED (MTE/SDIC) com estoque de vínculos formais da RAIS. Narrativa atualiza automaticamente conforme novos dados disponibilizam.",
     "highlights": [
       {
-        "tone": "neg",
+        "tone": "pos",
         "text": "Saldo de {{kpis[saldo_mensal].display_value}} {{kpis[saldo_mensal].unit}} no mês mais recente."
       },
       {
@@ -34,7 +34,7 @@
       },
       {
         "tone": "pos",
-        "text": "Atividade com maior saldo: Publicidade e pesquisa de mercado (+5.328 vagas)."
+        "text": "Atividade com maior saldo: Publicidade e pesquisa de mercado (+5.079 vagas)."
       }
     ]
   },
@@ -42,18 +42,27 @@
     {
       "id": "saldo_mensal",
       "label": "Saldo mensal",
-      "value": -662,
-      "display_value": "-662",
+      "value": 808,
+      "display_value": "+808",
       "unit": "vagas",
-      "period": "Mai/2026"
+      "period": "Jun/2026"
     },
     {
       "id": "saldo_12m",
       "label": "Saldo 12 meses",
-      "value": 46779,
-      "display_value": "+46.779",
+      "value": 41913,
+      "display_value": "+41.913",
       "unit": "vagas",
       "period": "12 meses"
+    },
+    {
+      "id": "saldo_ano",
+      "label": "Saldo no ano",
+      "value": 63169,
+      "display_value": "+63.169",
+      "unit": "vagas",
+      "period": "2026 (até Jun)",
+      "partial": true
     },
     {
       "id": "estoque",
@@ -61,7 +70,7 @@
       "value": 2920910,
       "display_value": "2.921",
       "unit": "mil vínculos",
-      "period": "Mai/2026"
+      "period": "RAIS 2025"
     },
     {
       "id": "baixa_intensidade_share",
@@ -69,7 +78,7 @@
       "value": 15.2,
       "display_value": "15,2",
       "unit": "%",
-      "period": "Mai/2026"
+      "period": "RAIS 2025"
     }
   ],
   "charts": [
@@ -85,60 +94,60 @@
           "label": "Saldo",
           "points": [
             {
-              "t": 65,
-              "v": 6323
-            },
-            {
               "t": 66,
-              "v": 3189
+              "v": 3187
             },
             {
               "t": 67,
-              "v": 782
+              "v": 772
             },
             {
               "t": 68,
-              "v": 11392
+              "v": 11396
             },
             {
               "t": 69,
-              "v": 6816
+              "v": 6807
             },
             {
               "t": 70,
-              "v": 5154
+              "v": 5148
             },
             {
               "t": 71,
-              "v": -48535
+              "v": -48566
             },
             {
               "t": 72,
-              "v": 19897
+              "v": 19900
             },
             {
               "t": 73,
-              "v": 22747
+              "v": 22739
             },
             {
               "t": 74,
-              "v": 16942
+              "v": 16970
             },
             {
               "t": 75,
-              "v": 2734
+              "v": 2764
             },
             {
               "t": 76,
-              "v": -662
+              "v": -12
+            },
+            {
+              "t": 77,
+              "v": 808
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202605",
-          "label": "+-662 vagas"
+          "t": "202606",
+          "label": "+808 vagas"
         }
       ]
     },
@@ -154,60 +163,60 @@
           "label": "Acumulado 12m",
           "points": [
             {
-              "t": "202506",
-              "v": 90321
-            },
-            {
               "t": "202507",
-              "v": 81045
+              "v": 81057
             },
             {
               "t": "202508",
-              "v": 73483
+              "v": 73484
             },
             {
               "t": "202509",
-              "v": 71401
+              "v": 71406
             },
             {
               "t": "202510",
-              "v": 67996
+              "v": 67992
             },
             {
               "t": "202511",
-              "v": 64232
+              "v": 64223
             },
             {
               "t": "202512",
-              "v": 59003
+              "v": 58962
             },
             {
               "t": "202601",
-              "v": 55107
+              "v": 55061
             },
             {
               "t": "202602",
-              "v": 47298
+              "v": 47243
             },
             {
               "t": "202603",
-              "v": 53693
+              "v": 53664
             },
             {
               "t": "202604",
-              "v": 47271
+              "v": 47267
             },
             {
               "t": "202605",
-              "v": 46772
+              "v": 47419
+            },
+            {
+              "t": "202606",
+              "v": 41922
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202605",
-          "label": "+46.772 vagas"
+          "t": "202606",
+          "label": "+41.922 vagas"
         }
       ]
     }
@@ -222,28 +231,28 @@
       "items": [
         {
           "name": "Publicidade e pesquisa de mercado",
-          "value": 5328,
-          "display_value": "+5.328"
-        },
-        {
-          "name": "Atividades de atenção à saúde humana",
-          "value": 5007,
-          "display_value": "+5.007"
-        },
-        {
-          "name": "Serviços de escritório, de apoio administrativo e outros serviços prestados às empresas",
-          "value": 4680,
-          "display_value": "+4.680"
+          "value": 5079,
+          "display_value": "+5.079"
         },
         {
           "name": "Fabricação de produtos alimentícios",
-          "value": 4628,
-          "display_value": "+4.628"
+          "value": 4917,
+          "display_value": "+4.917"
         },
         {
-          "name": "Serviços para edifícios e atividades paisagísticas",
-          "value": 3911,
-          "display_value": "+3.911"
+          "name": "Seleção, agenciamento e locação de mão de obra",
+          "value": 4085,
+          "display_value": "+4.085"
+        },
+        {
+          "name": "Serviços de escritório, de apoio administrativo e outros serviços prestados às empresas",
+          "value": 3878,
+          "display_value": "+3.878"
+        },
+        {
+          "name": "Atividades de atenção à saúde humana",
+          "value": 3721,
+          "display_value": "+3.721"
         }
       ]
     },
@@ -256,28 +265,28 @@
       "items": [
         {
           "name": "Confecção de artigos do vestuário e acessórios",
-          "value": -3177,
-          "display_value": "−3.177"
+          "value": -3212,
+          "display_value": "−3.212"
         },
         {
           "name": "Fabricação de produtos de madeira",
-          "value": -2494,
-          "display_value": "−2.494"
+          "value": -2330,
+          "display_value": "−2.330"
         },
         {
           "name": "Fabricação de móveis",
-          "value": -1285,
-          "display_value": "−1.285"
+          "value": -1718,
+          "display_value": "−1.718"
         },
         {
           "name": "Fabricação de veículos automotores, reboques e carrocerias",
-          "value": -1032,
-          "display_value": "−1.032"
+          "value": -1178,
+          "display_value": "−1.178"
         },
         {
           "name": "Fabricação de produtos de minerais não metálicos",
-          "value": -737,
-          "display_value": "−737"
+          "value": -723,
+          "display_value": "−723"
         }
       ]
     },
