@@ -24,19 +24,15 @@
     "uf": "MG",
     "regra": "top",
     "headline": "Minas Gerais é o 2º do país: 19.900 atendimentos, 12,9% do total nacional.",
-    "lede": "Minas Gerais ocupa a 2ª posição entre as 27 UFs com registro e responde por 12,9% do programa no país. Dentro do Sudeste, que soma 71.489 atendimentos, a participação de Minas Gerais é de 27,8%. 3,5× a média por UF com registro (5.731 atendimentos). Programa nacional de extensionismo industrial que combina consultoria técnica (SENAI), apoio a micro e pequenos negócios (SEBRAE/ALI), inovação aplicada (EMBRAPII) e financiamento (BNDES) para elevar a produtividade da indústria brasileira.",
+    "lede": "Minas Gerais ocupa a 2ª posição entre as 27 UFs participantes do programa e responde por 12,9% do programa no país. Dentro do Sudeste, que soma 71.489 atendimentos, a participação de Minas Gerais é de 27,8%. Programa nacional de extensionismo industrial que combina consultoria técnica (SENAI), apoio a micro e pequenos negócios (SEBRAE/ALI), inovação aplicada (EMBRAPII) e financiamento (BNDES) para elevar a produtividade da indústria brasileira.",
     "highlights": [
       {
         "tone": "pos",
-        "text": "2ª posição nacional entre as 27 UFs com registro, com 12,9% do total."
+        "text": "2ª posição nacional entre as 27 UFs participantes do programa, com 12,9% do total."
       },
       {
         "tone": "neutral",
         "text": "27,8% de tudo que o Sudeste registra no programa."
-      },
-      {
-        "tone": "neutral",
-        "text": "Concentração: as três maiores UFs somam 50,4% do programa."
       }
     ]
   },
@@ -72,6 +68,48 @@
       "display_value": "32,2",
       "unit": "%",
       "period": "concluintes SENAI"
+    }
+  ],
+  "capa_kpi_modalidades": [
+    {
+      "id": "senai",
+      "label": "SENAI — consultoria técnica (Lean)",
+      "value": 2372,
+      "unit": "atendimentos",
+      "display_value": "2.372 atendimentos",
+      "period": "acumulado"
+    },
+    {
+      "id": "sebrae",
+      "label": "SEBRAE/ALI — pequenos negócios",
+      "value": 17459,
+      "unit": "atendimentos",
+      "display_value": "17.459 atendimentos",
+      "period": "acumulado"
+    },
+    {
+      "id": "embrapii",
+      "label": "EMBRAPII — inovação aplicada",
+      "value": 60,
+      "unit": "projetos",
+      "display_value": "60 projetos",
+      "period": "acumulado",
+      "delta": {
+        "dir": "flat",
+        "label": "R$ 61,8 mi mobilizados"
+      }
+    },
+    {
+      "id": "bndes",
+      "label": "BNDES — financiamento",
+      "value": 9,
+      "unit": "operações",
+      "display_value": "9 operações",
+      "period": "acumulado",
+      "delta": {
+        "dir": "flat",
+        "label": "R$ 53,1 mi financiados"
+      }
     }
   ],
   "ranked_lists": [],

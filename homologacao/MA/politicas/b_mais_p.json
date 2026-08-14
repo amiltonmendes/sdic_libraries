@@ -23,20 +23,16 @@
     "escopo": "uf",
     "uf": "MA",
     "regra": "meio",
-    "headline": "2.848 atendimentos no Maranhão — 1,8% do total nacional, 15ª posição entre as 27 UFs com registro.",
-    "lede": "Maranhão ocupa a 15ª posição entre as 27 UFs com registro e responde por 1,8% do programa no país. Dentro do Nordeste, que soma 25.119 atendimentos, a participação do Maranhão é de 11,3%. Abaixo da média por UF com registro (5.731 atendimentos). Programa nacional de extensionismo industrial que combina consultoria técnica (SENAI), apoio a micro e pequenos negócios (SEBRAE/ALI), inovação aplicada (EMBRAPII) e financiamento (BNDES) para elevar a produtividade da indústria brasileira.",
+    "headline": "2.848 atendimentos no Maranhão — 1,8% do total nacional, 15ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Maranhão ocupa a 15ª posição entre as 27 UFs participantes do programa e responde por 1,8% do programa no país. Dentro do Nordeste, que soma 25.119 atendimentos, a participação do Maranhão é de 11,3%. Programa nacional de extensionismo industrial que combina consultoria técnica (SENAI), apoio a micro e pequenos negócios (SEBRAE/ALI), inovação aplicada (EMBRAPII) e financiamento (BNDES) para elevar a produtividade da indústria brasileira.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "15ª posição nacional entre as 27 UFs com registro, com 1,8% do total."
+        "text": "15ª posição nacional entre as 27 UFs participantes do programa, com 1,8% do total."
       },
       {
         "tone": "neutral",
         "text": "11,3% de tudo que o Nordeste registra no programa."
-      },
-      {
-        "tone": "neutral",
-        "text": "Concentração: as três maiores UFs somam 50,4% do programa."
       }
     ]
   },
@@ -72,6 +68,48 @@
       "display_value": "32,2",
       "unit": "%",
       "period": "concluintes SENAI"
+    }
+  ],
+  "capa_kpi_modalidades": [
+    {
+      "id": "senai",
+      "label": "SENAI — consultoria técnica (Lean)",
+      "value": 316,
+      "unit": "atendimentos",
+      "display_value": "316 atendimentos",
+      "period": "acumulado"
+    },
+    {
+      "id": "sebrae",
+      "label": "SEBRAE/ALI — pequenos negócios",
+      "value": 2531,
+      "unit": "atendimentos",
+      "display_value": "2.531 atendimentos",
+      "period": "acumulado"
+    },
+    {
+      "id": "embrapii",
+      "label": "EMBRAPII — inovação aplicada",
+      "value": 1,
+      "unit": "projetos",
+      "display_value": "1 projetos",
+      "period": "acumulado",
+      "delta": {
+        "dir": "flat",
+        "label": "R$ 843.400 mobilizados"
+      }
+    },
+    {
+      "id": "bndes",
+      "label": "BNDES — financiamento",
+      "value": 0,
+      "unit": "operações",
+      "display_value": "0 operações",
+      "period": "acumulado",
+      "delta": {
+        "dir": "flat",
+        "label": "— financiados"
+      }
     }
   ],
   "ranked_lists": [],

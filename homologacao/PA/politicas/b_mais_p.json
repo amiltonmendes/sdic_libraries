@@ -23,20 +23,16 @@
     "escopo": "uf",
     "uf": "PA",
     "regra": "meio",
-    "headline": "3.042 atendimentos no Pará — 2,0% do total nacional, 13ª posição entre as 27 UFs com registro.",
-    "lede": "Pará ocupa a 13ª posição entre as 27 UFs com registro e responde por 2,0% do programa no país. Dentro do Norte, que soma 10.790 atendimentos, a participação do Pará é de 28,2%, a maior da região. Abaixo da média por UF com registro (5.731 atendimentos). Programa nacional de extensionismo industrial que combina consultoria técnica (SENAI), apoio a micro e pequenos negócios (SEBRAE/ALI), inovação aplicada (EMBRAPII) e financiamento (BNDES) para elevar a produtividade da indústria brasileira.",
+    "headline": "3.042 atendimentos no Pará — 2,0% do total nacional, 13ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Pará ocupa a 13ª posição entre as 27 UFs participantes do programa e responde por 2,0% do programa no país. Dentro do Norte, que soma 10.790 atendimentos, a participação do Pará é de 28,2%, a maior da região. Programa nacional de extensionismo industrial que combina consultoria técnica (SENAI), apoio a micro e pequenos negócios (SEBRAE/ALI), inovação aplicada (EMBRAPII) e financiamento (BNDES) para elevar a produtividade da indústria brasileira.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "13ª posição nacional entre as 27 UFs com registro, com 2,0% do total."
+        "text": "13ª posição nacional entre as 27 UFs participantes do programa, com 2,0% do total."
       },
       {
         "tone": "pos",
         "text": "28,2% de tudo que o Norte registra no programa — maior participação da região."
-      },
-      {
-        "tone": "neutral",
-        "text": "Concentração: as três maiores UFs somam 50,4% do programa."
       }
     ]
   },
@@ -72,6 +68,48 @@
       "display_value": "32,2",
       "unit": "%",
       "period": "concluintes SENAI"
+    }
+  ],
+  "capa_kpi_modalidades": [
+    {
+      "id": "senai",
+      "label": "SENAI — consultoria técnica (Lean)",
+      "value": 425,
+      "unit": "atendimentos",
+      "display_value": "425 atendimentos",
+      "period": "acumulado"
+    },
+    {
+      "id": "sebrae",
+      "label": "SEBRAE/ALI — pequenos negócios",
+      "value": 2615,
+      "unit": "atendimentos",
+      "display_value": "2.615 atendimentos",
+      "period": "acumulado"
+    },
+    {
+      "id": "embrapii",
+      "label": "EMBRAPII — inovação aplicada",
+      "value": 2,
+      "unit": "projetos",
+      "display_value": "2 projetos",
+      "period": "acumulado",
+      "delta": {
+        "dir": "flat",
+        "label": "R$ 1,1 mi mobilizados"
+      }
+    },
+    {
+      "id": "bndes",
+      "label": "BNDES — financiamento",
+      "value": 0,
+      "unit": "operações",
+      "display_value": "0 operações",
+      "period": "acumulado",
+      "delta": {
+        "dir": "flat",
+        "label": "— financiados"
+      }
     }
   ],
   "ranked_lists": [],

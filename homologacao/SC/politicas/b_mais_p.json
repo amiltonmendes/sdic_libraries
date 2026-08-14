@@ -24,19 +24,15 @@
     "uf": "SC",
     "regra": "top",
     "headline": "Santa Catarina é o 3º do país: 14.089 atendimentos, 9,1% do total nacional.",
-    "lede": "Santa Catarina ocupa a 3ª posição entre as 27 UFs com registro e responde por 9,1% do programa no país. Dentro do Sul, que soma 26.693 atendimentos, a participação de Santa Catarina é de 52,8%, a maior da região. 2,5× a média por UF com registro (5.731 atendimentos). Programa nacional de extensionismo industrial que combina consultoria técnica (SENAI), apoio a micro e pequenos negócios (SEBRAE/ALI), inovação aplicada (EMBRAPII) e financiamento (BNDES) para elevar a produtividade da indústria brasileira.",
+    "lede": "Santa Catarina ocupa a 3ª posição entre as 27 UFs participantes do programa e responde por 9,1% do programa no país. Dentro do Sul, que soma 26.693 atendimentos, a participação de Santa Catarina é de 52,8%, a maior da região. Programa nacional de extensionismo industrial que combina consultoria técnica (SENAI), apoio a micro e pequenos negócios (SEBRAE/ALI), inovação aplicada (EMBRAPII) e financiamento (BNDES) para elevar a produtividade da indústria brasileira.",
     "highlights": [
       {
         "tone": "pos",
-        "text": "3ª posição nacional entre as 27 UFs com registro, com 9,1% do total."
+        "text": "3ª posição nacional entre as 27 UFs participantes do programa, com 9,1% do total."
       },
       {
         "tone": "pos",
         "text": "52,8% de tudo que o Sul registra no programa — maior participação da região."
-      },
-      {
-        "tone": "neutral",
-        "text": "Concentração: as três maiores UFs somam 50,4% do programa."
       }
     ]
   },
@@ -72,6 +68,48 @@
       "display_value": "32,2",
       "unit": "%",
       "period": "concluintes SENAI"
+    }
+  ],
+  "capa_kpi_modalidades": [
+    {
+      "id": "senai",
+      "label": "SENAI — consultoria técnica (Lean)",
+      "value": 1903,
+      "unit": "atendimentos",
+      "display_value": "1.903 atendimentos",
+      "period": "acumulado"
+    },
+    {
+      "id": "sebrae",
+      "label": "SEBRAE/ALI — pequenos negócios",
+      "value": 12151,
+      "unit": "atendimentos",
+      "display_value": "12.151 atendimentos",
+      "period": "acumulado"
+    },
+    {
+      "id": "embrapii",
+      "label": "EMBRAPII — inovação aplicada",
+      "value": 27,
+      "unit": "projetos",
+      "display_value": "27 projetos",
+      "period": "acumulado",
+      "delta": {
+        "dir": "flat",
+        "label": "R$ 33,8 mi mobilizados"
+      }
+    },
+    {
+      "id": "bndes",
+      "label": "BNDES — financiamento",
+      "value": 8,
+      "unit": "operações",
+      "display_value": "8 operações",
+      "period": "acumulado",
+      "delta": {
+        "dir": "flat",
+        "label": "R$ 53,7 mi financiados"
+      }
     }
   ],
   "ranked_lists": [],

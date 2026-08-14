@@ -72,6 +72,48 @@
       "period": "concluintes SENAI"
     }
   ],
+  "capa_kpi_modalidades": [
+    {
+      "id": "senai",
+      "label": "SENAI — consultoria técnica (Lean)",
+      "value": 24130,
+      "unit": "atendimentos",
+      "display_value": "24.130 atendimentos",
+      "period": "acumulado"
+    },
+    {
+      "id": "sebrae",
+      "label": "SEBRAE/ALI — pequenos negócios",
+      "value": 130177,
+      "unit": "atendimentos",
+      "display_value": "130.177 atendimentos",
+      "period": "acumulado"
+    },
+    {
+      "id": "embrapii",
+      "label": "EMBRAPII — inovação aplicada",
+      "value": 410,
+      "unit": "projetos",
+      "display_value": "410 projetos",
+      "period": "acumulado",
+      "delta": {
+        "dir": "flat",
+        "label": "R$ 534,4 mi mobilizados"
+      }
+    },
+    {
+      "id": "bndes",
+      "label": "BNDES — financiamento",
+      "value": 24,
+      "unit": "operações",
+      "display_value": "24 operações",
+      "period": "acumulado",
+      "delta": {
+        "dir": "flat",
+        "label": "R$ 147,8 mi financiados"
+      }
+    }
+  ],
   "ranked_lists": [],
   "charts": [
     {

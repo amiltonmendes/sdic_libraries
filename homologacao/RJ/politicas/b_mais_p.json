@@ -23,20 +23,16 @@
     "escopo": "uf",
     "uf": "RJ",
     "regra": "meio",
-    "headline": "4.959 atendimentos no Rio de Janeiro — 3,2% do total nacional, 8ª posição entre as 27 UFs com registro.",
-    "lede": "Rio de Janeiro ocupa a 8ª posição entre as 27 UFs com registro e responde por 3,2% do programa no país. Dentro do Sudeste, que soma 71.489 atendimentos, a participação do Rio de Janeiro é de 6,9%. Em linha com a média por UF com registro (5.731 atendimentos). Programa nacional de extensionismo industrial que combina consultoria técnica (SENAI), apoio a micro e pequenos negócios (SEBRAE/ALI), inovação aplicada (EMBRAPII) e financiamento (BNDES) para elevar a produtividade da indústria brasileira.",
+    "headline": "4.959 atendimentos no Rio de Janeiro — 3,2% do total nacional, 8ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Rio de Janeiro ocupa a 8ª posição entre as 27 UFs participantes do programa e responde por 3,2% do programa no país. Dentro do Sudeste, que soma 71.489 atendimentos, a participação do Rio de Janeiro é de 6,9%. Programa nacional de extensionismo industrial que combina consultoria técnica (SENAI), apoio a micro e pequenos negócios (SEBRAE/ALI), inovação aplicada (EMBRAPII) e financiamento (BNDES) para elevar a produtividade da indústria brasileira.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "8ª posição nacional entre as 27 UFs com registro, com 3,2% do total."
+        "text": "8ª posição nacional entre as 27 UFs participantes do programa, com 3,2% do total."
       },
       {
         "tone": "neutral",
         "text": "6,9% de tudo que o Sudeste registra no programa."
-      },
-      {
-        "tone": "neutral",
-        "text": "Concentração: as três maiores UFs somam 50,4% do programa."
       }
     ]
   },
@@ -72,6 +68,48 @@
       "display_value": "32,2",
       "unit": "%",
       "period": "concluintes SENAI"
+    }
+  ],
+  "capa_kpi_modalidades": [
+    {
+      "id": "senai",
+      "label": "SENAI — consultoria técnica (Lean)",
+      "value": 1064,
+      "unit": "atendimentos",
+      "display_value": "1.064 atendimentos",
+      "period": "acumulado"
+    },
+    {
+      "id": "sebrae",
+      "label": "SEBRAE/ALI — pequenos negócios",
+      "value": 3876,
+      "unit": "atendimentos",
+      "display_value": "3.876 atendimentos",
+      "period": "acumulado"
+    },
+    {
+      "id": "embrapii",
+      "label": "EMBRAPII — inovação aplicada",
+      "value": 19,
+      "unit": "projetos",
+      "display_value": "19 projetos",
+      "period": "acumulado",
+      "delta": {
+        "dir": "flat",
+        "label": "R$ 19,2 mi mobilizados"
+      }
+    },
+    {
+      "id": "bndes",
+      "label": "BNDES — financiamento",
+      "value": 0,
+      "unit": "operações",
+      "display_value": "0 operações",
+      "period": "acumulado",
+      "delta": {
+        "dir": "flat",
+        "label": "— financiados"
+      }
     }
   ],
   "ranked_lists": [],

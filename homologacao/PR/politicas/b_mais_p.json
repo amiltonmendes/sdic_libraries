@@ -23,20 +23,16 @@
     "escopo": "uf",
     "uf": "PR",
     "regra": "meio",
-    "headline": "6.454 atendimentos no Paraná — 4,2% do total nacional, 5ª posição entre as 27 UFs com registro.",
-    "lede": "Paraná ocupa a 5ª posição entre as 27 UFs com registro e responde por 4,2% do programa no país. Dentro do Sul, que soma 26.693 atendimentos, a participação do Paraná é de 24,2%. Em linha com a média por UF com registro (5.731 atendimentos). Programa nacional de extensionismo industrial que combina consultoria técnica (SENAI), apoio a micro e pequenos negócios (SEBRAE/ALI), inovação aplicada (EMBRAPII) e financiamento (BNDES) para elevar a produtividade da indústria brasileira.",
+    "headline": "6.454 atendimentos no Paraná — 4,2% do total nacional, 5ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Paraná ocupa a 5ª posição entre as 27 UFs participantes do programa e responde por 4,2% do programa no país. Dentro do Sul, que soma 26.693 atendimentos, a participação do Paraná é de 24,2%. Programa nacional de extensionismo industrial que combina consultoria técnica (SENAI), apoio a micro e pequenos negócios (SEBRAE/ALI), inovação aplicada (EMBRAPII) e financiamento (BNDES) para elevar a produtividade da indústria brasileira.",
     "highlights": [
       {
         "tone": "pos",
-        "text": "5ª posição nacional entre as 27 UFs com registro, com 4,2% do total."
+        "text": "5ª posição nacional entre as 27 UFs participantes do programa, com 4,2% do total."
       },
       {
         "tone": "neutral",
         "text": "24,2% de tudo que o Sul registra no programa."
-      },
-      {
-        "tone": "neutral",
-        "text": "Concentração: as três maiores UFs somam 50,4% do programa."
       }
     ]
   },
@@ -72,6 +68,48 @@
       "display_value": "32,2",
       "unit": "%",
       "period": "concluintes SENAI"
+    }
+  ],
+  "capa_kpi_modalidades": [
+    {
+      "id": "senai",
+      "label": "SENAI — consultoria técnica (Lean)",
+      "value": 2497,
+      "unit": "atendimentos",
+      "display_value": "2.497 atendimentos",
+      "period": "acumulado"
+    },
+    {
+      "id": "sebrae",
+      "label": "SEBRAE/ALI — pequenos negócios",
+      "value": 3932,
+      "unit": "atendimentos",
+      "display_value": "3.932 atendimentos",
+      "period": "acumulado"
+    },
+    {
+      "id": "embrapii",
+      "label": "EMBRAPII — inovação aplicada",
+      "value": 21,
+      "unit": "projetos",
+      "display_value": "21 projetos",
+      "period": "acumulado",
+      "delta": {
+        "dir": "flat",
+        "label": "R$ 36,7 mi mobilizados"
+      }
+    },
+    {
+      "id": "bndes",
+      "label": "BNDES — financiamento",
+      "value": 4,
+      "unit": "operações",
+      "display_value": "4 operações",
+      "period": "acumulado",
+      "delta": {
+        "dir": "flat",
+        "label": "R$ 15,9 mi financiados"
+      }
     }
   ],
   "ranked_lists": [],

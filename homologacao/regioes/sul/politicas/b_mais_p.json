@@ -25,11 +25,11 @@
     "uf": null,
     "regra": "normal",
     "headline": "Sul responde por 26.693 atendimentos — 17,3% do total nacional.",
-    "lede": "É a 2ª colocação entre as 5 macrorregiões com registro. Programa nacional de extensionismo industrial que combina consultoria técnica (SENAI), apoio a micro e pequenos negócios (SEBRAE/ALI), inovação aplicada (EMBRAPII) e financiamento (BNDES) para elevar a produtividade da indústria brasileira.",
+    "lede": "É a 2ª colocação entre as 5 macrorregiões participantes do programa. Programa nacional de extensionismo industrial que combina consultoria técnica (SENAI), apoio a micro e pequenos negócios (SEBRAE/ALI), inovação aplicada (EMBRAPII) e financiamento (BNDES) para elevar a produtividade da indústria brasileira.",
     "highlights": [
       {
         "tone": "pos",
-        "text": "2ª entre as 5 macrorregiões com registro, com 17,3% do total nacional."
+        "text": "2ª entre as 5 macrorregiões participantes do programa, com 17,3% do total nacional."
       }
     ]
   },
@@ -65,6 +65,48 @@
       "display_value": "32,2",
       "unit": "%",
       "period": "concluintes SENAI"
+    }
+  ],
+  "capa_kpi_modalidades": [
+    {
+      "id": "senai",
+      "label": "SENAI — consultoria técnica (Lean)",
+      "value": 24130,
+      "unit": "atendimentos",
+      "display_value": "24.130 atendimentos",
+      "period": "acumulado"
+    },
+    {
+      "id": "sebrae",
+      "label": "SEBRAE/ALI — pequenos negócios",
+      "value": 130177,
+      "unit": "atendimentos",
+      "display_value": "130.177 atendimentos",
+      "period": "acumulado"
+    },
+    {
+      "id": "embrapii",
+      "label": "EMBRAPII — inovação aplicada",
+      "value": 410,
+      "unit": "projetos",
+      "display_value": "410 projetos",
+      "period": "acumulado",
+      "delta": {
+        "dir": "flat",
+        "label": "R$ 534,4 mi mobilizados"
+      }
+    },
+    {
+      "id": "bndes",
+      "label": "BNDES — financiamento",
+      "value": 24,
+      "unit": "operações",
+      "display_value": "24 operações",
+      "period": "acumulado",
+      "delta": {
+        "dir": "flat",
+        "label": "R$ 147,8 mi financiados"
+      }
     }
   ],
   "ranked_lists": [],
