@@ -4,7 +4,7 @@
   "title": "PIB Estadual — dados para relatórios",
   "source": "Contas Regionais e PIA / IBGE",
   "reference": "2023",
-  "updated_at": "2026-08-06",
+  "updated_at": "2026-08-18",
   "composicao_serie": {
     "id": "composicao_serie",
     "title": "Evolução da composição setorial do VAB",
@@ -137,7 +137,7 @@
       },
       {
         "id": "pct_servicos",
-        "label": "Serviços",
+        "label": "Comércio e serviços",
         "points": [
           {
             "t": 2010,
@@ -542,6 +542,42 @@
         "value": 0.042,
         "display_value": "R$ 0,0 bi",
         "pct_transformacao": 0.07
+      }
+    ]
+  },
+  "vti_divisoes_cnae_extrativa": {
+    "id": "vti_divisoes_cnae_extrativa",
+    "title": "VTI por divisão CNAE da indústria extrativa",
+    "dimension_label": "Valor da Transformação Industrial",
+    "unit": "bilhões de reais",
+    "items": [
+      {
+        "name": "06 — Extração de petróleo e gás natural",
+        "cnae_divisao": "06",
+        "value": 4.115,
+        "display_value": "R$ 4,1 bi",
+        "pct_extrativa": 49.12
+      },
+      {
+        "name": "07 — Extração de minérios metálicos",
+        "cnae_divisao": "07",
+        "value": 2.182,
+        "display_value": "R$ 2,2 bi",
+        "pct_extrativa": 26.04
+      },
+      {
+        "name": "08 — Extração de minerais não metálicos",
+        "cnae_divisao": "08",
+        "value": 1.443,
+        "display_value": "R$ 1,4 bi",
+        "pct_extrativa": 17.23
+      },
+      {
+        "name": "09 — Atividades de apoio à extração de minerais",
+        "cnae_divisao": "09",
+        "value": 0.638,
+        "display_value": "R$ 0,6 bi",
+        "pct_extrativa": 7.61
       }
     ]
   }

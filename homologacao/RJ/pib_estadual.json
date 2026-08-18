@@ -4,7 +4,7 @@
   "title": "PIB Estadual",
   "source": "Contas Regionais e PIA / IBGE",
   "reference": "2023",
-  "updated_at": "2026-08-06",
+  "updated_at": "2026-08-18",
   "capa_kpi": {
     "id": "capa_pib_estadual",
     "label": "PIB total",
@@ -22,7 +22,7 @@
     "highlights": [
       {
         "tone": "neutral",
-        "text": "Serviços participam com {{kpis[part_serv].display_value}}% do PIB."
+        "text": "Comércio e serviços participam com {{kpis[part_serv].display_value}}% do PIB."
       },
       {
         "tone": "neutral",
@@ -30,7 +30,7 @@
       },
       {
         "tone": "neutral",
-        "text": "Principal setor industrial: Indústria extrativa (68,1% do PIB industrial)."
+        "text": "Principal setor industrial: Extração de petróleo e gás natural (60,6% do PIB industrial)."
       }
     ]
   },
@@ -45,7 +45,7 @@
     },
     {
       "id": "part_serv",
-      "label": "Participação serviços",
+      "label": "Participação comércio e serviços",
       "value": 28.8,
       "display_value": "28,8",
       "unit": "%",
@@ -146,18 +146,24 @@
       "title": "Principais setores industriais",
       "dimension_label": "Participação no PIB industrial",
       "unit": "",
-      "acumulado": 92.6,
+      "acumulado": 90.9,
       "items": [
         {
-          "name": "Indústria extrativa",
-          "value": 68.11,
-          "display_value": "68,1%",
+          "name": "Extração de petróleo e gás natural",
+          "value": 60.56,
+          "display_value": "60,6%",
           "share": null
         },
         {
           "name": "Fabricação de coque, de produtos derivados do petróleo e de biocombustíveis",
           "value": 9.36,
           "display_value": "9,4%",
+          "share": null
+        },
+        {
+          "name": "Atividades de apoio à extração de minerais",
+          "value": 7.22,
+          "display_value": "7,2%",
           "share": null
         },
         {
@@ -176,12 +182,6 @@
           "name": "Metalurgia",
           "value": 1.72,
           "display_value": "1,7%",
-          "share": null
-        },
-        {
-          "name": "Fabricação de produtos químicos",
-          "value": 1.36,
-          "display_value": "1,4%",
           "share": null
         }
       ]

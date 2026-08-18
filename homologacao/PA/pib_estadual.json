@@ -4,7 +4,7 @@
   "title": "PIB Estadual",
   "source": "Contas Regionais e PIA / IBGE",
   "reference": "2023",
-  "updated_at": "2026-08-06",
+  "updated_at": "2026-08-18",
   "capa_kpi": {
     "id": "capa_pib_estadual",
     "label": "PIB total",
@@ -22,7 +22,7 @@
     "highlights": [
       {
         "tone": "neutral",
-        "text": "Serviços participam com {{kpis[part_serv].display_value}}% do PIB."
+        "text": "Comércio e serviços participam com {{kpis[part_serv].display_value}}% do PIB."
       },
       {
         "tone": "neutral",
@@ -30,7 +30,7 @@
       },
       {
         "tone": "neutral",
-        "text": "Principal setor industrial: Indústria extrativa (47,4% do PIB industrial)."
+        "text": "Principal setor industrial: Extração de minérios metálicos (47,1% do PIB industrial)."
       }
     ]
   },
@@ -45,7 +45,7 @@
     },
     {
       "id": "part_serv",
-      "label": "Participação serviços",
+      "label": "Participação comércio e serviços",
       "value": 24.3,
       "display_value": "24,3",
       "unit": "%",
@@ -146,12 +146,12 @@
       "title": "Principais setores industriais",
       "dimension_label": "Participação no PIB industrial",
       "unit": "",
-      "acumulado": 93.1,
+      "acumulado": 92.7,
       "items": [
         {
-          "name": "Indústria extrativa",
-          "value": 47.43,
-          "display_value": "47,4%",
+          "name": "Extração de minérios metálicos",
+          "value": 47.06,
+          "display_value": "47,1%",
           "share": null
         },
         {

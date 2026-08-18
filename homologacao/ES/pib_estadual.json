@@ -4,7 +4,7 @@
   "title": "PIB Estadual",
   "source": "Contas Regionais e PIA / IBGE",
   "reference": "2023",
-  "updated_at": "2026-08-06",
+  "updated_at": "2026-08-18",
   "capa_kpi": {
     "id": "capa_pib_estadual",
     "label": "PIB total",
@@ -22,7 +22,7 @@
     "highlights": [
       {
         "tone": "neutral",
-        "text": "Serviços participam com {{kpis[part_serv].display_value}}% do PIB."
+        "text": "Comércio e serviços participam com {{kpis[part_serv].display_value}}% do PIB."
       },
       {
         "tone": "neutral",
@@ -30,7 +30,7 @@
       },
       {
         "tone": "neutral",
-        "text": "Principal setor industrial: Indústria extrativa (35,9% do PIB industrial)."
+        "text": "Principal setor industrial: Extração de petróleo e gás natural (20,0% do PIB industrial)."
       }
     ]
   },
@@ -45,7 +45,7 @@
     },
     {
       "id": "part_serv",
-      "label": "Participação serviços",
+      "label": "Participação comércio e serviços",
       "value": 36.3,
       "display_value": "36,3",
       "unit": "%",
@@ -146,18 +146,24 @@
       "title": "Principais setores industriais",
       "dimension_label": "Participação no PIB industrial",
       "unit": "",
-      "acumulado": 80.6,
+      "acumulado": 73.3,
       "items": [
         {
-          "name": "Indústria extrativa",
-          "value": 35.92,
-          "display_value": "35,9%",
+          "name": "Extração de petróleo e gás natural",
+          "value": 19.97,
+          "display_value": "20,0%",
           "share": null
         },
         {
           "name": "Construção",
           "value": 14.74,
           "display_value": "14,7%",
+          "share": null
+        },
+        {
+          "name": "Extração de minérios metálicos",
+          "value": 13.5,
+          "display_value": "13,5%",
           "share": null
         },
         {
@@ -176,12 +182,6 @@
           "name": "Fabricação de produtos de minerais não metálicos",
           "value": 6.78,
           "display_value": "6,8%",
-          "share": null
-        },
-        {
-          "name": "Fabricação de produtos alimentícios",
-          "value": 4.93,
-          "display_value": "4,9%",
           "share": null
         }
       ]

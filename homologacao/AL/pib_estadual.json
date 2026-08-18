@@ -4,7 +4,7 @@
   "title": "PIB Estadual",
   "source": "Contas Regionais e PIA / IBGE",
   "reference": "2023",
-  "updated_at": "2026-08-06",
+  "updated_at": "2026-08-18",
   "capa_kpi": {
     "id": "capa_pib_estadual",
     "label": "PIB total",
@@ -22,7 +22,7 @@
     "highlights": [
       {
         "tone": "neutral",
-        "text": "Serviços participam com {{kpis[part_serv].display_value}}% do PIB."
+        "text": "Comércio e serviços participam com {{kpis[part_serv].display_value}}% do PIB."
       },
       {
         "tone": "neutral",
@@ -45,7 +45,7 @@
     },
     {
       "id": "part_serv",
-      "label": "Participação serviços",
+      "label": "Participação comércio e serviços",
       "value": 26.7,
       "display_value": "26,7",
       "unit": "%",
@@ -146,7 +146,7 @@
       "title": "Principais setores industriais",
       "dimension_label": "Participação no PIB industrial",
       "unit": "",
-      "acumulado": 90.5,
+      "acumulado": 86.2,
       "items": [
         {
           "name": "Fabricação de produtos alimentícios",
@@ -167,12 +167,6 @@
           "share": null
         },
         {
-          "name": "Indústria extrativa",
-          "value": 7.76,
-          "display_value": "7,8%",
-          "share": null
-        },
-        {
           "name": "Fabricação de produtos de borracha e de material plástico",
           "value": 5.35,
           "display_value": "5,4%",
@@ -182,6 +176,12 @@
           "name": "Fabricação de produtos químicos",
           "value": 3.98,
           "display_value": "4,0%",
+          "share": null
+        },
+        {
+          "name": "Fabricação de bebidas",
+          "value": 3.53,
+          "display_value": "3,5%",
           "share": null
         }
       ]
