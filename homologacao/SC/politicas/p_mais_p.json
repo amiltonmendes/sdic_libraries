@@ -19,6 +19,14 @@
     },
     "value": 37616315273.01
   },
+  "capa_kpi_secundario": {
+    "id": "capa_pp_projetos",
+    "label": "Projetos contratados",
+    "display_value": "24.765 projetos",
+    "unit": "projetos",
+    "period": "2023-2026",
+    "value": 24765
+  },
   "story": {
     "escopo": "uf",
     "uf": "SC",
@@ -62,6 +70,115 @@
       "period": "2023-2026"
     }
   ],
+  "capa_kpi_modalidades": [
+    {
+      "id": "missao_1",
+      "label": "Missão: Agro industrial",
+      "value": 5746001403.58,
+      "unit": "",
+      "display_value": "R$ 5,75 bi",
+      "period": "2023-2026"
+    },
+    {
+      "id": "missao_2",
+      "label": "Missão: Saúde",
+      "value": 344117767.98,
+      "unit": "",
+      "display_value": "R$ 344,1 mi",
+      "period": "2023-2026"
+    },
+    {
+      "id": "missao_3",
+      "label": "Missão: Infraestrutura",
+      "value": 16222582908.36,
+      "unit": "",
+      "display_value": "R$ 16,22 bi",
+      "period": "2023-2026"
+    },
+    {
+      "id": "missao_4",
+      "label": "Missão: Transformação Digital",
+      "value": 10459874230.87,
+      "unit": "",
+      "display_value": "R$ 10,46 bi",
+      "period": "2023-2026"
+    },
+    {
+      "id": "missao_5",
+      "label": "Missão: Descarbonização",
+      "value": 4840694473.52,
+      "unit": "",
+      "display_value": "R$ 4,84 bi",
+      "period": "2023-2026"
+    },
+    {
+      "id": "missao_6",
+      "label": "Missão: Defesa",
+      "value": 3044488.7,
+      "unit": "",
+      "display_value": "R$ 3,0 mi",
+      "period": "2023-2026"
+    },
+    {
+      "id": "eixo_produtividade",
+      "label": "Eixo: Produtividade",
+      "value": 26582861438.61,
+      "unit": "",
+      "display_value": "R$ 26,58 bi",
+      "period": "2023-2026"
+    },
+    {
+      "id": "eixo_inovacao",
+      "label": "Eixo: Inovação",
+      "value": 6425145036.53,
+      "unit": "",
+      "display_value": "R$ 6,43 bi",
+      "period": "2023-2026"
+    },
+    {
+      "id": "eixo_verde",
+      "label": "Eixo: Verde",
+      "value": 444922461.83,
+      "unit": "",
+      "display_value": "R$ 444,9 mi",
+      "period": "2023-2026"
+    },
+    {
+      "id": "eixo_exportacao",
+      "label": "Eixo: Exportação",
+      "value": 4163386336.04,
+      "unit": "",
+      "display_value": "R$ 4,16 bi",
+      "period": "2023-2026"
+    }
+  ],
+  "capa_kpi_evolucao": {
+    "id": "evolucao_pp",
+    "title": "Contratação anual",
+    "unit": "reais",
+    "points": [
+      {
+        "t": 2023,
+        "v": 7362263944.34,
+        "display_value": "R$ 7,36 bi"
+      },
+      {
+        "t": 2024,
+        "v": 12319683229.16,
+        "display_value": "R$ 12,32 bi"
+      },
+      {
+        "t": 2025,
+        "v": 14641891887.24,
+        "display_value": "R$ 14,64 bi"
+      },
+      {
+        "t": 2026,
+        "v": 3292476212.27,
+        "display_value": "R$ 3,29 bi"
+      }
+    ]
+  },
   "ranked_lists": [
     {
       "id": "top_missoes",

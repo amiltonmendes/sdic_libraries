@@ -19,6 +19,14 @@
     },
     "value": 3199137933.77
   },
+  "capa_kpi_secundario": {
+    "id": "capa_pp_projetos",
+    "label": "Projetos contratados",
+    "display_value": "6.472 projetos",
+    "unit": "projetos",
+    "period": "2023-2026",
+    "value": 6472
+  },
   "story": {
     "escopo": "uf",
     "uf": "SE",
@@ -62,6 +70,99 @@
       "period": "2023-2026"
     }
   ],
+  "capa_kpi_modalidades": [
+    {
+      "id": "missao_1",
+      "label": "Missão: Agro industrial",
+      "value": 281570111.13,
+      "unit": "",
+      "display_value": "R$ 281,6 mi",
+      "period": "2023-2026"
+    },
+    {
+      "id": "missao_2",
+      "label": "Missão: Saúde",
+      "value": 21380944.96,
+      "unit": "",
+      "display_value": "R$ 21,4 mi",
+      "period": "2023-2026"
+    },
+    {
+      "id": "missao_3",
+      "label": "Missão: Infraestrutura",
+      "value": 2673190926.58,
+      "unit": "",
+      "display_value": "R$ 2,67 bi",
+      "period": "2023-2026"
+    },
+    {
+      "id": "missao_4",
+      "label": "Missão: Transformação Digital",
+      "value": 136224573.75,
+      "unit": "",
+      "display_value": "R$ 136,2 mi",
+      "period": "2023-2026"
+    },
+    {
+      "id": "missao_5",
+      "label": "Missão: Descarbonização",
+      "value": 86771377.35,
+      "unit": "",
+      "display_value": "R$ 86,8 mi",
+      "period": "2023-2026"
+    },
+    {
+      "id": "eixo_produtividade",
+      "label": "Eixo: Produtividade",
+      "value": 2742024250.09,
+      "unit": "",
+      "display_value": "R$ 2,74 bi",
+      "period": "2023-2026"
+    },
+    {
+      "id": "eixo_inovacao",
+      "label": "Eixo: Inovação",
+      "value": 94488281.02,
+      "unit": "",
+      "display_value": "R$ 94,5 mi",
+      "period": "2023-2026"
+    },
+    {
+      "id": "eixo_verde",
+      "label": "Eixo: Verde",
+      "value": 362625402.66,
+      "unit": "",
+      "display_value": "R$ 362,6 mi",
+      "period": "2023-2026"
+    }
+  ],
+  "capa_kpi_evolucao": {
+    "id": "evolucao_pp",
+    "title": "Contratação anual",
+    "unit": "reais",
+    "points": [
+      {
+        "t": 2023,
+        "v": 688411646.57,
+        "display_value": "R$ 688,4 mi"
+      },
+      {
+        "t": 2024,
+        "v": 801130018.9,
+        "display_value": "R$ 801,1 mi"
+      },
+      {
+        "t": 2025,
+        "v": 1302254185.26,
+        "display_value": "R$ 1,30 bi"
+      },
+      {
+        "t": 2026,
+        "v": 407342083.04,
+        "display_value": "R$ 407,3 mi"
+      }
+    ]
+  },
   "ranked_lists": [
     {
       "id": "top_missoes",
