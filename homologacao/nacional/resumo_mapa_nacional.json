@@ -2,7 +2,7 @@
   "schema_version": "1.2",
   "n_politicas": 21,
   "recursos": {
-    "value": 1572417336450.0,
+    "value": 1572467336450.0,
     "display_value": "R$ 1,57 tri"
   },
   "atendimentos": {
@@ -44,7 +44,7 @@
       "id": "depreciacao_acelerada",
       "sigla": "DA",
       "nome": "Depreciação Acelerada",
-      "display_value": "R$ 8,63 bi"
+      "display_value": "R$ 8,68 bi"
     }
   ],
   "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
@@ -96,7 +96,7 @@
       "sigla": "DA",
       "nome": "Depreciação Acelerada",
       "regionalizavel": true,
-      "display_value": "R$ 8,63 bi"
+      "display_value": "R$ 8,68 bi"
     },
     {
       "id": "naval",

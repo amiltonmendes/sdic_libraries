@@ -2,8 +2,8 @@
   "schema_version": "1.2",
   "n_politicas": 5,
   "recursos": {
-    "value": 3219293369.63,
-    "display_value": "R$ 3,22 bi"
+    "value": 3228701443.79,
+    "display_value": "R$ 3,23 bi"
   },
   "atendimentos": {
     "value": 1766,
@@ -20,7 +20,7 @@
       "id": "depreciacao_acelerada",
       "sigla": "DA",
       "nome": "Depreciação Acelerada",
-      "display_value": "R$ 20,2 mi"
+      "display_value": "R$ 29,6 mi"
     }
   ],
   "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
@@ -37,8 +37,8 @@
     "escopo": "uf",
     "uf": "SE",
     "regra": "com_recursos",
-    "headline": "Sergipe soma R$ 3,22 bi em 5 políticas da SDIC com dado próprio do estado.",
-    "lede": "Sergipe é o 25º do país em recursos mobilizados, com 0,5% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 3,20 bi) e DA (R$ 20,2 mi). As políticas não monetárias somam 1.766 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "headline": "Sergipe soma R$ 3,23 bi em 5 políticas da SDIC com dado próprio do estado.",
+    "lede": "Sergipe é o 25º do país em recursos mobilizados, com 0,5% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 3,20 bi) e DA (R$ 29,6 mi). As políticas não monetárias somam 1.766 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
     "highlights": [
       {
         "tone": "neutral",

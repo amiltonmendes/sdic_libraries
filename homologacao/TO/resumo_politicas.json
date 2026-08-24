@@ -2,8 +2,8 @@
   "schema_version": "1.2",
   "n_politicas": 5,
   "recursos": {
-    "value": 11763732219.42,
-    "display_value": "R$ 11,76 bi"
+    "value": 11765034615.18,
+    "display_value": "R$ 11,77 bi"
   },
   "atendimentos": {
     "value": 810,
@@ -20,7 +20,7 @@
       "id": "depreciacao_acelerada",
       "sigla": "DA",
       "nome": "Depreciação Acelerada",
-      "display_value": "R$ 2,6 mi"
+      "display_value": "R$ 3,9 mi"
     }
   ],
   "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
@@ -37,8 +37,8 @@
     "escopo": "uf",
     "uf": "TO",
     "regra": "com_recursos",
-    "headline": "Tocantins soma R$ 11,76 bi em 5 políticas da SDIC com dado próprio do estado.",
-    "lede": "Tocantins é o 13º do país em recursos mobilizados, com 1,8% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 11,76 bi) e DA (R$ 2,6 mi). As políticas não monetárias somam 810 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "headline": "Tocantins soma R$ 11,77 bi em 5 políticas da SDIC com dado próprio do estado.",
+    "lede": "Tocantins é o 13º do país em recursos mobilizados, com 1,8% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 11,76 bi) e DA (R$ 3,9 mi). As políticas não monetárias somam 810 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
     "highlights": [
       {
         "tone": "neutral",

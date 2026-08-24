@@ -2,7 +2,7 @@
   "schema_version": "1.2",
   "n_politicas": 5,
   "recursos": {
-    "value": 9144136007.74,
+    "value": 9144504007.74,
     "display_value": "R$ 9,14 bi"
   },
   "atendimentos": {
@@ -20,7 +20,7 @@
       "id": "depreciacao_acelerada",
       "sigla": "DA",
       "nome": "Depreciação Acelerada",
-      "display_value": "R$ 24,0 mi"
+      "display_value": "R$ 24,4 mi"
     }
   ],
   "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
@@ -38,7 +38,7 @@
     "uf": "MA",
     "regra": "com_recursos",
     "headline": "Maranhão soma R$ 9,14 bi em 5 políticas da SDIC com dado próprio do estado.",
-    "lede": "Maranhão é o 16º do país em recursos mobilizados, com 1,4% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 9,12 bi) e DA (R$ 24,0 mi). As políticas não monetárias somam 3.071 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "lede": "Maranhão é o 16º do país em recursos mobilizados, com 1,4% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 9,12 bi) e DA (R$ 24,4 mi). As políticas não monetárias somam 3.071 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
     "highlights": [
       {
         "tone": "neutral",

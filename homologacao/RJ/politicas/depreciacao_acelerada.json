@@ -24,7 +24,7 @@
     "uf": "RJ",
     "regra": "meio",
     "headline": "R$ 75,5 mi no Rio de Janeiro — 0,9% do total nacional, 11ª posição entre as 23 UFs participantes do programa.",
-    "lede": "Rio de Janeiro ocupa a 11ª posição entre as 23 UFs participantes do programa e responde por 0,9% do programa no país. Dentro do Sudeste, que soma R$ 4,19 bi, a participação do Rio de Janeiro é de 1,8%. Programa de depreciação acelerada — incentivo à renovação do parque de máquinas e equipamentos (âmbito do acordo Mercosul–UE).",
+    "lede": "Rio de Janeiro ocupa a 11ª posição entre as 23 UFs participantes do programa e responde por 0,9% do programa no país. Dentro do Sudeste, que soma R$ 4,21 bi, a participação do Rio de Janeiro é de 1,8%. Programa de depreciação acelerada — incentivo à renovação do parque de máquinas e equipamentos (âmbito do acordo Mercosul–UE).",
     "highlights": [
       {
         "tone": "neutral",
@@ -40,15 +40,15 @@
     {
       "id": "capex",
       "label": "Investimento incentivado",
-      "value": 8628426988.68,
-      "display_value": "R$ 8,63 bi",
+      "value": 8675450824.36,
+      "display_value": "R$ 8,68 bi",
       "unit": "",
       "period": "2024-2026"
     },
     {
       "id": "beneficio",
       "label": "Benefício fiscal (estimativa preliminar)",
-      "value": 1466832588.08,
+      "value": 1474826640.14,
       "display_value": "R$ 1,47 bi",
       "unit": "",
       "period": "2024-2026"
@@ -56,8 +56,8 @@
     {
       "id": "pedidos",
       "label": "Pedidos deferidos",
-      "value": 7227,
-      "display_value": "7.227",
+      "value": 7284,
+      "display_value": "7.284",
       "unit": "pedidos",
       "period": "2024-2026"
     },
@@ -85,13 +85,13 @@
         },
         {
           "name": "Fabricação de Produtos Alimentícios",
-          "value": 1008574390.08,
+          "value": 1010914242.46,
           "display_value": "R$ 1,01 bi"
         },
         {
           "name": "Fabricação de produtos de borracha e de material plástico",
-          "value": 714888085.01,
-          "display_value": "R$ 714,9 mi"
+          "value": 715951249.68,
+          "display_value": "R$ 716,0 mi"
         },
         {
           "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
@@ -99,9 +99,9 @@
           "display_value": "R$ 622,2 mi"
         },
         {
-          "name": "Fabricação de máquinas, aparelhos e materiais elétricos",
-          "value": 615809421.51,
-          "display_value": "R$ 615,8 mi"
+          "name": "Fabricação de biocombustíveis",
+          "value": 618573937.06,
+          "display_value": "R$ 618,6 mi"
         }
       ]
     }
@@ -129,7 +129,7 @@
             },
             {
               "t": 2026,
-              "v": 1.227
+              "v": 1.274
             }
           ]
         }
@@ -153,18 +153,18 @@
           "name": "Transportes Terrestre",
           "value": 1117513789.43,
           "display_value": "R$ 1,12 bi",
-          "share": 13.0
+          "share": 12.9
         },
         {
           "name": "Fabricação de Produtos Alimentícios",
-          "value": 1008574390.08,
+          "value": 1010914242.46,
           "display_value": "R$ 1,01 bi",
           "share": 11.7
         },
         {
           "name": "Fabricação de produtos de borracha e de material plástico",
-          "value": 714888085.01,
-          "display_value": "R$ 714,9 mi",
+          "value": 715951249.68,
+          "display_value": "R$ 716,0 mi",
           "share": 8.3
         },
         {
@@ -174,34 +174,34 @@
           "share": 7.2
         },
         {
+          "name": "Fabricação de biocombustíveis",
+          "value": 618573937.06,
+          "display_value": "R$ 618,6 mi",
+          "share": 7.1
+        },
+        {
           "name": "Fabricação de máquinas, aparelhos e materiais elétricos",
           "value": 615809421.51,
           "display_value": "R$ 615,8 mi",
           "share": 7.1
         },
         {
-          "name": "Fabricação de biocombustíveis",
-          "value": 612015006.91,
-          "display_value": "R$ 612,0 mi",
-          "share": 7.1
-        },
-        {
           "name": "Fabricação de máquinas e equipamentos",
-          "value": 556444283.79,
+          "value": 556430973.81,
           "display_value": "R$ 556,4 mi",
           "share": 6.4
         },
         {
           "name": "Fabricação de Produtos Têxteis",
-          "value": 481738300.06,
-          "display_value": "R$ 481,7 mi",
+          "value": 483396604.29,
+          "display_value": "R$ 483,4 mi",
           "share": 5.6
         },
         {
           "name": "Demais setores",
-          "value": 2899215479.39,
-          "display_value": "R$ 2,90 bi",
-          "share": 33.6
+          "value": 2934632373.62,
+          "display_value": "R$ 2,93 bi",
+          "share": 33.8
         }
       ]
     }
@@ -209,7 +209,7 @@
   "_nota_metodologica": "Valor do BF recalculado como 17% fixo sobre Valor do Bem (não a coluna original da planilha, que também é 17% constante em 100% das linhas — sugerindo premissa simplificada, não cálculo tributário real/marginal). Comparação com versão anterior do indicador (recorte de SP) sugeriu benefício real próximo de 34%. Publicado como estimativa preliminar por decisão confirmada com o time; ajustar TAXA_BF_FIXA neste script quando a metodologia correta for validada.",
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas agregados por UF/setor.",
   "competencia": "2026M08",
-  "data_aceitacao": "2026-08-07",
+  "data_aceitacao": "2026-08-24",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -223,11 +223,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "7.227 pedidos deferidos, de 751 empresas."
+        "text": "7.284 pedidos deferidos, de 751 empresas."
       },
       {
         "tone": "neutral",
-        "text": "São Paulo concentra 28,9% do investimento nacional."
+        "text": "São Paulo concentra 29,0% do investimento nacional."
       },
       {
         "tone": "neutral",
