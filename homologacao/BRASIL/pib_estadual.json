@@ -8,12 +8,12 @@
   "capa_kpi": {
     "id": "capa_pib_estadual",
     "label": "PIB total",
-    "display_value": "R$ 325,1 bi",
+    "display_value": "R$ 9.558,6 bi",
     "unit": "",
     "period": "2023",
     "delta": {
       "dir": "up",
-      "label": "indústria 4,1%"
+      "label": "indústria 25,4%"
     }
   },
   "story": {
@@ -30,7 +30,7 @@
       },
       {
         "tone": "neutral",
-        "text": "Principal setor industrial: Construção (52,7% do PIB industrial)."
+        "text": "Principal setor industrial: Construção (13,5% do PIB industrial)."
       }
     ]
   },
@@ -38,24 +38,24 @@
     {
       "id": "pib_total",
       "label": "PIB total",
-      "value": 325.0936209672494,
-      "display_value": "325,1",
+      "value": 9558.592438905043,
+      "display_value": "9.558,6",
       "unit": "bilhões de reais",
       "period": "2023"
     },
     {
       "id": "part_serv",
       "label": "Participação comércio e serviços",
-      "value": 38.7,
-      "display_value": "38,7",
+      "value": 35.2,
+      "display_value": "35,2",
       "unit": "%",
       "period": "2023"
     },
     {
       "id": "part_ind",
       "label": "Participação indústria",
-      "value": 4.1,
-      "display_value": "4,1",
+      "value": 25.4,
+      "display_value": "25,4",
       "unit": "%",
       "period": "2023"
     }
@@ -74,59 +74,59 @@
           "points": [
             {
               "t": 2010,
-              "v": 121.6
+              "v": 3302.8
             },
             {
               "t": 2011,
-              "v": 131.6
+              "v": 3720.5
             },
             {
               "t": 2012,
-              "v": 138.3
+              "v": 4094.3
             },
             {
               "t": 2013,
-              "v": 150.8
+              "v": 4553.8
             },
             {
               "t": 2014,
-              "v": 171.2
+              "v": 4972.7
             },
             {
               "t": 2015,
-              "v": 186.3
+              "v": 5155.6
             },
             {
               "t": 2016,
-              "v": 206.4
+              "v": 5419.8
             },
             {
               "t": 2017,
-              "v": 215.6
+              "v": 5671.9
             },
             {
               "t": 2018,
-              "v": 226.1
+              "v": 6011.2
             },
             {
               "t": 2019,
-              "v": 242.9
+              "v": 6356.7
             },
             {
               "t": 2020,
-              "v": 240.4
+              "v": 6594.9
             },
             {
               "t": 2021,
-              "v": 257.0
+              "v": 7714.0
             },
             {
               "t": 2022,
-              "v": 295.2
+              "v": 8736.5
             },
             {
               "t": 2023,
-              "v": 325.1
+              "v": 9558.6
             }
           ]
         }
@@ -134,7 +134,7 @@
       "annotations": [
         {
           "t": 2023,
-          "label": "R$ 325,1 bi"
+          "label": "R$ 9.558,6 bi"
         }
       ]
     }
@@ -146,42 +146,42 @@
       "title": "Principais setores industriais",
       "dimension_label": "Participação no PIB industrial",
       "unit": "",
-      "acumulado": 92.3,
+      "acumulado": 58.9,
       "items": [
         {
           "name": "Construção",
-          "value": 52.71,
-          "display_value": "52,7%",
-          "share": null
-        },
-        {
-          "name": "SIUP (eletricidade, gás e água)",
-          "value": 15.82,
-          "display_value": "15,8%",
-          "share": null
-        },
-        {
-          "name": "Fabricação de produtos de minerais não metálicos",
-          "value": 8.66,
-          "display_value": "8,7%",
+          "value": 13.54,
+          "display_value": "13,5%",
           "share": null
         },
         {
           "name": "Fabricação de produtos alimentícios",
-          "value": 8.26,
-          "display_value": "8,3%",
+          "value": 12.37,
+          "display_value": "12,4%",
           "share": null
         },
         {
-          "name": "Fabricação de produtos farmoquímicos e farmacêuticos",
-          "value": 4.1,
-          "display_value": "4,1%",
+          "name": "Extração de petróleo e gás natural",
+          "value": 10.18,
+          "display_value": "10,2%",
           "share": null
         },
         {
-          "name": "Fabricação de bebidas",
-          "value": 2.79,
-          "display_value": "2,8%",
+          "name": "SIUP (eletricidade, gás e água)",
+          "value": 10.01,
+          "display_value": "10,0%",
+          "share": null
+        },
+        {
+          "name": "Fabricação de coque, de produtos derivados do petróleo e de biocombustíveis",
+          "value": 7.89,
+          "display_value": "7,9%",
+          "share": null
+        },
+        {
+          "name": "Fabricação de produtos químicos",
+          "value": 4.9,
+          "display_value": "4,9%",
           "share": null
         }
       ]
