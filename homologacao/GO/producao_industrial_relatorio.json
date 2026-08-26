@@ -4,7 +4,7 @@
   "title": "Produção Industrial — dados para relatórios",
   "source": "PIM-PF + PIA / IBGE",
   "reference": "2026-06-01",
-  "updated_at": "2026-08-06",
+  "updated_at": "2026-08-26",
   "uf": "GO",
   "cobertura_pimpf": true,
   "serie_indice": {
@@ -14,22 +14,22 @@
     "series": {
       "mes_data": ["2021-06-01", "2021-07-01", "2021-08-01", "2021-09-01", "2021-10-01", "2021-11-01", "2021-12-01", "2022-01-01", "2022-02-01", "2022-03-01", "2022-04-01", "2022-05-01", "2022-06-01", "2022-07-01", "2022-08-01", "2022-09-01", "2022-10-01", "2022-11-01", "2022-12-01", "2023-01-01", "2023-02-01", "2023-03-01", "2023-04-01", "2023-05-01", "2023-06-01", "2023-07-01", "2023-08-01", "2023-09-01", "2023-10-01", "2023-11-01", "2023-12-01", "2024-01-01", "2024-02-01", "2024-03-01", "2024-04-01", "2024-05-01", "2024-06-01", "2024-07-01", "2024-08-01", "2024-09-01", "2024-10-01", "2024-11-01", "2024-12-01", "2025-01-01", "2025-02-01", "2025-03-01", "2025-04-01", "2025-05-01", "2025-06-01", "2025-07-01", "2025-08-01", "2025-09-01", "2025-10-01", "2025-11-01", "2025-12-01", "2026-01-01", "2026-02-01", "2026-03-01", "2026-04-01", "2026-05-01", "2026-06-01"],
       "brasil": [102.41, 107.53, 108.81, 106.61, 104.57, 100.56, 92.3, 90.13, 89.77, 98.37, 94.63, 102.66, 101.8, 107.15, 110.72, 105.57, 105.86, 101.38, 91.95, 90.4, 87.43, 99.39, 92.04, 104.74, 101.89, 105.51, 111.27, 106.28, 107.01, 102.82, 92.73, 93.75, 92.36, 96.5, 99.72, 103.51, 105.19, 111.98, 113.83, 109.75, 113.57, 104.62, 94.03, 94.98, 93.5, 99.89, 99.26, 107, 103.78, 112.26, 112.98, 111.93, 113.1, 103.14, 93.9, 95.21, 92.81, 104.3, 101.98, 107.25, 105.55],
-      "uf": [120, 130.96, 133.29, 121.94, 106.68, 83.99, 78.83, 75.61, 78.63, 87.73, 86.52, 110.56, 113.43, 122.68, 128.27, 122.76, 104.13, 90.08, 79.6, 78.15, 76.1, 83.39, 84.92, 111.05, 120.53, 129.34, 136.57, 131.56, 118.49, 106.22, 95.3, 88.18, 86.06, 88.85, 94.01, 120, 118.77, 128.34, 132.41, 132.46, 121.03, 104.02, 92.74, 88.4, 87.29, 87.94, 97.95, 121.93, 119.44, 131.21, 136.11, 137.69, 134.9, 105.31, 92.62, 84.53, 82.86, 94.41, 103.53, 126.74, null]
+      "uf": [120, 130.96, 133.29, 121.94, 106.68, 83.99, 78.83, 75.61, 78.63, 87.73, 86.52, 110.56, 113.43, 122.68, 128.27, 122.76, 104.13, 90.08, 79.6, 78.15, 76.1, 83.39, 84.92, 111.05, 120.53, 129.34, 136.57, 131.56, 118.49, 106.22, 95.3, 88.18, 86.06, 88.85, 94.01, 120, 118.77, 128.34, 132.41, 132.46, 121.03, 104.02, 92.74, 88.4, 87.29, 87.94, 97.95, 121.93, 119.44, 131.21, 136.11, 137.69, 134.9, 105.31, 92.62, 84.53, 82.86, 94.41, 103.53, 126.69, 122.05]
     }
   },
   "variacoes": [
     {
       "id": "var_mes",
       "label": "Variação no mês (ante igual mês do ano anterior)",
-      "reference": "2026-05-01",
-      "value": 3.9,
-      "display_value": "3,9%",
+      "reference": "2026-06-01",
+      "value": 2.2,
+      "display_value": "2,2%",
       "unit": ""
     },
     {
       "id": "var_ano",
       "label": "Variação acumulada no ano",
-      "reference": "2026-05-01",
+      "reference": "2026-06-01",
       "value": 1.8,
       "display_value": "1,8%",
       "unit": ""
@@ -37,9 +37,9 @@
     {
       "id": "var_12m",
       "label": "Variação acumulada em 12 meses",
-      "reference": "2026-05-01",
-      "value": 2.7,
-      "display_value": "2,7%",
+      "reference": "2026-06-01",
+      "value": 2.9,
+      "display_value": "2,9%",
       "unit": ""
     }
   ],
@@ -49,77 +49,77 @@
       "title": "Atividades industriais — variação acumulada em 12 meses",
       "dimension_label": "Variação em 12 meses",
       "unit": "%",
-      "reference": "2026-05-01",
+      "reference": "2026-06-01",
       "items": [
         {
           "name": "Fabricação de veículos automotores, reboques e carrocerias",
-          "value": 18.9,
-          "display_value": "18,9%"
-        },
-        {
-          "name": "Fabricação de produtos farmoquímicos e farmacêuticos",
-          "value": 10.8,
-          "display_value": "10,8%"
+          "value": 19,
+          "display_value": "19,0%"
         },
         {
           "name": "Fabricação de coque, de produtos derivados do petróleo e de biocombustíveis",
-          "value": 8.9,
-          "display_value": "8,9%"
+          "value": 13.5,
+          "display_value": "13,5%"
+        },
+        {
+          "name": "Fabricação de produtos farmoquímicos e farmacêuticos",
+          "value": 13,
+          "display_value": "13,0%"
         },
         {
           "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
-          "value": 7.4,
-          "display_value": "7,4%"
-        },
-        {
-          "name": "Indústrias extrativas",
-          "value": 5,
-          "display_value": "5,0%"
+          "value": 6.2,
+          "display_value": "6,2%"
         },
         {
           "name": "Fabricação de celulose, papel e produtos de papel",
-          "value": 3.5,
-          "display_value": "3,5%"
+          "value": 4.3,
+          "display_value": "4,3%"
+        },
+        {
+          "name": "Indústrias extrativas",
+          "value": 4,
+          "display_value": "4,0%"
         },
         {
           "name": "Indústrias de transformação",
-          "value": 2.7,
-          "display_value": "2,7%"
+          "value": 2.8,
+          "display_value": "2,8%"
         },
         {
           "name": "Fabricação de produtos alimentícios",
-          "value": 2.6,
-          "display_value": "2,6%"
-        },
-        {
-          "name": "Confecção de artigos do vestuário e acessórios",
-          "value": 0.8,
-          "display_value": "0,8%"
+          "value": 2,
+          "display_value": "2,0%"
         },
         {
           "name": "Metalurgia",
-          "value": -0.6,
-          "display_value": "-0,6%"
-        },
-        {
-          "name": "Fabricação de produtos químicos",
-          "value": -5.1,
-          "display_value": "-5,1%"
+          "value": -2,
+          "display_value": "-2,0%"
         },
         {
           "name": "Fabricação de bebidas",
-          "value": -5.9,
-          "display_value": "-5,9%"
+          "value": -5.5,
+          "display_value": "-5,5%"
+        },
+        {
+          "name": "Fabricação de produtos químicos",
+          "value": -6,
+          "display_value": "-6,0%"
+        },
+        {
+          "name": "Confecção de artigos do vestuário e acessórios",
+          "value": -7.6,
+          "display_value": "-7,6%"
         },
         {
           "name": "Fabricação de produtos de minerais não metálicos",
-          "value": -12.7,
-          "display_value": "-12,7%"
+          "value": -11,
+          "display_value": "-11,0%"
         },
         {
           "name": "Fabricação de máquinas e equipamentos",
-          "value": -22,
-          "display_value": "-22,0%"
+          "value": -17.7,
+          "display_value": "-17,7%"
         }
       ]
     }

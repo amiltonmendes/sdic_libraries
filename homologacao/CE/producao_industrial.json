@@ -4,14 +4,14 @@
   "title": "Produção Industrial",
   "source": "PIM-PF + PIA / IBGE",
   "reference": "2026-06-01",
-  "updated_at": "2026-08-06",
+  "updated_at": "2026-08-26",
   "uf": "CE",
   "cobertura_pimpf": true,
   "capa_kpi": {
     "label": "Produção industrial — acumulado em 12 meses",
     "value": -1.7,
     "display_value": "-1,7%",
-    "reference": "2026-05-01"
+    "reference": "2026-06-01"
   },
   "story": {
     "headline": "Produção industrial acumula {{kpis[var_12m].display_value}} em 12 meses.",
@@ -26,8 +26,12 @@
         "text": "No acumulado do ano, {{kpis[var_ano].display_value}}."
       },
       {
+        "tone": "neutral",
+        "text": "Índice de produção física em {{kpis[indice].display_value}} pontos, ante {{kpis[indice_brasil].display_value}} do Brasil (base 100 = 2022)."
+      },
+      {
         "tone": "pos",
-        "text": "Destaque em 12 meses: Fabricação de produtos de metal, exceto máquinas e equipamentos (12,4%)."
+        "text": "Destaque em 12 meses: Fabricação de produtos de metal, exceto máquinas e equipamentos (12,6%)."
       }
     ]
   },
@@ -35,26 +39,34 @@
     {
       "id": "var_mes",
       "label": "Variação no mês (ante igual mês do ano anterior)",
-      "reference": "2026-05-01",
-      "value": -0.8,
-      "display_value": "-0,8%",
+      "reference": "2026-06-01",
+      "value": -0.1,
+      "display_value": "-0,1%",
       "unit": ""
     },
     {
       "id": "var_ano",
       "label": "Variação acumulada no ano",
-      "reference": "2026-05-01",
-      "value": -3.7,
-      "display_value": "-3,7%",
+      "reference": "2026-06-01",
+      "value": -3,
+      "display_value": "-3,0%",
       "unit": ""
     },
     {
       "id": "var_12m",
       "label": "Variação acumulada em 12 meses",
-      "reference": "2026-05-01",
+      "reference": "2026-06-01",
       "value": -1.7,
       "display_value": "-1,7%",
       "unit": ""
+    },
+    {
+      "id": "indice",
+      "label": "Índice de produção física",
+      "reference": "2026-06-01",
+      "value": 99.58,
+      "display_value": "99,6",
+      "unit": "pontos (base 100 = 2022)"
     },
     {
       "id": "indice_brasil",
@@ -315,11 +327,11 @@
             },
             {
               "t": "2026-05",
-              "v": 100.34
+              "v": 100.37
             },
             {
               "t": "2026-06",
-              "v": null
+              "v": 99.58
             }
           ]
         },
@@ -583,42 +595,37 @@
       "title": "Atividades industriais — variação acumulada em 12 meses",
       "dimension_label": "Variação em 12 meses",
       "unit": "%",
-      "reference": "2026-05-01",
+      "reference": "2026-06-01",
       "items": [
         {
           "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
-          "value": 12.4,
-          "display_value": "12,4%"
+          "value": 12.6,
+          "display_value": "12,6%"
         },
         {
           "name": "Fabricação de coque, de produtos derivados do petróleo e de biocombustíveis",
-          "value": 7.3,
-          "display_value": "7,3%"
-        },
-        {
-          "name": "Fabricação de produtos químicos",
-          "value": 3.7,
-          "display_value": "3,7%"
+          "value": 10.7,
+          "display_value": "10,7%"
         },
         {
           "name": "Metalurgia",
-          "value": 2.6,
-          "display_value": "2,6%"
+          "value": 3.3,
+          "display_value": "3,3%"
         },
         {
-          "name": "Fabricação de produtos alimentícios",
-          "value": 2.4,
-          "display_value": "2,4%"
+          "name": "Fabricação de produtos químicos",
+          "value": 2.1,
+          "display_value": "2,1%"
         },
         {
           "name": "Fabricação de produtos de minerais não metálicos",
-          "value": 0.7,
-          "display_value": "0,7%"
+          "value": 2.1,
+          "display_value": "2,1%"
         },
         {
-          "name": "Preparação de couros e fabricação de artefatos de couro, artigos para viagem e calçados",
-          "value": -0.8,
-          "display_value": "-0,8%"
+          "name": "Fabricação de produtos alimentícios",
+          "value": 2,
+          "display_value": "2,0%"
         },
         {
           "name": "Indústrias de transformação",
@@ -626,24 +633,29 @@
           "display_value": "-1,7%"
         },
         {
-          "name": "Confecção de artigos do vestuário e acessórios",
-          "value": -6.8,
-          "display_value": "-6,8%"
+          "name": "Preparação de couros e fabricação de artefatos de couro, artigos para viagem e calçados",
+          "value": -1.8,
+          "display_value": "-1,8%"
         },
         {
           "name": "Fabricação de bebidas",
+          "value": -7.3,
+          "display_value": "-7,3%"
+        },
+        {
+          "name": "Confecção de artigos do vestuário e acessórios",
           "value": -7.7,
           "display_value": "-7,7%"
         },
         {
           "name": "Fabricação de produtos têxteis",
-          "value": -14.3,
-          "display_value": "-14,3%"
+          "value": -14.7,
+          "display_value": "-14,7%"
         },
         {
           "name": "Fabricação de máquinas, aparelhos e materiais elétricos",
-          "value": -26.4,
-          "display_value": "-26,4%"
+          "value": -23.9,
+          "display_value": "-23,9%"
         }
       ]
     }

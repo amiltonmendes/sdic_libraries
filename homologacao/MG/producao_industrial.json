@@ -4,14 +4,14 @@
   "title": "Produção Industrial",
   "source": "PIM-PF + PIA / IBGE",
   "reference": "2026-06-01",
-  "updated_at": "2026-08-06",
+  "updated_at": "2026-08-26",
   "uf": "MG",
   "cobertura_pimpf": true,
   "capa_kpi": {
     "label": "Produção industrial — acumulado em 12 meses",
-    "value": 1.1,
-    "display_value": "1,1%",
-    "reference": "2026-05-01"
+    "value": 0.6,
+    "display_value": "0,6%",
+    "reference": "2026-06-01"
   },
   "story": {
     "headline": "Produção industrial acumula {{kpis[var_12m].display_value}} em 12 meses.",
@@ -26,8 +26,12 @@
         "text": "No acumulado do ano, {{kpis[var_ano].display_value}}."
       },
       {
+        "tone": "neutral",
+        "text": "Índice de produção física em {{kpis[indice].display_value}} pontos, ante {{kpis[indice_brasil].display_value}} do Brasil (base 100 = 2022)."
+      },
+      {
         "tone": "pos",
-        "text": "Destaque em 12 meses: Fabricação de celulose, papel e produtos de papel (5,8%)."
+        "text": "Destaque em 12 meses: Fabricação de bebidas (5,6%)."
       }
     ]
   },
@@ -35,26 +39,34 @@
     {
       "id": "var_mes",
       "label": "Variação no mês (ante igual mês do ano anterior)",
-      "reference": "2026-05-01",
-      "value": -1.1,
-      "display_value": "-1,1%",
+      "reference": "2026-06-01",
+      "value": -2.6,
+      "display_value": "-2,6%",
       "unit": ""
     },
     {
       "id": "var_ano",
       "label": "Variação acumulada no ano",
-      "reference": "2026-05-01",
-      "value": 1.2,
-      "display_value": "1,2%",
+      "reference": "2026-06-01",
+      "value": 0.6,
+      "display_value": "0,6%",
       "unit": ""
     },
     {
       "id": "var_12m",
       "label": "Variação acumulada em 12 meses",
-      "reference": "2026-05-01",
-      "value": 1.1,
-      "display_value": "1,1%",
+      "reference": "2026-06-01",
+      "value": 0.6,
+      "display_value": "0,6%",
       "unit": ""
+    },
+    {
+      "id": "indice",
+      "label": "Índice de produção física",
+      "reference": "2026-06-01",
+      "value": 109.3,
+      "display_value": "109,3",
+      "unit": "pontos (base 100 = 2022)"
     },
     {
       "id": "indice_brasil",
@@ -315,11 +327,11 @@
             },
             {
               "t": "2026-05",
-              "v": 111.1
+              "v": 111.34
             },
             {
               "t": "2026-06",
-              "v": null
+              "v": 109.3
             }
           ]
         },
@@ -583,82 +595,82 @@
       "title": "Atividades industriais — variação acumulada em 12 meses",
       "dimension_label": "Variação em 12 meses",
       "unit": "%",
-      "reference": "2026-05-01",
+      "reference": "2026-06-01",
       "items": [
         {
+          "name": "Fabricação de bebidas",
+          "value": 5.6,
+          "display_value": "5,6%"
+        },
+        {
           "name": "Fabricação de celulose, papel e produtos de papel",
-          "value": 5.8,
-          "display_value": "5,8%"
+          "value": 5.4,
+          "display_value": "5,4%"
         },
         {
           "name": "Metalurgia",
-          "value": 5,
-          "display_value": "5,0%"
-        },
-        {
-          "name": "Fabricação de veículos automotores, reboques e carrocerias",
-          "value": 4.5,
-          "display_value": "4,5%"
+          "value": 4.8,
+          "display_value": "4,8%"
         },
         {
           "name": "Indústrias extrativas",
-          "value": 4.1,
-          "display_value": "4,1%"
+          "value": 3.8,
+          "display_value": "3,8%"
         },
         {
-          "name": "Fabricação de bebidas",
-          "value": 3.6,
-          "display_value": "3,6%"
-        },
-        {
-          "name": "Fabricação de máquinas e equipamentos",
-          "value": 2.9,
-          "display_value": "2,9%"
-        },
-        {
-          "name": "Fabricação de produtos alimentícios",
-          "value": 1.7,
-          "display_value": "1,7%"
+          "name": "Fabricação de veículos automotores, reboques e carrocerias",
+          "value": 3,
+          "display_value": "3,0%"
         },
         {
           "name": "Fabricação de produtos de borracha e de material plástico",
-          "value": 0.9,
-          "display_value": "0,9%"
+          "value": 1.3,
+          "display_value": "1,3%"
+        },
+        {
+          "name": "Fabricação de produtos alimentícios",
+          "value": 1.2,
+          "display_value": "1,2%"
+        },
+        {
+          "name": "Fabricação de máquinas e equipamentos",
+          "value": 0.2,
+          "display_value": "0,2%"
         },
         {
           "name": "Indústrias de transformação",
-          "value": -0.1,
-          "display_value": "-0,1%"
+          "value": -0.6,
+          "display_value": "-0,6%"
         },
         {
           "name": "Fabricação de produtos do fumo",
-          "value": -1.7,
-          "display_value": "-1,7%"
+          "value": -0.9,
+          "display_value": "-0,9%"
         },
         {
           "name": "Fabricação de coque, de produtos derivados do petróleo e de biocombustíveis",
-          "value": -3,
-          "display_value": "-3,0%"
+          "value": -3.3,
+          "display_value": "-3,3%"
         },
         {
           "name": "Fabricação de produtos de minerais não metálicos",
-          "value": -6.3,
-          "display_value": "-6,3%"
+          "value": -6.2,
+          "display_value": "-6,2%"
         },
         {
           "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
-          "value": -7,
-          "display_value": "-7,0%"
+          "value": -7.5,
+          "display_value": "-7,5%"
         },
         {
           "name": "Fabricação de produtos químicos",
-          "value": -8.8,
-          "display_value": "-8,8%"
+          "value": -11.2,
+          "display_value": "-11,2%"
         },
         {
           "name": "Fabricação de máquinas, aparelhos e materiais elétricos",
-          "value": -16.9,
-          "display_value": "-16,9%"
+          "value": -17.2,
+          "display_value": "-17,2%"
         }
       ]
     }

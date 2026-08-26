@@ -4,14 +4,14 @@
   "title": "Produção Industrial",
   "source": "PIM-PF + PIA / IBGE",
   "reference": "2026-06-01",
-  "updated_at": "2026-08-06",
+  "updated_at": "2026-08-26",
   "uf": "RJ",
   "cobertura_pimpf": true,
   "capa_kpi": {
     "label": "Produção industrial — acumulado em 12 meses",
     "value": 7.2,
     "display_value": "7,2%",
-    "reference": "2026-05-01"
+    "reference": "2026-06-01"
   },
   "story": {
     "headline": "Produção industrial acumula {{kpis[var_12m].display_value}} em 12 meses.",
@@ -26,8 +26,12 @@
         "text": "No acumulado do ano, {{kpis[var_ano].display_value}}."
       },
       {
+        "tone": "neutral",
+        "text": "Índice de produção física em {{kpis[indice].display_value}} pontos, ante {{kpis[indice_brasil].display_value}} do Brasil (base 100 = 2022)."
+      },
+      {
         "tone": "pos",
-        "text": "Destaque em 12 meses: Fabricação de outros equipamentos de transporte, exceto veículos automotores (14,9%)."
+        "text": "Destaque em 12 meses: Indústrias extrativas (13,2%)."
       }
     ]
   },
@@ -35,26 +39,34 @@
     {
       "id": "var_mes",
       "label": "Variação no mês (ante igual mês do ano anterior)",
-      "reference": "2026-05-01",
-      "value": 7.4,
-      "display_value": "7,4%",
+      "reference": "2026-06-01",
+      "value": 6.3,
+      "display_value": "6,3%",
       "unit": ""
     },
     {
       "id": "var_ano",
       "label": "Variação acumulada no ano",
-      "reference": "2026-05-01",
-      "value": 7.8,
-      "display_value": "7,8%",
+      "reference": "2026-06-01",
+      "value": 7.5,
+      "display_value": "7,5%",
       "unit": ""
     },
     {
       "id": "var_12m",
       "label": "Variação acumulada em 12 meses",
-      "reference": "2026-05-01",
+      "reference": "2026-06-01",
       "value": 7.2,
       "display_value": "7,2%",
       "unit": ""
+    },
+    {
+      "id": "indice",
+      "label": "Índice de produção física",
+      "reference": "2026-06-01",
+      "value": 118.7,
+      "display_value": "118,7",
+      "unit": "pontos (base 100 = 2022)"
     },
     {
       "id": "indice_brasil",
@@ -315,11 +327,11 @@
             },
             {
               "t": "2026-05",
-              "v": 119.97
+              "v": 119.63
             },
             {
               "t": "2026-06",
-              "v": null
+              "v": 118.7
             }
           ]
         },
@@ -583,47 +595,42 @@
       "title": "Atividades industriais — variação acumulada em 12 meses",
       "dimension_label": "Variação em 12 meses",
       "unit": "%",
-      "reference": "2026-05-01",
+      "reference": "2026-06-01",
       "items": [
         {
-          "name": "Fabricação de outros equipamentos de transporte, exceto veículos automotores",
-          "value": 14.9,
-          "display_value": "14,9%"
-        },
-        {
           "name": "Indústrias extrativas",
-          "value": 13,
-          "display_value": "13,0%"
+          "value": 13.2,
+          "display_value": "13,2%"
         },
         {
-          "name": "Manutenção, reparação e instalação de máquinas e equipamentos",
-          "value": 11.6,
-          "display_value": "11,6%"
+          "name": "Fabricação de outros equipamentos de transporte, exceto veículos automotores",
+          "value": 12.5,
+          "display_value": "12,5%"
         },
         {
           "name": "Confecção de artigos do vestuário e acessórios",
-          "value": 11.3,
-          "display_value": "11,3%"
-        },
-        {
-          "name": "Fabricação de produtos farmoquímicos e farmacêuticos",
-          "value": 7.6,
-          "display_value": "7,6%"
-        },
-        {
-          "name": "Fabricação de veículos automotores, reboques e carrocerias",
-          "value": 7.4,
-          "display_value": "7,4%"
-        },
-        {
-          "name": "Fabricação de produtos químicos",
-          "value": 5.3,
-          "display_value": "5,3%"
+          "value": 11.7,
+          "display_value": "11,7%"
         },
         {
           "name": "Fabricação de máquinas e equipamentos",
-          "value": 4.6,
-          "display_value": "4,6%"
+          "value": 10.9,
+          "display_value": "10,9%"
+        },
+        {
+          "name": "Manutenção, reparação e instalação de máquinas e equipamentos",
+          "value": 9.6,
+          "display_value": "9,6%"
+        },
+        {
+          "name": "Fabricação de produtos farmoquímicos e farmacêuticos",
+          "value": 7.2,
+          "display_value": "7,2%"
+        },
+        {
+          "name": "Fabricação de produtos químicos",
+          "value": 6.9,
+          "display_value": "6,9%"
         },
         {
           "name": "Fabricação de produtos de minerais não metálicos",
@@ -631,39 +638,44 @@
           "display_value": "2,8%"
         },
         {
+          "name": "Fabricação de veículos automotores, reboques e carrocerias",
+          "value": 2.8,
+          "display_value": "2,8%"
+        },
+        {
           "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
-          "value": 2.5,
-          "display_value": "2,5%"
+          "value": 2,
+          "display_value": "2,0%"
         },
         {
           "name": "Indústrias de transformação",
-          "value": 0.7,
-          "display_value": "0,7%"
+          "value": 0.4,
+          "display_value": "0,4%"
         },
         {
           "name": "Fabricação de produtos alimentícios",
-          "value": -0.5,
-          "display_value": "-0,5%"
+          "value": -0.4,
+          "display_value": "-0,4%"
         },
         {
           "name": "Fabricação de produtos de borracha e de material plástico",
-          "value": -1.5,
-          "display_value": "-1,5%"
-        },
-        {
-          "name": "Fabricação de coque, de produtos derivados do petróleo e de biocombustíveis",
-          "value": -3.2,
-          "display_value": "-3,2%"
+          "value": -1,
+          "display_value": "-1,0%"
         },
         {
           "name": "Fabricação de bebidas",
-          "value": -4.9,
-          "display_value": "-4,9%"
+          "value": -3.7,
+          "display_value": "-3,7%"
+        },
+        {
+          "name": "Fabricação de coque, de produtos derivados do petróleo e de biocombustíveis",
+          "value": -4.1,
+          "display_value": "-4,1%"
         },
         {
           "name": "Metalurgia",
-          "value": -9.9,
-          "display_value": "-9,9%"
+          "value": -9.2,
+          "display_value": "-9,2%"
         }
       ]
     }
