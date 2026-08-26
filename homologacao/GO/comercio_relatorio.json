@@ -1,0 +1,204 @@
+{
+  "schema_version": "relatorio_v1",
+  "section_id": "comercio",
+  "title": "Comércio Exterior — dados para relatórios",
+  "source": "Comex Stat / MDIC",
+  "reference": "2025",
+  "updated_at": "2026-08-26",
+  "balanca_anual": [
+    {
+      "ano": 2019,
+      "exportacoes": 4047637308,
+      "importacoes": 3592181418,
+      "saldo": 455455890
+    },
+    {
+      "ano": 2020,
+      "exportacoes": 4353914628,
+      "importacoes": 3232985966,
+      "saldo": 1120928662
+    },
+    {
+      "ano": 2021,
+      "exportacoes": 5158558377,
+      "importacoes": 4313565463,
+      "saldo": 844992914
+    },
+    {
+      "ano": 2022,
+      "exportacoes": 6375302634,
+      "importacoes": 5738793434,
+      "saldo": 636509200
+    },
+    {
+      "ano": 2023,
+      "exportacoes": 5956021976,
+      "importacoes": 4814029713,
+      "saldo": 1141992263
+    },
+    {
+      "ano": 2024,
+      "exportacoes": 6076393837,
+      "importacoes": 5505972917,
+      "saldo": 570420920
+    },
+    {
+      "ano": 2025,
+      "exportacoes": 6387901958,
+      "importacoes": 5281384958,
+      "saldo": 1106517000
+    }
+  ],
+  "isic_ultimo_ano": [
+    {
+      "isic_divisao": "10",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de produtos alimentícios",
+      "vl_fob": 4671771366
+    },
+    {
+      "isic_divisao": "11",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de bebidas",
+      "vl_fob": 557808
+    },
+    {
+      "isic_divisao": "12",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de produtos de tabaco",
+      "vl_fob": 15
+    },
+    {
+      "isic_divisao": "13",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de têxteis",
+      "vl_fob": 180869
+    },
+    {
+      "isic_divisao": "14",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de vestuário",
+      "vl_fob": 2124399
+    },
+    {
+      "isic_divisao": "15",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de couro e produtos afins",
+      "vl_fob": 135942956
+    },
+    {
+      "isic_divisao": "16",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de madeira e de produtos de madeira e cortiça, exceto móveis; fabricação de artigos de palha e de cestaria",
+      "vl_fob": 398397
+    },
+    {
+      "isic_divisao": "17",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de papel e produtos de papel",
+      "vl_fob": 80244
+    },
+    {
+      "isic_divisao": "19",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de coque e produtos petrolíferos refinados",
+      "vl_fob": 838535
+    },
+    {
+      "isic_divisao": "20",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de produtos químicos",
+      "vl_fob": 182983983
+    },
+    {
+      "isic_divisao": "21",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de produtos farmacêuticos básicos e preparações farmacêuticas",
+      "vl_fob": 33984223
+    },
+    {
+      "isic_divisao": "22",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de produtos de borracha e plásticos",
+      "vl_fob": 4259279
+    },
+    {
+      "isic_divisao": "23",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de outros produtos minerais não metálicos",
+      "vl_fob": 392662
+    },
+    {
+      "isic_divisao": "24",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de metais básicos",
+      "vl_fob": 1189929544
+    },
+    {
+      "isic_divisao": "25",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de produtos metálicos fabricados, exceto máquinas e equipamentos",
+      "vl_fob": 2813206
+    },
+    {
+      "isic_divisao": "26",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de produtos informáticos, eletrônicos e ópticos",
+      "vl_fob": 7549650
+    },
+    {
+      "isic_divisao": "27",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de equipamentos elétricos",
+      "vl_fob": 4236355
+    },
+    {
+      "isic_divisao": "28",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de máquinas e equipamentos n.c",
+      "vl_fob": 127312648
+    },
+    {
+      "isic_divisao": "29",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de veículos automóveis, reboques e semi-reboques",
+      "vl_fob": 13603373
+    },
+    {
+      "isic_divisao": "30",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de outro equipamento de transporte",
+      "vl_fob": 2578918
+    },
+    {
+      "isic_divisao": "31",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de móveis",
+      "vl_fob": 162454
+    },
+    {
+      "isic_divisao": "32",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Outras manufaturas",
+      "vl_fob": 6201074
+    }
+  ],
+  "saldo_intensidade_ultimo_ano": [
+    {
+      "intensidade": "AT",
+      "saldo": -2211128722.0
+    },
+    {
+      "intensidade": "MAT",
+      "saldo": -2299707788.0
+    },
+    {
+      "intensidade": "MBT",
+      "saldo": 992874834.0
+    },
+    {
+      "intensidade": "BT",
+      "saldo": 4624478676.0
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "schema_version": "relatorio_v1",
+  "section_id": "comercio_ue",
+  "title": "Comércio Exterior — União Europeia — dados para relatórios",
+  "source": "Comex Stat / MDIC",
+  "reference": "2025",
+  "updated_at": "2026-08-26",
+  "balanca_anual": [
+    {
+      "ano": 2019,
+      "exportacoes": 23440305,
+      "importacoes": 29445823,
+      "saldo": -6005518
+    },
+    {
+      "ano": 2020,
+      "exportacoes": 10567647,
+      "importacoes": 9273699,
+      "saldo": 1293948
+    },
+    {
+      "ano": 2021,
+      "exportacoes": 24142557,
+      "importacoes": 15084754,
+      "saldo": 9057803
+    },
+    {
+      "ano": 2022,
+      "exportacoes": 126693475,
+      "importacoes": 39225836,
+      "saldo": 87467639
+    },
+    {
+      "ano": 2023,
+      "exportacoes": 92933453,
+      "importacoes": 63147547,
+      "saldo": 29785906
+    },
+    {
+      "ano": 2024,
+      "exportacoes": 172957171,
+      "importacoes": 2105408,
+      "saldo": 170851763
+    },
+    {
+      "ano": 2025,
+      "exportacoes": 169902281,
+      "importacoes": 6974444,
+      "saldo": 162927837
+    }
+  ],
+  "isic_ultimo_ano": [
+    {
+      "isic_divisao": "10",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de produtos alimentícios",
+      "vl_fob": 150764382
+    },
+    {
+      "isic_divisao": "16",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de madeira e de produtos de madeira e cortiça, exceto móveis; fabricação de artigos de palha e de cestaria",
+      "vl_fob": 78471
+    },
+    {
+      "isic_divisao": "20",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de produtos químicos",
+      "vl_fob": 18946619
+    },
+    {
+      "isic_divisao": "21",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de produtos farmacêuticos básicos e preparações farmacêuticas",
+      "vl_fob": 110991
+    },
+    {
+      "isic_divisao": "30",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de outro equipamento de transporte",
+      "vl_fob": 1818
+    }
+  ],
+  "saldo_intensidade_ultimo_ano": [
+    {
+      "intensidade": "AT",
+      "saldo": -302118.0
+    },
+    {
+      "intensidade": "MAT",
+      "saldo": 12486426.0
+    },
+    {
+      "intensidade": "MBT",
+      "saldo": -76399.0
+    },
+    {
+      "intensidade": "BT",
+      "saldo": 150819928.0
+    }
+  ]
+}

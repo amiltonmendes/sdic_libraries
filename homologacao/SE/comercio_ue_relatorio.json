@@ -1,0 +1,120 @@
+{
+  "schema_version": "relatorio_v1",
+  "section_id": "comercio_ue",
+  "title": "Comércio Exterior — União Europeia — dados para relatórios",
+  "source": "Comex Stat / MDIC",
+  "reference": "2025",
+  "updated_at": "2026-08-26",
+  "balanca_anual": [
+    {
+      "ano": 2019,
+      "exportacoes": 26996407,
+      "importacoes": 29336620,
+      "saldo": -2340213
+    },
+    {
+      "ano": 2020,
+      "exportacoes": 25431455,
+      "importacoes": 22779737,
+      "saldo": 2651718
+    },
+    {
+      "ano": 2021,
+      "exportacoes": 28755293,
+      "importacoes": 30543932,
+      "saldo": -1788639
+    },
+    {
+      "ano": 2022,
+      "exportacoes": 52894230,
+      "importacoes": 28812687,
+      "saldo": 24081543
+    },
+    {
+      "ano": 2023,
+      "exportacoes": 74410074,
+      "importacoes": 20211128,
+      "saldo": 54198946
+    },
+    {
+      "ano": 2024,
+      "exportacoes": 131447273,
+      "importacoes": 16434154,
+      "saldo": 115013119
+    },
+    {
+      "ano": 2025,
+      "exportacoes": 108823523,
+      "importacoes": 25976791,
+      "saldo": 82846732
+    }
+  ],
+  "isic_ultimo_ano": [
+    {
+      "isic_divisao": "10",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de produtos alimentícios",
+      "vl_fob": 102590911
+    },
+    {
+      "isic_divisao": "15",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de couro e produtos afins",
+      "vl_fob": 78348
+    },
+    {
+      "isic_divisao": "20",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de produtos químicos",
+      "vl_fob": 6086800
+    },
+    {
+      "isic_divisao": "23",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de outros produtos minerais não metálicos",
+      "vl_fob": 6863
+    },
+    {
+      "isic_divisao": "26",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de produtos informáticos, eletrônicos e ópticos",
+      "vl_fob": 4900
+    },
+    {
+      "isic_divisao": "27",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de equipamentos elétricos",
+      "vl_fob": 48300
+    },
+    {
+      "isic_divisao": "28",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de máquinas e equipamentos n.c",
+      "vl_fob": 7289
+    },
+    {
+      "isic_divisao": "31",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de móveis",
+      "vl_fob": 112
+    }
+  ],
+  "saldo_intensidade_ultimo_ano": [
+    {
+      "intensidade": "AT",
+      "saldo": -1707496.0
+    },
+    {
+      "intensidade": "MAT",
+      "saldo": -14556516.0
+    },
+    {
+      "intensidade": "MBT",
+      "saldo": -2413949.0
+    },
+    {
+      "intensidade": "BT",
+      "saldo": 101524693.0
+    }
+  ]
+}

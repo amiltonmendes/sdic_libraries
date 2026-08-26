@@ -1,0 +1,108 @@
+{
+  "schema_version": "relatorio_v1",
+  "section_id": "comercio_ue",
+  "title": "Comércio Exterior — União Europeia — dados para relatórios",
+  "source": "Comex Stat / MDIC",
+  "reference": "2025",
+  "updated_at": "2026-08-26",
+  "balanca_anual": [
+    {
+      "ano": 2019,
+      "exportacoes": 1648726,
+      "importacoes": 467675,
+      "saldo": 1181051
+    },
+    {
+      "ano": 2020,
+      "exportacoes": 568670,
+      "importacoes": 2272588,
+      "saldo": -1703918
+    },
+    {
+      "ano": 2021,
+      "exportacoes": 4186591,
+      "importacoes": 45091268,
+      "saldo": -40904677
+    },
+    {
+      "ano": 2022,
+      "exportacoes": 1795805,
+      "importacoes": 19809032,
+      "saldo": -18013227
+    },
+    {
+      "ano": 2023,
+      "exportacoes": 9836483,
+      "importacoes": 12207117,
+      "saldo": -2370634
+    },
+    {
+      "ano": 2024,
+      "exportacoes": 27571796,
+      "importacoes": 782209,
+      "saldo": 26789587
+    },
+    {
+      "ano": 2025,
+      "exportacoes": 5894955,
+      "importacoes": 9293021,
+      "saldo": -3398066
+    }
+  ],
+  "isic_ultimo_ano": [
+    {
+      "isic_divisao": "10",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de produtos alimentícios",
+      "vl_fob": 5729837
+    },
+    {
+      "isic_divisao": "16",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de madeira e de produtos de madeira e cortiça, exceto móveis; fabricação de artigos de palha e de cestaria",
+      "vl_fob": 80930
+    },
+    {
+      "isic_divisao": "19",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de coque e produtos petrolíferos refinados",
+      "vl_fob": 803
+    },
+    {
+      "isic_divisao": "20",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de produtos químicos",
+      "vl_fob": 70704
+    },
+    {
+      "isic_divisao": "23",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de outros produtos minerais não metálicos",
+      "vl_fob": 9636
+    },
+    {
+      "isic_divisao": "28",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de máquinas e equipamentos n.c",
+      "vl_fob": 3045
+    }
+  ],
+  "saldo_intensidade_ultimo_ano": [
+    {
+      "intensidade": "AT",
+      "saldo": -2160318.0
+    },
+    {
+      "intensidade": "MAT",
+      "saldo": -7034480.0
+    },
+    {
+      "intensidade": "MBT",
+      "saldo": -8715.0
+    },
+    {
+      "intensidade": "BT",
+      "saldo": 5805447.0
+    }
+  ]
+}

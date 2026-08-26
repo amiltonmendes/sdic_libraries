@@ -1,0 +1,78 @@
+{
+  "schema_version": "relatorio_v1",
+  "section_id": "comercio_ue",
+  "title": "Comércio Exterior — União Europeia — dados para relatórios",
+  "source": "Comex Stat / MDIC",
+  "reference": "2025",
+  "updated_at": "2026-08-26",
+  "balanca_anual": [
+    {
+      "ano": 2019,
+      "exportacoes": 7079384,
+      "importacoes": 231627,
+      "saldo": 6847757
+    },
+    {
+      "ano": 2020,
+      "exportacoes": 7310785,
+      "importacoes": 489382,
+      "saldo": 6821403
+    },
+    {
+      "ano": 2021,
+      "exportacoes": 6729977,
+      "importacoes": 807544,
+      "saldo": 5922433
+    },
+    {
+      "ano": 2022,
+      "exportacoes": 10242678,
+      "importacoes": 810411,
+      "saldo": 9432267
+    },
+    {
+      "ano": 2023,
+      "exportacoes": 2790516,
+      "importacoes": 2339767,
+      "saldo": 450749
+    },
+    {
+      "ano": 2024,
+      "exportacoes": 3328166,
+      "importacoes": 46444,
+      "saldo": 3281722
+    },
+    {
+      "ano": 2025,
+      "exportacoes": 2277538,
+      "importacoes": 1616125,
+      "saldo": 661413
+    }
+  ],
+  "isic_ultimo_ano": [
+    {
+      "isic_divisao": "16",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de madeira e de produtos de madeira e cortiça, exceto móveis; fabricação de artigos de palha e de cestaria",
+      "vl_fob": 2277538
+    }
+  ],
+  "saldo_intensidade_ultimo_ano": [
+    {
+      "intensidade": "AT",
+      "saldo": -525054.0
+    },
+    {
+      "intensidade": "MAT",
+      "saldo": -411607.0
+    },
+    {
+      "intensidade": "MBT",
+      "saldo": -679464.0
+    },
+    {
+      "intensidade": "BT",
+      "saldo": 2277538.0
+    }
+  ]
+}

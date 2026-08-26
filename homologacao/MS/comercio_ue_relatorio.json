@@ -1,0 +1,138 @@
+{
+  "schema_version": "relatorio_v1",
+  "section_id": "comercio_ue",
+  "title": "Comércio Exterior — União Europeia — dados para relatórios",
+  "source": "Comex Stat / MDIC",
+  "reference": "2025",
+  "updated_at": "2026-08-26",
+  "balanca_anual": [
+    {
+      "ano": 2019,
+      "exportacoes": 524697911,
+      "importacoes": 77117475,
+      "saldo": 447580436
+    },
+    {
+      "ano": 2020,
+      "exportacoes": 509117191,
+      "importacoes": 27564042,
+      "saldo": 481553149
+    },
+    {
+      "ano": 2021,
+      "exportacoes": 654048963,
+      "importacoes": 49037079,
+      "saldo": 605011884
+    },
+    {
+      "ano": 2022,
+      "exportacoes": 825267403,
+      "importacoes": 86204941,
+      "saldo": 739062462
+    },
+    {
+      "ano": 2023,
+      "exportacoes": 863538100,
+      "importacoes": 153061426,
+      "saldo": 710476674
+    },
+    {
+      "ano": 2024,
+      "exportacoes": 1129769668,
+      "importacoes": 145040736,
+      "saldo": 984728932
+    },
+    {
+      "ano": 2025,
+      "exportacoes": 1236757884,
+      "importacoes": 490414159,
+      "saldo": 746343725
+    }
+  ],
+  "isic_ultimo_ano": [
+    {
+      "isic_divisao": "10",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de produtos alimentícios",
+      "vl_fob": 590014278
+    },
+    {
+      "isic_divisao": "13",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de têxteis",
+      "vl_fob": 1170
+    },
+    {
+      "isic_divisao": "15",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de couro e produtos afins",
+      "vl_fob": 17162790
+    },
+    {
+      "isic_divisao": "17",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de papel e produtos de papel",
+      "vl_fob": 627777984
+    },
+    {
+      "isic_divisao": "20",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de produtos químicos",
+      "vl_fob": 472893
+    },
+    {
+      "isic_divisao": "21",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de produtos farmacêuticos básicos e preparações farmacêuticas",
+      "vl_fob": 1212451
+    },
+    {
+      "isic_divisao": "24",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de metais básicos",
+      "vl_fob": 47978
+    },
+    {
+      "isic_divisao": "25",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de produtos metálicos fabricados, exceto máquinas e equipamentos",
+      "vl_fob": 9717
+    },
+    {
+      "isic_divisao": "27",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de equipamentos elétricos",
+      "vl_fob": 3180
+    },
+    {
+      "isic_divisao": "28",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Fabricação de máquinas e equipamentos n.c",
+      "vl_fob": 55442
+    },
+    {
+      "isic_divisao": "32",
+      "isic_secao": "C",
+      "isic_descricao_pt": "Outras manufaturas",
+      "vl_fob": 1
+    }
+  ],
+  "saldo_intensidade_ultimo_ano": [
+    {
+      "intensidade": "AT",
+      "saldo": -3736015.0
+    },
+    {
+      "intensidade": "MAT",
+      "saldo": -350698475.0
+    },
+    {
+      "intensidade": "MBT",
+      "saldo": -128661345.0
+    },
+    {
+      "intensidade": "BT",
+      "saldo": 1229439560.0
+    }
+  ]
+}
