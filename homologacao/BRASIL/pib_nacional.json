@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.1",
+  "section_id": "pib_nacional",
+  "title": "PIB Brasil",
+  "source": "Contas Nacionais / IBGE",
+  "reference": "2023",
+  "updated_at": "2026-08-26",
+  "capa_kpi": {
+    "id": "capa_pib_nacional",
+    "label": "PIB Brasil",
+    "display_value": "R$ 10.943,3 bi",
+    "unit": "",
+    "period": "2023",
+    "delta": {
+      "dir": "up",
+      "label": "PIB a preços de mercado"
+    }
+  },
+  "story": {
+    "headline": "PIB do Brasil soma {{kpis[pib_total].display_value}} {{kpis[pib_total].unit}}.",
+    "lede": "Produto Interno Bruto a preços de mercado (com impostos líquidos sobre produtos), pelas óticas da oferta e da demanda — Contas Nacionais/IBGE.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "Maior setor: Serviços (67,8% do VAB)."
+      },
+      {
+        "tone": "neutral",
+        "text": "Consumo das famílias em {{kpis[consumo_familias].display_value}}% do PIB."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "pib_total",
+      "label": "PIB Brasil",
+      "value": 10943.3,
+      "display_value": "10.943,3",
+      "unit": "bilhões de reais",
+      "period": "2023"
+    },
+    {
+      "id": "consumo_familias",
+      "label": "Consumo das famílias (% do PIB)",
+      "value": 62.9,
+      "display_value": "62,9",
+      "unit": "%",
+      "period": "2023"
+    },
+    {
+      "id": "taxa_investimento",
+      "label": "Taxa de investimento — FBCF (% do PIB)",
+      "value": 16.4,
+      "display_value": "16,4",
+      "unit": "%",
+      "period": "2023"
+    }
+  ],
+  "charts": [
+    {
+      "id": "pib_brasil_serie",
+      "type": "line",
+      "title": "Série do PIB Brasil",
+      "subtitle": "Produto Interno Bruto a preços de mercado",
+      "unit": "bilhões de reais",
+      "series": [
+        {
+          "id": "pib",
+          "label": "PIB",
+          "points": [
+            {
+              "t": 2019,
+              "v": 7394.3
+            },
+            {
+              "t": 2020,
+              "v": 7609.6
+            },
+            {
+              "t": 2021,
+              "v": 9012.1
+            },
+            {
+              "t": 2022,
+              "v": 10079.7
+            },
+            {
+              "t": 2023,
+              "v": 10943.3
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "t": 2023,
+          "label": "R$ 10.943,3 bi"
+        }
+      ]
+    }
+  ],
+  "ranked_lists": [],
+  "breakdowns": []
+}
