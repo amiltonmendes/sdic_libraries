@@ -6,7 +6,7 @@
   "categoria": "Financiamento à neoindustrialização",
   "source": "SDIC — consolidado NIB/GAIA (BNDES, Finep, BASA, BNB, Caixa, BB)",
   "reference": "2023-2026",
-  "updated_at": "2026-08-13",
+  "updated_at": "2026-08-26",
   "capa_kpi": {
     "id": "capa_pp",
     "label": "Plano Mais Produção",
@@ -32,7 +32,7 @@
     "uf": "AL",
     "regra": "meio",
     "headline": "R$ 5,21 bi em Alagoas — 0,8% do total nacional, 21ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Alagoas ocupa a 21ª posição entre as 27 UFs participantes do programa e responde por 0,8% do programa no país. Dentro do Nordeste, que soma R$ 88,41 bi, a participação de Alagoas é de 5,9%. Financiamento à neoindustrialização via BNDES, Finep, BASA, BNB, Caixa e BB — recursos contratados por missão da Nova Indústria Brasil (NIB) e eixo de atuação (produtividade, verde, inovação, exportação).",
+    "lede": "Alagoas ocupa a 21ª posição entre as 27 UFs participantes do programa e responde por 0,8% do programa no país. Dentro do Nordeste, que soma R$ 88,38 bi, a participação de Alagoas é de 5,9%. Financiamento à neoindustrialização via BNDES, Finep, BASA, BNB, Caixa e BB — recursos contratados por missão da Nova Indústria Brasil (NIB) e eixo de atuação (produtividade, verde, inovação, exportação).",
     "highlights": [
       {
         "tone": "neutral",
@@ -48,23 +48,23 @@
     {
       "id": "contratado",
       "label": "Total contratado",
-      "value": 709366652138.51,
-      "display_value": "R$ 709,37 bi",
+      "value": 709693735085.8,
+      "display_value": "R$ 709,69 bi",
       "unit": "",
       "period": "2023-2026"
     },
     {
       "id": "projetos",
       "label": "Projetos",
-      "value": 494431,
-      "display_value": "494.431",
+      "value": 494463,
+      "display_value": "494.463",
       "unit": "projetos",
       "period": "2023-2026"
     },
     {
       "id": "ticket_medio",
       "label": "Ticket médio",
-      "value": 1434713.1392,
+      "value": 1435281.7806,
       "display_value": "R$ 1,4 mi",
       "unit": "por projeto",
       "period": "2023-2026"
@@ -173,37 +173,37 @@
       "items": [
         {
           "name": "Agro industrial",
-          "value": 147389380094.5,
-          "display_value": "R$ 147,39 bi",
+          "value": 147450779754.86,
+          "display_value": "R$ 147,45 bi",
           "share": 20.8
         },
         {
           "name": "Saúde",
-          "value": 27657144941.93,
-          "display_value": "R$ 27,66 bi",
+          "value": 27670234778.33,
+          "display_value": "R$ 27,67 bi",
           "share": 3.9
         },
         {
           "name": "Infraestrutura",
-          "value": 310912379807.16,
-          "display_value": "R$ 310,91 bi",
+          "value": 311080463553.34,
+          "display_value": "R$ 311,08 bi",
           "share": 43.8
         },
         {
           "name": "Transformação Digital",
-          "value": 122429618982.84,
-          "display_value": "R$ 122,43 bi",
+          "value": 122472240298.14,
+          "display_value": "R$ 122,47 bi",
           "share": 17.3
         },
         {
           "name": "Descarbonização",
-          "value": 70520459050.12,
-          "display_value": "R$ 70,52 bi",
+          "value": 70561949910.17,
+          "display_value": "R$ 70,56 bi",
           "share": 9.9
         },
         {
           "name": "Defesa",
-          "value": 30457669261.96,
+          "value": 30458066790.96,
           "display_value": "R$ 30,46 bi",
           "share": 4.3
         }
@@ -230,8 +230,8 @@
         },
         {
           "name": "Inovação",
-          "value": 72333328906.09,
-          "display_value": "R$ 72,33 bi",
+          "value": 72660411853.38,
+          "display_value": "R$ 72,66 bi",
           "share": 10.2
         },
         {
@@ -244,7 +244,7 @@
           "name": "Exportação",
           "value": 46469501967.14,
           "display_value": "R$ 46,47 bi",
-          "share": 6.6
+          "share": 6.5
         }
       ]
     }
@@ -263,19 +263,19 @@
           "points": [
             {
               "t": 2023,
-              "v": 179.132
+              "v": 179.13
             },
             {
               "t": 2024,
-              "v": 228.609
+              "v": 228.589
             },
             {
               "t": 2025,
-              "v": 248.389
+              "v": 248.674
             },
             {
               "t": 2026,
-              "v": 53.236
+              "v": 53.301
             }
           ]
         }
@@ -349,7 +349,7 @@
       ]
     }
   ],
-  "_nota_fonte": "Consolidado a partir de dados_painel_2026T1.json (pipeline novo/, período 2026T1), 1901 registros agregados por ano × fonte × eixo × missão × UF. 13 registros sem UF resolvida ficam fora do breakdown por_uf, mas contam nos totais nacionais.",
+  "_nota_fonte": "Consolidado a partir de dados_painel_2026T1.json (pipeline novo/, período 2026T1), 1906 registros agregados por ano × fonte × eixo × missão × UF. 13 registros sem UF resolvida ficam fora do breakdown por_uf, mas contam nos totais nacionais.",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -363,7 +363,7 @@
     "highlights": [
       {
         "tone": "neutral",
-        "text": "494.431 projetos contratados em todo o país, 2023-2026."
+        "text": "494.463 projetos contratados em todo o país, 2023-2026."
       },
       {
         "tone": "neutral",
