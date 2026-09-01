@@ -3,12 +3,12 @@
   "section_id": "emprego",
   "title": "Emprego",
   "source": "Novo CAGED / MTE",
-  "reference": "Jun/2026",
-  "updated_at": "2026-08-27",
+  "reference": "Jul/2026",
+  "updated_at": "2026-09-01",
   "capa_kpi": {
     "id": "capa_emprego",
     "label": "Saldo CAGED 12m",
-    "display_value": "+17.201",
+    "display_value": "+16.863",
     "unit": "vagas",
     "period": "12 meses",
     "delta": {
@@ -34,7 +34,7 @@
       },
       {
         "tone": "pos",
-        "text": "Atividade com maior saldo: Atividades de atenção à saúde humana (+2.789 vagas)."
+        "text": "Atividade com maior saldo: Atividades de atenção à saúde humana (+2.522 vagas)."
       }
     ]
   },
@@ -42,26 +42,26 @@
     {
       "id": "saldo_mensal",
       "label": "Saldo mensal",
-      "value": -2259,
-      "display_value": "-2.259",
+      "value": -2605,
+      "display_value": "-2.605",
       "unit": "vagas",
-      "period": "Jun/2026"
+      "period": "Jul/2026"
     },
     {
       "id": "saldo_12m",
       "label": "Saldo 12 meses",
-      "value": 17201,
-      "display_value": "+17.201",
+      "value": 16863,
+      "display_value": "+16.863",
       "unit": "vagas",
       "period": "12 meses"
     },
     {
       "id": "saldo_ano",
       "label": "Saldo no ano",
-      "value": 24177,
-      "display_value": "+24.177",
+      "value": 21594,
+      "display_value": "+21.594",
       "unit": "vagas",
-      "period": "2026 (até Jun)",
+      "period": "2026 (até Jul)",
       "partial": true
     },
     {
@@ -94,60 +94,60 @@
           "label": "Saldo",
           "points": [
             {
-              "t": "202507",
-              "v": -2262
-            },
-            {
               "t": "202508",
-              "v": 902
+              "v": 899
             },
             {
               "t": "202509",
-              "v": 3791
+              "v": 3789
             },
             {
               "t": "202510",
-              "v": -191
+              "v": -198
             },
             {
               "t": "202511",
-              "v": 982
+              "v": 983
             },
             {
               "t": "202512",
-              "v": -10198
+              "v": -10203
             },
             {
               "t": "202601",
-              "v": 2352
+              "v": 2346
             },
             {
               "t": "202602",
-              "v": 3104
+              "v": 3107
             },
             {
               "t": "202603",
-              "v": 7483
+              "v": 7477
             },
             {
               "t": "202604",
-              "v": 3578
+              "v": 3616
             },
             {
               "t": "202605",
-              "v": 9919
+              "v": 9935
             },
             {
               "t": "202606",
-              "v": -2259
+              "v": -2283
+            },
+            {
+              "t": "202607",
+              "v": -2605
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202606",
-          "label": "+-2.259 vagas"
+          "t": "202607",
+          "label": "+-2.605 vagas"
         }
       ]
     },
@@ -163,60 +163,60 @@
           "label": "Acumulado 12m",
           "points": [
             {
-              "t": "202507",
-              "v": 23954
-            },
-            {
               "t": "202508",
               "v": 22275
             },
             {
               "t": "202509",
-              "v": 20404
+              "v": 20401
             },
             {
               "t": "202510",
-              "v": 15866
+              "v": 15856
             },
             {
               "t": "202511",
-              "v": 16693
+              "v": 16684
             },
             {
               "t": "202512",
-              "v": 13701
+              "v": 13687
             },
             {
               "t": "202601",
-              "v": 15308
+              "v": 15288
             },
             {
               "t": "202602",
-              "v": 12577
+              "v": 12560
             },
             {
               "t": "202603",
-              "v": 18170
+              "v": 18147
             },
             {
               "t": "202604",
-              "v": 13415
+              "v": 13429
             },
             {
               "t": "202605",
-              "v": 16025
+              "v": 16055
             },
             {
               "t": "202606",
-              "v": 17202
+              "v": 17208
+            },
+            {
+              "t": "202607",
+              "v": 16865
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202606",
-          "label": "+17.202 vagas"
+          "t": "202607",
+          "label": "+16.865 vagas"
         }
       ]
     }
@@ -231,28 +231,28 @@
       "items": [
         {
           "name": "Atividades de atenção à saúde humana",
-          "value": 2789,
-          "display_value": "+2.789"
+          "value": 2522,
+          "display_value": "+2.522"
         },
         {
-          "name": "Comércio varejista",
-          "value": 2019,
-          "display_value": "+2.019"
+          "name": "Manutenção, reparação e instalação de máquinas e equipamentos",
+          "value": 1598,
+          "display_value": "+1.598"
         },
         {
           "name": "Comércio por atacado, exceto veículos automotores e motocicletas",
-          "value": 1796,
-          "display_value": "+1.796"
-        },
-        {
-          "name": "Comércio e reparação de veículos automotores e motocicletas",
-          "value": 1577,
-          "display_value": "+1.577"
+          "value": 1594,
+          "display_value": "+1.594"
         },
         {
           "name": "Construção de edifícios",
-          "value": 1397,
-          "display_value": "+1.397"
+          "value": 1565,
+          "display_value": "+1.565"
+        },
+        {
+          "name": "Comércio e reparação de veículos automotores e motocicletas",
+          "value": 1471,
+          "display_value": "+1.471"
         }
       ]
     },
@@ -264,29 +264,29 @@
       "tone": "neg",
       "items": [
         {
-          "name": "Serviços especializados para construção",
-          "value": -781,
-          "display_value": "−781"
-        },
-        {
           "name": "Confecção de artigos do vestuário e acessórios",
-          "value": -728,
-          "display_value": "−728"
+          "value": -759,
+          "display_value": "−759"
         },
         {
           "name": "Fabricação de outros equipamentos de transporte, exceto veículos automotores",
-          "value": -572,
-          "display_value": "−572"
-        },
-        {
-          "name": "Fabricação de máquinas e equipamentos",
-          "value": -503,
-          "display_value": "−503"
+          "value": -670,
+          "display_value": "−670"
         },
         {
           "name": "Produção florestal",
-          "value": -478,
-          "display_value": "−478"
+          "value": -434,
+          "display_value": "−434"
+        },
+        {
+          "name": "Educação",
+          "value": -411,
+          "display_value": "−411"
+        },
+        {
+          "name": "Serviços especializados para construção",
+          "value": -394,
+          "display_value": "−394"
         }
       ]
     },
