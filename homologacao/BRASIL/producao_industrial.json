@@ -3,22 +3,22 @@
   "section_id": "producao_industrial",
   "title": "Produção Industrial",
   "source": "PIM-PF + PIA / IBGE",
-  "reference": "2026-06-01",
-  "updated_at": "2026-08-26",
+  "reference": "2026-07-01",
+  "updated_at": "2026-09-03",
   "uf": "BRASIL",
   "cobertura_pimpf": true,
   "capa_kpi": {
     "label": "Produção industrial — acumulado em 12 meses",
-    "value": 0.7,
-    "display_value": "0,7%",
-    "reference": "2026-06-01"
+    "value": 0.6,
+    "display_value": "0,6%",
+    "reference": "2026-07-01"
   },
   "story": {
     "headline": "Produção industrial acumula {{kpis[var_12m].display_value}} em 12 meses.",
     "lede": "Produção física da indústria (PIM-PF/IBGE), em número-índice com base 100 = 2022, e composição do valor da transformação industrial pela Pesquisa Industrial Anual.",
     "highlights": [
       {
-        "tone": "pos",
+        "tone": "neg",
         "text": "No mês mais recente, a produção variou {{kpis[var_mes].display_value}} ante o mesmo mês do ano anterior."
       },
       {
@@ -31,7 +31,7 @@
       },
       {
         "tone": "pos",
-        "text": "Destaque em 12 meses: Fabricação de produtos farmoquímicos e farmacêuticos (9,3%)."
+        "text": "Destaque em 12 meses: Fabricação de produtos do fumo (8,9%)."
       }
     ]
   },
@@ -39,41 +39,41 @@
     {
       "id": "var_mes",
       "label": "Variação no mês (ante igual mês do ano anterior)",
-      "reference": "2026-06-01",
-      "value": 1.7,
-      "display_value": "1,7%",
+      "reference": "2026-07-01",
+      "value": -0.5,
+      "display_value": "-0,5%",
       "unit": ""
     },
     {
       "id": "var_ano",
       "label": "Variação acumulada no ano",
-      "reference": "2026-06-01",
-      "value": 1.5,
-      "display_value": "1,5%",
+      "reference": "2026-07-01",
+      "value": 1.1,
+      "display_value": "1,1%",
       "unit": ""
     },
     {
       "id": "var_12m",
       "label": "Variação acumulada em 12 meses",
-      "reference": "2026-06-01",
-      "value": 0.7,
-      "display_value": "0,7%",
+      "reference": "2026-07-01",
+      "value": 0.6,
+      "display_value": "0,6%",
       "unit": ""
     },
     {
       "id": "indice",
       "label": "Índice de produção física",
-      "reference": "2026-06-01",
-      "value": 105.55,
-      "display_value": "105,6",
+      "reference": "2026-07-01",
+      "value": 111.69,
+      "display_value": "111,7",
       "unit": "pontos (base 100 = 2022)"
     },
     {
       "id": "indice_brasil",
       "label": "Índice de produção física — Brasil",
-      "reference": "2026-06-01",
-      "value": 105.55,
-      "display_value": "105,6",
+      "reference": "2026-07-01",
+      "value": 111.69,
+      "display_value": "111,7",
       "unit": "pontos (base 100 = 2022)"
     }
   ],
@@ -89,10 +89,6 @@
           "id": "brasil",
           "label": "Brasil",
           "points": [
-            {
-              "t": "2021-06",
-              "v": 102.41
-            },
             {
               "t": "2021-07",
               "v": 107.53
@@ -311,15 +307,15 @@
             },
             {
               "t": "2026-01",
-              "v": 95.21
+              "v": 95.2
             },
             {
               "t": "2026-02",
-              "v": 92.81
+              "v": 92.8
             },
             {
               "t": "2026-03",
-              "v": 104.3
+              "v": 104.32
             },
             {
               "t": "2026-04",
@@ -327,11 +323,15 @@
             },
             {
               "t": "2026-05",
-              "v": 107.25
+              "v": 107.16
             },
             {
               "t": "2026-06",
-              "v": 105.55
+              "v": 105.58
+            },
+            {
+              "t": "2026-07",
+              "v": 111.69
             }
           ],
           "role": "muted"
@@ -345,57 +345,67 @@
       "title": "Atividades industriais — variação acumulada em 12 meses",
       "dimension_label": "Variação em 12 meses",
       "unit": "%",
-      "reference": "2026-06-01",
+      "reference": "2026-07-01",
       "items": [
         {
-          "name": "Fabricação de produtos farmoquímicos e farmacêuticos",
-          "value": 9.3,
-          "display_value": "9,3%"
+          "name": "Fabricação de produtos do fumo",
+          "value": 8.9,
+          "display_value": "8,9%"
         },
         {
-          "name": "Fabricação de produtos do fumo",
-          "value": 7.6,
-          "display_value": "7,6%"
+          "name": "Fabricação de produtos farmoquímicos e farmacêuticos",
+          "value": 7.1,
+          "display_value": "7,1%"
         },
         {
           "name": "Indústrias extrativas",
-          "value": 6.9,
-          "display_value": "6,9%"
+          "value": 6.5,
+          "display_value": "6,5%"
         },
         {
           "name": "Manutenção, reparação e instalação de máquinas e equipamentos",
-          "value": 4.4,
-          "display_value": "4,4%"
+          "value": 4.2,
+          "display_value": "4,2%"
         },
         {
           "name": "Fabricação de produtos diversos",
-          "value": 3.7,
-          "display_value": "3,7%"
+          "value": 3.3,
+          "display_value": "3,3%"
         },
         {
           "name": "Fabricação de produtos alimentícios",
-          "value": 2.4,
-          "display_value": "2,4%"
-        },
-        {
-          "name": "Fabricação de produtos de borracha e de material plástico",
-          "value": 1,
-          "display_value": "1,0%"
-        },
-        {
-          "name": "Fabricação de celulose, papel e produtos de papel",
-          "value": 0.2,
-          "display_value": "0,2%"
+          "value": 2,
+          "display_value": "2,0%"
         },
         {
           "name": "Fabricação de veículos automotores, reboques e carrocerias",
-          "value": 0.2,
-          "display_value": "0,2%"
+          "value": 0.8,
+          "display_value": "0,8%"
+        },
+        {
+          "name": "Fabricação de produtos de borracha e de material plástico",
+          "value": 0.7,
+          "display_value": "0,7%"
+        },
+        {
+          "name": "Fabricação de bebidas",
+          "value": 0,
+          "display_value": "0,0%"
+        },
+        {
+          "name": "Fabricação de celulose, papel e produtos de papel",
+          "value": 0,
+          "display_value": "0,0%"
+        },
+        {
+          "name": "Fabricação de produtos de minerais não metálicos",
+          "value": 0,
+          "display_value": "0,0%"
         },
         {
           "name": "Metalurgia",
-          "value": -0.3,
-          "display_value": "-0,3%"
+          "value": 0,
+          "display_value": "0,0%"
         },
         {
           "name": "Indústrias de transformação",
@@ -403,54 +413,44 @@
           "display_value": "-0,5%"
         },
         {
-          "name": "Fabricação de produtos têxteis",
-          "value": -0.6,
-          "display_value": "-0,6%"
-        },
-        {
-          "name": "Fabricação de produtos de minerais não metálicos",
-          "value": -0.6,
-          "display_value": "-0,6%"
-        },
-        {
           "name": "Fabricação de outros equipamentos de transporte, exceto veículos automotores",
-          "value": -0.6,
-          "display_value": "-0,6%"
+          "value": -0.5,
+          "display_value": "-0,5%"
         },
         {
-          "name": "Fabricação de bebidas",
+          "name": "Impressão e reprodução de gravações",
           "value": -1,
           "display_value": "-1,0%"
         },
         {
           "name": "Fabricação de coque, de produtos derivados do petróleo e de biocombustíveis",
-          "value": -2.1,
-          "display_value": "-2,1%"
+          "value": -1.4,
+          "display_value": "-1,4%"
         },
         {
-          "name": "Fabricação de produtos químicos",
-          "value": -2.1,
-          "display_value": "-2,1%"
+          "name": "Fabricação de produtos têxteis",
+          "value": -1.9,
+          "display_value": "-1,9%"
         },
         {
           "name": "Fabricação de máquinas, aparelhos e materiais elétricos",
-          "value": -2.3,
-          "display_value": "-2,3%"
+          "value": -2.2,
+          "display_value": "-2,2%"
         },
         {
-          "name": "Fabricação de móveis",
-          "value": -2.8,
-          "display_value": "-2,8%"
-        },
-        {
-          "name": "Fabricação de máquinas e equipamentos",
+          "name": "Fabricação de produtos químicos",
           "value": -3,
           "display_value": "-3,0%"
         },
         {
-          "name": "Confecção de artigos do vestuário e acessórios",
-          "value": -3.1,
-          "display_value": "-3,1%"
+          "name": "Fabricação de móveis",
+          "value": -3.2,
+          "display_value": "-3,2%"
+        },
+        {
+          "name": "Fabricação de máquinas e equipamentos",
+          "value": -4,
+          "display_value": "-4,0%"
         },
         {
           "name": "Preparação de couros e fabricação de artefatos de couro, artigos para viagem e calçados",
@@ -458,14 +458,14 @@
           "display_value": "-4,1%"
         },
         {
-          "name": "Impressão e reprodução de gravações",
+          "name": "Confecção de artigos do vestuário e acessórios",
           "value": -4.2,
           "display_value": "-4,2%"
         },
         {
           "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
-          "value": -4.8,
-          "display_value": "-4,8%"
+          "value": -4.2,
+          "display_value": "-4,2%"
         },
         {
           "name": "Fabricação de equipamentos de informática, produtos eletrônicos e ópticos",
@@ -474,8 +474,8 @@
         },
         {
           "name": "Fabricação de produtos de madeira",
-          "value": -6.7,
-          "display_value": "-6,7%"
+          "value": -6.6,
+          "display_value": "-6,6%"
         }
       ]
     }

@@ -3,8 +3,8 @@
   "section_id": "producao_industrial",
   "title": "Produção Industrial",
   "source": "PIM-PF + PIA / IBGE",
-  "reference": "2026-06-01",
-  "updated_at": "2026-08-26",
+  "reference": "2026-07-01",
+  "updated_at": "2026-09-03",
   "uf": "SC",
   "cobertura_pimpf": true,
   "capa_kpi": {
@@ -24,10 +24,6 @@
       {
         "tone": "neg",
         "text": "No acumulado do ano, {{kpis[var_ano].display_value}}."
-      },
-      {
-        "tone": "neutral",
-        "text": "Índice de produção física em {{kpis[indice].display_value}} pontos, ante {{kpis[indice_brasil].display_value}} do Brasil (base 100 = 2022)."
       },
       {
         "tone": "pos",
@@ -61,19 +57,11 @@
       "unit": ""
     },
     {
-      "id": "indice",
-      "label": "Índice de produção física",
-      "reference": "2026-06-01",
-      "value": 108.57,
-      "display_value": "108,6",
-      "unit": "pontos (base 100 = 2022)"
-    },
-    {
       "id": "indice_brasil",
       "label": "Índice de produção física — Brasil",
-      "reference": "2026-06-01",
-      "value": 105.55,
-      "display_value": "105,6",
+      "reference": "2026-07-01",
+      "value": 111.69,
+      "display_value": "111,7",
       "unit": "pontos (base 100 = 2022)"
     }
   ],
@@ -89,10 +77,6 @@
           "id": "uf",
           "label": "SC",
           "points": [
-            {
-              "t": "2021-06",
-              "v": 103.07
-            },
             {
               "t": "2021-07",
               "v": 105.97
@@ -332,6 +316,10 @@
             {
               "t": "2026-06",
               "v": 108.57
+            },
+            {
+              "t": "2026-07",
+              "v": null
             }
           ]
         },
@@ -339,10 +327,6 @@
           "id": "brasil",
           "label": "Brasil",
           "points": [
-            {
-              "t": "2021-06",
-              "v": 102.41
-            },
             {
               "t": "2021-07",
               "v": 107.53
@@ -561,15 +545,15 @@
             },
             {
               "t": "2026-01",
-              "v": 95.21
+              "v": 95.2
             },
             {
               "t": "2026-02",
-              "v": 92.81
+              "v": 92.8
             },
             {
               "t": "2026-03",
-              "v": 104.3
+              "v": 104.32
             },
             {
               "t": "2026-04",
@@ -577,11 +561,15 @@
             },
             {
               "t": "2026-05",
-              "v": 107.25
+              "v": 107.16
             },
             {
               "t": "2026-06",
-              "v": 105.55
+              "v": 105.58
+            },
+            {
+              "t": "2026-07",
+              "v": 111.69
             }
           ],
           "role": "muted"
