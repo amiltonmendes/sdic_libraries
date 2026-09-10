@@ -4,14 +4,14 @@
   "title": "Produção Industrial",
   "source": "PIM-PF + PIA / IBGE",
   "reference": "2026-07-01",
-  "updated_at": "2026-09-03",
+  "updated_at": "2026-09-10",
   "uf": "PA",
   "cobertura_pimpf": true,
   "capa_kpi": {
     "label": "Produção industrial — acumulado em 12 meses",
-    "value": -2.9,
-    "display_value": "-2,9%",
-    "reference": "2026-06-01"
+    "value": -3.3,
+    "display_value": "-3,3%",
+    "reference": "2026-07-01"
   },
   "story": {
     "headline": "Produção industrial acumula {{kpis[var_12m].display_value}} em 12 meses.",
@@ -26,8 +26,12 @@
         "text": "No acumulado do ano, {{kpis[var_ano].display_value}}."
       },
       {
+        "tone": "neutral",
+        "text": "Índice de produção física em {{kpis[indice].display_value}} pontos, ante {{kpis[indice_brasil].display_value}} do Brasil (base 100 = 2022)."
+      },
+      {
         "tone": "pos",
-        "text": "Destaque em 12 meses: Fabricação de celulose, papel e produtos de papel (13,0%)."
+        "text": "Destaque em 12 meses: Fabricação de celulose, papel e produtos de papel (15,1%)."
       }
     ]
   },
@@ -35,26 +39,34 @@
     {
       "id": "var_mes",
       "label": "Variação no mês (ante igual mês do ano anterior)",
-      "reference": "2026-06-01",
-      "value": -5.1,
-      "display_value": "-5,1%",
+      "reference": "2026-07-01",
+      "value": -8.9,
+      "display_value": "-8,9%",
       "unit": ""
     },
     {
       "id": "var_ano",
       "label": "Variação acumulada no ano",
-      "reference": "2026-06-01",
-      "value": -1.7,
-      "display_value": "-1,7%",
+      "reference": "2026-07-01",
+      "value": -2.8,
+      "display_value": "-2,8%",
       "unit": ""
     },
     {
       "id": "var_12m",
       "label": "Variação acumulada em 12 meses",
-      "reference": "2026-06-01",
-      "value": -2.9,
-      "display_value": "-2,9%",
+      "reference": "2026-07-01",
+      "value": -3.3,
+      "display_value": "-3,3%",
       "unit": ""
+    },
+    {
+      "id": "indice",
+      "label": "Índice de produção física",
+      "reference": "2026-07-01",
+      "value": 110.76,
+      "display_value": "110,8",
+      "unit": "pontos (base 100 = 2022)"
     },
     {
       "id": "indice_brasil",
@@ -303,7 +315,7 @@
             },
             {
               "t": "2026-03",
-              "v": 105.25
+              "v": 105.24
             },
             {
               "t": "2026-04",
@@ -311,15 +323,15 @@
             },
             {
               "t": "2026-05",
-              "v": 109.47
+              "v": 109.61
             },
             {
               "t": "2026-06",
-              "v": 112.94
+              "v": 113.08
             },
             {
               "t": "2026-07",
-              "v": null
+              "v": 110.76
             }
           ]
         },
@@ -583,47 +595,47 @@
       "title": "Atividades industriais — variação acumulada em 12 meses",
       "dimension_label": "Variação em 12 meses",
       "unit": "%",
-      "reference": "2026-06-01",
+      "reference": "2026-07-01",
       "items": [
         {
           "name": "Fabricação de celulose, papel e produtos de papel",
-          "value": 13,
-          "display_value": "13,0%"
+          "value": 15.1,
+          "display_value": "15,1%"
         },
         {
           "name": "Fabricação de produtos alimentícios",
-          "value": 4.1,
-          "display_value": "4,1%"
+          "value": 2.3,
+          "display_value": "2,3%"
         },
         {
           "name": "Metalurgia",
-          "value": 2.8,
-          "display_value": "2,8%"
+          "value": 2.3,
+          "display_value": "2,3%"
         },
         {
           "name": "Indústrias de transformação",
-          "value": 2.2,
-          "display_value": "2,2%"
-        },
-        {
-          "name": "Fabricação de produtos de madeira",
           "value": 1.5,
           "display_value": "1,5%"
         },
         {
-          "name": "Fabricação de bebidas",
-          "value": -0.1,
-          "display_value": "-0,1%"
+          "name": "Fabricação de produtos de minerais não metálicos",
+          "value": -0.3,
+          "display_value": "-0,3%"
+        },
+        {
+          "name": "Fabricação de produtos de madeira",
+          "value": -1.1,
+          "display_value": "-1,1%"
         },
         {
           "name": "Indústrias extrativas",
-          "value": -3.8,
-          "display_value": "-3,8%"
+          "value": -4.2,
+          "display_value": "-4,2%"
         },
         {
-          "name": "Fabricação de produtos de minerais não metálicos",
-          "value": -8.3,
-          "display_value": "-8,3%"
+          "name": "Fabricação de bebidas",
+          "value": -4.4,
+          "display_value": "-4,4%"
         }
       ]
     }
