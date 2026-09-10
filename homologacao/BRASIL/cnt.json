@@ -1,0 +1,1193 @@
+{
+  "schema_version": "1.1",
+  "section_id": "cnt",
+  "title": "Contas Nacionais Trimestrais",
+  "source": "Contas Nacionais Trimestrais / IBGE",
+  "reference": "2026-04-01",
+  "reference_code": "202602",
+  "updated_at": "2026-09-10",
+  "uf": "BRASIL",
+  "capa_kpi": {
+    "id": "capa_cnt",
+    "label": "PIB ante o trimestre anterior",
+    "value": 0.5,
+    "display_value": "0,5%",
+    "unit": "",
+    "period": "2026-04-01",
+    "delta": {
+      "dir": "up",
+      "label": "ante o trimestre anterior"
+    }
+  },
+  "story": {
+    "headline": "O PIB variou {{kpis[pib_t_t_1].display_value}} ante o trimestre anterior.",
+    "lede": "As Contas Nacionais Trimestrais acompanham o PIB e seus componentes pelas óticas da oferta, da demanda e do fechamento.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "Ante o mesmo trimestre do ano anterior, o PIB variou {{kpis[pib_t_t_4].display_value}}."
+      },
+      {
+        "tone": "pos",
+        "text": "Em quatro trimestres, o PIB acumula {{kpis[pib_4t_4t_4].display_value}}."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "pib_t_t_1",
+      "label": "PIB ante o trimestre anterior",
+      "reference": "2026-04-01",
+      "reference_code": "202602",
+      "value": 0.5,
+      "display_value": "0,5%",
+      "unit": ""
+    },
+    {
+      "id": "pib_t_t_4",
+      "label": "PIB ante o mesmo trimestre do ano anterior",
+      "reference": "2026-04-01",
+      "reference_code": "202602",
+      "value": 2,
+      "display_value": "2,0%",
+      "unit": ""
+    },
+    {
+      "id": "pib_4t_4t_4",
+      "label": "PIB acumulado em quatro trimestres",
+      "reference": "2026-04-01",
+      "reference_code": "202602",
+      "value": 1.9,
+      "display_value": "1,9%",
+      "unit": ""
+    },
+    {
+      "id": "pib_ytd",
+      "label": "PIB acumulado no ano",
+      "reference": "2026-04-01",
+      "reference_code": "202602",
+      "value": 1.9,
+      "display_value": "1,9%",
+      "unit": ""
+    }
+  ],
+  "charts": [
+    {
+      "id": "indice_volume_pib_ajustado",
+      "type": "line",
+      "title": "Índice de volume do PIB com ajuste sazonal",
+      "unit": "índice (média de 1995 = 100)",
+      "series": [
+        {
+          "id": "pib",
+          "label": "PIB",
+          "points": [
+            {
+              "t": "2016-04-01",
+              "v": 163.75
+            },
+            {
+              "t": "2016-07-01",
+              "v": 162.86
+            },
+            {
+              "t": "2016-10-01",
+              "v": 162.68
+            },
+            {
+              "t": "2017-01-01",
+              "v": 164.36
+            },
+            {
+              "t": "2017-04-01",
+              "v": 165.73
+            },
+            {
+              "t": "2017-07-01",
+              "v": 166.11
+            },
+            {
+              "t": "2017-10-01",
+              "v": 167.01
+            },
+            {
+              "t": "2018-01-01",
+              "v": 168.03
+            },
+            {
+              "t": "2018-04-01",
+              "v": 167.84
+            },
+            {
+              "t": "2018-07-01",
+              "v": 169.44
+            },
+            {
+              "t": "2018-10-01",
+              "v": 169.02
+            },
+            {
+              "t": "2019-01-01",
+              "v": 169.52
+            },
+            {
+              "t": "2019-04-01",
+              "v": 170.5
+            },
+            {
+              "t": "2019-07-01",
+              "v": 170.53
+            },
+            {
+              "t": "2019-10-01",
+              "v": 172.03
+            },
+            {
+              "t": "2020-01-01",
+              "v": 168.09
+            },
+            {
+              "t": "2020-04-01",
+              "v": 153.17
+            },
+            {
+              "t": "2020-07-01",
+              "v": 165.3
+            },
+            {
+              "t": "2020-10-01",
+              "v": 171.65
+            },
+            {
+              "t": "2021-01-01",
+              "v": 173.15
+            },
+            {
+              "t": "2021-04-01",
+              "v": 171.94
+            },
+            {
+              "t": "2021-07-01",
+              "v": 172.2
+            },
+            {
+              "t": "2021-10-01",
+              "v": 174.49
+            },
+            {
+              "t": "2022-01-01",
+              "v": 175.7
+            },
+            {
+              "t": "2022-04-01",
+              "v": 177.71
+            },
+            {
+              "t": "2022-07-01",
+              "v": 179.58
+            },
+            {
+              "t": "2022-10-01",
+              "v": 180.35
+            },
+            {
+              "t": "2023-01-01",
+              "v": 182.75
+            },
+            {
+              "t": "2023-04-01",
+              "v": 184.2
+            },
+            {
+              "t": "2023-07-01",
+              "v": 184.45
+            },
+            {
+              "t": "2023-10-01",
+              "v": 185.14
+            },
+            {
+              "t": "2024-01-01",
+              "v": 186.36
+            },
+            {
+              "t": "2024-04-01",
+              "v": 189.55
+            },
+            {
+              "t": "2024-07-01",
+              "v": 191.25
+            },
+            {
+              "t": "2024-10-01",
+              "v": 191.4
+            },
+            {
+              "t": "2025-01-01",
+              "v": 193.81
+            },
+            {
+              "t": "2025-04-01",
+              "v": 194.5
+            },
+            {
+              "t": "2025-07-01",
+              "v": 194.71
+            },
+            {
+              "t": "2025-10-01",
+              "v": 195.2
+            },
+            {
+              "t": "2026-01-01",
+              "v": 197.29
+            },
+            {
+              "t": "2026-04-01",
+              "v": 198.24
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "taxas_variacao_pib",
+      "type": "multi-line",
+      "title": "Taxas de variação do PIB",
+      "unit": "%",
+      "baseline": 0,
+      "series": [
+        {
+          "id": "pib_t_t_1",
+          "label": "PIB ante o trimestre anterior",
+          "points": [
+            {
+              "t": "2016-04-01",
+              "v": 0.3
+            },
+            {
+              "t": "2016-07-01",
+              "v": -0.5
+            },
+            {
+              "t": "2016-10-01",
+              "v": -0.1
+            },
+            {
+              "t": "2017-01-01",
+              "v": 1
+            },
+            {
+              "t": "2017-04-01",
+              "v": 0.8
+            },
+            {
+              "t": "2017-07-01",
+              "v": 0.2
+            },
+            {
+              "t": "2017-10-01",
+              "v": 0.5
+            },
+            {
+              "t": "2018-01-01",
+              "v": 0.6
+            },
+            {
+              "t": "2018-04-01",
+              "v": -0.1
+            },
+            {
+              "t": "2018-07-01",
+              "v": 1
+            },
+            {
+              "t": "2018-10-01",
+              "v": -0.3
+            },
+            {
+              "t": "2019-01-01",
+              "v": 0.3
+            },
+            {
+              "t": "2019-04-01",
+              "v": 0.6
+            },
+            {
+              "t": "2019-07-01",
+              "v": 0
+            },
+            {
+              "t": "2019-10-01",
+              "v": 0.9
+            },
+            {
+              "t": "2020-01-01",
+              "v": -2.3
+            },
+            {
+              "t": "2020-04-01",
+              "v": -8.9
+            },
+            {
+              "t": "2020-07-01",
+              "v": 7.9
+            },
+            {
+              "t": "2020-10-01",
+              "v": 3.8
+            },
+            {
+              "t": "2021-01-01",
+              "v": 0.9
+            },
+            {
+              "t": "2021-04-01",
+              "v": -0.7
+            },
+            {
+              "t": "2021-07-01",
+              "v": 0.1
+            },
+            {
+              "t": "2021-10-01",
+              "v": 1.3
+            },
+            {
+              "t": "2022-01-01",
+              "v": 0.7
+            },
+            {
+              "t": "2022-04-01",
+              "v": 1.1
+            },
+            {
+              "t": "2022-07-01",
+              "v": 1.1
+            },
+            {
+              "t": "2022-10-01",
+              "v": 0.4
+            },
+            {
+              "t": "2023-01-01",
+              "v": 1.3
+            },
+            {
+              "t": "2023-04-01",
+              "v": 0.8
+            },
+            {
+              "t": "2023-07-01",
+              "v": 0.1
+            },
+            {
+              "t": "2023-10-01",
+              "v": 0.4
+            },
+            {
+              "t": "2024-01-01",
+              "v": 0.7
+            },
+            {
+              "t": "2024-04-01",
+              "v": 1.7
+            },
+            {
+              "t": "2024-07-01",
+              "v": 0.9
+            },
+            {
+              "t": "2024-10-01",
+              "v": 0.1
+            },
+            {
+              "t": "2025-01-01",
+              "v": 1.3
+            },
+            {
+              "t": "2025-04-01",
+              "v": 0.4
+            },
+            {
+              "t": "2025-07-01",
+              "v": 0.1
+            },
+            {
+              "t": "2025-10-01",
+              "v": 0.2
+            },
+            {
+              "t": "2026-01-01",
+              "v": 1.1
+            },
+            {
+              "t": "2026-04-01",
+              "v": 0.5
+            }
+          ]
+        },
+        {
+          "id": "pib_t_t_4",
+          "label": "PIB ante o mesmo trimestre do ano anterior",
+          "points": [
+            {
+              "t": "2016-04-01",
+              "v": -3.2
+            },
+            {
+              "t": "2016-07-01",
+              "v": -2.5
+            },
+            {
+              "t": "2016-10-01",
+              "v": -2.3
+            },
+            {
+              "t": "2017-01-01",
+              "v": 0.3
+            },
+            {
+              "t": "2017-04-01",
+              "v": 0.8
+            },
+            {
+              "t": "2017-07-01",
+              "v": 1.6
+            },
+            {
+              "t": "2017-10-01",
+              "v": 2.6
+            },
+            {
+              "t": "2018-01-01",
+              "v": 1.9
+            },
+            {
+              "t": "2018-04-01",
+              "v": 1.6
+            },
+            {
+              "t": "2018-07-01",
+              "v": 2.1
+            },
+            {
+              "t": "2018-10-01",
+              "v": 1.6
+            },
+            {
+              "t": "2019-01-01",
+              "v": 0.9
+            },
+            {
+              "t": "2019-04-01",
+              "v": 1.2
+            },
+            {
+              "t": "2019-07-01",
+              "v": 1.1
+            },
+            {
+              "t": "2019-10-01",
+              "v": 1.7
+            },
+            {
+              "t": "2020-01-01",
+              "v": 0.4
+            },
+            {
+              "t": "2020-04-01",
+              "v": -10.1
+            },
+            {
+              "t": "2020-07-01",
+              "v": -3
+            },
+            {
+              "t": "2020-10-01",
+              "v": -0.3
+            },
+            {
+              "t": "2021-01-01",
+              "v": 1.7
+            },
+            {
+              "t": "2021-04-01",
+              "v": 12.4
+            },
+            {
+              "t": "2021-07-01",
+              "v": 4.2
+            },
+            {
+              "t": "2021-10-01",
+              "v": 1.5
+            },
+            {
+              "t": "2022-01-01",
+              "v": 1.5
+            },
+            {
+              "t": "2022-04-01",
+              "v": 3.5
+            },
+            {
+              "t": "2022-07-01",
+              "v": 4.3
+            },
+            {
+              "t": "2022-10-01",
+              "v": 2.7
+            },
+            {
+              "t": "2023-01-01",
+              "v": 4.4
+            },
+            {
+              "t": "2023-04-01",
+              "v": 3.9
+            },
+            {
+              "t": "2023-07-01",
+              "v": 2.4
+            },
+            {
+              "t": "2023-10-01",
+              "v": 2.4
+            },
+            {
+              "t": "2024-01-01",
+              "v": 2.5
+            },
+            {
+              "t": "2024-04-01",
+              "v": 3.5
+            },
+            {
+              "t": "2024-07-01",
+              "v": 4.1
+            },
+            {
+              "t": "2024-10-01",
+              "v": 3.6
+            },
+            {
+              "t": "2025-01-01",
+              "v": 3.1
+            },
+            {
+              "t": "2025-04-01",
+              "v": 2.4
+            },
+            {
+              "t": "2025-07-01",
+              "v": 1.8
+            },
+            {
+              "t": "2025-10-01",
+              "v": 1.8
+            },
+            {
+              "t": "2026-01-01",
+              "v": 1.8
+            },
+            {
+              "t": "2026-04-01",
+              "v": 2
+            }
+          ]
+        },
+        {
+          "id": "pib_4t_4t_4",
+          "label": "PIB acumulado em quatro trimestres",
+          "points": [
+            {
+              "t": "2016-04-01",
+              "v": -4.5
+            },
+            {
+              "t": "2016-07-01",
+              "v": -4.1
+            },
+            {
+              "t": "2016-10-01",
+              "v": -3.3
+            },
+            {
+              "t": "2017-01-01",
+              "v": -1.9
+            },
+            {
+              "t": "2017-04-01",
+              "v": -0.9
+            },
+            {
+              "t": "2017-07-01",
+              "v": 0.1
+            },
+            {
+              "t": "2017-10-01",
+              "v": 1.3
+            },
+            {
+              "t": "2018-01-01",
+              "v": 1.7
+            },
+            {
+              "t": "2018-04-01",
+              "v": 1.9
+            },
+            {
+              "t": "2018-07-01",
+              "v": 2
+            },
+            {
+              "t": "2018-10-01",
+              "v": 1.8
+            },
+            {
+              "t": "2019-01-01",
+              "v": 1.5
+            },
+            {
+              "t": "2019-04-01",
+              "v": 1.4
+            },
+            {
+              "t": "2019-07-01",
+              "v": 1.2
+            },
+            {
+              "t": "2019-10-01",
+              "v": 1.2
+            },
+            {
+              "t": "2020-01-01",
+              "v": 1.1
+            },
+            {
+              "t": "2020-04-01",
+              "v": -1.7
+            },
+            {
+              "t": "2020-07-01",
+              "v": -2.8
+            },
+            {
+              "t": "2020-10-01",
+              "v": -3.3
+            },
+            {
+              "t": "2021-01-01",
+              "v": -2.9
+            },
+            {
+              "t": "2021-04-01",
+              "v": 2.4
+            },
+            {
+              "t": "2021-07-01",
+              "v": 4.3
+            },
+            {
+              "t": "2021-10-01",
+              "v": 4.8
+            },
+            {
+              "t": "2022-01-01",
+              "v": 4.7
+            },
+            {
+              "t": "2022-04-01",
+              "v": 2.7
+            },
+            {
+              "t": "2022-07-01",
+              "v": 2.7
+            },
+            {
+              "t": "2022-10-01",
+              "v": 3
+            },
+            {
+              "t": "2023-01-01",
+              "v": 3.8
+            },
+            {
+              "t": "2023-04-01",
+              "v": 3.8
+            },
+            {
+              "t": "2023-07-01",
+              "v": 3.3
+            },
+            {
+              "t": "2023-10-01",
+              "v": 3.2
+            },
+            {
+              "t": "2024-01-01",
+              "v": 2.8
+            },
+            {
+              "t": "2024-04-01",
+              "v": 2.7
+            },
+            {
+              "t": "2024-07-01",
+              "v": 3.1
+            },
+            {
+              "t": "2024-10-01",
+              "v": 3.4
+            },
+            {
+              "t": "2025-01-01",
+              "v": 3.6
+            },
+            {
+              "t": "2025-04-01",
+              "v": 3.3
+            },
+            {
+              "t": "2025-07-01",
+              "v": 2.7
+            },
+            {
+              "t": "2025-10-01",
+              "v": 2.3
+            },
+            {
+              "t": "2026-01-01",
+              "v": 2
+            },
+            {
+              "t": "2026-04-01",
+              "v": 1.9
+            }
+          ]
+        },
+        {
+          "id": "pib_ytd",
+          "label": "PIB acumulado no ano",
+          "points": [
+            {
+              "t": "2016-04-01",
+              "v": -4.2
+            },
+            {
+              "t": "2016-07-01",
+              "v": -3.6
+            },
+            {
+              "t": "2016-10-01",
+              "v": -3.3
+            },
+            {
+              "t": "2017-01-01",
+              "v": 0.3
+            },
+            {
+              "t": "2017-04-01",
+              "v": 0.5
+            },
+            {
+              "t": "2017-07-01",
+              "v": 0.9
+            },
+            {
+              "t": "2017-10-01",
+              "v": 1.3
+            },
+            {
+              "t": "2018-01-01",
+              "v": 1.9
+            },
+            {
+              "t": "2018-04-01",
+              "v": 1.8
+            },
+            {
+              "t": "2018-07-01",
+              "v": 1.9
+            },
+            {
+              "t": "2018-10-01",
+              "v": 1.8
+            },
+            {
+              "t": "2019-01-01",
+              "v": 0.9
+            },
+            {
+              "t": "2019-04-01",
+              "v": 1
+            },
+            {
+              "t": "2019-07-01",
+              "v": 1.1
+            },
+            {
+              "t": "2019-10-01",
+              "v": 1.2
+            },
+            {
+              "t": "2020-01-01",
+              "v": 0.4
+            },
+            {
+              "t": "2020-04-01",
+              "v": -4.9
+            },
+            {
+              "t": "2020-07-01",
+              "v": -4.3
+            },
+            {
+              "t": "2020-10-01",
+              "v": -3.3
+            },
+            {
+              "t": "2021-01-01",
+              "v": 1.7
+            },
+            {
+              "t": "2021-04-01",
+              "v": 6.8
+            },
+            {
+              "t": "2021-07-01",
+              "v": 5.9
+            },
+            {
+              "t": "2021-10-01",
+              "v": 4.8
+            },
+            {
+              "t": "2022-01-01",
+              "v": 1.5
+            },
+            {
+              "t": "2022-04-01",
+              "v": 2.5
+            },
+            {
+              "t": "2022-07-01",
+              "v": 3.1
+            },
+            {
+              "t": "2022-10-01",
+              "v": 3
+            },
+            {
+              "t": "2023-01-01",
+              "v": 4.4
+            },
+            {
+              "t": "2023-04-01",
+              "v": 4.1
+            },
+            {
+              "t": "2023-07-01",
+              "v": 3.5
+            },
+            {
+              "t": "2023-10-01",
+              "v": 3.2
+            },
+            {
+              "t": "2024-01-01",
+              "v": 2.5
+            },
+            {
+              "t": "2024-04-01",
+              "v": 3
+            },
+            {
+              "t": "2024-07-01",
+              "v": 3.4
+            },
+            {
+              "t": "2024-10-01",
+              "v": 3.4
+            },
+            {
+              "t": "2025-01-01",
+              "v": 3.1
+            },
+            {
+              "t": "2025-04-01",
+              "v": 2.7
+            },
+            {
+              "t": "2025-07-01",
+              "v": 2.4
+            },
+            {
+              "t": "2025-10-01",
+              "v": 2.3
+            },
+            {
+              "t": "2026-01-01",
+              "v": 1.8
+            },
+            {
+              "t": "2026-04-01",
+              "v": 1.9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "maiores_altas_componentes",
+      "title": "Maiores altas entre os componentes do PIB",
+      "dimension_label": "Variação interanual",
+      "unit": "%",
+      "reference": "2026-04-01",
+      "items": [
+        {
+          "code": "90692",
+          "name": "Indústrias extrativas",
+          "value": 12,
+          "display_value": "12,0%"
+        },
+        {
+          "code": "90699",
+          "name": "Informação e comunicação",
+          "value": 8.4,
+          "display_value": "8,4%"
+        },
+        {
+          "code": "90687",
+          "name": "Agropecuária - total",
+          "value": 6.8,
+          "display_value": "6,8%"
+        },
+        {
+          "code": "93408",
+          "name": "Importação de bens e serviços (-)",
+          "value": 5.5,
+          "display_value": "5,5%"
+        },
+        {
+          "code": "93407",
+          "name": "Exportação de bens e serviços",
+          "value": 3.8,
+          "display_value": "3,8%"
+        },
+        {
+          "code": "93405",
+          "name": "Despesa de consumo da administração pública",
+          "value": 3.1,
+          "display_value": "3,1%"
+        },
+        {
+          "code": "90702",
+          "name": "Atividades imobiliárias",
+          "value": 2.2,
+          "display_value": "2,2%"
+        },
+        {
+          "code": "90691",
+          "name": "Indústria - total",
+          "value": 1.5,
+          "display_value": "1,5%"
+        }
+      ]
+    },
+    {
+      "id": "menores_variacoes_componentes",
+      "title": "Menores variações entre os componentes do PIB",
+      "dimension_label": "Variação interanual",
+      "unit": "%",
+      "reference": "2026-04-01",
+      "items": [
+        {
+          "code": "90693",
+          "name": "Indústrias de transformação",
+          "value": -0.9,
+          "display_value": "-0,9%"
+        },
+        {
+          "code": "90695",
+          "name": "Eletricidade e gás, água, esgoto, atividades de gestão de resíduos",
+          "value": -0.5,
+          "display_value": "-0,5%"
+        },
+        {
+          "code": "93404",
+          "name": "Despesa de consumo das famílias",
+          "value": 0.5,
+          "display_value": "0,5%"
+        },
+        {
+          "code": "90697",
+          "name": "Comércio",
+          "value": 0.9,
+          "display_value": "0,9%"
+        },
+        {
+          "code": "90703",
+          "name": "Administração, saúde e educação públicas e seguridade social",
+          "value": 0.9,
+          "display_value": "0,9%"
+        },
+        {
+          "code": "90694",
+          "name": "Construção",
+          "value": 1,
+          "display_value": "1,0%"
+        },
+        {
+          "code": "90700",
+          "name": "Atividades financeiras, de seguros e serviços relacionados",
+          "value": 1,
+          "display_value": "1,0%"
+        },
+        {
+          "code": "90701",
+          "name": "Outras atividades de serviços",
+          "value": 1.1,
+          "display_value": "1,1%"
+        }
+      ]
+    }
+  ],
+  "breakdowns": [
+    {
+      "id": "componentes_oferta",
+      "title": "Componentes do PIB pela ótica da oferta",
+      "dimension_label": "Variação ante o mesmo trimestre do ano anterior",
+      "unit": "%",
+      "reference": "2026-04-01",
+      "items": [
+        {
+          "code": "90692",
+          "name": "Indústrias extrativas",
+          "value": 12,
+          "display_value": "12,0%"
+        },
+        {
+          "code": "90699",
+          "name": "Informação e comunicação",
+          "value": 8.4,
+          "display_value": "8,4%"
+        },
+        {
+          "code": "90687",
+          "name": "Agropecuária - total",
+          "value": 6.8,
+          "display_value": "6,8%"
+        },
+        {
+          "code": "90702",
+          "name": "Atividades imobiliárias",
+          "value": 2.2,
+          "display_value": "2,2%"
+        },
+        {
+          "code": "90691",
+          "name": "Indústria - total",
+          "value": 1.5,
+          "display_value": "1,5%"
+        },
+        {
+          "code": "90696",
+          "name": "Serviços - total",
+          "value": 1.5,
+          "display_value": "1,5%"
+        },
+        {
+          "code": "90698",
+          "name": "Transporte, armazenagem e correio",
+          "value": 1.2,
+          "display_value": "1,2%"
+        },
+        {
+          "code": "90701",
+          "name": "Outras atividades de serviços",
+          "value": 1.1,
+          "display_value": "1,1%"
+        },
+        {
+          "code": "90694",
+          "name": "Construção",
+          "value": 1,
+          "display_value": "1,0%"
+        },
+        {
+          "code": "90700",
+          "name": "Atividades financeiras, de seguros e serviços relacionados",
+          "value": 1,
+          "display_value": "1,0%"
+        },
+        {
+          "code": "90697",
+          "name": "Comércio",
+          "value": 0.9,
+          "display_value": "0,9%"
+        },
+        {
+          "code": "90703",
+          "name": "Administração, saúde e educação públicas e seguridade social",
+          "value": 0.9,
+          "display_value": "0,9%"
+        },
+        {
+          "code": "90695",
+          "name": "Eletricidade e gás, água, esgoto, atividades de gestão de resíduos",
+          "value": -0.5,
+          "display_value": "-0,5%"
+        },
+        {
+          "code": "90693",
+          "name": "Indústrias de transformação",
+          "value": -0.9,
+          "display_value": "-0,9%"
+        }
+      ]
+    },
+    {
+      "id": "componentes_demanda",
+      "title": "Componentes do PIB pela ótica da demanda",
+      "dimension_label": "Variação ante o mesmo trimestre do ano anterior",
+      "unit": "%",
+      "reference": "2026-04-01",
+      "items": [
+        {
+          "code": "93408",
+          "name": "Importação de bens e serviços (-)",
+          "value": 5.5,
+          "display_value": "5,5%"
+        },
+        {
+          "code": "93407",
+          "name": "Exportação de bens e serviços",
+          "value": 3.8,
+          "display_value": "3,8%"
+        },
+        {
+          "code": "93405",
+          "name": "Despesa de consumo da administração pública",
+          "value": 3.1,
+          "display_value": "3,1%"
+        },
+        {
+          "code": "93406",
+          "name": "Formação bruta de capital fixo",
+          "value": 1.4,
+          "display_value": "1,4%"
+        },
+        {
+          "code": "93404",
+          "name": "Despesa de consumo das famílias",
+          "value": 0.5,
+          "display_value": "0,5%"
+        }
+      ]
+    }
+  ]
+}
