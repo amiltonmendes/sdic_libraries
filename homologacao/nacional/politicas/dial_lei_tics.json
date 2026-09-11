@@ -4,9 +4,9 @@
   "nome": "Lei de Informática (Lei de TICs)",
   "sigla": "Lei de TICs",
   "categoria": "Incentivo fiscal — indústria de tecnologia da informação e comunicação",
-  "source": "SDIC/DIAL — DIAL_-_anexo.xlsx (Missão 4)",
+  "source": "SDIC/DIAL — DIAL - anexo.xlsx (Missão 4 - Lei de TICs)",
   "reference": "2020-2025 (trimestral)",
-  "updated_at": "2026-08-10",
+  "updated_at": "2026-09-09",
   "capa_kpi": {
     "id": "capa",
     "label": "Crédito financeiro concedido",
@@ -22,7 +22,7 @@
   "story": {
     "escopo": "nacional",
     "headline": "Lei de TICs já concedeu {{kpis[credito].display_value}} em crédito financeiro e viabilizou {{kpis[investimento].display_value}} em investimentos de P&D&I, com 8.468 certificados emitidos desde 2020.",
-    "lede": "Incentivo fiscal para empresas de bens e serviços de tecnologia da informação e comunicação, condicionado a investimentos em pesquisa, desenvolvimento e inovação (P&D&I). Série trimestral, sem granularidade estadual na fonte.",
+    "lede": "Incentivo fiscal para empresas de bens e serviços de tecnologia da informação e comunicação, condicionado a investimentos em pesquisa, desenvolvimento e inovação.",
     "highlights": [
       {
         "tone": "pos",
@@ -197,9 +197,14 @@
       "annotations": []
     }
   ],
-  "_nota_uf": "Série é nacional, sem recorte por UF na fonte.",
+  "data_quality": {
+    "source_rows": 28,
+    "exact_duplicate_occurrences": 0,
+    "duplicate_periods": 0
+  },
+  "_nota_uf": "Série nacional, sem recorte por UF na fonte.",
   "competencia": "2026S2",
-  "data_aceitacao": "2026-08-10",
+  "data_aceitacao": "2026-09-09",
   "geo": {
     "nivel": "nacional",
     "fallback": false

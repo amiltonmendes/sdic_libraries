@@ -1,20 +1,20 @@
 {
   "schema_version": "1.2",
-  "n_politicas": 11,
+  "n_politicas": 12,
   "recursos": {
-    "value": 26196964242.920002,
-    "display_value": "R$ 26,20 bi"
+    "value": 28426917172.690002,
+    "display_value": "R$ 28,43 bi"
   },
   "atendimentos": {
-    "value": 4220,
-    "display_value": "4.220"
+    "value": 4731,
+    "display_value": "4.731"
   },
   "top_politicas": [
     {
       "id": "p_mais_p",
       "sigla": "P+P",
       "nome": "Plano Mais Produção",
-      "display_value": "R$ 25,64 bi"
+      "display_value": "R$ 27,87 bi"
     },
     {
       "id": "reiq",
@@ -42,19 +42,19 @@
     "metrica": "recursos",
     "posicao": 7,
     "de": 27,
-    "share": 4.12,
+    "share": 4.01,
     "display": "7º de 27 UFs em recursos mobilizados"
   },
   "story": {
     "escopo": "uf",
     "uf": "BA",
     "regra": "com_recursos",
-    "headline": "Bahia soma R$ 26,20 bi em 11 políticas da SDIC com dado próprio do estado.",
-    "lede": "Bahia é a 7ª do país em recursos mobilizados, com 4,1% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 25,64 bi), REIQ (R$ 289,8 mi) e DA (R$ 262,9 mi). As políticas não monetárias somam 4.220 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "headline": "Bahia soma R$ 28,43 bi em 12 políticas da SDIC com dado próprio do estado.",
+    "lede": "Bahia é a 7ª do país em recursos mobilizados, com 4,0% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 27,87 bi), REIQ (R$ 289,8 mi) e DA (R$ 262,9 mi). As políticas não monetárias somam 4.731 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
     "highlights": [
       {
         "tone": "pos",
-        "text": "7ª posição nacional em recursos mobilizados (4,1% do total das UFs)."
+        "text": "7ª posição nacional em recursos mobilizados (4,0% do total das UFs)."
       }
     ]
   }

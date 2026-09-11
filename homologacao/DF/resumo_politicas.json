@@ -1,20 +1,20 @@
 {
   "schema_version": "1.2",
-  "n_politicas": 5,
+  "n_politicas": 6,
   "recursos": {
-    "value": 4091907680.19,
-    "display_value": "R$ 4,09 bi"
+    "value": 4722871376.509999,
+    "display_value": "R$ 4,72 bi"
   },
   "atendimentos": {
-    "value": 3925,
-    "display_value": "3.925"
+    "value": 4340,
+    "display_value": "4.340"
   },
   "top_politicas": [
     {
       "id": "p_mais_p",
       "sigla": "P+P",
       "nome": "Plano Mais Produção",
-      "display_value": "R$ 4,03 bi"
+      "display_value": "R$ 4,66 bi"
     },
     {
       "id": "depreciacao_acelerada",
@@ -28,21 +28,21 @@
   "nome_uf": "Distrito Federal",
   "ranking_nacional": {
     "metrica": "recursos",
-    "posicao": 23,
+    "posicao": 24,
     "de": 27,
-    "share": 0.64,
-    "display": "23º de 27 UFs em recursos mobilizados"
+    "share": 0.67,
+    "display": "24º de 27 UFs em recursos mobilizados"
   },
   "story": {
     "escopo": "uf",
     "uf": "DF",
     "regra": "com_recursos",
-    "headline": "Distrito Federal soma R$ 4,09 bi em 5 políticas da SDIC com dado próprio do estado.",
-    "lede": "Distrito Federal é o 23º do país em recursos mobilizados, com 0,6% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 4,03 bi) e DA (R$ 60,0 mi). As políticas não monetárias somam 3.925 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "headline": "Distrito Federal soma R$ 4,72 bi em 6 políticas da SDIC com dado próprio do estado.",
+    "lede": "Distrito Federal é o 24º do país em recursos mobilizados, com 0,7% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 4,66 bi) e DA (R$ 60,0 mi). As políticas não monetárias somam 4.340 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "23ª posição nacional em recursos mobilizados (0,6% do total das UFs)."
+        "text": "24ª posição nacional em recursos mobilizados (0,7% do total das UFs)."
       }
     ]
   }

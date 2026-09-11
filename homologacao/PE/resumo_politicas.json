@@ -1,20 +1,20 @@
 {
   "schema_version": "1.2",
-  "n_politicas": 8,
+  "n_politicas": 9,
   "recursos": {
-    "value": 13243881731.599998,
-    "display_value": "R$ 13,24 bi"
+    "value": 15100811436.019999,
+    "display_value": "R$ 15,10 bi"
   },
   "atendimentos": {
-    "value": 6298,
-    "display_value": "6.298"
+    "value": 6774,
+    "display_value": "6.774"
   },
   "top_politicas": [
     {
       "id": "p_mais_p",
       "sigla": "P+P",
       "nome": "Plano Mais Produção",
-      "display_value": "R$ 13,11 bi"
+      "display_value": "R$ 14,97 bi"
     },
     {
       "id": "reiq",
@@ -36,15 +36,15 @@
     "metrica": "recursos",
     "posicao": 11,
     "de": 27,
-    "share": 2.08,
+    "share": 2.13,
     "display": "11º de 27 UFs em recursos mobilizados"
   },
   "story": {
     "escopo": "uf",
     "uf": "PE",
     "regra": "com_recursos",
-    "headline": "Pernambuco soma R$ 13,24 bi em 8 políticas da SDIC com dado próprio do estado.",
-    "lede": "Pernambuco é o 11º do país em recursos mobilizados, com 2,1% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 13,11 bi), REIQ (R$ 99,4 mi) e DA (R$ 31,8 mi). As políticas não monetárias somam 6.298 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "headline": "Pernambuco soma R$ 15,10 bi em 9 políticas da SDIC com dado próprio do estado.",
+    "lede": "Pernambuco é o 11º do país em recursos mobilizados, com 2,1% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 14,97 bi), REIQ (R$ 99,4 mi) e DA (R$ 31,8 mi). As políticas não monetárias somam 6.774 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
     "highlights": [
       {
         "tone": "neutral",

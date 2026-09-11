@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "construa_brasil_bim_na_pratica",
+  "nome": "Construção 4.0 — BIM na Prática",
+  "sigla": "BIM na Prática",
+  "categoria": "Consultoria para PMEs — transformação digital da construção civil",
+  "source": "SDIC/DIBEN/CGDC, em parceria com ABDI",
+  "reference": "2026-07 (início da seleção)",
+  "updated_at": "2026-07-07",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Empresas no projeto-piloto",
+    "display_value": "~60 empresas",
+    "unit": "",
+    "period": "piloto 2026",
+    "delta": {
+      "dir": "up",
+      "label": "R$ 1,9 mi investidos"
+    },
+    "value": null
+  },
+  "story": {
+    "escopo": "nacional",
+    "headline": "Projeto-piloto BIM na Prática vai atender cerca de 60 pequenas e médias empresas da construção civil em 8 estados.",
+    "lede": "Com investimento de R$ 1,9 milhão e execução pelo SENAI, o programa BIM na Prática oferecerá consultoria especializada e gratuita para adoção da metodologia BIM em PMEs e pretende atender 60 empresas no projeto-piloto.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "Programa em fase de seleção — ainda não há empresas efetivamente atendidas, apenas a meta do piloto."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "meta_empresas",
+      "label": "Meta de empresas no piloto",
+      "value": 60,
+      "display_value": "~60",
+      "unit": "empresas",
+      "period": "piloto 2026"
+    },
+    {
+      "id": "valor",
+      "label": "Investimento no piloto",
+      "value": 1900000,
+      "display_value": "R$ 1,9 mi",
+      "unit": "",
+      "period": "2026"
+    }
+  ],
+  "ranked_lists": [],
+  "charts": [],
+  "breakdowns": [],
+  "_nota_estagio_inicial": "Programa ainda em seleção (jul/2026) — sem dados de execução, só metas.",
+  "_nota_agregacao": "Até 2026-09-11, o investimento deste piloto entrava somado no total do Construa Brasil (construa_brasil.json); agora tem card próprio e não é mais contado lá, para não repetir o mesmo valor duas vezes.",
+  "_nota_definicao_bim": "BIM (Building Information Modelling) ou Modelagem da Informação da Construção é o conjunto integrado de processos e tecnologias que permite criar, utilizar, atualizar e compartilhar, colaborativamente, modelos digitais de uma construção, de forma a servir potencialmente a todos os participantes do empreendimento durante o ciclo de vida da construção (Estratégia BIM BR — Decreto nº 11.888, de 22/01/2024). O uso do BIM possibilita \"construir virtualmente\" e realizar diversos tipos de análises e simulações, antecipando eventuais problemas que não eram possíveis de serem identificados no método tradicional de elaboração de projetos. Definição conforme Plano de Trabalho da Estratégia BIM BR.",
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-09-11",
+  "geo": {
+    "nivel": "nacional",
+    "fallback": false
+  }
+}

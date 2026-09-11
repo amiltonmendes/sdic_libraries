@@ -1,0 +1,598 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "dial_pdil",
+  "nome": "Programa de Desenvolvimento e Inovação Local",
+  "sigla": "PDIL",
+  "categoria": "Complexo econômico-industrial da saúde",
+  "source": "SDIC/DIAL — DIAL - anexo.xlsx (PDIL)",
+  "reference": "projetos aprovados em 2025-2026",
+  "updated_at": "2026-09-09",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Projetos aprovados",
+    "display_value": "54 projetos",
+    "unit": "",
+    "period": "2025-2026",
+    "delta": {
+      "dir": "up",
+      "label": "23 proponentes"
+    },
+    "value": null
+  },
+  "story": {
+    "escopo": "nacional",
+    "headline": "O PDIL reúne {{kpis[projetos].display_value}} projetos aprovados, apresentados por 23 proponentes.",
+    "lede": "Projetos de desenvolvimento e inovação para ampliar capacidades produtivas e tecnológicas do Complexo Econômico-Industrial da Saúde.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "Todos os 54 projetos da aba constam como aprovados."
+      },
+      {
+        "tone": "neutral",
+        "text": "Instituto de Biologia Molecular do Paraná - IBMP apresenta 10 projetos."
+      },
+      {
+        "tone": "neutral",
+        "text": "As aprovações constam em 5 portarias."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "projetos",
+      "label": "Projetos aprovados",
+      "value": 54,
+      "display_value": "54",
+      "unit": "projetos",
+      "period": "2025-2026"
+    },
+    {
+      "id": "proponentes",
+      "label": "Proponentes distintos",
+      "value": 23,
+      "display_value": "23",
+      "unit": "proponentes",
+      "period": "2025-2026"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "por_proponente",
+      "title": "Projetos por proponente",
+      "metric_label": "Projetos",
+      "unit": "projetos",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "Instituto de Biologia Molecular do Paraná - IBMP",
+          "value": 10,
+          "display_value": "10 projetos"
+        },
+        {
+          "name": "Núcleo de Tecnologias Estratégicas em Saúde - NUTES/UEPB",
+          "value": 8,
+          "display_value": "8 projetos"
+        },
+        {
+          "name": "Centro de Tecnologia de Vacinas - CTVacinas/UFMG",
+          "value": 5,
+          "display_value": "5 projetos"
+        },
+        {
+          "name": "Instituto Butantan",
+          "value": 4,
+          "display_value": "4 projetos"
+        },
+        {
+          "name": "SENAI CIMATEC",
+          "value": 3,
+          "display_value": "3 projetos"
+        },
+        {
+          "name": "Fiocruz (presidencia ou vice)",
+          "value": 3,
+          "display_value": "3 projetos"
+        },
+        {
+          "name": "CNPEM",
+          "value": 2,
+          "display_value": "2 projetos"
+        },
+        {
+          "name": "Centro de Estudos de Venenos e Animais Peçonhentos - CEVASP/UNESP",
+          "value": 2,
+          "display_value": "2 projetos"
+        },
+        {
+          "name": "INCT TEC CIS 4.0 - iCEIS/UFPE",
+          "value": 2,
+          "display_value": "2 projetos"
+        },
+        {
+          "name": "Hospital das Clínicas da Faculdade de Medicina da Universidade de São Paulo - FMUSP",
+          "value": 2,
+          "display_value": "2 projetos"
+        },
+        {
+          "name": "Bio-Manguinhos/Fiocruz",
+          "value": 1,
+          "display_value": "1 projetos"
+        },
+        {
+          "name": "Bahiafarma",
+          "value": 1,
+          "display_value": "1 projetos"
+        },
+        {
+          "name": "Instituto de Pesquisas Tecnológicas",
+          "value": 1,
+          "display_value": "1 projetos"
+        },
+        {
+          "name": "BAHIAFARMA",
+          "value": 1,
+          "display_value": "1 projetos"
+        },
+        {
+          "name": "Fiocruz - Ribeirão Preto-SP",
+          "value": 1,
+          "display_value": "1 projetos"
+        },
+        {
+          "name": "Instituto de Pesquisas Energéticas e Nucleares/Comissão Nacional de Energia Nuclear - IPEN/CNEN",
+          "value": 1,
+          "display_value": "1 projetos"
+        },
+        {
+          "name": "Farmanguinhos/Fiocruz",
+          "value": 1,
+          "display_value": "1 projetos"
+        },
+        {
+          "name": "UNIVERSIDADE FEDERAL DE CAMPINA GRANDE - CERTBIO/UFCG",
+          "value": 1,
+          "display_value": "1 projetos"
+        },
+        {
+          "name": "Fundação Getúlio Vargas - FGV",
+          "value": 1,
+          "display_value": "1 projetos"
+        },
+        {
+          "name": "Instituto de Pesquisa Eldorado",
+          "value": 1,
+          "display_value": "1 projetos"
+        },
+        {
+          "name": "Fundação de Medicina Tropical Doutor Heitor Vieira Dourado - FMT-HVD",
+          "value": 1,
+          "display_value": "1 projetos"
+        },
+        {
+          "name": "Fundação Zerbini",
+          "value": 1,
+          "display_value": "1 projetos"
+        },
+        {
+          "name": "Faculdade de Medicina da Universidade de São Paulo - FMUSP",
+          "value": 1,
+          "display_value": "1 projetos"
+        }
+      ]
+    },
+    {
+      "id": "por_portaria",
+      "title": "Projetos por portaria de aprovação",
+      "metric_label": "Projetos",
+      "unit": "projetos",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "Portaria GM/MS Nº 8.475, 20/10/2025",
+          "value": 29,
+          "display_value": "29 projetos"
+        },
+        {
+          "name": "Portaria GM/MS Nº 7.279, 23/06/2025",
+          "value": 22,
+          "display_value": "22 projetos"
+        },
+        {
+          "name": "Portaria GM/MS Nº 10.154, 14/01/2026",
+          "value": 1,
+          "display_value": "1 projetos"
+        },
+        {
+          "name": "Portaria GM/MS Nº 6.644, 25/02/2025",
+          "value": 1,
+          "display_value": "1 projetos"
+        },
+        {
+          "name": "Portaria GM/MS Nº 6.643, 25/02/2025",
+          "value": 1,
+          "display_value": "1 projetos"
+        }
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "id": "projetos_por_portaria",
+      "type": "bars",
+      "title": "Projetos aprovados por portaria",
+      "subtitle": "Portarias publicadas em 2025 e 2026",
+      "unit": "projetos",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "projetos",
+          "label": "Projetos",
+          "points": [
+            {
+              "t": "Portaria GM/MS Nº 8.475, 20/10/2025",
+              "v": 29
+            },
+            {
+              "t": "Portaria GM/MS Nº 7.279, 23/06/2025",
+              "v": 22
+            },
+            {
+              "t": "Portaria GM/MS Nº 10.154, 14/01/2026",
+              "v": 1
+            },
+            {
+              "t": "Portaria GM/MS Nº 6.644, 25/02/2025",
+              "v": 1
+            },
+            {
+              "t": "Portaria GM/MS Nº 6.643, 25/02/2025",
+              "v": 1
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    }
+  ],
+  "breakdowns": [],
+  "records": [
+    {
+      "projeto": "3° Geração do ensaio NAT Brasileiro: inovação tecnológica para o fortalecimento do SUS",
+      "proponente": "Bio-Manguinhos/Fiocruz",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "Acelerador de Prótons para Aplicação na Saúde: Produção de Radiofármacos para o SUS",
+      "proponente": "CNPEM",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "APLICAÇÃO DA INTELIGÊNCIA ARTIFICIAL PARA O DESENVOLVIMENTO E MANUFATURA POR IMPRESSÃO 3D DE PRÓTESES E GUIAS CIRÚRGICOS CUSTOMIZADOS PARA O SUS",
+      "proponente": "Núcleo de Tecnologias Estratégicas em Saúde - NUTES/UEPB",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "AVALIAÇÃO DA EFICÁCIA DO SORO ANTIAPÍLICO PARA O REGISTRO NA ANVISA: ENSAIO CLÍNICO FASE III",
+      "proponente": "Centro de Estudos de Venenos e Animais Peçonhentos - CEVASP/UNESP",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Avaliação em Campo e Registro na ANVISA de Plataforma Pointof-Care RT-PCR para arboviroses",
+      "proponente": "Instituto de Biologia Molecular do Paraná - IBMP",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "DESENVOLVIMENTO DE FORMULAÇÃO DE PROBIÓTICO DE USO ORAL NA NEUROPATIA DIABÉTICA",
+      "proponente": "Bahiafarma",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Desenvolvimento de Insumos para reações de RT-qPCR para Painel de detecção de Doenças Virais Respiratórias",
+      "proponente": "Instituto de Biologia Molecular do Paraná - IBMP",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Desenvolvimento de Medicamento pediátrico com tecnologia inovadora a base de clofazimina para atendimento ao PCDT da Hanseníase",
+      "proponente": "INCT TEC CIS 4.0 - iCEIS/UFPE",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Desenvolvimento de Medicamento pediátrico com tecnologia inovadora a base de dapsona para atendimento ao PCDT da Hanseníase",
+      "proponente": "INCT TEC CIS 4.0 - iCEIS/UFPE",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Desenvolvimento de Teste Molecular para detecção simultânea dos vírus Mayaro e Oropouche.",
+      "proponente": "Instituto de Biologia Molecular do Paraná - IBMP",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Desenvolvimento de Teste Rápido Chikungunya IgG/IgM.",
+      "proponente": "Instituto de Biologia Molecular do Paraná - IBMP",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Desenvolvimento de Teste rápido Dengue NS1/IgM/IgG",
+      "proponente": "Instituto de Biologia Molecular do Paraná - IBMP",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "Desenvolvimento de Testes Diagnósticos para malária e leishmaniose tegumentar",
+      "proponente": "Centro de Tecnologia de Vacinas - CTVacinas/UFMG",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Desenvolvimento de um dispositivo microfluídico point-of-care (POC) capaz de realizar o diagnóstico de múltiplas arboviroses por método molecular.",
+      "proponente": "Instituto de Pesquisas Tecnológicas",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Desenvolvimento de uma vacina contra malária causada pelo Plasmodium vivax.",
+      "proponente": "Centro de Tecnologia de Vacinas - CTVacinas/UFMG",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "DESENVOLVIMENTO E AVALIAÇÃO DE FÓRMULA FARMACÊUTICA LÍQUIDA ORAL CONTENDO HIDROXIUREIA PARA PACIENTES COM DOENÇA FALCIFORME",
+      "proponente": "BAHIAFARMA",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Diagnóstico molecular simultâneo para Zika, Chikungunya e discriminação dos quatro sorotipos da dengue em reação única",
+      "proponente": "Instituto de Biologia Molecular do Paraná - IBMP",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Dispositivo POC de teste rápido para determinação quantitativa de biomarcadores cardiovasculares",
+      "proponente": "SENAI CIMATEC",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "e-Saude Mental no SUS: uma plataforma tecnológica integrada para o diagnóstico e tratamento de transtornos mentais na atenção primária no Sistema Único de Saúde (SUS)",
+      "proponente": "Hospital das Clínicas da Faculdade de Medicina da Universidade de São Paulo - FMUSP",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "ENSAIO CLÍNICO FASE II DO SELANTE DE FIBRINA LIOFILIZADO PARA TRATAMENTO DE ÚLCERAS VENOSAS CRÔNICAS NO SUS: AVALIAÇÃO DA QUALIDADE E DA SEGURANÇA",
+      "proponente": "Centro de Estudos de Venenos e Animais Peçonhentos - CEVASP/UNESP",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "Equipamento Nacional de Imagem por Ressonância Magnética para Extremidades.",
+      "proponente": "CNPEM",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "Estimulador Muscular – Solução Produtiva e Tecnológica",
+      "proponente": "Núcleo de Tecnologias Estratégicas em Saúde - NUTES/UEPB",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Estruturação de uma Plataforma de Manufatura Aditiva (impressão 3D) para Produção em Escala de Próteses Personalizadas e Sistemas de Placas e Parafusos para Implantes Ortopédicos em Reconstrução Craniana.",
+      "proponente": "Fiocruz - Ribeirão Preto-SP",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "Implantação de Diagnóstico Laboratorial Descentralizado Integrado ao Sistema SUS para Atenção Primária.",
+      "proponente": "Instituto de Biologia Molecular do Paraná - IBMP",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "Implementação de uma unidade móvel com equipamento híbrido de diagnóstico por imagem SPECT/CT.",
+      "proponente": "Instituto de Pesquisas Energéticas e Nucleares/Comissão Nacional de Energia Nuclear - IPEN/CNEN",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "KIT DENGUE – Plataforma produtiva para dispositivos médicos – Equipamentos de uso médico adaptados para uso na atenção primária, atendimento pré-hospitalar e domiciliar",
+      "proponente": "Núcleo de Tecnologias Estratégicas em Saúde - NUTES/UEPB",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "Lifeshock PRO - Solução Produtiva e Tecnológica.",
+      "proponente": "Núcleo de Tecnologias Estratégicas em Saúde - NUTES/UEPB",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Liofilização de insumos para o diagnóstico in vitro- produto Kit Biomol ZDC",
+      "proponente": "Instituto de Biologia Molecular do Paraná - IBMP",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "MEDICAMENTO FITOTERÁPICO DE Monteverdia ilicifolia (Mart. Ex Reissek) Biral (ESPINHEIRA SANTA) PARA TRATAMENTO, NO SUS, DA SÍNDROME DISPÉPTICA",
+      "proponente": "Farmanguinhos/Fiocruz",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Novas formulações para via oral e inalatória à base de Anfotericina B",
+      "proponente": "Fiocruz (presidencia ou vice)",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Oncologia de precisão: diagnóstico precoce e monitoramento do câncer de mama no Brasil.",
+      "proponente": "Fiocruz (presidencia ou vice)",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Painel de detecção diferencial e concomitante de Doenças Virais Respiratórias",
+      "proponente": "Instituto de Biologia Molecular do Paraná - IBMP",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Produção de colágeno de grau médico como insumo estratégico para bioprodutos.",
+      "proponente": "UNIVERSIDADE FEDERAL DE CAMPINA GRANDE - CERTBIO/UFCG",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "Reprocessadora Automática de Endoscópios",
+      "proponente": "Núcleo de Tecnologias Estratégicas em Saúde - NUTES/UEPB",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "SCAN (Sistema de Controle Antimicrobiano) – Solução Produtiva e Tecnológica.",
+      "proponente": "Núcleo de Tecnologias Estratégicas em Saúde - NUTES/UEPB",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 10.154, 14/01/2026"
+    },
+    {
+      "projeto": "Sistema de monitoramento remoto e de telemedicina para recuperação pós-operatória",
+      "proponente": "SENAI CIMATEC",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "Sistema de Navegação de Pacientes Oncológicos - Soluções em Aprendizado de Máquina e Otimização",
+      "proponente": "Fundação Getúlio Vargas - FGV",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Sistema SenseShoes – Solução Produtiva e Tecnológica.",
+      "proponente": "Núcleo de Tecnologias Estratégicas em Saúde - NUTES/UEPB",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "Solução Inteligente de Bomba de Infusão Conectada",
+      "proponente": "Instituto de Pesquisa Eldorado",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "SUSTENTABILIDADE DE UMA PLATAFORMA DE TESTES RÁPIDOS PARA DIAGNÓSTICO DE EMERGÊNCIAS SANITÁRIAS E AGRAVOS CRÍTICOS PARA O SUS E SUA VALIDAÇÃO POR MEIO DA PRODUÇÃO DE UM TESTE RÁPIDO PARA HEPATITE DELTA",
+      "proponente": "Centro de Tecnologia de Vacinas - CTVacinas/UFMG",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "TeleTROP: plataforma de teleconsultoria em medicina tropical utilizando Inteligência Artificial",
+      "proponente": "Fundação de Medicina Tropical Doutor Heitor Vieira Dourado - FMT-HVD",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "Teste clínico fase 3 da vacina Sm14 em indivíduos moradores de áreas endêmicas de esquistossomose no Senegal",
+      "proponente": "Fiocruz (presidencia ou vice)",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Teste de exoma completo, acessível, em alta escala e acreditado",
+      "proponente": "Hospital das Clínicas da Faculdade de Medicina da Universidade de São Paulo - FMUSP",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "Teste rápido sorológico para o diagnóstico da dengue",
+      "proponente": "SENAI CIMATEC",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "Ultrassom Point of Care Solução Produtiva e Tecnológica",
+      "proponente": "Núcleo de Tecnologias Estratégicas em Saúde - NUTES/UEPB",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "Vacina da Raiva inativada e Vacina de segunda geração, Raiva inativada e adjuvada (com emulsão IB160)",
+      "proponente": "Instituto Butantan",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Vacina de Influenza (Pré) Pandêmica H5N8 monovalente (fragmentada, inativada e adjuvada [IB160])",
+      "proponente": "Instituto Butantan",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 6.644, 25/02/2025"
+    },
+    {
+      "projeto": "Vacina influenza trivalente (fragmentada e inativada) adjuvada (IB160)",
+      "proponente": "Instituto Butantan",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "Vacina Nasal de Nanopartículas: Inovação no controle da COVID19",
+      "proponente": "Fundação Zerbini",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "VACINA PARA MPOX BASEADA NO VÍRUS MVA",
+      "proponente": "Centro de Tecnologia de Vacinas - CTVacinas/UFMG",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "VACINA TERAPÊUTICA PARA DOENÇA DE CHAGAS",
+      "proponente": "Centro de Tecnologia de Vacinas - CTVacinas/UFMG",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Validação clínica segundo protocolo internacional – Valgent 4 - do Kit de diagnóstico molecular Kit IBMP Biomol HPV Alto Risco",
+      "proponente": "Instituto de Biologia Molecular do Paraná - IBMP",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 8.475, 20/10/2025"
+    },
+    {
+      "projeto": "Viabilização de plataforma nacional de produção de células, tecidos e órgãos para xenotransplante suíno",
+      "proponente": "Faculdade de Medicina da Universidade de São Paulo - FMUSP",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 7.279, 23/06/2025"
+    },
+    {
+      "projeto": "Desenvolvimento e Produção da Vacina contra Dengue para o SUS",
+      "proponente": "Instituto Butantan",
+      "resultado": "Aprovado",
+      "dou": "Portaria GM/MS Nº 6.643, 25/02/2025"
+    }
+  ],
+  "data_quality": {
+    "source_rows": 54,
+    "exact_duplicate_occurrences": 0,
+    "duplicate_project_titles": 0
+  },
+  "_nota_anonimizacao": "A coluna de parceiros não é publicada no JSON.",
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-09-09",
+  "geo": {
+    "nivel": "nacional",
+    "fallback": true,
+    "regiao": "Centro-Oeste"
+  }
+}

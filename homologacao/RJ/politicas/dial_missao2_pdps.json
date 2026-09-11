@@ -4,13 +4,13 @@
   "nome": "Parcerias para o Desenvolvimento Produtivo — Saúde",
   "sigla": "PDP Saúde",
   "categoria": "Complexo econômico-industrial da saúde",
-  "source": "SDIC/DIAL — DIAL_-_anexo.xlsx (Missão 2)",
+  "source": "SDIC/DIAL — DIAL - anexo.xlsx (Missão 2 - PDPs)",
   "reference": "acumulado",
-  "updated_at": "2026-08-10",
+  "updated_at": "2026-09-09",
   "capa_kpi": {
     "id": "capa",
-    "label": "Parcerias (PDPs)",
-    "display_value": "65 parcerias",
+    "label": "Registros de PDP",
+    "display_value": "65 registros",
     "unit": "",
     "period": "acumulado",
     "delta": {
@@ -23,8 +23,8 @@
     "escopo": "uf",
     "uf": "RJ",
     "regra": "lider",
-    "headline": "Rio de Janeiro lidera o país: 65 parcerias, 47,8% do total nacional.",
-    "lede": "Rio de Janeiro ocupa a 1ª posição entre as 8 UFs participantes do programa e responde por 47,8% do programa no país. Dentro do Sudeste, que soma 98 parcerias, a participação do Rio de Janeiro é de 66,3%, a maior da região. Parcerias entre laboratórios públicos e parceiros privados para internalização da produção de medicamentos e insumos estratégicos de saúde no Brasil, reduzindo a dependência de importação.",
+    "headline": "Rio de Janeiro lidera o país: 65 registros, 47,8% do total nacional.",
+    "lede": "Rio de Janeiro ocupa a 1ª posição entre as 8 UFs participantes do programa e responde por 47,8% do programa no país. Dentro do Sudeste, que soma 98 registros, a participação do Rio de Janeiro é de 66,3%, a maior da região. Projetos para internalizar a produção de medicamentos e insumos estratégicos de saúde no Brasil.",
     "highlights": [
       {
         "tone": "pos",
@@ -39,10 +39,10 @@
   "kpis": [
     {
       "id": "parcerias",
-      "label": "Parcerias (PDPs)",
+      "label": "Registros de PDP",
       "value": 136,
       "display_value": "136",
-      "unit": "parcerias",
+      "unit": "registros",
       "period": "acumulado"
     },
     {
@@ -57,59 +57,78 @@
   "ranked_lists": [
     {
       "id": "por_instituicao",
-      "title": "Parcerias por instituição pública",
-      "metric_label": "Parcerias",
-      "unit": "parcerias",
+      "title": "Registros por instituição pública",
+      "metric_label": "Registros",
+      "unit": "registros",
       "tone": "neutral",
       "items": [
         {
           "name": "Fiocruz/Bio-Manguinhos",
           "value": 23,
-          "display_value": "23 parcerias"
+          "display_value": "23 registros"
         },
         {
           "name": "LAFEPE",
           "value": 20,
-          "display_value": "20 parcerias"
+          "display_value": "20 registros"
         },
         {
           "name": "Fiocruz/Farmanguinhos",
           "value": 19,
-          "display_value": "19 parcerias"
+          "display_value": "19 registros"
         },
         {
           "name": "Butantan",
           "value": 13,
-          "display_value": "13 parcerias"
+          "display_value": "13 registros"
         },
         {
           "name": "FURP",
           "value": 11,
-          "display_value": "11 parcerias"
+          "display_value": "11 registros"
         },
         {
           "name": "FUNED",
           "value": 9,
-          "display_value": "9 parcerias"
+          "display_value": "9 registros"
         },
         {
           "name": "LFM",
           "value": 9,
-          "display_value": "9 parcerias"
+          "display_value": "9 registros"
         },
         {
           "name": "Bahiafarma",
           "value": 8,
-          "display_value": "8 parcerias"
+          "display_value": "8 registros"
         }
       ]
     }
   ],
   "charts": [],
   "breakdowns": [],
-  "_nota_anonimizacao": "Nomes de parceiros privados (laboratórios) omitidos do JSON — apenas a instituição pública é reportada. Poucos laboratórios privados concentram a maioria das parcerias; nomeá-los por produto se aproximaria de expor posição comercial individual.",
+  "data_quality": {
+    "source_rows": 136,
+    "raw_exact_duplicate_occurrences": 30,
+    "raw_exact_duplicate_groups": 15,
+    "normalized_exact_duplicate_occurrences": 32,
+    "normalized_exact_duplicate_groups": 16,
+    "business_key_duplicate_groups": 16,
+    "business_key": [
+      "produto",
+      "apresentacao",
+      "indicacao",
+      "instituicao_publica",
+      "parceiro_nacional",
+      "parceiro_internacional",
+      "entidade_ifa",
+      "plataforma"
+    ],
+    "duplicate_policy": "preserved_without_source_identifier"
+  },
+  "_nota_anonimizacao": "Nomes de parceiros privados e entidades fornecedoras de IFA não são publicados.",
   "competencia": "2026S2",
-  "data_aceitacao": "2026-08-10",
+  "data_aceitacao": "2026-09-09",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -118,16 +137,20 @@
   },
   "story_nacional": {
     "escopo": "nacional",
-    "headline": "136 Parcerias para o Desenvolvimento Produtivo (PDP) já viabilizaram a produção nacional de {{kpis[produtos].display_value}} medicamentos e insumos de saúde, em 8 UFs.",
-    "lede": "Parcerias entre laboratórios públicos e parceiros privados para internalização da produção de medicamentos e insumos estratégicos de saúde no Brasil, reduzindo a dependência de importação.",
+    "headline": "A base reúne 136 registros de Parcerias para o Desenvolvimento Produtivo, relativos a {{kpis[produtos].display_value}} produtos e instituições públicas em 8 UFs.",
+    "lede": "Projetos para internalizar a produção de medicamentos e insumos estratégicos de saúde no Brasil. A contagem reproduz as linhas da fonte, inclusive registros sem identificador que permita distinguir pares com atributos iguais.",
     "highlights": [
       {
-        "tone": "pos",
-        "text": "136 parcerias ativas cobrindo 81 produtos, em 8 estados."
+        "tone": "neutral",
+        "text": "81 produtos distintos aparecem na base."
       },
       {
         "tone": "neutral",
-        "text": "Fiocruz/Bio-Manguinhos lidera com 23 parcerias."
+        "text": "Fiocruz/Bio-Manguinhos concentra 23 registros de PDP."
+      },
+      {
+        "tone": "neutral",
+        "text": "A fonte contém 15 pares de linhas idênticas; após normalizar espaços, são 16. Todos foram preservados por falta de identificador do projeto."
       }
     ]
   }

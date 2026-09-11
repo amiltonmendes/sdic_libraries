@@ -6,33 +6,33 @@
   "categoria": "Capacitação, digitalização e desburocratização — construção civil",
   "source": "SDIC/DIBEN/CGDC via ENAP, em parceria com ABDI",
   "reference": "2023-2026",
-  "updated_at": "2026-08-07",
+  "updated_at": "2026-09-11",
   "capa_kpi": {
     "id": "capa",
-    "label": "Profissionais certificados",
-    "display_value": "61",
+    "label": "Certificados emitidos",
+    "display_value": "78",
     "unit": "",
     "period": "2025-2026",
     "delta": {
       "dir": "flat",
-      "label": "0,4% do total nacional · 26ª entre 27 UFs"
+      "label": "0,3% do total nacional · 27ª entre 27 UFs"
     },
-    "value": 61
+    "value": 78
   },
   "story": {
     "escopo": "uf",
     "uf": "RR",
     "regra": "meio",
-    "headline": "61 profissionais certificados em Roraima — 0,4% do total nacional, 26ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Roraima ocupa a 26ª posição entre as 27 UFs participantes do programa e responde por 0,4% do programa no país. Dentro do Norte, que soma 1.225 profissionais certificados, a participação de Roraima é de 5,0%. Programa de capacitação, digitalização e desburocratização da construção civil.",
+    "headline": "78 certificados emitidos em Roraima — 0,3% do total nacional, 27ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Roraima ocupa a 27ª posição entre as 27 UFs participantes do programa e responde por 0,3% do programa no país. Dentro do Norte, que soma 1.934 certificados emitidos, a participação de Roraima é de 4,0%. Programa de capacitação, digitalização e desburocratização da construção civil.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "26ª posição nacional entre as 27 UFs participantes do programa, com 0,4% do total."
+        "text": "27ª posição nacional entre as 27 UFs participantes do programa, com 0,3% do total."
       },
       {
         "tone": "neutral",
-        "text": "5,0% de tudo que o Norte registra no programa."
+        "text": "4,0% de tudo que o Norte registra no programa."
       }
     ]
   },
@@ -40,18 +40,34 @@
     {
       "id": "certificados",
       "label": "Certificados emitidos (cursos EAD)",
-      "value": 16105,
-      "display_value": "16.105",
+      "value": 25374,
+      "display_value": "25.374",
       "unit": "certificados",
+      "period": "2025-2026"
+    },
+    {
+      "id": "profissionais",
+      "label": "Profissionais certificados (usuários únicos)",
+      "value": 17848,
+      "display_value": "17.848",
+      "unit": "profissionais",
       "period": "2025-2026"
     },
     {
       "id": "valor",
       "label": "Investimento total no programa",
-      "value": 5591352.77,
-      "display_value": "R$ 5,6 mi",
+      "value": 3691352.77,
+      "display_value": "R$ 3,7 mi",
       "unit": "",
       "period": "2023-2026"
+    },
+    {
+      "id": "estrangeiros",
+      "label": "Estrangeiros certificados",
+      "value": 56,
+      "display_value": "56",
+      "unit": "profissionais",
+      "period": "2025-2026"
     },
     {
       "id": "labs",
@@ -80,27 +96,29 @@
       "items": [
         {
           "name": "Desburocratização da Construção Civil",
-          "value": 3430,
-          "display_value": "3.430"
+          "value": 4537,
+          "display_value": "4.537"
         },
         {
           "name": "Digitalização (BIM EAD)",
-          "value": 10664,
-          "display_value": "10.664"
+          "value": 17884,
+          "display_value": "17.884"
         },
         {
           "name": "Construção Industrializada",
-          "value": 2011,
-          "display_value": "2.011"
+          "value": 2953,
+          "display_value": "2.953"
         }
       ]
     }
   ],
   "charts": [],
   "breakdowns": [],
-  "_nota_agregacao": "KPI de 'certificados' soma só as 3 modalidades com mesma unidade de medida. Laboratórios, instituições em mentoria e piloto têm unidades diferentes e ficam separados.",
+  "_nota_agregacao": "KPI de 'certificados' soma só as 3 modalidades com mesma unidade de medida. Laboratórios e instituições em mentoria têm unidades diferentes e ficam separados.",
+  "_nota_metodologica_certificados": "O levantamento do número de \"certificados emitidos\" e de \"usuários capacitados\" é realizado com base nos dados disponibilizados pelo sistema da ENAP.",
+  "_nota_definicao_bim": "BIM (Building Information Modelling) ou Modelagem da Informação da Construção é o conjunto integrado de processos e tecnologias que permite criar, utilizar, atualizar e compartilhar, colaborativamente, modelos digitais de uma construção, de forma a servir potencialmente a todos os participantes do empreendimento durante o ciclo de vida da construção (Estratégia BIM BR — Decreto nº 11.888, de 22/01/2024). O uso do BIM possibilita \"construir virtualmente\" e realizar diversos tipos de análises e simulações, antecipando eventuais problemas que não eram possíveis de serem identificados no método tradicional de elaboração de projetos. Definição conforme Plano de Trabalho da Estratégia BIM BR.",
   "competencia": "2026S2",
-  "data_aceitacao": "2026-07-07",
+  "data_aceitacao": "2026-09-11",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -109,20 +127,24 @@
   },
   "story_nacional": {
     "escopo": "nacional",
-    "headline": "Construa Brasil já certificou {{kpis[certificados].display_value}} profissionais em 27 UFs, com {{kpis[valor].display_value}} investidos em 6 frentes de capacitação e digitalização.",
-    "lede": "Programa de capacitação, digitalização e desburocratização da construção civil. Reúne cursos EAD (via ENAP), laboratórios e mentorias BIM em universidades, e um piloto de consultoria para PMEs (com a ABDI).",
+    "headline": "Construa Brasil já capacitou {{kpis[profissionais].display_value}} profissionais em 27 UFs, com {{kpis[certificados].display_value}} certificados emitidos e {{kpis[valor].display_value}} investidos em 5 frentes de capacitação e digitalização.",
+    "lede": "Programa de capacitação, digitalização e desburocratização da construção civil. Reúne cursos EAD (via ENAP) e laboratórios e mentorias BIM em universidades.",
     "highlights": [
       {
         "tone": "pos",
-        "text": "16.105 certificados emitidos nas 3 modalidades de curso EAD, presentes em todas as 27 UFs."
+        "text": "25.374 certificados emitidos nas 3 modalidades de curso EAD, presentes em todas as 27 UFs."
+      },
+      {
+        "tone": "neutral",
+        "text": "17.848 profissionais certificados (usuários únicos — uma pessoa pode ter mais de 1 certificado)."
+      },
+      {
+        "tone": "pos",
+        "text": "Alcance Internacional com 56 usuários estrangeiros atendidos."
       },
       {
         "tone": "neutral",
         "text": "4 laboratórios BIM e mentoria em 10 instituições de ensino superior público."
-      },
-      {
-        "tone": "neutral",
-        "text": "Piloto BIM na Prática vai atender ~60 PMEs em 8 estados a partir de 2026."
       }
     ]
   }

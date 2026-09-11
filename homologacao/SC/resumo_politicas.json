@@ -1,20 +1,20 @@
 {
   "schema_version": "1.2",
-  "n_politicas": 6,
+  "n_politicas": 7,
   "recursos": {
-    "value": 38969447973.83,
-    "display_value": "R$ 38,97 bi"
+    "value": 44858737761.01,
+    "display_value": "R$ 44,86 bi"
   },
   "atendimentos": {
-    "value": 14721,
-    "display_value": "14.721"
+    "value": 15171,
+    "display_value": "15.171"
   },
   "top_politicas": [
     {
       "id": "p_mais_p",
       "sigla": "P+P",
       "nome": "Plano Mais Produção",
-      "display_value": "R$ 37,69 bi"
+      "display_value": "R$ 43,58 bi"
     },
     {
       "id": "depreciacao_acelerada",
@@ -30,19 +30,19 @@
     "metrica": "recursos",
     "posicao": 5,
     "de": 27,
-    "share": 6.12,
+    "share": 6.33,
     "display": "5º de 27 UFs em recursos mobilizados"
   },
   "story": {
     "escopo": "uf",
     "uf": "SC",
     "regra": "com_recursos",
-    "headline": "Santa Catarina soma R$ 38,97 bi em 6 políticas da SDIC com dado próprio do estado.",
-    "lede": "Santa Catarina é o 5º do país em recursos mobilizados, com 6,1% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 37,69 bi) e DA (R$ 1,28 bi). As políticas não monetárias somam 14.721 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "headline": "Santa Catarina soma R$ 44,86 bi em 7 políticas da SDIC com dado próprio do estado.",
+    "lede": "Santa Catarina é o 5º do país em recursos mobilizados, com 6,3% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 43,58 bi) e DA (R$ 1,28 bi). As políticas não monetárias somam 15.171 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
     "highlights": [
       {
         "tone": "pos",
-        "text": "5ª posição nacional em recursos mobilizados (6,1% do total das UFs)."
+        "text": "5ª posição nacional em recursos mobilizados (6,3% do total das UFs)."
       }
     ]
   }

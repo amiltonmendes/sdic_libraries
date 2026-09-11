@@ -2,19 +2,19 @@
   "schema_version": "1.2",
   "n_politicas": 6,
   "recursos": {
-    "value": 8310031221.3,
-    "display_value": "R$ 8,31 bi"
+    "value": 9898123370.98,
+    "display_value": "R$ 9,90 bi"
   },
   "atendimentos": {
-    "value": 3277,
-    "display_value": "3.277"
+    "value": 3459,
+    "display_value": "3.459"
   },
   "top_politicas": [
     {
       "id": "p_mais_p",
       "sigla": "P+P",
       "nome": "Plano Mais Produção",
-      "display_value": "R$ 8,24 bi"
+      "display_value": "R$ 9,83 bi"
     },
     {
       "id": "depreciacao_acelerada",
@@ -28,21 +28,21 @@
   "nome_uf": "Espírito Santo",
   "ranking_nacional": {
     "metrica": "recursos",
-    "posicao": 17,
+    "posicao": 16,
     "de": 27,
-    "share": 1.31,
-    "display": "17º de 27 UFs em recursos mobilizados"
+    "share": 1.4,
+    "display": "16º de 27 UFs em recursos mobilizados"
   },
   "story": {
     "escopo": "uf",
     "uf": "ES",
     "regra": "com_recursos",
-    "headline": "Espírito Santo soma R$ 8,31 bi em 6 políticas da SDIC com dado próprio do estado.",
-    "lede": "Espírito Santo é o 17º do país em recursos mobilizados, com 1,3% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 8,24 bi) e DA (R$ 68,9 mi). As políticas não monetárias somam 3.277 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "headline": "Espírito Santo soma R$ 9,90 bi em 6 políticas da SDIC com dado próprio do estado.",
+    "lede": "Espírito Santo é o 16º do país em recursos mobilizados, com 1,4% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 9,83 bi) e DA (R$ 68,9 mi). As políticas não monetárias somam 3.459 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "17ª posição nacional em recursos mobilizados (1,3% do total das UFs)."
+        "text": "16ª posição nacional em recursos mobilizados (1,4% do total das UFs)."
       }
     ]
   }

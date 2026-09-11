@@ -2,19 +2,19 @@
   "schema_version": "1.2",
   "n_politicas": 5,
   "recursos": {
-    "value": 11887289615.18,
-    "display_value": "R$ 11,89 bi"
+    "value": 12993139013.65,
+    "display_value": "R$ 12,99 bi"
   },
   "atendimentos": {
-    "value": 810,
-    "display_value": "810"
+    "value": 853,
+    "display_value": "853"
   },
   "top_politicas": [
     {
       "id": "p_mais_p",
       "sigla": "P+P",
       "nome": "Plano Mais Produção",
-      "display_value": "R$ 11,88 bi"
+      "display_value": "R$ 12,99 bi"
     },
     {
       "id": "depreciacao_acelerada",
@@ -30,19 +30,19 @@
     "metrica": "recursos",
     "posicao": 13,
     "de": 27,
-    "share": 1.87,
+    "share": 1.83,
     "display": "13º de 27 UFs em recursos mobilizados"
   },
   "story": {
     "escopo": "uf",
     "uf": "TO",
     "regra": "com_recursos",
-    "headline": "Tocantins soma R$ 11,89 bi em 5 políticas da SDIC com dado próprio do estado.",
-    "lede": "Tocantins é o 13º do país em recursos mobilizados, com 1,9% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 11,88 bi) e DA (R$ 3,9 mi). As políticas não monetárias somam 810 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "headline": "Tocantins soma R$ 12,99 bi em 5 políticas da SDIC com dado próprio do estado.",
+    "lede": "Tocantins é o 13º do país em recursos mobilizados, com 1,8% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 12,99 bi) e DA (R$ 3,9 mi). As políticas não monetárias somam 853 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "13ª posição nacional em recursos mobilizados (1,9% do total das UFs)."
+        "text": "13ª posição nacional em recursos mobilizados (1,8% do total das UFs)."
       }
     ]
   }

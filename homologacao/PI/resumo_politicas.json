@@ -2,19 +2,19 @@
   "schema_version": "1.2",
   "n_politicas": 6,
   "recursos": {
-    "value": 5412700551.8,
-    "display_value": "R$ 5,41 bi"
+    "value": 6113481792.26,
+    "display_value": "R$ 6,11 bi"
   },
   "atendimentos": {
-    "value": 2503,
-    "display_value": "2.503"
+    "value": 2592,
+    "display_value": "2.592"
   },
   "top_politicas": [
     {
       "id": "p_mais_p",
       "sigla": "P+P",
       "nome": "Plano Mais Produção",
-      "display_value": "R$ 5,40 bi"
+      "display_value": "R$ 6,10 bi"
     },
     {
       "id": "depreciacao_acelerada",
@@ -28,21 +28,21 @@
   "nome_uf": "Piauí",
   "ranking_nacional": {
     "metrica": "recursos",
-    "posicao": 19,
+    "posicao": 20,
     "de": 27,
-    "share": 0.85,
-    "display": "19º de 27 UFs em recursos mobilizados"
+    "share": 0.86,
+    "display": "20º de 27 UFs em recursos mobilizados"
   },
   "story": {
     "escopo": "uf",
     "uf": "PI",
     "regra": "com_recursos",
-    "headline": "Piauí soma R$ 5,41 bi em 6 políticas da SDIC com dado próprio do estado.",
-    "lede": "Piauí é o 19º do país em recursos mobilizados, com 0,9% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 5,40 bi) e DA (R$ 8,9 mi). As políticas não monetárias somam 2.503 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "headline": "Piauí soma R$ 6,11 bi em 6 políticas da SDIC com dado próprio do estado.",
+    "lede": "Piauí é o 20º do país em recursos mobilizados, com 0,9% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 6,10 bi) e DA (R$ 8,9 mi). As políticas não monetárias somam 2.592 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "19ª posição nacional em recursos mobilizados (0,9% do total das UFs)."
+        "text": "20ª posição nacional em recursos mobilizados (0,9% do total das UFs)."
       }
     ]
   }

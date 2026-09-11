@@ -4,9 +4,9 @@
   "nome": "PADIS — Semicondutores e Componentes",
   "sigla": "PADIS",
   "categoria": "Incentivo fiscal — indústria de semicondutores",
-  "source": "SDIC/DIAL — DIAL_-_anexo.xlsx (Missão 4)",
+  "source": "SDIC/DIAL — DIAL - anexo.xlsx (Missão 4 - PADIS)",
   "reference": "2020-2025",
-  "updated_at": "2026-08-10",
+  "updated_at": "2026-09-09",
   "capa_kpi": {
     "id": "capa",
     "label": "Investimento em P&D",
@@ -21,27 +21,27 @@
   },
   "story": {
     "escopo": "nacional",
-    "headline": "PADIS viabilizou {{kpis[investimento].display_value}} em investimento de P&D no setor de semicondutores entre 2020 e 2025, com salto de R$ 68 mi (2024) para R$ 188 mi (2025).",
-    "lede": "Programa de Apoio ao Desenvolvimento Tecnológico da Indústria de Semicondutores — incentivo fiscal para empresas de componentes e circuitos eletrônicos, condicionado a investimento em P&D.",
+    "headline": "PADIS viabilizou {{kpis[investimento].display_value}} em investimento de P&D no setor de semicondutores entre 2020 e 2025.",
+    "lede": "Incentivo fiscal para empresas de componentes e circuitos eletrônicos, condicionado a investimento em pesquisa e desenvolvimento.",
     "highlights": [
       {
         "tone": "pos",
-        "text": "R$ 517,3 mi em investimento de P&D acumulado (2020-2025)."
+        "text": "R$ 517,3 mi em investimento de P&D acumulado entre 2020 e 2025."
       },
       {
         "tone": "pos",
-        "text": "Investimento em P&D quase triplicou de 2024 (R$ 68 mi) para 2025 (R$ 188 mi)."
+        "text": "Investimento em P&D passou de R$ 68,0 mi em 2024 para R$ 188,3 mi em 2025."
       },
       {
         "tone": "neutral",
-        "text": "R$ 11,17 bi em faturamento de contrapartida das empresas beneficiárias no período."
+        "text": "R$ 11,17 bi em faturamento de contrapartida no período."
       }
     ]
   },
   "kpis": [
     {
       "id": "investimento",
-      "label": "Investimento em P&D (2020-2025)",
+      "label": "Investimento em P&D",
       "value": 517259205.07,
       "display_value": "R$ 517,3 mi",
       "unit": "",
@@ -49,7 +49,7 @@
     },
     {
       "id": "credito",
-      "label": "Crédito financeiro (2020-2025)",
+      "label": "Crédito financeiro",
       "value": 1311413088.67,
       "display_value": "R$ 1,31 bi",
       "unit": "",
@@ -150,9 +150,15 @@
       "annotations": []
     }
   ],
-  "_nota_uf": "Série é nacional, sem recorte por UF na fonte. 'Pessoal alocado em P&D' de 2025 veio vazio ('-') na fonte — não incluído como KPI.",
+  "data_quality": {
+    "source_rows": 6,
+    "exact_duplicate_occurrences": 0,
+    "duplicate_years": 0,
+    "pessoal_pd_missing_marker": 1
+  },
+  "_nota_uf": "Série nacional, sem recorte por UF na fonte. Pessoal alocado em P&D de 2025 veio como '-' e não foi usado como KPI.",
   "competencia": "2026S2",
-  "data_aceitacao": "2026-08-10",
+  "data_aceitacao": "2026-09-09",
   "geo": {
     "nivel": "nacional",
     "fallback": true,

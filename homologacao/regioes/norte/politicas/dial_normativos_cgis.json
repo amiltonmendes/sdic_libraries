@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "dial_normativos_cgis",
+  "nome": "Marco normativo do Complexo Econômico-Industrial da Saúde",
+  "sigla": "Normativos CEIS",
+  "categoria": "Marco normativo",
+  "source": "SDIC/DIAL — DIAL - anexo.xlsx (Normativos CGIS)",
+  "reference": "normativos publicados entre 2023 e 2026",
+  "updated_at": "2026-09-09",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Normativos relacionados",
+    "display_value": "14 normativos",
+    "unit": "",
+    "period": "2023-2026",
+    "delta": {
+      "dir": "up",
+      "label": "4 categorias"
+    },
+    "value": null
+  },
+  "story": {
+    "escopo": "nacional",
+    "headline": "A base reúne {{kpis[normativos].display_value}} normativos relacionados ao Complexo Econômico-Industrial da Saúde.",
+    "lede": "Leis, decretos, resoluções e portarias que estruturam programas, instâncias de governança e regras do complexo da saúde.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "Portarias do Ministério da Saúde representam 8 registros."
+      },
+      {
+        "tone": "neutral",
+        "text": "Cada registro inclui súmula e endereço eletrônico."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "normativos",
+      "label": "Normativos relacionados",
+      "value": 14,
+      "display_value": "14",
+      "unit": "normativos",
+      "period": "2023-2026"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "por_categoria_normativo",
+      "title": "Normativos por categoria",
+      "metric_label": "Normativos",
+      "unit": "normativos",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "Portarias do Ministério da Saúde",
+          "value": 8,
+          "display_value": "8 normativos"
+        },
+        {
+          "name": "Resoluções do Conselho de Ministros da Câmara de Regulação do Mercado de Medicamentos (CMED)",
+          "value": 4,
+          "display_value": "4 normativos"
+        },
+        {
+          "name": "Lei",
+          "value": 1,
+          "display_value": "1 normativos"
+        },
+        {
+          "name": "Decretos",
+          "value": 1,
+          "display_value": "1 normativos"
+        }
+      ]
+    }
+  ],
+  "charts": [],
+  "breakdowns": [],
+  "records": [
+    {
+      "categoria": "Lei",
+      "normativo": "Lei 15.471/2026",
+      "sumula": "Institui a Estratégia Nacional de Saúde do Complexo Econômico-Industrial da Saúde (Ensceis); e altera a Lei nº 6.360, de 23 de setembro de 1976, a Lei nº 14.133, de 1º de abril de 2021 (Lei de Licitações e Contratos Administrativos), e a Lei nº 8.080, de 19 de setembro de 1990 (Lei Orgânica da Saúde).",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15471.htm"
+    },
+    {
+      "categoria": "Decretos",
+      "normativo": "Decreto nº 11.714, de 26 de setembro de 2023",
+      "sumula": "Dispõe sobre o Comitê Deliberativo e a Comissão Técnica de Avaliação no âmbito do Complexo Econômico-Industrial da Saúde.",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11714.htm"
+    },
+    {
+      "categoria": "Resoluções do Conselho de Ministros da Câmara de Regulação do Mercado de Medicamentos (CMED)",
+      "normativo": "Resolução CM-CMED nº 7, de 28 de maio de 2026",
+      "sumula": "Altera a Resolução CM-CMED nº 3, de 29 de dezembro de 2025, que dispõe sobre os critérios para definição de preços de produtos novos e novas apresentações de medicamentos, de que trata o art. 7º da Lei nº 10.742, de 6 de outubro de 2003, e sobre o procedimento para a apresentação de Documento Informativo de Preço - DIP.",
+      "url": "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/legislacao/RESOLUOCMCMED7DE28DEMAIODE2026DOU.pdf"
+    },
+    {
+      "categoria": "Resoluções do Conselho de Ministros da Câmara de Regulação do Mercado de Medicamentos (CMED)",
+      "normativo": "Resolução CM-CMED nº 5, de 30 de março de 2026",
+      "sumula": "Dispõe sobre a forma de definição do Preço Fábrica (PF) e do Preço Máximo ao Consumidor (PMC) dos medicamentos.",
+      "url": "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/legislacao/RESOLUOCMCMEDN.5DE30DEMARODE2026DOU.pdf"
+    },
+    {
+      "categoria": "Resoluções do Conselho de Ministros da Câmara de Regulação do Mercado de Medicamentos (CMED)",
+      "normativo": "Resolução CM-CMED nº 3, de 29 de dezembro de 2025",
+      "sumula": "Dispõe sobre os critérios para definição de preços de produtos novos e novas apresentações de medicamentos, de que trata o art. 7º da Lei nº 10.742, de 6 de outubro de 2003, e sobre o procedimento para a apresentação de Documento Informativo de Preço - DIP.",
+      "url": "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/legislacao/copy3_of_RESOLUOCMEDN3DE29DEDEZEMBRODE2025.pdf"
+    },
+    {
+      "categoria": "Resoluções do Conselho de Ministros da Câmara de Regulação do Mercado de Medicamentos (CMED)",
+      "normativo": "Resolução CM-CMED nº 2, de 3 de junho de 2025",
+      "sumula": "Aprova o Regimento Interno da Câmara de Regulação do Mercado de Medicamentos - CMED e altera a Resolução CMED nº 2, de 5 de março de 2004.",
+      "url": "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/legislacao/RESCM_2_2025.pdf"
+    },
+    {
+      "categoria": "Portarias do Ministério da Saúde",
+      "normativo": "Portaria CONJUNTA MS/MDIC/MGI nº 7.203, de 11 de junho de 2025",
+      "sumula": "Institui o Comitê Permanente de Articulação e Monitoramento de Ações Regulatórias referentes ao Complexo Econômico-Industrial da Saúde - CEIS.",
+      "url": "https://www.in.gov.br/web/dou/-/portaria-conjunta-ms/mdic/mgi-n-7.203-de-11-de-junho-de-2025-636297027"
+    },
+    {
+      "categoria": "Portarias do Ministério da Saúde",
+      "normativo": "Portaria GM/MS nº 2.261, de 8 de dezembro de 2023",
+      "sumula": "Estabelece a Matriz de Desafios Produtivos e Tecnológicos em Saúde.",
+      "url": "https://www.in.gov.br/en/web/dou/-/portaria-gm/ms-n-2.261-de-8-de-dezembro-de-2023-529259361"
+    },
+    {
+      "categoria": "Portarias do Ministério da Saúde",
+      "normativo": "Portaria GM/MS nº 11.921, de 3 de julho de 2026",
+      "sumula": "Altera a Portaria de Consolidação GM/MS nº 5, de 28 de setembro de 2017, para instituir o Programa Nacional de Inovação Radical em Saúde - PNIRS, no âmbito do Ministério da Saúde.",
+      "url": "https://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=515&pagina=119&totalArquivos=226"
+    },
+    {
+      "categoria": "Portarias do Ministério da Saúde",
+      "normativo": "Portaria GM/MS nº 4.472, de 20 de junho de 2024",
+      "sumula": "Altera a Portaria de Consolidação GM/MS nº 5, de 28 de setembro de 2017, para dispor sobre o Programa de Parcerias para o Desenvolvimento Produtivo - PDP.",
+      "url": "https://www.in.gov.br/en/web/dou/-/portaria-gm/ms-n-4.472-de-20-de-junho-de-2024-567221914"
+    },
+    {
+      "categoria": "Portarias do Ministério da Saúde",
+      "normativo": "Portaria GM/MS nº 4.473, de 20 de junho de 2024",
+      "sumula": "Altera a Portaria de Consolidação MS nº 5, de 28 de setembro de 2017, e institui o Programa de Desenvolvimento e Inovação Local - PDIL.",
+      "url": "https://www.in.gov.br/en/web/dou/-/portaria-gm/ms-n-4.473-de-20-de-junho-de-2024-567227027"
+    },
+    {
+      "categoria": "Portarias do Ministério da Saúde",
+      "normativo": "Portaria GM/MS nº 6.097, de 16 de dezembro de 2024",
+      "sumula": "Aprova o Regimento Interno e estabelece o funcionamento do Comitê Deliberativo - CD, no âmbito do Complexo Econômico Industrial da Saúde e define, em caráter complementar, critérios de análise e competências para o processo de avaliação e deliberação das propostas de projeto de Parceria para o Desenvolvimento Produtivo - PDP e Programa de Desenvolvimento e Inovação Local - PDIL.",
+      "url": "https://www.in.gov.br/en/web/dou/-/portaria-gm/ms-n-6.097-de-16-de-dezembro-de-2024-602593930"
+    },
+    {
+      "categoria": "Portarias do Ministério da Saúde",
+      "normativo": "Resolução SECTICS/MS nº 1, de 9 de dezembro de 2024",
+      "sumula": "Aprova o Regimento Interno e estabelece o funcionamento da Comissão Técnica de Avaliação - CTA, no âmbito do Complexo Econômico-Industrial da Saúde e define, em caráter complementar, critérios de análise e competências para o processo de avaliação e deliberação das propostas de projeto de Parceria para o Desenvolvimento Produtivo - PDP e Programa de Desenvolvimento e Inovação Local - PDIL.",
+      "url": "https://www.in.gov.br/en/web/dou/-/resolucao-sectics/ms-n-1-de-9-de-dezembro-de-2024-600543309"
+    },
+    {
+      "categoria": "Portarias do Ministério da Saúde",
+      "normativo": "Resolução SCTIE/MS nº 1, de 28 de maio de 2026",
+      "sumula": "Aprova o Regimento Interno do Grupo Executivo do Complexo Econômico-Industrial da Saúde - Geceis.",
+      "url": "https://www.in.gov.br/web/dou/-/resolucao-sctie/ms-n-1-de-28-de-maio-de-2026-709518307"
+    }
+  ],
+  "data_quality": {
+    "source_rows": 14,
+    "exact_duplicate_occurrences": 0,
+    "duplicate_normatives": 0,
+    "duplicate_urls": 0
+  },
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-09-09",
+  "geo": {
+    "nivel": "nacional",
+    "fallback": true,
+    "regiao": "Norte"
+  }
+}

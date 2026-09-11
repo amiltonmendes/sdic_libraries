@@ -2,19 +2,19 @@
   "schema_version": "1.2",
   "n_politicas": 7,
   "recursos": {
-    "value": 9219678365.91,
-    "display_value": "R$ 9,22 bi"
+    "value": 9618634998.28,
+    "display_value": "R$ 9,62 bi"
   },
   "atendimentos": {
-    "value": 1651,
-    "display_value": "1.651"
+    "value": 1843,
+    "display_value": "1.843"
   },
   "top_politicas": [
     {
       "id": "p_mais_p",
       "sigla": "P+P",
       "nome": "Plano Mais Produção",
-      "display_value": "R$ 9,06 bi"
+      "display_value": "R$ 9,46 bi"
     },
     {
       "id": "depreciacao_acelerada",
@@ -34,21 +34,21 @@
   "nome_uf": "Amazonas",
   "ranking_nacional": {
     "metrica": "recursos",
-    "posicao": 15,
+    "posicao": 17,
     "de": 27,
-    "share": 1.45,
-    "display": "15º de 27 UFs em recursos mobilizados"
+    "share": 1.36,
+    "display": "17º de 27 UFs em recursos mobilizados"
   },
   "story": {
     "escopo": "uf",
     "uf": "AM",
     "regra": "com_recursos",
-    "headline": "Amazonas soma R$ 9,22 bi em 7 políticas da SDIC com dado próprio do estado.",
-    "lede": "Amazonas é o 15º do país em recursos mobilizados, com 1,4% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 9,06 bi), DA (R$ 97,3 mi) e REIQ (R$ 60,7 mi). As políticas não monetárias somam 1.651 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "headline": "Amazonas soma R$ 9,62 bi em 7 políticas da SDIC com dado próprio do estado.",
+    "lede": "Amazonas é o 17º do país em recursos mobilizados, com 1,4% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 9,46 bi), DA (R$ 97,3 mi) e REIQ (R$ 60,7 mi). As políticas não monetárias somam 1.843 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "15ª posição nacional em recursos mobilizados (1,4% do total das UFs)."
+        "text": "17ª posição nacional em recursos mobilizados (1,4% do total das UFs)."
       }
     ]
   }

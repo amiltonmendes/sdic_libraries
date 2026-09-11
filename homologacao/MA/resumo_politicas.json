@@ -2,19 +2,19 @@
   "schema_version": "1.2",
   "n_politicas": 5,
   "recursos": {
-    "value": 9144504007.74,
-    "display_value": "R$ 9,14 bi"
+    "value": 10167313255.95,
+    "display_value": "R$ 10,17 bi"
   },
   "atendimentos": {
-    "value": 3071,
-    "display_value": "3.071"
+    "value": 3194,
+    "display_value": "3.194"
   },
   "top_politicas": [
     {
       "id": "p_mais_p",
       "sigla": "P+P",
       "nome": "Plano Mais Produção",
-      "display_value": "R$ 9,12 bi"
+      "display_value": "R$ 10,14 bi"
     },
     {
       "id": "depreciacao_acelerada",
@@ -28,21 +28,21 @@
   "nome_uf": "Maranhão",
   "ranking_nacional": {
     "metrica": "recursos",
-    "posicao": 16,
+    "posicao": 15,
     "de": 27,
-    "share": 1.44,
-    "display": "16º de 27 UFs em recursos mobilizados"
+    "share": 1.43,
+    "display": "15º de 27 UFs em recursos mobilizados"
   },
   "story": {
     "escopo": "uf",
     "uf": "MA",
     "regra": "com_recursos",
-    "headline": "Maranhão soma R$ 9,14 bi em 5 políticas da SDIC com dado próprio do estado.",
-    "lede": "Maranhão é o 16º do país em recursos mobilizados, com 1,4% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 9,12 bi) e DA (R$ 24,4 mi). As políticas não monetárias somam 3.071 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "headline": "Maranhão soma R$ 10,17 bi em 5 políticas da SDIC com dado próprio do estado.",
+    "lede": "Maranhão é o 15º do país em recursos mobilizados, com 1,4% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 10,14 bi) e DA (R$ 24,4 mi). As políticas não monetárias somam 3.194 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "16ª posição nacional em recursos mobilizados (1,4% do total das UFs)."
+        "text": "15ª posição nacional em recursos mobilizados (1,4% do total das UFs)."
       }
     ]
   }

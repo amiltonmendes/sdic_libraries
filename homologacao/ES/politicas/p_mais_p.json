@@ -6,41 +6,41 @@
   "categoria": "Financiamento à neoindustrialização",
   "source": "SDIC — consolidado NIB/GAIA (BNDES, Finep, BASA, BNB, Caixa, BB)",
   "reference": "2023-2026",
-  "updated_at": "2026-08-26",
+  "updated_at": "2026-09-10",
   "capa_kpi": {
     "id": "capa_pp",
     "label": "Plano Mais Produção",
-    "display_value": "R$ 8,24 bi",
+    "display_value": "R$ 9,83 bi",
     "unit": "",
     "period": "2023-2026",
     "delta": {
       "dir": "flat",
-      "label": "1,3% do total nacional · 17ª entre 27 UFs"
+      "label": "1,4% do total nacional · 16ª entre 27 UFs"
     },
-    "value": 8241152409.24
+    "value": 9829244558.92
   },
   "capa_kpi_secundario": {
     "id": "capa_pp_projetos",
     "label": "Projetos contratados",
-    "display_value": "10.151 projetos",
+    "display_value": "12.462 projetos",
     "unit": "projetos",
     "period": "2023-2026",
-    "value": 10151
+    "value": 12462
   },
   "story": {
     "escopo": "uf",
     "uf": "ES",
     "regra": "meio",
-    "headline": "R$ 8,24 bi no Espírito Santo — 1,3% do total nacional, 17ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Espírito Santo ocupa a 17ª posição entre as 27 UFs participantes do programa e responde por 1,3% do programa no país. Dentro do Sudeste, que soma R$ 287,24 bi, a participação do Espírito Santo é de 2,9%. Financiamento à neoindustrialização via BNDES, Finep, BASA, BNB, Caixa e BB — recursos contratados por missão da Nova Indústria Brasil (NIB) e eixo de atuação (produtividade, verde, inovação, exportação).",
+    "headline": "R$ 9,83 bi no Espírito Santo — 1,4% do total nacional, 16ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Espírito Santo ocupa a 16ª posição entre as 27 UFs participantes do programa e responde por 1,4% do programa no país. Dentro do Sudeste, que soma R$ 319,38 bi, a participação do Espírito Santo é de 3,1%. Financiamento à neoindustrialização via BNDES, Finep, BASA, BNB, Caixa e BB — recursos contratados por missão da Nova Indústria Brasil (NIB) e eixo de atuação (produtividade, verde, inovação, exportação).",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "17ª posição nacional entre as 27 UFs participantes do programa, com 1,3% do total."
+        "text": "16ª posição nacional entre as 27 UFs participantes do programa, com 1,4% do total."
       },
       {
         "tone": "neutral",
-        "text": "2,9% de tudo que o Sudeste registra no programa."
+        "text": "3,1% de tudo que o Sudeste registra no programa."
       }
     ]
   },
@@ -48,24 +48,24 @@
     {
       "id": "contratado",
       "label": "Total contratado",
-      "value": 709693735085.8,
-      "display_value": "R$ 709,69 bi",
+      "value": 747398380213.77,
+      "display_value": "R$ 747,40 bi",
       "unit": "",
       "period": "2023-2026"
     },
     {
       "id": "projetos",
       "label": "Projetos",
-      "value": 494463,
-      "display_value": "494.463",
+      "value": 609833,
+      "display_value": "609.833",
       "unit": "projetos",
       "period": "2023-2026"
     },
     {
       "id": "ticket_medio",
       "label": "Ticket médio",
-      "value": 1435281.7806,
-      "display_value": "R$ 1,4 mi",
+      "value": 1225578.7736,
+      "display_value": "R$ 1,2 mi",
       "unit": "por projeto",
       "period": "2023-2026"
     }
@@ -74,65 +74,65 @@
     {
       "id": "missao_1",
       "label": "Missão: Agro industrial",
-      "value": 1166973455.67,
+      "value": 1269893336.58,
       "unit": "",
-      "display_value": "R$ 1,17 bi",
+      "display_value": "R$ 1,27 bi",
       "period": "2023-2026"
     },
     {
       "id": "missao_2",
       "label": "Missão: Saúde",
-      "value": 85784414.03,
+      "value": 91480442.69,
       "unit": "",
-      "display_value": "R$ 85,8 mi",
+      "display_value": "R$ 91,5 mi",
       "period": "2023-2026"
     },
     {
       "id": "missao_3",
       "label": "Missão: Infraestrutura",
-      "value": 4329068574.37,
+      "value": 5568824205.29,
       "unit": "",
-      "display_value": "R$ 4,33 bi",
+      "display_value": "R$ 5,57 bi",
       "period": "2023-2026"
     },
     {
       "id": "missao_4",
       "label": "Missão: Transformação Digital",
-      "value": 1606793889.71,
+      "value": 1828792574.82,
       "unit": "",
-      "display_value": "R$ 1,61 bi",
+      "display_value": "R$ 1,83 bi",
       "period": "2023-2026"
     },
     {
       "id": "missao_5",
       "label": "Missão: Descarbonização",
-      "value": 1052532075.46,
+      "value": 1070253999.54,
       "unit": "",
-      "display_value": "R$ 1,05 bi",
+      "display_value": "R$ 1,07 bi",
       "period": "2023-2026"
     },
     {
       "id": "eixo_produtividade",
       "label": "Eixo: Produtividade",
-      "value": 7018642158.06,
+      "value": 8527956754.63,
       "unit": "",
-      "display_value": "R$ 7,02 bi",
+      "display_value": "R$ 8,53 bi",
       "period": "2023-2026"
     },
     {
       "id": "eixo_inovacao",
       "label": "Eixo: Inovação",
-      "value": 880015340.56,
+      "value": 958192653.62,
       "unit": "",
-      "display_value": "R$ 880,0 mi",
+      "display_value": "R$ 958,2 mi",
       "period": "2023-2026"
     },
     {
       "id": "eixo_verde",
       "label": "Eixo: Verde",
-      "value": 290997022.22,
+      "value": 291597262.27,
       "unit": "",
-      "display_value": "R$ 291,0 mi",
+      "display_value": "R$ 291,6 mi",
       "period": "2023-2026"
     },
     {
@@ -166,8 +166,8 @@
       },
       {
         "t": 2026,
-        "v": 995597276.85,
-        "display_value": "R$ 995,6 mi"
+        "v": 2583689426.53,
+        "display_value": "R$ 2,58 bi"
       }
     ]
   },
@@ -181,39 +181,39 @@
       "items": [
         {
           "name": "Agro industrial",
-          "value": 147450779754.86,
-          "display_value": "R$ 147,45 bi",
-          "share": 20.8
+          "value": 152813407880.19,
+          "display_value": "R$ 152,81 bi",
+          "share": 20.4
         },
         {
           "name": "Saúde",
-          "value": 27670234778.33,
-          "display_value": "R$ 27,67 bi",
-          "share": 3.9
+          "value": 28285255591.97,
+          "display_value": "R$ 28,29 bi",
+          "share": 3.8
         },
         {
           "name": "Infraestrutura",
-          "value": 311080463553.34,
-          "display_value": "R$ 311,08 bi",
-          "share": 43.8
+          "value": 340122663086.4,
+          "display_value": "R$ 340,12 bi",
+          "share": 45.5
         },
         {
           "name": "Transformação Digital",
-          "value": 122472240298.14,
-          "display_value": "R$ 122,47 bi",
-          "share": 17.3
+          "value": 118727326915.39,
+          "display_value": "R$ 118,73 bi",
+          "share": 15.9
         },
         {
           "name": "Descarbonização",
-          "value": 70561949910.17,
-          "display_value": "R$ 70,56 bi",
+          "value": 73757481770.99,
+          "display_value": "R$ 73,76 bi",
           "share": 9.9
         },
         {
           "name": "Defesa",
-          "value": 30458066790.96,
-          "display_value": "R$ 30,46 bi",
-          "share": 4.3
+          "value": 33692244968.82,
+          "display_value": "R$ 33,69 bi",
+          "share": 4.5
         }
       ]
     },
@@ -226,33 +226,33 @@
       "items": [
         {
           "name": "Produtividade",
-          "value": 452595754536.51,
-          "display_value": "R$ 452,60 bi",
-          "share": 63.8
-        },
-        {
-          "name": "Não informado",
-          "value": 87368217785.2,
-          "display_value": "R$ 87,37 bi",
-          "share": 12.3
+          "value": 507738145304.16,
+          "display_value": "R$ 507,74 bi",
+          "share": 67.9
         },
         {
           "name": "Inovação",
-          "value": 72660411853.38,
-          "display_value": "R$ 72,66 bi",
-          "share": 10.2
+          "value": 82536881133.83,
+          "display_value": "R$ 82,54 bi",
+          "share": 11.0
         },
         {
           "name": "Verde",
-          "value": 50599848943.57,
-          "display_value": "R$ 50,60 bi",
-          "share": 7.1
+          "value": 53473868407.73,
+          "display_value": "R$ 53,47 bi",
+          "share": 7.2
+        },
+        {
+          "name": "Não informado",
+          "value": 52422985407.22,
+          "display_value": "R$ 52,42 bi",
+          "share": 7.0
         },
         {
           "name": "Exportação",
-          "value": 46469501967.14,
-          "display_value": "R$ 46,47 bi",
-          "share": 6.5
+          "value": 51226499960.82,
+          "display_value": "R$ 51,23 bi",
+          "share": 6.9
         }
       ]
     }
@@ -279,11 +279,11 @@
             },
             {
               "t": 2025,
-              "v": 248.674
+              "v": 213.729
             },
             {
               "t": 2026,
-              "v": 53.301
+              "v": 125.951
             }
           ]
         }
@@ -300,33 +300,33 @@
       "items": [
         {
           "name": "Agro industrial",
-          "value": 1166973455.67,
-          "display_value": "R$ 1,17 bi",
-          "share": 14.2
+          "value": 1269893336.58,
+          "display_value": "R$ 1,27 bi",
+          "share": 12.9
         },
         {
           "name": "Saúde",
-          "value": 85784414.03,
-          "display_value": "R$ 85,8 mi",
-          "share": 1.0
+          "value": 91480442.69,
+          "display_value": "R$ 91,5 mi",
+          "share": 0.9
         },
         {
           "name": "Infraestrutura",
-          "value": 4329068574.37,
-          "display_value": "R$ 4,33 bi",
-          "share": 52.5
+          "value": 5568824205.29,
+          "display_value": "R$ 5,57 bi",
+          "share": 56.7
         },
         {
           "name": "Transformação Digital",
-          "value": 1606793889.71,
-          "display_value": "R$ 1,61 bi",
-          "share": 19.5
+          "value": 1828792574.82,
+          "display_value": "R$ 1,83 bi",
+          "share": 18.6
         },
         {
           "name": "Descarbonização",
-          "value": 1052532075.46,
-          "display_value": "R$ 1,05 bi",
-          "share": 12.8
+          "value": 1070253999.54,
+          "display_value": "R$ 1,07 bi",
+          "share": 10.9
         }
       ]
     },
@@ -338,32 +338,32 @@
       "items": [
         {
           "name": "Produtividade",
-          "value": 7018642158.06,
-          "display_value": "R$ 7,02 bi",
-          "share": 85.2
+          "value": 8527956754.63,
+          "display_value": "R$ 8,53 bi",
+          "share": 86.8
         },
         {
           "name": "Inovação",
-          "value": 880015340.56,
-          "display_value": "R$ 880,0 mi",
-          "share": 10.7
+          "value": 958192653.62,
+          "display_value": "R$ 958,2 mi",
+          "share": 9.7
         },
         {
           "name": "Verde",
-          "value": 290997022.22,
-          "display_value": "R$ 291,0 mi",
-          "share": 3.5
+          "value": 291597262.27,
+          "display_value": "R$ 291,6 mi",
+          "share": 3.0
         },
         {
           "name": "Exportação",
           "value": 51497888.4,
           "display_value": "R$ 51,5 mi",
-          "share": 0.6
+          "share": 0.5
         }
       ]
     }
   ],
-  "_nota_fonte": "Consolidado a partir de dados_painel_2026T1.json (pipeline novo/, período 2026T1), 1906 registros agregados por ano × fonte × eixo × missão × UF. 13 registros sem UF resolvida ficam fora do breakdown por_uf, mas contam nos totais nacionais.",
+  "_nota_fonte": "Consolidado a partir de dados_painel_2026T2.json (pipeline novo/, período 2026T2), 1974 registros agregados por ano × fonte × eixo × missão × UF. 14 registros sem UF resolvida ficam fora do breakdown por_uf, mas contam nos totais nacionais.",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -377,11 +377,11 @@
     "highlights": [
       {
         "tone": "neutral",
-        "text": "494.463 projetos contratados em todo o país, 2023-2026."
+        "text": "609.833 projetos contratados em todo o país, 2023-2026."
       },
       {
         "tone": "neutral",
-        "text": "Ticket médio de R$ 1,4 mi por projeto."
+        "text": "Ticket médio de R$ 1,2 mi por projeto."
       },
       {
         "tone": "neutral",

@@ -1,6 +1,6 @@
 {
   "schema_version": "1.2",
-  "updated_at": "2026-08-26",
+  "updated_at": "2026-09-11",
   "politicas_catalogo": [
     {
       "id": "acoes_diben",
@@ -32,6 +32,14 @@
       "nome": "Construa Brasil",
       "sigla": "Construa Brasil",
       "categoria": "Capacitação, digitalização e desburocratização — construção civil",
+      "regionalizavel": true
+    },
+    {
+      "id": "construa_brasil_bim_na_pratica",
+      "file": "politicas/construa_brasil_bim_na_pratica.json",
+      "nome": "Construção 4.0 — BIM na Prática",
+      "sigla": "BIM na Prática",
+      "categoria": "Consultoria para PMEs — transformação digital da construção civil",
       "regionalizavel": true
     },
     {
@@ -115,6 +123,14 @@
       "regionalizavel": false
     },
     {
+      "id": "dial_normativos_cgis",
+      "file": "politicas/dial_normativos_cgis.json",
+      "nome": "Marco normativo do Complexo Econômico-Industrial da Saúde",
+      "sigla": "Normativos CEIS",
+      "categoria": "Marco normativo",
+      "regionalizavel": false
+    },
+    {
       "id": "move_brasil",
       "file": "politicas/move_brasil.json",
       "nome": "Move Brasil",
@@ -160,6 +176,14 @@
       "nome": "Política Automotiva de Desenvolvimento Regional",
       "sigla": "PADR",
       "categoria": "Incentivo fiscal — desenvolvimento regional da indústria automotiva",
+      "regionalizavel": false
+    },
+    {
+      "id": "dial_pdil",
+      "file": "politicas/dial_pdil.json",
+      "nome": "Programa de Desenvolvimento e Inovação Local",
+      "sigla": "PDIL",
+      "categoria": "Complexo econômico-industrial da saúde",
       "regionalizavel": false
     },
     {

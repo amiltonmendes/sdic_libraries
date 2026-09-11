@@ -2,19 +2,19 @@
   "schema_version": "1.2",
   "n_politicas": 5,
   "recursos": {
-    "value": 28020086742.04,
-    "display_value": "R$ 28,02 bi"
+    "value": 30291335757.34,
+    "display_value": "R$ 30,29 bi"
   },
   "atendimentos": {
-    "value": 4090,
-    "display_value": "4.090"
+    "value": 4223,
+    "display_value": "4.223"
   },
   "top_politicas": [
     {
       "id": "p_mais_p",
       "sigla": "P+P",
       "nome": "Plano Mais Produção",
-      "display_value": "R$ 27,66 bi"
+      "display_value": "R$ 29,93 bi"
     },
     {
       "id": "depreciacao_acelerada",
@@ -30,19 +30,19 @@
     "metrica": "recursos",
     "posicao": 6,
     "de": 27,
-    "share": 4.4,
+    "share": 4.27,
     "display": "6º de 27 UFs em recursos mobilizados"
   },
   "story": {
     "escopo": "uf",
     "uf": "MT",
     "regra": "com_recursos",
-    "headline": "Mato Grosso soma R$ 28,02 bi em 5 políticas da SDIC com dado próprio do estado.",
-    "lede": "Mato Grosso é o 6º do país em recursos mobilizados, com 4,4% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 27,66 bi) e DA (R$ 359,0 mi). As políticas não monetárias somam 4.090 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "headline": "Mato Grosso soma R$ 30,29 bi em 5 políticas da SDIC com dado próprio do estado.",
+    "lede": "Mato Grosso é o 6º do país em recursos mobilizados, com 4,3% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 29,93 bi) e DA (R$ 359,0 mi). As políticas não monetárias somam 4.223 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
     "highlights": [
       {
         "tone": "pos",
-        "text": "6ª posição nacional em recursos mobilizados (4,4% do total das UFs)."
+        "text": "6ª posição nacional em recursos mobilizados (4,3% do total das UFs)."
       }
     ]
   }
