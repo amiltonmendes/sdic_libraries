@@ -105,7 +105,57 @@
       ]
     }
   ],
-  "charts": [],
+  "charts": [
+    {
+      "id": "por_uf",
+      "type": "bars",
+      "title": "Registros de PDP por UF da instituição pública",
+      "subtitle": "UF da instituição pública, não do alcance do projeto",
+      "unit": "registros",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "registros",
+          "label": "Registros",
+          "points": [
+            {
+              "t": "RJ",
+              "v": 65
+            },
+            {
+              "t": "SP",
+              "v": 24
+            },
+            {
+              "t": "PE",
+              "v": 21
+            },
+            {
+              "t": "MG",
+              "v": 9
+            },
+            {
+              "t": "BA",
+              "v": 8
+            },
+            {
+              "t": "RN",
+              "v": 4
+            },
+            {
+              "t": "PR",
+              "v": 3
+            },
+            {
+              "t": "PB",
+              "v": 2
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    }
+  ],
   "breakdowns": [],
   "data_quality": {
     "source_rows": 136,
@@ -151,6 +201,10 @@
       {
         "tone": "neutral",
         "text": "A fonte contém 15 pares de linhas idênticas; após normalizar espaços, são 16. Todos foram preservados por falta de identificador do projeto."
+      },
+      {
+        "tone": "neutral",
+        "text": "O recorte por UF indica a localização da instituição pública responsável pelo registro, não necessariamente o alcance territorial do projeto ou produto."
       }
     ]
   }
