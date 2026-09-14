@@ -4,7 +4,7 @@
   "title": "Emprego",
   "source": "Novo CAGED / MTE",
   "reference": "Jul/2026",
-  "updated_at": "2026-09-10",
+  "updated_at": "2026-09-14",
   "capa_kpi": {
     "id": "capa_emprego",
     "label": "Saldo CAGED 12m",
@@ -295,6 +295,7 @@
       "title": "Maiores estoques",
       "metric_label": "Estoque formal",
       "unit": "mil vínculos",
+      "period": "RAIS 2025",
       "tone": "neutral",
       "items": [
         {
@@ -330,7 +331,8 @@
       "id": "intensidade_tec",
       "title": "Composição do mercado de trabalho por intensidade tecnológica",
       "dimension_label": "Participação no estoque",
-      "unit": "vínculos",
+      "unit": "mil vínculos",
+      "period": "RAIS 2025",
       "items": [
         {
           "name": "Média-Alta Intensidade Tecnológica",
