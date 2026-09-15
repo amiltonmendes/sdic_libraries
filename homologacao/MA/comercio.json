@@ -4,7 +4,7 @@
   "title": "Comércio Exterior",
   "source": "Comex Stat / MDIC",
   "reference": "2025",
-  "updated_at": "2026-09-11",
+  "updated_at": "2026-09-15",
   "capa_kpi": {
     "id": "capa_comercio",
     "label": "Saldo comercial",
@@ -186,6 +186,40 @@
           "display_value": "US$ 3 mi"
         }
       ]
+    },
+    {
+      "id": "setores_importacao",
+      "title": "Principais setores importadores (ISIC)",
+      "metric_label": "Valor importado",
+      "unit": "milhões USD",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "Fabricação de coque e produtos petrolíferos refinados",
+          "value": 3058.8,
+          "display_value": "US$ 3,06 bi"
+        },
+        {
+          "name": "Fabricação de produtos químicos",
+          "value": 1420.0,
+          "display_value": "US$ 1,42 bi"
+        },
+        {
+          "name": "Fabricação de máquinas e equipamentos n.c",
+          "value": 48.3,
+          "display_value": "US$ 48 mi"
+        },
+        {
+          "name": "Fabricação de produtos alimentícios",
+          "value": 46.8,
+          "display_value": "US$ 47 mi"
+        },
+        {
+          "name": "Fabricação de metais básicos",
+          "value": 30.7,
+          "display_value": "US$ 31 mi"
+        }
+      ]
     }
   ],
   "breakdowns": [
@@ -199,25 +233,41 @@
           "name": "Baixa Tecnologia",
           "value": 0.81,
           "display_value": "+US$ 0,8 bi",
-          "share": null
+          "share": null,
+          "exportacao": 0.86,
+          "exportacao_display": "US$ 0,9 bi",
+          "importacao": 0.06,
+          "importacao_display": "US$ 0,1 bi"
         },
         {
           "name": "Alta Tecnologia",
           "value": -0.01,
           "display_value": "−US$ 0,0 bi",
-          "share": null
+          "share": null,
+          "exportacao": 0.0,
+          "exportacao_display": "US$ 0,0 bi",
+          "importacao": 0.01,
+          "importacao_display": "US$ 0,0 bi"
         },
         {
           "name": "Média-Baixa Tecnologia",
           "value": -1.25,
           "display_value": "−US$ 1,2 bi",
-          "share": null
+          "share": null,
+          "exportacao": 1.87,
+          "exportacao_display": "US$ 1,9 bi",
+          "importacao": 3.12,
+          "importacao_display": "US$ 3,1 bi"
         },
         {
           "name": "Média-Alta Tecnologia",
           "value": -1.49,
           "display_value": "−US$ 1,5 bi",
-          "share": null
+          "share": null,
+          "exportacao": 0.0,
+          "exportacao_display": "US$ 0,0 bi",
+          "importacao": 1.49,
+          "importacao_display": "US$ 1,5 bi"
         }
       ]
     }

@@ -4,7 +4,7 @@
   "title": "Comércio Exterior — dados para relatórios",
   "source": "Comex Stat / MDIC",
   "reference": "2025",
-  "updated_at": "2026-09-11",
+  "updated_at": "2026-09-15",
   "balanca_anual": [
     {
       "ano": 2019,
@@ -186,18 +186,26 @@
   "saldo_intensidade_ultimo_ano": [
     {
       "intensidade": "AT",
+      "exportacao": 3877814.0,
+      "importacao": 351050883.0,
       "saldo": -347173069.0
     },
     {
       "intensidade": "MAT",
+      "exportacao": 696653050.0,
+      "importacao": 3146701879.0,
       "saldo": -2450048829.0
     },
     {
       "intensidade": "MBT",
+      "exportacao": 3413829364.0,
+      "importacao": 1877623841.0,
       "saldo": 1536205523.0
     },
     {
       "intensidade": "BT",
+      "exportacao": 2758847031.0,
+      "importacao": 651719786.0,
       "saldo": 2107127245.0
     }
   ]

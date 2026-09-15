@@ -4,7 +4,7 @@
   "title": "Comércio Exterior — União Europeia — dados para relatórios",
   "source": "Comex Stat / MDIC",
   "reference": "2025",
-  "updated_at": "2026-09-11",
+  "updated_at": "2026-09-15",
   "balanca_anual": [
     {
       "ano": 2019,
@@ -186,18 +186,26 @@
   "saldo_intensidade_ultimo_ano": [
     {
       "intensidade": "AT",
+      "exportacao": 235515.0,
+      "importacao": 113795398.0,
       "saldo": -113559883.0
     },
     {
       "intensidade": "MAT",
+      "exportacao": 1697548.0,
+      "importacao": 643146219.0,
       "saldo": -641448671.0
     },
     {
       "intensidade": "MBT",
+      "exportacao": 27626392.0,
+      "importacao": 281493586.0,
       "saldo": -253867194.0
     },
     {
       "intensidade": "BT",
+      "exportacao": 15132760.0,
+      "importacao": 146948826.0,
       "saldo": -131816066.0
     }
   ]
