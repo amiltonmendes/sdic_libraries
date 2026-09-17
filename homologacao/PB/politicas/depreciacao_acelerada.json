@@ -19,6 +19,14 @@
     },
     "value": 21827174.17
   },
+  "capa_kpi_secundario": {
+    "id": "capa_da_bf",
+    "label": "Benefício fiscal",
+    "display_value": "R$ 7,4 mi",
+    "unit": "",
+    "period": "2024-2026",
+    "value": 7421239.22
+  },
   "story": {
     "escopo": "uf",
     "uf": "PB",
@@ -47,9 +55,9 @@
     },
     {
       "id": "beneficio",
-      "label": "Benefício fiscal (estimativa preliminar)",
-      "value": 1474826640.14,
-      "display_value": "R$ 1,47 bi",
+      "label": "Benefício fiscal",
+      "value": 2949653280.28,
+      "display_value": "R$ 2,95 bi",
       "unit": "",
       "period": "2024-2026"
     },
@@ -206,7 +214,7 @@
       ]
     }
   ],
-  "_nota_metodologica": "Valor do BF recalculado como 17% fixo sobre Valor do Bem (não a coluna original da planilha, que também é 17% constante em 100% das linhas — sugerindo premissa simplificada, não cálculo tributário real/marginal). Comparação com versão anterior do indicador (recorte de SP) sugeriu benefício real próximo de 34%. Publicado como estimativa preliminar por decisão confirmada com o time; ajustar TAXA_BF_FIXA neste script quando a metodologia correta for validada.",
+  "_nota_metodologica": "Valor do BF recalculado como 34% fixo sobre Valor do Bem (não a coluna original da planilha, que é 17% constante em 100% das linhas — premissa simplificada, não cálculo tributário real/marginal). Taxa confirmada com o time por reconciliação com a versão anterior do indicador (recorte histórico de SP).",
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas agregados por UF/setor.",
   "competencia": "2026M08",
   "data_aceitacao": "2026-08-24",
@@ -218,7 +226,7 @@
   },
   "story_nacional": {
     "escopo": "nacional",
-    "headline": "Depreciação acelerada incentivou {{kpis[capex].display_value}} em máquinas e equipamentos entre 2024 e 2026, com {{kpis[beneficio].display_value}} de benefício fiscal (estimativa preliminar).",
+    "headline": "Depreciação acelerada incentivou {{kpis[capex].display_value}} em máquinas e equipamentos entre 2024 e 2026, com {{kpis[beneficio].display_value}} de benefício fiscal.",
     "lede": "Programa de depreciação acelerada — incentivo à renovação do parque de máquinas e equipamentos (âmbito do acordo Mercosul–UE). Investimento incentivado e benefício fiscal por UF e setor (CNAE).",
     "highlights": [
       {
@@ -231,7 +239,7 @@
       },
       {
         "tone": "neutral",
-        "text": "Benefício fiscal calculado com taxa fixa preliminar de 17% — valor sujeito a revisão metodológica."
+        "text": "Benefício fiscal calculado com taxa fixa de 34%."
       }
     ]
   }
