@@ -273,8 +273,794 @@
       ]
     }
   ],
-  "breakdowns": [],
-  "_nota_anonimizacao": "Sem CNPJ, nome de empresa ou município em nenhum nível do JSON — apenas contagens agregadas por UF ou nacionais.",
+  "breakdowns": [
+    {
+      "id": "por_municipio",
+      "title": "Atendimentos B+P por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "MA",
+          "municipio": "SAO LUIS",
+          "ibge": null,
+          "value": 491,
+          "display_value": "491",
+          "share": 0.3
+        },
+        {
+          "uf": "MA",
+          "municipio": "IMPERATRIZ",
+          "ibge": null,
+          "value": 443,
+          "display_value": "443",
+          "share": 0.3
+        },
+        {
+          "uf": "MA",
+          "municipio": "BALSAS",
+          "ibge": null,
+          "value": 184,
+          "display_value": "184",
+          "share": 0.1
+        },
+        {
+          "uf": "MA",
+          "municipio": "ACAILANDIA",
+          "ibge": null,
+          "value": 129,
+          "display_value": "129",
+          "share": 0.1
+        },
+        {
+          "uf": "MA",
+          "municipio": "CHAPADINHA",
+          "ibge": null,
+          "value": 128,
+          "display_value": "128",
+          "share": 0.1
+        },
+        {
+          "uf": "MA",
+          "municipio": "SANTA INES",
+          "ibge": null,
+          "value": 117,
+          "display_value": "117",
+          "share": 0.1
+        },
+        {
+          "uf": "MA",
+          "municipio": "BACABAL",
+          "ibge": null,
+          "value": 104,
+          "display_value": "104",
+          "share": 0.1
+        },
+        {
+          "uf": "MA",
+          "municipio": "CAXIAS",
+          "ibge": null,
+          "value": 96,
+          "display_value": "96",
+          "share": 0.1
+        },
+        {
+          "uf": "MA",
+          "municipio": "SAO JOSE DE RIBAMAR",
+          "ibge": null,
+          "value": 77,
+          "display_value": "77",
+          "share": 0.1
+        },
+        {
+          "uf": "MA",
+          "municipio": "GRAJAU",
+          "ibge": null,
+          "value": 77,
+          "display_value": "77",
+          "share": 0.1
+        },
+        {
+          "uf": "MA",
+          "municipio": "PRESIDENTE DUTRA",
+          "ibge": null,
+          "value": 71,
+          "display_value": "71",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "BARRA DO CORDA",
+          "ibge": null,
+          "value": 69,
+          "display_value": "69",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "PACO DO LUMIAR",
+          "ibge": null,
+          "value": 63,
+          "display_value": "63",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "DOM PEDRO",
+          "ibge": null,
+          "value": 62,
+          "display_value": "62",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "BARREIRINHAS",
+          "ibge": null,
+          "value": 59,
+          "display_value": "59",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "COROATA",
+          "ibge": null,
+          "value": 54,
+          "display_value": "54",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "PINHEIRO",
+          "ibge": null,
+          "value": 41,
+          "display_value": "41",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "LAGO DA PEDRA",
+          "ibge": null,
+          "value": 37,
+          "display_value": "37",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "TUTOIA",
+          "ibge": null,
+          "value": 34,
+          "display_value": "34",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SAO DOMINGOS DO MARANHAO",
+          "ibge": null,
+          "value": 27,
+          "display_value": "27",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "TIMON",
+          "ibge": null,
+          "value": 26,
+          "display_value": "26",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "TIMBIRAS",
+          "ibge": null,
+          "value": 25,
+          "display_value": "25",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "RAPOSA",
+          "ibge": null,
+          "value": 21,
+          "display_value": "21",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "ARARI",
+          "ibge": null,
+          "value": 20,
+          "display_value": "20",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "ROSARIO",
+          "ibge": null,
+          "value": 18,
+          "display_value": "18",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "DAVINOPOLIS",
+          "ibge": null,
+          "value": 17,
+          "display_value": "17",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "FORTUNA",
+          "ibge": null,
+          "value": 17,
+          "display_value": "17",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "VARGEM GRANDE",
+          "ibge": null,
+          "value": 17,
+          "display_value": "17",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "ANAPURUS",
+          "ibge": null,
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "BELA VISTA DO MARANHAO",
+          "ibge": null,
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "BACABEIRA",
+          "ibge": null,
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SAO MATEUS DO MARANHAO",
+          "ibge": null,
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SANTA RITA",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "COLINAS",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "PORTO FRANCO",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SANTA HELENA",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "VITORIA DO MEARIM",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "TRIZIDELA DO VALE",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "BARAO DE GRAJAU",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SAO FRANCISCO DO BREJAO",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "PASSAGEM FRANCA",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "MATA ROMA",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "TUNTUM",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "CODO",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "ITINGA DO MARANHAO",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "PEDREIRAS",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "ZE DOCA",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "FORMOSA DA SERRA NEGRA",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "LORETO",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "PINDARE MIRIM",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "ESTREITO",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SANTA LUZIA DO PARUA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "VILA NOVA DOS MARTIRIOS",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "VITORINO FREIRE",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "GOVERNADOR NUNES FREIRE",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "IGARAPE DO MEIO",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "OLHO D'AGUA DAS CUNHAS",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "PASTOS BONS",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "PRIMEIRA CRUZ",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SAO BENTO",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SUCUPIRA DO RIACHAO",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SANTA LUZIA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SITIO NOVO",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SANTO AMARO DO MARANHAO",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "CIDELANDIA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "ITAPECURU MIRIM",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "JOAO LISBOA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SÃO LUÍS",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SÃO DOMINGOS DO MARANHÃO",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "LAGO DOS RODRIGUES",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "GRAJAÚ",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "IGARAPE GRANDE",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "JENIPAPO DOS VIEIRAS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "LIMA CAMPOS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "MIRINZAL",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "AMAPA DO MARANHAO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "AÇAILÂNDIA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "BURITICUPU",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "CAMPESTRE DO MARANHAO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "GOVERNADOR EDISON LOBAO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SAO PEDRO DA AGUA BRANCA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "ALDEIAS ALTAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "BURITI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "CENTRAL DO MARANHAO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "FORTALEZA DOS NOGUEIRAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "GOVERNADOR EUGENIO BARROS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "MATINHA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "NOVA OLINDA DO MARANHAO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "PIO XII",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "PRESIDENTE JUSCELINO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "RIACHAO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "RIBAMAR FIQUENE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SAO JOAO BATISTA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SAO JOSE DOS BASILIOS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SAO VICENTE FERRER",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SENADOR ALEXANDRE COSTA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "TASSO FRAGOSO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        }
+      ]
+    }
+  ],
+  "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
   "data_aceitacao": "2026-08-04",
   "geo": {

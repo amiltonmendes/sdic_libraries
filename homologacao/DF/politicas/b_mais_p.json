@@ -273,8 +273,42 @@
       ]
     }
   ],
-  "breakdowns": [],
-  "_nota_anonimizacao": "Sem CNPJ, nome de empresa ou município em nenhum nível do JSON — apenas contagens agregadas por UF ou nacionais.",
+  "breakdowns": [
+    {
+      "id": "por_municipio",
+      "title": "Atendimentos B+P por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "DF",
+          "municipio": "BRASILIA",
+          "ibge": null,
+          "value": 2982,
+          "display_value": "2.982",
+          "share": 1.9
+        },
+        {
+          "uf": "DF",
+          "municipio": "BRASÍLIA",
+          "ibge": null,
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "DF",
+          "municipio": "Núcleo Bandeirante",
+          "ibge": null,
+          "value": 0,
+          "display_value": "0",
+          "share": 0.0
+        }
+      ]
+    }
+  ],
+  "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
   "data_aceitacao": "2026-08-04",
   "geo": {

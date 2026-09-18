@@ -212,6 +212,199 @@
           "share": 33.8
         }
       ]
+    },
+    {
+      "id": "por_municipio",
+      "title": "Investimento incentivado por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "BA",
+          "municipio": "SIMOES FILHO",
+          "ibge": null,
+          "value": 121428378.23,
+          "display_value": "R$ 121,4 mi",
+          "share": 1.4
+        },
+        {
+          "uf": "BA",
+          "municipio": "SALVADOR",
+          "ibge": null,
+          "value": 32077100.0,
+          "display_value": "R$ 32,1 mi",
+          "share": 0.4
+        },
+        {
+          "uf": "BA",
+          "municipio": "Simões Filho",
+          "ibge": null,
+          "value": 24857942.240000002,
+          "display_value": "R$ 24,9 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "BA",
+          "municipio": "Salvador",
+          "ibge": null,
+          "value": 21240581.94,
+          "display_value": "R$ 21,2 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "BA",
+          "municipio": "EUNAPOLIS",
+          "ibge": null,
+          "value": 15576913.78,
+          "display_value": "R$ 15,6 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "BA",
+          "municipio": "ILHEUS",
+          "ibge": null,
+          "value": 13799709.64,
+          "display_value": "R$ 13,8 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "BA",
+          "municipio": "VITORIA DA CONQUISTA",
+          "ibge": null,
+          "value": 9475578.52,
+          "display_value": "R$ 9,5 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "BA",
+          "municipio": "Juazeiro",
+          "ibge": null,
+          "value": 4257883.21,
+          "display_value": "R$ 4,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "Vitória da Conquista",
+          "ibge": null,
+          "value": 4180770.8,
+          "display_value": "R$ 4,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "FEIRA DE SANTANA",
+          "ibge": null,
+          "value": 3530592.73,
+          "display_value": "R$ 3,5 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SANTO ESTEVAO",
+          "ibge": null,
+          "value": 3336855.61,
+          "display_value": "R$ 3,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SANTA TERESINHA",
+          "ibge": null,
+          "value": 1980612.21,
+          "display_value": "R$ 2,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "LUIS EDUARDO MAGALHAES",
+          "ibge": null,
+          "value": 1895000.0,
+          "display_value": "R$ 1,9 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "FIRMINO ALVES",
+          "ibge": null,
+          "value": 1301000.0,
+          "display_value": "R$ 1,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SANTO ANTONIO DE JESUS",
+          "ibge": null,
+          "value": 821261.81,
+          "display_value": "R$ 821.262",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ITABERABA",
+          "ibge": null,
+          "value": 792142.5399999999,
+          "display_value": "R$ 792.143",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "Santo Estêvão",
+          "ibge": null,
+          "value": 729600.8,
+          "display_value": "R$ 729.601",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "IGUAI",
+          "ibge": null,
+          "value": 658590.99,
+          "display_value": "R$ 658.591",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "Itaberaba",
+          "ibge": null,
+          "value": 615438.64,
+          "display_value": "R$ 615.439",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "BARREIRAS",
+          "ibge": null,
+          "value": 165000.0,
+          "display_value": "R$ 165.000",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CAMACARI",
+          "ibge": null,
+          "value": 137937.63,
+          "display_value": "R$ 137.938",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "Santo Antônio de Jesus",
+          "ibge": null,
+          "value": 41235.399999999994,
+          "display_value": "R$ 41.235",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "São Gonçalo dos Campos",
+          "ibge": null,
+          "value": 14400.0,
+          "display_value": "R$ 14.400",
+          "share": 0.0
+        }
+      ]
     }
   ],
   "_nota_metodologica": "Valor do BF recalculado como 34% fixo sobre Valor do Bem (não a coluna original da planilha, que é 17% constante em 100% das linhas — premissa simplificada, não cálculo tributário real/marginal). Taxa confirmada com o time por reconciliação com a versão anterior do indicador (recorte histórico de SP).",

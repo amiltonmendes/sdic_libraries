@@ -212,6 +212,31 @@
           "share": 33.8
         }
       ]
+    },
+    {
+      "id": "por_municipio",
+      "title": "Investimento incentivado por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "SE",
+          "municipio": "LARANJEIRAS",
+          "ibge": null,
+          "value": 25070632.73,
+          "display_value": "R$ 25,1 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "SE",
+          "municipio": "ESTANCIA",
+          "ibge": null,
+          "value": 4492877.29,
+          "display_value": "R$ 4,5 mi",
+          "share": 0.1
+        }
+      ]
     }
   ],
   "_nota_metodologica": "Valor do BF recalculado como 34% fixo sobre Valor do Bem (não a coluna original da planilha, que é 17% constante em 100% das linhas — premissa simplificada, não cálculo tributário real/marginal). Taxa confirmada com o time por reconciliação com a versão anterior do indicador (recorte histórico de SP).",

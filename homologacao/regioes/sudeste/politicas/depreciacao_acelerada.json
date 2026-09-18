@@ -209,6 +209,2351 @@
           "share": 33.8
         }
       ]
+    },
+    {
+      "id": "por_municipio",
+      "title": "Investimento incentivado por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "MG",
+          "municipio": "JUIZ DE FORA",
+          "ibge": null,
+          "value": 459464736.93,
+          "display_value": "R$ 459,5 mi",
+          "share": 5.3
+        },
+        {
+          "uf": "MG",
+          "municipio": "BELO HORIZONTE",
+          "ibge": null,
+          "value": 416661433.64,
+          "display_value": "R$ 416,7 mi",
+          "share": 4.8
+        },
+        {
+          "uf": "SP",
+          "municipio": "PINDAMONHANGABA",
+          "ibge": null,
+          "value": 170548734.77,
+          "display_value": "R$ 170,5 mi",
+          "share": 2.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "INDAIATUBA",
+          "ibge": null,
+          "value": 145615823.34,
+          "display_value": "R$ 145,6 mi",
+          "share": 1.7
+        },
+        {
+          "uf": "SP",
+          "municipio": "HORTOLANDIA",
+          "ibge": null,
+          "value": 137900325.15,
+          "display_value": "R$ 137,9 mi",
+          "share": 1.6
+        },
+        {
+          "uf": "SP",
+          "municipio": "SAO PAULO",
+          "ibge": null,
+          "value": 107852419.39,
+          "display_value": "R$ 107,9 mi",
+          "share": 1.2
+        },
+        {
+          "uf": "MG",
+          "municipio": "Juiz de Fora",
+          "ibge": null,
+          "value": 103903908.55000001,
+          "display_value": "R$ 103,9 mi",
+          "share": 1.2
+        },
+        {
+          "uf": "SP",
+          "municipio": "RIBEIRAO PIRES",
+          "ibge": null,
+          "value": 93108462.1,
+          "display_value": "R$ 93,1 mi",
+          "share": 1.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "DIADEMA",
+          "ibge": null,
+          "value": 82721706.55999999,
+          "display_value": "R$ 82,7 mi",
+          "share": 1.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "BETIM",
+          "ibge": null,
+          "value": 81583063.05,
+          "display_value": "R$ 81,6 mi",
+          "share": 0.9
+        },
+        {
+          "uf": "SP",
+          "municipio": "SALTO DE PIRAPORA",
+          "ibge": null,
+          "value": 81112190.95,
+          "display_value": "R$ 81,1 mi",
+          "share": 0.9
+        },
+        {
+          "uf": "MG",
+          "municipio": "TRES PONTAS",
+          "ibge": null,
+          "value": 75929971.9,
+          "display_value": "R$ 75,9 mi",
+          "share": 0.9
+        },
+        {
+          "uf": "SP",
+          "municipio": "IBITINGA",
+          "ibge": null,
+          "value": 64390462.480000004,
+          "display_value": "R$ 64,4 mi",
+          "share": 0.7
+        },
+        {
+          "uf": "SP",
+          "municipio": "CAJAMAR",
+          "ibge": null,
+          "value": 62544470.77,
+          "display_value": "R$ 62,5 mi",
+          "share": 0.7
+        },
+        {
+          "uf": "SP",
+          "municipio": "JAGUARIUNA",
+          "ibge": null,
+          "value": 59330601.779999994,
+          "display_value": "R$ 59,3 mi",
+          "share": 0.7
+        },
+        {
+          "uf": "SP",
+          "municipio": "ITATIBA",
+          "ibge": null,
+          "value": 56363971.22,
+          "display_value": "R$ 56,4 mi",
+          "share": 0.6
+        },
+        {
+          "uf": "SP",
+          "municipio": "Jundiaí",
+          "ibge": null,
+          "value": 51915638.11,
+          "display_value": "R$ 51,9 mi",
+          "share": 0.6
+        },
+        {
+          "uf": "RJ",
+          "municipio": "RIO DE JANEIRO",
+          "ibge": null,
+          "value": 47230256.3,
+          "display_value": "R$ 47,2 mi",
+          "share": 0.5
+        },
+        {
+          "uf": "SP",
+          "municipio": "BRAGANCA PAULISTA",
+          "ibge": null,
+          "value": 46877466.04,
+          "display_value": "R$ 46,9 mi",
+          "share": 0.5
+        },
+        {
+          "uf": "SP",
+          "municipio": "GUARULHOS",
+          "ibge": null,
+          "value": 45283218.9,
+          "display_value": "R$ 45,3 mi",
+          "share": 0.5
+        },
+        {
+          "uf": "MG",
+          "municipio": "PARA DE MINAS",
+          "ibge": null,
+          "value": 44884629.04,
+          "display_value": "R$ 44,9 mi",
+          "share": 0.5
+        },
+        {
+          "uf": "SP",
+          "municipio": "LINS",
+          "ibge": null,
+          "value": 43236128.339999996,
+          "display_value": "R$ 43,2 mi",
+          "share": 0.5
+        },
+        {
+          "uf": "SP",
+          "municipio": "São Bernardo do Campo",
+          "ibge": null,
+          "value": 42237012.32,
+          "display_value": "R$ 42,2 mi",
+          "share": 0.5
+        },
+        {
+          "uf": "MG",
+          "municipio": "Três Pontas",
+          "ibge": null,
+          "value": 41025437.85,
+          "display_value": "R$ 41,0 mi",
+          "share": 0.5
+        },
+        {
+          "uf": "SP",
+          "municipio": "VALINHOS",
+          "ibge": null,
+          "value": 40297633.71000001,
+          "display_value": "R$ 40,3 mi",
+          "share": 0.5
+        },
+        {
+          "uf": "SP",
+          "municipio": "SAO BERNARDO DO CAMPO",
+          "ibge": null,
+          "value": 39596178.120000005,
+          "display_value": "R$ 39,6 mi",
+          "share": 0.5
+        },
+        {
+          "uf": "SP",
+          "municipio": "Pereira Barreto",
+          "ibge": null,
+          "value": 39187669.57,
+          "display_value": "R$ 39,2 mi",
+          "share": 0.5
+        },
+        {
+          "uf": "SP",
+          "municipio": "PEREIRA BARRETO",
+          "ibge": null,
+          "value": 37687372.23,
+          "display_value": "R$ 37,7 mi",
+          "share": 0.4
+        },
+        {
+          "uf": "SP",
+          "municipio": "AMERICANA",
+          "ibge": null,
+          "value": 37366021.37,
+          "display_value": "R$ 37,4 mi",
+          "share": 0.4
+        },
+        {
+          "uf": "SP",
+          "municipio": "MONTE ALTO",
+          "ibge": null,
+          "value": 37223318.07,
+          "display_value": "R$ 37,2 mi",
+          "share": 0.4
+        },
+        {
+          "uf": "SP",
+          "municipio": "CAPIVARI",
+          "ibge": null,
+          "value": 34144338.75,
+          "display_value": "R$ 34,1 mi",
+          "share": 0.4
+        },
+        {
+          "uf": "MG",
+          "municipio": "FORMIGA",
+          "ibge": null,
+          "value": 32637279.3,
+          "display_value": "R$ 32,6 mi",
+          "share": 0.4
+        },
+        {
+          "uf": "MG",
+          "municipio": "CANAPOLIS",
+          "ibge": null,
+          "value": 31700000.0,
+          "display_value": "R$ 31,7 mi",
+          "share": 0.4
+        },
+        {
+          "uf": "SP",
+          "municipio": "BAURU",
+          "ibge": null,
+          "value": 31452404.669999998,
+          "display_value": "R$ 31,5 mi",
+          "share": 0.4
+        },
+        {
+          "uf": "SP",
+          "municipio": "RIO CLARO",
+          "ibge": null,
+          "value": 30968179.38,
+          "display_value": "R$ 31,0 mi",
+          "share": 0.4
+        },
+        {
+          "uf": "MG",
+          "municipio": "CONTAGEM",
+          "ibge": null,
+          "value": 29268196.95,
+          "display_value": "R$ 29,3 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "MG",
+          "municipio": "CAMANDUCAIA",
+          "ibge": null,
+          "value": 28331956.979999997,
+          "display_value": "R$ 28,3 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "SP",
+          "municipio": "São Paulo",
+          "ibge": null,
+          "value": 26578234.63,
+          "display_value": "R$ 26,6 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "SP",
+          "municipio": "ITAPEVI",
+          "ibge": null,
+          "value": 26364158.18,
+          "display_value": "R$ 26,4 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "SP",
+          "municipio": "Votorantim",
+          "ibge": null,
+          "value": 24426020.979999997,
+          "display_value": "R$ 24,4 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "SP",
+          "municipio": "CAMPINAS",
+          "ibge": null,
+          "value": 24221290.97,
+          "display_value": "R$ 24,2 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "SP",
+          "municipio": "SANTANA DE PARNAIBA",
+          "ibge": null,
+          "value": 22993728.42,
+          "display_value": "R$ 23,0 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "SP",
+          "municipio": "CRAVINHOS",
+          "ibge": null,
+          "value": 21553955.72,
+          "display_value": "R$ 21,6 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SP",
+          "municipio": "Ibitinga",
+          "ibge": null,
+          "value": 21446821.43,
+          "display_value": "R$ 21,4 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SP",
+          "municipio": "MOGI MIRIM",
+          "ibge": null,
+          "value": 21360122.34,
+          "display_value": "R$ 21,4 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SP",
+          "municipio": "TATUI",
+          "ibge": null,
+          "value": 21299884.330000002,
+          "display_value": "R$ 21,3 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "MG",
+          "municipio": "Belo Horizonte",
+          "ibge": null,
+          "value": 20460135.69,
+          "display_value": "R$ 20,5 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SP",
+          "municipio": "BOITUVA",
+          "ibge": null,
+          "value": 19290185.73,
+          "display_value": "R$ 19,3 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SP",
+          "municipio": "SANTA BARBARA D'OESTE",
+          "ibge": null,
+          "value": 17797784.130000003,
+          "display_value": "R$ 17,8 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SP",
+          "municipio": "CERQUILHO",
+          "ibge": null,
+          "value": 17691302.73,
+          "display_value": "R$ 17,7 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "ES",
+          "municipio": "LINHARES",
+          "ibge": null,
+          "value": 17495165.55,
+          "display_value": "R$ 17,5 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SP",
+          "municipio": "SUMARE",
+          "ibge": null,
+          "value": 16533197.05,
+          "display_value": "R$ 16,5 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SP",
+          "municipio": "TIETE",
+          "ibge": null,
+          "value": 16471248.08,
+          "display_value": "R$ 16,5 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "MG",
+          "municipio": "COROMANDEL",
+          "ibge": null,
+          "value": 16310297.75,
+          "display_value": "R$ 16,3 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "ES",
+          "municipio": "Serra",
+          "ibge": null,
+          "value": 16259064.55,
+          "display_value": "R$ 16,3 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SP",
+          "municipio": "TABOAO DA SERRA",
+          "ibge": null,
+          "value": 15986194.5,
+          "display_value": "R$ 16,0 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SP",
+          "municipio": "SERTAOZINHO",
+          "ibge": null,
+          "value": 15334069.620000001,
+          "display_value": "R$ 15,3 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SP",
+          "municipio": "MARTINOPOLIS",
+          "ibge": null,
+          "value": 15234708.5,
+          "display_value": "R$ 15,2 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "ES",
+          "municipio": "SERRA",
+          "ibge": null,
+          "value": 14983960.41,
+          "display_value": "R$ 15,0 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SP",
+          "municipio": "SAO JOSE DOS CAMPOS",
+          "ibge": null,
+          "value": 14818737.450000001,
+          "display_value": "R$ 14,8 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "MG",
+          "municipio": "ITAU DE MINAS",
+          "ibge": null,
+          "value": 14563538.18,
+          "display_value": "R$ 14,6 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SP",
+          "municipio": "São Carlos",
+          "ibge": null,
+          "value": 13890377.09,
+          "display_value": "R$ 13,9 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SP",
+          "municipio": "OSASCO",
+          "ibge": null,
+          "value": 13691968.709999999,
+          "display_value": "R$ 13,7 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SP",
+          "municipio": "SAO CARLOS",
+          "ibge": null,
+          "value": 13005605.24,
+          "display_value": "R$ 13,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "Ribeirão Preto",
+          "ibge": null,
+          "value": 12706550.26,
+          "display_value": "R$ 12,7 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "SOROCABA",
+          "ibge": null,
+          "value": 12280753.56,
+          "display_value": "R$ 12,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "Lins",
+          "ibge": null,
+          "value": 12257885.41,
+          "display_value": "R$ 12,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "ORLANDIA",
+          "ibge": null,
+          "value": 12005678.249999998,
+          "display_value": "R$ 12,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "TAUBATE",
+          "ibge": null,
+          "value": 11949118.72,
+          "display_value": "R$ 11,9 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "SAO JOSE DO RIO PRETO",
+          "ibge": null,
+          "value": 11337568.780000001,
+          "display_value": "R$ 11,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "Monte Alto",
+          "ibge": null,
+          "value": 11238513.52,
+          "display_value": "R$ 11,2 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "Contagem",
+          "ibge": null,
+          "value": 10395963.57,
+          "display_value": "R$ 10,4 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "ES",
+          "municipio": "CARIACICA",
+          "ibge": null,
+          "value": 10375421.21,
+          "display_value": "R$ 10,4 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "POUSO ALEGRE",
+          "ibge": null,
+          "value": 10270167.31,
+          "display_value": "R$ 10,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "PATOS DE MINAS",
+          "ibge": null,
+          "value": 10250957.009999998,
+          "display_value": "R$ 10,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "SETE LAGOAS",
+          "ibge": null,
+          "value": 10005173.7,
+          "display_value": "R$ 10,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "IBATE",
+          "ibge": null,
+          "value": 9998422.75,
+          "display_value": "R$ 10,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "ES",
+          "municipio": "Linhares",
+          "ibge": null,
+          "value": 9753110.34,
+          "display_value": "R$ 9,8 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RJ",
+          "municipio": "SAO GONCALO",
+          "ibge": null,
+          "value": 9528852.48,
+          "display_value": "R$ 9,5 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "Martinópolis",
+          "ibge": null,
+          "value": 9299529.63,
+          "display_value": "R$ 9,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "JACUTINGA",
+          "ibge": null,
+          "value": 9186723.45,
+          "display_value": "R$ 9,2 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "Capivari",
+          "ibge": null,
+          "value": 8940900.8,
+          "display_value": "R$ 8,9 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "Sorocaba",
+          "ibge": null,
+          "value": 8655400.19,
+          "display_value": "R$ 8,7 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "ARTUR NOGUEIRA",
+          "ibge": null,
+          "value": 8611837.21,
+          "display_value": "R$ 8,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "DOURADO",
+          "ibge": null,
+          "value": 8599981.46,
+          "display_value": "R$ 8,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "CATANDUVA",
+          "ibge": null,
+          "value": 8599151.52,
+          "display_value": "R$ 8,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "JECEABA",
+          "ibge": null,
+          "value": 8596462.62,
+          "display_value": "R$ 8,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "JOAO PINHEIRO",
+          "ibge": null,
+          "value": 8395000.0,
+          "display_value": "R$ 8,4 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "COLINA",
+          "ibge": null,
+          "value": 7938267.92,
+          "display_value": "R$ 7,9 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "ARUJA",
+          "ibge": null,
+          "value": 7936633.15,
+          "display_value": "R$ 7,9 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "Guarulhos",
+          "ibge": null,
+          "value": 7834075.11,
+          "display_value": "R$ 7,8 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "BERNARDINO DE CAMPOS",
+          "ibge": null,
+          "value": 7779103.53,
+          "display_value": "R$ 7,8 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "LIMEIRA",
+          "ibge": null,
+          "value": 7719438.77,
+          "display_value": "R$ 7,7 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "Betim",
+          "ibge": null,
+          "value": 7638006.619999999,
+          "display_value": "R$ 7,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "AVARE",
+          "ibge": null,
+          "value": 7422147.4399999995,
+          "display_value": "R$ 7,4 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "ITAPEVA",
+          "ibge": null,
+          "value": 7320905.35,
+          "display_value": "R$ 7,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "SANTA ISABEL",
+          "ibge": null,
+          "value": 7303165.04,
+          "display_value": "R$ 7,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "COTIA",
+          "ibge": null,
+          "value": 7249680.81,
+          "display_value": "R$ 7,2 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "Santana de Parnaíba",
+          "ibge": null,
+          "value": 7123887.9,
+          "display_value": "R$ 7,1 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "MAUA",
+          "ibge": null,
+          "value": 7030569.07,
+          "display_value": "R$ 7,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "VARZEA PAULISTA",
+          "ibge": null,
+          "value": 6901372.93,
+          "display_value": "R$ 6,9 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RJ",
+          "municipio": "CANTAGALO",
+          "ibge": null,
+          "value": 6875375.27,
+          "display_value": "R$ 6,9 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "DOIS CORREGOS",
+          "ibge": null,
+          "value": 6776037.76,
+          "display_value": "R$ 6,8 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "ELIAS FAUSTO",
+          "ibge": null,
+          "value": 6585402.2,
+          "display_value": "R$ 6,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "VOTORANTIM",
+          "ibge": null,
+          "value": 6559708.3,
+          "display_value": "R$ 6,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "GUARUJA",
+          "ibge": null,
+          "value": 6351631.85,
+          "display_value": "R$ 6,4 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "BARUERI",
+          "ibge": null,
+          "value": 6329624.05,
+          "display_value": "R$ 6,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "Itaú de Minas",
+          "ibge": null,
+          "value": 6222938.37,
+          "display_value": "R$ 6,2 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "Valinhos",
+          "ibge": null,
+          "value": 6165924.34,
+          "display_value": "R$ 6,2 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "Jeceaba",
+          "ibge": null,
+          "value": 6014943.1899999995,
+          "display_value": "R$ 6,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "Governador Valadares",
+          "ibge": null,
+          "value": 5933372.0,
+          "display_value": "R$ 5,9 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "ITAPUI",
+          "ibge": null,
+          "value": 5900000.0,
+          "display_value": "R$ 5,9 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "Artur Nogueira",
+          "ibge": null,
+          "value": 5800847.119999999,
+          "display_value": "R$ 5,8 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "BIRIGUI",
+          "ibge": null,
+          "value": 5540333.82,
+          "display_value": "R$ 5,5 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "PINDORAMA",
+          "ibge": null,
+          "value": 5470807.16,
+          "display_value": "R$ 5,5 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "Bragança Paulista",
+          "ibge": null,
+          "value": 5451497.35,
+          "display_value": "R$ 5,5 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "Indaiatuba",
+          "ibge": null,
+          "value": 5271241.93,
+          "display_value": "R$ 5,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "ITAQUAQUECETUBA",
+          "ibge": null,
+          "value": 5168774.54,
+          "display_value": "R$ 5,2 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "PEDERNEIRAS",
+          "ibge": null,
+          "value": 5034597.640000001,
+          "display_value": "R$ 5,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "GUARA",
+          "ibge": null,
+          "value": 5005807.76,
+          "display_value": "R$ 5,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "Taboão da Serra",
+          "ibge": null,
+          "value": 4909007.57,
+          "display_value": "R$ 4,9 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "BATATAIS",
+          "ibge": null,
+          "value": 4839042.16,
+          "display_value": "R$ 4,8 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "Betim ",
+          "ibge": null,
+          "value": 4809722.56,
+          "display_value": "R$ 4,8 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RJ",
+          "municipio": "Rio de Janeiro",
+          "ibge": null,
+          "value": 4728091.8100000005,
+          "display_value": "R$ 4,7 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "RIO POMBA",
+          "ibge": null,
+          "value": 4576045.0,
+          "display_value": "R$ 4,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "Mogi Mirim",
+          "ibge": null,
+          "value": 4575485.14,
+          "display_value": "R$ 4,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "Americana",
+          "ibge": null,
+          "value": 4116434.33,
+          "display_value": "R$ 4,1 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "UBERLANDIA",
+          "ibge": null,
+          "value": 4096894.31,
+          "display_value": "R$ 4,1 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "CASTILHO",
+          "ibge": null,
+          "value": 4076465.58,
+          "display_value": "R$ 4,1 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Sertãozinho",
+          "ibge": null,
+          "value": 4054886.25,
+          "display_value": "R$ 4,1 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "MOGI-GUACU",
+          "ibge": null,
+          "value": 3936685.47,
+          "display_value": "R$ 3,9 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Guará",
+          "ibge": null,
+          "value": 3876898.26,
+          "display_value": "R$ 3,9 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Dourado",
+          "ibge": null,
+          "value": 3874595.19,
+          "display_value": "R$ 3,9 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "LAGOA SANTA",
+          "ibge": null,
+          "value": 3770461.4699999997,
+          "display_value": "R$ 3,8 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "BARRETOS",
+          "ibge": null,
+          "value": 3714150.02,
+          "display_value": "R$ 3,7 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "BOTUCATU",
+          "ibge": null,
+          "value": 3699020.2600000002,
+          "display_value": "R$ 3,7 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Biritiba Mirim",
+          "ibge": null,
+          "value": 3680982.92,
+          "display_value": "R$ 3,7 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "ITAPECERICA DA SERRA",
+          "ibge": null,
+          "value": 3668480.0,
+          "display_value": "R$ 3,7 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "BOFETE",
+          "ibge": null,
+          "value": 3648434.09,
+          "display_value": "R$ 3,6 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Itapecerica da Serra",
+          "ibge": null,
+          "value": 3610749.96,
+          "display_value": "R$ 3,6 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "São Caetano do Sul",
+          "ibge": null,
+          "value": 3383079.53,
+          "display_value": "R$ 3,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "GAVIAO PEIXOTO",
+          "ibge": null,
+          "value": 3362125.47,
+          "display_value": "R$ 3,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "PLANURA",
+          "ibge": null,
+          "value": 3309926.57,
+          "display_value": "R$ 3,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "ITAJUBA",
+          "ibge": null,
+          "value": 3273160.36,
+          "display_value": "R$ 3,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Tietê",
+          "ibge": null,
+          "value": 3242516.04,
+          "display_value": "R$ 3,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "SANTA RITA DO SAPUCAI",
+          "ibge": null,
+          "value": 3125452.39,
+          "display_value": "R$ 3,1 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "São José dos Campos",
+          "ibge": null,
+          "value": 3052498.14,
+          "display_value": "R$ 3,1 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "AMPARO",
+          "ibge": null,
+          "value": 3035627.62,
+          "display_value": "R$ 3,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Itaúna",
+          "ibge": null,
+          "value": 3020000.0,
+          "display_value": "R$ 3,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "FRANCA",
+          "ibge": null,
+          "value": 2957298.41,
+          "display_value": "R$ 3,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "SABARA",
+          "ibge": null,
+          "value": 2845000.0,
+          "display_value": "R$ 2,8 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Itaquaquecetuba",
+          "ibge": null,
+          "value": 2833452.76,
+          "display_value": "R$ 2,8 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "ARACARIGUAMA",
+          "ibge": null,
+          "value": 2744240.0,
+          "display_value": "R$ 2,7 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "POMPEIA",
+          "ibge": null,
+          "value": 2668584.05,
+          "display_value": "R$ 2,7 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "RIBEIRAO PRETO",
+          "ibge": null,
+          "value": 2623706.99,
+          "display_value": "R$ 2,6 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Jaguariúna",
+          "ibge": null,
+          "value": 2521580.38,
+          "display_value": "R$ 2,5 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "JANDIRA",
+          "ibge": null,
+          "value": 2438605.86,
+          "display_value": "R$ 2,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "IPERO",
+          "ibge": null,
+          "value": 2362068.0,
+          "display_value": "R$ 2,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "JUNDIAI",
+          "ibge": null,
+          "value": 2334647.59,
+          "display_value": "R$ 2,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "SANTA ROSA DE VITERBO",
+          "ibge": null,
+          "value": 2331976.25,
+          "display_value": "R$ 2,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "JARINU",
+          "ibge": null,
+          "value": 2271264.63,
+          "display_value": "R$ 2,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Birigui",
+          "ibge": null,
+          "value": 2264605.02,
+          "display_value": "R$ 2,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "BOA ESPERANCA",
+          "ibge": null,
+          "value": 2247562.4800000004,
+          "display_value": "R$ 2,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Salto",
+          "ibge": null,
+          "value": 2202515.37,
+          "display_value": "R$ 2,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Osasco",
+          "ibge": null,
+          "value": 2185961.43,
+          "display_value": "R$ 2,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "PAULINIA",
+          "ibge": null,
+          "value": 2030256.94,
+          "display_value": "R$ 2,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Cerquilho",
+          "ibge": null,
+          "value": 2015833.54,
+          "display_value": "R$ 2,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "São Roque",
+          "ibge": null,
+          "value": 1927071.28,
+          "display_value": "R$ 1,9 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "MONTE MOR",
+          "ibge": null,
+          "value": 1904074.31,
+          "display_value": "R$ 1,9 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Araçariguama",
+          "ibge": null,
+          "value": 1900000.0,
+          "display_value": "R$ 1,9 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "Cantagalo",
+          "ibge": null,
+          "value": 1898405.94,
+          "display_value": "R$ 1,9 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Jaraguá do Sul",
+          "ibge": null,
+          "value": 1840687.8299999998,
+          "display_value": "R$ 1,8 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "CASA BRANCA",
+          "ibge": null,
+          "value": 1840316.5599999998,
+          "display_value": "R$ 1,8 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "MACAE",
+          "ibge": null,
+          "value": 1839139.1400000001,
+          "display_value": "R$ 1,8 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "ARARAQUARA",
+          "ibge": null,
+          "value": 1838545.4,
+          "display_value": "R$ 1,8 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Rio Claro",
+          "ibge": null,
+          "value": 1799037.0,
+          "display_value": "R$ 1,8 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "São Gotardo",
+          "ibge": null,
+          "value": 1788864.0,
+          "display_value": "R$ 1,8 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Araçatuba",
+          "ibge": null,
+          "value": 1780000.0,
+          "display_value": "R$ 1,8 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Sete Lagoas",
+          "ibge": null,
+          "value": 1703772.38,
+          "display_value": "R$ 1,7 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "PRATA",
+          "ibge": null,
+          "value": 1700233.71,
+          "display_value": "R$ 1,7 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "MONTES CLAROS",
+          "ibge": null,
+          "value": 1677555.78,
+          "display_value": "R$ 1,7 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "SARZEDO",
+          "ibge": null,
+          "value": 1600000.0,
+          "display_value": "R$ 1,6 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "MOGI DAS CRUZES",
+          "ibge": null,
+          "value": 1572624.73,
+          "display_value": "R$ 1,6 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Cajamar",
+          "ibge": null,
+          "value": 1452934.07,
+          "display_value": "R$ 1,5 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Mauá",
+          "ibge": null,
+          "value": 1447098.66,
+          "display_value": "R$ 1,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "SUZANO",
+          "ibge": null,
+          "value": 1445900.0,
+          "display_value": "R$ 1,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Vinhedo",
+          "ibge": null,
+          "value": 1440948.51,
+          "display_value": "R$ 1,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Visconde do Rio Branco",
+          "ibge": null,
+          "value": 1431995.2799999998,
+          "display_value": "R$ 1,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "CORONEL FABRICIANO",
+          "ibge": null,
+          "value": 1424000.0,
+          "display_value": "R$ 1,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "COLOMBIA",
+          "ibge": null,
+          "value": 1382319.33,
+          "display_value": "R$ 1,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "ITAPOLIS",
+          "ibge": null,
+          "value": 1359080.66,
+          "display_value": "R$ 1,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "PRESIDENTE PRUDENTE",
+          "ibge": null,
+          "value": 1349302.28,
+          "display_value": "R$ 1,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "ITUPEVA",
+          "ibge": null,
+          "value": 1349056.6099999999,
+          "display_value": "R$ 1,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "SANTA LUZIA",
+          "ibge": null,
+          "value": 1313966.34,
+          "display_value": "R$ 1,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "BEBEDOURO",
+          "ibge": null,
+          "value": 1302786.97,
+          "display_value": "R$ 1,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Carapicuíba",
+          "ibge": null,
+          "value": 1283217.31,
+          "display_value": "R$ 1,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "NUPORANGA",
+          "ibge": null,
+          "value": 1278142.06,
+          "display_value": "R$ 1,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "AGUAI",
+          "ibge": null,
+          "value": 1231721.5899999999,
+          "display_value": "R$ 1,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Arujá",
+          "ibge": null,
+          "value": 1212875.3900000001,
+          "display_value": "R$ 1,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "São Gonçalo",
+          "ibge": null,
+          "value": 1185886.88,
+          "display_value": "R$ 1,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Bauru",
+          "ibge": null,
+          "value": 1141540.81,
+          "display_value": "R$ 1,1 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Franca",
+          "ibge": null,
+          "value": 1136756.1800000002,
+          "display_value": "R$ 1,1 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "MATOZINHOS",
+          "ibge": null,
+          "value": 1105385.3699999999,
+          "display_value": "R$ 1,1 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "QUEIMADOS",
+          "ibge": null,
+          "value": 1099323.1,
+          "display_value": "R$ 1,1 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Presidente Prudente",
+          "ibge": null,
+          "value": 1043469.87,
+          "display_value": "R$ 1,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "ITU",
+          "ibge": null,
+          "value": 1041449.98,
+          "display_value": "R$ 1,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "MIRASSOL",
+          "ibge": null,
+          "value": 1024299.8300000001,
+          "display_value": "R$ 1,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "GUAPIACU",
+          "ibge": null,
+          "value": 1021170.2999999999,
+          "display_value": "R$ 1,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Santa Luzia",
+          "ibge": null,
+          "value": 989652.52,
+          "display_value": "R$ 989.653",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Uberlândia",
+          "ibge": null,
+          "value": 980247.24,
+          "display_value": "R$ 980.247",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "ITAPIRA",
+          "ibge": null,
+          "value": 972279.4199999999,
+          "display_value": "R$ 972.279",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "JABOTICABAL",
+          "ibge": null,
+          "value": 884960.87,
+          "display_value": "R$ 884.961",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Itupeva",
+          "ibge": null,
+          "value": 849713.8099999999,
+          "display_value": "R$ 849.714",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "CONCHAL",
+          "ibge": null,
+          "value": 847051.9199999999,
+          "display_value": "R$ 847.052",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "PASSOS",
+          "ibge": null,
+          "value": 812173.1100000001,
+          "display_value": "R$ 812.173",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "ESPIRITO SANTO DO PINHAL",
+          "ibge": null,
+          "value": 807822.59,
+          "display_value": "R$ 807.823",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Planura",
+          "ibge": null,
+          "value": 771375.0,
+          "display_value": "R$ 771.375",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Limeira",
+          "ibge": null,
+          "value": 762715.0900000001,
+          "display_value": "R$ 762.715",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "ITAPETININGA",
+          "ibge": null,
+          "value": 740551.87,
+          "display_value": "R$ 740.552",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Taubaté",
+          "ibge": null,
+          "value": 713869.9299999999,
+          "display_value": "R$ 713.870",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "ALUMINIO",
+          "ibge": null,
+          "value": 676721.0900000001,
+          "display_value": "R$ 676.721",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Blumenau",
+          "ibge": null,
+          "value": 600861.37,
+          "display_value": "R$ 600.861",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Itatiba",
+          "ibge": null,
+          "value": 594128.1,
+          "display_value": "R$ 594.128",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Patrocínio Paulista",
+          "ibge": null,
+          "value": 593910.0,
+          "display_value": "R$ 593.910",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "PIRAPOZINHO",
+          "ibge": null,
+          "value": 589665.44,
+          "display_value": "R$ 589.665",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Botucatu",
+          "ibge": null,
+          "value": 578872.38,
+          "display_value": "R$ 578.872",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Penápolis",
+          "ibge": null,
+          "value": 538000.0,
+          "display_value": "R$ 538.000",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "CAJOBI",
+          "ibge": null,
+          "value": 531540.0,
+          "display_value": "R$ 531.540",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "PALESTINA",
+          "ibge": null,
+          "value": 519508.63,
+          "display_value": "R$ 519.509",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "CONCEICAO DOS OUROS",
+          "ibge": null,
+          "value": 480642.54000000004,
+          "display_value": "R$ 480.643",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "NOVA IGUACU",
+          "ibge": null,
+          "value": 468073.07,
+          "display_value": "R$ 468.073",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Jaboticabal",
+          "ibge": null,
+          "value": 450050.07999999996,
+          "display_value": "R$ 450.050",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Itapeva",
+          "ibge": null,
+          "value": 439996.28,
+          "display_value": "R$ 439.996",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Mirassol",
+          "ibge": null,
+          "value": 424148.32,
+          "display_value": "R$ 424.148",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "ATIBAIA",
+          "ibge": null,
+          "value": 413819.1,
+          "display_value": "R$ 413.819",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Barueri",
+          "ibge": null,
+          "value": 400000.0,
+          "display_value": "R$ 400.000",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Sumaré",
+          "ibge": null,
+          "value": 374505.52999999997,
+          "display_value": "R$ 374.506",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Santa Bárbara d'Oeste",
+          "ibge": null,
+          "value": 359213.07,
+          "display_value": "R$ 359.213",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "UCHOA",
+          "ibge": null,
+          "value": 358885.49,
+          "display_value": "R$ 358.885",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "SANTOS",
+          "ibge": null,
+          "value": 338114.5,
+          "display_value": "R$ 338.114",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "UBERABA",
+          "ibge": null,
+          "value": 336118.44,
+          "display_value": "R$ 336.118",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "CAPELA DO ALTO",
+          "ibge": null,
+          "value": 335729.24,
+          "display_value": "R$ 335.729",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "CAPAO BONITO",
+          "ibge": null,
+          "value": 313940.04,
+          "display_value": "R$ 313.940",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Lagoa Formosa",
+          "ibge": null,
+          "value": 313013.67,
+          "display_value": "R$ 313.014",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "BARRA DO PIRAI",
+          "ibge": null,
+          "value": 295633.89,
+          "display_value": "R$ 295.634",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "LAVRAS",
+          "ibge": null,
+          "value": 288552.33999999997,
+          "display_value": "R$ 288.552",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "Barra do Piraí",
+          "ibge": null,
+          "value": 278525.44,
+          "display_value": "R$ 278.525",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "TAMBAU",
+          "ibge": null,
+          "value": 253333.08000000002,
+          "display_value": "R$ 253.333",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "CARAPICUIBA",
+          "ibge": null,
+          "value": 240015.08,
+          "display_value": "R$ 240.015",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "BOM DESPACHO",
+          "ibge": null,
+          "value": 236886.3,
+          "display_value": "R$ 236.886",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Santa Bárbara d´Oeste",
+          "ibge": null,
+          "value": 230000.0,
+          "display_value": "R$ 230.000",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "AGUAS DE LINDOIA",
+          "ibge": null,
+          "value": 197070.1,
+          "display_value": "R$ 197.070",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Patos de Minas",
+          "ibge": null,
+          "value": 162000.0,
+          "display_value": "R$ 162.000",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Jarinu",
+          "ibge": null,
+          "value": 156178.04,
+          "display_value": "R$ 156.178",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "BOREBI",
+          "ibge": null,
+          "value": 153000.0,
+          "display_value": "R$ 153.000",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "PARDINHO",
+          "ibge": null,
+          "value": 152297.56,
+          "display_value": "R$ 152.298",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Palestina",
+          "ibge": null,
+          "value": 151267.2,
+          "display_value": "R$ 151.267",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Tatuí",
+          "ibge": null,
+          "value": 147124.37,
+          "display_value": "R$ 147.124",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "SAO CAETANO DO SUL",
+          "ibge": null,
+          "value": 142853.93,
+          "display_value": "R$ 142.854",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "SABINO",
+          "ibge": null,
+          "value": 124016.8,
+          "display_value": "R$ 124.017",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Jaraguá do Sul",
+          "ibge": null,
+          "value": 122694.06,
+          "display_value": "R$ 122.694",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "MURIAE",
+          "ibge": null,
+          "value": 117000.0,
+          "display_value": "R$ 117.000",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "RINCAO",
+          "ibge": null,
+          "value": 107184.02,
+          "display_value": "R$ 107.184",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Matozinhos",
+          "ibge": null,
+          "value": 99087.73,
+          "display_value": "R$ 99.088",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Diadema",
+          "ibge": null,
+          "value": 98446.39,
+          "display_value": "R$ 98.446",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Hortolândia",
+          "ibge": null,
+          "value": 84080.36,
+          "display_value": "R$ 84.080",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "RIO GRANDE DA SERRA",
+          "ibge": null,
+          "value": 83307.89,
+          "display_value": "R$ 83.308",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "MARTINHO CAMPOS",
+          "ibge": null,
+          "value": 81882.35,
+          "display_value": "R$ 81.882",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Mogi Guaçu",
+          "ibge": null,
+          "value": 75460.33,
+          "display_value": "R$ 75.460",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Guapiaçu",
+          "ibge": null,
+          "value": 73118.91,
+          "display_value": "R$ 73.119",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "SACRAMENTO",
+          "ibge": null,
+          "value": 67976.09,
+          "display_value": "R$ 67.976",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Araras",
+          "ibge": null,
+          "value": 56500.0,
+          "display_value": "R$ 56.500",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "ITABORAI",
+          "ibge": null,
+          "value": 56355.5,
+          "display_value": "R$ 56.356",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "NOVA PONTE",
+          "ibge": null,
+          "value": 51581.93000000001,
+          "display_value": "R$ 51.582",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "ARACATUBA",
+          "ibge": null,
+          "value": 51549.100000000006,
+          "display_value": "R$ 51.549",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "LUIS ANTONIO",
+          "ibge": null,
+          "value": 45988.229999999996,
+          "display_value": "R$ 45.988",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "CARMO DO PARANAIBA",
+          "ibge": null,
+          "value": 45000.0,
+          "display_value": "R$ 45.000",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Rio Grande da Serra",
+          "ibge": null,
+          "value": 37692.54,
+          "display_value": "R$ 37.693",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Santa Rita do Sapucaí",
+          "ibge": null,
+          "value": 34711.880000000005,
+          "display_value": "R$ 34.712",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "COMENDADOR GOMES",
+          "ibge": null,
+          "value": 33586.520000000004,
+          "display_value": "R$ 33.587",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Itajubá",
+          "ibge": null,
+          "value": 32272.32,
+          "display_value": "R$ 32.272",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "FRUTAL",
+          "ibge": null,
+          "value": 20907.42,
+          "display_value": "R$ 20.907",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "TAQUARAL",
+          "ibge": null,
+          "value": 16843.32,
+          "display_value": "R$ 16.843",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Carmo do Paranaíba",
+          "ibge": null,
+          "value": 16028.67,
+          "display_value": "R$ 16.029",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "Betim",
+          "ibge": null,
+          "value": 15039.84,
+          "display_value": "R$ 15.040",
+          "share": 0.0
+        },
+        {
+          "uf": "ES",
+          "municipio": "Cariacica",
+          "ibge": null,
+          "value": 12090.0,
+          "display_value": "R$ 12.090",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Monte Carmelo",
+          "ibge": null,
+          "value": 11720.0,
+          "display_value": "R$ 11.720",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "ARARAS",
+          "ibge": null,
+          "value": 9363.61,
+          "display_value": "R$ 9.364",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "SAO JOAO DA BOA VISTA",
+          "ibge": null,
+          "value": 8703.2,
+          "display_value": "R$ 8.703",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "SAO SEBASTIAO DA GRAMA",
+          "ibge": null,
+          "value": 2700.0,
+          "display_value": "R$ 2.700",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "MONTE CARMELO",
+          "ibge": null,
+          "value": 1307.23,
+          "display_value": "R$ 1.307",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
+          "municipio": "CESARIO LANGE",
+          "ibge": null,
+          "value": 602.8,
+          "display_value": "R$ 603",
+          "share": 0.0
+        }
+      ]
     }
   ],
   "_nota_metodologica": "Valor do BF recalculado como 34% fixo sobre Valor do Bem (não a coluna original da planilha, que é 17% constante em 100% das linhas — premissa simplificada, não cálculo tributário real/marginal). Taxa confirmada com o time por reconciliação com a versão anterior do indicador (recorte histórico de SP).",

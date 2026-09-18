@@ -273,8 +273,138 @@
       ]
     }
   ],
-  "breakdowns": [],
-  "_nota_anonimizacao": "Sem CNPJ, nome de empresa ou município em nenhum nível do JSON — apenas contagens agregadas por UF ou nacionais.",
+  "breakdowns": [
+    {
+      "id": "por_municipio",
+      "title": "Atendimentos B+P por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "AC",
+          "municipio": "RIO BRANCO",
+          "ibge": null,
+          "value": 764,
+          "display_value": "764",
+          "share": 0.5
+        },
+        {
+          "uf": "AC",
+          "municipio": "CRUZEIRO DO SUL",
+          "ibge": null,
+          "value": 228,
+          "display_value": "228",
+          "share": 0.1
+        },
+        {
+          "uf": "AC",
+          "municipio": "EPITACIOLANDIA",
+          "ibge": null,
+          "value": 42,
+          "display_value": "42",
+          "share": 0.0
+        },
+        {
+          "uf": "AC",
+          "municipio": "BRASILEIA",
+          "ibge": null,
+          "value": 33,
+          "display_value": "33",
+          "share": 0.0
+        },
+        {
+          "uf": "AC",
+          "municipio": "XAPURI",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "AC",
+          "municipio": "RODRIGUES ALVES",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "AC",
+          "municipio": "MANCIO LIMA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "AC",
+          "municipio": "ACRELANDIA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "AC",
+          "municipio": "SENADOR GUIOMARD",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AC",
+          "municipio": "ACRELÂNDIA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AC",
+          "municipio": "PLACIDO DE CASTRO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AC",
+          "municipio": "BUJARI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AC",
+          "municipio": "MARECHAL THAUMATURGO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AC",
+          "municipio": "SENA MADUREIRA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AC",
+          "municipio": "TARAUACA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        }
+      ]
+    }
+  ],
+  "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
   "data_aceitacao": "2026-08-04",
   "geo": {

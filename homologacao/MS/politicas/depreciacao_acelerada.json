@@ -212,6 +212,159 @@
           "share": 33.8
         }
       ]
+    },
+    {
+      "id": "por_municipio",
+      "title": "Investimento incentivado por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "MS",
+          "municipio": "PARAISO DAS AGUAS",
+          "ibge": null,
+          "value": 91729298.24000001,
+          "display_value": "R$ 91,7 mi",
+          "share": 1.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "DOURADOS",
+          "ibge": null,
+          "value": 24958759.09,
+          "display_value": "R$ 25,0 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "MS",
+          "municipio": "SIDROLANDIA",
+          "ibge": null,
+          "value": 7561741.630000001,
+          "display_value": "R$ 7,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "Aparecida do Taboado",
+          "ibge": null,
+          "value": 5550000.0,
+          "display_value": "R$ 5,5 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "BATAYPORA",
+          "ibge": null,
+          "value": 4575035.06,
+          "display_value": "R$ 4,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "BATAGUASSU",
+          "ibge": null,
+          "value": 3502970.98,
+          "display_value": "R$ 3,5 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "Ladário",
+          "ibge": null,
+          "value": 2016086.05,
+          "display_value": "R$ 2,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "CAMPO GRANDE",
+          "ibge": null,
+          "value": 1417401.63,
+          "display_value": "R$ 1,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "Campo Grande",
+          "ibge": null,
+          "value": 1032801.9099999999,
+          "display_value": "R$ 1,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "Dourados",
+          "ibge": null,
+          "value": 888590.72,
+          "display_value": "R$ 888.591",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "CAARAPO",
+          "ibge": null,
+          "value": 731177.9400000001,
+          "display_value": "R$ 731.178",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "MARACAJU",
+          "ibge": null,
+          "value": 724044.71,
+          "display_value": "R$ 724.045",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "São Gabriel do Oeste",
+          "ibge": null,
+          "value": 366291.0,
+          "display_value": "R$ 366.291",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "Caarapó",
+          "ibge": null,
+          "value": 294114.2,
+          "display_value": "R$ 294.114",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "NOVA ANDRADINA",
+          "ibge": null,
+          "value": 230348.31,
+          "display_value": "R$ 230.348",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "Bataguassu",
+          "ibge": null,
+          "value": 76092.70000000001,
+          "display_value": "R$ 76.093",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "Sidrolândia",
+          "ibge": null,
+          "value": 47734.48,
+          "display_value": "R$ 47.734",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "Nova Andradina",
+          "ibge": null,
+          "value": 22982.39,
+          "display_value": "R$ 22.982",
+          "share": 0.0
+        }
+      ]
     }
   ],
   "_nota_metodologica": "Valor do BF recalculado como 34% fixo sobre Valor do Bem (não a coluna original da planilha, que é 17% constante em 100% das linhas — premissa simplificada, não cálculo tributário real/marginal). Taxa confirmada com o time por reconciliação com a versão anterior do indicador (recorte histórico de SP).",

@@ -212,6 +212,39 @@
           "share": 33.8
         }
       ]
+    },
+    {
+      "id": "por_municipio",
+      "title": "Investimento incentivado por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "TO",
+          "municipio": "XAMBIOA",
+          "ibge": null,
+          "value": 3566366.51,
+          "display_value": "R$ 3,6 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "TO",
+          "municipio": "WANDERLANDIA",
+          "ibge": null,
+          "value": 364495.39,
+          "display_value": "R$ 364.495",
+          "share": 0.0
+        },
+        {
+          "uf": "TO",
+          "municipio": "ARAGUAINA",
+          "ibge": null,
+          "value": 243.2,
+          "display_value": "R$ 243",
+          "share": 0.0
+        }
+      ]
     }
   ],
   "_nota_metodologica": "Valor do BF recalculado como 34% fixo sobre Valor do Bem (não a coluna original da planilha, que é 17% constante em 100% das linhas — premissa simplificada, não cálculo tributário real/marginal). Taxa confirmada com o time por reconciliação com a versão anterior do indicador (recorte histórico de SP).",

@@ -212,6 +212,727 @@
           "share": 33.8
         }
       ]
+    },
+    {
+      "id": "por_municipio",
+      "title": "Investimento incentivado por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "RS",
+          "municipio": "PORTO ALEGRE",
+          "ibge": null,
+          "value": 107647695.62,
+          "display_value": "R$ 107,6 mi",
+          "share": 1.2
+        },
+        {
+          "uf": "RS",
+          "municipio": "ERECHIM",
+          "ibge": null,
+          "value": 69120637.28,
+          "display_value": "R$ 69,1 mi",
+          "share": 0.8
+        },
+        {
+          "uf": "RS",
+          "municipio": "FARROUPILHA",
+          "ibge": null,
+          "value": 61203128.01,
+          "display_value": "R$ 61,2 mi",
+          "share": 0.7
+        },
+        {
+          "uf": "RS",
+          "municipio": "CAXIAS DO SUL",
+          "ibge": null,
+          "value": 55529073.13,
+          "display_value": "R$ 55,5 mi",
+          "share": 0.6
+        },
+        {
+          "uf": "RS",
+          "municipio": "MONTENEGRO",
+          "ibge": null,
+          "value": 54356928.71,
+          "display_value": "R$ 54,4 mi",
+          "share": 0.6
+        },
+        {
+          "uf": "RS",
+          "municipio": "CANOAS",
+          "ibge": null,
+          "value": 51000223.7,
+          "display_value": "R$ 51,0 mi",
+          "share": 0.6
+        },
+        {
+          "uf": "RS",
+          "municipio": "CARLOS BARBOSA",
+          "ibge": null,
+          "value": 46204960.5,
+          "display_value": "R$ 46,2 mi",
+          "share": 0.5
+        },
+        {
+          "uf": "RS",
+          "municipio": "Caxias do Sul",
+          "ibge": null,
+          "value": 25006816.16,
+          "display_value": "R$ 25,0 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "RS",
+          "municipio": "CACHOEIRINHA",
+          "ibge": null,
+          "value": 22620358.03,
+          "display_value": "R$ 22,6 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "RS",
+          "municipio": "SALVADOR DO SUL",
+          "ibge": null,
+          "value": 21997727.75,
+          "display_value": "R$ 22,0 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "RS",
+          "municipio": "GRAVATAI",
+          "ibge": null,
+          "value": 19138259.67,
+          "display_value": "R$ 19,1 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "RS",
+          "municipio": "SAO LEOPOLDO",
+          "ibge": null,
+          "value": 18571410.25,
+          "display_value": "R$ 18,6 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "RS",
+          "municipio": "CAMPO BOM",
+          "ibge": null,
+          "value": 18475534.02,
+          "display_value": "R$ 18,5 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "RS",
+          "municipio": "CACHOEIRA DO SUL",
+          "ibge": null,
+          "value": 17825729.43,
+          "display_value": "R$ 17,8 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "RS",
+          "municipio": "ESTACAO",
+          "ibge": null,
+          "value": 17134235.49,
+          "display_value": "R$ 17,1 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "RS",
+          "municipio": "NOVA ESPERANCA DO SUL",
+          "ibge": null,
+          "value": 17108395.05,
+          "display_value": "R$ 17,1 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "RS",
+          "municipio": "GARIBALDI",
+          "ibge": null,
+          "value": 16753876.46,
+          "display_value": "R$ 16,8 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "RS",
+          "municipio": "SANANDUVA",
+          "ibge": null,
+          "value": 14520000.0,
+          "display_value": "R$ 14,5 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "RS",
+          "municipio": "PANAMBI",
+          "ibge": null,
+          "value": 12503276.870000001,
+          "display_value": "R$ 12,5 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "ESTEIO",
+          "ibge": null,
+          "value": 10473782.61,
+          "display_value": "R$ 10,5 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "NOVO HAMBURGO",
+          "ibge": null,
+          "value": 10281231.86,
+          "display_value": "R$ 10,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "SAO JERONIMO",
+          "ibge": null,
+          "value": 9904008.36,
+          "display_value": "R$ 9,9 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "MIRAGUAI",
+          "ibge": null,
+          "value": 9310992.780000001,
+          "display_value": "R$ 9,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "Erechim",
+          "ibge": null,
+          "value": 9246002.18,
+          "display_value": "R$ 9,2 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "FELIZ",
+          "ibge": null,
+          "value": 9095716.71,
+          "display_value": "R$ 9,1 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "VERANOPOLIS",
+          "ibge": null,
+          "value": 8897246.97,
+          "display_value": "R$ 8,9 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "BOM PRINCIPIO",
+          "ibge": null,
+          "value": 7495728.71,
+          "display_value": "R$ 7,5 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "São José do Inhacorá",
+          "ibge": null,
+          "value": 7370354.22,
+          "display_value": "R$ 7,4 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "LAJEADO",
+          "ibge": null,
+          "value": 6993828.48,
+          "display_value": "R$ 7,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "GUAPORE",
+          "ibge": null,
+          "value": 6570370.42,
+          "display_value": "R$ 6,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "Salvador do Sul",
+          "ibge": null,
+          "value": 6277155.29,
+          "display_value": "R$ 6,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "Gravataí",
+          "ibge": null,
+          "value": 5270601.3100000005,
+          "display_value": "R$ 5,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "SANTO ANGELO",
+          "ibge": null,
+          "value": 4889569.85,
+          "display_value": "R$ 4,9 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "Flores da Cunha",
+          "ibge": null,
+          "value": 4701247.48,
+          "display_value": "R$ 4,7 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "VENANCIO AIRES",
+          "ibge": null,
+          "value": 4592776.96,
+          "display_value": "R$ 4,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "CRUZEIRO DO SUL",
+          "ibge": null,
+          "value": 4208547.26,
+          "display_value": "R$ 4,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Sarandi",
+          "ibge": null,
+          "value": 3835000.0,
+          "display_value": "R$ 3,8 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "IBIRUBA",
+          "ibge": null,
+          "value": 2840000.0,
+          "display_value": "R$ 2,8 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "HORIZONTINA",
+          "ibge": null,
+          "value": 2737000.0,
+          "display_value": "R$ 2,7 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Cachoeira do Sul",
+          "ibge": null,
+          "value": 2568214.65,
+          "display_value": "R$ 2,6 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "SANTO ANTONIO DA PATRULHA",
+          "ibge": null,
+          "value": 2526602.0500000003,
+          "display_value": "R$ 2,5 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Bento Gonçalves",
+          "ibge": null,
+          "value": 2470521.13,
+          "display_value": "R$ 2,5 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "NAO-ME-TOQUE",
+          "ibge": null,
+          "value": 2443437.9000000004,
+          "display_value": "R$ 2,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Encantado",
+          "ibge": null,
+          "value": 2248626.02,
+          "display_value": "R$ 2,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "PASSO FUNDO",
+          "ibge": null,
+          "value": 2086648.33,
+          "display_value": "R$ 2,1 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Barra Funda",
+          "ibge": null,
+          "value": 1970000.0,
+          "display_value": "R$ 2,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Guaporé",
+          "ibge": null,
+          "value": 1896280.72,
+          "display_value": "R$ 1,9 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "EREBANGO",
+          "ibge": null,
+          "value": 1891837.51,
+          "display_value": "R$ 1,9 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Triunfo",
+          "ibge": null,
+          "value": 1583290.63,
+          "display_value": "R$ 1,6 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Antonio Prado",
+          "ibge": null,
+          "value": 1490878.07,
+          "display_value": "R$ 1,5 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Panambi",
+          "ibge": null,
+          "value": 1396000.0,
+          "display_value": "R$ 1,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "SANTO AUGUSTO",
+          "ibge": null,
+          "value": 1359697.25,
+          "display_value": "R$ 1,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "BARAO",
+          "ibge": null,
+          "value": 1280184.72,
+          "display_value": "R$ 1,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Venâncio Aires",
+          "ibge": null,
+          "value": 1235811.8399999999,
+          "display_value": "R$ 1,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "São Leopoldo",
+          "ibge": null,
+          "value": 1234624.39,
+          "display_value": "R$ 1,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "MARAU",
+          "ibge": null,
+          "value": 1031638.28,
+          "display_value": "R$ 1,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "SEBERI",
+          "ibge": null,
+          "value": 968408.08,
+          "display_value": "R$ 968.408",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "IPIRANGA DO SUL",
+          "ibge": null,
+          "value": 952712.48,
+          "display_value": "R$ 952.712",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Cachoeirinha",
+          "ibge": null,
+          "value": 939900.0,
+          "display_value": "R$ 939.900",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Camaquã",
+          "ibge": null,
+          "value": 935172.5700000001,
+          "display_value": "R$ 935.173",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Veranópolis",
+          "ibge": null,
+          "value": 877625.9,
+          "display_value": "R$ 877.626",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Novo Hamburgo",
+          "ibge": null,
+          "value": 822672.18,
+          "display_value": "R$ 822.672",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "FLORES DA CUNHA",
+          "ibge": null,
+          "value": 722793.66,
+          "display_value": "R$ 722.794",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Feliz",
+          "ibge": null,
+          "value": 681555.56,
+          "display_value": "R$ 681.556",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "JACUTINGA",
+          "ibge": null,
+          "value": 604877.5599999999,
+          "display_value": "R$ 604.878",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Picada Café",
+          "ibge": null,
+          "value": 583680.01,
+          "display_value": "R$ 583.680",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Jaraguá do Sul",
+          "ibge": null,
+          "value": 507576.43,
+          "display_value": "R$ 507.576",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Antônio Prado",
+          "ibge": null,
+          "value": 353754.41000000003,
+          "display_value": "R$ 353.754",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Cruzeiro do Sul",
+          "ibge": null,
+          "value": 310362.28,
+          "display_value": "R$ 310.362",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Não-Me-Toque",
+          "ibge": null,
+          "value": 281151.73,
+          "display_value": "R$ 281.152",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "BENTO GONCALVES",
+          "ibge": null,
+          "value": 269114.56,
+          "display_value": "R$ 269.115",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Farroupilha",
+          "ibge": null,
+          "value": 224109.97,
+          "display_value": "R$ 224.110",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Porto Alegre",
+          "ibge": null,
+          "value": 215591.23,
+          "display_value": "R$ 215.591",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Três Passos",
+          "ibge": null,
+          "value": 173157.5,
+          "display_value": "R$ 173.158",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "IVOTI",
+          "ibge": null,
+          "value": 161590.82,
+          "display_value": "R$ 161.591",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "TRIUNFO",
+          "ibge": null,
+          "value": 154407.64,
+          "display_value": "R$ 154.408",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Ivoti",
+          "ibge": null,
+          "value": 138133.18,
+          "display_value": "R$ 138.133",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "SANTA CRUZ DO SUL",
+          "ibge": null,
+          "value": 99320.93999999999,
+          "display_value": "R$ 99.321",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Rosário do Sul",
+          "ibge": null,
+          "value": 58364.94,
+          "display_value": "R$ 58.365",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "NOVA SANTA RITA",
+          "ibge": null,
+          "value": 50760.79,
+          "display_value": "R$ 50.761",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Betim",
+          "ibge": null,
+          "value": 37538.83,
+          "display_value": "R$ 37.539",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Montenegro",
+          "ibge": null,
+          "value": 22114.26,
+          "display_value": "R$ 22.114",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Estação",
+          "ibge": null,
+          "value": 19272.57,
+          "display_value": "R$ 19.273",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "TAPEJARA",
+          "ibge": null,
+          "value": 17590.0,
+          "display_value": "R$ 17.590",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "ROCA SALES",
+          "ibge": null,
+          "value": 6150.0,
+          "display_value": "R$ 6.150",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Seberi",
+          "ibge": null,
+          "value": 5600.0,
+          "display_value": "R$ 5.600",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "BOM RETIRO DO SUL",
+          "ibge": null,
+          "value": 4461.5,
+          "display_value": "R$ 4.462",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Blumenau",
+          "ibge": null,
+          "value": 3586.62,
+          "display_value": "R$ 3.587",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "PORTAO",
+          "ibge": null,
+          "value": 2064.2,
+          "display_value": "R$ 2.064",
+          "share": 0.0
+        }
+      ]
     }
   ],
   "_nota_metodologica": "Valor do BF recalculado como 34% fixo sobre Valor do Bem (não a coluna original da planilha, que é 17% constante em 100% das linhas — premissa simplificada, não cálculo tributário real/marginal). Taxa confirmada com o time por reconciliação com a versão anterior do indicador (recorte histórico de SP).",

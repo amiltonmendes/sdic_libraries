@@ -273,8 +273,170 @@
       ]
     }
   ],
-  "breakdowns": [],
-  "_nota_anonimizacao": "Sem CNPJ, nome de empresa ou município em nenhum nível do JSON — apenas contagens agregadas por UF ou nacionais.",
+  "breakdowns": [
+    {
+      "id": "por_municipio",
+      "title": "Atendimentos B+P por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "AM",
+          "municipio": "MANAUS",
+          "ibge": null,
+          "value": 973,
+          "display_value": "973",
+          "share": 0.6
+        },
+        {
+          "uf": "AM",
+          "municipio": "ITACOATIARA",
+          "ibge": null,
+          "value": 171,
+          "display_value": "171",
+          "share": 0.1
+        },
+        {
+          "uf": "AM",
+          "municipio": "HUMAITA",
+          "ibge": null,
+          "value": 110,
+          "display_value": "110",
+          "share": 0.1
+        },
+        {
+          "uf": "AM",
+          "municipio": "MANACAPURU",
+          "ibge": null,
+          "value": 31,
+          "display_value": "31",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "TABATINGA",
+          "ibge": null,
+          "value": 31,
+          "display_value": "31",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "IRANDUBA",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "COARI",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "APUI",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "CAREIRO DA VARZEA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "AUTAZES",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "BENJAMIN CONSTANT",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "LABREA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "TEFE",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "ANORI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "BARREIRINHA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "MANICORE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "NOVO AIRAO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "PRESIDENTE FIGUEIREDO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "SAO GABRIEL DA CACHOEIRA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        }
+      ]
+    }
+  ],
+  "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
   "data_aceitacao": "2026-08-04",
   "geo": {

@@ -212,6 +212,111 @@
           "share": 33.8
         }
       ]
+    },
+    {
+      "id": "por_municipio",
+      "title": "Investimento incentivado por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "PE",
+          "municipio": "ABREU E LIMA",
+          "ibge": null,
+          "value": 11217003.02,
+          "display_value": "R$ 11,2 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "PE",
+          "municipio": "Cabo de Santo Agostinho",
+          "ibge": null,
+          "value": 9295167.210000003,
+          "display_value": "R$ 9,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "PE",
+          "municipio": "RECIFE",
+          "ibge": null,
+          "value": 4134510.22,
+          "display_value": "R$ 4,1 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "ITAPISSUMA",
+          "ibge": null,
+          "value": 2637508.45,
+          "display_value": "R$ 2,6 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "VITORIA DE SANTO ANTAO",
+          "ibge": null,
+          "value": 1917860.2,
+          "display_value": "R$ 1,9 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "OURICURI",
+          "ibge": null,
+          "value": 1350000.0,
+          "display_value": "R$ 1,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "Abreu e Lima",
+          "ibge": null,
+          "value": 600000.0,
+          "display_value": "R$ 600.000",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "CABO DE SANTO AGOSTINHO",
+          "ibge": null,
+          "value": 302021.09,
+          "display_value": "R$ 302.021",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "SAO BENTO DO UNA",
+          "ibge": null,
+          "value": 261812.36,
+          "display_value": "R$ 261.812",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "PAULISTA",
+          "ibge": null,
+          "value": 78712.14,
+          "display_value": "R$ 78.712",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "MORENO",
+          "ibge": null,
+          "value": 11555.28,
+          "display_value": "R$ 11.555",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "IPOJUCA",
+          "ibge": null,
+          "value": 11100.0,
+          "display_value": "R$ 11.100",
+          "share": 0.0
+        }
+      ]
     }
   ],
   "_nota_metodologica": "Valor do BF recalculado como 34% fixo sobre Valor do Bem (não a coluna original da planilha, que é 17% constante em 100% das linhas — premissa simplificada, não cálculo tributário real/marginal). Taxa confirmada com o time por reconciliação com a versão anterior do indicador (recorte histórico de SP).",

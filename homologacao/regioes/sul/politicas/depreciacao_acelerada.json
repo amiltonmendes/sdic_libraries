@@ -209,6 +209,2127 @@
           "share": 33.8
         }
       ]
+    },
+    {
+      "id": "por_municipio",
+      "title": "Investimento incentivado por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "SC",
+          "municipio": "JOINVILLE",
+          "ibge": null,
+          "value": 171457176.42000002,
+          "display_value": "R$ 171,5 mi",
+          "share": 2.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "JARAGUA DO SUL",
+          "ibge": null,
+          "value": 126149785.36,
+          "display_value": "R$ 126,1 mi",
+          "share": 1.5
+        },
+        {
+          "uf": "PR",
+          "municipio": "MARINGA",
+          "ibge": null,
+          "value": 110078892.45,
+          "display_value": "R$ 110,1 mi",
+          "share": 1.3
+        },
+        {
+          "uf": "RS",
+          "municipio": "PORTO ALEGRE",
+          "ibge": null,
+          "value": 107647695.62,
+          "display_value": "R$ 107,6 mi",
+          "share": 1.2
+        },
+        {
+          "uf": "PR",
+          "municipio": "São Jorge d'Oeste",
+          "ibge": null,
+          "value": 85980681.02000001,
+          "display_value": "R$ 86,0 mi",
+          "share": 1.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Jaraguá do Sul",
+          "ibge": null,
+          "value": 80863260.56,
+          "display_value": "R$ 80,9 mi",
+          "share": 0.9
+        },
+        {
+          "uf": "PR",
+          "municipio": "SAO JOSE DOS PINHAIS",
+          "ibge": null,
+          "value": 71771465.52,
+          "display_value": "R$ 71,8 mi",
+          "share": 0.8
+        },
+        {
+          "uf": "RS",
+          "municipio": "ERECHIM",
+          "ibge": null,
+          "value": 69120637.28,
+          "display_value": "R$ 69,1 mi",
+          "share": 0.8
+        },
+        {
+          "uf": "PR",
+          "municipio": "ARAPONGAS",
+          "ibge": null,
+          "value": 65337770.43,
+          "display_value": "R$ 65,3 mi",
+          "share": 0.8
+        },
+        {
+          "uf": "SC",
+          "municipio": "CAIBI",
+          "ibge": null,
+          "value": 63427200.0,
+          "display_value": "R$ 63,4 mi",
+          "share": 0.7
+        },
+        {
+          "uf": "SC",
+          "municipio": "BRUSQUE",
+          "ibge": null,
+          "value": 63421369.25,
+          "display_value": "R$ 63,4 mi",
+          "share": 0.7
+        },
+        {
+          "uf": "RS",
+          "municipio": "FARROUPILHA",
+          "ibge": null,
+          "value": 61203128.01,
+          "display_value": "R$ 61,2 mi",
+          "share": 0.7
+        },
+        {
+          "uf": "SC",
+          "municipio": "VIDEIRA",
+          "ibge": null,
+          "value": 58131977.21,
+          "display_value": "R$ 58,1 mi",
+          "share": 0.7
+        },
+        {
+          "uf": "PR",
+          "municipio": "JAGUAPITA",
+          "ibge": null,
+          "value": 55698568.2,
+          "display_value": "R$ 55,7 mi",
+          "share": 0.6
+        },
+        {
+          "uf": "RS",
+          "municipio": "CAXIAS DO SUL",
+          "ibge": null,
+          "value": 55529073.13,
+          "display_value": "R$ 55,5 mi",
+          "share": 0.6
+        },
+        {
+          "uf": "RS",
+          "municipio": "MONTENEGRO",
+          "ibge": null,
+          "value": 54356928.71,
+          "display_value": "R$ 54,4 mi",
+          "share": 0.6
+        },
+        {
+          "uf": "RS",
+          "municipio": "CANOAS",
+          "ibge": null,
+          "value": 51000223.7,
+          "display_value": "R$ 51,0 mi",
+          "share": 0.6
+        },
+        {
+          "uf": "SC",
+          "municipio": "ITAJAI",
+          "ibge": null,
+          "value": 47762077.88,
+          "display_value": "R$ 47,8 mi",
+          "share": 0.6
+        },
+        {
+          "uf": "RS",
+          "municipio": "CARLOS BARBOSA",
+          "ibge": null,
+          "value": 46204960.5,
+          "display_value": "R$ 46,2 mi",
+          "share": 0.5
+        },
+        {
+          "uf": "PR",
+          "municipio": "ARAUCARIA",
+          "ibge": null,
+          "value": 44383615.47,
+          "display_value": "R$ 44,4 mi",
+          "share": 0.5
+        },
+        {
+          "uf": "SC",
+          "municipio": "INDAIAL",
+          "ibge": null,
+          "value": 44134094.58,
+          "display_value": "R$ 44,1 mi",
+          "share": 0.5
+        },
+        {
+          "uf": "SC",
+          "municipio": "VARGEM BONITA",
+          "ibge": null,
+          "value": 40665728.81,
+          "display_value": "R$ 40,7 mi",
+          "share": 0.5
+        },
+        {
+          "uf": "SC",
+          "municipio": "CANELINHA",
+          "ibge": null,
+          "value": 39753208.589999996,
+          "display_value": "R$ 39,8 mi",
+          "share": 0.5
+        },
+        {
+          "uf": "SC",
+          "municipio": "SAO BENTO DO SUL",
+          "ibge": null,
+          "value": 39612351.6,
+          "display_value": "R$ 39,6 mi",
+          "share": 0.5
+        },
+        {
+          "uf": "PR",
+          "municipio": "AMPERE",
+          "ibge": null,
+          "value": 39052144.05,
+          "display_value": "R$ 39,1 mi",
+          "share": 0.5
+        },
+        {
+          "uf": "PR",
+          "municipio": "FRANCISCO BELTRAO",
+          "ibge": null,
+          "value": 37643355.88,
+          "display_value": "R$ 37,6 mi",
+          "share": 0.4
+        },
+        {
+          "uf": "PR",
+          "municipio": "MANDAGUARI",
+          "ibge": null,
+          "value": 37022850.05,
+          "display_value": "R$ 37,0 mi",
+          "share": 0.4
+        },
+        {
+          "uf": "PR",
+          "municipio": "CIDADE GAUCHA",
+          "ibge": null,
+          "value": 36310171.56,
+          "display_value": "R$ 36,3 mi",
+          "share": 0.4
+        },
+        {
+          "uf": "PR",
+          "municipio": "RIO BRANCO DO SUL",
+          "ibge": null,
+          "value": 31855393.82,
+          "display_value": "R$ 31,9 mi",
+          "share": 0.4
+        },
+        {
+          "uf": "SC",
+          "municipio": "BLUMENAU",
+          "ibge": null,
+          "value": 30117116.78,
+          "display_value": "R$ 30,1 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "PR",
+          "municipio": "ROLANDIA",
+          "ibge": null,
+          "value": 29452030.28,
+          "display_value": "R$ 29,5 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "SC",
+          "municipio": "ORLEANS",
+          "ibge": null,
+          "value": 28331941.060000002,
+          "display_value": "R$ 28,3 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "SC",
+          "municipio": "URUSSANGA",
+          "ibge": null,
+          "value": 28000840.799999997,
+          "display_value": "R$ 28,0 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "SC",
+          "municipio": "Garuva",
+          "ibge": null,
+          "value": 26800892.37,
+          "display_value": "R$ 26,8 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "SC",
+          "municipio": "CACADOR",
+          "ibge": null,
+          "value": 26779957.54,
+          "display_value": "R$ 26,8 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "RS",
+          "municipio": "Caxias do Sul",
+          "ibge": null,
+          "value": 25006816.16,
+          "display_value": "R$ 25,0 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "PR",
+          "municipio": "CURITIBA",
+          "ibge": null,
+          "value": 24697625.49,
+          "display_value": "R$ 24,7 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "PR",
+          "municipio": "JACAREZINHO",
+          "ibge": null,
+          "value": 23404467.89,
+          "display_value": "R$ 23,4 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "RS",
+          "municipio": "CACHOEIRINHA",
+          "ibge": null,
+          "value": 22620358.03,
+          "display_value": "R$ 22,6 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "RS",
+          "municipio": "SALVADOR DO SUL",
+          "ibge": null,
+          "value": 21997727.75,
+          "display_value": "R$ 22,0 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "PR",
+          "municipio": "PONTA GROSSA",
+          "ibge": null,
+          "value": 21892779.2,
+          "display_value": "R$ 21,9 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "SC",
+          "municipio": "Tubarão",
+          "ibge": null,
+          "value": 20754447.490000002,
+          "display_value": "R$ 20,8 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SC",
+          "municipio": "Morro da Fumaça",
+          "ibge": null,
+          "value": 20160796.59,
+          "display_value": "R$ 20,2 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "RS",
+          "municipio": "GRAVATAI",
+          "ibge": null,
+          "value": 19138259.67,
+          "display_value": "R$ 19,1 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "RS",
+          "municipio": "SAO LEOPOLDO",
+          "ibge": null,
+          "value": 18571410.25,
+          "display_value": "R$ 18,6 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "RS",
+          "municipio": "CAMPO BOM",
+          "ibge": null,
+          "value": 18475534.02,
+          "display_value": "R$ 18,5 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "RS",
+          "municipio": "CACHOEIRA DO SUL",
+          "ibge": null,
+          "value": 17825729.43,
+          "display_value": "R$ 17,8 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SC",
+          "municipio": "Blumenau",
+          "ibge": null,
+          "value": 17632518.020000003,
+          "display_value": "R$ 17,6 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SC",
+          "municipio": "CHAPECO",
+          "ibge": null,
+          "value": 17355662.400000002,
+          "display_value": "R$ 17,4 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "RS",
+          "municipio": "ESTACAO",
+          "ibge": null,
+          "value": 17134235.49,
+          "display_value": "R$ 17,1 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "RS",
+          "municipio": "NOVA ESPERANCA DO SUL",
+          "ibge": null,
+          "value": 17108395.05,
+          "display_value": "R$ 17,1 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "RS",
+          "municipio": "GARIBALDI",
+          "ibge": null,
+          "value": 16753876.46,
+          "display_value": "R$ 16,8 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SC",
+          "municipio": "Chapecó",
+          "ibge": null,
+          "value": 14902567.620000001,
+          "display_value": "R$ 14,9 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "RS",
+          "municipio": "SANANDUVA",
+          "ibge": null,
+          "value": 14520000.0,
+          "display_value": "R$ 14,5 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SC",
+          "municipio": "Joinville",
+          "ibge": null,
+          "value": 14157723.69,
+          "display_value": "R$ 14,2 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SC",
+          "municipio": "Caçador",
+          "ibge": null,
+          "value": 13338741.45,
+          "display_value": "R$ 13,3 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "SC",
+          "municipio": "MARAVILHA",
+          "ibge": null,
+          "value": 12940279.83,
+          "display_value": "R$ 12,9 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "PANAMBI",
+          "ibge": null,
+          "value": 12503276.870000001,
+          "display_value": "R$ 12,5 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SC",
+          "municipio": "Araquari",
+          "ibge": null,
+          "value": 12295169.25,
+          "display_value": "R$ 12,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "PR",
+          "municipio": "PARAISO DO NORTE",
+          "ibge": null,
+          "value": 12238496.25,
+          "display_value": "R$ 12,2 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SC",
+          "municipio": "ARAQUARI",
+          "ibge": null,
+          "value": 12037250.72,
+          "display_value": "R$ 12,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "PR",
+          "municipio": "COLOMBO",
+          "ibge": null,
+          "value": 11988327.67,
+          "display_value": "R$ 12,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "PR",
+          "municipio": "IBIPORA",
+          "ibge": null,
+          "value": 11693055.78,
+          "display_value": "R$ 11,7 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "PR",
+          "municipio": "Francisco Beltrão",
+          "ibge": null,
+          "value": 11608787.83,
+          "display_value": "R$ 11,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SC",
+          "municipio": "CORUPA",
+          "ibge": null,
+          "value": 11250680.899999999,
+          "display_value": "R$ 11,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SC",
+          "municipio": "GUARAMIRIM",
+          "ibge": null,
+          "value": 11133781.26,
+          "display_value": "R$ 11,1 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SC",
+          "municipio": "XANXERE",
+          "ibge": null,
+          "value": 11026703.709999999,
+          "display_value": "R$ 11,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SC",
+          "municipio": "Brusque",
+          "ibge": null,
+          "value": 10950694.56,
+          "display_value": "R$ 11,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "ESTEIO",
+          "ibge": null,
+          "value": 10473782.61,
+          "display_value": "R$ 10,5 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SC",
+          "municipio": "Corupá",
+          "ibge": null,
+          "value": 10340675.74,
+          "display_value": "R$ 10,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "NOVO HAMBURGO",
+          "ibge": null,
+          "value": 10281231.86,
+          "display_value": "R$ 10,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "SAO JERONIMO",
+          "ibge": null,
+          "value": 9904008.36,
+          "display_value": "R$ 9,9 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SC",
+          "municipio": "Itajaí",
+          "ibge": null,
+          "value": 9613630.79,
+          "display_value": "R$ 9,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "MIRAGUAI",
+          "ibge": null,
+          "value": 9310992.780000001,
+          "display_value": "R$ 9,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "Erechim",
+          "ibge": null,
+          "value": 9246002.18,
+          "display_value": "R$ 9,2 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SC",
+          "municipio": "TURVO",
+          "ibge": null,
+          "value": 9169094.07,
+          "display_value": "R$ 9,2 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "FELIZ",
+          "ibge": null,
+          "value": 9095716.71,
+          "display_value": "R$ 9,1 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SC",
+          "municipio": "NOVA VENEZA",
+          "ibge": null,
+          "value": 9025025.08,
+          "display_value": "R$ 9,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "VERANOPOLIS",
+          "ibge": null,
+          "value": 8897246.97,
+          "display_value": "R$ 8,9 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "PR",
+          "municipio": "PORTO AMAZONAS",
+          "ibge": null,
+          "value": 8477927.370000001,
+          "display_value": "R$ 8,5 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SC",
+          "municipio": "TIMBO",
+          "ibge": null,
+          "value": 8456346.92,
+          "display_value": "R$ 8,5 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "PR",
+          "municipio": "Rio Branco do Sul",
+          "ibge": null,
+          "value": 8336502.1,
+          "display_value": "R$ 8,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SC",
+          "municipio": "Guaramirim",
+          "ibge": null,
+          "value": 7844833.09,
+          "display_value": "R$ 7,8 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "PR",
+          "municipio": "São José dos Pinhais",
+          "ibge": null,
+          "value": 7607741.5,
+          "display_value": "R$ 7,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "PR",
+          "municipio": "LONDRINA",
+          "ibge": null,
+          "value": 7581609.47,
+          "display_value": "R$ 7,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "BOM PRINCIPIO",
+          "ibge": null,
+          "value": 7495728.71,
+          "display_value": "R$ 7,5 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "São José do Inhacorá",
+          "ibge": null,
+          "value": 7370354.22,
+          "display_value": "R$ 7,4 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SC",
+          "municipio": "São Bento do Sul",
+          "ibge": null,
+          "value": 7029759.03,
+          "display_value": "R$ 7,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "LAJEADO",
+          "ibge": null,
+          "value": 6993828.48,
+          "display_value": "R$ 7,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SC",
+          "municipio": "Rio do Sul",
+          "ibge": null,
+          "value": 6972527.78,
+          "display_value": "R$ 7,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SC",
+          "municipio": "ITUPORANGA",
+          "ibge": null,
+          "value": 6890281.859999999,
+          "display_value": "R$ 6,9 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SC",
+          "municipio": "Maravilha",
+          "ibge": null,
+          "value": 6858511.470000001,
+          "display_value": "R$ 6,9 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "PR",
+          "municipio": "PINHAIS",
+          "ibge": null,
+          "value": 6815330.65,
+          "display_value": "R$ 6,8 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "PR",
+          "municipio": "JOAQUIM TAVORA",
+          "ibge": null,
+          "value": 6738763.779999999,
+          "display_value": "R$ 6,7 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "GUAPORE",
+          "ibge": null,
+          "value": 6570370.42,
+          "display_value": "R$ 6,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "PR",
+          "municipio": "ITAIPULANDIA",
+          "ibge": null,
+          "value": 6403844.31,
+          "display_value": "R$ 6,4 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "Salvador do Sul",
+          "ibge": null,
+          "value": 6277155.29,
+          "display_value": "R$ 6,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "PR",
+          "municipio": "Ampére",
+          "ibge": null,
+          "value": 5601269.31,
+          "display_value": "R$ 5,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "Gravataí",
+          "ibge": null,
+          "value": 5270601.3100000005,
+          "display_value": "R$ 5,3 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "PR",
+          "municipio": "Curitiba",
+          "ibge": null,
+          "value": 5217811.27,
+          "display_value": "R$ 5,2 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "PR",
+          "municipio": "Joaquim Távora",
+          "ibge": null,
+          "value": 4954497.76,
+          "display_value": "R$ 5,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "SANTO ANGELO",
+          "ibge": null,
+          "value": 4889569.85,
+          "display_value": "R$ 4,9 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "Flores da Cunha",
+          "ibge": null,
+          "value": 4701247.48,
+          "display_value": "R$ 4,7 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "VENANCIO AIRES",
+          "ibge": null,
+          "value": 4592776.96,
+          "display_value": "R$ 4,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "PR",
+          "municipio": "CHOPINZINHO",
+          "ibge": null,
+          "value": 4528714.86,
+          "display_value": "R$ 4,5 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SC",
+          "municipio": "Vargem Bonita",
+          "ibge": null,
+          "value": 4507472.54,
+          "display_value": "R$ 4,5 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "RS",
+          "municipio": "CRUZEIRO DO SUL",
+          "ibge": null,
+          "value": 4208547.26,
+          "display_value": "R$ 4,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Sarandi",
+          "ibge": null,
+          "value": 3835000.0,
+          "display_value": "R$ 3,8 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "Campo Mourão",
+          "ibge": null,
+          "value": 3661337.6799999997,
+          "display_value": "R$ 3,7 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "Mandaguari",
+          "ibge": null,
+          "value": 3593360.5,
+          "display_value": "R$ 3,6 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Nova Veneza",
+          "ibge": null,
+          "value": 3398000.0,
+          "display_value": "R$ 3,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Urussanga",
+          "ibge": null,
+          "value": 3337112.93,
+          "display_value": "R$ 3,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "LUIZ ALVES",
+          "ibge": null,
+          "value": 3335000.0,
+          "display_value": "R$ 3,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "IOMERE",
+          "ibge": null,
+          "value": 3329737.1799999997,
+          "display_value": "R$ 3,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "BANDEIRANTES",
+          "ibge": null,
+          "value": 3283075.9,
+          "display_value": "R$ 3,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "TRES BARRAS",
+          "ibge": null,
+          "value": 3141174.58,
+          "display_value": "R$ 3,1 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "SAO MIGUEL DO OESTE",
+          "ibge": null,
+          "value": 3010578.98,
+          "display_value": "R$ 3,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Videira",
+          "ibge": null,
+          "value": 2929759.17,
+          "display_value": "R$ 2,9 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "IBIRUBA",
+          "ibge": null,
+          "value": 2840000.0,
+          "display_value": "R$ 2,8 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "BOTUVERA",
+          "ibge": null,
+          "value": 2797984.74,
+          "display_value": "R$ 2,8 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "HORIZONTINA",
+          "ibge": null,
+          "value": 2737000.0,
+          "display_value": "R$ 2,7 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "PRESIDENTE GETULIO",
+          "ibge": null,
+          "value": 2730610.0,
+          "display_value": "R$ 2,7 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "CAMBE",
+          "ibge": null,
+          "value": 2697880.38,
+          "display_value": "R$ 2,7 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Cachoeira do Sul",
+          "ibge": null,
+          "value": 2568214.65,
+          "display_value": "R$ 2,6 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "SANTO ANTONIO DA PATRULHA",
+          "ibge": null,
+          "value": 2526602.0500000003,
+          "display_value": "R$ 2,5 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "GUABIRUBA",
+          "ibge": null,
+          "value": 2509099.3600000003,
+          "display_value": "R$ 2,5 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Bento Gonçalves",
+          "ibge": null,
+          "value": 2470521.13,
+          "display_value": "R$ 2,5 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "NAO-ME-TOQUE",
+          "ibge": null,
+          "value": 2443437.9000000004,
+          "display_value": "R$ 2,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "SANGAO",
+          "ibge": null,
+          "value": 2354068.98,
+          "display_value": "R$ 2,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "FAZENDA RIO GRANDE",
+          "ibge": null,
+          "value": 2347250.2,
+          "display_value": "R$ 2,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "QUATRO BARRAS",
+          "ibge": null,
+          "value": 2335944.15,
+          "display_value": "R$ 2,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Porto Belo",
+          "ibge": null,
+          "value": 2323769.37,
+          "display_value": "R$ 2,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Encantado",
+          "ibge": null,
+          "value": 2248626.02,
+          "display_value": "R$ 2,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Timbó",
+          "ibge": null,
+          "value": 2246428.84,
+          "display_value": "R$ 2,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "NOVA TRENTO",
+          "ibge": null,
+          "value": 2240000.0,
+          "display_value": "R$ 2,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "BRACO DO NORTE",
+          "ibge": null,
+          "value": 2136917.77,
+          "display_value": "R$ 2,1 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "PASSO FUNDO",
+          "ibge": null,
+          "value": 2086648.33,
+          "display_value": "R$ 2,1 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Ipumirim",
+          "ibge": null,
+          "value": 1976401.0,
+          "display_value": "R$ 2,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Barra Funda",
+          "ibge": null,
+          "value": 1970000.0,
+          "display_value": "R$ 2,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "SANTA HELENA",
+          "ibge": null,
+          "value": 1933870.0,
+          "display_value": "R$ 1,9 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Guaporé",
+          "ibge": null,
+          "value": 1896280.72,
+          "display_value": "R$ 1,9 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "EREBANGO",
+          "ibge": null,
+          "value": 1891837.51,
+          "display_value": "R$ 1,9 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Braço do Norte",
+          "ibge": null,
+          "value": 1846929.81,
+          "display_value": "R$ 1,8 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "São José",
+          "ibge": null,
+          "value": 1789301.34,
+          "display_value": "R$ 1,8 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Nova Trento",
+          "ibge": null,
+          "value": 1771144.7,
+          "display_value": "R$ 1,8 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "Paranavaí",
+          "ibge": null,
+          "value": 1740000.0,
+          "display_value": "R$ 1,7 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "SANTO INACIO",
+          "ibge": null,
+          "value": 1629034.6300000001,
+          "display_value": "R$ 1,6 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "Fazenda Rio Grande",
+          "ibge": null,
+          "value": 1622494.59,
+          "display_value": "R$ 1,6 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "RIO DO OESTE",
+          "ibge": null,
+          "value": 1595915.4,
+          "display_value": "R$ 1,6 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Triunfo",
+          "ibge": null,
+          "value": 1583290.63,
+          "display_value": "R$ 1,6 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "IBIRAMA",
+          "ibge": null,
+          "value": 1578000.0,
+          "display_value": "R$ 1,6 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "TIJUCAS",
+          "ibge": null,
+          "value": 1555757.85,
+          "display_value": "R$ 1,6 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "IMBITUBA",
+          "ibge": null,
+          "value": 1545773.8299999998,
+          "display_value": "R$ 1,5 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Antonio Prado",
+          "ibge": null,
+          "value": 1490878.07,
+          "display_value": "R$ 1,5 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Lages",
+          "ibge": null,
+          "value": 1485342.52,
+          "display_value": "R$ 1,5 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Panambi",
+          "ibge": null,
+          "value": 1396000.0,
+          "display_value": "R$ 1,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "SANTO AUGUSTO",
+          "ibge": null,
+          "value": 1359697.25,
+          "display_value": "R$ 1,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "CASTRO",
+          "ibge": null,
+          "value": 1319795.81,
+          "display_value": "R$ 1,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "Araucária",
+          "ibge": null,
+          "value": 1289033.05,
+          "display_value": "R$ 1,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "SAO CRISTOVAO DO SUL",
+          "ibge": null,
+          "value": 1288560.0,
+          "display_value": "R$ 1,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "BARAO",
+          "ibge": null,
+          "value": 1280184.72,
+          "display_value": "R$ 1,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "JOSE BOITEUX",
+          "ibge": null,
+          "value": 1244260.0,
+          "display_value": "R$ 1,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Venâncio Aires",
+          "ibge": null,
+          "value": 1235811.8399999999,
+          "display_value": "R$ 1,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "São Leopoldo",
+          "ibge": null,
+          "value": 1234624.39,
+          "display_value": "R$ 1,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "MARECHAL CANDIDO RONDON",
+          "ibge": null,
+          "value": 1206310.3699999999,
+          "display_value": "R$ 1,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "VIDAL RAMOS",
+          "ibge": null,
+          "value": 1166679.14,
+          "display_value": "R$ 1,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "DONA EMMA",
+          "ibge": null,
+          "value": 1164700.0,
+          "display_value": "R$ 1,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "MATOS COSTA",
+          "ibge": null,
+          "value": 1032000.0,
+          "display_value": "R$ 1,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "MARAU",
+          "ibge": null,
+          "value": 1031638.28,
+          "display_value": "R$ 1,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "Toledo",
+          "ibge": null,
+          "value": 1022729.17,
+          "display_value": "R$ 1,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "MANDIRITUBA",
+          "ibge": null,
+          "value": 1019000.0,
+          "display_value": "R$ 1,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "POMERODE",
+          "ibge": null,
+          "value": 998552.98,
+          "display_value": "R$ 998.553",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "IPUMIRIM",
+          "ibge": null,
+          "value": 994433.25,
+          "display_value": "R$ 994.433",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "SEBERI",
+          "ibge": null,
+          "value": 968408.08,
+          "display_value": "R$ 968.408",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "IPIRANGA DO SUL",
+          "ibge": null,
+          "value": 952712.48,
+          "display_value": "R$ 952.712",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Cachoeirinha",
+          "ibge": null,
+          "value": 939900.0,
+          "display_value": "R$ 939.900",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Camaquã",
+          "ibge": null,
+          "value": 935172.5700000001,
+          "display_value": "R$ 935.173",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "FORQUILHINHA",
+          "ibge": null,
+          "value": 925453.33,
+          "display_value": "R$ 925.453",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "UMUARAMA",
+          "ibge": null,
+          "value": 922062.24,
+          "display_value": "R$ 922.062",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "CAPIVARI DE BAIXO",
+          "ibge": null,
+          "value": 921991.91,
+          "display_value": "R$ 921.992",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "IBIAM",
+          "ibge": null,
+          "value": 920330.0,
+          "display_value": "R$ 920.330",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "ITAIOPOLIS",
+          "ibge": null,
+          "value": 900398.8900000001,
+          "display_value": "R$ 900.399",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Veranópolis",
+          "ibge": null,
+          "value": 877625.9,
+          "display_value": "R$ 877.626",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "SAUDADES",
+          "ibge": null,
+          "value": 867837.81,
+          "display_value": "R$ 867.838",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "Londrina",
+          "ibge": null,
+          "value": 854399.9299999999,
+          "display_value": "R$ 854.400",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Novo Hamburgo",
+          "ibge": null,
+          "value": 822672.18,
+          "display_value": "R$ 822.672",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "CONCORDIA",
+          "ibge": null,
+          "value": 817010.56,
+          "display_value": "R$ 817.011",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "Marechal Cândido Rondon",
+          "ibge": null,
+          "value": 779829.1900000001,
+          "display_value": "R$ 779.829",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "PARANAVAI",
+          "ibge": null,
+          "value": 772550.0,
+          "display_value": "R$ 772.550",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "CAPAO ALTO",
+          "ibge": null,
+          "value": 772318.0,
+          "display_value": "R$ 772.318",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "FLORES DA CUNHA",
+          "ibge": null,
+          "value": 722793.66,
+          "display_value": "R$ 722.794",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "ITAPIRANGA",
+          "ibge": null,
+          "value": 707767.5599999999,
+          "display_value": "R$ 707.768",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Feliz",
+          "ibge": null,
+          "value": 681555.56,
+          "display_value": "R$ 681.556",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "Chopinzinho",
+          "ibge": null,
+          "value": 614875.17,
+          "display_value": "R$ 614.875",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "JACUTINGA",
+          "ibge": null,
+          "value": 604877.5599999999,
+          "display_value": "R$ 604.878",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Betim",
+          "ibge": null,
+          "value": 598863.85,
+          "display_value": "R$ 598.864",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "ARARANGUA",
+          "ibge": null,
+          "value": 592387.51,
+          "display_value": "R$ 592.388",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Picada Café",
+          "ibge": null,
+          "value": 583680.01,
+          "display_value": "R$ 583.680",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Indaial",
+          "ibge": null,
+          "value": 582454.93,
+          "display_value": "R$ 582.455",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "Cambé",
+          "ibge": null,
+          "value": 580000.0,
+          "display_value": "R$ 580.000",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Guabiruba",
+          "ibge": null,
+          "value": 576031.75,
+          "display_value": "R$ 576.032",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "ICARA",
+          "ibge": null,
+          "value": 535000.0,
+          "display_value": "R$ 535.000",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Três Barras",
+          "ibge": null,
+          "value": 533352.0,
+          "display_value": "R$ 533.352",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "Palmas",
+          "ibge": null,
+          "value": 518568.87,
+          "display_value": "R$ 518.569",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Jaraguá do Sul",
+          "ibge": null,
+          "value": 507576.43,
+          "display_value": "R$ 507.576",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "Arapongas",
+          "ibge": null,
+          "value": 507091.26,
+          "display_value": "R$ 507.091",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "LAPA",
+          "ibge": null,
+          "value": 436609.75000000006,
+          "display_value": "R$ 436.610",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "TOLEDO",
+          "ibge": null,
+          "value": 410141.73,
+          "display_value": "R$ 410.142",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "Santo Inácio",
+          "ibge": null,
+          "value": 378688.26,
+          "display_value": "R$ 378.688",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Antônio Prado",
+          "ibge": null,
+          "value": 353754.41000000003,
+          "display_value": "R$ 353.754",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "Almirante Tamandaré",
+          "ibge": null,
+          "value": 330000.0,
+          "display_value": "R$ 330.000",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "Castro",
+          "ibge": null,
+          "value": 327507.93,
+          "display_value": "R$ 327.508",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Cruzeiro do Sul",
+          "ibge": null,
+          "value": 310362.28,
+          "display_value": "R$ 310.362",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "RIO NEGRINHO",
+          "ibge": null,
+          "value": 294621.44,
+          "display_value": "R$ 294.621",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Não-Me-Toque",
+          "ibge": null,
+          "value": 281151.73,
+          "display_value": "R$ 281.152",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "BENTO GONCALVES",
+          "ibge": null,
+          "value": 269114.56,
+          "display_value": "R$ 269.115",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "RIO DO SUL",
+          "ibge": null,
+          "value": 267435.94,
+          "display_value": "R$ 267.436",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Iomerê",
+          "ibge": null,
+          "value": 242300.0,
+          "display_value": "R$ 242.300",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Farroupilha",
+          "ibge": null,
+          "value": 224109.97,
+          "display_value": "R$ 224.110",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Canelinha",
+          "ibge": null,
+          "value": 220140.0,
+          "display_value": "R$ 220.140",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Porto Alegre",
+          "ibge": null,
+          "value": 215591.23,
+          "display_value": "R$ 215.591",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Itapiranga",
+          "ibge": null,
+          "value": 208261.21,
+          "display_value": "R$ 208.261",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Três Passos",
+          "ibge": null,
+          "value": 173157.5,
+          "display_value": "R$ 173.158",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "IVOTI",
+          "ibge": null,
+          "value": 161590.82,
+          "display_value": "R$ 161.591",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "UNIAO DA VITORIA",
+          "ibge": null,
+          "value": 160186.28,
+          "display_value": "R$ 160.186",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "TRIUNFO",
+          "ibge": null,
+          "value": 154407.64,
+          "display_value": "R$ 154.408",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "SEARA",
+          "ibge": null,
+          "value": 144009.29,
+          "display_value": "R$ 144.009",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Ivoti",
+          "ibge": null,
+          "value": 138133.18,
+          "display_value": "R$ 138.133",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Florianópolis",
+          "ibge": null,
+          "value": 133105.12,
+          "display_value": "R$ 133.105",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "PORTO BELO",
+          "ibge": null,
+          "value": 122285.35999999999,
+          "display_value": "R$ 122.285",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Sangão",
+          "ibge": null,
+          "value": 117466.95999999999,
+          "display_value": "R$ 117.467",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "LONTRAS",
+          "ibge": null,
+          "value": 115785.9,
+          "display_value": "R$ 115.786",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Içara",
+          "ibge": null,
+          "value": 100000.0,
+          "display_value": "R$ 100.000",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "SANTA CRUZ DO SUL",
+          "ibge": null,
+          "value": 99320.93999999999,
+          "display_value": "R$ 99.321",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Concórdia",
+          "ibge": null,
+          "value": 98165.77,
+          "display_value": "R$ 98.166",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Orleans",
+          "ibge": null,
+          "value": 94489.06,
+          "display_value": "R$ 94.489",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "Santa Fé",
+          "ibge": null,
+          "value": 93303.6,
+          "display_value": "R$ 93.304",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "GOIOERE",
+          "ibge": null,
+          "value": 88256.81999999999,
+          "display_value": "R$ 88.257",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "LAGES",
+          "ibge": null,
+          "value": 88112.5,
+          "display_value": "R$ 88.112",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "GASPAR",
+          "ibge": null,
+          "value": 82295.61,
+          "display_value": "R$ 82.296",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "CAMPO MOURAO",
+          "ibge": null,
+          "value": 79525.63,
+          "display_value": "R$ 79.526",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "Rolândia",
+          "ibge": null,
+          "value": 70348.54000000001,
+          "display_value": "R$ 70.349",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "LUZERNA",
+          "ibge": null,
+          "value": 65994.16,
+          "display_value": "R$ 65.994",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Rosário do Sul",
+          "ibge": null,
+          "value": 58364.94,
+          "display_value": "R$ 58.365",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Seara",
+          "ibge": null,
+          "value": 57896.0,
+          "display_value": "R$ 57.896",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "NOVA SANTA RITA",
+          "ibge": null,
+          "value": 50760.79,
+          "display_value": "R$ 50.761",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Vargeão",
+          "ibge": null,
+          "value": 44787.729999999996,
+          "display_value": "R$ 44.788",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Forquilhinha",
+          "ibge": null,
+          "value": 39040.0,
+          "display_value": "R$ 39.040",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Betim",
+          "ibge": null,
+          "value": 37538.83,
+          "display_value": "R$ 37.539",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Montenegro",
+          "ibge": null,
+          "value": 22114.26,
+          "display_value": "R$ 22.114",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Estação",
+          "ibge": null,
+          "value": 19272.57,
+          "display_value": "R$ 19.273",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "TAPEJARA",
+          "ibge": null,
+          "value": 17590.0,
+          "display_value": "R$ 17.590",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "Jaguapitã",
+          "ibge": null,
+          "value": 17231.16,
+          "display_value": "R$ 17.231",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Criciúma",
+          "ibge": null,
+          "value": 16550.68,
+          "display_value": "R$ 16.551",
+          "share": 0.0
+        },
+        {
+          "uf": "PR",
+          "municipio": "SANTA FE",
+          "ibge": null,
+          "value": 12153.89,
+          "display_value": "R$ 12.154",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Morro Grande",
+          "ibge": null,
+          "value": 9348.84,
+          "display_value": "R$ 9.349",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "ROCA SALES",
+          "ibge": null,
+          "value": 6150.0,
+          "display_value": "R$ 6.150",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Seberi",
+          "ibge": null,
+          "value": 5600.0,
+          "display_value": "R$ 5.600",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "SAO JOSE",
+          "ibge": null,
+          "value": 5282.6,
+          "display_value": "R$ 5.283",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "MORRO GRANDE",
+          "ibge": null,
+          "value": 5280.16,
+          "display_value": "R$ 5.280",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Itápolis",
+          "ibge": null,
+          "value": 4860.0,
+          "display_value": "R$ 4.860",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "BOM RETIRO DO SUL",
+          "ibge": null,
+          "value": 4461.5,
+          "display_value": "R$ 4.462",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Blumenau",
+          "ibge": null,
+          "value": 3586.62,
+          "display_value": "R$ 3.587",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "PORTAO",
+          "ibge": null,
+          "value": 2064.2,
+          "display_value": "R$ 2.064",
+          "share": 0.0
+        }
+      ]
     }
   ],
   "_nota_metodologica": "Valor do BF recalculado como 34% fixo sobre Valor do Bem (não a coluna original da planilha, que é 17% constante em 100% das linhas — premissa simplificada, não cálculo tributário real/marginal). Taxa confirmada com o time por reconciliação com a versão anterior do indicador (recorte histórico de SP).",

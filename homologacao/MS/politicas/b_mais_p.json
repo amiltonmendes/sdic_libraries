@@ -273,8 +273,466 @@
       ]
     }
   ],
-  "breakdowns": [],
-  "_nota_anonimizacao": "Sem CNPJ, nome de empresa ou município em nenhum nível do JSON — apenas contagens agregadas por UF ou nacionais.",
+  "breakdowns": [
+    {
+      "id": "por_municipio",
+      "title": "Atendimentos B+P por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "MS",
+          "municipio": "CAMPO GRANDE",
+          "ibge": null,
+          "value": 2472,
+          "display_value": "2.472",
+          "share": 1.6
+        },
+        {
+          "uf": "MS",
+          "municipio": "DOURADOS",
+          "ibge": null,
+          "value": 634,
+          "display_value": "634",
+          "share": 0.4
+        },
+        {
+          "uf": "MS",
+          "municipio": "MARACAJU",
+          "ibge": null,
+          "value": 135,
+          "display_value": "135",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "NAVIRAI",
+          "ibge": null,
+          "value": 131,
+          "display_value": "131",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "CHAPADAO DO SUL",
+          "ibge": null,
+          "value": 120,
+          "display_value": "120",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "TRES LAGOAS",
+          "ibge": null,
+          "value": 119,
+          "display_value": "119",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "COXIM",
+          "ibge": null,
+          "value": 108,
+          "display_value": "108",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "AQUIDAUANA",
+          "ibge": null,
+          "value": 92,
+          "display_value": "92",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "AMAMBAI",
+          "ibge": null,
+          "value": 87,
+          "display_value": "87",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "NOVA ANDRADINA",
+          "ibge": null,
+          "value": 81,
+          "display_value": "81",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "PARANAIBA",
+          "ibge": null,
+          "value": 81,
+          "display_value": "81",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "PONTA PORA",
+          "ibge": null,
+          "value": 75,
+          "display_value": "75",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "BONITO",
+          "ibge": null,
+          "value": 75,
+          "display_value": "75",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "RIO VERDE DE MATO GROSSO",
+          "ibge": null,
+          "value": 52,
+          "display_value": "52",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "APARECIDA DO TABOADO",
+          "ibge": null,
+          "value": 32,
+          "display_value": "32",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "ITAPORA",
+          "ibge": null,
+          "value": 29,
+          "display_value": "29",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "CAARAPO",
+          "ibge": null,
+          "value": 26,
+          "display_value": "26",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "SAO GABRIEL DO OESTE",
+          "ibge": null,
+          "value": 20,
+          "display_value": "20",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "TERENOS",
+          "ibge": null,
+          "value": 20,
+          "display_value": "20",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "ITAQUIRAÍ",
+          "ibge": null,
+          "value": 19,
+          "display_value": "19",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "DEODAPOLIS",
+          "ibge": null,
+          "value": 18,
+          "display_value": "18",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "RIBAS DO RIO PARDO",
+          "ibge": null,
+          "value": 18,
+          "display_value": "18",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "TRÊS LAGOAS",
+          "ibge": null,
+          "value": 18,
+          "display_value": "18",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "SIDROLÂNDIA",
+          "ibge": null,
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "IVINHEMA",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "CAARAPÓ",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "CORUMBÁ",
+          "ibge": null,
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "PONTA PORÃ",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "BATAYPORÃ",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "JARDIM",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "PORTO MURTINHO",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "CORUMBA",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "FATIMA DO SUL",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "GLORIA DE DOURADOS",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "RIO BRILHANTE",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "ANASTACIO",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "CASSILANDIA",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "CORONEL SAPUCAIA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "VICENTINA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "BANDEIRANTES",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "JARAGUARI",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "LAGUNA CARAPÃ",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "NOVA ALVORADA DO SUL",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "BATAYPORA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "BELA VISTA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "COSTA RICA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "GUIA LOPES DA LAGUNA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "MUNDO NOVO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "NOVO HORIZONTE DO SUL",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "SIDROLANDIA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "PARAISO DAS AGUAS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "AGUA CLARA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "CORGUINHO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "IGUATEMI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "JATEI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "ROCHEDO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        }
+      ]
+    }
+  ],
+  "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
   "data_aceitacao": "2026-08-04",
   "geo": {

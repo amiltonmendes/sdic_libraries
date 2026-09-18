@@ -273,8 +273,202 @@
       ]
     }
   ],
-  "breakdowns": [],
-  "_nota_anonimizacao": "Sem CNPJ, nome de empresa ou município em nenhum nível do JSON — apenas contagens agregadas por UF ou nacionais.",
+  "breakdowns": [
+    {
+      "id": "por_municipio",
+      "title": "Atendimentos B+P por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "RO",
+          "municipio": "PORTO VELHO",
+          "ibge": null,
+          "value": 480,
+          "display_value": "480",
+          "share": 0.3
+        },
+        {
+          "uf": "RO",
+          "municipio": "CACOAL",
+          "ibge": null,
+          "value": 298,
+          "display_value": "298",
+          "share": 0.2
+        },
+        {
+          "uf": "RO",
+          "municipio": "VILHENA",
+          "ibge": null,
+          "value": 208,
+          "display_value": "208",
+          "share": 0.1
+        },
+        {
+          "uf": "RO",
+          "municipio": "PIMENTA BUENO",
+          "ibge": null,
+          "value": 167,
+          "display_value": "167",
+          "share": 0.1
+        },
+        {
+          "uf": "RO",
+          "municipio": "JI-PARANA",
+          "ibge": null,
+          "value": 156,
+          "display_value": "156",
+          "share": 0.1
+        },
+        {
+          "uf": "RO",
+          "municipio": "ARIQUEMES",
+          "ibge": null,
+          "value": 142,
+          "display_value": "142",
+          "share": 0.1
+        },
+        {
+          "uf": "RO",
+          "municipio": "JARU",
+          "ibge": null,
+          "value": 119,
+          "display_value": "119",
+          "share": 0.1
+        },
+        {
+          "uf": "RO",
+          "municipio": "OURO PRETO DO OESTE",
+          "ibge": null,
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "CACAULÂNDIA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "COLORADO DO OESTE",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "ROLIM DE MOURA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "CANDEIAS DO JAMARI",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "ESPIGAO D'OESTE",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "VALE DO PARAISO",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "GOVERNADOR JORGE TEIXEIRA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "JI-PARANÁ",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "MINISTRO ANDREAZZA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "ALTO PARAISO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "GUAJARA-MIRIM",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "MIRANTE DA SERRA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "MONTE NEGRO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "NOVA BRASILÂNDIA D'OESTE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "THEOBROMA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        }
+      ]
+    }
+  ],
+  "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
   "data_aceitacao": "2026-08-04",
   "geo": {

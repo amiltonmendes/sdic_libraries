@@ -270,8 +270,2106 @@
       ]
     }
   ],
-  "breakdowns": [],
-  "_nota_anonimizacao": "Sem CNPJ, nome de empresa ou município em nenhum nível do JSON — apenas contagens agregadas por UF ou nacionais.",
+  "breakdowns": [
+    {
+      "id": "por_municipio",
+      "title": "Atendimentos B+P por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "GO",
+          "municipio": "GOIANIA",
+          "ibge": null,
+          "value": 3191,
+          "display_value": "3.191",
+          "share": 2.1
+        },
+        {
+          "uf": "DF",
+          "municipio": "BRASILIA",
+          "ibge": null,
+          "value": 2982,
+          "display_value": "2.982",
+          "share": 1.9
+        },
+        {
+          "uf": "MS",
+          "municipio": "CAMPO GRANDE",
+          "ibge": null,
+          "value": 2472,
+          "display_value": "2.472",
+          "share": 1.6
+        },
+        {
+          "uf": "MT",
+          "municipio": "CUIABA",
+          "ibge": null,
+          "value": 1222,
+          "display_value": "1.222",
+          "share": 0.8
+        },
+        {
+          "uf": "GO",
+          "municipio": "APARECIDA DE GOIANIA",
+          "ibge": null,
+          "value": 793,
+          "display_value": "793",
+          "share": 0.5
+        },
+        {
+          "uf": "MS",
+          "municipio": "DOURADOS",
+          "ibge": null,
+          "value": 634,
+          "display_value": "634",
+          "share": 0.4
+        },
+        {
+          "uf": "GO",
+          "municipio": "ANAPOLIS",
+          "ibge": null,
+          "value": 594,
+          "display_value": "594",
+          "share": 0.4
+        },
+        {
+          "uf": "GO",
+          "municipio": "RIO VERDE",
+          "ibge": null,
+          "value": 475,
+          "display_value": "475",
+          "share": 0.3
+        },
+        {
+          "uf": "MT",
+          "municipio": "SINOP",
+          "ibge": null,
+          "value": 365,
+          "display_value": "365",
+          "share": 0.2
+        },
+        {
+          "uf": "GO",
+          "municipio": "CATALAO",
+          "ibge": null,
+          "value": 277,
+          "display_value": "277",
+          "share": 0.2
+        },
+        {
+          "uf": "MT",
+          "municipio": "RONDONOPOLIS",
+          "ibge": null,
+          "value": 239,
+          "display_value": "239",
+          "share": 0.2
+        },
+        {
+          "uf": "MT",
+          "municipio": "VARZEA GRANDE",
+          "ibge": null,
+          "value": 234,
+          "display_value": "234",
+          "share": 0.2
+        },
+        {
+          "uf": "GO",
+          "municipio": "SENADOR CANEDO",
+          "ibge": null,
+          "value": 227,
+          "display_value": "227",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "CALDAS NOVAS",
+          "ibge": null,
+          "value": 188,
+          "display_value": "188",
+          "share": 0.1
+        },
+        {
+          "uf": "MT",
+          "municipio": "SORRISO",
+          "ibge": null,
+          "value": 174,
+          "display_value": "174",
+          "share": 0.1
+        },
+        {
+          "uf": "MT",
+          "municipio": "TANGARA DA SERRA",
+          "ibge": null,
+          "value": 172,
+          "display_value": "172",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "GOIANESIA",
+          "ibge": null,
+          "value": 159,
+          "display_value": "159",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "JATAI",
+          "ibge": null,
+          "value": 158,
+          "display_value": "158",
+          "share": 0.1
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOVA MUTUM",
+          "ibge": null,
+          "value": 156,
+          "display_value": "156",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "ITABERAI",
+          "ibge": null,
+          "value": 141,
+          "display_value": "141",
+          "share": 0.1
+        },
+        {
+          "uf": "MT",
+          "municipio": "LUCAS DO RIO VERDE",
+          "ibge": null,
+          "value": 136,
+          "display_value": "136",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "MARACAJU",
+          "ibge": null,
+          "value": 135,
+          "display_value": "135",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "IPORA",
+          "ibge": null,
+          "value": 134,
+          "display_value": "134",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "NAVIRAI",
+          "ibge": null,
+          "value": 131,
+          "display_value": "131",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "LUZIANIA",
+          "ibge": null,
+          "value": 127,
+          "display_value": "127",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "CHAPADAO DO SUL",
+          "ibge": null,
+          "value": 120,
+          "display_value": "120",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "TRES LAGOAS",
+          "ibge": null,
+          "value": 119,
+          "display_value": "119",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "VALPARAISO DE GOIAS",
+          "ibge": null,
+          "value": 114,
+          "display_value": "114",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "FORMOSA",
+          "ibge": null,
+          "value": 112,
+          "display_value": "112",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "JARAGUA",
+          "ibge": null,
+          "value": 112,
+          "display_value": "112",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "ITUMBIARA",
+          "ibge": null,
+          "value": 109,
+          "display_value": "109",
+          "share": 0.1
+        },
+        {
+          "uf": "MT",
+          "municipio": "CACERES",
+          "ibge": null,
+          "value": 109,
+          "display_value": "109",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "COXIM",
+          "ibge": null,
+          "value": 108,
+          "display_value": "108",
+          "share": 0.1
+        },
+        {
+          "uf": "MT",
+          "municipio": "BARRA DO GARCAS",
+          "ibge": null,
+          "value": 103,
+          "display_value": "103",
+          "share": 0.1
+        },
+        {
+          "uf": "MT",
+          "municipio": "PRIMAVERA DO LESTE",
+          "ibge": null,
+          "value": 102,
+          "display_value": "102",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "AGUAS LINDAS DE GOIAS",
+          "ibge": null,
+          "value": 98,
+          "display_value": "98",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "AQUIDAUANA",
+          "ibge": null,
+          "value": 92,
+          "display_value": "92",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "AMAMBAI",
+          "ibge": null,
+          "value": 87,
+          "display_value": "87",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "GOIANIRA",
+          "ibge": null,
+          "value": 83,
+          "display_value": "83",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "NOVO GAMA",
+          "ibge": null,
+          "value": 82,
+          "display_value": "82",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "NOVA ANDRADINA",
+          "ibge": null,
+          "value": 81,
+          "display_value": "81",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "PARANAIBA",
+          "ibge": null,
+          "value": 81,
+          "display_value": "81",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "TRINDADE",
+          "ibge": null,
+          "value": 79,
+          "display_value": "79",
+          "share": 0.1
+        },
+        {
+          "uf": "MT",
+          "municipio": "ALTA FLORESTA",
+          "ibge": null,
+          "value": 79,
+          "display_value": "79",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "CERES",
+          "ibge": null,
+          "value": 79,
+          "display_value": "79",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "POSSE",
+          "ibge": null,
+          "value": 77,
+          "display_value": "77",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "SANTO ANTONIO DO DESCOBERTO",
+          "ibge": null,
+          "value": 77,
+          "display_value": "77",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "CRISTALINA",
+          "ibge": null,
+          "value": 76,
+          "display_value": "76",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "PONTA PORA",
+          "ibge": null,
+          "value": 75,
+          "display_value": "75",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "BONITO",
+          "ibge": null,
+          "value": 75,
+          "display_value": "75",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "QUIRINOPOLIS",
+          "ibge": null,
+          "value": 71,
+          "display_value": "71",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "CONFRESA",
+          "ibge": null,
+          "value": 71,
+          "display_value": "71",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "AGUA BOA",
+          "ibge": null,
+          "value": 67,
+          "display_value": "67",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "MORRINHOS",
+          "ibge": null,
+          "value": 66,
+          "display_value": "66",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "PORANGATU",
+          "ibge": null,
+          "value": 65,
+          "display_value": "65",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "BELA VISTA DE GOIAS",
+          "ibge": null,
+          "value": 64,
+          "display_value": "64",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "PARANAÍTA",
+          "ibge": null,
+          "value": 60,
+          "display_value": "60",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "PLANALTINA",
+          "ibge": null,
+          "value": 55,
+          "display_value": "55",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "RIO VERDE DE MATO GROSSO",
+          "ibge": null,
+          "value": 52,
+          "display_value": "52",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "INHUMAS",
+          "ibge": null,
+          "value": 51,
+          "display_value": "51",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "JUINA",
+          "ibge": null,
+          "value": 51,
+          "display_value": "51",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "JUSSARA",
+          "ibge": null,
+          "value": 51,
+          "display_value": "51",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "PALMEIRAS DE GOIAS",
+          "ibge": null,
+          "value": 51,
+          "display_value": "51",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "GOIATUBA",
+          "ibge": null,
+          "value": 49,
+          "display_value": "49",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "MINEIROS",
+          "ibge": null,
+          "value": 49,
+          "display_value": "49",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "PADRE BERNARDO",
+          "ibge": null,
+          "value": 49,
+          "display_value": "49",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "URUANA",
+          "ibge": null,
+          "value": 49,
+          "display_value": "49",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "ITAPACI",
+          "ibge": null,
+          "value": 48,
+          "display_value": "48",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "COLIDER",
+          "ibge": null,
+          "value": 42,
+          "display_value": "42",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "ALEXANIA",
+          "ibge": null,
+          "value": 40,
+          "display_value": "40",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "CAMPO LIMPO DE GOIAS",
+          "ibge": null,
+          "value": 38,
+          "display_value": "38",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "PONTALINA",
+          "ibge": null,
+          "value": 36,
+          "display_value": "36",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "CHAPADA DOS GUIMARAES",
+          "ibge": null,
+          "value": 36,
+          "display_value": "36",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "SILVANIA",
+          "ibge": null,
+          "value": 35,
+          "display_value": "35",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "URUACU",
+          "ibge": null,
+          "value": 34,
+          "display_value": "34",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "GOIÂNIA",
+          "ibge": null,
+          "value": 33,
+          "display_value": "33",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "APARECIDA DO TABOADO",
+          "ibge": null,
+          "value": 32,
+          "display_value": "32",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "PIRENOPOLIS",
+          "ibge": null,
+          "value": 31,
+          "display_value": "31",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "SANCLERLANDIA",
+          "ibge": null,
+          "value": 31,
+          "display_value": "31",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "GUARANTA DO NORTE",
+          "ibge": null,
+          "value": 30,
+          "display_value": "30",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "RIALMA",
+          "ibge": null,
+          "value": 29,
+          "display_value": "29",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOSSA SENHORA DO LIVRAMENTO",
+          "ibge": null,
+          "value": 29,
+          "display_value": "29",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "ITAPORA",
+          "ibge": null,
+          "value": 29,
+          "display_value": "29",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "CAARAPO",
+          "ibge": null,
+          "value": 26,
+          "display_value": "26",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "NEROPOLIS",
+          "ibge": null,
+          "value": 24,
+          "display_value": "24",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "BARRO ALTO",
+          "ibge": null,
+          "value": 23,
+          "display_value": "23",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "CALDAZINHA",
+          "ibge": null,
+          "value": 22,
+          "display_value": "22",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "JUARA",
+          "ibge": null,
+          "value": 22,
+          "display_value": "22",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "SAPEZAL",
+          "ibge": null,
+          "value": 22,
+          "display_value": "22",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "CAMPINORTE",
+          "ibge": null,
+          "value": 21,
+          "display_value": "21",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "SAO GABRIEL DO OESTE",
+          "ibge": null,
+          "value": 20,
+          "display_value": "20",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "TERENOS",
+          "ibge": null,
+          "value": 20,
+          "display_value": "20",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "RUBIATABA",
+          "ibge": null,
+          "value": 20,
+          "display_value": "20",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "ITAQUIRAÍ",
+          "ibge": null,
+          "value": 19,
+          "display_value": "19",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "SAO LUIS DE MONTES BELOS",
+          "ibge": null,
+          "value": 18,
+          "display_value": "18",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "DEODAPOLIS",
+          "ibge": null,
+          "value": 18,
+          "display_value": "18",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "RIBAS DO RIO PARDO",
+          "ibge": null,
+          "value": 18,
+          "display_value": "18",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "TRÊS LAGOAS",
+          "ibge": null,
+          "value": 18,
+          "display_value": "18",
+          "share": 0.0
+        },
+        {
+          "uf": "DF",
+          "municipio": "BRASÍLIA",
+          "ibge": null,
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "PETROLINA DE GOIAS",
+          "ibge": null,
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "CAMPO VERDE",
+          "ibge": null,
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "NIQUELANDIA",
+          "ibge": null,
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "SIDROLÂNDIA",
+          "ibge": null,
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "COCALZINHO DE GOIAS",
+          "ibge": null,
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "SANTA HELENA DE GOIAS",
+          "ibge": null,
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "HIDROLANDIA",
+          "ibge": null,
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "MONTIVIDIU",
+          "ibge": null,
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "GUAPO",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "IVINHEMA",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "GOIANAPOLIS",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "TEREZOPOLIS DE GOIAS",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "CAARAPÓ",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "PONTES E LACERDA",
+          "ibge": null,
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "CACU",
+          "ibge": null,
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "CORUMBÁ",
+          "ibge": null,
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "ANÁPOLIS",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "PONTA PORÃ",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOVA CANAA DO NORTE",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "JARAGUÁ",
+          "ibge": null,
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "BARRA DO BUGRES",
+          "ibge": null,
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "CIDADE OCIDENTAL",
+          "ibge": null,
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "ABADIA DE GOIAS",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "GOIANÉSIA",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "NOVA VENEZA",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "SÃO JOSÉ DOS QUATRO MARCOS",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "BATAYPORÃ",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "JARDIM",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "PORTO MURTINHO",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOBRES",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOVA BRASILANDIA",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "POCONE",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "BONFINOPOLIS",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "CORUMBA DE GOIAS",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "CORUMBA",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "FATIMA DO SUL",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "GLORIA DE DOURADOS",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "VIANOPOLIS",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "RIO BRILHANTE",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "POCONÉ",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "ARIPUANA",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "CUIABÁ",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "ITAUCU",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "PIRANHAS",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "ANASTACIO",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "PONTAL DO ARAGUAIA",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "ITAGUARI",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "MARCELANDIA",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "QUERENCIA",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "RONDONÓPOLIS",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "SAO JOSE DOS QUATRO MARCOS",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "ARAGARCAS",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "OURO VERDE DE GOIAS",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "CASSILANDIA",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "COLÍDER",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "MIRASSOL D'OESTE",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "APARECIDA DE GOIÂNIA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "ARAGOIANIA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "SANTA CARMEM",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "CORONEL SAPUCAIA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "SANTO ANTÔNIO DO LEVERGER",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "VÁRZEA GRANDE",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "ORIZONA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "VICENTINA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "JACIARA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "VERA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "GUARANI DE GOIAS",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "BANDEIRANTES",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "JARAGUARI",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "LAGUNA CARAPÃ",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "NOVA ALVORADA DO SUL",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "ITAPURANGA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "LUZIÂNIA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "APIACAS",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "CAMPO NOVO DO PARECIS",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "ITIQUIRA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "MARCELÂNDIA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "ACREUNA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "ALTO HORIZONTE",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "CARMO DO RIO VERDE",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "BATAYPORA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "BELA VISTA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "COSTA RICA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "GUIA LOPES DA LAGUNA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "CHAPADA DOS GUIMARÃES",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Marcelândia",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "PLANALTO DA SERRA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "ABADIA DE GOIÁS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "ABADIANIA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "ALEXÂNIA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "MUNDO NOVO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "NOVO HORIZONTE DO SUL",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "SIDROLANDIA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "DIAMANTINO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOVA OLIMPIA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "ROSARIO OESTE",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "CEZARINA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "HEITORAI",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "OUVIDOR",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "SANTO ANTONIO DE GOIAS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "SAO MIGUEL DO PASSA QUATRO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "TAQUARAL DE GOIAS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "TRES RANCHOS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "PARAISO DAS AGUAS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Chapada dos Guimarães",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "MATUPA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Nobres",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "SANTO ANTONIO DO LEVERGER",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "CACHOEIRA DOURADA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "CATALÃO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "CROMINIA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "DAMOLANDIA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "GOIANÁPOLIS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "GUAPÓ",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "ITABERAÍ",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "NERÓPOLIS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "SAO FRANCISCO DE GOIAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "TEREZÓPOLIS DE GOIÁS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "URUAÇU",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "BELO HORIZONTE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "BRASNORTE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "CAMPOS DE JULIO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "CLAUDIA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "COLNIZA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "JURUENA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOVA BANDEIRANTES",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOVA MONTE VERDE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOVA XAVANTINA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "PEDRA PRETA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "PORTO DOS GAUCHOS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "SAO JOSE DO RIO CLARO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "ALTO PARAISO DE GOIAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "BOM JESUS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "BURITI DE GOIAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "CHAPADAO DO CEU",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "FAZENDA NOVA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "FIRMINOPOLIS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "GOIANDIRA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "HIDROLINA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "IACIARA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "IPAMERI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "LEOPOLDO DE BULHOES",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "MINACU",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "MONTES CLAROS DE GOIAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "PIRACANJUBA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "RIO QUENTE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "SANTA BARBARA DE GOIAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "SAO PATRICIO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "AGUA CLARA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "CORGUINHO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "IGUATEMI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "JATEI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "ROCHEDO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "ACORIZAL",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOVA BRASILÂNDIA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOVA CANAÃ DO NORTE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Nova Canaã do Norte",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Nova Lacerda",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "PARANAITA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "POXOREU",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "UNIAO DO SUL",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "DF",
+          "municipio": "Núcleo Bandeirante",
+          "ibge": null,
+          "value": 0,
+          "display_value": "0",
+          "share": 0.0
+        }
+      ]
+    }
+  ],
+  "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
   "data_aceitacao": "2026-08-04",
   "geo": {

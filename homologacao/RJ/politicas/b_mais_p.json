@@ -273,8 +273,810 @@
       ]
     }
   ],
-  "breakdowns": [],
-  "_nota_anonimizacao": "Sem CNPJ, nome de empresa ou município em nenhum nível do JSON — apenas contagens agregadas por UF ou nacionais.",
+  "breakdowns": [
+    {
+      "id": "por_municipio",
+      "title": "Atendimentos B+P por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "RJ",
+          "municipio": "RIO DE JANEIRO",
+          "ibge": null,
+          "value": 1562,
+          "display_value": "1.562",
+          "share": 1.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "CAMPOS DOS GOYTACAZES",
+          "ibge": null,
+          "value": 283,
+          "display_value": "283",
+          "share": 0.2
+        },
+        {
+          "uf": "RJ",
+          "municipio": "MACAE",
+          "ibge": null,
+          "value": 231,
+          "display_value": "231",
+          "share": 0.2
+        },
+        {
+          "uf": "RJ",
+          "municipio": "NOVA FRIBURGO",
+          "ibge": null,
+          "value": 223,
+          "display_value": "223",
+          "share": 0.1
+        },
+        {
+          "uf": "RJ",
+          "municipio": "DUQUE DE CAXIAS",
+          "ibge": null,
+          "value": 216,
+          "display_value": "216",
+          "share": 0.1
+        },
+        {
+          "uf": "RJ",
+          "municipio": "ITAPERUNA",
+          "ibge": null,
+          "value": 189,
+          "display_value": "189",
+          "share": 0.1
+        },
+        {
+          "uf": "RJ",
+          "municipio": "NOVA IGUACU",
+          "ibge": null,
+          "value": 177,
+          "display_value": "177",
+          "share": 0.1
+        },
+        {
+          "uf": "RJ",
+          "municipio": "NITEROI",
+          "ibge": null,
+          "value": 172,
+          "display_value": "172",
+          "share": 0.1
+        },
+        {
+          "uf": "RJ",
+          "municipio": "PETROPOLIS",
+          "ibge": null,
+          "value": 151,
+          "display_value": "151",
+          "share": 0.1
+        },
+        {
+          "uf": "RJ",
+          "municipio": "VOLTA REDONDA",
+          "ibge": null,
+          "value": 132,
+          "display_value": "132",
+          "share": 0.1
+        },
+        {
+          "uf": "RJ",
+          "municipio": "TRES RIOS",
+          "ibge": null,
+          "value": 109,
+          "display_value": "109",
+          "share": 0.1
+        },
+        {
+          "uf": "RJ",
+          "municipio": "SAO GONCALO",
+          "ibge": null,
+          "value": 103,
+          "display_value": "103",
+          "share": 0.1
+        },
+        {
+          "uf": "RJ",
+          "municipio": "CABO FRIO",
+          "ibge": null,
+          "value": 91,
+          "display_value": "91",
+          "share": 0.1
+        },
+        {
+          "uf": "RJ",
+          "municipio": "TERESOPOLIS",
+          "ibge": null,
+          "value": 73,
+          "display_value": "73",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "ITAGUAI",
+          "ibge": null,
+          "value": 72,
+          "display_value": "72",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "ARARUAMA",
+          "ibge": null,
+          "value": 63,
+          "display_value": "63",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "BARRA MANSA",
+          "ibge": null,
+          "value": 63,
+          "display_value": "63",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "SAO JOAO DE MERITI",
+          "ibge": null,
+          "value": 61,
+          "display_value": "61",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "RIO DAS OSTRAS",
+          "ibge": null,
+          "value": 55,
+          "display_value": "55",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "ANGRA DOS REIS",
+          "ibge": null,
+          "value": 51,
+          "display_value": "51",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "MIGUEL PEREIRA",
+          "ibge": null,
+          "value": 44,
+          "display_value": "44",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "RESENDE",
+          "ibge": null,
+          "value": 44,
+          "display_value": "44",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "BELFORD ROXO",
+          "ibge": null,
+          "value": 41,
+          "display_value": "41",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "CANTAGALO",
+          "ibge": null,
+          "value": 39,
+          "display_value": "39",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "ITABORAI",
+          "ibge": null,
+          "value": 36,
+          "display_value": "36",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "MESQUITA",
+          "ibge": null,
+          "value": 34,
+          "display_value": "34",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "SAO PEDRO DA ALDEIA",
+          "ibge": null,
+          "value": 33,
+          "display_value": "33",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "VALENCA",
+          "ibge": null,
+          "value": 32,
+          "display_value": "32",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "BOM JESUS DO ITABAPOANA",
+          "ibge": null,
+          "value": 28,
+          "display_value": "28",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "PARAIBA DO SUL",
+          "ibge": null,
+          "value": 25,
+          "display_value": "25",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "QUEIMADOS",
+          "ibge": null,
+          "value": 25,
+          "display_value": "25",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "SAQUAREMA",
+          "ibge": null,
+          "value": 24,
+          "display_value": "24",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "CACHOEIRAS DE MACACU",
+          "ibge": null,
+          "value": 23,
+          "display_value": "23",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "BARRA DO PIRAI",
+          "ibge": null,
+          "value": 22,
+          "display_value": "22",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "CORDEIRO",
+          "ibge": null,
+          "value": 22,
+          "display_value": "22",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "NILOPOLIS",
+          "ibge": null,
+          "value": 21,
+          "display_value": "21",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "NATIVIDADE",
+          "ibge": null,
+          "value": 18,
+          "display_value": "18",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "RIO BONITO",
+          "ibge": null,
+          "value": 18,
+          "display_value": "18",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "ARRAIAL DO CABO",
+          "ibge": null,
+          "value": 18,
+          "display_value": "18",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "SAO JOAO DA BARRA",
+          "ibge": null,
+          "value": 17,
+          "display_value": "17",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "MARICA",
+          "ibge": null,
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "PATY DO ALFERES",
+          "ibge": null,
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "MAGE",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "ITAOCARA",
+          "ibge": null,
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "MIRACEMA",
+          "ibge": null,
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "SEROPEDICA",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "BOM JARDIM",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "GUAPIMIRIM",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "PINHEIRAL",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "PARATY",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "ARMACAO DOS BUZIOS",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "PORCIUNCULA",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "PIRAI",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "SANTO ANTONIO DE PADUA",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "QUISSAMA",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "COMENDADOR LEVY GASPARIAN",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "SAO FIDELIS",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "PARACAMBI",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "CARMO",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "ENGENHEIRO PAULO DE FRONTIN",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "IGUABA GRANDE",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "JAPERI",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "MACUCO",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "VASSOURAS",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "AREAL",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "CASIMIRO DE ABREU",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "MENDES",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "TANGUA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "CONCEICAO DE MACABU",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "ITATIAIA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "SAO FRANCISCO DE ITABAPOANA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "SAPUCAIA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "PORTO REAL",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "SILVA JARDIM",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "CARDOSO MOREIRA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "MANGARATIBA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "BARRA DO PIRAÍ",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "ITALVA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "SAO JOSE DO VALE DO RIO PRETO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "VARRE-SAI",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "LAJE DO MURIAE",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "APERIBE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "CONCEIÇÃO DE MACABU",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "NILÓPOLIS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "PARATI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "QUATIS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "RIO CLARO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "RIO DAS FLORES",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "SUMIDOURO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "TRAJANO DE MORAES",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "TRÊS RIOS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "CAMBUCI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "CARAPEBUS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "DUAS BARRAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "SAO JOSE DE UBA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "SAO SEBASTIAO DO ALTO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "Duque de Caxias",
+          "ibge": null,
+          "value": 0,
+          "display_value": "0",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "Niterói",
+          "ibge": null,
+          "value": 0,
+          "display_value": "0",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "SÃO JOSE DO RIO PRETO",
+          "ibge": null,
+          "value": 0,
+          "display_value": "0",
+          "share": 0.0
+        }
+      ]
+    }
+  ],
+  "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
   "data_aceitacao": "2026-08-04",
   "geo": {

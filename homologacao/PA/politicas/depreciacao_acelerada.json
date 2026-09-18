@@ -212,6 +212,63 @@
           "share": 33.8
         }
       ]
+    },
+    {
+      "id": "por_municipio",
+      "title": "Investimento incentivado por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "PA",
+          "municipio": "SANTA ISABEL DO PARA",
+          "ibge": null,
+          "value": 6702891.31,
+          "display_value": "R$ 6,7 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "PA",
+          "municipio": "XINGUARA",
+          "ibge": null,
+          "value": 1708946.67,
+          "display_value": "R$ 1,7 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "PA",
+          "municipio": "PRIMAVERA",
+          "ibge": null,
+          "value": 353684.95,
+          "display_value": "R$ 353.685",
+          "share": 0.0
+        },
+        {
+          "uf": "PA",
+          "municipio": "BELEM",
+          "ibge": null,
+          "value": 243664.12,
+          "display_value": "R$ 243.664",
+          "share": 0.0
+        },
+        {
+          "uf": "PA",
+          "municipio": "Canaã dos Carajás",
+          "ibge": null,
+          "value": 225000.0,
+          "display_value": "R$ 225.000",
+          "share": 0.0
+        },
+        {
+          "uf": "PA",
+          "municipio": "Ourilândia do Norte",
+          "ibge": null,
+          "value": 49754.0,
+          "display_value": "R$ 49.754",
+          "share": 0.0
+        }
+      ]
     }
   ],
   "_nota_metodologica": "Valor do BF recalculado como 34% fixo sobre Valor do Bem (não a coluna original da planilha, que é 17% constante em 100% das linhas — premissa simplificada, não cálculo tributário real/marginal). Taxa confirmada com o time por reconciliação com a versão anterior do indicador (recorte histórico de SP).",

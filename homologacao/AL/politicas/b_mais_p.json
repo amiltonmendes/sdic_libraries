@@ -273,8 +273,570 @@
       ]
     }
   ],
-  "breakdowns": [],
-  "_nota_anonimizacao": "Sem CNPJ, nome de empresa ou município em nenhum nível do JSON — apenas contagens agregadas por UF ou nacionais.",
+  "breakdowns": [
+    {
+      "id": "por_municipio",
+      "title": "Atendimentos B+P por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "AL",
+          "municipio": "MACEIO",
+          "ibge": null,
+          "value": 1217,
+          "display_value": "1.217",
+          "share": 0.8
+        },
+        {
+          "uf": "AL",
+          "municipio": "ARAPIRACA",
+          "ibge": null,
+          "value": 261,
+          "display_value": "261",
+          "share": 0.2
+        },
+        {
+          "uf": "AL",
+          "municipio": "DELMIRO GOUVEIA",
+          "ibge": null,
+          "value": 94,
+          "display_value": "94",
+          "share": 0.1
+        },
+        {
+          "uf": "AL",
+          "municipio": "MARECHAL DEODORO",
+          "ibge": null,
+          "value": 92,
+          "display_value": "92",
+          "share": 0.1
+        },
+        {
+          "uf": "AL",
+          "municipio": "PENEDO",
+          "ibge": null,
+          "value": 89,
+          "display_value": "89",
+          "share": 0.1
+        },
+        {
+          "uf": "AL",
+          "municipio": "RIO LARGO",
+          "ibge": null,
+          "value": 80,
+          "display_value": "80",
+          "share": 0.1
+        },
+        {
+          "uf": "AL",
+          "municipio": "UNIAO DOS PALMARES",
+          "ibge": null,
+          "value": 77,
+          "display_value": "77",
+          "share": 0.1
+        },
+        {
+          "uf": "AL",
+          "municipio": "PALMEIRA DOS INDIOS",
+          "ibge": null,
+          "value": 72,
+          "display_value": "72",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "SAO MIGUEL DOS CAMPOS",
+          "ibge": null,
+          "value": 69,
+          "display_value": "69",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "SANTANA DO IPANEMA",
+          "ibge": null,
+          "value": 58,
+          "display_value": "58",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "MARAGOGI",
+          "ibge": null,
+          "value": 36,
+          "display_value": "36",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "SAO JOSE DA TAPERA",
+          "ibge": null,
+          "value": 31,
+          "display_value": "31",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "OLHO D'AGUA DAS FLORES",
+          "ibge": null,
+          "value": 30,
+          "display_value": "30",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "CAJUEIRO",
+          "ibge": null,
+          "value": 29,
+          "display_value": "29",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "PIRANHAS",
+          "ibge": null,
+          "value": 27,
+          "display_value": "27",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "PORTO CALVO",
+          "ibge": null,
+          "value": 24,
+          "display_value": "24",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "VICOSA",
+          "ibge": null,
+          "value": 23,
+          "display_value": "23",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "CAPELA",
+          "ibge": null,
+          "value": 22,
+          "display_value": "22",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "SAO LUIS DO QUITUNDE",
+          "ibge": null,
+          "value": 17,
+          "display_value": "17",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "PARIPUEIRA",
+          "ibge": null,
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "COITE DO NOIA",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "SATUBA",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "PASSO DE CAMARAGIBE",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "PORTO DE PEDRAS",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "SAO MIGUEL DOS MILAGRES",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "MURICI",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "SAO SEBASTIAO",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "CRAIBAS",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "CORURIPE",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "LIMOEIRO DE ANADIA",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "MAJOR ISIDORO",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "AGUA BRANCA",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "ATALAIA",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "JAPARATINGA",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "PIACABUCU",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "CAMPO ALEGRE",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "PARICONHA",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "IGACI",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "MATRIZ DE CAMARAGIBE",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "PILAR",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "GIRAU DO PONCIANO",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "BARRA DE SAO MIGUEL",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "MONTEIROPOLIS",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "SAO JOSE DA LAJE",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "IGREJA NOVA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "MAR VERMELHO",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "OLHO D'AGUA DO CASADO",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "CACIMBINHAS",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "MARIBONDO",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "ANADIA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "BARRA DE SANTO ANTONIO",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "OLIVENCA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "TEOTONIO VILELA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "BATALHA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "CHA PRETA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "MACEIÓ",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "PAO DE ACUCAR",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "BOCA DA MATA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "JEQUIA DA PRAIA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "LAGOA DA CANOA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "MARAVILHA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "TAQUARANA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "QUEBRANGULO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "SANTA LUZIA DO NORTE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "BRANQUINHA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "CAMPESTRE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "DOIS RIACHOS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "ROTEIRO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "SENADOR RUI PALMEIRA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        }
+      ]
+    }
+  ],
+  "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
   "data_aceitacao": "2026-08-04",
   "geo": {

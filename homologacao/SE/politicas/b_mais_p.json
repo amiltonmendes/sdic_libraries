@@ -273,8 +273,426 @@
       ]
     }
   ],
-  "breakdowns": [],
-  "_nota_anonimizacao": "Sem CNPJ, nome de empresa ou município em nenhum nível do JSON — apenas contagens agregadas por UF ou nacionais.",
+  "breakdowns": [
+    {
+      "id": "por_municipio",
+      "title": "Atendimentos B+P por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "SE",
+          "municipio": "ARACAJU",
+          "ibge": null,
+          "value": 827,
+          "display_value": "827",
+          "share": 0.5
+        },
+        {
+          "uf": "SE",
+          "municipio": "ITABAIANA",
+          "ibge": null,
+          "value": 165,
+          "display_value": "165",
+          "share": 0.1
+        },
+        {
+          "uf": "SE",
+          "municipio": "NOSSA SENHORA DO SOCORRO",
+          "ibge": null,
+          "value": 78,
+          "display_value": "78",
+          "share": 0.1
+        },
+        {
+          "uf": "SE",
+          "municipio": "SAO CRISTOVAO",
+          "ibge": null,
+          "value": 62,
+          "display_value": "62",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "LAGARTO",
+          "ibge": null,
+          "value": 50,
+          "display_value": "50",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "ESTANCIA",
+          "ibge": null,
+          "value": 45,
+          "display_value": "45",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "ITABAIANINHA",
+          "ibge": null,
+          "value": 41,
+          "display_value": "41",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "NEOPOLIS",
+          "ibge": null,
+          "value": 41,
+          "display_value": "41",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "NOSSA SENHORA DA GLORIA",
+          "ibge": null,
+          "value": 33,
+          "display_value": "33",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "TOBIAS BARRETO",
+          "ibge": null,
+          "value": 27,
+          "display_value": "27",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "PROPRIA",
+          "ibge": null,
+          "value": 21,
+          "display_value": "21",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "BARRA DOS COQUEIROS",
+          "ibge": null,
+          "value": 20,
+          "display_value": "20",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "CAMPO DO BRITO",
+          "ibge": null,
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "SALGADO",
+          "ibge": null,
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "SANTANA DO SAO FRANCISCO",
+          "ibge": null,
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "CANINDE DE SAO FRANCISCO",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "POCO REDONDO",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "ILHA DAS FLORES",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "MOITA BONITA",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "RIACHUELO",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "AREIA BRANCA",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "NOSSA SENHORA DAS DORES",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "PORTO DA FOLHA",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "JAPOATA",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "BREJO GRANDE",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "SIMAO DIAS",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "UMBAUBA",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "ARAUA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "NOSSA SENHORA DE LOURDES",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "PACATUBA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "SÃO CRISTÓVÃO",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "ITAPORANGA D'AJUDA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "PEDRINHAS",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "LARANJEIRAS",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "SANTO AMARO DAS BROTAS",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "SAO DOMINGOS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "AQUIDABA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "BOQUIM",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "CARMOPOLIS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "NOSSA SENHORA APARECIDA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "RIBEIROPOLIS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "SANTA ROSA DE LIMA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "FEIRA NOVA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "ITABI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "JAPARATUBA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "MONTE ALEGRE DE SERGIPE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "PIRAMBU",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "RIACHAO DO DANTAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "SANTA LUZIA DO ITANHY",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "SIRIRI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "TELHA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        }
+      ]
+    }
+  ],
+  "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
   "data_aceitacao": "2026-08-04",
   "geo": {

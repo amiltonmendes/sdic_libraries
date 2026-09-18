@@ -212,6 +212,191 @@
           "share": 33.8
         }
       ]
+    },
+    {
+      "id": "por_municipio",
+      "title": "Investimento incentivado por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "GO",
+          "municipio": "SENADOR CANEDO",
+          "ibge": null,
+          "value": 71709547.48,
+          "display_value": "R$ 71,7 mi",
+          "share": 0.8
+        },
+        {
+          "uf": "GO",
+          "municipio": "Senador Canedo",
+          "ibge": null,
+          "value": 62517530.3,
+          "display_value": "R$ 62,5 mi",
+          "share": 0.7
+        },
+        {
+          "uf": "GO",
+          "municipio": "EDEALINA",
+          "ibge": null,
+          "value": 58936279.2,
+          "display_value": "R$ 58,9 mi",
+          "share": 0.7
+        },
+        {
+          "uf": "GO",
+          "municipio": "PORANGATU",
+          "ibge": null,
+          "value": 40178532.47,
+          "display_value": "R$ 40,2 mi",
+          "share": 0.5
+        },
+        {
+          "uf": "GO",
+          "municipio": "RIO VERDE",
+          "ibge": null,
+          "value": 29511278.009999998,
+          "display_value": "R$ 29,5 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "GO",
+          "municipio": "CHAPADAO DO CEU",
+          "ibge": null,
+          "value": 26643505.92,
+          "display_value": "R$ 26,6 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "GO",
+          "municipio": "IPAMERI",
+          "ibge": null,
+          "value": 21237344.21,
+          "display_value": "R$ 21,2 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "GO",
+          "municipio": "ANAPOLIS",
+          "ibge": null,
+          "value": 18726465.85,
+          "display_value": "R$ 18,7 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "GO",
+          "municipio": "JANDAIA",
+          "ibge": null,
+          "value": 6935096.7,
+          "display_value": "R$ 6,9 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "NOVA CRIXAS",
+          "ibge": null,
+          "value": 5592065.92,
+          "display_value": "R$ 5,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "Anápolis",
+          "ibge": null,
+          "value": 2348811.2399999998,
+          "display_value": "R$ 2,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "ITABERAI",
+          "ibge": null,
+          "value": 1703056.16,
+          "display_value": "R$ 1,7 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Bela Vista de Goiás",
+          "ibge": null,
+          "value": 1398532.91,
+          "display_value": "R$ 1,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "GOIANESIA",
+          "ibge": null,
+          "value": 1198000.0,
+          "display_value": "R$ 1,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "HIDROLANDIA",
+          "ibge": null,
+          "value": 1193993.9100000001,
+          "display_value": "R$ 1,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "SILVANIA",
+          "ibge": null,
+          "value": 1050722.28,
+          "display_value": "R$ 1,1 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "QUIRINOPOLIS",
+          "ibge": null,
+          "value": 825000.0,
+          "display_value": "R$ 825.000",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Quirinópolis",
+          "ibge": null,
+          "value": 333690.0,
+          "display_value": "R$ 333.690",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Itaberaí",
+          "ibge": null,
+          "value": 259361.6,
+          "display_value": "R$ 259.362",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Aparecida de Goiânia",
+          "ibge": null,
+          "value": 119264.32,
+          "display_value": "R$ 119.264",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "GOIANIA",
+          "ibge": null,
+          "value": 115000.0,
+          "display_value": "R$ 115.000",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "GOIANIRA",
+          "ibge": null,
+          "value": 81000.0,
+          "display_value": "R$ 81.000",
+          "share": 0.0
+        }
+      ]
     }
   ],
   "_nota_metodologica": "Valor do BF recalculado como 34% fixo sobre Valor do Bem (não a coluna original da planilha, que é 17% constante em 100% das linhas — premissa simplificada, não cálculo tributário real/marginal). Taxa confirmada com o time por reconciliação com a versão anterior do indicador (recorte histórico de SP).",

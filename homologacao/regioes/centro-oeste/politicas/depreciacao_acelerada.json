@@ -209,6 +209,503 @@
           "share": 33.8
         }
       ]
+    },
+    {
+      "id": "por_municipio",
+      "title": "Investimento incentivado por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "MT",
+          "municipio": "CANARANA",
+          "ibge": null,
+          "value": 189276606.19,
+          "display_value": "R$ 189,3 mi",
+          "share": 2.2
+        },
+        {
+          "uf": "MS",
+          "municipio": "PARAISO DAS AGUAS",
+          "ibge": null,
+          "value": 91729298.24000001,
+          "display_value": "R$ 91,7 mi",
+          "share": 1.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "SENADOR CANEDO",
+          "ibge": null,
+          "value": 71709547.48,
+          "display_value": "R$ 71,7 mi",
+          "share": 0.8
+        },
+        {
+          "uf": "GO",
+          "municipio": "Senador Canedo",
+          "ibge": null,
+          "value": 62517530.3,
+          "display_value": "R$ 62,5 mi",
+          "share": 0.7
+        },
+        {
+          "uf": "GO",
+          "municipio": "EDEALINA",
+          "ibge": null,
+          "value": 58936279.2,
+          "display_value": "R$ 58,9 mi",
+          "share": 0.7
+        },
+        {
+          "uf": "DF",
+          "municipio": "BRASILIA",
+          "ibge": null,
+          "value": 55661018.13,
+          "display_value": "R$ 55,7 mi",
+          "share": 0.6
+        },
+        {
+          "uf": "MT",
+          "municipio": "Canarana",
+          "ibge": null,
+          "value": 51561956.76,
+          "display_value": "R$ 51,6 mi",
+          "share": 0.6
+        },
+        {
+          "uf": "GO",
+          "municipio": "PORANGATU",
+          "ibge": null,
+          "value": 40178532.47,
+          "display_value": "R$ 40,2 mi",
+          "share": 0.5
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOVA OLIMPIA",
+          "ibge": null,
+          "value": 36750233.300000004,
+          "display_value": "R$ 36,8 mi",
+          "share": 0.4
+        },
+        {
+          "uf": "GO",
+          "municipio": "RIO VERDE",
+          "ibge": null,
+          "value": 29511278.009999998,
+          "display_value": "R$ 29,5 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "GO",
+          "municipio": "CHAPADAO DO CEU",
+          "ibge": null,
+          "value": 26643505.92,
+          "display_value": "R$ 26,6 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "MT",
+          "municipio": "MIRASSOL D'OESTE",
+          "ibge": null,
+          "value": 25595678.13,
+          "display_value": "R$ 25,6 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "MS",
+          "municipio": "DOURADOS",
+          "ibge": null,
+          "value": 24958759.09,
+          "display_value": "R$ 25,0 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "GO",
+          "municipio": "IPAMERI",
+          "ibge": null,
+          "value": 21237344.21,
+          "display_value": "R$ 21,2 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "GO",
+          "municipio": "ANAPOLIS",
+          "ibge": null,
+          "value": 18726465.85,
+          "display_value": "R$ 18,7 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "MT",
+          "municipio": "CUIABA",
+          "ibge": null,
+          "value": 14178509.19,
+          "display_value": "R$ 14,2 mi",
+          "share": 0.2
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOVA MARILANDIA",
+          "ibge": null,
+          "value": 11973713.079999998,
+          "display_value": "R$ 12,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "SIDROLANDIA",
+          "ibge": null,
+          "value": 7561741.630000001,
+          "display_value": "R$ 7,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "JANDAIA",
+          "ibge": null,
+          "value": 6935096.7,
+          "display_value": "R$ 6,9 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MT",
+          "municipio": "Nova Olímpia",
+          "ibge": null,
+          "value": 6925363.64,
+          "display_value": "R$ 6,9 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "NOVA CRIXAS",
+          "ibge": null,
+          "value": 5592065.92,
+          "display_value": "R$ 5,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "Aparecida do Taboado",
+          "ibge": null,
+          "value": 5550000.0,
+          "display_value": "R$ 5,5 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MT",
+          "municipio": "Sinop",
+          "ibge": null,
+          "value": 5000000.0,
+          "display_value": "R$ 5,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "BATAYPORA",
+          "ibge": null,
+          "value": 4575035.06,
+          "display_value": "R$ 4,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MT",
+          "municipio": "SORRISO",
+          "ibge": null,
+          "value": 4554144.42,
+          "display_value": "R$ 4,6 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "DF",
+          "municipio": "Brasília",
+          "ibge": null,
+          "value": 4368607.69,
+          "display_value": "R$ 4,4 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOBRES",
+          "ibge": null,
+          "value": 4135757.0300000003,
+          "display_value": "R$ 4,1 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Nobres",
+          "ibge": null,
+          "value": 3772604.89,
+          "display_value": "R$ 3,8 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "BATAGUASSU",
+          "ibge": null,
+          "value": 3502970.98,
+          "display_value": "R$ 3,5 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Anápolis",
+          "ibge": null,
+          "value": 2348811.2399999998,
+          "display_value": "R$ 2,3 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "Ladário",
+          "ibge": null,
+          "value": 2016086.05,
+          "display_value": "R$ 2,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "VARZEA GRANDE",
+          "ibge": null,
+          "value": 1985240.56,
+          "display_value": "R$ 2,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Nova Mutum",
+          "ibge": null,
+          "value": 1852436.66,
+          "display_value": "R$ 1,9 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "ITABERAI",
+          "ibge": null,
+          "value": 1703056.16,
+          "display_value": "R$ 1,7 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "CAMPO GRANDE",
+          "ibge": null,
+          "value": 1417401.63,
+          "display_value": "R$ 1,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Bela Vista de Goiás",
+          "ibge": null,
+          "value": 1398532.91,
+          "display_value": "R$ 1,4 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "GOIANESIA",
+          "ibge": null,
+          "value": 1198000.0,
+          "display_value": "R$ 1,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "HIDROLANDIA",
+          "ibge": null,
+          "value": 1193993.9100000001,
+          "display_value": "R$ 1,2 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "SILVANIA",
+          "ibge": null,
+          "value": 1050722.28,
+          "display_value": "R$ 1,1 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "Campo Grande",
+          "ibge": null,
+          "value": 1032801.9099999999,
+          "display_value": "R$ 1,0 mi",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "Dourados",
+          "ibge": null,
+          "value": 888590.72,
+          "display_value": "R$ 888.591",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "QUIRINOPOLIS",
+          "ibge": null,
+          "value": 825000.0,
+          "display_value": "R$ 825.000",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "CAARAPO",
+          "ibge": null,
+          "value": 731177.9400000001,
+          "display_value": "R$ 731.178",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "MARACAJU",
+          "ibge": null,
+          "value": 724044.71,
+          "display_value": "R$ 724.045",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Barra do Bugres",
+          "ibge": null,
+          "value": 534124.37,
+          "display_value": "R$ 534.124",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "São Gabriel do Oeste",
+          "ibge": null,
+          "value": 366291.0,
+          "display_value": "R$ 366.291",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Quirinópolis",
+          "ibge": null,
+          "value": 333690.0,
+          "display_value": "R$ 333.690",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "TANGARA DA SERRA",
+          "ibge": null,
+          "value": 305259.89,
+          "display_value": "R$ 305.260",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "Caarapó",
+          "ibge": null,
+          "value": 294114.2,
+          "display_value": "R$ 294.114",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "PRIMAVERA DO LESTE",
+          "ibge": null,
+          "value": 278313.62,
+          "display_value": "R$ 278.314",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Itaberaí",
+          "ibge": null,
+          "value": 259361.6,
+          "display_value": "R$ 259.362",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "NOVA ANDRADINA",
+          "ibge": null,
+          "value": 230348.31,
+          "display_value": "R$ 230.348",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "BARRA DO BUGRES",
+          "ibge": null,
+          "value": 188249.66,
+          "display_value": "R$ 188.250",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Aparecida de Goiânia",
+          "ibge": null,
+          "value": 119264.32,
+          "display_value": "R$ 119.264",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "GOIANIA",
+          "ibge": null,
+          "value": 115000.0,
+          "display_value": "R$ 115.000",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Várzea Grande",
+          "ibge": null,
+          "value": 110662.19,
+          "display_value": "R$ 110.662",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "GOIANIRA",
+          "ibge": null,
+          "value": 81000.0,
+          "display_value": "R$ 81.000",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "Bataguassu",
+          "ibge": null,
+          "value": 76092.70000000001,
+          "display_value": "R$ 76.093",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "Sidrolândia",
+          "ibge": null,
+          "value": 47734.48,
+          "display_value": "R$ 47.734",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "Nova Andradina",
+          "ibge": null,
+          "value": 22982.39,
+          "display_value": "R$ 22.982",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Rondonópolis",
+          "ibge": null,
+          "value": 5264.49,
+          "display_value": "R$ 5.264",
+          "share": 0.0
+        }
+      ]
     }
   ],
   "_nota_metodologica": "Valor do BF recalculado como 34% fixo sobre Valor do Bem (não a coluna original da planilha, que é 17% constante em 100% das linhas — premissa simplificada, não cálculo tributário real/marginal). Taxa confirmada com o time por reconciliação com a versão anterior do indicador (recorte histórico de SP).",

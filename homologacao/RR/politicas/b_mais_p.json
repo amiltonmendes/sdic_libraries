@@ -273,8 +273,90 @@
       ]
     }
   ],
-  "breakdowns": [],
-  "_nota_anonimizacao": "Sem CNPJ, nome de empresa ou município em nenhum nível do JSON — apenas contagens agregadas por UF ou nacionais.",
+  "breakdowns": [
+    {
+      "id": "por_municipio",
+      "title": "Atendimentos B+P por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "RR",
+          "municipio": "BOA VISTA",
+          "ibge": null,
+          "value": 1360,
+          "display_value": "1.360",
+          "share": 0.9
+        },
+        {
+          "uf": "RR",
+          "municipio": "RORAINOPOLIS",
+          "ibge": null,
+          "value": 101,
+          "display_value": "101",
+          "share": 0.1
+        },
+        {
+          "uf": "RR",
+          "municipio": "CANTA",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "RR",
+          "municipio": "CARACARAI",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RR",
+          "municipio": "MUCAJAI",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RR",
+          "municipio": "AMAJARI",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RR",
+          "municipio": "ALTO ALEGRE",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RR",
+          "municipio": "SAO LUIZ",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RR",
+          "municipio": "BONFIM",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        }
+      ]
+    }
+  ],
+  "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
   "data_aceitacao": "2026-08-04",
   "geo": {

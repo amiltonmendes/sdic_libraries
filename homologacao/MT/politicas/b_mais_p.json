@@ -273,8 +273,650 @@
       ]
     }
   ],
-  "breakdowns": [],
-  "_nota_anonimizacao": "Sem CNPJ, nome de empresa ou município em nenhum nível do JSON — apenas contagens agregadas por UF ou nacionais.",
+  "breakdowns": [
+    {
+      "id": "por_municipio",
+      "title": "Atendimentos B+P por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "MT",
+          "municipio": "CUIABA",
+          "ibge": null,
+          "value": 1222,
+          "display_value": "1.222",
+          "share": 0.8
+        },
+        {
+          "uf": "MT",
+          "municipio": "SINOP",
+          "ibge": null,
+          "value": 365,
+          "display_value": "365",
+          "share": 0.2
+        },
+        {
+          "uf": "MT",
+          "municipio": "RONDONOPOLIS",
+          "ibge": null,
+          "value": 239,
+          "display_value": "239",
+          "share": 0.2
+        },
+        {
+          "uf": "MT",
+          "municipio": "VARZEA GRANDE",
+          "ibge": null,
+          "value": 234,
+          "display_value": "234",
+          "share": 0.2
+        },
+        {
+          "uf": "MT",
+          "municipio": "SORRISO",
+          "ibge": null,
+          "value": 174,
+          "display_value": "174",
+          "share": 0.1
+        },
+        {
+          "uf": "MT",
+          "municipio": "TANGARA DA SERRA",
+          "ibge": null,
+          "value": 172,
+          "display_value": "172",
+          "share": 0.1
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOVA MUTUM",
+          "ibge": null,
+          "value": 156,
+          "display_value": "156",
+          "share": 0.1
+        },
+        {
+          "uf": "MT",
+          "municipio": "LUCAS DO RIO VERDE",
+          "ibge": null,
+          "value": 136,
+          "display_value": "136",
+          "share": 0.1
+        },
+        {
+          "uf": "MT",
+          "municipio": "CACERES",
+          "ibge": null,
+          "value": 109,
+          "display_value": "109",
+          "share": 0.1
+        },
+        {
+          "uf": "MT",
+          "municipio": "BARRA DO GARCAS",
+          "ibge": null,
+          "value": 103,
+          "display_value": "103",
+          "share": 0.1
+        },
+        {
+          "uf": "MT",
+          "municipio": "PRIMAVERA DO LESTE",
+          "ibge": null,
+          "value": 102,
+          "display_value": "102",
+          "share": 0.1
+        },
+        {
+          "uf": "MT",
+          "municipio": "ALTA FLORESTA",
+          "ibge": null,
+          "value": 79,
+          "display_value": "79",
+          "share": 0.1
+        },
+        {
+          "uf": "MT",
+          "municipio": "CONFRESA",
+          "ibge": null,
+          "value": 71,
+          "display_value": "71",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "AGUA BOA",
+          "ibge": null,
+          "value": 67,
+          "display_value": "67",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "PARANAÍTA",
+          "ibge": null,
+          "value": 60,
+          "display_value": "60",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "JUINA",
+          "ibge": null,
+          "value": 51,
+          "display_value": "51",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "COLIDER",
+          "ibge": null,
+          "value": 42,
+          "display_value": "42",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "CHAPADA DOS GUIMARAES",
+          "ibge": null,
+          "value": 36,
+          "display_value": "36",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "GUARANTA DO NORTE",
+          "ibge": null,
+          "value": 30,
+          "display_value": "30",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOSSA SENHORA DO LIVRAMENTO",
+          "ibge": null,
+          "value": 29,
+          "display_value": "29",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "JUARA",
+          "ibge": null,
+          "value": 22,
+          "display_value": "22",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "SAPEZAL",
+          "ibge": null,
+          "value": 22,
+          "display_value": "22",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "CAMPO VERDE",
+          "ibge": null,
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "PONTES E LACERDA",
+          "ibge": null,
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOVA CANAA DO NORTE",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "BARRA DO BUGRES",
+          "ibge": null,
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "SÃO JOSÉ DOS QUATRO MARCOS",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOBRES",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOVA BRASILANDIA",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "POCONE",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "POCONÉ",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "ARIPUANA",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "CUIABÁ",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "PONTAL DO ARAGUAIA",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "MARCELANDIA",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "QUERENCIA",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "RONDONÓPOLIS",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "SAO JOSE DOS QUATRO MARCOS",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "COLÍDER",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "MIRASSOL D'OESTE",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "SANTA CARMEM",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "SANTO ANTÔNIO DO LEVERGER",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "VÁRZEA GRANDE",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "JACIARA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "VERA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "APIACAS",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "CAMPO NOVO DO PARECIS",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "ITIQUIRA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "MARCELÂNDIA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "CHAPADA DOS GUIMARÃES",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Marcelândia",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "PLANALTO DA SERRA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "DIAMANTINO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOVA OLIMPIA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "ROSARIO OESTE",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Chapada dos Guimarães",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "MATUPA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Nobres",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "SANTO ANTONIO DO LEVERGER",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "BELO HORIZONTE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "BRASNORTE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "CAMPOS DE JULIO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "CLAUDIA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "COLNIZA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "JURUENA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOVA BANDEIRANTES",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOVA MONTE VERDE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOVA XAVANTINA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "PEDRA PRETA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "PORTO DOS GAUCHOS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "SAO JOSE DO RIO CLARO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "ACORIZAL",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOVA BRASILÂNDIA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "NOVA CANAÃ DO NORTE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Nova Canaã do Norte",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Nova Lacerda",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "PARANAITA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "POXOREU",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "UNIAO DO SUL",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        }
+      ]
+    }
+  ],
+  "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
   "data_aceitacao": "2026-08-04",
   "geo": {

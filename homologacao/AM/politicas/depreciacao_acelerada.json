@@ -212,6 +212,31 @@
           "share": 33.8
         }
       ]
+    },
+    {
+      "id": "por_municipio",
+      "title": "Investimento incentivado por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "AM",
+          "municipio": "MANAUS",
+          "ibge": null,
+          "value": 92269659.56,
+          "display_value": "R$ 92,3 mi",
+          "share": 1.1
+        },
+        {
+          "uf": "AM",
+          "municipio": "Manaus",
+          "ibge": null,
+          "value": 5050476.04,
+          "display_value": "R$ 5,1 mi",
+          "share": 0.1
+        }
+      ]
     }
   ],
   "_nota_metodologica": "Valor do BF recalculado como 34% fixo sobre Valor do Bem (não a coluna original da planilha, que é 17% constante em 100% das linhas — premissa simplificada, não cálculo tributário real/marginal). Taxa confirmada com o time por reconciliação com a versão anterior do indicador (recorte histórico de SP).",

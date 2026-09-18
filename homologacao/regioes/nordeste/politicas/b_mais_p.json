@@ -270,8 +270,7546 @@
       ]
     }
   ],
-  "breakdowns": [],
-  "_nota_anonimizacao": "Sem CNPJ, nome de empresa ou município em nenhum nível do JSON — apenas contagens agregadas por UF ou nacionais.",
+  "breakdowns": [
+    {
+      "id": "por_municipio",
+      "title": "Atendimentos B+P por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "PE",
+          "municipio": "RECIFE",
+          "ibge": null,
+          "value": 1846,
+          "display_value": "1.846",
+          "share": 1.2
+        },
+        {
+          "uf": "AL",
+          "municipio": "MACEIO",
+          "ibge": null,
+          "value": 1217,
+          "display_value": "1.217",
+          "share": 0.8
+        },
+        {
+          "uf": "CE",
+          "municipio": "FORTALEZA",
+          "ibge": null,
+          "value": 906,
+          "display_value": "906",
+          "share": 0.6
+        },
+        {
+          "uf": "PI",
+          "municipio": "TERESINA",
+          "ibge": null,
+          "value": 878,
+          "display_value": "878",
+          "share": 0.6
+        },
+        {
+          "uf": "SE",
+          "municipio": "ARACAJU",
+          "ibge": null,
+          "value": 827,
+          "display_value": "827",
+          "share": 0.5
+        },
+        {
+          "uf": "BA",
+          "municipio": "SALVADOR",
+          "ibge": null,
+          "value": 823,
+          "display_value": "823",
+          "share": 0.5
+        },
+        {
+          "uf": "PE",
+          "municipio": "PETROLINA",
+          "ibge": null,
+          "value": 616,
+          "display_value": "616",
+          "share": 0.4
+        },
+        {
+          "uf": "PB",
+          "municipio": "JOAO PESSOA",
+          "ibge": null,
+          "value": 597,
+          "display_value": "597",
+          "share": 0.4
+        },
+        {
+          "uf": "PB",
+          "municipio": "CAMPINA GRANDE",
+          "ibge": null,
+          "value": 493,
+          "display_value": "493",
+          "share": 0.3
+        },
+        {
+          "uf": "MA",
+          "municipio": "SAO LUIS",
+          "ibge": null,
+          "value": 491,
+          "display_value": "491",
+          "share": 0.3
+        },
+        {
+          "uf": "MA",
+          "municipio": "IMPERATRIZ",
+          "ibge": null,
+          "value": 443,
+          "display_value": "443",
+          "share": 0.3
+        },
+        {
+          "uf": "RN",
+          "municipio": "NATAL",
+          "ibge": null,
+          "value": 432,
+          "display_value": "432",
+          "share": 0.3
+        },
+        {
+          "uf": "PE",
+          "municipio": "JABOATAO DOS GUARARAPES",
+          "ibge": null,
+          "value": 316,
+          "display_value": "316",
+          "share": 0.2
+        },
+        {
+          "uf": "PE",
+          "municipio": "CARUARU",
+          "ibge": null,
+          "value": 295,
+          "display_value": "295",
+          "share": 0.2
+        },
+        {
+          "uf": "BA",
+          "municipio": "FEIRA DE SANTANA",
+          "ibge": null,
+          "value": 269,
+          "display_value": "269",
+          "share": 0.2
+        },
+        {
+          "uf": "PB",
+          "municipio": "PATOS",
+          "ibge": null,
+          "value": 265,
+          "display_value": "265",
+          "share": 0.2
+        },
+        {
+          "uf": "AL",
+          "municipio": "ARAPIRACA",
+          "ibge": null,
+          "value": 261,
+          "display_value": "261",
+          "share": 0.2
+        },
+        {
+          "uf": "PE",
+          "municipio": "OLINDA",
+          "ibge": null,
+          "value": 253,
+          "display_value": "253",
+          "share": 0.2
+        },
+        {
+          "uf": "PE",
+          "municipio": "ARARIPINA",
+          "ibge": null,
+          "value": 247,
+          "display_value": "247",
+          "share": 0.2
+        },
+        {
+          "uf": "BA",
+          "municipio": "LAURO DE FREITAS",
+          "ibge": null,
+          "value": 245,
+          "display_value": "245",
+          "share": 0.2
+        },
+        {
+          "uf": "PI",
+          "municipio": "PARNAIBA",
+          "ibge": null,
+          "value": 222,
+          "display_value": "222",
+          "share": 0.1
+        },
+        {
+          "uf": "PE",
+          "municipio": "GARANHUNS",
+          "ibge": null,
+          "value": 221,
+          "display_value": "221",
+          "share": 0.1
+        },
+        {
+          "uf": "PE",
+          "municipio": "PAULISTA",
+          "ibge": null,
+          "value": 211,
+          "display_value": "211",
+          "share": 0.1
+        },
+        {
+          "uf": "RN",
+          "municipio": "MOSSORO",
+          "ibge": null,
+          "value": 201,
+          "display_value": "201",
+          "share": 0.1
+        },
+        {
+          "uf": "MA",
+          "municipio": "BALSAS",
+          "ibge": null,
+          "value": 184,
+          "display_value": "184",
+          "share": 0.1
+        },
+        {
+          "uf": "SE",
+          "municipio": "ITABAIANA",
+          "ibge": null,
+          "value": 165,
+          "display_value": "165",
+          "share": 0.1
+        },
+        {
+          "uf": "BA",
+          "municipio": "JUAZEIRO",
+          "ibge": null,
+          "value": 156,
+          "display_value": "156",
+          "share": 0.1
+        },
+        {
+          "uf": "CE",
+          "municipio": "SOBRAL",
+          "ibge": null,
+          "value": 148,
+          "display_value": "148",
+          "share": 0.1
+        },
+        {
+          "uf": "BA",
+          "municipio": "ILHEUS",
+          "ibge": null,
+          "value": 144,
+          "display_value": "144",
+          "share": 0.1
+        },
+        {
+          "uf": "CE",
+          "municipio": "JUAZEIRO DO NORTE",
+          "ibge": null,
+          "value": 139,
+          "display_value": "139",
+          "share": 0.1
+        },
+        {
+          "uf": "BA",
+          "municipio": "CAMACARI",
+          "ibge": null,
+          "value": 132,
+          "display_value": "132",
+          "share": 0.1
+        },
+        {
+          "uf": "MA",
+          "municipio": "ACAILANDIA",
+          "ibge": null,
+          "value": 129,
+          "display_value": "129",
+          "share": 0.1
+        },
+        {
+          "uf": "MA",
+          "municipio": "CHAPADINHA",
+          "ibge": null,
+          "value": 128,
+          "display_value": "128",
+          "share": 0.1
+        },
+        {
+          "uf": "BA",
+          "municipio": "TEIXEIRA DE FREITAS",
+          "ibge": null,
+          "value": 122,
+          "display_value": "122",
+          "share": 0.1
+        },
+        {
+          "uf": "RN",
+          "municipio": "CAICO",
+          "ibge": null,
+          "value": 120,
+          "display_value": "120",
+          "share": 0.1
+        },
+        {
+          "uf": "MA",
+          "municipio": "SANTA INES",
+          "ibge": null,
+          "value": 117,
+          "display_value": "117",
+          "share": 0.1
+        },
+        {
+          "uf": "BA",
+          "municipio": "SIMOES FILHO",
+          "ibge": null,
+          "value": 112,
+          "display_value": "112",
+          "share": 0.1
+        },
+        {
+          "uf": "PI",
+          "municipio": "FLORIANO",
+          "ibge": null,
+          "value": 110,
+          "display_value": "110",
+          "share": 0.1
+        },
+        {
+          "uf": "PI",
+          "municipio": "BOM JESUS",
+          "ibge": null,
+          "value": 107,
+          "display_value": "107",
+          "share": 0.1
+        },
+        {
+          "uf": "CE",
+          "municipio": "TIANGUA",
+          "ibge": null,
+          "value": 106,
+          "display_value": "106",
+          "share": 0.1
+        },
+        {
+          "uf": "MA",
+          "municipio": "BACABAL",
+          "ibge": null,
+          "value": 104,
+          "display_value": "104",
+          "share": 0.1
+        },
+        {
+          "uf": "CE",
+          "municipio": "CAUCAIA",
+          "ibge": null,
+          "value": 100,
+          "display_value": "100",
+          "share": 0.1
+        },
+        {
+          "uf": "CE",
+          "municipio": "UBAJARA",
+          "ibge": null,
+          "value": 98,
+          "display_value": "98",
+          "share": 0.1
+        },
+        {
+          "uf": "MA",
+          "municipio": "CAXIAS",
+          "ibge": null,
+          "value": 96,
+          "display_value": "96",
+          "share": 0.1
+        },
+        {
+          "uf": "RN",
+          "municipio": "CURRAIS NOVOS",
+          "ibge": null,
+          "value": 96,
+          "display_value": "96",
+          "share": 0.1
+        },
+        {
+          "uf": "PI",
+          "municipio": "PICOS",
+          "ibge": null,
+          "value": 96,
+          "display_value": "96",
+          "share": 0.1
+        },
+        {
+          "uf": "AL",
+          "municipio": "DELMIRO GOUVEIA",
+          "ibge": null,
+          "value": 94,
+          "display_value": "94",
+          "share": 0.1
+        },
+        {
+          "uf": "AL",
+          "municipio": "MARECHAL DEODORO",
+          "ibge": null,
+          "value": 92,
+          "display_value": "92",
+          "share": 0.1
+        },
+        {
+          "uf": "BA",
+          "municipio": "JACOBINA",
+          "ibge": null,
+          "value": 92,
+          "display_value": "92",
+          "share": 0.1
+        },
+        {
+          "uf": "CE",
+          "municipio": "CRATEUS",
+          "ibge": null,
+          "value": 91,
+          "display_value": "91",
+          "share": 0.1
+        },
+        {
+          "uf": "RN",
+          "municipio": "PARNAMIRIM",
+          "ibge": null,
+          "value": 91,
+          "display_value": "91",
+          "share": 0.1
+        },
+        {
+          "uf": "AL",
+          "municipio": "PENEDO",
+          "ibge": null,
+          "value": 89,
+          "display_value": "89",
+          "share": 0.1
+        },
+        {
+          "uf": "PE",
+          "municipio": "SERRA TALHADA",
+          "ibge": null,
+          "value": 88,
+          "display_value": "88",
+          "share": 0.1
+        },
+        {
+          "uf": "BA",
+          "municipio": "ITABUNA",
+          "ibge": null,
+          "value": 86,
+          "display_value": "86",
+          "share": 0.1
+        },
+        {
+          "uf": "PE",
+          "municipio": "TRINDADE",
+          "ibge": null,
+          "value": 85,
+          "display_value": "85",
+          "share": 0.1
+        },
+        {
+          "uf": "PI",
+          "municipio": "CORRENTE",
+          "ibge": null,
+          "value": 85,
+          "display_value": "85",
+          "share": 0.1
+        },
+        {
+          "uf": "AL",
+          "municipio": "RIO LARGO",
+          "ibge": null,
+          "value": 80,
+          "display_value": "80",
+          "share": 0.1
+        },
+        {
+          "uf": "PB",
+          "municipio": "SOUSA",
+          "ibge": null,
+          "value": 80,
+          "display_value": "80",
+          "share": 0.1
+        },
+        {
+          "uf": "PI",
+          "municipio": "CAMPO MAIOR",
+          "ibge": null,
+          "value": 78,
+          "display_value": "78",
+          "share": 0.1
+        },
+        {
+          "uf": "SE",
+          "municipio": "NOSSA SENHORA DO SOCORRO",
+          "ibge": null,
+          "value": 78,
+          "display_value": "78",
+          "share": 0.1
+        },
+        {
+          "uf": "MA",
+          "municipio": "SAO JOSE DE RIBAMAR",
+          "ibge": null,
+          "value": 77,
+          "display_value": "77",
+          "share": 0.1
+        },
+        {
+          "uf": "PI",
+          "municipio": "ESPERANTINA",
+          "ibge": null,
+          "value": 77,
+          "display_value": "77",
+          "share": 0.1
+        },
+        {
+          "uf": "AL",
+          "municipio": "UNIAO DOS PALMARES",
+          "ibge": null,
+          "value": 77,
+          "display_value": "77",
+          "share": 0.1
+        },
+        {
+          "uf": "MA",
+          "municipio": "GRAJAU",
+          "ibge": null,
+          "value": 77,
+          "display_value": "77",
+          "share": 0.1
+        },
+        {
+          "uf": "PI",
+          "municipio": "PAULISTANA",
+          "ibge": null,
+          "value": 75,
+          "display_value": "75",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "EUSEBIO",
+          "ibge": null,
+          "value": 74,
+          "display_value": "74",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ALAGOINHAS",
+          "ibge": null,
+          "value": 73,
+          "display_value": "73",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "LIMOEIRO DO NORTE",
+          "ibge": null,
+          "value": 73,
+          "display_value": "73",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "PALMEIRA DOS INDIOS",
+          "ibge": null,
+          "value": 72,
+          "display_value": "72",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "IPIRA",
+          "ibge": null,
+          "value": 71,
+          "display_value": "71",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "PRESIDENTE DUTRA",
+          "ibge": null,
+          "value": 71,
+          "display_value": "71",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "CAMARAGIBE",
+          "ibge": null,
+          "value": 71,
+          "display_value": "71",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "MARACANAU",
+          "ibge": null,
+          "value": 70,
+          "display_value": "70",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "SAO RAIMUNDO NONATO",
+          "ibge": null,
+          "value": 70,
+          "display_value": "70",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "SAO MIGUEL DOS CAMPOS",
+          "ibge": null,
+          "value": 69,
+          "display_value": "69",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "BARRA DO CORDA",
+          "ibge": null,
+          "value": 69,
+          "display_value": "69",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "CRATO",
+          "ibge": null,
+          "value": 65,
+          "display_value": "65",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "SALGUEIRO",
+          "ibge": null,
+          "value": 65,
+          "display_value": "65",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "AREIA",
+          "ibge": null,
+          "value": 64,
+          "display_value": "64",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "PIRIPIRI",
+          "ibge": null,
+          "value": 64,
+          "display_value": "64",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "PACO DO LUMIAR",
+          "ibge": null,
+          "value": 63,
+          "display_value": "63",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "SAO CRISTOVAO",
+          "ibge": null,
+          "value": 62,
+          "display_value": "62",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "DOM PEDRO",
+          "ibge": null,
+          "value": 62,
+          "display_value": "62",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "IGUATU",
+          "ibge": null,
+          "value": 61,
+          "display_value": "61",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "ITAPIPOCA",
+          "ibge": null,
+          "value": 61,
+          "display_value": "61",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "CAJAZEIRAS",
+          "ibge": null,
+          "value": 60,
+          "display_value": "60",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "FRECHEIRINHA",
+          "ibge": null,
+          "value": 59,
+          "display_value": "59",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "SANTA CRUZ DO CAPIBARIBE",
+          "ibge": null,
+          "value": 59,
+          "display_value": "59",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "BARREIRINHAS",
+          "ibge": null,
+          "value": 59,
+          "display_value": "59",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "SANTANA DO IPANEMA",
+          "ibge": null,
+          "value": 58,
+          "display_value": "58",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "RUSSAS",
+          "ibge": null,
+          "value": 58,
+          "display_value": "58",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "CABO DE SANTO AGOSTINHO",
+          "ibge": null,
+          "value": 57,
+          "display_value": "57",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SANTO ANTONIO DE JESUS",
+          "ibge": null,
+          "value": 54,
+          "display_value": "54",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "COROATA",
+          "ibge": null,
+          "value": 54,
+          "display_value": "54",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "VALENCA",
+          "ibge": null,
+          "value": 53,
+          "display_value": "53",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "SAO JOSE DO EGITO",
+          "ibge": null,
+          "value": 53,
+          "display_value": "53",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "SAO LOURENCO DA MATA",
+          "ibge": null,
+          "value": 53,
+          "display_value": "53",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "VITORIA DE SANTO ANTAO",
+          "ibge": null,
+          "value": 53,
+          "display_value": "53",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "MACAIBA",
+          "ibge": null,
+          "value": 53,
+          "display_value": "53",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "POMBAL",
+          "ibge": null,
+          "value": 50,
+          "display_value": "50",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "LAJEDO",
+          "ibge": null,
+          "value": 50,
+          "display_value": "50",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "LAGARTO",
+          "ibge": null,
+          "value": 50,
+          "display_value": "50",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "CABEDELO",
+          "ibge": null,
+          "value": 49,
+          "display_value": "49",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "PORTO SEGURO",
+          "ibge": null,
+          "value": 48,
+          "display_value": "48",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "PETROLANDIA",
+          "ibge": null,
+          "value": 47,
+          "display_value": "47",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "CAJUEIRO DA PRAIA",
+          "ibge": null,
+          "value": 46,
+          "display_value": "46",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "ESTANCIA",
+          "ibge": null,
+          "value": 45,
+          "display_value": "45",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "PINHEIRO",
+          "ibge": null,
+          "value": 41,
+          "display_value": "41",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SAO GONCALO DO AMARANTE",
+          "ibge": null,
+          "value": 41,
+          "display_value": "41",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "ITABAIANINHA",
+          "ibge": null,
+          "value": 41,
+          "display_value": "41",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "NEOPOLIS",
+          "ibge": null,
+          "value": 41,
+          "display_value": "41",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "PAULO AFONSO",
+          "ibge": null,
+          "value": 40,
+          "display_value": "40",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "ALAGOA GRANDE",
+          "ibge": null,
+          "value": 40,
+          "display_value": "40",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "JAGUARIBE",
+          "ibge": null,
+          "value": 39,
+          "display_value": "39",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "IGARASSU",
+          "ibge": null,
+          "value": 39,
+          "display_value": "39",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "ASSU",
+          "ibge": null,
+          "value": 39,
+          "display_value": "39",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "GUARABIRA",
+          "ibge": null,
+          "value": 38,
+          "display_value": "38",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "LAGO DA PEDRA",
+          "ibge": null,
+          "value": 37,
+          "display_value": "37",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "MARAGOGI",
+          "ibge": null,
+          "value": 36,
+          "display_value": "36",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "VITORIA DA CONQUISTA",
+          "ibge": null,
+          "value": 36,
+          "display_value": "36",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "ARACATI",
+          "ibge": null,
+          "value": 36,
+          "display_value": "36",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "BATURITE",
+          "ibge": null,
+          "value": 36,
+          "display_value": "36",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "JIJOCA DE JERICOACOARA",
+          "ibge": null,
+          "value": 36,
+          "display_value": "36",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "BARBALHA",
+          "ibge": null,
+          "value": 35,
+          "display_value": "35",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "QUIXERAMOBIM",
+          "ibge": null,
+          "value": 35,
+          "display_value": "35",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "TABULEIRO DO NORTE",
+          "ibge": null,
+          "value": 35,
+          "display_value": "35",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "AFOGADOS DA INGAZEIRA",
+          "ibge": null,
+          "value": 35,
+          "display_value": "35",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "DIAS D'AVILA",
+          "ibge": null,
+          "value": 34,
+          "display_value": "34",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "TUTOIA",
+          "ibge": null,
+          "value": 34,
+          "display_value": "34",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "CAMOCIM",
+          "ibge": null,
+          "value": 33,
+          "display_value": "33",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "NOSSA SENHORA DA GLORIA",
+          "ibge": null,
+          "value": 33,
+          "display_value": "33",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "GRAVATA",
+          "ibge": null,
+          "value": 32,
+          "display_value": "32",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "SAO JOSE DA TAPERA",
+          "ibge": null,
+          "value": 31,
+          "display_value": "31",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "SANTA RITA",
+          "ibge": null,
+          "value": 31,
+          "display_value": "31",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "EUNAPOLIS",
+          "ibge": null,
+          "value": 31,
+          "display_value": "31",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "OLHO D'AGUA DAS FLORES",
+          "ibge": null,
+          "value": 30,
+          "display_value": "30",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "CAJUEIRO",
+          "ibge": null,
+          "value": 29,
+          "display_value": "29",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "BARREIRAS",
+          "ibge": null,
+          "value": 28,
+          "display_value": "28",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "CASCAVEL",
+          "ibge": null,
+          "value": 28,
+          "display_value": "28",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "BURITI DOS LOPES",
+          "ibge": null,
+          "value": 28,
+          "display_value": "28",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SAO DOMINGOS DO MARANHAO",
+          "ibge": null,
+          "value": 27,
+          "display_value": "27",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "LUIS CORREIA",
+          "ibge": null,
+          "value": 27,
+          "display_value": "27",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "PIRANHAS",
+          "ibge": null,
+          "value": 27,
+          "display_value": "27",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "TOBIAS BARRETO",
+          "ibge": null,
+          "value": 27,
+          "display_value": "27",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "JAGUARIBARA",
+          "ibge": null,
+          "value": 26,
+          "display_value": "26",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "TIMON",
+          "ibge": null,
+          "value": 26,
+          "display_value": "26",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "MOMBACA",
+          "ibge": null,
+          "value": 26,
+          "display_value": "26",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "ARACOIABA",
+          "ibge": null,
+          "value": 25,
+          "display_value": "25",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "QUEIMADAS",
+          "ibge": null,
+          "value": 25,
+          "display_value": "25",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "ABREU E LIMA",
+          "ibge": null,
+          "value": 25,
+          "display_value": "25",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "IPUBI",
+          "ibge": null,
+          "value": 25,
+          "display_value": "25",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "TIMBIRAS",
+          "ibge": null,
+          "value": 25,
+          "display_value": "25",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "ITAIBA",
+          "ibge": null,
+          "value": 25,
+          "display_value": "25",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "BARREIRA",
+          "ibge": null,
+          "value": 24,
+          "display_value": "24",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "ICO",
+          "ibge": null,
+          "value": 24,
+          "display_value": "24",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "IPOJUCA",
+          "ibge": null,
+          "value": 24,
+          "display_value": "24",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "OURICURI",
+          "ibge": null,
+          "value": 24,
+          "display_value": "24",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "TABIRA",
+          "ibge": null,
+          "value": 24,
+          "display_value": "24",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "PORTO CALVO",
+          "ibge": null,
+          "value": 24,
+          "display_value": "24",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "ITATIRA",
+          "ibge": null,
+          "value": 24,
+          "display_value": "24",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "MARCO",
+          "ibge": null,
+          "value": 23,
+          "display_value": "23",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "QUIXADA",
+          "ibge": null,
+          "value": 23,
+          "display_value": "23",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "SAO BENTO DO UNA",
+          "ibge": null,
+          "value": 23,
+          "display_value": "23",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "VICOSA",
+          "ibge": null,
+          "value": 23,
+          "display_value": "23",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "ANGICOS",
+          "ibge": null,
+          "value": 23,
+          "display_value": "23",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "CAPELA",
+          "ibge": null,
+          "value": 22,
+          "display_value": "22",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CRUZ DAS ALMAS",
+          "ibge": null,
+          "value": 22,
+          "display_value": "22",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "PEDRA BRANCA",
+          "ibge": null,
+          "value": 22,
+          "display_value": "22",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SANTO AMARO",
+          "ibge": null,
+          "value": 22,
+          "display_value": "22",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "TUCANO",
+          "ibge": null,
+          "value": 22,
+          "display_value": "22",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "MACAU",
+          "ibge": null,
+          "value": 22,
+          "display_value": "22",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "INHAMBUPE",
+          "ibge": null,
+          "value": 21,
+          "display_value": "21",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "RAPOSA",
+          "ibge": null,
+          "value": 21,
+          "display_value": "21",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "CUPIRA",
+          "ibge": null,
+          "value": 21,
+          "display_value": "21",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "ITAJA",
+          "ibge": null,
+          "value": 21,
+          "display_value": "21",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "SENADOR POMPEU",
+          "ibge": null,
+          "value": 21,
+          "display_value": "21",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "PAU DOS FERROS",
+          "ibge": null,
+          "value": 21,
+          "display_value": "21",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "PROPRIA",
+          "ibge": null,
+          "value": 21,
+          "display_value": "21",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "JEQUIE",
+          "ibge": null,
+          "value": 20,
+          "display_value": "20",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SAO GONCALO DOS CAMPOS",
+          "ibge": null,
+          "value": 20,
+          "display_value": "20",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "MARANGUAPE",
+          "ibge": null,
+          "value": 20,
+          "display_value": "20",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "MORADA NOVA",
+          "ibge": null,
+          "value": 20,
+          "display_value": "20",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "ARARI",
+          "ibge": null,
+          "value": 20,
+          "display_value": "20",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "ACARI",
+          "ibge": null,
+          "value": 20,
+          "display_value": "20",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "APODI",
+          "ibge": null,
+          "value": 20,
+          "display_value": "20",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "BARRA DOS COQUEIROS",
+          "ibge": null,
+          "value": 20,
+          "display_value": "20",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "LUIS EDUARDO MAGALHAES",
+          "ibge": null,
+          "value": 19,
+          "display_value": "19",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "PACATUBA",
+          "ibge": null,
+          "value": 19,
+          "display_value": "19",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "SANTA LUZIA",
+          "ibge": null,
+          "value": 19,
+          "display_value": "19",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "LAGOA NOVA",
+          "ibge": null,
+          "value": 19,
+          "display_value": "19",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SAO JOSE DE MIPIBU",
+          "ibge": null,
+          "value": 19,
+          "display_value": "19",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "ROSARIO",
+          "ibge": null,
+          "value": 18,
+          "display_value": "18",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "BAYEUX",
+          "ibge": null,
+          "value": 18,
+          "display_value": "18",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "BELO JARDIM",
+          "ibge": null,
+          "value": 18,
+          "display_value": "18",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "CAETES",
+          "ibge": null,
+          "value": 18,
+          "display_value": "18",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "JUCURUTU",
+          "ibge": null,
+          "value": 18,
+          "display_value": "18",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "ITAINOPOLIS",
+          "ibge": null,
+          "value": 18,
+          "display_value": "18",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "AFONSO BEZERRA",
+          "ibge": null,
+          "value": 18,
+          "display_value": "18",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "DAVINOPOLIS",
+          "ibge": null,
+          "value": 17,
+          "display_value": "17",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "BEZERROS",
+          "ibge": null,
+          "value": 17,
+          "display_value": "17",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SANTA CRUZ",
+          "ibge": null,
+          "value": 17,
+          "display_value": "17",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "SAO LUIS DO QUITUNDE",
+          "ibge": null,
+          "value": 17,
+          "display_value": "17",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ITABERABA",
+          "ibge": null,
+          "value": 17,
+          "display_value": "17",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "FORTUNA",
+          "ibge": null,
+          "value": 17,
+          "display_value": "17",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "VARGEM GRANDE",
+          "ibge": null,
+          "value": 17,
+          "display_value": "17",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "PANELAS",
+          "ibge": null,
+          "value": 17,
+          "display_value": "17",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "PARIPUEIRA",
+          "ibge": null,
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CONCEICAO DO COITE",
+          "ibge": null,
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "CEDRO",
+          "ibge": null,
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "REMIGIO",
+          "ibge": null,
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "JARDIM DO SERIDO",
+          "ibge": null,
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "CAMPO DO BRITO",
+          "ibge": null,
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "FLORESTA",
+          "ibge": null,
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "SALGADO",
+          "ibge": null,
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ITAMARAJU",
+          "ibge": null,
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SENHOR DO BONFIM",
+          "ibge": null,
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "JUCAS",
+          "ibge": null,
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "LIMOEIRO",
+          "ibge": null,
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "SURUBIM",
+          "ibge": null,
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "SANTANA DO SAO FRANCISCO",
+          "ibge": null,
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "HORIZONTE",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "TAUA",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "GOIANA",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "VALENCA DO PIAUI",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "COITE DO NOIA",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "SATUBA",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "FEIRA NOVA",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "PIO IX",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "CANINDE DE SAO FRANCISCO",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "POCO REDONDO",
+          "ibge": null,
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "JAGUARETAMA",
+          "ibge": null,
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "LAGOA SECA",
+          "ibge": null,
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "AGRESTINA",
+          "ibge": null,
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "JOAO ALFREDO",
+          "ibge": null,
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "MORENO",
+          "ibge": null,
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "CEARA-MIRIM",
+          "ibge": null,
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "EXTREMOZ",
+          "ibge": null,
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "NOVA RUSSAS",
+          "ibge": null,
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "ANAPURUS",
+          "ibge": null,
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "BELA VISTA DO MARANHAO",
+          "ibge": null,
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "SANTA LUZ",
+          "ibge": null,
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "PASSO DE CAMARAGIBE",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "MATA DE SAO JOAO",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "ACOPIARA",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "PINDORETAMA",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "QUIXERE",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "ESPERANCA",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "ARCOVERDE",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "BOM CONSELHO",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "CARPINA",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "TAQUARITINGA DO NORTE",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "PARELHAS",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "PORTO DE PEDRAS",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "SAO MIGUEL DOS MILAGRES",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "IPUEIRAS",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "QUITERIANOPOLIS",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "JUNCO DO SERIDO",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "TAMANDARE",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "PUREZA",
+          "ibge": null,
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SAO SEBASTIAO DO PASSE",
+          "ibge": null,
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "VARZEA ALEGRE",
+          "ibge": null,
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "BACABEIRA",
+          "ibge": null,
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SAO MATEUS DO MARANHAO",
+          "ibge": null,
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "TEIXEIRA",
+          "ibge": null,
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "PALMARES",
+          "ibge": null,
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "TORITAMA",
+          "ibge": null,
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "MUCUGE",
+          "ibge": null,
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "PARAIPABA",
+          "ibge": null,
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "PARANATAMA",
+          "ibge": null,
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "ALTOS",
+          "ibge": null,
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "MURICI",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "SAO SEBASTIAO",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CONCEICAO DO JACUIPE",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SANTA RITA",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "CANHOTINHO",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SERRA NEGRA DO NORTE",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "CRAIBAS",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "GLORIA",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "IRECE",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "MORRO DO CHAPEU",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "COLINAS",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "PEDRO II",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "TENENTE LAURENTINO CRUZ",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "ILHA DAS FLORES",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "MOITA BONITA",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "RIACHUELO",
+          "ibge": null,
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "CORURIPE",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "LIMOEIRO DE ANADIA",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "MAJOR ISIDORO",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "AMARGOSA",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "GANDU",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "AMONTADA",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "EUSÉBIO",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "FORQUILHA",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "ITAITINGA",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "PORTO FRANCO",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SANTA HELENA",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "VITORIA DO MEARIM",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "TRIUNFO",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "PASSA E FICA",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "AGUA BRANCA",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "ATALAIA",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "JAPARATINGA",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "PIACABUCU",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "VARZEA NOVA",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "BEBERIBE",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "MASSAPE",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "TRAIRI",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "TRIZIDELA DO VALE",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "FERNANDO DE NORONHA",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "AREIA BRANCA",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "NOSSA SENHORA DAS DORES",
+          "ibge": null,
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "CAMPO ALEGRE",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "MARAU",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "AQUIRAZ",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "BARAO DE GRAJAU",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "PORTO DA FOLHA",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "FILADELFIA",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ITAMOTINGA",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ITUBERA",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SAO FELIPE",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "FORTIM",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "GUAIUBA",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "MILHA",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SAO FRANCISCO DO BREJAO",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "SAO JOSE DO SABUGI",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "CARNAUBA DOS DANTAS",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "JAPOATA",
+          "ibge": null,
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CAMPO FORMOSO",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "LAJE",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "POJUCA",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "TAPEROA",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "QUIXELO",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "VARJOTA",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "PASSAGEM FRANCA",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "BOM JARDIM",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "PAUDALHO",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "POMBOS",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "CERRO CORA",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "CRUZETA",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SANTO ANTONIO",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "PARICONHA",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ALMADINA",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "MANOEL VITORINO",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "ARNEIROZ",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "IPAUMIRIM",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "NOVO ORIENTE",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "MATA ROMA",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "TUNTUM",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "CRISTINO CASTRO",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "MARCOS PARENTE",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "PEDRO AVELINO",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SÃO JOÃO DO SABUGI",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "BREJO GRANDE",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "SIMAO DIAS",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "UMBAUBA",
+          "ibge": null,
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "IGACI",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "MATRIZ DE CAMARAGIBE",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "PILAR",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "URUCUCA",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "BREJO SANTO",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "INDEPENDENCIA",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "CODO",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "ITINGA DO MARANHAO",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "PEDREIRAS",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "ZE DOCA",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "ITAPORANGA",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "MARI",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "ALTINHO",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "SUSSUAPARA",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "GIRAU DO PONCIANO",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CANAVIEIRAS",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "EUCLIDES DA CUNHA",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "IBICOARA",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "IBIRAPITANGA",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "MADALENA",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "MAURITI",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "OROS",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "SOLONOPOLE",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "FORMOSA DA SERRA NEGRA",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "LORETO",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "PINDARE MIRIM",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "ALAGOA NOVA",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "CARNAIBA",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "SAIRE",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "AMARANTE",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "GEMINIANO",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "QUEIMADA NOVA",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "GUAMARE",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "MOSSORÓ",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "TIBAU DO SUL",
+          "ibge": null,
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "BARRA DE SAO MIGUEL",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "MONTEIROPOLIS",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "NILO PECANHA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "MORRINHOS",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "PORANGA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "ESTREITO",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SANTA LUZIA DO PARUA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "VILA NOVA DOS MARTIRIOS",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "VITORINO FREIRE",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "CATOLE DO ROCHA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "MASSARANDUBA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "PUXINANA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "BREJAO",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "CHA GRANDE",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "JOAQUIM PIRES",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SAO FRANCISCO DO OESTE",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SAO JOSE DO SERIDO",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "TANGARA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "SAO JOSE DA LAJE",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ABARE",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ARATUIPE",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "COCOS",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CONCEICAO DA FEIRA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "JUSSARA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "OUROLANDIA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SANTALUZ",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "CRUZ",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "GROAIRAS",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "LAVRAS DA MANGABEIRA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "SANTANA DO ACARAU",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "GOVERNADOR NUNES FREIRE",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "IGARAPE DO MEIO",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "OLHO D'AGUA DAS CUNHAS",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "PASTOS BONS",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "PRIMEIRA CRUZ",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SAO BENTO",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SUCUPIRA DO RIACHAO",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "AGUAS BELAS",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "BODOCO",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "CALCADO",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "SAO JOAO",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "BETÂNIA DO PIAUÍ",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "FRONTEIRAS",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "ALTO DO RODRIGUES",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "CANGUARETAMA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "GALINHOS",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "ARAUA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "NOSSA SENHORA DE LOURDES",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "PACATUBA",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "SÃO CRISTÓVÃO",
+          "ibge": null,
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ENTRE RIOS",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ITAPE",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "JIQUIRICA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "MURITIBA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "RIACHAO DO JACUIPE",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "UBAIRA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "BELA CRUZ",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "ITAREMA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "JAGUARUANA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SANTA LUZIA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SITIO NOVO",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "CAJAZEIRINHAS",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "PAULISTA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "SAO SEBASTIAO DE LAGOA DE ROCA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "SOLEDADE",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "SÃO BENTO",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "ALIANCA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "ESCADA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "ITAPISSUMA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "RIBEIRAO",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "SAO CAITANO",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "TIMBAUBA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "VERTENTES",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "JAICOS",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "BREJINHO",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "IPANGUACU",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SAO FERNANDO",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "UMARIZAL",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "ITAPORANGA D'AJUDA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "IGREJA NOVA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "MAR VERMELHO",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "OLHO D'AGUA DO CASADO",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ABAIRA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "BUERAREMA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CRISTOPOLIS",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CURACA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SEABRA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "AIUABA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "SAO JOAO DO JAGUARIBE",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SANTO AMARO DO MARANHAO",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "BOQUEIRAO",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "CAPOEIRAS",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "JUPI",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "LAGOA GRANDE",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "AGUA BRANCA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "BARRAS",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "CURRAIS",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "INHUMA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "JACOBINA DO PIAUI",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "OEIRAS",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "SAO BRAZ DO PIAUI",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "CAICÓ",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "CARNAÚBA DOS DANTAS",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "JACANA",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "RAFAEL FERNANDES",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SAO MIGUEL",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SERRA DO MEL",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "TIMBAUBA DOS BATISTAS",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "PEDRINHAS",
+          "ibge": null,
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "CACIMBINHAS",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "MARIBONDO",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "BARRA DO CHOCA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "JAGUAQUARA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "MUTUIPE",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SAO MIGUEL DAS MATAS",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SERRINHA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "BOA VIAGEM",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "CHOROZINHO",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "IRACEMA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "IRAUCUBA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "MARACANAÚ",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "MISSAO VELHA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "CIDELANDIA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "ITAPECURU MIRIM",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "JOAO LISBOA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SÃO LUÍS",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "BOA VISTA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "FORTALEZA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "JOÃO PESSOA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "SAO BENTO",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "ALAGOINHA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "BARRA DE GUABIRABA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "BREJO DA MADRE DE DEUS",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "CUSTODIA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "PEDRA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "SAO JOSE DA COROA GRANDE",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "CABECEIRAS DO PIAUI",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "UNIAO",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "GOIANINHA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "OURO BRANCO",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "LARANJEIRAS",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "ANADIA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "BARRA DE SANTO ANTONIO",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "OLIVENCA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "TEOTONIO VILELA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CAMAMU",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CATU",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "FEIRA DA MATA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ITACARE",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "Ibicoara",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "JEREMOABO",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "MUCUGÊ",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "PIATA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "PRADO",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SAPEACU",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "WENCESLAU GUIMARAES",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "ACARAU",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "AURORA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "GRANJA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "ICAPUI",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SÃO DOMINGOS DO MARANHÃO",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "CACIMBA DE AREIA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "CONDE",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "JUAREZ TAVORA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "MATUREIA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "POCINHOS",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "SAO JOAO DO RIO DO PEIXE",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "SAPE",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "TENORIO",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "BONITO",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "BREJINHO",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "JUREMA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "NAZARE DA MATA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "PESQUEIRA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "SAO JOSE DO BELMONTE",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "TACARATU",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "BAIXA GRANDE DO RIBEIRO",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "BONFIM DO PIAUI",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "CAMPO GRANDE DO PIAUI",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "CAPITAO DE CAMPOS",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "CORONEL JOSE DIAS",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "CRISTALANDIA DO PIAUI",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "CURRALINHOS",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "ILHA GRANDE",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "JOSE DE FREITAS",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "PALMEIRA DO PIAUI",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "SAO GONCALO DO GURGUEIA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "SAO LOURENCO DO PIAUI",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "URUCUI",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "ALEXANDRIA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "BARAUNA",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "MONTE ALEGRE",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SAO PEDRO",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "TABOLEIRO GRANDE",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "SANTO AMARO DAS BROTAS",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "BATALHA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "CHA PRETA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "MACEIÓ",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "PAO DE ACUCAR",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "AMELIA RODRIGUES",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CANDEIAS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CAPIM GROSSO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "GUANAMBI",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "MEDEIROS NETO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SIMÕES FILHO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "ALTO SANTO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "CARIUS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "GUARACIABA DO NORTE",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "GUARAMIRANGA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "MERUOCA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "PALHANO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "PARACURU",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "SALITRE",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "SAO GONCALO DO AMARANTE",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "LAGO DOS RODRIGUES",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "CAUCAIA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "JURIPIRANGA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "MALTA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "PIANCÓ",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "BRASÍLIA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "BUIQUE",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "CONDADO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "SÃO LOURENÇO DA MATA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "MIGUEL ALVES",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "NAZARIA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "ANTONIO MARTINS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SERRA DE SAO BENTO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "SAO DOMINGOS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "BOCA DA MATA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "JEQUIA DA PRAIA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "LAGOA DA CANOA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "MARAVILHA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "TAQUARANA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ADUSTINA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ANTAS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ARACI",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "BARRO PRETO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CAETITE",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CASA NOVA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CORRENTINA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "DOM MACEDO COSTA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "FLORESTA AZUL",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ITAGIBA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ITAJUIPE",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "MORPARÁ",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "MUNDO NOVO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "RIACHO DE SANTANA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SAO DOMINGOS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SERRA DO RAMALHO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SOBRADINHO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "ACARAPE",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "ARARIPE",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "BARROQUINHA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "COREAU",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "GRANJEIRO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "NOVA OLINDA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "PACAJUS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "GRAJAÚ",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "IGARAPE GRANDE",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "JENIPAPO DOS VIEIRAS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "LIMA CAMPOS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "MIRINZAL",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "ALAGOINHA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "ALHANDRA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "APARECIDA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "ASSUNCAO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "CABACEIRAS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "CONDADO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "CRUZ DO ESPIRITO SANTO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "JUAZEIRINHO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "MAMANGUAPE",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "PIANCO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "SANTANA DOS GARROTES",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "SAO MAMEDE",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "SOLANEA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "UIRAUNA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "VARZEA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "VISTA SERRANA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "AFRANIO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "AMARAJI",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "BARREIROS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "CUMARU",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "DORMENTES",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "EXU",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "FLORES",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "LAGOA DO CARRO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "MIRANDIBA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "RIO FORMOSO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "TUPANATINGA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "ACAUA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "ACAUÃ",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "COCAL DE TELHA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "DEMERVAL LOBAO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "DOM EXPEDITO LOPES",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "FRANCISCO MACEDO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "GUADALUPE",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "LAGOA DE SAO FRANCISCO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "MATIAS OLIMPIO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "MONTE ALEGRE DO PIAUI",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "PARNAGUA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "PATOS DO PIAUI",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "RIACHO FRIO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "VERA MENDES",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "IPANGUAÇU",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "JARDIM DE PIRANHAS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "LAJES",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "MARCELINO VIEIRA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "NISIA FLORESTA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "NOVA CRUZ",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "PORTALEGRE",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SAO TOME",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SERRA CAIADA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "TAIPU",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "AQUIDABA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "BOQUIM",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "CARMOPOLIS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "NOSSA SENHORA APARECIDA",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "RIBEIROPOLIS",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "QUEBRANGULO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "SANTA LUZIA DO NORTE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "APORA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ARAMARI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CAMAÇARI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CASTRO ALVES",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CORACAO DE MARIA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "IRARA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ITANAGRA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "MUCURI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "PALMAS DE MONTE ALTO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "PEDRAO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "PLANALTO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "POCOES",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SAO DESIDERIO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "URUÇUCA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "CAMPINA GRANDE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "CAMPOS SALES",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "CARIRE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "FARIAS BRITO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "IBICUITINGA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "ITAPAJE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "JARDIM",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "MIRAIMA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "PACOTI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "SAO BENEDITO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "TERESINA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "URUOCA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "AMAPA DO MARANHAO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "AÇAILÂNDIA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "BURITICUPU",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "CAMPESTRE DO MARANHAO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "GOVERNADOR EDISON LOBAO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SAO PEDRO DA AGUA BRANCA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "BREJO DOS SANTOS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "CATOLÉ DO ROCHA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "PILOES",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "SAO SEBASTIAO DO UMBUZEIRO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "SÃO BENTINHO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "SÃO DOMINGOS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "SÃO JOSÉ DE ESPINHARAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "ITAMBE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "JAQUEIRA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "JATAUBA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "MACEIÓ",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "PARNAMIRIM",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "RIACHO DAS ALMAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "CAMPO LARGO DO PIAUI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "PARNAÍBA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "SAO JOAO DO PIAUI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "BODO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "JOAO CAMARA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "MARTINS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "MESSIAS TARGINO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "MONTANHAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SANTANA DO SERIDO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SAO JOSE DO CAMPESTRE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "SANTA ROSA DE LIMA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "BRANQUINHA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "CAMPESTRE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "DOIS RIACHOS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "ROTEIRO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "SENADOR RUI PALMEIRA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "AGUA FRIA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ANDORINHA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ANGICAL",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "AURELINO LEAL",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "BELMONTE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "BREJOES",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CACHOEIRA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CANARANA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CANSANCAO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "CONDE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "FATIMA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "GOVERNADOR MANGABEIRA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "IBOTIRAMA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ITABELA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ITAPITANGA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "ITIRUCU",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "JAGUARARI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "JAGUARIPE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "LAMARAO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "MARAGOGIPE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "MUNIZ FERREIRA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "PALMEIRAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "PAU BRASIL",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "REMANSO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "RETIROLANDIA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "RUY BARBOSA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SANTA RITA DE CASSIA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SÃO JOSÉ DO JACUÍPE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "TANQUE NOVO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "VERA CRUZ",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "ASSARE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "BARRO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "CANINDE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "CAPISTRANO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "IBIAPINA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "IPAPORANGA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "MARTINOPOLE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "MULUNGU",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "PARAMBU",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "SENADOR SA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "TEJUCUOCA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "UMIRIM",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "CE",
+          "municipio": "URUBURETAMA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "ALDEIAS ALTAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "BURITI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "CENTRAL DO MARANHAO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "FORTALEZA DOS NOGUEIRAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "GOVERNADOR EUGENIO BARROS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "MATINHA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "NOVA OLINDA DO MARANHAO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "PIO XII",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "PRESIDENTE JUSCELINO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "RIACHAO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "RIBAMAR FIQUENE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SAO JOAO BATISTA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SAO JOSE DOS BASILIOS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SAO VICENTE FERRER",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "SENADOR ALEXANDRE COSTA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "MA",
+          "municipio": "TASSO FRAGOSO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "ARACAGI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "AREIA DE BARAUNAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "AREIAL",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "AROEIRAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "BELEM",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "BOM JESUS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "CAAPORA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "CACHOEIRA DOS INDIOS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "CACIMBAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "CARAUBAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "CARRAPATEIRA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "CATINGUEIRA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "COREMAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "CUITEGI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "DESTERRO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "GURJAO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "IGARACY",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "JERICO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "LIVRAMENTO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "LUCENA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "MONTADAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "NOVA FLORESTA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "OLHO D'AGUA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "OLIVEDOS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "PITIMBU",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "SANTA TERESINHA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "SAO BENTINHO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "SAO DOMINGOS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "SAO JOSE DO BONFIM",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "CALUMBI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "CAMOCIM DE SAO FELIX",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "CATENDE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "CEDRO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "FREI MIGUELINHO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "GLORIA DO GOITA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "IATI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "IBIMIRIM",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "IGUARACI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "ILHA DE ITAMARACA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "ITAPETIM",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "JATOBA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "MACHADOS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "QUIXABA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "SALOA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "SANTA CRUZ DA BAIXA VERDE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "SANTA MARIA DA BOA VISTA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "SANTA MARIA DO CAMBUCA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "SANTA TEREZINHA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "SERTANIA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "TACAIMBO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "TEREZINHA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "ALEGRETE DO PIAUI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "ALVORADA DO GURGUEIA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "BATALHA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "BERTOLINIA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "BRASILEIRA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "CANTO DO BURITI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "COLONIA DO GURGUEIA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "CONCEIÇÃO DO CANINDÉ",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "CURIMATA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "DOM INOCENCIO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "FARTURA DO PIAUI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "FRANCISCO SANTOS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "GILBUES",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "IPIRANGA DO PIAUI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "ITAUEIRA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "JATOBA DO PIAUI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "LUZILANDIA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "MONSENHOR GIL",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "PAQUETÁ",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "REGENERACAO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "RIO GRANDE DO PIAUI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "SANTO ANTONIO DE LISBOA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "SAO JOAO DO ARRAIAL",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "SIMPLICIO MENDES",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "SIMPLÍCIO MENDES",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "SIMÕES",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "SÃO FRANCISCO DE ASSIS DO PIAUÍ",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "CAICARA DO RIO DO VENTO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "CARAUBAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "CARNAUBAIS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "ENCANTO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "FLORANIA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "FRANCISCO DANTAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "GOVERNADOR DIX-SEPT ROSADO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "GROSSOS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "IPUEIRA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "JANDUIS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "LAGOA SALGADA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "PEDRO VELHO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "PENDENCIAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "PORTO DO MANGUE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "RIO DO FOGO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SANTANA DO MATOS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SAO JOAO DO SABUGI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SAO PAULO DO POTENGI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SAO VICENTE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "SEVERIANO MELO",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "TRIUNFO POTIGUAR",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "FEIRA NOVA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "ITABI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "JAPARATUBA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "MONTE ALEGRE DE SERGIPE",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "PIRAMBU",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "RIACHAO DO DANTAS",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "SANTA LUZIA DO ITANHY",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "SIRIRI",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "TELHA",
+          "ibge": null,
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "SAO PAULO",
+          "ibge": null,
+          "value": 0,
+          "display_value": "0",
+          "share": 0.0
+        },
+        {
+          "uf": "PB",
+          "municipio": "João Pessoa",
+          "ibge": null,
+          "value": 0,
+          "display_value": "0",
+          "share": 0.0
+        }
+      ]
+    }
+  ],
+  "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
   "data_aceitacao": "2026-08-04",
   "geo": {

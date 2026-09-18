@@ -273,8 +273,98 @@
       ]
     }
   ],
-  "breakdowns": [],
-  "_nota_anonimizacao": "Sem CNPJ, nome de empresa ou município em nenhum nível do JSON — apenas contagens agregadas por UF ou nacionais.",
+  "breakdowns": [
+    {
+      "id": "por_municipio",
+      "title": "Atendimentos B+P por município",
+      "dimension_label": "Participação",
+      "unit": "%",
+      "nivel_geografico": "municipio",
+      "items": [
+        {
+          "uf": "AP",
+          "municipio": "MACAPA",
+          "ibge": null,
+          "value": 1025,
+          "display_value": "1.025",
+          "share": 0.7
+        },
+        {
+          "uf": "AP",
+          "municipio": "SANTANA",
+          "ibge": null,
+          "value": 216,
+          "display_value": "216",
+          "share": 0.1
+        },
+        {
+          "uf": "AP",
+          "municipio": "OIAPOQUE",
+          "ibge": null,
+          "value": 44,
+          "display_value": "44",
+          "share": 0.0
+        },
+        {
+          "uf": "AP",
+          "municipio": "PORTO GRANDE",
+          "ibge": null,
+          "value": 40,
+          "display_value": "40",
+          "share": 0.0
+        },
+        {
+          "uf": "AP",
+          "municipio": "LARANJAL DO JARI",
+          "ibge": null,
+          "value": 32,
+          "display_value": "32",
+          "share": 0.0
+        },
+        {
+          "uf": "AP",
+          "municipio": "MACAPÁ",
+          "ibge": null,
+          "value": 31,
+          "display_value": "31",
+          "share": 0.0
+        },
+        {
+          "uf": "AP",
+          "municipio": "FERREIRA GOMES",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "AP",
+          "municipio": "PEDRA BRANCA DO AMAPARÍ",
+          "ibge": null,
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "AP",
+          "municipio": "PEDRA BRANCA DO AMAPARI",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AP",
+          "municipio": "MAZAGAO",
+          "ibge": null,
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        }
+      ]
+    }
+  ],
+  "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
   "data_aceitacao": "2026-08-04",
   "geo": {
