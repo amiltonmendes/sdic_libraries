@@ -1,13 +1,13 @@
 {
   "schema_version": "1.2",
-  "n_politicas": 24,
+  "n_politicas": 27,
   "recursos": {
     "value": 1654767300000.0,
     "display_value": "R$ 1,65 tri"
   },
   "atendimentos": {
-    "value": 182167,
-    "display_value": "182.167"
+    "value": 182901,
+    "display_value": "182.901"
   },
   "top_politicas": [
     {
@@ -51,8 +51,8 @@
   "story": {
     "escopo": "nacional",
     "regra": "normal",
-    "headline": "Brasil: R$ 1,65 tri mobilizados em 24 políticas da SDIC.",
-    "lede": "As maiores são P+P (R$ 755,22 bi), Ações DIBEN (R$ 407,02 bi) e FGI (R$ 264 bi). As políticas não monetárias somam 182.167 projetos, empresas e atendimentos. Soma entre políticas de unidades diferentes — ver nota metodológica.",
+    "headline": "Brasil: R$ 1,65 tri mobilizados em 27 políticas da SDIC.",
+    "lede": "As maiores são P+P (R$ 755,22 bi), Ações DIBEN (R$ 407,02 bi) e FGI (R$ 264 bi). As políticas não monetárias somam 182.901 projetos, empresas e atendimentos. Soma entre políticas de unidades diferentes — ver nota metodológica.",
     "highlights": []
   },
   "todas_politicas": [
@@ -125,6 +125,13 @@
       "nome": "Empreendedoras Tech",
       "regionalizavel": true,
       "display_value": "185 empresas"
+    },
+    {
+      "id": "dial_missao6_eeds_eds",
+      "sigla": "ED/EED",
+      "nome": "Empresas Credenciadas — Material de Defesa (ED/EED)",
+      "regionalizavel": true,
+      "display_value": "338 empresas"
     },
     {
       "id": "ex_tarifario_autopecas",
@@ -211,6 +218,13 @@
       "display_value": "R$ 6,41 bi"
     },
     {
+      "id": "dial_missao6_cmid",
+      "sigla": "PRODE/PED",
+      "nome": "Produtos de Defesa e Produtos Estratégicos de Defesa (CMID)",
+      "regionalizavel": false,
+      "display_value": "2463 produtos"
+    },
+    {
       "id": "dial_pdil",
       "sigla": "PDIL",
       "nome": "Programa de Desenvolvimento e Inovação Local",
@@ -223,6 +237,13 @@
       "nome": "REIQ — Regime Especial da Indústria Química",
       "regionalizavel": true,
       "display_value": "R$ 5,44 bi"
+    },
+    {
+      "id": "dial_missao6_tles",
+      "sigla": "TLE",
+      "nome": "Termos de Licitação Especial (TLE) Autorizados",
+      "regionalizavel": false,
+      "display_value": "45 despachos"
     }
   ]
 }

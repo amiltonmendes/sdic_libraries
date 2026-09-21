@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "dial_missao6_cmid",
+  "nome": "Produtos de Defesa e Produtos Estratégicos de Defesa (CMID)",
+  "sigla": "PRODE/PED",
+  "categoria": "Catálogo de produtos — indústria de defesa",
+  "source": "SDIC/DIAL — Missão 6 - Produtos CMID",
+  "reference": "acumulado",
+  "updated_at": "2026-09-09",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Produtos catalogados",
+    "display_value": "2463 produtos",
+    "unit": "",
+    "period": "acumulado",
+    "delta": {
+      "dir": "up",
+      "label": "396 empresas"
+    },
+    "value": null
+  },
+  "story": {
+    "escopo": "nacional",
+    "headline": "A Comissão Mista da Indústria de Defesa (CMID) catalogou 2463 produtos de 396 empresas, entre Produtos de Defesa (PRODE) e Produtos Estratégicos de Defesa (PED).",
+    "lede": "Relação geral de produtos de defesa (PRODE) e produtos estratégicos de defesa (PED) da CMID. Dado o caráter estratégico dos itens, o JSON publica apenas contagens agregadas.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "2350 Produtos Estratégicos de Defesa (PED) e 113 Produtos de Defesa (PRODE)."
+      },
+      {
+        "tone": "neutral",
+        "text": "396 empresas distintas têm ao menos 1 produto catalogado."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "produtos",
+      "label": "Produtos catalogados",
+      "value": 2463,
+      "display_value": "2463",
+      "unit": "produtos",
+      "period": "acumulado"
+    },
+    {
+      "id": "empresas",
+      "label": "Empresas com produto catalogado",
+      "value": 396,
+      "display_value": "396",
+      "unit": "empresas",
+      "period": "acumulado"
+    },
+    {
+      "id": "ped",
+      "label": "Produtos Estratégicos de Defesa (PED)",
+      "value": 2350,
+      "display_value": "2350",
+      "unit": "produtos",
+      "period": "acumulado"
+    },
+    {
+      "id": "prode",
+      "label": "Produtos de Defesa (PRODE)",
+      "value": 113,
+      "display_value": "113",
+      "unit": "produtos",
+      "period": "acumulado"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "por_classificacao",
+      "title": "Produtos por classificação",
+      "metric_label": "Produtos",
+      "unit": "produtos",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "PED",
+          "value": 2350,
+          "display_value": "2350 produtos"
+        },
+        {
+          "name": "PRODE",
+          "value": 113,
+          "display_value": "113 produtos"
+        }
+      ]
+    }
+  ],
+  "charts": [],
+  "breakdowns": [],
+  "data_quality": {
+    "source_rows": 2463
+  },
+  "_nota_anonimizacao": "Nomes de empresa e descrição de produto individuais não são publicados — só contagens agregadas por classificação (PED/PRODE), dado o caráter estratégico de defesa dos itens. A fonte não traz UF/cidade, então não há recorte geográfico possível.",
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-09-09",
+  "geo": {
+    "nivel": "nacional",
+    "fallback": true,
+    "regiao": "Nordeste"
+  }
+}

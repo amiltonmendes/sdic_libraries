@@ -1,0 +1,288 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "dial_missao6_tles",
+  "nome": "Termos de Licitação Especial (TLE) Autorizados",
+  "sigla": "TLE",
+  "categoria": "Despachos decisórios — indústria de defesa",
+  "source": "SDIC/DIAL — Missão 6 - TLEs aprovados",
+  "reference": "2016-2026",
+  "updated_at": "2026-09-09",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Despachos decisórios de TLE",
+    "display_value": "45 despachos",
+    "unit": "",
+    "period": "2016-2026",
+    "delta": {
+      "dir": "up",
+      "label": "9 em 2026"
+    },
+    "value": null
+  },
+  "story": {
+    "escopo": "nacional",
+    "headline": "45 despachos decisórios autorizando Termos de Licitação Especial (TLE) foram publicados entre 2016 e 2026.",
+    "lede": "TLE é o Termo de Licitação Especial — instrumento que autoriza contratação direta, fora do rito comum de licitação, em processos de aquisição de material de defesa. A lista reproduz os despachos decisórios do Ministério da Defesa (GM-MD) que aprovaram cada termo; não há valor financeiro ou empresa associada na fonte.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "9 despachos publicados em 2026, o ano mais recente da série."
+      },
+      {
+        "tone": "neutral",
+        "text": "Cada despacho corresponde a um Termo de Licitação Especial (TLE) autorizado; não há métrica de valor associada na fonte."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "despachos",
+      "label": "Despachos decisórios de TLE",
+      "value": 45,
+      "display_value": "45",
+      "unit": "despachos",
+      "period": "2016-2026"
+    }
+  ],
+  "ranked_lists": [],
+  "charts": [
+    {
+      "id": "despachos_por_ano",
+      "type": "bars",
+      "title": "Despachos decisórios de TLE por ano",
+      "subtitle": "2016-2026",
+      "unit": "despachos",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "despachos",
+          "label": "Despachos",
+          "points": [
+            {
+              "t": 2016,
+              "v": 1
+            },
+            {
+              "t": 2020,
+              "v": 5
+            },
+            {
+              "t": 2022,
+              "v": 1
+            },
+            {
+              "t": 2023,
+              "v": 9
+            },
+            {
+              "t": 2024,
+              "v": 15
+            },
+            {
+              "t": 2025,
+              "v": 5
+            },
+            {
+              "t": 2026,
+              "v": 9
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    }
+  ],
+  "breakdowns": [],
+  "records": [
+    {
+      "despacho": "Despacho Decisório nº 11/GM-MD, de 22 de maio de 2026",
+      "ano": 2026
+    },
+    {
+      "despacho": "Despacho Decisório nº 12/GM-MD, de 22 de maio de 2026",
+      "ano": 2026
+    },
+    {
+      "despacho": "Despacho Decisório nº 13/GM-MD, de 22 de maio de 2026",
+      "ano": 2026
+    },
+    {
+      "despacho": "Despacho Decisório nº 14/GM-MD, de 22 de maio de 2026",
+      "ano": 2026
+    },
+    {
+      "despacho": "Despacho Decisório nº 15/GM-MD, de 22 de maio de 2026",
+      "ano": 2026
+    },
+    {
+      "despacho": "Despacho Decisório nº 19/GM-MD, de 10 de junho de 2026",
+      "ano": 2026
+    },
+    {
+      "despacho": "Despacho Decisório nº 20/GM-MD, de 10 de junho de 2026",
+      "ano": 2026
+    },
+    {
+      "despacho": "Despacho Decisório nº 21/GM-MD, de 10 de junho de 2026",
+      "ano": 2026
+    },
+    {
+      "despacho": "Despacho Decisório nº 31/GM-MD, de 10 de junho de 2026",
+      "ano": 2026
+    },
+    {
+      "despacho": "Despacho Decisório nº 18/GM-MD, de 23 de junho de 2025",
+      "ano": 2025
+    },
+    {
+      "despacho": "Despacho Decisório nº 19/GM-MD, de 23 de junho de 2025",
+      "ano": 2025
+    },
+    {
+      "despacho": "Despacho Decisório nº 44/GM-MD, de 8 de dezembro de 2025",
+      "ano": 2025
+    },
+    {
+      "despacho": "Despacho Decisório nº 45/GM-MD, de 8 de dezembro de 2025",
+      "ano": 2025
+    },
+    {
+      "despacho": "Despacho Decisório nº 52/GM-MD, de 30 de dezembro de 2025",
+      "ano": 2025
+    },
+    {
+      "despacho": "Despacho Decisório nº 3/GM-MD, de 30 de abril de 2024",
+      "ano": 2024
+    },
+    {
+      "despacho": "Despacho Decisório nº 4/GM-MD, de 30 de abril de 2024",
+      "ano": 2024
+    },
+    {
+      "despacho": "Despacho Decisório nº 5/GM-MD, de 30 de abril de 2024",
+      "ano": 2024
+    },
+    {
+      "despacho": "Despacho Decisório nº 6/GM-MD, de 9 de maio de 2024",
+      "ano": 2024
+    },
+    {
+      "despacho": "Despacho Decisório nº 7/GM-MD, de 9 de maio de 2024",
+      "ano": 2024
+    },
+    {
+      "despacho": "Despacho Decisório nº 8/GM-MD, de 9 de maio de 2024",
+      "ano": 2024
+    },
+    {
+      "despacho": "Despacho Decisório nº 9/GM-MD, de 9 de maio de 2024",
+      "ano": 2024
+    },
+    {
+      "despacho": "Despacho Decisório nº 10/GM-MD, de 10 de maio de 2024",
+      "ano": 2024
+    },
+    {
+      "despacho": "Despacho Decisório nº 25/GM-MD, de 23 de setembro de 2024",
+      "ano": 2024
+    },
+    {
+      "despacho": "Despacho Decisório nº 27/GM-MD, de 23 de setembro de 2024",
+      "ano": 2024
+    },
+    {
+      "despacho": "Despacho Decisório nº 31/GM-MD, de 4 de outubro de 2024",
+      "ano": 2024
+    },
+    {
+      "despacho": "Despacho Decisório nº 32/GM-MD, de 4 de outubro de 2024",
+      "ano": 2024
+    },
+    {
+      "despacho": "Despacho Decisório nº 37/GM-MD, de 17 de dezembro de 2024",
+      "ano": 2024
+    },
+    {
+      "despacho": "Despacho Decisório nº 38/GM-MD, de 17 de dezembro de 2024",
+      "ano": 2024
+    },
+    {
+      "despacho": "Despacho Decisório nº 39/GM-MD, de 17 de dezembro de 2024",
+      "ano": 2024
+    },
+    {
+      "despacho": "Despacho Decisório nº 11/GM-MD, de 6 de junho de 2023",
+      "ano": 2023
+    },
+    {
+      "despacho": "Despacho Decisório nº 13/GM-MD, de 6 de junho de 2023",
+      "ano": 2023
+    },
+    {
+      "despacho": "Despacho Decisório nº 14/GM-MD, de 6 de junho de 2023",
+      "ano": 2023
+    },
+    {
+      "despacho": "Despacho Decisório nº 33/GM-MD, de 5 de outubro de 2023",
+      "ano": 2023
+    },
+    {
+      "despacho": "Despacho Decisório nº 34/GM-MD, de 5 de outubro de 2023",
+      "ano": 2023
+    },
+    {
+      "despacho": "Despacho Decisório nº 35/GM-MD, de 5 de outubro de 2023",
+      "ano": 2023
+    },
+    {
+      "despacho": "Despacho Decisório nº 40/GM-MD, de 18 de dezembro de 2023",
+      "ano": 2023
+    },
+    {
+      "despacho": "Despacho Decisório nº 41/GM-MD, de 18 de dezembro de 2023",
+      "ano": 2023
+    },
+    {
+      "despacho": "Despacho Decisório nº 42/GM-MD, de 18 de dezembro de 2023",
+      "ano": 2023
+    },
+    {
+      "despacho": "Despacho Decisório nº 23/GM-MD, de 30 de agosto de 2022",
+      "ano": 2022
+    },
+    {
+      "despacho": "Despacho Decisório nº 7/GM-MD, de 22 de janeiro de 2020",
+      "ano": 2020
+    },
+    {
+      "despacho": "Despacho Decisório nº 21/GM-MD, de 25 de março de 2020",
+      "ano": 2020
+    },
+    {
+      "despacho": "Despacho Decisório nº 24/GM-MD, de 16 de abril de 2020",
+      "ano": 2020
+    },
+    {
+      "despacho": "Despacho Decisório nº 33/GM-MD, de 19 de agosto de 2020",
+      "ano": 2020
+    },
+    {
+      "despacho": "Despacho Decisório nº 34/GM-MD, de 19 de agosto de 2020",
+      "ano": 2020
+    },
+    {
+      "despacho": "Despacho Decisório nº 2/GM-MD, de 2 de junho de 2016",
+      "ano": 2016
+    }
+  ],
+  "data_quality": {
+    "source_rows": 45
+  },
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-09-09",
+  "geo": {
+    "nivel": "nacional",
+    "fallback": true,
+    "regiao": "Sul"
+  }
+}

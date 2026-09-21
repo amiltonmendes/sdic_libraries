@@ -83,6 +83,14 @@
       "regionalizavel": true
     },
     {
+      "id": "dial_missao6_eeds_eds",
+      "file": "politicas/dial_missao6_eeds_eds.json",
+      "nome": "Empresas Credenciadas — Material de Defesa (ED/EED)",
+      "sigla": "ED/EED",
+      "categoria": "Credenciamento — indústria de defesa",
+      "regionalizavel": true
+    },
+    {
       "id": "ex_tarifario_autopecas",
       "file": "politicas/ex_tarifario_autopecas.json",
       "nome": "Ex-Tarifário — Autopeças",
@@ -179,6 +187,14 @@
       "regionalizavel": false
     },
     {
+      "id": "dial_missao6_cmid",
+      "file": "politicas/dial_missao6_cmid.json",
+      "nome": "Produtos de Defesa e Produtos Estratégicos de Defesa (CMID)",
+      "sigla": "PRODE/PED",
+      "categoria": "Catálogo de produtos — indústria de defesa",
+      "regionalizavel": false
+    },
+    {
       "id": "dial_pdil",
       "file": "politicas/dial_pdil.json",
       "nome": "Programa de Desenvolvimento e Inovação Local",
@@ -193,6 +209,14 @@
       "sigla": "REIQ",
       "categoria": "Incentivo fiscal — cadeia petroquímica",
       "regionalizavel": true
+    },
+    {
+      "id": "dial_missao6_tles",
+      "file": "politicas/dial_missao6_tles.json",
+      "nome": "Termos de Licitação Especial (TLE) Autorizados",
+      "sigla": "TLE",
+      "categoria": "Despachos decisórios — indústria de defesa",
+      "regionalizavel": false
     }
   ],
   "municipios_elegiveis": [

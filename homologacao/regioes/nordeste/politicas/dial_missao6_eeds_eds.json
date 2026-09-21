@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "dial_missao6_eeds_eds",
+  "nome": "Empresas Credenciadas — Material de Defesa (ED/EED)",
+  "sigla": "ED/EED",
+  "categoria": "Credenciamento — indústria de defesa",
+  "source": "SDIC/DIAL — Missão 6 - Relação EEDs & EDs",
+  "reference": "acumulado, posição em 08/06/2026",
+  "updated_at": "2026-09-09",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Empresas credenciadas",
+    "display_value": "15",
+    "unit": "",
+    "period": "acumulado",
+    "delta": {
+      "dir": "flat",
+      "label": "4,5% do total nacional · 4ª entre 5 regiões"
+    },
+    "value": 15
+  },
+  "story": {
+    "escopo": "regiao",
+    "regiao": "Nordeste",
+    "uf": null,
+    "regra": "normal",
+    "headline": "Nordeste responde por 15 empresas credenciadas — 4,5% do total nacional.",
+    "lede": "É a 4ª colocação entre as 5 macrorregiões participantes do programa. Credenciamento de empresas da indústria de defesa junto ao Ministério da Defesa (CMID).",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "4ª entre as 5 macrorregiões participantes do programa, com 4,5% do total nacional."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "credenciadas",
+      "label": "Empresas credenciadas",
+      "value": 338,
+      "display_value": "338",
+      "unit": "empresas",
+      "period": "acumulado"
+    },
+    {
+      "id": "eed",
+      "label": "Empresas Estratégicas de Defesa (EED)",
+      "value": 292,
+      "display_value": "292",
+      "unit": "empresas",
+      "period": "acumulado"
+    },
+    {
+      "id": "ed",
+      "label": "Empresas de Material de Defesa (ED)",
+      "value": 46,
+      "display_value": "46",
+      "unit": "empresas",
+      "period": "acumulado"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "por_classificacao",
+      "title": "Credenciadas por classificação",
+      "metric_label": "Empresas",
+      "unit": "empresas",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "EED",
+          "value": 292,
+          "display_value": "292 empresas"
+        },
+        {
+          "name": "ED",
+          "value": 46,
+          "display_value": "46 empresas"
+        }
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "id": "por_uf",
+      "type": "bars",
+      "title": "Empresas credenciadas por UF",
+      "subtitle": "UF da empresa credenciada",
+      "unit": "empresas",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "empresas",
+          "label": "Empresas",
+          "points": [
+            {
+              "t": "SP",
+              "v": 149
+            },
+            {
+              "t": "RJ",
+              "v": 46
+            },
+            {
+              "t": "SC",
+              "v": 33
+            },
+            {
+              "t": "MG",
+              "v": 24
+            },
+            {
+              "t": "RS",
+              "v": 20
+            },
+            {
+              "t": "PR",
+              "v": 18
+            },
+            {
+              "t": "DF",
+              "v": 13
+            },
+            {
+              "t": "AM",
+              "v": 9
+            },
+            {
+              "t": "PE",
+              "v": 6
+            },
+            {
+              "t": "CE",
+              "v": 4
+            },
+            {
+              "t": "ES",
+              "v": 4
+            },
+            {
+              "t": "GO",
+              "v": 4
+            },
+            {
+              "t": "BA",
+              "v": 3
+            },
+            {
+              "t": "MS",
+              "v": 2
+            },
+            {
+              "t": "PB",
+              "v": 1
+            },
+            {
+              "t": "RN",
+              "v": 1
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    }
+  ],
+  "breakdowns": [],
+  "data_quality": {
+    "source_rows": 338,
+    "sem_uf": 1,
+    "uf_typos_corrigidos": {
+      "BH_para_MG": 2,
+      "sc_para_SC": 1
+    },
+    "localidades_na_fonte": 128,
+    "localidades_com_1_empresa": 89
+  },
+  "_nota_anonimizacao": "Nomes de empresa e CNPJ individuais não são publicados — só contagens agregadas por UF e por classificação (ED/EED).",
+  "_nota_uf": "UF da empresa credenciada, sem indicação de abrangência geográfica de atuação. 2 linhas traziam 'BH' (cidade, não UF) na coluna UF — corrigidas para MG por cruzamento com a cidade.",
+  "_nota_desagregacao_geografica": "A fonte tem coluna de cidade, mas NÃO virou breakdown por município (diferente de depreciacao_acelerada/b_mais_p — POLITICAS_COM_MUNICIPIO): 89 das 128 localidades têm exatamente 1 empresa credenciada, o que equivaleria a nomear a empresa. UF é o limite seguro de granularidade nesta política — mesma lógica do REIQ.",
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-09-09",
+  "geo": {
+    "nivel": "regiao",
+    "fallback": false,
+    "regiao": "Nordeste"
+  },
+  "story_nacional": {
+    "escopo": "nacional",
+    "headline": "338 empresas estão credenciadas como Empresa de Material de Defesa (ED) ou Empresa Estratégica de Defesa (EED), em 16 UFs.",
+    "lede": "Credenciamento de empresas da indústria de defesa junto ao Ministério da Defesa (CMID). Não expressa volume de investimento ou faturamento — só a condição de credenciada.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "292 Empresas Estratégicas de Defesa (EED) e 46 Empresas de Material de Defesa (ED)."
+      },
+      {
+        "tone": "neutral",
+        "text": "Credenciadas em 16 UFs."
+      }
+    ]
+  }
+}
