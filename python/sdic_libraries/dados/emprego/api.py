@@ -571,6 +571,211 @@ class Emprego:
         items = self._fetch_all_paginated_get('/get_estoque_emprego_estadual/', params)
         return self._filter_estoque_items(items, nivel_agregacao='estadual', nivel_cnae=nivel_cnae, has_grupos=False)
 
+    # ========== ESTOQUE DE EMPREGO POR PORTE E SETOR (indústria x comércio/serviços) ==========
+    # Dados reais disponíveis a partir de 2006 (a RAIS só adotou CNAE 2.0 nesse ano).
+
+    def get_estoque_emprego_porte_nacional(self,
+                                          nivel_cnae: str = 'divisao',
+                                          codigos_cnae: List[str] = None,
+                                          porte: List[str] = None,
+                                          setor: str = None) -> List[Dict[str, Any]]:
+        """
+        Obter TODOS os dados de estoque de emprego por porte de estabelecimento
+        e setor, agregado nacionalmente, fazendo loop automático por todas as
+        páginas de resultado.
+
+        Args:
+            nivel_cnae (str): 'divisao' (2 dígitos), 'grupo' (3) ou 'classe' (4)
+            codigos_cnae (List[str], optional): Lista de códigos CNAE no nível escolhido
+            porte (List[str], optional): Filtro por porte (ex: 'Microempresa')
+            setor (str, optional): 'Indústria' ou 'Comércio e Serviços'
+
+        Returns:
+            List[Dict[str, Any]]: Todos os registros de estoque por porte/setor
+
+        Raises:
+            EmpregoAPIError: Se a requisição da API falhar
+            ValueError: Se nivel_cnae for inválido
+        """
+        if nivel_cnae not in ('divisao', 'grupo', 'classe'):
+            raise ValueError("nivel_cnae deve ser 'divisao', 'grupo' ou 'classe'")
+
+        params: Dict[str, Any] = {'nivel_cnae': nivel_cnae, 'tamanho_pagina': 1000}
+        if codigos_cnae:
+            params['codigos_cnae'] = ','.join(codigos_cnae)
+        if porte:
+            params['porte'] = ','.join(porte)
+        if setor:
+            params['setor'] = setor
+
+        return self._fetch_all_paginated_get('/get_estoque_emprego_porte_nacional/', params)
+
+    def get_estoque_emprego_porte_estadual(self,
+                                          ufs: Union[str, List[str]],
+                                          nivel_cnae: str = 'divisao',
+                                          codigos_cnae: List[str] = None,
+                                          porte: List[str] = None,
+                                          setor: str = None) -> List[Dict[str, Any]]:
+        """
+        Obter TODOS os dados de estoque de emprego por porte de estabelecimento
+        e setor, por UF, fazendo loop automático por todas as páginas de resultado.
+
+        Args:
+            ufs (str | List[str]): Sigla(s) de UF (ex: 'SP' ou ['SP', 'RJ'])
+            nivel_cnae (str): 'divisao' (2 dígitos), 'grupo' (3) ou 'classe' (4)
+            codigos_cnae (List[str], optional): Lista de códigos CNAE no nível escolhido
+            porte (List[str], optional): Filtro por porte (ex: 'Microempresa')
+            setor (str, optional): 'Indústria' ou 'Comércio e Serviços'
+
+        Returns:
+            List[Dict[str, Any]]: Todos os registros de estoque por porte/setor
+
+        Raises:
+            EmpregoAPIError: Se a requisição da API falhar
+            ValueError: Se nivel_cnae for inválido
+        """
+        if nivel_cnae not in ('divisao', 'grupo', 'classe'):
+            raise ValueError("nivel_cnae deve ser 'divisao', 'grupo' ou 'classe'")
+
+        ufs_str = ','.join(ufs) if isinstance(ufs, list) else ufs
+        params: Dict[str, Any] = {'ufs': ufs_str, 'nivel_cnae': nivel_cnae, 'tamanho_pagina': 1000}
+        if codigos_cnae:
+            params['codigos_cnae'] = ','.join(codigos_cnae)
+        if porte:
+            params['porte'] = ','.join(porte)
+        if setor:
+            params['setor'] = setor
+
+        return self._fetch_all_paginated_get('/get_estoque_emprego_porte_estadual/', params)
+
+    # ========== ESTOQUE DE EMPREGO POR CLASSE CNAE (4 dígitos) ==========
+
+    def get_estoque_emprego_classe_cnae_nacional(self,
+                                                 codigos_classe: List[str] = None) -> List[Dict[str, Any]]:
+        """
+        Obter TODOS os dados de estoque de emprego por classe CNAE (4 dígitos),
+        agregado nacionalmente.
+
+        Args:
+            codigos_classe (List[str], optional): Lista de códigos de classe CNAE
+
+        Returns:
+            List[Dict[str, Any]]: Todos os registros de estoque por classe CNAE
+        """
+        params: Dict[str, Any] = {'tamanho_pagina': 1000}
+        if codigos_classe:
+            params['codigos_classe'] = ','.join(codigos_classe)
+
+        return self._fetch_all_paginated_get('/get_estoque_emprego_classe_cnae_nacional/', params)
+
+    def get_estoque_emprego_classe_cnae_estadual(self,
+                                                 ufs: Union[str, List[str]],
+                                                 codigos_classe: List[str] = None) -> List[Dict[str, Any]]:
+        """
+        Obter TODOS os dados de estoque de emprego por classe CNAE (4 dígitos), por UF.
+
+        Args:
+            ufs (str | List[str]): Sigla(s) de UF (ex: 'SP' ou ['SP', 'RJ'])
+            codigos_classe (List[str], optional): Lista de códigos de classe CNAE
+
+        Returns:
+            List[Dict[str, Any]]: Todos os registros de estoque por classe CNAE
+        """
+        ufs_str = ','.join(ufs) if isinstance(ufs, list) else ufs
+        params: Dict[str, Any] = {'ufs': ufs_str, 'tamanho_pagina': 1000}
+        if codigos_classe:
+            params['codigos_classe'] = ','.join(codigos_classe)
+
+        return self._fetch_all_paginated_get('/get_estoque_emprego_classe_cnae_estadual/', params)
+
+    # ========== ESTOQUE DE EMPREGO POR UF, CLASSE CNAE E OCUPAÇÃO (CBO) ==========
+
+    def get_estoque_emprego_uf_cbo(self,
+                                   siglas_uf: List[str] = None,
+                                   codigos_classe: List[str] = None,
+                                   codigos_cbo: List[str] = None) -> List[Dict[str, Any]]:
+        """
+        Obter TODOS os dados de estoque de emprego por UF, classe CNAE (4 dígitos)
+        e ocupação (CBO).
+
+        Args:
+            siglas_uf (List[str], optional): Siglas de UF
+            codigos_classe (List[str], optional): Lista de códigos de classe CNAE
+            codigos_cbo (List[str], optional): Lista de códigos CBO
+
+        Returns:
+            List[Dict[str, Any]]: Todos os registros de estoque por UF/classe/CBO
+        """
+        params: Dict[str, Any] = {'tamanho_pagina': 1000}
+        if siglas_uf:
+            params['siglas_uf'] = ','.join(siglas_uf)
+        if codigos_classe:
+            params['codigos_classe'] = ','.join(codigos_classe)
+        if codigos_cbo:
+            params['codigos_cbo'] = ','.join(codigos_cbo)
+
+        return self._fetch_all_paginated_get('/get_estoque_emprego_uf_cbo/', params)
+
+    # ========== RENDA MÉDIA RAIS ==========
+
+    def get_renda_media_emprego(self,
+                                tipos: List[str] = None,
+                                codigos: List[str] = None) -> List[Dict[str, Any]]:
+        """
+        Obter TODOS os dados de remuneração média RAIS por nível de agregação e código.
+
+        Args:
+            tipos (List[str], optional): 'Geral', 'Divisao' e/ou 'Grupo'
+            codigos (List[str], optional): Códigos CNAE correspondentes ao tipo
+
+        Returns:
+            List[Dict[str, Any]]: Todos os registros de remuneração média
+        """
+        params: Dict[str, Any] = {'tamanho_pagina': 1000}
+        if tipos:
+            params['tipos'] = ','.join(tipos)
+        if codigos:
+            params['codigos'] = ','.join(codigos)
+
+        return self._fetch_all_paginated_get('/get_renda_media_emprego/', params)
+
+    # ========== ÍNDICE POTEC ==========
+
+    def get_potec_emprego(self,
+                          codigos_classe: List[str] = None) -> List[Dict[str, Any]]:
+        """
+        Obter TODOS os dados do índice Potec (intensidade tecnológica por
+        estoque de pesquisadores/engenheiros) por classe CNAE (4 dígitos).
+
+        Args:
+            codigos_classe (List[str], optional): Lista de códigos de classe CNAE
+
+        Returns:
+            List[Dict[str, Any]]: Todos os registros do índice Potec
+        """
+        params: Dict[str, Any] = {'tamanho_pagina': 1000}
+        if codigos_classe:
+            params['codigos_classe'] = ','.join(codigos_classe)
+
+        return self._fetch_all_paginated_get('/get_potec_emprego/', params)
+
+    # ========== METADADOS DAS BASES ==========
+
+    def get_date_bases(self) -> List[Dict[str, Any]]:
+        """
+        Obter a data da última atualização de cada base (ComexStat, CAGED, RAIS).
+
+        Returns:
+            List[Dict[str, Any]]: Uma entrada por base, com 'Base' e 'DataUltimaAtualizacao'
+
+        Raises:
+            EmpregoAPIError: Se a requisição da API falhar
+        """
+        response = self._make_request('/data_bases')
+        if isinstance(response, list):
+            return response
+        return self._extract_items(response)
+
     def get_estoque_emprego_nacional_lista_cnae(self,
                                                codigos_cnae: List[str],
                                                nivel_cnae: int = 2,
@@ -1452,6 +1657,160 @@ def get_estoque_emprego_estadual(uf: str,
         )
     return pd.DataFrame(dados)
 
+
+def get_estoque_emprego_porte_nacional(nivel_cnae: str = 'divisao',
+                                       codigos_cnae: List[str] = None,
+                                       porte: List[str] = None,
+                                       setor: str = None) -> pd.DataFrame:
+    """
+    Obter dados de estoque de emprego por porte de estabelecimento e setor
+    (indústria x comércio/serviços) como DataFrame, agregado nacionalmente.
+
+    Dados reais disponíveis a partir de 2006 (a RAIS só adotou CNAE 2.0 nesse ano).
+
+    Args:
+        nivel_cnae (str): 'divisao' (2 dígitos), 'grupo' (3) ou 'classe' (4)
+        codigos_cnae (List[str], optional): Lista de códigos CNAE no nível escolhido
+        porte (List[str], optional): Filtro por porte
+        setor (str, optional): 'Indústria' ou 'Comércio e Serviços'
+
+    Returns:
+        pd.DataFrame: Dados de estoque por porte/setor
+    """
+    with Emprego() as api:
+        dados = api.get_estoque_emprego_porte_nacional(
+            nivel_cnae=nivel_cnae, codigos_cnae=codigos_cnae, porte=porte, setor=setor
+        )
+    return pd.DataFrame(dados)
+
+
+def get_estoque_emprego_porte_estadual(uf: Union[str, List[str]],
+                                       nivel_cnae: str = 'divisao',
+                                       codigos_cnae: List[str] = None,
+                                       porte: List[str] = None,
+                                       setor: str = None) -> pd.DataFrame:
+    """
+    Obter dados de estoque de emprego por porte de estabelecimento e setor,
+    por UF, como DataFrame.
+
+    Dados reais disponíveis a partir de 2006 (a RAIS só adotou CNAE 2.0 nesse ano).
+
+    Args:
+        uf (str | List[str]): Sigla(s) de UF (ex: 'SP' ou ['SP', 'RJ'])
+        nivel_cnae (str): 'divisao' (2 dígitos), 'grupo' (3) ou 'classe' (4)
+        codigos_cnae (List[str], optional): Lista de códigos CNAE no nível escolhido
+        porte (List[str], optional): Filtro por porte
+        setor (str, optional): 'Indústria' ou 'Comércio e Serviços'
+
+    Returns:
+        pd.DataFrame: Dados de estoque por porte/setor
+    """
+    with Emprego() as api:
+        dados = api.get_estoque_emprego_porte_estadual(
+            ufs=uf, nivel_cnae=nivel_cnae, codigos_cnae=codigos_cnae, porte=porte, setor=setor
+        )
+    return pd.DataFrame(dados)
+
+
+def get_estoque_emprego_classe_cnae_nacional(codigos_classe: List[str] = None) -> pd.DataFrame:
+    """
+    Obter dados de estoque de emprego por classe CNAE (4 dígitos) como
+    DataFrame, agregado nacionalmente.
+
+    Args:
+        codigos_classe (List[str], optional): Lista de códigos de classe CNAE
+
+    Returns:
+        pd.DataFrame: Dados de estoque por classe CNAE
+    """
+    with Emprego() as api:
+        dados = api.get_estoque_emprego_classe_cnae_nacional(codigos_classe=codigos_classe)
+    return pd.DataFrame(dados)
+
+
+def get_estoque_emprego_classe_cnae_estadual(uf: Union[str, List[str]],
+                                             codigos_classe: List[str] = None) -> pd.DataFrame:
+    """
+    Obter dados de estoque de emprego por classe CNAE (4 dígitos), por UF,
+    como DataFrame.
+
+    Args:
+        uf (str | List[str]): Sigla(s) de UF (ex: 'SP' ou ['SP', 'RJ'])
+        codigos_classe (List[str], optional): Lista de códigos de classe CNAE
+
+    Returns:
+        pd.DataFrame: Dados de estoque por classe CNAE
+    """
+    with Emprego() as api:
+        dados = api.get_estoque_emprego_classe_cnae_estadual(ufs=uf, codigos_classe=codigos_classe)
+    return pd.DataFrame(dados)
+
+
+def get_estoque_emprego_uf_cbo(siglas_uf: List[str] = None,
+                               codigos_classe: List[str] = None,
+                               codigos_cbo: List[str] = None) -> pd.DataFrame:
+    """
+    Obter dados de estoque de emprego por UF, classe CNAE (4 dígitos) e
+    ocupação (CBO) como DataFrame.
+
+    Args:
+        siglas_uf (List[str], optional): Siglas de UF
+        codigos_classe (List[str], optional): Lista de códigos de classe CNAE
+        codigos_cbo (List[str], optional): Lista de códigos CBO
+
+    Returns:
+        pd.DataFrame: Dados de estoque por UF/classe/CBO
+    """
+    with Emprego() as api:
+        dados = api.get_estoque_emprego_uf_cbo(
+            siglas_uf=siglas_uf, codigos_classe=codigos_classe, codigos_cbo=codigos_cbo
+        )
+    return pd.DataFrame(dados)
+
+
+def get_renda_media_emprego(tipos: List[str] = None,
+                            codigos: List[str] = None) -> pd.DataFrame:
+    """
+    Obter dados de remuneração média RAIS como DataFrame.
+
+    Args:
+        tipos (List[str], optional): 'Geral', 'Divisao' e/ou 'Grupo'
+        codigos (List[str], optional): Códigos CNAE correspondentes ao tipo
+
+    Returns:
+        pd.DataFrame: Dados de remuneração média
+    """
+    with Emprego() as api:
+        dados = api.get_renda_media_emprego(tipos=tipos, codigos=codigos)
+    return pd.DataFrame(dados)
+
+
+def get_potec_emprego(codigos_classe: List[str] = None) -> pd.DataFrame:
+    """
+    Obter dados do índice Potec por classe CNAE (4 dígitos) como DataFrame.
+
+    Args:
+        codigos_classe (List[str], optional): Lista de códigos de classe CNAE
+
+    Returns:
+        pd.DataFrame: Dados do índice Potec
+    """
+    with Emprego() as api:
+        dados = api.get_potec_emprego(codigos_classe=codigos_classe)
+    return pd.DataFrame(dados)
+
+
+def get_date_bases() -> pd.DataFrame:
+    """
+    Obter a data da última atualização de cada base (ComexStat, CAGED, RAIS)
+    como DataFrame.
+
+    Returns:
+        pd.DataFrame: Uma linha por base, com colunas 'Base' e 'DataUltimaAtualizacao'
+    """
+    with Emprego() as api:
+        dados = api.get_date_bases()
+    return pd.DataFrame(dados)
 
 
 def get_saldo_caged_nacional(nivel_cnae: str,

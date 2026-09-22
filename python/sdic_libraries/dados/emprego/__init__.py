@@ -32,6 +32,20 @@ from .api import (
     # Funções de estoque
     get_estoque_emprego_nacional,
     get_estoque_emprego_estadual,
+    # Funções de estoque por porte e setor (indústria x comércio/serviços)
+    get_estoque_emprego_porte_nacional,
+    get_estoque_emprego_porte_estadual,
+    # Funções de estoque por classe CNAE
+    get_estoque_emprego_classe_cnae_nacional,
+    get_estoque_emprego_classe_cnae_estadual,
+    # Estoque por UF, classe CNAE e ocupação (CBO)
+    get_estoque_emprego_uf_cbo,
+    # Renda média RAIS
+    get_renda_media_emprego,
+    # Índice Potec
+    get_potec_emprego,
+    # Metadados das bases
+    get_date_bases,
     # Funções de estoque estimado
     get_estoque_emprego_estimado_nacional_anual,
     get_estoque_emprego_estimado_estadual_anual,
@@ -91,6 +105,20 @@ __all__ = [
     # Funções de estoque
     "get_estoque_emprego_nacional",
     "get_estoque_emprego_estadual",
+    # Funções de estoque por porte e setor (indústria x comércio/serviços)
+    "get_estoque_emprego_porte_nacional",
+    "get_estoque_emprego_porte_estadual",
+    # Funções de estoque por classe CNAE
+    "get_estoque_emprego_classe_cnae_nacional",
+    "get_estoque_emprego_classe_cnae_estadual",
+    # Estoque por UF, classe CNAE e ocupação (CBO)
+    "get_estoque_emprego_uf_cbo",
+    # Renda média RAIS
+    "get_renda_media_emprego",
+    # Índice Potec
+    "get_potec_emprego",
+    # Metadados das bases
+    "get_date_bases",
     # Funções de estoque estimado
     "get_estoque_emprego_estimado_nacional_anual",
     "get_estoque_emprego_estimado_estadual_anual",

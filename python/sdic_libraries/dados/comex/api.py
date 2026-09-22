@@ -278,12 +278,13 @@ class Comex:
 
     def _get_ncm_nacional_mensal(self, endpoint: str, ano_minimo: int = None, mes_maximo: int = None,
                                   anos: List[int] = None, lista_ncms: List[int] = None,
-                                  secao: str = None) -> List[Dict[str, Any]]:
+                                  secao: str = None, agregado_ano: bool = False) -> List[Dict[str, Any]]:
         body: Dict[str, Any] = {
             'ano_minimo': ano_minimo or 0,
             'mes_maximo': mes_maximo or 0,
             'anos': anos or [],
             'lista_ncms': lista_ncms or [],
+            'agregado_ano': agregado_ano,
         }
         items = self._fetch_all_paginated_post(endpoint, body, {})
         if secao:
@@ -293,20 +294,23 @@ class Comex:
 
     def get_exportacao_ncm_nacional_mensal(self, ano_minimo: int = None, mes_maximo: int = None,
                                             anos: List[int] = None, lista_ncms: List[int] = None,
-                                            secao: str = None) -> List[Dict[str, Any]]:
+                                            secao: str = None, agregado_ano: bool = False) -> List[Dict[str, Any]]:
         """Exportações nacionais agregadas por NCM (`/exportacao_agregada_ncm`).
 
         `secao`, quando informada, filtra os NCMs pela seção ISIC correspondente
         (usando `get_ncm_isic_mapa`, cacheado em memória na instância) — o
-        endpoint de origem não carrega essa informação.
+        endpoint de origem não carrega essa informação. `agregado_ano`, quando
+        `True`, soma no próprio BigQuery e devolve 1 linha por (ano, NCM) em vez
+        de 1 por (ano, mês, NCM) — bem mais barato quando o consumidor só quer o
+        total anual (é o caso mais comum; evita paginar e somar mês a mês aqui).
         """
-        return self._get_ncm_nacional_mensal('/exportacao_agregada_ncm', ano_minimo, mes_maximo, anos, lista_ncms, secao)
+        return self._get_ncm_nacional_mensal('/exportacao_agregada_ncm', ano_minimo, mes_maximo, anos, lista_ncms, secao, agregado_ano)
 
     def get_importacao_ncm_nacional_mensal(self, ano_minimo: int = None, mes_maximo: int = None,
                                             anos: List[int] = None, lista_ncms: List[int] = None,
-                                            secao: str = None) -> List[Dict[str, Any]]:
+                                            secao: str = None, agregado_ano: bool = False) -> List[Dict[str, Any]]:
         """Importações nacionais agregadas por NCM (`/importacao_agregada_ncm`). Ver `get_exportacao_ncm_nacional_mensal`."""
-        return self._get_ncm_nacional_mensal('/importacao_agregada_ncm', ano_minimo, mes_maximo, anos, lista_ncms, secao)
+        return self._get_ncm_nacional_mensal('/importacao_agregada_ncm', ano_minimo, mes_maximo, anos, lista_ncms, secao, agregado_ano)
 
     # ========== ISIC DIVISÃO (nacional) ==========
 

@@ -666,7 +666,140 @@ Emprego <- R6::R6Class(
       
       return(self$.fetch_all_paginated_get("/get_estoque_emprego_estadual/", params))
     },
-    
+
+    #' @description
+    #' Obter dados de estoque de emprego por porte de estabelecimento e setor
+    #' (indústria x comércio/serviços), agregado nacionalmente - SEMPRE
+    #' RETORNA TODOS OS REGISTROS. Dados reais a partir de 2006 (a RAIS só
+    #' adotou CNAE 2.0 nesse ano).
+    #' @param nivel_cnae 'divisao' (2 dígitos), 'grupo' (3) ou 'classe' (4)
+    #' @param codigos_cnae Vetor de códigos CNAE no nível escolhido (opcional)
+    #' @param porte Vetor de portes para filtrar (opcional)
+    #' @param setor 'Indústria' ou 'Comércio e Serviços' (opcional)
+    #' @return Lista com TODOS os dados de estoque por porte/setor
+    get_estoque_emprego_porte_nacional = function(nivel_cnae = "divisao",
+                                                  codigos_cnae = NULL,
+                                                  porte = NULL,
+                                                  setor = NULL) {
+      if (!nivel_cnae %in% c("divisao", "grupo", "classe")) {
+        stop("nivel_cnae deve ser 'divisao', 'grupo' ou 'classe'")
+      }
+
+      params <- list(nivel_cnae = nivel_cnae, tamanho_pagina = 1000)
+      if (!is.null(codigos_cnae)) params$codigos_cnae <- paste(codigos_cnae, collapse = ",")
+      if (!is.null(porte)) params$porte <- paste(porte, collapse = ",")
+      if (!is.null(setor)) params$setor <- setor
+
+      return(self$.fetch_all_paginated_get("/get_estoque_emprego_porte_nacional/", params))
+    },
+
+    #' @description
+    #' Obter dados de estoque de emprego por porte de estabelecimento e
+    #' setor, por UF - SEMPRE RETORNA TODOS OS REGISTROS. Dados reais a
+    #' partir de 2006 (a RAIS só adotou CNAE 2.0 nesse ano).
+    #' @param ufs Sigla(s) de UF (ex: 'SP' ou c('SP', 'RJ'))
+    #' @param nivel_cnae 'divisao' (2 dígitos), 'grupo' (3) ou 'classe' (4)
+    #' @param codigos_cnae Vetor de códigos CNAE no nível escolhido (opcional)
+    #' @param porte Vetor de portes para filtrar (opcional)
+    #' @param setor 'Indústria' ou 'Comércio e Serviços' (opcional)
+    #' @return Lista com TODOS os dados de estoque por porte/setor
+    get_estoque_emprego_porte_estadual = function(ufs,
+                                                  nivel_cnae = "divisao",
+                                                  codigos_cnae = NULL,
+                                                  porte = NULL,
+                                                  setor = NULL) {
+      if (!nivel_cnae %in% c("divisao", "grupo", "classe")) {
+        stop("nivel_cnae deve ser 'divisao', 'grupo' ou 'classe'")
+      }
+
+      ufs_str <- if (length(ufs) > 1) paste(ufs, collapse = ",") else ufs
+      params <- list(ufs = ufs_str, nivel_cnae = nivel_cnae, tamanho_pagina = 1000)
+      if (!is.null(codigos_cnae)) params$codigos_cnae <- paste(codigos_cnae, collapse = ",")
+      if (!is.null(porte)) params$porte <- paste(porte, collapse = ",")
+      if (!is.null(setor)) params$setor <- setor
+
+      return(self$.fetch_all_paginated_get("/get_estoque_emprego_porte_estadual/", params))
+    },
+
+    #' @description
+    #' Obter dados de estoque de emprego por classe CNAE (4 dígitos),
+    #' agregado nacionalmente - SEMPRE RETORNA TODOS OS REGISTROS.
+    #' @param codigos_classe Vetor de códigos de classe CNAE (opcional)
+    #' @return Lista com TODOS os dados de estoque por classe CNAE
+    get_estoque_emprego_classe_cnae_nacional = function(codigos_classe = NULL) {
+      params <- list(tamanho_pagina = 1000)
+      if (!is.null(codigos_classe)) params$codigos_classe <- paste(codigos_classe, collapse = ",")
+
+      return(self$.fetch_all_paginated_get("/get_estoque_emprego_classe_cnae_nacional/", params))
+    },
+
+    #' @description
+    #' Obter dados de estoque de emprego por classe CNAE (4 dígitos), por UF -
+    #' SEMPRE RETORNA TODOS OS REGISTROS.
+    #' @param ufs Sigla(s) de UF (ex: 'SP' ou c('SP', 'RJ'))
+    #' @param codigos_classe Vetor de códigos de classe CNAE (opcional)
+    #' @return Lista com TODOS os dados de estoque por classe CNAE
+    get_estoque_emprego_classe_cnae_estadual = function(ufs, codigos_classe = NULL) {
+      ufs_str <- if (length(ufs) > 1) paste(ufs, collapse = ",") else ufs
+      params <- list(ufs = ufs_str, tamanho_pagina = 1000)
+      if (!is.null(codigos_classe)) params$codigos_classe <- paste(codigos_classe, collapse = ",")
+
+      return(self$.fetch_all_paginated_get("/get_estoque_emprego_classe_cnae_estadual/", params))
+    },
+
+    #' @description
+    #' Obter dados de estoque de emprego por UF, classe CNAE (4 dígitos) e
+    #' ocupação (CBO) - SEMPRE RETORNA TODOS OS REGISTROS.
+    #' @param siglas_uf Vetor de siglas de UF (opcional)
+    #' @param codigos_classe Vetor de códigos de classe CNAE (opcional)
+    #' @param codigos_cbo Vetor de códigos CBO (opcional)
+    #' @return Lista com TODOS os dados de estoque por UF/classe/CBO
+    get_estoque_emprego_uf_cbo = function(siglas_uf = NULL,
+                                          codigos_classe = NULL,
+                                          codigos_cbo = NULL) {
+      params <- list(tamanho_pagina = 1000)
+      if (!is.null(siglas_uf)) params$siglas_uf <- paste(siglas_uf, collapse = ",")
+      if (!is.null(codigos_classe)) params$codigos_classe <- paste(codigos_classe, collapse = ",")
+      if (!is.null(codigos_cbo)) params$codigos_cbo <- paste(codigos_cbo, collapse = ",")
+
+      return(self$.fetch_all_paginated_get("/get_estoque_emprego_uf_cbo/", params))
+    },
+
+    #' @description
+    #' Obter dados de remuneração média RAIS por nível de agregação e código -
+    #' SEMPRE RETORNA TODOS OS REGISTROS.
+    #' @param tipos Vetor com 'Geral', 'Divisao' e/ou 'Grupo' (opcional)
+    #' @param codigos Vetor de códigos CNAE correspondentes ao tipo (opcional)
+    #' @return Lista com TODOS os dados de remuneração média
+    get_renda_media_emprego = function(tipos = NULL, codigos = NULL) {
+      params <- list(tamanho_pagina = 1000)
+      if (!is.null(tipos)) params$tipos <- paste(tipos, collapse = ",")
+      if (!is.null(codigos)) params$codigos <- paste(codigos, collapse = ",")
+
+      return(self$.fetch_all_paginated_get("/get_renda_media_emprego/", params))
+    },
+
+    #' @description
+    #' Obter dados do índice Potec (intensidade tecnológica por estoque de
+    #' pesquisadores/engenheiros) por classe CNAE (4 dígitos) - SEMPRE
+    #' RETORNA TODOS OS REGISTROS.
+    #' @param codigos_classe Vetor de códigos de classe CNAE (opcional)
+    #' @return Lista com TODOS os dados do índice Potec
+    get_potec_emprego = function(codigos_classe = NULL) {
+      params <- list(tamanho_pagina = 1000)
+      if (!is.null(codigos_classe)) params$codigos_classe <- paste(codigos_classe, collapse = ",")
+
+      return(self$.fetch_all_paginated_get("/get_potec_emprego/", params))
+    },
+
+    #' @description
+    #' Obter a data da última atualização de cada base (ComexStat, CAGED, RAIS).
+    #' @return Lista com uma entrada por base ('Base' e 'DataUltimaAtualizacao')
+    get_date_bases = function() {
+      response <- self$.make_request("/data_bases")
+      return(lapply(response, self$.normalize_response_item))
+    },
+
     #' @description
     #' Obter dados de estoque de emprego para lista de códigos CNAE
     #' SEMPRE RETORNA TODOS OS REGISTROS - loop automático através de todas as páginas
@@ -1718,6 +1851,145 @@ get_estoque_emprego_estadual <- function(sigla_uf,
   
   return(df)
 }
+
+
+# ========== FUNÇÕES DE ESTOQUE POR PORTE E SETOR (indústria x comércio/serviços) ==========
+# Dados reais a partir de 2006 (a RAIS só adotou CNAE 2.0 nesse ano).
+
+#' Obter estoque de emprego por porte de estabelecimento e setor, agregado nacionalmente
+#'
+#' @param nivel_cnae 'divisao' (2 dígitos), 'grupo' (3) ou 'classe' (4)
+#' @param codigos_cnae Vetor de códigos CNAE no nível escolhido (opcional)
+#' @param porte Vetor de portes para filtrar (opcional)
+#' @param setor 'Indústria' ou 'Comércio e Serviços' (opcional)
+#' @return Tibble com estoque por porte/setor
+#' @export
+get_estoque_emprego_porte_nacional <- function(nivel_cnae = "divisao",
+                                               codigos_cnae = NULL,
+                                               porte = NULL,
+                                               setor = NULL) {
+  api <- Emprego$new()
+  dados <- api$get_estoque_emprego_porte_nacional(
+    nivel_cnae = nivel_cnae, codigos_cnae = codigos_cnae, porte = porte, setor = setor
+  )
+  if (length(dados) == 0) return(tibble::tibble())
+  tibble::as_tibble(dplyr::bind_rows(dados))
+}
+
+#' Obter estoque de emprego por porte de estabelecimento e setor, por UF
+#'
+#' @param ufs Sigla(s) de UF (ex: 'SP' ou c('SP', 'RJ'))
+#' @param nivel_cnae 'divisao' (2 dígitos), 'grupo' (3) ou 'classe' (4)
+#' @param codigos_cnae Vetor de códigos CNAE no nível escolhido (opcional)
+#' @param porte Vetor de portes para filtrar (opcional)
+#' @param setor 'Indústria' ou 'Comércio e Serviços' (opcional)
+#' @return Tibble com estoque por porte/setor
+#' @export
+get_estoque_emprego_porte_estadual <- function(ufs,
+                                               nivel_cnae = "divisao",
+                                               codigos_cnae = NULL,
+                                               porte = NULL,
+                                               setor = NULL) {
+  api <- Emprego$new()
+  dados <- api$get_estoque_emprego_porte_estadual(
+    ufs = ufs, nivel_cnae = nivel_cnae, codigos_cnae = codigos_cnae, porte = porte, setor = setor
+  )
+  if (length(dados) == 0) return(tibble::tibble())
+  tibble::as_tibble(dplyr::bind_rows(dados))
+}
+
+
+# ========== FUNÇÕES DE ESTOQUE POR CLASSE CNAE (4 dígitos) ==========
+
+#' Obter estoque de emprego por classe CNAE (4 dígitos), agregado nacionalmente
+#'
+#' @param codigos_classe Vetor de códigos de classe CNAE (opcional)
+#' @return Tibble com estoque por classe CNAE
+#' @export
+get_estoque_emprego_classe_cnae_nacional <- function(codigos_classe = NULL) {
+  api <- Emprego$new()
+  dados <- api$get_estoque_emprego_classe_cnae_nacional(codigos_classe = codigos_classe)
+  if (length(dados) == 0) return(tibble::tibble())
+  tibble::as_tibble(dplyr::bind_rows(dados))
+}
+
+#' Obter estoque de emprego por classe CNAE (4 dígitos), por UF
+#'
+#' @param ufs Sigla(s) de UF (ex: 'SP' ou c('SP', 'RJ'))
+#' @param codigos_classe Vetor de códigos de classe CNAE (opcional)
+#' @return Tibble com estoque por classe CNAE
+#' @export
+get_estoque_emprego_classe_cnae_estadual <- function(ufs, codigos_classe = NULL) {
+  api <- Emprego$new()
+  dados <- api$get_estoque_emprego_classe_cnae_estadual(ufs = ufs, codigos_classe = codigos_classe)
+  if (length(dados) == 0) return(tibble::tibble())
+  tibble::as_tibble(dplyr::bind_rows(dados))
+}
+
+
+# ========== ESTOQUE POR UF, CLASSE CNAE E OCUPAÇÃO (CBO) ==========
+
+#' Obter estoque de emprego por UF, classe CNAE (4 dígitos) e ocupação (CBO)
+#'
+#' @param siglas_uf Vetor de siglas de UF (opcional)
+#' @param codigos_classe Vetor de códigos de classe CNAE (opcional)
+#' @param codigos_cbo Vetor de códigos CBO (opcional)
+#' @return Tibble com estoque por UF/classe/CBO
+#' @export
+get_estoque_emprego_uf_cbo <- function(siglas_uf = NULL, codigos_classe = NULL, codigos_cbo = NULL) {
+  api <- Emprego$new()
+  dados <- api$get_estoque_emprego_uf_cbo(
+    siglas_uf = siglas_uf, codigos_classe = codigos_classe, codigos_cbo = codigos_cbo
+  )
+  if (length(dados) == 0) return(tibble::tibble())
+  tibble::as_tibble(dplyr::bind_rows(dados))
+}
+
+
+# ========== RENDA MÉDIA RAIS ==========
+
+#' Obter remuneração média RAIS por nível de agregação e código
+#'
+#' @param tipos Vetor com 'Geral', 'Divisao' e/ou 'Grupo' (opcional)
+#' @param codigos Vetor de códigos CNAE correspondentes ao tipo (opcional)
+#' @return Tibble com remuneração média
+#' @export
+get_renda_media_emprego <- function(tipos = NULL, codigos = NULL) {
+  api <- Emprego$new()
+  dados <- api$get_renda_media_emprego(tipos = tipos, codigos = codigos)
+  if (length(dados) == 0) return(tibble::tibble())
+  tibble::as_tibble(dplyr::bind_rows(dados))
+}
+
+
+# ========== ÍNDICE POTEC ==========
+
+#' Obter índice Potec (intensidade tecnológica) por classe CNAE (4 dígitos)
+#'
+#' @param codigos_classe Vetor de códigos de classe CNAE (opcional)
+#' @return Tibble com o índice Potec
+#' @export
+get_potec_emprego <- function(codigos_classe = NULL) {
+  api <- Emprego$new()
+  dados <- api$get_potec_emprego(codigos_classe = codigos_classe)
+  if (length(dados) == 0) return(tibble::tibble())
+  tibble::as_tibble(dplyr::bind_rows(dados))
+}
+
+
+# ========== METADADOS DAS BASES ==========
+
+#' Obter a data da última atualização de cada base (ComexStat, CAGED, RAIS)
+#'
+#' @return Tibble com uma linha por base ('Base' e 'DataUltimaAtualizacao')
+#' @export
+get_date_bases <- function() {
+  api <- Emprego$new()
+  dados <- api$get_date_bases()
+  if (length(dados) == 0) return(tibble::tibble())
+  tibble::as_tibble(dplyr::bind_rows(dados))
+}
+
 
 #' Obter dados anuais de estoque agrupados para lista de códigos CNAE em nível estadual
 #'

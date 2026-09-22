@@ -306,8 +306,11 @@ Comex <- R6::R6Class(
     #' @param anos Vetor de anos específicos (opcional)
     #' @param lista_ncms Vetor de códigos NCM (opcional)
     #' @param secao Seção ISIC para filtrar (opcional)
-    get_exportacao_ncm_nacional_mensal = function(ano_minimo = NULL, mes_maximo = NULL, anos = NULL, lista_ncms = NULL, secao = NULL) {
-      private$.get_ncm_nacional_mensal("/exportacao_agregada_ncm", ano_minimo, mes_maximo, anos, lista_ncms, secao)
+    #' @param agregado_ano Se TRUE, soma no BigQuery e devolve 1 linha por
+    #'   (ano, NCM) em vez de por (ano, mês, NCM) — bem mais barato quando só
+    #'   o total anual interessa.
+    get_exportacao_ncm_nacional_mensal = function(ano_minimo = NULL, mes_maximo = NULL, anos = NULL, lista_ncms = NULL, secao = NULL, agregado_ano = FALSE) {
+      private$.get_ncm_nacional_mensal("/exportacao_agregada_ncm", ano_minimo, mes_maximo, anos, lista_ncms, secao, agregado_ano)
     },
 
     #' @description
@@ -317,8 +320,9 @@ Comex <- R6::R6Class(
     #' @param anos Vetor de anos específicos (opcional)
     #' @param lista_ncms Vetor de códigos NCM (opcional)
     #' @param secao Seção ISIC para filtrar (opcional)
-    get_importacao_ncm_nacional_mensal = function(ano_minimo = NULL, mes_maximo = NULL, anos = NULL, lista_ncms = NULL, secao = NULL) {
-      private$.get_ncm_nacional_mensal("/importacao_agregada_ncm", ano_minimo, mes_maximo, anos, lista_ncms, secao)
+    #' @param agregado_ano Se TRUE, agrega por ano (sem mês)
+    get_importacao_ncm_nacional_mensal = function(ano_minimo = NULL, mes_maximo = NULL, anos = NULL, lista_ncms = NULL, secao = NULL, agregado_ano = FALSE) {
+      private$.get_ncm_nacional_mensal("/importacao_agregada_ncm", ano_minimo, mes_maximo, anos, lista_ncms, secao, agregado_ano)
     },
 
     # ========== ISIC DIVISÃO (nacional) ==========
@@ -416,12 +420,13 @@ Comex <- R6::R6Class(
   private = list(
     .ncm_isic_mapa_cache = NULL,
 
-    .get_ncm_nacional_mensal = function(endpoint, ano_minimo, mes_maximo, anos, lista_ncms, secao) {
+    .get_ncm_nacional_mensal = function(endpoint, ano_minimo, mes_maximo, anos, lista_ncms, secao, agregado_ano = FALSE) {
       body <- list(
         ano_minimo = ano_minimo %||% 0,
         mes_maximo = mes_maximo %||% 0,
         anos = anos %||% list(),
-        lista_ncms = lista_ncms %||% list()
+        lista_ncms = lista_ncms %||% list(),
+        agregado_ano = agregado_ano
       )
       items <- self$.fetch_all_paginated_post(endpoint, body, list())
       if (!is.null(secao) && nzchar(secao)) {
