@@ -8,6 +8,8 @@ dados estatísticos de APIs do governo brasileiro.
 from __future__ import annotations
 
 from . import emprego
+from . import comex
+from .comex import Comex, ComexAPIError
 from .emprego import (
     Emprego,
     EmpregoAPIError,
@@ -66,6 +68,9 @@ __all__ = [
     "Emprego",
     "EmpregoAPIError",
     "PortalEmprego",
+    "comex",
+    "Comex",
+    "ComexAPIError",
     # Relatório (cache publicado — dados brutos por estado)
     "get_relatorio_emprego_estadual",
     "get_relatorio_emprego_saldo_estadual",
