@@ -212,8 +212,8 @@ Comex <- R6::R6Class(
       repeat {
         request_params <- params
         request_params$pagina <- pagina
-        if (is.null(request_params$tamanho_pagina)) request_params$tamanho_pagina <- 1000
-        page_size <- as.integer(request_params$tamanho_pagina %||% 1000)
+        if (is.null(request_params$tamanho_pagina)) request_params$tamanho_pagina <- 5000
+        page_size <- as.integer(request_params$tamanho_pagina %||% 5000)
 
         response <- self$.make_request(endpoint, request_params)
         items <- self$.extract_items(response)
@@ -247,8 +247,8 @@ Comex <- R6::R6Class(
       repeat {
         request_params <- params
         request_params$pagina <- pagina
-        if (is.null(request_params$tamanho_pagina)) request_params$tamanho_pagina <- 1000
-        page_size <- as.integer(request_params$tamanho_pagina %||% 1000)
+        if (is.null(request_params$tamanho_pagina)) request_params$tamanho_pagina <- 5000
+        page_size <- as.integer(request_params$tamanho_pagina %||% 5000)
 
         request_body <- body
         request_body$pagina <- pagina
@@ -367,8 +367,9 @@ Comex <- R6::R6Class(
     #' @param divisao Código de divisão ISIC (opcional)
     #' @param bloco Código de bloco econômico (opcional)
     #' @param agregado_ano Se TRUE, agrega por ano (sem mês)
-    get_exportacao_isic_divisao_estadual_mensal = function(estado = NULL, pais = NULL, ano_minimo = NULL, mes_maximo = NULL, secao = NULL, divisao = NULL, bloco = NULL, agregado_ano = FALSE) {
-      params <- list(ano_minimo = ano_minimo %||% 0, mes_maximo = mes_maximo %||% 0, estado = estado %||% "", pais = pais %||% "", secao = secao %||% "", agregado_ano = agregado_ano)
+    #' @param agregado_pais Se TRUE, soma entre países (sem a coluna Pais)
+    get_exportacao_isic_divisao_estadual_mensal = function(estado = NULL, pais = NULL, ano_minimo = NULL, mes_maximo = NULL, secao = NULL, divisao = NULL, bloco = NULL, agregado_ano = FALSE, agregado_pais = FALSE) {
+      params <- list(ano_minimo = ano_minimo %||% 0, mes_maximo = mes_maximo %||% 0, estado = estado %||% "", pais = pais %||% "", secao = secao %||% "", agregado_ano = agregado_ano, agregado_pais = agregado_pais)
       if (!is.null(divisao)) params$divisao <- divisao
       if (!is.null(bloco)) params$bloco <- bloco
       self$.fetch_all_paginated_get("/exportacao_uf_isic_divisao_gcloud", params)
@@ -384,8 +385,9 @@ Comex <- R6::R6Class(
     #' @param divisao Código de divisão ISIC (opcional)
     #' @param bloco Código de bloco econômico (opcional)
     #' @param agregado_ano Se TRUE, agrega por ano (sem mês)
-    get_importacao_isic_divisao_estadual_mensal = function(estado = NULL, pais = NULL, ano_minimo = NULL, mes_maximo = NULL, secao = NULL, divisao = NULL, bloco = NULL, agregado_ano = FALSE) {
-      params <- list(ano_minimo = ano_minimo %||% 0, mes_maximo = mes_maximo %||% 0, estado = estado %||% "", pais = pais %||% "", secao = secao %||% "", agregado_ano = agregado_ano)
+    #' @param agregado_pais Se TRUE, soma entre países (sem a coluna Pais)
+    get_importacao_isic_divisao_estadual_mensal = function(estado = NULL, pais = NULL, ano_minimo = NULL, mes_maximo = NULL, secao = NULL, divisao = NULL, bloco = NULL, agregado_ano = FALSE, agregado_pais = FALSE) {
+      params <- list(ano_minimo = ano_minimo %||% 0, mes_maximo = mes_maximo %||% 0, estado = estado %||% "", pais = pais %||% "", secao = secao %||% "", agregado_ano = agregado_ano, agregado_pais = agregado_pais)
       if (!is.null(divisao)) params$divisao <- divisao
       if (!is.null(bloco)) params$bloco <- bloco
       self$.fetch_all_paginated_get("/importacao_uf_isic_divisao_gcloud", params)

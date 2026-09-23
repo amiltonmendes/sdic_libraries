@@ -171,8 +171,8 @@ class Comex:
         while True:
             request_params = dict(params)
             request_params['pagina'] = pagina
-            request_params.setdefault('tamanho_pagina', 1000)
-            page_size = int(request_params.get('tamanho_pagina', 1000) or 1000)
+            request_params.setdefault('tamanho_pagina', 5000)
+            page_size = int(request_params.get('tamanho_pagina', 5000) or 1000)
 
             response = self._make_request(endpoint, request_params)
             items = self._extract_items(response)
@@ -207,8 +207,8 @@ class Comex:
         while True:
             request_params = dict(params)
             request_params['pagina'] = pagina
-            request_params.setdefault('tamanho_pagina', 1000)
-            page_size = int(request_params.get('tamanho_pagina', 1000) or 1000)
+            request_params.setdefault('tamanho_pagina', 5000)
+            page_size = int(request_params.get('tamanho_pagina', 5000) or 1000)
 
             request_body = dict(body)
             request_body['pagina'] = pagina
@@ -347,12 +347,16 @@ class Comex:
     def get_exportacao_isic_divisao_estadual_mensal(self, estado: str = None, pais: str = None,
                                                        ano_minimo: int = None, mes_maximo: int = None,
                                                        secao: str = None, divisao: int = None,
-                                                       bloco: int = None, agregado_ano: bool = False) -> List[Dict[str, Any]]:
+                                                       bloco: int = None, agregado_ano: bool = False,
+                                                       agregado_pais: bool = False) -> List[Dict[str, Any]]:
         """Exportações por UF, país e divisão ISIC (`/exportacao_uf_isic_divisao_gcloud`).
 
         `bloco`: código de bloco econômico (`pais_bloco.CO_BLOCO`, ex. `22`
         para União Europeia) para filtrar por um recorte de países sem listar
-        cada um manualmente.
+        cada um manualmente. `agregado_pais`, quando `True`, soma o FOB entre
+        países no próprio BigQuery e não devolve a coluna `Pais` — bem mais
+        barato quando o consumidor só quer o total por UF/divisão (o item
+        `Pais` some da resposta em vez de vir repetido por país).
         """
         params: Dict[str, Any] = {
             'ano_minimo': ano_minimo or 0,
@@ -361,6 +365,7 @@ class Comex:
             'pais': pais or '',
             'secao': secao or '',
             'agregado_ano': agregado_ano,
+            'agregado_pais': agregado_pais,
         }
         if divisao is not None:
             params['divisao'] = divisao
@@ -371,7 +376,8 @@ class Comex:
     def get_importacao_isic_divisao_estadual_mensal(self, estado: str = None, pais: str = None,
                                                        ano_minimo: int = None, mes_maximo: int = None,
                                                        secao: str = None, divisao: int = None,
-                                                       bloco: int = None, agregado_ano: bool = False) -> List[Dict[str, Any]]:
+                                                       bloco: int = None, agregado_ano: bool = False,
+                                                       agregado_pais: bool = False) -> List[Dict[str, Any]]:
         """Importações por UF, país e divisão ISIC (`/importacao_uf_isic_divisao_gcloud`). Ver `get_exportacao_isic_divisao_estadual_mensal`."""
         params: Dict[str, Any] = {
             'ano_minimo': ano_minimo or 0,
@@ -380,6 +386,7 @@ class Comex:
             'pais': pais or '',
             'secao': secao or '',
             'agregado_ano': agregado_ano,
+            'agregado_pais': agregado_pais,
         }
         if divisao is not None:
             params['divisao'] = divisao
