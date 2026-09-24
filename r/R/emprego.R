@@ -299,10 +299,13 @@ Emprego <- R6::R6Class(
         "grupo"
       }
 
-      body <- list(codigos = as.character(lista_cnae))
+      # I() força serialização como array JSON mesmo com 1 elemento —
+      # sem isso, httr2/jsonlite reduz um vetor de tamanho 1 a um escalar
+      # (auto_unbox) e a API rejeita com 422 (espera list[str]/list[int]).
+      body <- list(codigos = I(as.character(lista_cnae)))
       resolved_sigla_uf <- sigla_uf %||% uf
-      if (!is.null(resolved_sigla_uf)) body$siglas_uf <- as.character(resolved_sigla_uf)
-      if (!is.null(municipio)) body$codigos_municipio <- as.integer(municipio)
+      if (!is.null(resolved_sigla_uf)) body$siglas_uf <- I(as.character(resolved_sigla_uf))
+      if (!is.null(municipio)) body$codigos_municipio <- I(as.integer(municipio))
       if (!is.null(data_minima)) body$data_minima <- data_minima
 
       return(self$.fetch_all_paginated_post(
@@ -586,18 +589,20 @@ Emprego <- R6::R6Class(
         "grupo"
       }
 
+      # I() força serialização como array JSON mesmo com 1 elemento — ver
+      # nota equivalente em get_saldo_emprego_detalhado_lista_cnae.
       grupos_formatados <- lapply(grupos_cnae, function(grupo) {
         list(
           nome_grupo = grupo$nome_grupo %||% "Grupo",
-          codigos = as.character(grupo$codigos_cnae %||% grupo$codigos %||% character(0))
+          codigos = I(as.character(grupo$codigos_cnae %||% grupo$codigos %||% character(0)))
         )
       })
 
       body <- list(grupos = grupos_formatados)
 
       resolved_sigla_uf <- sigla_uf %||% uf
-      if (!is.null(resolved_sigla_uf)) body$siglas_uf <- as.character(resolved_sigla_uf)
-      if (!is.null(municipio)) body$codigos_municipio <- as.integer(municipio)
+      if (!is.null(resolved_sigla_uf)) body$siglas_uf <- I(as.character(resolved_sigla_uf))
+      if (!is.null(municipio)) body$codigos_municipio <- I(as.integer(municipio))
       if (!is.null(data_minima)) body$data_minima <- data_minima
 
       return(self$.fetch_all_paginated_post(
@@ -859,8 +864,16 @@ Emprego <- R6::R6Class(
       
       resolved_ufs <- ufs %||% sigla_uf
 
-      body <- grupos_cnae
-      
+      # I() força codigos_cnae a serializar como array JSON mesmo com 1
+      # elemento — sem isso, um grupo com um único código vira escalar no
+      # JSON e a API rejeita com 422 (espera list[str]).
+      body <- lapply(grupos_cnae, function(grupo) {
+        list(
+          nome_grupo = grupo$nome_grupo,
+          codigos_cnae = I(as.character(grupo$codigos_cnae))
+        )
+      })
+
       params <- list(
         nivel_cnae = nivel_cnae,
         agregado = agregado,
