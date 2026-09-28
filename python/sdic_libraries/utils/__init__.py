@@ -9,7 +9,8 @@ from __future__ import annotations
 
 from . import transformacoes
 from .transformacoes import (
-    criar_indice
+    criar_indice,
+    juntar_emprego_comex,
 )
 
-__all__ = ["transformacoes", "criar_indice"]
+__all__ = ["transformacoes", "criar_indice", "juntar_emprego_comex"]

@@ -7,7 +7,9 @@
 get_estoque_emprego_uf_cbo(
   siglas_uf = NULL,
   codigos_classe = NULL,
-  codigos_cbo = NULL
+  codigos_cbo = NULL,
+  ano_minimo = NULL,
+  ano_maximo = NULL
 )
 }
 \arguments{
@@ -16,6 +18,10 @@ get_estoque_emprego_uf_cbo(
 \item{codigos_classe}{Vetor de códigos de classe CNAE (opcional)}
 
 \item{codigos_cbo}{Vetor de códigos CBO (opcional)}
+
+\item{ano_minimo}{Ano mínimo (opcional); filtra na API e reduz o volume baixado}
+
+\item{ano_maximo}{Ano máximo (opcional); filtra na API}
 }
 \value{
 Tibble com estoque por UF/classe/CBO

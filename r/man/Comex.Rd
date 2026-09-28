@@ -278,7 +278,8 @@ não carrega essa informação.
   mes_maximo = NULL,
   anos = NULL,
   lista_ncms = NULL,
-  secao = NULL
+  secao = NULL,
+  agregado_ano = FALSE
 )}\if{html}{\out{</div>}}
 }
 
@@ -294,6 +295,10 @@ não carrega essa informação.
 \item{\code{lista_ncms}}{Vetor de códigos NCM (opcional)}
 
 \item{\code{secao}}{Seção ISIC para filtrar (opcional)}
+
+\item{\code{agregado_ano}}{Se TRUE, soma no BigQuery e devolve 1 linha por
+(ano, NCM) em vez de por (ano, mês, NCM) — bem mais barato quando só
+o total anual interessa.}
 }
 \if{html}{\out{</div>}}
 }
@@ -309,7 +314,8 @@ Importações nacionais agregadas por NCM (\verb{/importacao_agregada_ncm}). Ver
   mes_maximo = NULL,
   anos = NULL,
   lista_ncms = NULL,
-  secao = NULL
+  secao = NULL,
+  agregado_ano = FALSE
 )}\if{html}{\out{</div>}}
 }
 
@@ -325,6 +331,8 @@ Importações nacionais agregadas por NCM (\verb{/importacao_agregada_ncm}). Ver
 \item{\code{lista_ncms}}{Vetor de códigos NCM (opcional)}
 
 \item{\code{secao}}{Seção ISIC para filtrar (opcional)}
+
+\item{\code{agregado_ano}}{Se TRUE, agrega por ano (sem mês)}
 }
 \if{html}{\out{</div>}}
 }
@@ -407,7 +415,8 @@ para União Europeia) para filtrar por um recorte de países.
   secao = NULL,
   divisao = NULL,
   bloco = NULL,
-  agregado_ano = FALSE
+  agregado_ano = FALSE,
+  agregado_pais = FALSE
 )}\if{html}{\out{</div>}}
 }
 
@@ -429,6 +438,8 @@ para União Europeia) para filtrar por um recorte de países.
 \item{\code{bloco}}{Código de bloco econômico (opcional)}
 
 \item{\code{agregado_ano}}{Se TRUE, agrega por ano (sem mês)}
+
+\item{\code{agregado_pais}}{Se TRUE, soma entre países (sem a coluna Pais)}
 }
 \if{html}{\out{</div>}}
 }
@@ -447,7 +458,8 @@ Importações por UF, país e divisão ISIC (\verb{/importacao_uf_isic_divisao_g
   secao = NULL,
   divisao = NULL,
   bloco = NULL,
-  agregado_ano = FALSE
+  agregado_ano = FALSE,
+  agregado_pais = FALSE
 )}\if{html}{\out{</div>}}
 }
 
@@ -469,6 +481,8 @@ Importações por UF, país e divisão ISIC (\verb{/importacao_uf_isic_divisao_g
 \item{\code{bloco}}{Código de bloco econômico (opcional)}
 
 \item{\code{agregado_ano}}{Se TRUE, agrega por ano (sem mês)}
+
+\item{\code{agregado_pais}}{Se TRUE, soma entre países (sem a coluna Pais)}
 }
 \if{html}{\out{</div>}}
 }

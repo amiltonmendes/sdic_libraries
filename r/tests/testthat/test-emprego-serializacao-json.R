@@ -88,3 +88,58 @@ test_that("get_estoque_emprego_grupos_cnae serializa 1 codigo por grupo como arr
   json <- .json_do_body(registro$body)
   expect_true(grepl('"codigos_cnae":\\["47"\\]', json))
 })
+
+
+# Regressão: endpoints CAGED GET esperam parâmetros repetidos (?siglas_uf=SP&siglas_uf=RJ)
+# e as chaves codigos_divisao/codigos_grupo/codigos_subclasse. Antes, o R enviava
+# ?codigos=47 (ignorado pela API -> todas as divisões) e ?siglas_uf=SP,RJ (0 linhas).
+test_that("saldo CAGED GET envia chaves por nivel, UFs repetidas e data_maxima", {
+  registro <- new.env()
+  testthat::local_mocked_bindings(
+    req_perform = function(req, ...) {
+      registro$url <- req$url
+      httr2::response(
+        status_code = 200,
+        headers = list("Content-Type" = "application/json"),
+        body = charToRaw('{"count":0,"items":[]}')
+      )
+    },
+    .package = "httr2"
+  )
+
+  api <- Emprego$new(base_url = "https://sdicapi.teste", api_key = "chave-teste")
+  api$get_saldo_caged_estadual_divisao(
+    siglas_uf = c("SP", "RJ"), codigos = c("47", "10"),
+    data_minima = "2024-01-01", data_maxima = "2024-06-30"
+  )
+
+  expect_match(registro$url, "siglas_uf=SP&siglas_uf=RJ", fixed = TRUE)
+  expect_match(registro$url, "codigos_divisao=47&codigos_divisao=10", fixed = TRUE)
+  expect_match(registro$url, "data_maxima=2024-06-30", fixed = TRUE)
+  expect_false(grepl("[?&]codigos=", registro$url))
+})
+
+
+# ano_minimo/ano_maximo opcionais nos endpoints RAIS: vão na query string só quando informados.
+test_that("RAIS GET envia ano_minimo/ano_maximo apenas quando informados", {
+  registro <- new.env()
+  testthat::local_mocked_bindings(
+    req_perform = function(req, ...) {
+      registro$url <- req$url
+      httr2::response(
+        status_code = 200,
+        headers = list("Content-Type" = "application/json"),
+        body = charToRaw('{"count":0,"items":[]}')
+      )
+    },
+    .package = "httr2"
+  )
+
+  api <- Emprego$new(base_url = "https://sdicapi.teste", api_key = "chave-teste")
+  api$get_estoque_emprego_uf_cbo(siglas_uf = "SP", ano_minimo = 2023, ano_maximo = 2024)
+  expect_match(registro$url, "ano_minimo=2023", fixed = TRUE)
+  expect_match(registro$url, "ano_maximo=2024", fixed = TRUE)
+
+  api$get_potec_emprego(codigos_classe = "7210")
+  expect_false(grepl("ano_m", registro$url))
+})

@@ -165,7 +165,8 @@ Loop automático através de todas as páginas
   municipio = NULL,
   codigo_cnae = NULL,
   nivel_cnae = NULL,
-  data_minima = NULL
+  data_minima = NULL,
+  data_maxima = NULL
 )}\if{html}{\out{</div>}}
 }
 
@@ -185,6 +186,8 @@ Loop automático através de todas as páginas
 \item{\code{nivel_cnae}}{Nível CNAE (2=divisão, 3=grupo, NULL=subclasse) - opcional}
 
 \item{\code{data_minima}}{Data mínima em formato YYYY-MM-DD - opcional}
+
+\item{\code{data_maxima}}{Data máxima em formato YYYY-MM-DD - opcional}
 }
 \if{html}{\out{</div>}}
 }
@@ -495,7 +498,9 @@ Loop automático através de todas as páginas
 \if{html}{\out{<div class="r">}}\preformatted{Emprego$get_estoque_emprego_nacional(
   codigos_cnae = NULL,
   nivel_cnae = 2,
-  agregado = FALSE
+  agregado = FALSE,
+  ano_minimo = NULL,
+  ano_maximo = NULL
 )}\if{html}{\out{</div>}}
 }
 
@@ -507,6 +512,10 @@ Loop automático através de todas as páginas
 \item{\code{nivel_cnae}}{Nível CNAE (2=divisão, 3=grupo)}
 
 \item{\code{agregado}}{Se TRUE, agrega todos os estados}
+
+\item{\code{ano_minimo}}{Ano mínimo (opcional); filtra na API e reduz o volume baixado}
+
+\item{\code{ano_maximo}}{Ano máximo (opcional); filtra na API}
 }
 \if{html}{\out{</div>}}
 }
@@ -526,7 +535,9 @@ Loop automático através de todas as páginas
   uf = NULL,
   ufs = NULL,
   codigos_cnae = NULL,
-  nivel_cnae = 2
+  nivel_cnae = 2,
+  ano_minimo = NULL,
+  ano_maximo = NULL
 )}\if{html}{\out{</div>}}
 }
 
@@ -540,6 +551,10 @@ Loop automático através de todas as páginas
 \item{\code{codigos_cnae}}{Vetor de códigos CNAE (opcional)}
 
 \item{\code{nivel_cnae}}{Nível CNAE (2=divisão, 3=grupo)}
+
+\item{\code{ano_minimo}}{Ano mínimo (opcional); filtra na API e reduz o volume baixado}
+
+\item{\code{ano_maximo}}{Ano máximo (opcional); filtra na API}
 }
 \if{html}{\out{</div>}}
 }
@@ -560,7 +575,9 @@ adotou CNAE 2.0 nesse ano).
   nivel_cnae = "divisao",
   codigos_cnae = NULL,
   porte = NULL,
-  setor = NULL
+  setor = NULL,
+  ano_minimo = NULL,
+  ano_maximo = NULL
 )}\if{html}{\out{</div>}}
 }
 
@@ -574,6 +591,10 @@ adotou CNAE 2.0 nesse ano).
 \item{\code{porte}}{Vetor de portes para filtrar (opcional)}
 
 \item{\code{setor}}{'Indústria' ou 'Comércio e Serviços' (opcional)}
+
+\item{\code{ano_minimo}}{Ano mínimo (opcional); filtra na API e reduz o volume baixado}
+
+\item{\code{ano_maximo}}{Ano máximo (opcional); filtra na API}
 }
 \if{html}{\out{</div>}}
 }
@@ -594,7 +615,9 @@ partir de 2006 (a RAIS só adotou CNAE 2.0 nesse ano).
   nivel_cnae = "divisao",
   codigos_cnae = NULL,
   porte = NULL,
-  setor = NULL
+  setor = NULL,
+  ano_minimo = NULL,
+  ano_maximo = NULL
 )}\if{html}{\out{</div>}}
 }
 
@@ -610,6 +633,10 @@ partir de 2006 (a RAIS só adotou CNAE 2.0 nesse ano).
 \item{\code{porte}}{Vetor de portes para filtrar (opcional)}
 
 \item{\code{setor}}{'Indústria' ou 'Comércio e Serviços' (opcional)}
+
+\item{\code{ano_minimo}}{Ano mínimo (opcional); filtra na API e reduz o volume baixado}
+
+\item{\code{ano_maximo}}{Ano máximo (opcional); filtra na API}
 }
 \if{html}{\out{</div>}}
 }
@@ -624,13 +651,21 @@ Lista com TODOS os dados de estoque por porte/setor
 Obter dados de estoque de emprego por classe CNAE (4 dígitos),
 agregado nacionalmente - SEMPRE RETORNA TODOS OS REGISTROS.
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Emprego$get_estoque_emprego_classe_cnae_nacional(codigos_classe = NULL)}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{Emprego$get_estoque_emprego_classe_cnae_nacional(
+  codigos_classe = NULL,
+  ano_minimo = NULL,
+  ano_maximo = NULL
+)}\if{html}{\out{</div>}}
 }
 
 \subsection{Arguments}{
 \if{html}{\out{<div class="arguments">}}
 \describe{
 \item{\code{codigos_classe}}{Vetor de códigos de classe CNAE (opcional)}
+
+\item{\code{ano_minimo}}{Ano mínimo (opcional); filtra na API e reduz o volume baixado}
+
+\item{\code{ano_maximo}}{Ano máximo (opcional); filtra na API}
 }
 \if{html}{\out{</div>}}
 }
@@ -645,7 +680,12 @@ Lista com TODOS os dados de estoque por classe CNAE
 Obter dados de estoque de emprego por classe CNAE (4 dígitos), por UF -
 SEMPRE RETORNA TODOS OS REGISTROS.
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Emprego$get_estoque_emprego_classe_cnae_estadual(ufs, codigos_classe = NULL)}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{Emprego$get_estoque_emprego_classe_cnae_estadual(
+  ufs,
+  codigos_classe = NULL,
+  ano_minimo = NULL,
+  ano_maximo = NULL
+)}\if{html}{\out{</div>}}
 }
 
 \subsection{Arguments}{
@@ -654,6 +694,10 @@ SEMPRE RETORNA TODOS OS REGISTROS.
 \item{\code{ufs}}{Sigla(s) de UF (ex: 'SP' ou c('SP', 'RJ'))}
 
 \item{\code{codigos_classe}}{Vetor de códigos de classe CNAE (opcional)}
+
+\item{\code{ano_minimo}}{Ano mínimo (opcional); filtra na API e reduz o volume baixado}
+
+\item{\code{ano_maximo}}{Ano máximo (opcional); filtra na API}
 }
 \if{html}{\out{</div>}}
 }
@@ -671,7 +715,9 @@ ocupação (CBO) - SEMPRE RETORNA TODOS OS REGISTROS.
 \if{html}{\out{<div class="r">}}\preformatted{Emprego$get_estoque_emprego_uf_cbo(
   siglas_uf = NULL,
   codigos_classe = NULL,
-  codigos_cbo = NULL
+  codigos_cbo = NULL,
+  ano_minimo = NULL,
+  ano_maximo = NULL
 )}\if{html}{\out{</div>}}
 }
 
@@ -683,6 +729,10 @@ ocupação (CBO) - SEMPRE RETORNA TODOS OS REGISTROS.
 \item{\code{codigos_classe}}{Vetor de códigos de classe CNAE (opcional)}
 
 \item{\code{codigos_cbo}}{Vetor de códigos CBO (opcional)}
+
+\item{\code{ano_minimo}}{Ano mínimo (opcional); filtra na API e reduz o volume baixado}
+
+\item{\code{ano_maximo}}{Ano máximo (opcional); filtra na API}
 }
 \if{html}{\out{</div>}}
 }
@@ -697,7 +747,12 @@ Lista com TODOS os dados de estoque por UF/classe/CBO
 Obter dados de remuneração média RAIS por nível de agregação e código -
 SEMPRE RETORNA TODOS OS REGISTROS.
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Emprego$get_renda_media_emprego(tipos = NULL, codigos = NULL)}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{Emprego$get_renda_media_emprego(
+  tipos = NULL,
+  codigos = NULL,
+  ano_minimo = NULL,
+  ano_maximo = NULL
+)}\if{html}{\out{</div>}}
 }
 
 \subsection{Arguments}{
@@ -706,6 +761,10 @@ SEMPRE RETORNA TODOS OS REGISTROS.
 \item{\code{tipos}}{Vetor com 'Geral', 'Divisao' e/ou 'Grupo' (opcional)}
 
 \item{\code{codigos}}{Vetor de códigos CNAE correspondentes ao tipo (opcional)}
+
+\item{\code{ano_minimo}}{Ano mínimo (opcional); filtra na API e reduz o volume baixado}
+
+\item{\code{ano_maximo}}{Ano máximo (opcional); filtra na API}
 }
 \if{html}{\out{</div>}}
 }
@@ -721,13 +780,21 @@ Obter dados do índice Potec (intensidade tecnológica por estoque de
 pesquisadores/engenheiros) por classe CNAE (4 dígitos) - SEMPRE
 RETORNA TODOS OS REGISTROS.
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Emprego$get_potec_emprego(codigos_classe = NULL)}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{Emprego$get_potec_emprego(
+  codigos_classe = NULL,
+  ano_minimo = NULL,
+  ano_maximo = NULL
+)}\if{html}{\out{</div>}}
 }
 
 \subsection{Arguments}{
 \if{html}{\out{<div class="arguments">}}
 \describe{
 \item{\code{codigos_classe}}{Vetor de códigos de classe CNAE (opcional)}
+
+\item{\code{ano_minimo}}{Ano mínimo (opcional); filtra na API e reduz o volume baixado}
+
+\item{\code{ano_maximo}}{Ano máximo (opcional); filtra na API}
 }
 \if{html}{\out{</div>}}
 }
@@ -820,7 +887,11 @@ Lista com todos os registros de estoque de emprego
 \subsection{Method \code{get_saldo_caged_nacional_divisao()}}{
 Obter dados CAGED nacionais por divisão CNAE
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Emprego$get_saldo_caged_nacional_divisao(data_minima = NULL, codigos = NULL)}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{Emprego$get_saldo_caged_nacional_divisao(
+  data_minima = NULL,
+  codigos = NULL,
+  data_maxima = NULL
+)}\if{html}{\out{</div>}}
 }
 
 \subsection{Arguments}{
@@ -829,6 +900,8 @@ Obter dados CAGED nacionais por divisão CNAE
 \item{\code{data_minima}}{Data mínima no formato YYYY-MM-DD (opcional)}
 
 \item{\code{codigos}}{Vetor de códigos de divisão (opcional)}
+
+\item{\code{data_maxima}}{Data máxima no formato YYYY-MM-DD (opcional)}
 }
 \if{html}{\out{</div>}}
 }
@@ -842,7 +915,11 @@ Lista com dados CAGED nacionais por divisão
 \subsection{Method \code{get_saldo_caged_nacional_grupo()}}{
 Obter dados CAGED nacionais por grupo CNAE
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Emprego$get_saldo_caged_nacional_grupo(data_minima = NULL, codigos = NULL)}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{Emprego$get_saldo_caged_nacional_grupo(
+  data_minima = NULL,
+  codigos = NULL,
+  data_maxima = NULL
+)}\if{html}{\out{</div>}}
 }
 
 \subsection{Arguments}{
@@ -851,6 +928,8 @@ Obter dados CAGED nacionais por grupo CNAE
 \item{\code{data_minima}}{Data mínima no formato YYYY-MM-DD (opcional)}
 
 \item{\code{codigos}}{Vetor de códigos de grupo (opcional)}
+
+\item{\code{data_maxima}}{Data máxima no formato YYYY-MM-DD (opcional)}
 }
 \if{html}{\out{</div>}}
 }
@@ -864,7 +943,11 @@ Lista com dados CAGED nacionais por grupo
 \subsection{Method \code{get_saldo_caged_nacional_subclasse()}}{
 Obter dados CAGED nacionais por subclasse CNAE
 \subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Emprego$get_saldo_caged_nacional_subclasse(data_minima = NULL, codigos = NULL)}\if{html}{\out{</div>}}
+\if{html}{\out{<div class="r">}}\preformatted{Emprego$get_saldo_caged_nacional_subclasse(
+  data_minima = NULL,
+  codigos = NULL,
+  data_maxima = NULL
+)}\if{html}{\out{</div>}}
 }
 
 \subsection{Arguments}{
@@ -873,6 +956,8 @@ Obter dados CAGED nacionais por subclasse CNAE
 \item{\code{data_minima}}{Data mínima no formato YYYY-MM-DD (opcional)}
 
 \item{\code{codigos}}{Vetor de códigos de subclasse (opcional)}
+
+\item{\code{data_maxima}}{Data máxima no formato YYYY-MM-DD (opcional)}
 }
 \if{html}{\out{</div>}}
 }
@@ -889,7 +974,8 @@ Obter dados CAGED estaduais por divisão CNAE
 \if{html}{\out{<div class="r">}}\preformatted{Emprego$get_saldo_caged_estadual_divisao(
   siglas_uf,
   data_minima = NULL,
-  codigos = NULL
+  codigos = NULL,
+  data_maxima = NULL
 )}\if{html}{\out{</div>}}
 }
 
@@ -901,6 +987,8 @@ Obter dados CAGED estaduais por divisão CNAE
 \item{\code{data_minima}}{Data mínima no formato YYYY-MM-DD (opcional)}
 
 \item{\code{codigos}}{Vetor de códigos de divisão (opcional)}
+
+\item{\code{data_maxima}}{Data máxima no formato YYYY-MM-DD (opcional)}
 }
 \if{html}{\out{</div>}}
 }
@@ -917,7 +1005,8 @@ Obter dados CAGED estaduais por grupo CNAE
 \if{html}{\out{<div class="r">}}\preformatted{Emprego$get_saldo_caged_estadual_grupo(
   siglas_uf,
   data_minima = NULL,
-  codigos = NULL
+  codigos = NULL,
+  data_maxima = NULL
 )}\if{html}{\out{</div>}}
 }
 
@@ -929,6 +1018,8 @@ Obter dados CAGED estaduais por grupo CNAE
 \item{\code{data_minima}}{Data mínima no formato YYYY-MM-DD (opcional)}
 
 \item{\code{codigos}}{Vetor de códigos de grupo (opcional)}
+
+\item{\code{data_maxima}}{Data máxima no formato YYYY-MM-DD (opcional)}
 }
 \if{html}{\out{</div>}}
 }
@@ -945,7 +1036,8 @@ Obter dados CAGED estaduais por subclasse CNAE
 \if{html}{\out{<div class="r">}}\preformatted{Emprego$get_saldo_caged_estadual_subclasse(
   siglas_uf,
   data_minima = NULL,
-  codigos = NULL
+  codigos = NULL,
+  data_maxima = NULL
 )}\if{html}{\out{</div>}}
 }
 
@@ -957,6 +1049,8 @@ Obter dados CAGED estaduais por subclasse CNAE
 \item{\code{data_minima}}{Data mínima no formato YYYY-MM-DD (opcional)}
 
 \item{\code{codigos}}{Vetor de códigos de subclasse (opcional)}
+
+\item{\code{data_maxima}}{Data máxima no formato YYYY-MM-DD (opcional)}
 }
 \if{html}{\out{</div>}}
 }
@@ -973,7 +1067,8 @@ Obter dados CAGED municipais por divisão CNAE
 \if{html}{\out{<div class="r">}}\preformatted{Emprego$get_saldo_caged_municipal_divisao(
   codigos_municipio,
   data_minima = NULL,
-  codigos = NULL
+  codigos = NULL,
+  data_maxima = NULL
 )}\if{html}{\out{</div>}}
 }
 
@@ -985,6 +1080,8 @@ Obter dados CAGED municipais por divisão CNAE
 \item{\code{data_minima}}{Data mínima no formato YYYY-MM-DD (opcional)}
 
 \item{\code{codigos}}{Vetor de códigos de divisão (opcional)}
+
+\item{\code{data_maxima}}{Data máxima no formato YYYY-MM-DD (opcional)}
 }
 \if{html}{\out{</div>}}
 }
@@ -1001,7 +1098,8 @@ Obter dados CAGED municipais por grupo CNAE
 \if{html}{\out{<div class="r">}}\preformatted{Emprego$get_saldo_caged_municipal_grupo(
   codigos_municipio,
   data_minima = NULL,
-  codigos = NULL
+  codigos = NULL,
+  data_maxima = NULL
 )}\if{html}{\out{</div>}}
 }
 
@@ -1013,6 +1111,8 @@ Obter dados CAGED municipais por grupo CNAE
 \item{\code{data_minima}}{Data mínima no formato YYYY-MM-DD (opcional)}
 
 \item{\code{codigos}}{Vetor de códigos de grupo (opcional)}
+
+\item{\code{data_maxima}}{Data máxima no formato YYYY-MM-DD (opcional)}
 }
 \if{html}{\out{</div>}}
 }
@@ -1029,7 +1129,8 @@ Obter dados CAGED municipais por subclasse CNAE
 \if{html}{\out{<div class="r">}}\preformatted{Emprego$get_saldo_caged_municipal_subclasse(
   codigos_municipio,
   data_minima = NULL,
-  codigos = NULL
+  codigos = NULL,
+  data_maxima = NULL
 )}\if{html}{\out{</div>}}
 }
 
@@ -1041,6 +1142,8 @@ Obter dados CAGED municipais por subclasse CNAE
 \item{\code{data_minima}}{Data mínima no formato YYYY-MM-DD (opcional)}
 
 \item{\code{codigos}}{Vetor de códigos de subclasse (opcional)}
+
+\item{\code{data_maxima}}{Data máxima no formato YYYY-MM-DD (opcional)}
 }
 \if{html}{\out{</div>}}
 }

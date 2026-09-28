@@ -7,3 +7,10 @@ mypy>=1.0
 pre-commit>=3.0
 build>=1.0.0
 twine>=4.0.0
+vulture>=2.10  # detecção de código morto
+
+# Exemplos (examples/*.py e notebooks)
+openpyxl>=3.1
+matplotlib>=3.7
+seaborn>=0.13
+ipykernel>=6.0

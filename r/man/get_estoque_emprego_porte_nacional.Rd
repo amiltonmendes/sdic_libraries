@@ -8,7 +8,9 @@ get_estoque_emprego_porte_nacional(
   nivel_cnae = "divisao",
   codigos_cnae = NULL,
   porte = NULL,
-  setor = NULL
+  setor = NULL,
+  ano_minimo = NULL,
+  ano_maximo = NULL
 )
 }
 \arguments{
@@ -19,10 +21,33 @@ get_estoque_emprego_porte_nacional(
 \item{porte}{Vetor de portes para filtrar (opcional)}
 
 \item{setor}{'Indústria' ou 'Comércio e Serviços' (opcional)}
+
+\item{ano_minimo}{Ano mínimo (opcional); filtra na API e reduz o volume baixado}
+
+\item{ano_maximo}{Ano máximo (opcional); filtra na API}
 }
 \value{
 Tibble com estoque por porte/setor
 }
 \description{
 Obter estoque de emprego por porte de estabelecimento e setor, agregado nacionalmente
+}
+\details{
+Porte segundo o critério Sebrae/DIEESE, por pessoas ocupadas (unidade =
+estabelecimento; estoque = vínculos ativos em 31/12, RAIS):\tabular{lll}{
+   Porte \tab Indústria \tab Comércio e Serviços \cr
+   Microempresa \tab até 19 \tab até 9 \cr
+   Empresa de pequeno porte \tab 20 a 99 \tab 10 a 49 \cr
+   Empresa de médio porte \tab 100 a 499 \tab 50 a 99 \cr
+   Grande empresa \tab 500 ou mais \tab 100 ou mais \cr
+}
+
+
+Setor: divisões CNAE 05 a 43 = \code{Indústria} (inclui construção); demais
+(inclusive agropecuária) = \verb{Comércio e Serviços}. Série a partir de 2006 (CNAE 2.0).
+Ver METODOLOGIA.md do repositório.
+}
+\references{
+SEBRAE; DIEESE. Anuário do Trabalho na Micro e Pequena Empresa.
+\url{https://www.dieese.org.br/anuario/2011/anuarioSebrae10-11/15.html}
 }

@@ -7,7 +7,9 @@
 get_estoque_emprego_nacional(
   codigos_cnae = NULL,
   nivel_cnae = 2,
-  agregado = FALSE
+  agregado = FALSE,
+  ano_minimo = NULL,
+  ano_maximo = NULL
 )
 }
 \arguments{
@@ -17,7 +19,9 @@ get_estoque_emprego_nacional(
 
 \item{agregado}{Se TRUE, agrega todos os estados}
 
-\item{ano_minimo}{Ano mínimo para filtrar dados (opcional)}
+\item{ano_minimo}{Ano mínimo (opcional); filtra na API e reduz o volume baixado}
+
+\item{ano_maximo}{Ano máximo (opcional); filtra na API}
 }
 \value{
 Tibble com dados anuais de estoque de emprego

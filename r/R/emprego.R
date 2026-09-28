@@ -58,7 +58,7 @@ Emprego <- R6::R6Class(
       self$api_key <- api_key %||% Sys.getenv("EMPLOYMENT_API_KEY", "")
       
       # Mostrar mensagem de inicialização
-      version <- Sys.getenv("SDIC_VERSION", "0.3.1")
+      version <- Sys.getenv("SDIC_VERSION", "0.4.0")
       cli::cli_alert_success(
         "API de Emprego inicializada (v{version}) - configuração carregada automaticamente"
       )
@@ -120,12 +120,12 @@ Emprego <- R6::R6Class(
       req <- httr2::request(url)
       
       if (!is.null(params)) {
-        req <- httr2::req_url_query(req, !!!params, .multi = "comma")
+        req <- httr2::req_url_query(req, !!!params, .multi = "explode")
       }
       
       req <- httr2::req_headers(
         req,
-        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.3.1")),
+        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.4.0")),
         "Accept" = "application/json",
         "Content-Type" = "application/json"
       )
@@ -137,7 +137,7 @@ Emprego <- R6::R6Class(
       req <- httr2::req_timeout(req, self$timeout)
       
       tryCatch({
-        resp <- httr2::req_perform(req)
+        resp <- .req_perform_cache(req)
         
         if (httr2::resp_status(resp) != 200) {
           cli::cli_abort(
@@ -163,6 +163,7 @@ Emprego <- R6::R6Class(
     #' @param codigo_cnae Código de atividade econômica CNAE - opcional
     #' @param nivel_cnae Nível CNAE (2=divisão, 3=grupo, NULL=subclasse) - opcional
     #' @param data_minima Data mínima em formato YYYY-MM-DD - opcional
+    #' @param data_maxima Data máxima em formato YYYY-MM-DD - opcional
     #' @return Lista com TODOS os dados de saldo de emprego
     get_saldo_emprego_detalhado = function(nivel_agregacao,
                         sigla_uf = NULL,
@@ -170,7 +171,8 @@ Emprego <- R6::R6Class(
                                           municipio = NULL,
                                           codigo_cnae = NULL,
                                           nivel_cnae = NULL,
-                                          data_minima = NULL) {
+                                          data_minima = NULL,
+                                          data_maxima = NULL) {
       
       # Validar parâmetros obrigatórios
       valid_levels <- c("nacional", "estadual", "municipal")
@@ -197,7 +199,7 @@ Emprego <- R6::R6Class(
       }
 
       endpoint <- paste0("/saldo_caged/", nivel_agregacao, "/", nivel_endpoint)
-      params <- list(tamanho_pagina = 1000)
+      params <- list(tamanho_pagina = 5000)
 
       resolved_sigla_uf <- sigla_uf %||% uf
       if (nivel_agregacao == "estadual") {
@@ -218,10 +220,13 @@ Emprego <- R6::R6Class(
       }
 
       if (!is.null(codigo_cnae)) {
-        params$codigos <- as.character(codigo_cnae)
+        params[[paste0("codigos_", nivel_endpoint)]] <- as.character(codigo_cnae)
       }
       if (!is.null(data_minima)) {
         params$data_minima <- data_minima
+      }
+      if (!is.null(data_maxima)) {
+        params$data_maxima <- data_maxima
       }
 
       return(self$.fetch_all_paginated_get(endpoint, params))
@@ -236,7 +241,7 @@ Emprego <- R6::R6Class(
       items <- self$get_saldo_emprego_detalhado(...)
       
       if (length(items) > 0) {
-        return(tibble::as_tibble(dplyr::bind_rows(items)))
+        return(.lista_para_tibble(items))
       } else {
         return(tibble::tibble())
       }
@@ -311,7 +316,7 @@ Emprego <- R6::R6Class(
       return(self$.fetch_all_paginated_post(
         paste0("/saldo_caged/", nivel_agregacao, "/", nivel_endpoint, "/lista_codigos"),
         body,
-        list(tamanho_pagina = 1000)
+        list(tamanho_pagina = 5000)
       ))
     },
     
@@ -323,7 +328,7 @@ Emprego <- R6::R6Class(
       items <- self$get_saldo_emprego_detalhado_lista_cnae(...)
       
       if (length(items) > 0) {
-        return(tibble::as_tibble(dplyr::bind_rows(items)))
+        return(.lista_para_tibble(items))
       } else {
         return(tibble::tibble())
       }
@@ -340,12 +345,12 @@ Emprego <- R6::R6Class(
       req <- httr2::request(url)
       
       if (!is.null(params)) {
-        req <- httr2::req_url_query(req, !!!params, .multi = "comma")
+        req <- httr2::req_url_query(req, !!!params, .multi = "explode")
       }
       
       req <- httr2::req_headers(
         req,
-        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.3.1")),
+        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.4.0")),
         "Accept" = "application/json",
         "Content-Type" = "application/json"
       )
@@ -361,7 +366,7 @@ Emprego <- R6::R6Class(
       }
       
       tryCatch({
-        resp <- httr2::req_perform(req)
+        resp <- .req_perform_cache(req)
         
         if (httr2::resp_status(resp) != 200) {
           cli::cli_abort(
@@ -483,8 +488,8 @@ Emprego <- R6::R6Class(
       repeat {
         request_params <- params
         request_params$pagina <- pagina
-        if (is.null(request_params$tamanho_pagina)) request_params$tamanho_pagina <- 1000
-        page_size <- as.integer(request_params$tamanho_pagina %||% 1000)
+        if (is.null(request_params$tamanho_pagina)) request_params$tamanho_pagina <- 5000
+        page_size <- as.integer(request_params$tamanho_pagina %||% 5000)
 
         response <- self$.make_request(endpoint, request_params)
         items <- self$.extract_items(response)
@@ -504,6 +509,17 @@ Emprego <- R6::R6Class(
         pagina <- pagina + 1
       }
 
+      # Garante ano_minimo/ano_maximo no cliente: uma sdic_api implantada antes desses filtros
+      # os ignora sem avisar e devolve a série inteira (2006+). Idempotente com a API nova.
+      minimo <- params$ano_minimo
+      maximo <- params$ano_maximo
+      if (!is.null(minimo) || !is.null(maximo)) {
+        all_items <- Filter(function(item) {
+          ano <- suppressWarnings(as.integer(item$ano %||% item$Ano))
+          length(ano) == 0 || is.na(ano) || ((is.null(minimo) || ano >= minimo) && (is.null(maximo) || ano <= maximo))
+        }, all_items)
+      }
+
       return(all_items)
     },
 
@@ -521,8 +537,8 @@ Emprego <- R6::R6Class(
       repeat {
         request_params <- params
         request_params$pagina <- pagina
-        if (is.null(request_params$tamanho_pagina)) request_params$tamanho_pagina <- 1000
-        page_size <- as.integer(request_params$tamanho_pagina %||% 1000)
+        if (is.null(request_params$tamanho_pagina)) request_params$tamanho_pagina <- 5000
+        page_size <- as.integer(request_params$tamanho_pagina %||% 5000)
 
         response <- self$.make_post_request(endpoint, body, request_params)
         items <- self$.extract_items(response)
@@ -608,7 +624,7 @@ Emprego <- R6::R6Class(
       return(self$.fetch_all_paginated_post(
         paste0("/saldo_caged/", nivel_agregacao, "/", nivel_endpoint, "/grupos_codigos"),
         body,
-        list(tamanho_pagina = 1000)
+        list(tamanho_pagina = 5000)
       ))
     },
     
@@ -618,22 +634,28 @@ Emprego <- R6::R6Class(
     #' @param codigos_cnae Vetor de códigos CNAE (opcional)
     #' @param nivel_cnae Nível CNAE (2=divisão, 3=grupo)
     #' @param agregado Se TRUE, agrega todos os estados
+    #' @param ano_minimo Ano mínimo (opcional); filtra na API e reduz o volume baixado
+    #' @param ano_maximo Ano máximo (opcional); filtra na API
     #' @return Lista com TODOS os dados de estoque de emprego nacional
     get_estoque_emprego_nacional = function(codigos_cnae = NULL,
                                            nivel_cnae = 2,
-                                           agregado = FALSE) {
+                                           agregado = FALSE,
+                                            ano_minimo = NULL,
+                                            ano_maximo = NULL) {
       
       # Parâmetros base
       params <- list(
         nivel_cnae = nivel_cnae,
         agregado = agregado,
-        tamanho_pagina = 1000
+        tamanho_pagina = 5000
       )
       
       if (!is.null(codigos_cnae)) {
         params$codigos_cnae <- paste(codigos_cnae, collapse = ",")
       }
       
+      if (!is.null(ano_minimo)) params$ano_minimo <- ano_minimo
+      if (!is.null(ano_maximo)) params$ano_maximo <- ano_maximo
       return(self$.fetch_all_paginated_get("/get_estoque_emprego_nacional/", params))
     },
     
@@ -644,12 +666,16 @@ Emprego <- R6::R6Class(
     #' @param uf Alias legado para sigla_uf
     #' @param codigos_cnae Vetor de códigos CNAE (opcional)
     #' @param nivel_cnae Nível CNAE (2=divisão, 3=grupo)
+    #' @param ano_minimo Ano mínimo (opcional); filtra na API e reduz o volume baixado
+    #' @param ano_maximo Ano máximo (opcional); filtra na API
     #' @return Lista com TODOS os dados de estoque de emprego estadual
     get_estoque_emprego_estadual = function(sigla_uf = NULL,
                                            uf = NULL,
                                            ufs = NULL,
                                            codigos_cnae = NULL,
-                                           nivel_cnae = 2) {
+                                           nivel_cnae = 2,
+                                            ano_minimo = NULL,
+                                            ano_maximo = NULL) {
 
       resolved_ufs <- ufs %||% sigla_uf %||% uf
       if (is.null(resolved_ufs)) {
@@ -662,13 +688,15 @@ Emprego <- R6::R6Class(
       params <- list(
         ufs = ufs_str,
         nivel_cnae = nivel_cnae,
-        tamanho_pagina = 1000
+        tamanho_pagina = 5000
       )
       
       if (!is.null(codigos_cnae)) {
         params$codigos_cnae <- paste(codigos_cnae, collapse = ",")
       }
       
+      if (!is.null(ano_minimo)) params$ano_minimo <- ano_minimo
+      if (!is.null(ano_maximo)) params$ano_maximo <- ano_maximo
       return(self$.fetch_all_paginated_get("/get_estoque_emprego_estadual/", params))
     },
 
@@ -681,20 +709,26 @@ Emprego <- R6::R6Class(
     #' @param codigos_cnae Vetor de códigos CNAE no nível escolhido (opcional)
     #' @param porte Vetor de portes para filtrar (opcional)
     #' @param setor 'Indústria' ou 'Comércio e Serviços' (opcional)
+    #' @param ano_minimo Ano mínimo (opcional); filtra na API e reduz o volume baixado
+    #' @param ano_maximo Ano máximo (opcional); filtra na API
     #' @return Lista com TODOS os dados de estoque por porte/setor
     get_estoque_emprego_porte_nacional = function(nivel_cnae = "divisao",
                                                   codigos_cnae = NULL,
                                                   porte = NULL,
-                                                  setor = NULL) {
+                                                  setor = NULL,
+                                                  ano_minimo = NULL,
+                                                  ano_maximo = NULL) {
       if (!nivel_cnae %in% c("divisao", "grupo", "classe")) {
         stop("nivel_cnae deve ser 'divisao', 'grupo' ou 'classe'")
       }
 
-      params <- list(nivel_cnae = nivel_cnae, tamanho_pagina = 1000)
+      params <- list(nivel_cnae = nivel_cnae, tamanho_pagina = 5000)
       if (!is.null(codigos_cnae)) params$codigos_cnae <- paste(codigos_cnae, collapse = ",")
       if (!is.null(porte)) params$porte <- paste(porte, collapse = ",")
       if (!is.null(setor)) params$setor <- setor
 
+      if (!is.null(ano_minimo)) params$ano_minimo <- ano_minimo
+      if (!is.null(ano_maximo)) params$ano_maximo <- ano_maximo
       return(self$.fetch_all_paginated_get("/get_estoque_emprego_porte_nacional/", params))
     },
 
@@ -707,22 +741,28 @@ Emprego <- R6::R6Class(
     #' @param codigos_cnae Vetor de códigos CNAE no nível escolhido (opcional)
     #' @param porte Vetor de portes para filtrar (opcional)
     #' @param setor 'Indústria' ou 'Comércio e Serviços' (opcional)
+    #' @param ano_minimo Ano mínimo (opcional); filtra na API e reduz o volume baixado
+    #' @param ano_maximo Ano máximo (opcional); filtra na API
     #' @return Lista com TODOS os dados de estoque por porte/setor
     get_estoque_emprego_porte_estadual = function(ufs,
                                                   nivel_cnae = "divisao",
                                                   codigos_cnae = NULL,
                                                   porte = NULL,
-                                                  setor = NULL) {
+                                                  setor = NULL,
+                                                  ano_minimo = NULL,
+                                                  ano_maximo = NULL) {
       if (!nivel_cnae %in% c("divisao", "grupo", "classe")) {
         stop("nivel_cnae deve ser 'divisao', 'grupo' ou 'classe'")
       }
 
       ufs_str <- if (length(ufs) > 1) paste(ufs, collapse = ",") else ufs
-      params <- list(ufs = ufs_str, nivel_cnae = nivel_cnae, tamanho_pagina = 1000)
+      params <- list(ufs = ufs_str, nivel_cnae = nivel_cnae, tamanho_pagina = 5000)
       if (!is.null(codigos_cnae)) params$codigos_cnae <- paste(codigos_cnae, collapse = ",")
       if (!is.null(porte)) params$porte <- paste(porte, collapse = ",")
       if (!is.null(setor)) params$setor <- setor
 
+      if (!is.null(ano_minimo)) params$ano_minimo <- ano_minimo
+      if (!is.null(ano_maximo)) params$ano_maximo <- ano_maximo
       return(self$.fetch_all_paginated_get("/get_estoque_emprego_porte_estadual/", params))
     },
 
@@ -730,11 +770,17 @@ Emprego <- R6::R6Class(
     #' Obter dados de estoque de emprego por classe CNAE (4 dígitos),
     #' agregado nacionalmente - SEMPRE RETORNA TODOS OS REGISTROS.
     #' @param codigos_classe Vetor de códigos de classe CNAE (opcional)
+    #' @param ano_minimo Ano mínimo (opcional); filtra na API e reduz o volume baixado
+    #' @param ano_maximo Ano máximo (opcional); filtra na API
     #' @return Lista com TODOS os dados de estoque por classe CNAE
-    get_estoque_emprego_classe_cnae_nacional = function(codigos_classe = NULL) {
-      params <- list(tamanho_pagina = 1000)
+    get_estoque_emprego_classe_cnae_nacional = function(codigos_classe = NULL,
+                                                        ano_minimo = NULL,
+                                                        ano_maximo = NULL) {
+      params <- list(tamanho_pagina = 5000)
       if (!is.null(codigos_classe)) params$codigos_classe <- paste(codigos_classe, collapse = ",")
 
+      if (!is.null(ano_minimo)) params$ano_minimo <- ano_minimo
+      if (!is.null(ano_maximo)) params$ano_maximo <- ano_maximo
       return(self$.fetch_all_paginated_get("/get_estoque_emprego_classe_cnae_nacional/", params))
     },
 
@@ -743,12 +789,18 @@ Emprego <- R6::R6Class(
     #' SEMPRE RETORNA TODOS OS REGISTROS.
     #' @param ufs Sigla(s) de UF (ex: 'SP' ou c('SP', 'RJ'))
     #' @param codigos_classe Vetor de códigos de classe CNAE (opcional)
+    #' @param ano_minimo Ano mínimo (opcional); filtra na API e reduz o volume baixado
+    #' @param ano_maximo Ano máximo (opcional); filtra na API
     #' @return Lista com TODOS os dados de estoque por classe CNAE
-    get_estoque_emprego_classe_cnae_estadual = function(ufs, codigos_classe = NULL) {
+    get_estoque_emprego_classe_cnae_estadual = function(ufs, codigos_classe = NULL,
+                                                        ano_minimo = NULL,
+                                                        ano_maximo = NULL) {
       ufs_str <- if (length(ufs) > 1) paste(ufs, collapse = ",") else ufs
-      params <- list(ufs = ufs_str, tamanho_pagina = 1000)
+      params <- list(ufs = ufs_str, tamanho_pagina = 5000)
       if (!is.null(codigos_classe)) params$codigos_classe <- paste(codigos_classe, collapse = ",")
 
+      if (!is.null(ano_minimo)) params$ano_minimo <- ano_minimo
+      if (!is.null(ano_maximo)) params$ano_maximo <- ano_maximo
       return(self$.fetch_all_paginated_get("/get_estoque_emprego_classe_cnae_estadual/", params))
     },
 
@@ -758,15 +810,21 @@ Emprego <- R6::R6Class(
     #' @param siglas_uf Vetor de siglas de UF (opcional)
     #' @param codigos_classe Vetor de códigos de classe CNAE (opcional)
     #' @param codigos_cbo Vetor de códigos CBO (opcional)
+    #' @param ano_minimo Ano mínimo (opcional); filtra na API e reduz o volume baixado
+    #' @param ano_maximo Ano máximo (opcional); filtra na API
     #' @return Lista com TODOS os dados de estoque por UF/classe/CBO
     get_estoque_emprego_uf_cbo = function(siglas_uf = NULL,
                                           codigos_classe = NULL,
-                                          codigos_cbo = NULL) {
-      params <- list(tamanho_pagina = 1000)
+                                          codigos_cbo = NULL,
+                                          ano_minimo = NULL,
+                                          ano_maximo = NULL) {
+      params <- list(tamanho_pagina = 5000)
       if (!is.null(siglas_uf)) params$siglas_uf <- paste(siglas_uf, collapse = ",")
       if (!is.null(codigos_classe)) params$codigos_classe <- paste(codigos_classe, collapse = ",")
       if (!is.null(codigos_cbo)) params$codigos_cbo <- paste(codigos_cbo, collapse = ",")
 
+      if (!is.null(ano_minimo)) params$ano_minimo <- ano_minimo
+      if (!is.null(ano_maximo)) params$ano_maximo <- ano_maximo
       return(self$.fetch_all_paginated_get("/get_estoque_emprego_uf_cbo/", params))
     },
 
@@ -775,12 +833,18 @@ Emprego <- R6::R6Class(
     #' SEMPRE RETORNA TODOS OS REGISTROS.
     #' @param tipos Vetor com 'Geral', 'Divisao' e/ou 'Grupo' (opcional)
     #' @param codigos Vetor de códigos CNAE correspondentes ao tipo (opcional)
+    #' @param ano_minimo Ano mínimo (opcional); filtra na API e reduz o volume baixado
+    #' @param ano_maximo Ano máximo (opcional); filtra na API
     #' @return Lista com TODOS os dados de remuneração média
-    get_renda_media_emprego = function(tipos = NULL, codigos = NULL) {
-      params <- list(tamanho_pagina = 1000)
+    get_renda_media_emprego = function(tipos = NULL, codigos = NULL,
+                                       ano_minimo = NULL,
+                                       ano_maximo = NULL) {
+      params <- list(tamanho_pagina = 5000)
       if (!is.null(tipos)) params$tipos <- paste(tipos, collapse = ",")
       if (!is.null(codigos)) params$codigos <- paste(codigos, collapse = ",")
 
+      if (!is.null(ano_minimo)) params$ano_minimo <- ano_minimo
+      if (!is.null(ano_maximo)) params$ano_maximo <- ano_maximo
       return(self$.fetch_all_paginated_get("/get_renda_media_emprego/", params))
     },
 
@@ -789,11 +853,17 @@ Emprego <- R6::R6Class(
     #' pesquisadores/engenheiros) por classe CNAE (4 dígitos) - SEMPRE
     #' RETORNA TODOS OS REGISTROS.
     #' @param codigos_classe Vetor de códigos de classe CNAE (opcional)
+    #' @param ano_minimo Ano mínimo (opcional); filtra na API e reduz o volume baixado
+    #' @param ano_maximo Ano máximo (opcional); filtra na API
     #' @return Lista com TODOS os dados do índice Potec
-    get_potec_emprego = function(codigos_classe = NULL) {
-      params <- list(tamanho_pagina = 1000)
+    get_potec_emprego = function(codigos_classe = NULL,
+                                 ano_minimo = NULL,
+                                 ano_maximo = NULL) {
+      params <- list(tamanho_pagina = 5000)
       if (!is.null(codigos_classe)) params$codigos_classe <- paste(codigos_classe, collapse = ",")
 
+      if (!is.null(ano_minimo)) params$ano_minimo <- ano_minimo
+      if (!is.null(ano_maximo)) params$ano_maximo <- ano_maximo
       return(self$.fetch_all_paginated_get("/get_potec_emprego/", params))
     },
 
@@ -828,7 +898,7 @@ Emprego <- R6::R6Class(
       params <- list(
         nivel_cnae = nivel_cnae,
         agregado = agregado,
-        tamanho_pagina = 1000
+        tamanho_pagina = 5000
       )
 
       # Escolher endpoint e incluir ufs como query param
@@ -877,7 +947,7 @@ Emprego <- R6::R6Class(
       params <- list(
         nivel_cnae = nivel_cnae,
         agregado = agregado,
-        tamanho_pagina = 1000
+        tamanho_pagina = 5000
       )
 
       # Escolher endpoint e incluir ufs como query param
@@ -900,11 +970,13 @@ Emprego <- R6::R6Class(
     #' Obter dados CAGED nacionais por divisão CNAE
     #' @param data_minima Data mínima no formato YYYY-MM-DD (opcional)
     #' @param codigos Vetor de códigos de divisão (opcional)
+    #' @param data_maxima Data máxima no formato YYYY-MM-DD (opcional)
     #' @return Lista com dados CAGED nacionais por divisão
-    get_saldo_caged_nacional_divisao = function(data_minima = NULL, codigos = NULL) {
-      params <- list(tamanho_pagina = 1000)
+    get_saldo_caged_nacional_divisao = function(data_minima = NULL, codigos = NULL, data_maxima = NULL) {
+      params <- list(tamanho_pagina = 5000)
       if (!is.null(data_minima)) params$data_minima <- data_minima
-      if (!is.null(codigos)) params$codigos <- paste(codigos, collapse = ",")
+      if (!is.null(data_maxima)) params$data_maxima <- data_maxima
+      if (!is.null(codigos)) params$codigos_divisao <- as.character(codigos)
       
       return(self$.fetch_all_paginated_get("/saldo_caged/nacional/divisao", params))
     },
@@ -913,11 +985,13 @@ Emprego <- R6::R6Class(
     #' Obter dados CAGED nacionais por grupo CNAE
     #' @param data_minima Data mínima no formato YYYY-MM-DD (opcional)
     #' @param codigos Vetor de códigos de grupo (opcional)
+    #' @param data_maxima Data máxima no formato YYYY-MM-DD (opcional)
     #' @return Lista com dados CAGED nacionais por grupo
-    get_saldo_caged_nacional_grupo = function(data_minima = NULL, codigos = NULL) {
-      params <- list(tamanho_pagina = 1000)
+    get_saldo_caged_nacional_grupo = function(data_minima = NULL, codigos = NULL, data_maxima = NULL) {
+      params <- list(tamanho_pagina = 5000)
       if (!is.null(data_minima)) params$data_minima <- data_minima
-      if (!is.null(codigos)) params$codigos <- paste(codigos, collapse = ",")
+      if (!is.null(data_maxima)) params$data_maxima <- data_maxima
+      if (!is.null(codigos)) params$codigos_grupo <- as.character(codigos)
       
       return(self$.fetch_all_paginated_get("/saldo_caged/nacional/grupo", params))
     },
@@ -926,11 +1000,13 @@ Emprego <- R6::R6Class(
     #' Obter dados CAGED nacionais por subclasse CNAE
     #' @param data_minima Data mínima no formato YYYY-MM-DD (opcional)
     #' @param codigos Vetor de códigos de subclasse (opcional)
+    #' @param data_maxima Data máxima no formato YYYY-MM-DD (opcional)
     #' @return Lista com dados CAGED nacionais por subclasse
-    get_saldo_caged_nacional_subclasse = function(data_minima = NULL, codigos = NULL) {
-      params <- list(tamanho_pagina = 1000)
+    get_saldo_caged_nacional_subclasse = function(data_minima = NULL, codigos = NULL, data_maxima = NULL) {
+      params <- list(tamanho_pagina = 5000)
       if (!is.null(data_minima)) params$data_minima <- data_minima
-      if (!is.null(codigos)) params$codigos <- paste(codigos, collapse = ",")
+      if (!is.null(data_maxima)) params$data_maxima <- data_maxima
+      if (!is.null(codigos)) params$codigos_subclasse <- as.character(codigos)
       
       return(self$.fetch_all_paginated_get("/saldo_caged/nacional/subclasse", params))
     },
@@ -940,14 +1016,16 @@ Emprego <- R6::R6Class(
     #' @param siglas_uf Vetor de siglas dos estados (ex: c("SP", "RJ"))
     #' @param data_minima Data mínima no formato YYYY-MM-DD (opcional)
     #' @param codigos Vetor de códigos de divisão (opcional)
+    #' @param data_maxima Data máxima no formato YYYY-MM-DD (opcional)
     #' @return Lista com dados CAGED estaduais por divisão
-    get_saldo_caged_estadual_divisao = function(siglas_uf, data_minima = NULL, codigos = NULL) {
+    get_saldo_caged_estadual_divisao = function(siglas_uf, data_minima = NULL, codigos = NULL, data_maxima = NULL) {
       params <- list(
-        siglas_uf = paste(siglas_uf, collapse = ","),
-        tamanho_pagina = 1000
+        siglas_uf = as.character(siglas_uf),
+        tamanho_pagina = 5000
       )
       if (!is.null(data_minima)) params$data_minima <- data_minima
-      if (!is.null(codigos)) params$codigos <- paste(codigos, collapse = ",")
+      if (!is.null(data_maxima)) params$data_maxima <- data_maxima
+      if (!is.null(codigos)) params$codigos_divisao <- as.character(codigos)
       
       return(self$.fetch_all_paginated_get("/saldo_caged/estadual/divisao", params))
     },
@@ -957,14 +1035,16 @@ Emprego <- R6::R6Class(
     #' @param siglas_uf Vetor de siglas dos estados (ex: c("SP", "RJ"))
     #' @param data_minima Data mínima no formato YYYY-MM-DD (opcional)
     #' @param codigos Vetor de códigos de grupo (opcional)
+    #' @param data_maxima Data máxima no formato YYYY-MM-DD (opcional)
     #' @return Lista com dados CAGED estaduais por grupo
-    get_saldo_caged_estadual_grupo = function(siglas_uf, data_minima = NULL, codigos = NULL) {
+    get_saldo_caged_estadual_grupo = function(siglas_uf, data_minima = NULL, codigos = NULL, data_maxima = NULL) {
       params <- list(
-        siglas_uf = paste(siglas_uf, collapse = ","),
-        tamanho_pagina = 1000
+        siglas_uf = as.character(siglas_uf),
+        tamanho_pagina = 5000
       )
       if (!is.null(data_minima)) params$data_minima <- data_minima
-      if (!is.null(codigos)) params$codigos <- paste(codigos, collapse = ",")
+      if (!is.null(data_maxima)) params$data_maxima <- data_maxima
+      if (!is.null(codigos)) params$codigos_grupo <- as.character(codigos)
       
       return(self$.fetch_all_paginated_get("/saldo_caged/estadual/grupo", params))
     },
@@ -974,14 +1054,16 @@ Emprego <- R6::R6Class(
     #' @param siglas_uf Vetor de siglas dos estados (ex: c("SP", "RJ"))
     #' @param data_minima Data mínima no formato YYYY-MM-DD (opcional)
     #' @param codigos Vetor de códigos de subclasse (opcional)
+    #' @param data_maxima Data máxima no formato YYYY-MM-DD (opcional)
     #' @return Lista com dados CAGED estaduais por subclasse
-    get_saldo_caged_estadual_subclasse = function(siglas_uf, data_minima = NULL, codigos = NULL) {
+    get_saldo_caged_estadual_subclasse = function(siglas_uf, data_minima = NULL, codigos = NULL, data_maxima = NULL) {
       params <- list(
-        siglas_uf = paste(siglas_uf, collapse = ","),
-        tamanho_pagina = 1000
+        siglas_uf = as.character(siglas_uf),
+        tamanho_pagina = 5000
       )
       if (!is.null(data_minima)) params$data_minima <- data_minima
-      if (!is.null(codigos)) params$codigos <- paste(codigos, collapse = ",")
+      if (!is.null(data_maxima)) params$data_maxima <- data_maxima
+      if (!is.null(codigos)) params$codigos_subclasse <- as.character(codigos)
       
       return(self$.fetch_all_paginated_get("/saldo_caged/estadual/subclasse", params))
     },
@@ -991,14 +1073,16 @@ Emprego <- R6::R6Class(
     #' @param codigos_municipio Vetor de códigos IBGE dos municípios
     #' @param data_minima Data mínima no formato YYYY-MM-DD (opcional)
     #' @param codigos Vetor de códigos de divisão (opcional)
+    #' @param data_maxima Data máxima no formato YYYY-MM-DD (opcional)
     #' @return Lista com dados CAGED municipais por divisão
-    get_saldo_caged_municipal_divisao = function(codigos_municipio, data_minima = NULL, codigos = NULL) {
+    get_saldo_caged_municipal_divisao = function(codigos_municipio, data_minima = NULL, codigos = NULL, data_maxima = NULL) {
       params <- list(
-        codigos_municipio = paste(as.character(codigos_municipio), collapse = ","),  # 🔥 Conversão para string
-        tamanho_pagina = 1000
+        codigos_municipio = as.integer(codigos_municipio),
+        tamanho_pagina = 5000
       )
       if (!is.null(data_minima)) params$data_minima <- data_minima
-      if (!is.null(codigos)) params$codigos <- paste(codigos, collapse = ",")
+      if (!is.null(data_maxima)) params$data_maxima <- data_maxima
+      if (!is.null(codigos)) params$codigos_divisao <- as.character(codigos)
       
       return(self$.fetch_all_paginated_get("/saldo_caged/municipal/divisao", params))
     },
@@ -1008,14 +1092,16 @@ Emprego <- R6::R6Class(
     #' @param codigos_municipio Vetor de códigos IBGE dos municípios
     #' @param data_minima Data mínima no formato YYYY-MM-DD (opcional)
     #' @param codigos Vetor de códigos de grupo (opcional)
+    #' @param data_maxima Data máxima no formato YYYY-MM-DD (opcional)
     #' @return Lista com dados CAGED municipais por grupo
-    get_saldo_caged_municipal_grupo = function(codigos_municipio, data_minima = NULL, codigos = NULL) {
+    get_saldo_caged_municipal_grupo = function(codigos_municipio, data_minima = NULL, codigos = NULL, data_maxima = NULL) {
       params <- list(
-        codigos_municipio = paste(as.character(codigos_municipio), collapse = ","),  # 🔥 Conversão para string
-        tamanho_pagina = 1000
+        codigos_municipio = as.integer(codigos_municipio),
+        tamanho_pagina = 5000
       )
       if (!is.null(data_minima)) params$data_minima <- data_minima
-      if (!is.null(codigos)) params$codigos <- paste(codigos, collapse = ",")
+      if (!is.null(data_maxima)) params$data_maxima <- data_maxima
+      if (!is.null(codigos)) params$codigos_grupo <- as.character(codigos)
       
       return(self$.fetch_all_paginated_get("/saldo_caged/municipal/grupo", params))
     },
@@ -1025,14 +1111,16 @@ Emprego <- R6::R6Class(
     #' @param codigos_municipio Vetor de códigos IBGE dos municípios
     #' @param data_minima Data mínima no formato YYYY-MM-DD (opcional)
     #' @param codigos Vetor de códigos de subclasse (opcional)
+    #' @param data_maxima Data máxima no formato YYYY-MM-DD (opcional)
     #' @return Lista com dados CAGED municipais por subclasse
-    get_saldo_caged_municipal_subclasse = function(codigos_municipio, data_minima = NULL, codigos = NULL) {
+    get_saldo_caged_municipal_subclasse = function(codigos_municipio, data_minima = NULL, codigos = NULL, data_maxima = NULL) {
       params <- list(
-        codigos_municipio = paste(as.character(codigos_municipio), collapse = ","),  # 🔥 Conversão para string
-        tamanho_pagina = 1000
+        codigos_municipio = as.integer(codigos_municipio),
+        tamanho_pagina = 5000
       )
       if (!is.null(data_minima)) params$data_minima <- data_minima
-      if (!is.null(codigos)) params$codigos <- paste(codigos, collapse = ",")
+      if (!is.null(data_maxima)) params$data_maxima <- data_maxima
+      if (!is.null(codigos)) params$codigos_subclasse <- as.character(codigos)
       
       return(self$.fetch_all_paginated_get("/saldo_caged/municipal/subclasse", params))
     }
@@ -1331,7 +1419,7 @@ get_saldo_emprego_nacional_mensal <- function(nivel_cnae = 'subclasse',
   )
   
   if (length(dados) > 0) {
-    df <- tibble::as_tibble(dplyr::bind_rows(dados))
+    df <- .lista_para_tibble(dados)
     df <- .filter_columns_by_aggregation(df, 'nacional')
     df <- .filter_cnae_columns_by_level(df, nivel_cnae)
     return(df)
@@ -1397,7 +1485,7 @@ get_saldo_emprego_nacional_mensal_agrupado <- function(nome_grupo,
   )
   
   if (length(dados) > 0) {
-    df <- tibble::as_tibble(dplyr::bind_rows(dados))
+    df <- .lista_para_tibble(dados)
     df <- .filter_cnae_columns_for_grouped_methods(df, 'nacional')
     return(df)
   } else {
@@ -1435,7 +1523,7 @@ get_saldo_emprego_estadual_mensal <- function(sigla_uf,
   )
   
   if (length(dados) > 0) {
-    df <- tibble::as_tibble(dplyr::bind_rows(dados))
+    df <- .lista_para_tibble(dados)
     df <- .filter_columns_by_aggregation(df, 'estadual')
     df <- .filter_cnae_columns_by_level(df, nivel_cnae)
     return(df)
@@ -1507,7 +1595,7 @@ get_saldo_emprego_estadual_mensal_agrupado <- function(sigla_uf,
   )
   
   if (length(dados) > 0) {
-    df <- tibble::as_tibble(dplyr::bind_rows(dados))
+    df <- .lista_para_tibble(dados)
     df <- .filter_cnae_columns_for_grouped_methods(df, 'estadual')
     return(df)
   } else {
@@ -1548,7 +1636,7 @@ get_saldo_emprego_municipal_mensal <- function(sigla_uf,
   )
   
   if (length(dados) > 0) {
-    df <- tibble::as_tibble(dplyr::bind_rows(dados))
+    df <- .lista_para_tibble(dados)
     df <- .filter_columns_by_aggregation(df, 'municipal')
     df <- .filter_cnae_columns_by_level(df, nivel_cnae)
     return(df)
@@ -1625,7 +1713,7 @@ get_saldo_emprego_municipal_mensal_agrupado <- function(sigla_uf,
   )
   
   if (length(dados) > 0) {
-    df <- tibble::as_tibble(dplyr::bind_rows(dados))
+    df <- .lista_para_tibble(dados)
     df <- .filter_cnae_columns_for_grouped_methods(df, 'municipal')
     return(df)
   } else {
@@ -1742,7 +1830,7 @@ get_saldo_emprego_grupos_cnae_as_tibble <- function(...) {
   items <- api$get_saldo_emprego_detalhado_grupos_cnae(...)
 
   if (length(items) > 0) {
-    return(tibble::as_tibble(dplyr::bind_rows(items)))
+    return(.lista_para_tibble(items))
   }
 
   return(tibble::tibble())
@@ -1757,17 +1845,21 @@ get_saldo_emprego_grupos_cnae_as_tibble <- function(...) {
 #' @param codigos_cnae Vetor de códigos CNAE específicos (opcional)
 #' @param ano_minimo Ano mínimo para filtrar dados (opcional)
 #' @param agregado Se TRUE, agrega todos os estados
+#' @param ano_minimo Ano mínimo (opcional); filtra na API e reduz o volume baixado
+#' @param ano_maximo Ano máximo (opcional); filtra na API
 #' @return Tibble com dados anuais de estoque de emprego
 #' @export
 get_estoque_emprego_nacional <- function(codigos_cnae = NULL,
                                         nivel_cnae = 2,
-                                        agregado = FALSE) {
+                                        agregado = FALSE,
+                                         ano_minimo = NULL,
+                                         ano_maximo = NULL) {
   if (!is.numeric(nivel_cnae) || !nivel_cnae %in% c(2, 3)) {
     stop("nivel_cnae deve ser 2 (divisao) ou 3 (grupo)")
   }
   
   api <- Emprego$new()
-  dados <- api$get_estoque_emprego_nacional(
+  dados <- api$get_estoque_emprego_nacional(ano_minimo = ano_minimo, ano_maximo = ano_maximo, 
     codigos_cnae = codigos_cnae,
     nivel_cnae = nivel_cnae,
     agregado = agregado
@@ -1777,7 +1869,7 @@ get_estoque_emprego_nacional <- function(codigos_cnae = NULL,
     return(tibble::tibble())
   }
   
-  df <- tibble::as_tibble(dplyr::bind_rows(dados))
+  df <- .lista_para_tibble(dados)
   
   # Aplicar filtros de coluna
   df <- .filter_columns_by_aggregation(df, 'nacional')
@@ -1819,7 +1911,7 @@ get_estoque_emprego_nacional_agrupado <- function(nome_grupo,
     return(tibble::tibble())
   }
   
-  df <- tibble::as_tibble(dplyr::bind_rows(dados))
+  df <- .lista_para_tibble(dados)
   
   # Aplicar filtros de colunas específicos para métodos agrupados
   df <- .filter_cnae_columns_for_grouped_methods(df, 'nacional')
@@ -1836,17 +1928,21 @@ get_estoque_emprego_nacional_agrupado <- function(nome_grupo,
 #' @param nivel_cnae Nível CNAE ('divisao', 'grupo')
 #' @param codigos_cnae Vetor de códigos CNAE específicos (opcional)
 #' @param ano_minimo Ano mínimo para filtrar dados (opcional)
+#' @param ano_minimo Ano mínimo (opcional); filtra na API e reduz o volume baixado
+#' @param ano_maximo Ano máximo (opcional); filtra na API
 #' @return Tibble com dados anuais de estoque de emprego
 #' @export
 get_estoque_emprego_estadual <- function(sigla_uf,
                                         codigos_cnae = NULL,
-                                        nivel_cnae = 2) {
+                                        nivel_cnae = 2,
+                                         ano_minimo = NULL,
+                                         ano_maximo = NULL) {
   if (!is.numeric(nivel_cnae) || !nivel_cnae %in% c(2, 3)) {
     stop("nivel_cnae deve ser 2 (divisao) ou 3 (grupo)")
   }
   
   api <- Emprego$new()
-  dados <- api$get_estoque_emprego_estadual(
+  dados <- api$get_estoque_emprego_estadual(ano_minimo = ano_minimo, ano_maximo = ano_maximo, 
     sigla_uf = sigla_uf,
     codigos_cnae = codigos_cnae,
     nivel_cnae = nivel_cnae
@@ -1856,7 +1952,7 @@ get_estoque_emprego_estadual <- function(sigla_uf,
     return(tibble::tibble())
   }
   
-  df <- tibble::as_tibble(dplyr::bind_rows(dados))
+  df <- .lista_para_tibble(dados)
   
   # Aplicar filtros de coluna
   df <- .filter_columns_by_aggregation(df, 'estadual')
@@ -1871,44 +1967,90 @@ get_estoque_emprego_estadual <- function(sigla_uf,
 
 #' Obter estoque de emprego por porte de estabelecimento e setor, agregado nacionalmente
 #'
+#' @details
+#' Porte segundo o critério Sebrae/DIEESE, por pessoas ocupadas (unidade =
+#' estabelecimento; estoque = vínculos ativos em 31/12, RAIS):
+#'
+#' | Porte | Indústria | Comércio e Serviços |
+#' |---|---|---|
+#' | Microempresa | até 19 | até 9 |
+#' | Empresa de pequeno porte | 20 a 99 | 10 a 49 |
+#' | Empresa de médio porte | 100 a 499 | 50 a 99 |
+#' | Grande empresa | 500 ou mais | 100 ou mais |
+#'
+#' Setor: divisões CNAE 05 a 43 = `Indústria` (inclui construção); demais
+#' (inclusive agropecuária) = `Comércio e Serviços`. Série a partir de 2006 (CNAE 2.0).
+#' Ver METODOLOGIA.md do repositório.
+#'
+#' @references
+#' SEBRAE; DIEESE. Anuário do Trabalho na Micro e Pequena Empresa.
+#' <https://www.dieese.org.br/anuario/2011/anuarioSebrae10-11/15.html>
+#'
 #' @param nivel_cnae 'divisao' (2 dígitos), 'grupo' (3) ou 'classe' (4)
 #' @param codigos_cnae Vetor de códigos CNAE no nível escolhido (opcional)
 #' @param porte Vetor de portes para filtrar (opcional)
 #' @param setor 'Indústria' ou 'Comércio e Serviços' (opcional)
+#' @param ano_minimo Ano mínimo (opcional); filtra na API e reduz o volume baixado
+#' @param ano_maximo Ano máximo (opcional); filtra na API
 #' @return Tibble com estoque por porte/setor
 #' @export
 get_estoque_emprego_porte_nacional <- function(nivel_cnae = "divisao",
                                                codigos_cnae = NULL,
                                                porte = NULL,
-                                               setor = NULL) {
+                                               setor = NULL,
+                                               ano_minimo = NULL,
+                                               ano_maximo = NULL) {
   api <- Emprego$new()
-  dados <- api$get_estoque_emprego_porte_nacional(
+  dados <- api$get_estoque_emprego_porte_nacional(ano_minimo = ano_minimo, ano_maximo = ano_maximo, 
     nivel_cnae = nivel_cnae, codigos_cnae = codigos_cnae, porte = porte, setor = setor
   )
   if (length(dados) == 0) return(tibble::tibble())
-  tibble::as_tibble(dplyr::bind_rows(dados))
+  .lista_para_tibble(dados)
 }
 
 #' Obter estoque de emprego por porte de estabelecimento e setor, por UF
+#'
+#' @details
+#' Porte segundo o critério Sebrae/DIEESE, por pessoas ocupadas (unidade =
+#' estabelecimento; estoque = vínculos ativos em 31/12, RAIS):
+#'
+#' | Porte | Indústria | Comércio e Serviços |
+#' |---|---|---|
+#' | Microempresa | até 19 | até 9 |
+#' | Empresa de pequeno porte | 20 a 99 | 10 a 49 |
+#' | Empresa de médio porte | 100 a 499 | 50 a 99 |
+#' | Grande empresa | 500 ou mais | 100 ou mais |
+#'
+#' Setor: divisões CNAE 05 a 43 = `Indústria` (inclui construção); demais
+#' (inclusive agropecuária) = `Comércio e Serviços`. Série a partir de 2006 (CNAE 2.0).
+#' Ver METODOLOGIA.md do repositório.
+#'
+#' @references
+#' SEBRAE; DIEESE. Anuário do Trabalho na Micro e Pequena Empresa.
+#' <https://www.dieese.org.br/anuario/2011/anuarioSebrae10-11/15.html>
 #'
 #' @param ufs Sigla(s) de UF (ex: 'SP' ou c('SP', 'RJ'))
 #' @param nivel_cnae 'divisao' (2 dígitos), 'grupo' (3) ou 'classe' (4)
 #' @param codigos_cnae Vetor de códigos CNAE no nível escolhido (opcional)
 #' @param porte Vetor de portes para filtrar (opcional)
 #' @param setor 'Indústria' ou 'Comércio e Serviços' (opcional)
+#' @param ano_minimo Ano mínimo (opcional); filtra na API e reduz o volume baixado
+#' @param ano_maximo Ano máximo (opcional); filtra na API
 #' @return Tibble com estoque por porte/setor
 #' @export
 get_estoque_emprego_porte_estadual <- function(ufs,
                                                nivel_cnae = "divisao",
                                                codigos_cnae = NULL,
                                                porte = NULL,
-                                               setor = NULL) {
+                                               setor = NULL,
+                                               ano_minimo = NULL,
+                                               ano_maximo = NULL) {
   api <- Emprego$new()
-  dados <- api$get_estoque_emprego_porte_estadual(
+  dados <- api$get_estoque_emprego_porte_estadual(ano_minimo = ano_minimo, ano_maximo = ano_maximo, 
     ufs = ufs, nivel_cnae = nivel_cnae, codigos_cnae = codigos_cnae, porte = porte, setor = setor
   )
   if (length(dados) == 0) return(tibble::tibble())
-  tibble::as_tibble(dplyr::bind_rows(dados))
+  .lista_para_tibble(dados)
 }
 
 
@@ -1917,26 +2059,34 @@ get_estoque_emprego_porte_estadual <- function(ufs,
 #' Obter estoque de emprego por classe CNAE (4 dígitos), agregado nacionalmente
 #'
 #' @param codigos_classe Vetor de códigos de classe CNAE (opcional)
+#' @param ano_minimo Ano mínimo (opcional); filtra na API e reduz o volume baixado
+#' @param ano_maximo Ano máximo (opcional); filtra na API
 #' @return Tibble com estoque por classe CNAE
 #' @export
-get_estoque_emprego_classe_cnae_nacional <- function(codigos_classe = NULL) {
+get_estoque_emprego_classe_cnae_nacional <- function(codigos_classe = NULL,
+                                                     ano_minimo = NULL,
+                                                     ano_maximo = NULL) {
   api <- Emprego$new()
-  dados <- api$get_estoque_emprego_classe_cnae_nacional(codigos_classe = codigos_classe)
+  dados <- api$get_estoque_emprego_classe_cnae_nacional(ano_minimo = ano_minimo, ano_maximo = ano_maximo, codigos_classe = codigos_classe)
   if (length(dados) == 0) return(tibble::tibble())
-  tibble::as_tibble(dplyr::bind_rows(dados))
+  .lista_para_tibble(dados)
 }
 
 #' Obter estoque de emprego por classe CNAE (4 dígitos), por UF
 #'
 #' @param ufs Sigla(s) de UF (ex: 'SP' ou c('SP', 'RJ'))
 #' @param codigos_classe Vetor de códigos de classe CNAE (opcional)
+#' @param ano_minimo Ano mínimo (opcional); filtra na API e reduz o volume baixado
+#' @param ano_maximo Ano máximo (opcional); filtra na API
 #' @return Tibble com estoque por classe CNAE
 #' @export
-get_estoque_emprego_classe_cnae_estadual <- function(ufs, codigos_classe = NULL) {
+get_estoque_emprego_classe_cnae_estadual <- function(ufs, codigos_classe = NULL,
+                                                     ano_minimo = NULL,
+                                                     ano_maximo = NULL) {
   api <- Emprego$new()
-  dados <- api$get_estoque_emprego_classe_cnae_estadual(ufs = ufs, codigos_classe = codigos_classe)
+  dados <- api$get_estoque_emprego_classe_cnae_estadual(ano_minimo = ano_minimo, ano_maximo = ano_maximo, ufs = ufs, codigos_classe = codigos_classe)
   if (length(dados) == 0) return(tibble::tibble())
-  tibble::as_tibble(dplyr::bind_rows(dados))
+  .lista_para_tibble(dados)
 }
 
 
@@ -1947,15 +2097,19 @@ get_estoque_emprego_classe_cnae_estadual <- function(ufs, codigos_classe = NULL)
 #' @param siglas_uf Vetor de siglas de UF (opcional)
 #' @param codigos_classe Vetor de códigos de classe CNAE (opcional)
 #' @param codigos_cbo Vetor de códigos CBO (opcional)
+#' @param ano_minimo Ano mínimo (opcional); filtra na API e reduz o volume baixado
+#' @param ano_maximo Ano máximo (opcional); filtra na API
 #' @return Tibble com estoque por UF/classe/CBO
 #' @export
-get_estoque_emprego_uf_cbo <- function(siglas_uf = NULL, codigos_classe = NULL, codigos_cbo = NULL) {
+get_estoque_emprego_uf_cbo <- function(siglas_uf = NULL, codigos_classe = NULL, codigos_cbo = NULL,
+                                       ano_minimo = NULL,
+                                       ano_maximo = NULL) {
   api <- Emprego$new()
-  dados <- api$get_estoque_emprego_uf_cbo(
+  dados <- api$get_estoque_emprego_uf_cbo(ano_minimo = ano_minimo, ano_maximo = ano_maximo, 
     siglas_uf = siglas_uf, codigos_classe = codigos_classe, codigos_cbo = codigos_cbo
   )
   if (length(dados) == 0) return(tibble::tibble())
-  tibble::as_tibble(dplyr::bind_rows(dados))
+  .lista_para_tibble(dados)
 }
 
 
@@ -1965,28 +2119,50 @@ get_estoque_emprego_uf_cbo <- function(siglas_uf = NULL, codigos_classe = NULL, 
 #'
 #' @param tipos Vetor com 'Geral', 'Divisao' e/ou 'Grupo' (opcional)
 #' @param codigos Vetor de códigos CNAE correspondentes ao tipo (opcional)
+#' @param ano_minimo Ano mínimo (opcional); filtra na API e reduz o volume baixado
+#' @param ano_maximo Ano máximo (opcional); filtra na API
 #' @return Tibble com remuneração média
 #' @export
-get_renda_media_emprego <- function(tipos = NULL, codigos = NULL) {
+get_renda_media_emprego <- function(tipos = NULL, codigos = NULL,
+                                    ano_minimo = NULL,
+                                    ano_maximo = NULL) {
   api <- Emprego$new()
-  dados <- api$get_renda_media_emprego(tipos = tipos, codigos = codigos)
+  dados <- api$get_renda_media_emprego(ano_minimo = ano_minimo, ano_maximo = ano_maximo, tipos = tipos, codigos = codigos)
   if (length(dados) == 0) return(tibble::tibble())
-  tibble::as_tibble(dplyr::bind_rows(dados))
+  .lista_para_tibble(dados)
 }
 
 
 # ========== ÍNDICE POTEC ==========
 
-#' Obter índice Potec (intensidade tecnológica) por classe CNAE (4 dígitos)
+#' Obter índice Potec (pessoal ocupado técnico-científico) por classe CNAE (4 dígitos)
+#'
+#' @details
+#' `potec = (pesquisadores + engenheiros + profissionais científicos) / estoque_total`
+#' da classe CNAE (vínculos ativos, RAIS), em **fração de 0 a 1** (0,33 = 33%).
+#' CBO 2002: pesquisadores = 203; engenheiros = 202, 214, 222; profissionais
+#' científicos = 201, 211, 212, 213, 221. É a proxy anual da PINTEC (gasto
+#' empresarial em inovação/P&D) construída pelo IPEA com a RAIS.
+#' Ver METODOLOGIA.md do repositório.
 #'
 #' @param codigos_classe Vetor de códigos de classe CNAE (opcional)
-#' @return Tibble com o índice Potec
+#' @param ano_minimo Ano mínimo (opcional); filtra na API e reduz o volume baixado
+#' @param ano_maximo Ano máximo (opcional); filtra na API
+#' @return Tibble com `ano`, `classe_cnae_cod`, `estoque_pesquisadores`,
+#'   `estoque_engenheiros`, `estoque_profissionais_cientificos`, `estoque_total`, `potec`
+#' @references
+#' ARAÚJO, B. C. P. O.; CAVALCANTE, L. R.; ALVES, P. F. Variáveis proxy para os
+#' gastos empresariais em inovação com base no pessoal ocupado técnico-científico
+#' disponível na Rais. Radar, Ipea, n. 5, 2009.
+#' <http://repositorio.ipea.gov.br/handle/11058/5431>
 #' @export
-get_potec_emprego <- function(codigos_classe = NULL) {
+get_potec_emprego <- function(codigos_classe = NULL,
+                              ano_minimo = NULL,
+                              ano_maximo = NULL) {
   api <- Emprego$new()
-  dados <- api$get_potec_emprego(codigos_classe = codigos_classe)
+  dados <- api$get_potec_emprego(ano_minimo = ano_minimo, ano_maximo = ano_maximo, codigos_classe = codigos_classe)
   if (length(dados) == 0) return(tibble::tibble())
-  tibble::as_tibble(dplyr::bind_rows(dados))
+  .lista_para_tibble(dados)
 }
 
 
@@ -2000,7 +2176,7 @@ get_date_bases <- function() {
   api <- Emprego$new()
   dados <- api$get_date_bases()
   if (length(dados) == 0) return(tibble::tibble())
-  tibble::as_tibble(dplyr::bind_rows(dados))
+  .lista_para_tibble(dados)
 }
 
 
@@ -2038,7 +2214,7 @@ get_estoque_emprego_estadual_agrupado <- function(sigla_uf,
     return(tibble::tibble())
   }
   
-  df <- tibble::as_tibble(dplyr::bind_rows(dados))
+  df <- .lista_para_tibble(dados)
   
   # Aplicar filtros de colunas específicos para métodos agrupados
   df <- .filter_cnae_columns_for_grouped_methods(df, 'estadual')
@@ -2606,7 +2782,7 @@ get_saldo_caged_nacional <- function(nivel_cnae,
   )
   
   if (length(dados) > 0) {
-    return(tibble::as_tibble(dplyr::bind_rows(dados)))
+    return(.lista_para_tibble(dados))
   } else {
     return(tibble::tibble())
   }
@@ -2660,7 +2836,7 @@ get_saldo_caged_estadual <- function(nivel_cnae,
   )
   
   if (length(dados) > 0) {
-    return(tibble::as_tibble(dplyr::bind_rows(dados)))
+    return(.lista_para_tibble(dados))
   } else {
     return(tibble::tibble())
   }
@@ -2714,7 +2890,7 @@ get_saldo_caged_municipal <- function(nivel_cnae,
   )
   
   if (length(dados) > 0) {
-    return(tibble::as_tibble(dplyr::bind_rows(dados)))
+    return(.lista_para_tibble(dados))
   } else {
     return(tibble::tibble())
   }

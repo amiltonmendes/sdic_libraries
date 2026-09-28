@@ -32,6 +32,8 @@ from .api import (
     # Funções de estoque
     get_estoque_emprego_nacional,
     get_estoque_emprego_estadual,
+    get_estoque_emprego_nacional_agrupado,
+    get_estoque_emprego_estadual_agrupado,
     # Funções de estoque por porte e setor (indústria x comércio/serviços)
     get_estoque_emprego_porte_nacional,
     get_estoque_emprego_porte_estadual,
@@ -105,6 +107,8 @@ __all__ = [
     # Funções de estoque
     "get_estoque_emprego_nacional",
     "get_estoque_emprego_estadual",
+    "get_estoque_emprego_nacional_agrupado",
+    "get_estoque_emprego_estadual_agrupado",
     # Funções de estoque por porte e setor (indústria x comércio/serviços)
     "get_estoque_emprego_porte_nacional",
     "get_estoque_emprego_porte_estadual",

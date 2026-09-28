@@ -119,3 +119,33 @@ def criar_indice(
     df_resultado = df_resultado.drop('_ano_temp', axis=1)
     
     return df_resultado
+
+
+def juntar_emprego_comex(emprego: pd.DataFrame, comex: pd.DataFrame, how: str = 'left') -> pd.DataFrame:
+    """Une emprego (RAIS/CAGED) e comércio exterior por **divisão e ano**.
+
+    A chave é a divisão de 2 dígitos: `divisao_cnae_cod` (emprego) = `divisao_isic_cod`
+    (comex). Coincidem 38 divisões; as de serviços só existem no emprego e a `89` só no
+    comex. O comex é somado por (ano, divisão) antes da união, para que meses, países ou
+    UFs não multipliquem as linhas do emprego. Feche o ano no comex (`ano_minimo`,
+    `agregado_ano=True`) — o ano corrente é parcial.
+
+    Args:
+        emprego: precisa de `ano` e `divisao_cnae_cod` (ex.: `get_estoque_emprego_nacional`,
+            com `nivel_cnae=2`).
+        comex: precisa de `ano` e `divisao_isic_cod` (ex.:
+            `get_exportacao_isic_divisao_nacional_mensal`); soma `vl_fob`, `kg_liquido` e
+            `quantidade_estatistica`.
+        how: 'left' (padrão: mantém toda divisão do emprego, comex nulo onde não há),
+            'inner', 'outer'.
+    """
+    for nome, df, colunas in (('emprego', emprego, ('ano', 'divisao_cnae_cod')),
+                              ('comex', comex, ('ano', 'divisao_isic_cod'))):
+        faltam = [c for c in colunas if c not in df.columns]
+        if faltam:
+            raise ValueError(f"{nome} sem a(s) coluna(s) {faltam}; colunas disponíveis: {list(df.columns)}")
+    valores = [c for c in ('vl_fob', 'kg_liquido', 'quantidade_estatistica') if c in comex.columns]
+    somado = (comex.groupby(['ano', 'divisao_isic_cod'], as_index=False)[valores].sum()
+              .rename(columns={'divisao_isic_cod': 'divisao_cnae_cod'}))
+    return emprego.merge(somado, on=['ano', 'divisao_cnae_cod'], how=how)
+

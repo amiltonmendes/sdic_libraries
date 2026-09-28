@@ -1,0 +1,218 @@
+{
+  "_doc": "Contrato Python x R do esquema Comex. 'linha' é uma linha real da sdic_api (28/09/2026); 'colunas' é o esquema esperado (ordem e tipo) após a padronização. Tipos: int, num, str. Colunas 100% nulas na amostra não têm o tipo verificado. Os casos 'api_nova' são linhas no formato da sdic_api corrigida (NCM/divisão como texto, QuantidadeEstatistica + QTEstat obsoleto, mapa com CodigoSecaoISIC); devem produzir o mesmo esquema.",
+  "casos": [
+    {
+      "metodo": "get_exportacao_ncm_nacional_mensal",
+      "mapa": false,
+      "linha": {
+        "Ano": 2026,
+        "Mes": null,
+        "NCM": 1011010,
+        "DescricaoNCM": "Cavalos reprodutores de raça pura",
+        "VLFob": 4038657819,
+        "QTEstat": 11305638,
+        "KgLiquido": 9958455242
+      },
+      "colunas": {
+        "ano": "int",
+        "mes": "int",
+        "ncm": "str",
+        "ncm_desc": "str",
+        "vl_fob": "num",
+        "quantidade_estatistica": "num",
+        "kg_liquido": "num"
+      },
+      "valores": {
+        "ncm": "01011010"
+      }
+    },
+    {
+      "metodo": "get_exportacao_isic_divisao_nacional_mensal",
+      "mapa": false,
+      "linha": {
+        "Ano": 2026,
+        "Mes": 1,
+        "DivisaoISIC": 1,
+        "NomeDivisaoISIC": "Produção vegetal, animal e caça",
+        "SecaoISIC": "Agropecuária",
+        "QuantidadeEstatistica": 5225669585,
+        "KgLiquido": 7348967378,
+        "VLFob": 3837361868
+      },
+      "colunas": {
+        "ano": "int",
+        "mes": "int",
+        "divisao_isic_cod": "str",
+        "divisao_isic_desc": "str",
+        "secao_isic_desc": "str",
+        "quantidade_estatistica": "num",
+        "kg_liquido": "num",
+        "vl_fob": "num"
+      },
+      "valores": {
+        "divisao_isic_cod": "01",
+        "mes": 1
+      }
+    },
+    {
+      "metodo": "get_exportacao_isic_divisao_estadual_mensal",
+      "mapa": false,
+      "linha": {
+        "Ano": 2026,
+        "Mes": 1,
+        "UF": "São Paulo",
+        "Pais": null,
+        "Regiao": "REGIAO SUDESTE",
+        "DivisaoISIC": 1,
+        "NomeDivisaoISIC": "Produção vegetal, animal e caça",
+        "SecaoISIC": "Agropecuária",
+        "QuantidadeEstatistica": 52431641,
+        "KgLiquido": 153840384,
+        "VLFob": 221818599
+      },
+      "colunas": {
+        "ano": "int",
+        "mes": "int",
+        "uf": "str",
+        "pais": "str",
+        "regiao": "str",
+        "divisao_isic_cod": "str",
+        "divisao_isic_desc": "str",
+        "secao_isic_desc": "str",
+        "quantidade_estatistica": "num",
+        "kg_liquido": "num",
+        "vl_fob": "num"
+      },
+      "valores": {}
+    },
+    {
+      "metodo": "get_exportacao_pais_nacional_mensal",
+      "mapa": false,
+      "linha": {
+        "Ano": 2026,
+        "Mes": 1,
+        "Pais": "Argentina",
+        "SecaoISIC": "Indústria de Transformação",
+        "QuantidadeEstatistica": 244633956,
+        "KgLiquido": 268063202,
+        "VLFob": 871359945
+      },
+      "colunas": {
+        "ano": "int",
+        "mes": "int",
+        "pais": "str",
+        "secao_isic_desc": "str",
+        "quantidade_estatistica": "num",
+        "kg_liquido": "num",
+        "vl_fob": "num"
+      },
+      "valores": {}
+    },
+    {
+      "metodo": "get_ncm_isic_mapa",
+      "mapa": true,
+      "linha": {
+        "NCM": 1011010,
+        "DescricaoNCM": "Cavalos reprodutores de raça pura",
+        "DivisaoISIC": 1,
+        "NomeDivisaoISIC": "Produção vegetal, animal e caça",
+        "SecaoISIC": "A",
+        "NomeSecaoISIC": "Agropecuária"
+      },
+      "colunas": {
+        "ncm": "str",
+        "ncm_desc": "str",
+        "divisao_isic_cod": "str",
+        "divisao_isic_desc": "str",
+        "secao_isic_cod": "str",
+        "secao_isic_desc": "str"
+      },
+      "valores": {
+        "ncm": "01011010",
+        "secao_isic_cod": "A"
+      }
+    },
+    {
+      "metodo": "get_exportacao_ncm_nacional_mensal",
+      "mapa": false,
+      "api_nova": true,
+      "linha": {
+        "Ano": 2026,
+        "Mes": null,
+        "NCM": "01011010",
+        "DescricaoNCM": "Cavalos reprodutores de raça pura",
+        "VLFob": 4038657819,
+        "QuantidadeEstatistica": 11305638,
+        "KgLiquido": 9958455242,
+        "QTEstat": 11305638
+      },
+      "colunas": {
+        "ano": "int",
+        "mes": "int",
+        "ncm": "str",
+        "ncm_desc": "str",
+        "vl_fob": "num",
+        "quantidade_estatistica": "num",
+        "kg_liquido": "num"
+      },
+      "valores": {
+        "ncm": "01011010"
+      }
+    },
+    {
+      "metodo": "get_exportacao_isic_divisao_nacional_mensal",
+      "mapa": false,
+      "api_nova": true,
+      "linha": {
+        "Ano": 2026,
+        "Mes": 1,
+        "DivisaoISIC": "01",
+        "NomeDivisaoISIC": "Produção vegetal, animal e caça",
+        "SecaoISIC": "Agropecuária",
+        "QuantidadeEstatistica": 5225669585,
+        "KgLiquido": 7348967378,
+        "VLFob": 3837361868
+      },
+      "colunas": {
+        "ano": "int",
+        "mes": "int",
+        "divisao_isic_cod": "str",
+        "divisao_isic_desc": "str",
+        "secao_isic_desc": "str",
+        "quantidade_estatistica": "num",
+        "kg_liquido": "num",
+        "vl_fob": "num"
+      },
+      "valores": {
+        "divisao_isic_cod": "01"
+      }
+    },
+    {
+      "metodo": "get_ncm_isic_mapa",
+      "mapa": true,
+      "api_nova": true,
+      "linha": {
+        "NCM": "01011010",
+        "DescricaoNCM": "Cavalos reprodutores de raça pura",
+        "DivisaoISIC": "01",
+        "NomeDivisaoISIC": "Produção vegetal, animal e caça",
+        "SecaoISIC": "Agropecuária",
+        "CodigoSecaoISIC": "A",
+        "NomeSecaoISIC": "Agropecuária"
+      },
+      "colunas": {
+        "ncm": "str",
+        "ncm_desc": "str",
+        "divisao_isic_cod": "str",
+        "divisao_isic_desc": "str",
+        "secao_isic_desc": "str",
+        "secao_isic_cod": "str"
+      },
+      "valores": {
+        "ncm": "01011010",
+        "secao_isic_cod": "A",
+        "secao_isic_desc": "Agropecuária"
+      }
+    }
+  ]
+}

@@ -107,3 +107,50 @@ class TestBugsCorrigidos:
         nomes = {item["Base"] for item in bases}
         assert "RAIS" in nomes
         assert "CAGED" in nomes
+
+
+class TestPaginacaoEstavel:
+    """Regressão: ORDER BY sem a chave completa duplicava/perdia linhas entre páginas
+    (uf_cbo sem CBO; porte sem porte). Páginas pequenas forçam várias fronteiras."""
+
+    @staticmethod
+    def _sem_repeticao(itens, chave):
+        chaves = [tuple(i[c] for c in chave) for i in itens]
+        assert len(chaves) == len(set(chaves)), f"{len(chaves) - len(set(chaves))} linhas repetidas"
+
+    def test_uf_cbo(self, api):
+        itens = api._fetch_all_paginated_get(
+            "/get_estoque_emprego_uf_cbo/",
+            {"siglas_uf": "SP", "codigos_classe": "4711", "tamanho_pagina": 2000},
+        )
+        self._sem_repeticao(itens, ("ano", "sigla_uf", "classe_cnae_cod", "cbo_cod"))
+
+    def test_porte(self, api):
+        itens = api._fetch_all_paginated_get(
+            "/get_estoque_emprego_porte_nacional/", {"nivel_cnae": "divisao", "tamanho_pagina": 1000}
+        )
+        self._sem_repeticao(itens, ("ano", "codigo_cnae", "porte"))
+
+
+class TestFiltroAno:
+    """ano_minimo/ano_maximo filtram na API: o recorte deve ser idêntico a filtrar o
+    resultado completo no cliente (e menor, para reduzir o volume baixado)."""
+
+    @pytest.mark.parametrize("metodo,kwargs", [
+        ("get_estoque_emprego_nacional", {"codigos_cnae": ["47"], "nivel_cnae": 2}),
+        ("get_estoque_emprego_estadual", {"ufs": "SP", "codigos_cnae": ["47"], "nivel_cnae": 2}),
+        ("get_estoque_emprego_porte_nacional", {"nivel_cnae": "divisao", "codigos_cnae": ["47"]}),
+        ("get_estoque_emprego_porte_estadual", {"ufs": "SP", "nivel_cnae": "divisao", "codigos_cnae": ["47"]}),
+        ("get_estoque_emprego_classe_cnae_nacional", {"codigos_classe": ["4711"]}),
+        ("get_estoque_emprego_classe_cnae_estadual", {"ufs": "SP", "codigos_classe": ["4711"]}),
+        ("get_estoque_emprego_uf_cbo", {"siglas_uf": ["SP"], "codigos_classe": ["4711"]}),
+        ("get_renda_media_emprego", {"tipos": ["Divisao"], "codigos": ["47"]}),
+        ("get_potec_emprego", {"codigos_classe": ["4711"]}),
+    ])
+    def test_recorte_na_api_igual_ao_filtro_no_cliente(self, api, metodo, kwargs):
+        f = getattr(api, metodo)
+        todos = f(**kwargs)
+        recorte = f(**kwargs, ano_minimo=2023, ano_maximo=2024)
+        esperado = [i for i in todos if 2023 <= i["ano"] <= 2024]
+        assert recorte and len(recorte) < len(todos)
+        assert sorted(map(str, recorte)) == sorted(map(str, esperado))

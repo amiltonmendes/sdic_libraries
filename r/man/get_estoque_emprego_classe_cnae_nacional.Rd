@@ -4,10 +4,18 @@
 \alias{get_estoque_emprego_classe_cnae_nacional}
 \title{Obter estoque de emprego por classe CNAE (4 dígitos), agregado nacionalmente}
 \usage{
-get_estoque_emprego_classe_cnae_nacional(codigos_classe = NULL)
+get_estoque_emprego_classe_cnae_nacional(
+  codigos_classe = NULL,
+  ano_minimo = NULL,
+  ano_maximo = NULL
+)
 }
 \arguments{
 \item{codigos_classe}{Vetor de códigos de classe CNAE (opcional)}
+
+\item{ano_minimo}{Ano mínimo (opcional); filtra na API e reduz o volume baixado}
+
+\item{ano_maximo}{Ano máximo (opcional); filtra na API}
 }
 \value{
 Tibble com estoque por classe CNAE

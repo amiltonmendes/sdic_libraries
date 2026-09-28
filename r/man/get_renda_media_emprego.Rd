@@ -4,12 +4,21 @@
 \alias{get_renda_media_emprego}
 \title{Obter remuneração média RAIS por nível de agregação e código}
 \usage{
-get_renda_media_emprego(tipos = NULL, codigos = NULL)
+get_renda_media_emprego(
+  tipos = NULL,
+  codigos = NULL,
+  ano_minimo = NULL,
+  ano_maximo = NULL
+)
 }
 \arguments{
 \item{tipos}{Vetor com 'Geral', 'Divisao' e/ou 'Grupo' (opcional)}
 
 \item{codigos}{Vetor de códigos CNAE correspondentes ao tipo (opcional)}
+
+\item{ano_minimo}{Ano mínimo (opcional); filtra na API e reduz o volume baixado}
+
+\item{ano_maximo}{Ano máximo (opcional); filtra na API}
 }
 \value{
 Tibble com remuneração média

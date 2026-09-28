@@ -2,16 +2,35 @@
 % Please edit documentation in R/emprego.R
 \name{get_potec_emprego}
 \alias{get_potec_emprego}
-\title{Obter índice Potec (intensidade tecnológica) por classe CNAE (4 dígitos)}
+\title{Obter índice Potec (pessoal ocupado técnico-científico) por classe CNAE (4 dígitos)}
 \usage{
-get_potec_emprego(codigos_classe = NULL)
+get_potec_emprego(codigos_classe = NULL, ano_minimo = NULL, ano_maximo = NULL)
 }
 \arguments{
 \item{codigos_classe}{Vetor de códigos de classe CNAE (opcional)}
+
+\item{ano_minimo}{Ano mínimo (opcional); filtra na API e reduz o volume baixado}
+
+\item{ano_maximo}{Ano máximo (opcional); filtra na API}
 }
 \value{
-Tibble com o índice Potec
+Tibble com \code{ano}, \code{classe_cnae_cod}, \code{estoque_pesquisadores},
+\code{estoque_engenheiros}, \code{estoque_profissionais_cientificos}, \code{estoque_total}, \code{potec}
 }
 \description{
-Obter índice Potec (intensidade tecnológica) por classe CNAE (4 dígitos)
+Obter índice Potec (pessoal ocupado técnico-científico) por classe CNAE (4 dígitos)
+}
+\details{
+\verb{potec = (pesquisadores + engenheiros + profissionais científicos) / estoque_total}
+da classe CNAE (vínculos ativos, RAIS), em \strong{fração de 0 a 1} (0,33 = 33\%).
+CBO 2002: pesquisadores = 203; engenheiros = 202, 214, 222; profissionais
+científicos = 201, 211, 212, 213, 221. É a proxy anual da PINTEC (gasto
+empresarial em inovação/P&D) construída pelo IPEA com a RAIS.
+Ver METODOLOGIA.md do repositório.
+}
+\references{
+ARAÚJO, B. C. P. O.; CAVALCANTE, L. R.; ALVES, P. F. Variáveis proxy para os
+gastos empresariais em inovação com base no pessoal ocupado técnico-científico
+disponível na Rais. Radar, Ipea, n. 5, 2009.
+\url{http://repositorio.ipea.gov.br/handle/11058/5431}
 }

@@ -1,0 +1,150 @@
+{
+  "_doc": "Contrato Python x R do esquema de emprego. 'linha' é uma linha da sdic_api (28/09/2026, sem as colunas-alias que o cliente acrescenta: Ano, competencia); 'colunas' é o esquema esperado da função de módulo (mesmo nome em Python e R, chamada com 'kwargs'). Tipos: int, num, str. Colunas 100% nulas na amostra não têm o tipo verificado, mas a coluna precisa existir.",
+  "casos": [
+    {
+      "funcao": "get_estoque_emprego_nacional",
+      "kwargs": {
+        "codigos_cnae": [
+          "10"
+        ],
+        "nivel_cnae": 2,
+        "agregado": true
+      },
+      "linha": {
+        "ano": 2025,
+        "divisao_cnae_cod": "10",
+        "divisao_cnae_desc": null,
+        "estoque_trabalhadores": 1967701
+      },
+      "colunas": {
+        "ano": "int",
+        "divisao_cnae_cod": "str",
+        "divisao_cnae_desc": "str",
+        "estoque_trabalhadores": "int",
+        "Ano": "int"
+      }
+    },
+    {
+      "funcao": "get_estoque_emprego_porte_nacional",
+      "kwargs": {
+        "nivel_cnae": "divisao",
+        "codigos_cnae": [
+          "10"
+        ]
+      },
+      "linha": {
+        "ano": 2025,
+        "sigla_uf": null,
+        "codigo_cnae": "10",
+        "setor": "Indústria",
+        "porte": "Empresa de médio porte",
+        "estoque_trabalhadores": 415781
+      },
+      "colunas": {
+        "ano": "int",
+        "sigla_uf": "str",
+        "codigo_cnae": "str",
+        "setor": "str",
+        "porte": "str",
+        "estoque_trabalhadores": "int",
+        "Ano": "int"
+      }
+    },
+    {
+      "funcao": "get_estoque_emprego_classe_cnae_nacional",
+      "kwargs": {
+        "codigos_classe": [
+          "1011"
+        ]
+      },
+      "linha": {
+        "ano": 2025,
+        "sigla_uf": null,
+        "classe_cnae_cod": "1011",
+        "classe_cnae_desc": "Abate de reses, exceto suínos",
+        "estoque_trabalhadores": 174160
+      },
+      "colunas": {
+        "ano": "int",
+        "sigla_uf": "str",
+        "classe_cnae_cod": "str",
+        "classe_cnae_desc": "str",
+        "estoque_trabalhadores": "int",
+        "Ano": "int"
+      }
+    },
+    {
+      "funcao": "get_renda_media_emprego",
+      "kwargs": {
+        "tipos": [
+          "Divisao"
+        ],
+        "codigos": [
+          "10"
+        ]
+      },
+      "linha": {
+        "ano": 2025,
+        "tipo": "Divisao",
+        "codigo": "10",
+        "remuneracao_media": 3419.128719054625
+      },
+      "colunas": {
+        "ano": "int",
+        "tipo": "str",
+        "codigo": "str",
+        "remuneracao_media": "num",
+        "Ano": "int"
+      }
+    },
+    {
+      "funcao": "get_potec_emprego",
+      "kwargs": {
+        "codigos_classe": [
+          "7210"
+        ]
+      },
+      "linha": {
+        "ano": 2025,
+        "classe_cnae_cod": "7210",
+        "estoque_pesquisadores": 8684,
+        "estoque_engenheiros": 3206,
+        "estoque_profissionais_cientificos": 7687,
+        "estoque_total": 59438,
+        "potec": 0.3293684175106834
+      },
+      "colunas": {
+        "ano": "int",
+        "classe_cnae_cod": "str",
+        "estoque_pesquisadores": "int",
+        "estoque_engenheiros": "int",
+        "estoque_profissionais_cientificos": "int",
+        "estoque_total": "int",
+        "potec": "num",
+        "Ano": "int"
+      }
+    },
+    {
+      "funcao": "get_saldo_emprego_nacional_mensal",
+      "kwargs": {
+        "nivel_cnae": "divisao",
+        "codigo_cnae": "10"
+      },
+      "linha": {
+        "mes_referencia": "2026-07-01",
+        "divisao_cnae_cod": "10",
+        "divisao_cnae_desc": "Fabricação De Produtos Alimentícios",
+        "saldo_reajustado": 6994.0,
+        "saldo_sem_reajuste": 6994.0
+      },
+      "colunas": {
+        "mes_referencia": "str",
+        "divisao_cnae_cod": "str",
+        "divisao_cnae_desc": "str",
+        "saldo_reajustado": "num",
+        "saldo_sem_reajuste": "num",
+        "competencia": "str"
+      }
+    }
+  ]
+}

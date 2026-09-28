@@ -12,12 +12,16 @@ o desenho original.
 
 from __future__ import annotations
 
+import inspect
 import logging
 import os
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
+import pandas as pd
 import requests
+
+from ...utils.cache import com_cache
 
 
 class ComexAPIError(Exception):
@@ -91,6 +95,7 @@ class Comex:
         )
 
         self.timeout = int(os.getenv('API_TIMEOUT', str(timeout)))
+        self.cache_ttl = int(os.getenv('SDIC_CACHE_TTL', '0'))  # segundos; 0 = sem cache (ver utils/cache.py)
         self.api_key = api_key or os.getenv('COMEX_API_KEY')
 
         log_level = os.getenv('LOG_LEVEL', 'INFO').upper()
@@ -121,9 +126,12 @@ class Comex:
     def _make_request(self, endpoint: str, params: Dict[str, Any] = None) -> Dict[str, Any]:
         url = f"{self.base_url.rstrip('/')}/{endpoint.lstrip('/')}"
         try:
-            response = self.session.get(url, params=params, timeout=self.timeout)
-            response.raise_for_status()
-            return response.json()
+            def buscar():
+                response = self.session.get(url, params=params, timeout=self.timeout)
+                response.raise_for_status()
+                return response.json()
+
+            return com_cache(self.cache_ttl, ('GET', url, params, None), buscar)
         except requests.exceptions.RequestException as e:
             self.logger.error(f"Falha na requisição da API: {e}")
             status_code = getattr(e.response, 'status_code', None) if hasattr(e, 'response') and e.response else None
@@ -135,9 +143,12 @@ class Comex:
     def _make_post_request(self, endpoint: str, body: Any, params: Dict[str, Any] = None) -> Dict[str, Any]:
         url = f"{self.base_url.rstrip('/')}/{endpoint.lstrip('/')}"
         try:
-            response = self.session.post(url, json=body, params=params, timeout=self.timeout)
-            response.raise_for_status()
-            return response.json()
+            def buscar():
+                response = self.session.post(url, json=body, params=params, timeout=self.timeout)
+                response.raise_for_status()
+                return response.json()
+
+            return com_cache(self.cache_ttl, ('POST', url, params, body), buscar)
         except requests.exceptions.RequestException as e:
             self.logger.error(f"Falha na requisição da API: {e}")
             status_code = getattr(e.response, 'status_code', None) if hasattr(e, 'response') and e.response else None
@@ -273,7 +284,7 @@ class Comex:
         mapa = self.get_ncm_isic_mapa()
         return {
             linha['NCM'] for linha in mapa
-            if linha.get('SecaoISIC') == secao or linha.get('NomeSecaoISIC') == secao
+            if secao in (linha.get('SecaoISIC'), linha.get('NomeSecaoISIC'), linha.get('CodigoSecaoISIC'))
         }
 
     def _get_ncm_nacional_mensal(self, endpoint: str, ano_minimo: int = None, mes_maximo: int = None,
@@ -444,3 +455,84 @@ class Comex:
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         self.close()
+
+
+# ========== FUNÇÕES DE CONVENIÊNCIA (DataFrame) ==========
+#
+# A classe `Comex` devolve os registros crus da sdic_api (List[Dict], colunas em
+# PascalCase). As funções abaixo — mesmos nomes e parâmetros dos métodos — devolvem
+# um DataFrame com o esquema padrão da biblioteca (snake_case, tipos fixos), o mesmo
+# do R. Contrato: `contrato/comex_amostras.json`.
+
+_COLUNAS = {
+    'Ano': 'ano', 'Mes': 'mes',
+    'NCM': 'ncm', 'DescricaoNCM': 'ncm_desc',
+    'DivisaoISIC': 'divisao_isic_cod', 'NomeDivisaoISIC': 'divisao_isic_desc',
+    'SecaoISIC': 'secao_isic_desc',  # nos fluxos vem o NOME da seção; no mapa, a letra
+    'NomeSecaoISIC': 'secao_isic_desc',
+    'QTEstat': 'quantidade_estatistica', 'QuantidadeEstatistica': 'quantidade_estatistica',
+    'KgLiquido': 'kg_liquido', 'VLFob': 'vl_fob',
+    'UF': 'uf', 'Pais': 'pais', 'Regiao': 'regiao',
+}
+
+
+def _para_df(itens: List[Dict[str, Any]], mapa: bool = False) -> pd.DataFrame:
+    """Registros da sdic_api -> DataFrame com colunas snake_case e tipos fixos.
+
+    `ncm` (8 dígitos) e `divisao_isic_cod` (2 dígitos) viram texto com zeros à
+    esquerda; `ano`/`mes` são Int64 (`mes` é nulo quando `agregado_ano=True`).
+    """
+    df = pd.DataFrame(itens)
+    if df.empty:
+        return df
+    renomear = dict(_COLUNAS)
+    if 'QTEstat' in df and 'QuantidadeEstatistica' in df:  # API nova traz os dois (QTEstat é obsoleto)
+        df = df.drop(columns='QTEstat')
+    if mapa:
+        if 'CodigoSecaoISIC' in df:  # API nova: `SecaoISIC` já é o nome; a letra vem em `CodigoSecaoISIC`
+            df = df.drop(columns='NomeSecaoISIC', errors='ignore')
+            renomear['CodigoSecaoISIC'] = 'secao_isic_cod'
+        else:  # API antiga: `SecaoISIC` é a letra
+            renomear['SecaoISIC'] = 'secao_isic_cod'
+    df = df.rename(columns=renomear)
+    for col, largura in (('ncm', 8), ('divisao_isic_cod', 2)):
+        if col in df:
+            df[col] = df[col].astype(str).str.zfill(largura)
+    if 'ano' in df:  # o mapa NCM x ISIC é um catálogo, sem período
+        if 'mes' not in df:
+            df['mes'] = None
+        for col in ('ano', 'mes'):
+            df[col] = pd.to_numeric(df[col]).astype('Int64')
+    for col in ('vl_fob', 'kg_liquido', 'quantidade_estatistica'):
+        if col in df:
+            df[col] = pd.to_numeric(df[col])
+    return df
+
+
+def _funcao_df(nome: str, mapa: bool = False):
+    metodo = getattr(Comex, nome)
+
+    def funcao(**kwargs) -> pd.DataFrame:
+        with Comex() as api:
+            return _para_df(getattr(api, nome)(**kwargs), mapa=mapa)
+
+    # Mantém a assinatura do método (sem `self`) para o autocompletar do usuário.
+    parametros = list(inspect.signature(metodo).parameters.values())[1:]
+    funcao.__signature__ = inspect.Signature(
+        [p.replace(kind=inspect.Parameter.KEYWORD_ONLY) for p in parametros],
+        return_annotation=pd.DataFrame,
+    )
+    funcao.__name__ = nome
+    funcao.__doc__ = (metodo.__doc__ or '') + '\n\nRetorna um pandas.DataFrame com o esquema padrão (ver `_para_df`).'
+    return funcao
+
+
+get_exportacao_ncm_nacional_mensal = _funcao_df('get_exportacao_ncm_nacional_mensal')
+get_importacao_ncm_nacional_mensal = _funcao_df('get_importacao_ncm_nacional_mensal')
+get_exportacao_isic_divisao_nacional_mensal = _funcao_df('get_exportacao_isic_divisao_nacional_mensal')
+get_importacao_isic_divisao_nacional_mensal = _funcao_df('get_importacao_isic_divisao_nacional_mensal')
+get_exportacao_isic_divisao_estadual_mensal = _funcao_df('get_exportacao_isic_divisao_estadual_mensal')
+get_importacao_isic_divisao_estadual_mensal = _funcao_df('get_importacao_isic_divisao_estadual_mensal')
+get_exportacao_pais_nacional_mensal = _funcao_df('get_exportacao_pais_nacional_mensal')
+get_importacao_pais_nacional_mensal = _funcao_df('get_importacao_pais_nacional_mensal')
+get_ncm_isic_mapa = _funcao_df('get_ncm_isic_mapa', mapa=True)

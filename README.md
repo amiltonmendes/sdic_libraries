@@ -12,7 +12,7 @@ cd sdic_libraries/python
 pip install -e .
 
 # Ou instalação direta
-pip install git+https://github.com/<SEU_USUARIO>/sdic_libraries.git#subplot=python
+pip install git+https://github.com/amiltonmendes/sdic_libraries.git#subdirectory=python
 ```
 
 ### R
@@ -22,7 +22,7 @@ pip install git+https://github.com/<SEU_USUARIO>/sdic_libraries.git#subplot=pyth
 source("sdic_libraries/r/install.R")
 
 # Ou instalação via GitHub
-devtools::install_github("<SEU_USUARIO>/sdic_libraries", subdir="r")
+devtools::install_github("amiltonmendes/sdic_libraries", subdir="r")
 ```
 
 ## 🛠️ Uso Básico
@@ -58,16 +58,15 @@ indices = criar_indice(
     df=dados_estoque,
     ano_base=2020,
     coluna_data='ano',
-    colunas_valores=['estoque_emprego', 'admissoes']
+    colunas_valores=['estoque_trabalhadores']
 )
 ```
 
 ### R
 
 ```r
-# Carregar biblioteca
-source("sdic_libraries/r/R/emprego.R")
-source("sdic_libraries/r/R/utils/transformacoes.R")
+# Carregar biblioteca (após instalar o pacote)
+library(sdic.libraries)
 
 # Obter dados de saldo
 api <- Emprego$new()
@@ -75,15 +74,17 @@ dados_saldo <- api$get_saldo_emprego_detalhado(
   nivel_agregacao = "nacional",
   nivel_cnae = 2,
   codigo_cnae = "10",
-  data_minima = "2023-01-01"
+  data_minima = "2023-01-01",
+  data_maxima = "2025-12-31"
 )
 
-# Criar índices temporais
+# Criar índices temporais (base 2020 = 100) sobre o estoque anual
+dados_estoque <- get_estoque_emprego_nacional(codigos_cnae = "10", nivel_cnae = 2, agregado = TRUE)
 dados_com_indice <- criar_indice(
-  df = dados_saldo,
+  df = dados_estoque,
   ano_base = 2020,
-  coluna_data = 'ano',
-  colunas_valores = c('saldo_emprego', 'admissoes')
+  coluna_data = "ano",
+  colunas_valores = "estoque_trabalhadores"
 )
 ```
 
@@ -106,6 +107,115 @@ dados_com_indice <- criar_indice(
 - ✅ **Filtragem por agregação**
 - ✅ **Validação de códigos CNAE**
 - ✅ **Tratamento amigável de erros**
+
+## 🧮 Dados RAIS: porte, Potec e demais tabelas (`mte_rais`)
+
+| Tema | Python / R | Metodologia |
+|---|---|---|
+| Estoque por CNAE (divisão/grupo) | `get_estoque_emprego_nacional`, `get_estoque_emprego_estadual`, `get_estoque_emprego_*_agrupado` | — |
+| **Porte** do estabelecimento e setor (indústria × comércio/serviços) | `get_estoque_emprego_porte_nacional`, `get_estoque_emprego_porte_estadual` | Critério Sebrae/DIEESE por pessoas ocupadas; limiares distintos por setor → [METODOLOGIA.md §2](METODOLOGIA.md#2-classificação-de-porte) |
+| Estoque por classe CNAE (4 dígitos) | `get_estoque_emprego_classe_cnae_nacional/estadual` | — |
+| Estoque por UF × classe × ocupação (CBO) | `get_estoque_emprego_uf_cbo` | — |
+| Remuneração média | `get_renda_media_emprego` | — |
+| **Potec** (pessoal ocupado técnico-científico) | `get_potec_emprego` | Proxy da PINTEC (gasto empresarial em inovação) construída pelo IPEA com a RAIS (Araújo, Cavalcante e Alves, 2009) → [METODOLOGIA.md §3](METODOLOGIA.md#3-índice-potec-pessoal-ocupado-técnico-científico) |
+| Data de atualização das bases | `get_date_bases` | — |
+
+```python
+from sdic_libraries.dados.emprego import get_estoque_emprego_porte_nacional, get_potec_emprego
+
+# Microempresas da indústria de alimentos (divisão 10), série 2006+
+porte = get_estoque_emprego_porte_nacional("divisao", codigos_cnae=["10"],
+                                           setor="Indústria", porte=["Microempresa"])
+
+# Intensidade técnico-científica de P&D (classe 7210); potec é fração 0–1
+potec = get_potec_emprego(codigos_classe=["7210"])
+```
+
+```r
+porte <- get_estoque_emprego_porte_nacional("divisao", codigos_cnae = "10",
+                                            setor = "Indústria", porte = "Microempresa")
+potec <- get_potec_emprego(codigos_classe = "7210")
+```
+
+**Porte, em uma linha:** micro/pequena/média/grande por número de ocupados —
+Indústria: até 19 / 20–99 / 100–499 / 500+; Comércio e Serviços: até 9 / 10–49 /
+50–99 / 100+ (fonte: Sebrae/DIEESE). **Potec:** proxy anual da PINTEC — (pesquisadores + engenheiros +
+profissionais científicos) ÷ estoque total da classe CNAE. Detalhes, cuidados e
+referências completas em [METODOLOGIA.md](METODOLOGIA.md).
+
+> A view `rais_agregado_estoque_intensidade_pavitt` (intensidade tecnológica
+> Pavitt) ainda não tem endpoint na API e, portanto, não está na biblioteca.
+
+## 🚢 Comércio exterior (`dados.comex`)
+
+Todos os dados vêm da **sdic_api** (`COMEX_API_BASE_URL`); a biblioteca nunca consulta o ComexStat diretamente.
+As funções soltas devolvem `DataFrame` (Python) / `tibble` (R) com o **mesmo esquema nas duas linguagens**
+(contrato testado em [contrato/comex_amostras.json](contrato/comex_amostras.json)):
+
+| Coluna | Tipo | Observação |
+|---|---|---|
+| `ano`, `mes` | inteiro | `mes` é nulo com `agregado_ano=True` |
+| `ncm` | texto, 8 dígitos | com zeros à esquerda (`01011010`) |
+| `divisao_isic_cod` | texto, 2 dígitos | mesma chave do mapa NCM × ISIC |
+| `*_desc`, `uf`, `pais`, `regiao` | texto | `uf` traz o nome (`São Paulo`); `secao_isic_desc` é o nome da seção |
+| `vl_fob`, `kg_liquido`, `quantidade_estatistica` | numérico | `quantidade_estatistica` unifica `QTEstat`/`QuantidadeEstatistica` |
+
+```python
+from sdic_libraries.dados.comex import get_exportacao_ncm_nacional_mensal, get_ncm_isic_mapa
+
+exp = get_exportacao_ncm_nacional_mensal(ano_minimo=2025, agregado_ano=True)  # 1 linha por (ano, NCM)
+exp = exp.merge(get_ncm_isic_mapa()[["ncm", "divisao_isic_cod"]], on="ncm")
+```
+
+```r
+exp <- get_exportacao_ncm_nacional_mensal(ano_minimo = 2025, agregado_ano = TRUE)
+exp <- dplyr::left_join(exp, get_ncm_isic_mapa()[, c("ncm", "divisao_isic_cod")], by = "ncm")
+```
+
+> No Python os parâmetros são só por nome (`ano_minimo=...`). A classe `Comex` continua disponível e devolve os registros crus.
+
+### Emprego × comércio exterior
+
+`juntar_emprego_comex()` une as duas bases por **divisão (2 dígitos) e ano**: `divisao_cnae_cod` (emprego) =
+`divisao_isic_cod` (comex). Coincidem 38 divisões (as de serviços só existem no emprego; a `89` só no comex).
+O comex é somado por (ano, divisão) antes da união, então meses, países ou UFs não multiplicam as linhas do emprego.
+Use o ano fechado no comex: o ano corrente é parcial.
+
+```python
+from sdic_libraries.dados.emprego import get_estoque_emprego_nacional
+from sdic_libraries.dados.comex import get_exportacao_isic_divisao_nacional_mensal
+from sdic_libraries.utils import juntar_emprego_comex
+
+emp = get_estoque_emprego_nacional(nivel_cnae=2, agregado=True, ano_minimo=2024, ano_maximo=2024)
+exp = get_exportacao_isic_divisao_nacional_mensal(ano_minimo=2024, agregado_ano=True)
+df = juntar_emprego_comex(emp, exp[exp["ano"] == 2024])   # how="left" (padrão), "inner" ou "outer"
+df["fob_por_trabalhador"] = df["vl_fob"] / df["estoque_trabalhadores"]
+```
+
+```r
+emp <- get_estoque_emprego_nacional(nivel_cnae = 2, agregado = TRUE, ano_minimo = 2024, ano_maximo = 2024)
+exp <- get_exportacao_isic_divisao_nacional_mensal(ano_minimo = 2024, agregado_ano = TRUE)
+df  <- juntar_emprego_comex(emp, exp[exp$ano == 2024, ])   # how = "left" (padrão), "inner" ou "full"
+```
+
+## 💾 Cache local (opcional)
+
+Desligado por padrão. Guarda em disco as respostas da **sdic_api** (nenhuma outra fonte é consultada), e a
+mesma consulta repetida passa a vir do disco em vez da rede (mapa NCM × ISIC: 14,7 s → 0,1 s).
+
+```python
+import os; os.environ["SDIC_CACHE_TTL"] = "3600"   # segundos de validade; 0 ou ausente = desligado
+```
+```r
+Sys.setenv(SDIC_CACHE_TTL = 3600)
+```
+
+A chave inclui método, endereço completo, parâmetros e corpo da requisição; erros nunca são gravados. Pasta:
+`SDIC_CACHE_DIR` ou `~/.cache/sdic_libraries` (Python) / `tools::R_user_dir("sdic.libraries", "cache")` (R) — apague-a
+para limpar. Os dados são atualizados mensalmente: use validade curta se precisar do dado mais recente.
+
+> **Nota:** `ano_minimo`/`ano_maximo` das funções de emprego também são aplicados no cliente, então o resultado é o
+> mesmo mesmo que a sdic_api implantada seja anterior a esses filtros (nesse caso só o volume baixado é maior).
 
 ## 🗂️ Relatórios e Portal de Emprego por Estado (`dados.emprego.portal`)
 
@@ -168,6 +278,17 @@ python sdic_libraries/python/testes_consolidados.py --modo rapido
 ### R
 ```r
 source("sdic_libraries/r/testes_consolidados.R")
+```
+
+### Testes de integração (API real)
+
+Os testes `test_emprego_cobertura_completa.py` e `test_emprego_novos_metodos.py`
+(Python) e `test-emprego*.R` (R) chamam a API de verdade. Por padrão apontam para
+`http://127.0.0.1:8123` (API local do repositório `sdic_api`) e são **ignorados**
+se ela não responder. Para usar outra instância:
+
+```bash
+EMPLOYMENT_API_BASE_URL=https://sdicapi.dados.ninja pytest python/tests
 ```
 
 ### Resultados Esperados
@@ -262,12 +383,12 @@ indice_emprego = criar_indice(
     df=dados_historicos,
     ano_base=2019,
     coluna_data='ano',
-    colunas_valores=['estoque_emprego']
+    colunas_valores=['estoque_trabalhadores']
 )
 
 # Análise de crescimento
 crescimento_2023 = indice_emprego.loc[
-    indice_emprego['ano'] == 2023, 'estoque_emprego_indice'
+    indice_emprego['ano'] == 2023, 'estoque_trabalhadores_indice'
 ].iloc[0]
 
 print(f"Crescimento do emprego 2019-2023: {crescimento_2023-100:.1f}%")
@@ -322,11 +443,24 @@ dados_consolidados = pd.concat(dados_regionais, ignore_index=True)
 
 Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
+
+
 ---
 
-**Versão**: 1.0  
-**Última atualização**: Abril 2026  
-**Compatibilidade**: Python 3.8+ | R 4.0+
+# 📚 Referência detalhada das funções
+
+## Funções de saldo (CAGED)
+
+#### Python
+```python
+from sdic_libraries.dados.emprego import (
+    get_saldo_emprego_estadual_mensal,
+    get_saldo_emprego_municipal_mensal,
+    get_saldo_emprego_estadual_mensal_agrupado,
+)
+
+# 🗺️ Dados estaduais com um CNAE específico
+df_sp = get_saldo_emprego_estadual_mensal(
     sigla_uf='SP', 
     codigo_cnae='29',  # UM código apenas
     nivel_cnae='divisao'
@@ -416,7 +550,7 @@ df_estoque = get_estoque_emprego_nacional(
   agregado=True
 )
 df_estoque = df_estoque[df_estoque['ano'].astype(int) >= 2019]
-# Colunas: ano, codigo_divisao, descricao_divisao, secao, descricao_secao, estoque
+# Colunas: ano, divisao_cnae_cod, divisao_cnae_desc, estoque_trabalhadores (+ 'Ano', alias de 'ano')
 
 # 📦 Estoque estadual anual para SP por grupo CNAE
 df_estoque_sp = get_estoque_emprego_estadual(
@@ -424,7 +558,7 @@ df_estoque_sp = get_estoque_emprego_estadual(
   nivel_cnae=3
 )
 df_estoque_sp = df_estoque_sp[df_estoque_sp['ano'].astype(int) >= 2020]
-# Colunas: ano, sigla_uf, uf, codigo_grupo, descricao_grupo, secao, descricao_secao, estoque
+# Colunas: ano, sigla_uf, grupo_cnae_cod, grupo_cnae_desc, divisao_cnae_cod, divisao_cnae_desc, estoque_trabalhadores
 
 # 📦 Estoque agrupado nacional (consolidado por lista de CNAEs)
 df_estoque_ti = get_estoque_emprego_nacional_agrupado(
@@ -432,16 +566,16 @@ df_estoque_ti = get_estoque_emprego_nacional_agrupado(
   lista_cnae=["620", "631"]
 )
 df_estoque_ti = df_estoque_ti[df_estoque_ti['ano'].astype(int) >= 2020]
-# Colunas: ano, nome_grupo, estoque
+# Colunas: ano, nome_grupo, estoque_trabalhadores
 
 # 📦 Estoque agrupado estadual
 df_estoque_fin_rj = get_estoque_emprego_estadual_agrupado(
-  uf='RJ',
+    sigla_uf='RJ',
     nome_grupo="Financeiro",
   lista_cnae=["641", "642"]
 )
 df_estoque_fin_rj = df_estoque_fin_rj[df_estoque_fin_rj['ano'].astype(int) >= 2020]
-# Colunas: ano, sigla_uf, uf, nome_grupo, estoque
+# Colunas: ano, sigla_uf, nome_grupo, estoque_trabalhadores
 ```
 
 #### R
@@ -530,11 +664,9 @@ with Emprego() as api:
         nivel_cnae=2
     )
 
-# Funções de conveniência (baixo nível)
-from sdic_libraries.dados.emprego import (
-    get_saldo_emprego_as_dataframe,
-    get_saldo_emprego_detalhado_lista_cnae  
-)
+# Obs.: get_saldo_emprego_detalhado, get_saldo_emprego_as_dataframe e
+# get_saldo_emprego_detalhado_lista_cnae são MÉTODOS da classe Emprego
+# (não funções de módulo). Para consultas simples, prefira as funções de alto nível.
 ```
 
 #### R
@@ -590,6 +722,7 @@ Observação: a biblioteca consolida internamente a paginação da API. Não é 
 - **`codigo_cnae`** (opcional): Código CNAE da atividade econômica
 - **`nivel_cnae`** (opcional): Nível CNAE (2=divisão, 3=grupo, None=subclasse)
 - **`data_minima`** (opcional): Data mínima no formato YYYY-MM-DD
+- **`data_maxima`** (opcional): Data máxima no formato YYYY-MM-DD
 
 ### `get_saldo_emprego_detalhado_lista_cnae()` ✨ **NOVO**
 
@@ -628,7 +761,7 @@ food_data <- get_saldo_emprego_detalhado_lista_cnae(
 )
 ```
 
-## Executando os Testes
+## Parâmetros das funções de estoque
 
 ### `get_estoque_emprego_nacional()`
 
@@ -717,19 +850,17 @@ pytest tests/test_emprego_api.py::TestEmpregoClient::test_get_saldo_emprego_deta
 # Instalar dependências de teste (se disponíveis)
 # devtools::install_dev_deps()
 
-# Para futuras implementações de teste R
-# library(testthat)
-# test()
+# testthat::test_dir("r/tests/testthat")
 ```
 
-**Nota**: Atualmente, apenas testes Python estão implementados. Os testes R podem ser adicionados em versões futuras.
+**Nota**: os testes R (`r/tests/testthat`) e Python (`python/tests`) existem; os que dependem da API real precisam de `EMPLOYMENT_API_BASE_URL` (veja *Testes de integração* acima).
 
 ## Atualizando a Biblioteca
 
 ### Python
 ```bash
 # Atualizar do repositório remoto
-pip install --upgrade git+https://github.com/your-org/sdic-libraries.git#subdirectory=python
+pip install --upgrade git+https://github.com/amiltonmendes/sdic_libraries.git#subdirectory=python
 
 # Ou se instalado do PyPI (quando publicado)
 pip install --upgrade sdic-libraries
@@ -738,7 +869,7 @@ pip install --upgrade sdic-libraries
 ### R
 ```r
 # Reinstalar do GitHub para obter a última versão
-devtools::install_github("your-org/sdic-libraries", subdir = "r", force = TRUE)
+devtools::install_github("amiltonmendes/sdic_libraries", subdir = "r", force = TRUE)
 
 # Ou se publicado no CRAN
 update.packages("sdic.libraries")
@@ -796,3 +927,42 @@ EMPLOYMENT_API_KEY=sua_chave_aqui
 ## Exemplos
 
 Veja os diretórios `examples/` nas implementações Python e R para exemplos de uso detalhados.
+
+## ⏱️ Desempenho (dados RAIS)
+
+- Cada página da API executa 1 consulta no BigQuery (~1 s); a biblioteca usa páginas de
+  5.000 linhas (o máximo da API) e junta tudo sozinha.
+- **Filtre o ano na origem.** Todas as funções RAIS (`get_estoque_emprego_*`, `*_porte_*`,
+  `*_classe_cnae_*`, `*_uf_cbo`, `get_renda_media_emprego`, `get_potec_emprego`) aceitam
+  `ano_minimo` e `ano_maximo` (opcionais). Sem eles, a série completa (2006+) é baixada.
+
+  | Chamada | Todos os anos | `ano_minimo` |
+  |---|---|---|
+  | estoque estadual, 27 UFs, divisão | 45.833 linhas, ~13 s | `ano_minimo=2025`: 2.267 linhas, ~1 s |
+  | `uf_cbo` SP + classe 4711 | 12.587 linhas, ~3,4 s | `ano_minimo=2024`: 1.091 linhas, ~2,3 s |
+  | porte estadual SP, classe, indústria | 21.374 linhas, ~6 s | `ano_minimo=2024`: 2.139 linhas, ~1,3 s |
+
+  ```python
+  df = get_estoque_emprego_estadual(uf="SP", nivel_cnae=2, ano_minimo=2025)   # só o último ano
+  ```
+  ```r
+  df <- get_estoque_emprego_estadual(sigla_uf = "SP", nivel_cnae = 2, ano_minimo = 2025)
+  ```
+- **`get_estoque_emprego_uf_cbo`** é o endpoint mais pesado: 26,8 milhões de linhas
+  (24 anos × 28 UFs × 673 classes × 2.842 CBOs), clusterizada por UF, classe e CBO.
+  **Sempre filtre** por `siglas_uf` e `codigos_classe` (e, se possível, por ano). Sem filtros
+  seriam ~5,4 mil páginas.
+- `get_estoque_emprego_porte_estadual` em nível `classe` sem `codigos_cnae` retorna dezenas
+  de milhares de linhas; prefira `divisao`/`grupo`, filtre por código ou por ano.
+
+## 📖 Referências
+
+- ARAÚJO, B. C. P. O.; CAVALCANTE, L. R.; ALVES, P. F. Variáveis proxy para os gastos empresariais em inovação com base no pessoal ocupado técnico-científico disponível na Rais. *Radar*, Ipea, n. 5, 2009. <http://repositorio.ipea.gov.br/handle/11058/5431>
+- SEBRAE; DIEESE. *Anuário do Trabalho na Micro e Pequena Empresa*. <https://www.dieese.org.br/anuario/2011/anuarioSebrae10-11/15.html>
+- MTE. RAIS — microdados de estabelecimentos (via Base dos Dados). <https://basedosdados.org/dataset/br-me-rais>
+
+---
+
+**Versão**: 1.0  
+**Última atualização**: Setembro 2026  
+**Compatibilidade**: Python 3.8+ | R 4.0+

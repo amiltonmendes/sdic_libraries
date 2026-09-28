@@ -4,12 +4,21 @@
 \alias{get_estoque_emprego_classe_cnae_estadual}
 \title{Obter estoque de emprego por classe CNAE (4 dígitos), por UF}
 \usage{
-get_estoque_emprego_classe_cnae_estadual(ufs, codigos_classe = NULL)
+get_estoque_emprego_classe_cnae_estadual(
+  ufs,
+  codigos_classe = NULL,
+  ano_minimo = NULL,
+  ano_maximo = NULL
+)
 }
 \arguments{
 \item{ufs}{Sigla(s) de UF (ex: 'SP' ou c('SP', 'RJ'))}
 
 \item{codigos_classe}{Vetor de códigos de classe CNAE (opcional)}
+
+\item{ano_minimo}{Ano mínimo (opcional); filtra na API e reduz o volume baixado}
+
+\item{ano_maximo}{Ano máximo (opcional); filtra na API}
 }
 \value{
 Tibble com estoque por classe CNAE

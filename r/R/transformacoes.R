@@ -89,11 +89,10 @@ criar_indice <- function(df, ano_base, coluna_data, colunas_valores) {
     
     if (sum(mask_ano_base) == 0) {
       stop(paste("Nenhum dado encontrado para o ano base", ano_base))
-    } else if (sum(mask_ano_base) == 1) {
-      valor_base <- df_resultado[mask_ano_base, coluna]
     } else {
-      # Múltiplas entradas para o ano base - usa média
-      valor_base <- mean(df_resultado[mask_ano_base, coluna], na.rm = TRUE)
+      # [[coluna]][mask] é vetor também em tibble (df[mask, coluna] devolve tibble e
+      # gera coluna aninhada com índice errado). Múltiplas entradas no ano base: média.
+      valor_base <- mean(df_resultado[[coluna]][mask_ano_base], na.rm = TRUE)
     }
     
     # Evita divisão por zero
@@ -110,4 +109,55 @@ criar_indice <- function(df, ano_base, coluna_data, colunas_valores) {
   df_resultado[["_ano_temp"]] <- NULL
   
   return(df_resultado)
+}
+
+#' Junta emprego e comércio exterior por divisão e ano
+#'
+#' A chave é a divisão de 2 dígitos: `divisao_cnae_cod` (emprego) = `divisao_isic_cod`
+#' (comex). Coincidem 38 divisões; as de serviços só existem no emprego e a `89` só no
+#' comex. O comex é somado por (ano, divisão) antes da união, para que meses, países ou
+#' UFs não multipliquem as linhas do emprego. Feche o ano no comex (`ano_minimo`,
+#' `agregado_ano = TRUE`) — o ano corrente é parcial.
+#'
+#' @param emprego tibble com `ano` e `divisao_cnae_cod` (ex.: `get_estoque_emprego_nacional`
+#'   com `nivel_cnae = 2`)
+#' @param comex tibble com `ano` e `divisao_isic_cod` (ex.:
+#'   `get_exportacao_isic_divisao_nacional_mensal`); soma `vl_fob`, `kg_liquido` e
+#'   `quantidade_estatistica`
+#' @param how `"left"` (padrão: mantém toda divisão do emprego, comex `NA` onde não há),
+#'   `"inner"` ou `"full"`
+#' @return tibble
+#' @importFrom rlang .data
+#' @export
+juntar_emprego_comex <- function(emprego, comex, how = c("left", "inner", "full")) {
+  how <- match.arg(how)
+  for (par in list(list("emprego", emprego, c("ano", "divisao_cnae_cod")),
+                   list("comex", comex, c("ano", "divisao_isic_cod")))) {
+    faltam <- setdiff(par[[3]], names(par[[2]]))
+    if (length(faltam) > 0) {
+      stop(sprintf("%s sem a(s) coluna(s) %s; colunas disponíveis: %s", par[[1]],
+                   paste(faltam, collapse = ", "), paste(names(par[[2]]), collapse = ", ")), call. = FALSE)
+    }
+  }
+  valores <- intersect(c("vl_fob", "kg_liquido", "quantidade_estatistica"), names(comex))
+  somado <- comex |>
+    dplyr::group_by(.data$ano, .data$divisao_isic_cod) |>
+    dplyr::summarise(dplyr::across(dplyr::all_of(valores), ~ sum(.x, na.rm = TRUE)), .groups = "drop") |>
+    dplyr::rename(divisao_cnae_cod = "divisao_isic_cod")
+  juncao <- switch(how, left = dplyr::left_join, inner = dplyr::inner_join, full = dplyr::full_join)
+  juncao(emprego, somado, by = c("ano", "divisao_cnae_cod"))
+}
+
+#' Lista de registros da API -> tibble
+#'
+#' JSON `null` vira `NULL` na lista e o `bind_rows` descartaria a coluna (ou o valor);
+#' troca por `NA` para manter as colunas que o pandas mantém.
+#' @param itens Lista de registros (lista de listas nomeadas)
+#' @return tibble (vazio se `itens` estiver vazio)
+#' @keywords internal
+#' @noRd
+.lista_para_tibble <- function(itens) {
+  if (length(itens) == 0) return(tibble::tibble())
+  itens <- lapply(itens, function(x) lapply(x, function(v) if (is.null(v)) NA else v))
+  tibble::as_tibble(dplyr::bind_rows(itens))
 }

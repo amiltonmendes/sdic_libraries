@@ -128,7 +128,7 @@ Comex <- R6::R6Class(
       req <- httr2::req_timeout(req, self$timeout)
 
       tryCatch({
-        resp <- httr2::req_perform(req)
+        resp <- .req_perform_cache(req)
         if (httr2::resp_status(resp) != 200) {
           cli::cli_abort("Falha na requisição da API com código: {httr2::resp_status(resp)}")
         }
@@ -167,7 +167,7 @@ Comex <- R6::R6Class(
       }
 
       tryCatch({
-        resp <- httr2::req_perform(req)
+        resp <- .req_perform_cache(req)
         if (httr2::resp_status(resp) != 200) {
           cli::cli_abort("Falha na requisição da API com código: {httr2::resp_status(resp)}")
         }
@@ -290,7 +290,7 @@ Comex <- R6::R6Class(
     .ncms_da_secao = function(secao) {
       mapa <- self$get_ncm_isic_mapa()
       Filter(function(linha) {
-        !is.null(linha$SecaoISIC) && (identical(linha$SecaoISIC, secao) || identical(linha$NomeSecaoISIC, secao))
+        any(vapply(list(linha$SecaoISIC, linha$NomeSecaoISIC, linha$CodigoSecaoISIC), identical, logical(1), secao))
       }, mapa) |> sapply(function(linha) linha$NCM)
     },
 
@@ -439,3 +439,145 @@ Comex <- R6::R6Class(
     }
   )
 )
+
+
+# ========== FUNÇÕES DE CONVENIÊNCIA (tibble) ==========
+#
+# A classe `Comex` devolve os registros crus da sdic_api (lista de listas, colunas em
+# PascalCase). As funções abaixo — mesmos nomes e parâmetros dos métodos — devolvem
+# um tibble com o esquema padrão da biblioteca (snake_case, tipos fixos), o mesmo do
+# Python. Contrato: `contrato/comex_amostras.json`.
+
+.comex_colunas <- c(
+  Ano = "ano", Mes = "mes",
+  NCM = "ncm", DescricaoNCM = "ncm_desc",
+  DivisaoISIC = "divisao_isic_cod", NomeDivisaoISIC = "divisao_isic_desc",
+  SecaoISIC = "secao_isic_desc",  # nos fluxos vem o NOME da seção; no mapa, a letra
+  NomeSecaoISIC = "secao_isic_desc",
+  QTEstat = "quantidade_estatistica", QuantidadeEstatistica = "quantidade_estatistica",
+  KgLiquido = "kg_liquido", VLFob = "vl_fob",
+  UF = "uf", Pais = "pais", Regiao = "regiao"
+)
+
+#' Registros da sdic_api -> tibble com colunas snake_case e tipos fixos
+#'
+#' `ncm` (8 dígitos) e `divisao_isic_cod` (2 dígitos) viram texto com zeros à
+#' esquerda; `ano`/`mes` são inteiros (`mes` é NA quando `agregado_ano = TRUE`).
+#' @param itens Lista de registros (resposta crua de um método de `Comex`)
+#' @param mapa `TRUE` para o catálogo NCM x ISIC (`SecaoISIC` é a letra da seção)
+#' @return tibble
+#' @keywords internal
+#' @noRd
+.comex_para_tibble <- function(itens, mapa = FALSE) {
+  if (length(itens) == 0) return(tibble::tibble())
+  df <- .lista_para_tibble(itens)
+  mapeamento <- .comex_colunas
+  if ("QTEstat" %in% names(df) && "QuantidadeEstatistica" %in% names(df)) df$QTEstat <- NULL  # obsoleto na API nova
+  if (mapa) {
+    if ("CodigoSecaoISIC" %in% names(df)) {  # API nova: `SecaoISIC` já é o nome; a letra vem em `CodigoSecaoISIC`
+      df$NomeSecaoISIC <- NULL
+      mapeamento[["CodigoSecaoISIC"]] <- "secao_isic_cod"
+    } else {  # API antiga: `SecaoISIC` é a letra
+      mapeamento[["SecaoISIC"]] <- "secao_isic_cod"
+    }
+  }
+  renomear <- names(df) %in% names(mapeamento)
+  names(df)[renomear] <- unname(mapeamento[names(df)[renomear]])
+  if ("ncm" %in% names(df)) df$ncm <- sprintf("%08.0f", as.numeric(df$ncm))
+  if ("divisao_isic_cod" %in% names(df)) df$divisao_isic_cod <- sprintf("%02.0f", as.numeric(df$divisao_isic_cod))
+  if ("ano" %in% names(df)) {  # o mapa NCM x ISIC é um catálogo, sem período
+    if (!"mes" %in% names(df)) df$mes <- NA
+    df$ano <- as.integer(df$ano)
+    df$mes <- as.integer(df$mes)
+  }
+  for (col in intersect(c("vl_fob", "kg_liquido", "quantidade_estatistica"), names(df))) {
+    df[[col]] <- as.numeric(df[[col]])
+  }
+  df
+}
+
+.comex_tibble <- function(metodo, ..., mapa = FALSE) {
+  api <- Comex$new()
+  .comex_para_tibble(api[[metodo]](...), mapa = mapa)
+}
+
+#' Exportações nacionais por NCM como tibble
+#'
+#' Atalho de `Comex$get_exportacao_ncm_nacional_mensal()`: mesmos argumentos, mas devolve um tibble
+#' com o esquema padrão (colunas snake_case, tipos fixos; ver `contrato/comex_amostras.json`).
+#' @param ... Argumentos de `Comex$get_exportacao_ncm_nacional_mensal()`
+#' @return tibble
+#' @export
+get_exportacao_ncm_nacional_mensal <- function(...) .comex_tibble("get_exportacao_ncm_nacional_mensal", ...)
+
+#' Importações nacionais por NCM como tibble
+#'
+#' Atalho de `Comex$get_importacao_ncm_nacional_mensal()`: mesmos argumentos, mas devolve um tibble
+#' com o esquema padrão (colunas snake_case, tipos fixos; ver `contrato/comex_amostras.json`).
+#' @param ... Argumentos de `Comex$get_importacao_ncm_nacional_mensal()`
+#' @return tibble
+#' @export
+get_importacao_ncm_nacional_mensal <- function(...) .comex_tibble("get_importacao_ncm_nacional_mensal", ...)
+
+#' Exportações nacionais por divisão ISIC como tibble
+#'
+#' Atalho de `Comex$get_exportacao_isic_divisao_nacional_mensal()`: mesmos argumentos, mas devolve um tibble
+#' com o esquema padrão (colunas snake_case, tipos fixos; ver `contrato/comex_amostras.json`).
+#' @param ... Argumentos de `Comex$get_exportacao_isic_divisao_nacional_mensal()`
+#' @return tibble
+#' @export
+get_exportacao_isic_divisao_nacional_mensal <- function(...) .comex_tibble("get_exportacao_isic_divisao_nacional_mensal", ...)
+
+#' Importações nacionais por divisão ISIC como tibble
+#'
+#' Atalho de `Comex$get_importacao_isic_divisao_nacional_mensal()`: mesmos argumentos, mas devolve um tibble
+#' com o esquema padrão (colunas snake_case, tipos fixos; ver `contrato/comex_amostras.json`).
+#' @param ... Argumentos de `Comex$get_importacao_isic_divisao_nacional_mensal()`
+#' @return tibble
+#' @export
+get_importacao_isic_divisao_nacional_mensal <- function(...) .comex_tibble("get_importacao_isic_divisao_nacional_mensal", ...)
+
+#' Exportações por UF e divisão ISIC como tibble
+#'
+#' Atalho de `Comex$get_exportacao_isic_divisao_estadual_mensal()`: mesmos argumentos, mas devolve um tibble
+#' com o esquema padrão (colunas snake_case, tipos fixos; ver `contrato/comex_amostras.json`).
+#' @param ... Argumentos de `Comex$get_exportacao_isic_divisao_estadual_mensal()`
+#' @return tibble
+#' @export
+get_exportacao_isic_divisao_estadual_mensal <- function(...) .comex_tibble("get_exportacao_isic_divisao_estadual_mensal", ...)
+
+#' Importações por UF e divisão ISIC como tibble
+#'
+#' Atalho de `Comex$get_importacao_isic_divisao_estadual_mensal()`: mesmos argumentos, mas devolve um tibble
+#' com o esquema padrão (colunas snake_case, tipos fixos; ver `contrato/comex_amostras.json`).
+#' @param ... Argumentos de `Comex$get_importacao_isic_divisao_estadual_mensal()`
+#' @return tibble
+#' @export
+get_importacao_isic_divisao_estadual_mensal <- function(...) .comex_tibble("get_importacao_isic_divisao_estadual_mensal", ...)
+
+#' Exportações nacionais por país como tibble
+#'
+#' Atalho de `Comex$get_exportacao_pais_nacional_mensal()`: mesmos argumentos, mas devolve um tibble
+#' com o esquema padrão (colunas snake_case, tipos fixos; ver `contrato/comex_amostras.json`).
+#' @param ... Argumentos de `Comex$get_exportacao_pais_nacional_mensal()`
+#' @return tibble
+#' @export
+get_exportacao_pais_nacional_mensal <- function(...) .comex_tibble("get_exportacao_pais_nacional_mensal", ...)
+
+#' Importações nacionais por país como tibble
+#'
+#' Atalho de `Comex$get_importacao_pais_nacional_mensal()`: mesmos argumentos, mas devolve um tibble
+#' com o esquema padrão (colunas snake_case, tipos fixos; ver `contrato/comex_amostras.json`).
+#' @param ... Argumentos de `Comex$get_importacao_pais_nacional_mensal()`
+#' @return tibble
+#' @export
+get_importacao_pais_nacional_mensal <- function(...) .comex_tibble("get_importacao_pais_nacional_mensal", ...)
+
+#' Catálogo NCM x ISIC (divisão e seção) como tibble
+#'
+#' Atalho de `Comex$get_ncm_isic_mapa()`: mesmos argumentos, mas devolve um tibble
+#' com o esquema padrão (colunas snake_case, tipos fixos; ver `contrato/comex_amostras.json`).
+#' @param ... Argumentos de `Comex$get_ncm_isic_mapa()`
+#' @return tibble
+#' @export
+get_ncm_isic_mapa <- function(...) .comex_tibble("get_ncm_isic_mapa", ..., mapa = TRUE)

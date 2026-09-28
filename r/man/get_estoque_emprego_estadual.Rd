@@ -4,7 +4,13 @@
 \alias{get_estoque_emprego_estadual}
 \title{Obter dados anuais de estoque de emprego em nível estadual}
 \usage{
-get_estoque_emprego_estadual(sigla_uf, codigos_cnae = NULL, nivel_cnae = 2)
+get_estoque_emprego_estadual(
+  sigla_uf,
+  codigos_cnae = NULL,
+  nivel_cnae = 2,
+  ano_minimo = NULL,
+  ano_maximo = NULL
+)
 }
 \arguments{
 \item{sigla_uf}{Sigla da UF ('SP', 'RJ', etc.)}
@@ -13,7 +19,9 @@ get_estoque_emprego_estadual(sigla_uf, codigos_cnae = NULL, nivel_cnae = 2)
 
 \item{nivel_cnae}{Nível CNAE ('divisao', 'grupo')}
 
-\item{ano_minimo}{Ano mínimo para filtrar dados (opcional)}
+\item{ano_minimo}{Ano mínimo (opcional); filtra na API e reduz o volume baixado}
+
+\item{ano_maximo}{Ano máximo (opcional); filtra na API}
 }
 \value{
 Tibble com dados anuais de estoque de emprego
