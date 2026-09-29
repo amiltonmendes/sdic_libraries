@@ -220,7 +220,10 @@ Um tibble com todos os dados de saldo de emprego
 \if{html}{\out{<a id="method-Emprego-get_all_pages"></a>}}
 \if{latex}{\out{\hypertarget{method-Emprego-get_all_pages}{}}}
 \subsection{Method \code{get_all_pages()}}{
-Alias para compatibilidade - agora todas as funções sempre retornam todos os dados
+[Deprecated] Alias de \code{get_saldo_emprego_as_tibble()} de quando a paginação
+não era automática — hoje é sempre completa, então o alias não tem mais motivo
+de existir. Sem uso externo conhecido (checado nos repositórios consumidores em
+2026-09-28).
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{Emprego$get_all_pages(...)}\if{html}{\out{</div>}}
 }

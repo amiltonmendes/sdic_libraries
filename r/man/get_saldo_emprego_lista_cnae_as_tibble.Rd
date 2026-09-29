@@ -16,6 +16,14 @@ Um tibble com dados de saldo de emprego para os códigos CNAE especificados
 Função de conveniência para obter rapidamente TODOS os dados de saldo de emprego
 para uma lista de códigos CNAE como tibble sem criar explicitamente um objeto Emprego.
 }
+\section{Deprecated}{
+
+Sem uso externo conhecido (checado nos repositórios consumidores em 2026-09-28).
+Prefira \verb{get_saldo_emprego_<nivel>_mensal_agrupado()} quando o objetivo é o total
+do grupo; mantida para quem precisa do detalhamento por CNAE individual. Continua
+funcionando; sem previsão de remoção. Ver \code{listar_bases()}.
+}
+
 \examples{
 \dontrun{
 # Obter dados de emprego de alimentos e bebidas como tibble

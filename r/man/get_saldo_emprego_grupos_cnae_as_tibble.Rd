@@ -15,3 +15,11 @@ Um tibble com dados de saldo de emprego para os grupos CNAE especificados
 \description{
 Obter Dados de Saldo de Emprego para Grupos CNAE como Tibble
 }
+\section{Deprecated}{
+
+Sem uso externo conhecido (checado nos repositórios consumidores em 2026-09-28).
+Prefira \verb{get_saldo_emprego_<nivel>_mensal_agrupado()}, que já devolve o mesmo
+resultado (múltiplos grupos nomeados de uma vez). Continua funcionando; sem
+previsão de remoção. Ver \code{listar_bases()}.
+}
+

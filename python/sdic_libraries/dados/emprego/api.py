@@ -11,6 +11,7 @@ from __future__ import annotations
 import logging
 import os
 import re
+import warnings
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Union
 
@@ -123,7 +124,7 @@ class Emprego:
         self.logger = logging.getLogger(__name__)
         
         # Auto-detectar versão para User-Agent
-        version = os.getenv('SDIC_VERSION', '0.4.0')
+        version = os.getenv('SDIC_VERSION', '0.5.0')
         self.session.headers.update({
             'User-Agent': f'sdic-libraries/{version}',
             'Accept': 'application/json',
@@ -1683,6 +1684,13 @@ class Emprego:
         """
         Obter dados de saldo de emprego como DataFrame.
 
+        .. deprecated:: 0.5.0
+            Sem uso conhecido fora da própria biblioteca (checado nos repositórios
+            consumidores em 2026-09-28). Prefira ``get_saldo_emprego_nacional_mensal``/
+            ``_estadual_mensal``/``_municipal_mensal`` (ou ``_anual``) — mesma chamada,
+            já com as colunas filtradas por nível. Continua funcionando; sem previsão
+            de remoção. Ver ``listar_bases()``.
+
         Args:
             nivel_agregacao (str): 'nacional', 'estadual' ou 'municipal'
             **kwargs: Parâmetros adicionais passados para get_saldo_emprego_detalhado
@@ -1690,6 +1698,11 @@ class Emprego:
         Returns:
             pd.DataFrame: Dados de saldo de emprego
         """
+        warnings.warn(
+            "get_saldo_emprego_as_dataframe está deprecated (sem uso externo conhecido); "
+            "prefira get_saldo_emprego_<nivel>_mensal/_anual. Ver listar_bases().",
+            DeprecationWarning, stacklevel=2,
+        )
         dados = self.get_saldo_emprego_detalhado(nivel_agregacao=nivel_agregacao, **kwargs)
         return pd.DataFrame(dados)
 

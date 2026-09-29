@@ -58,7 +58,7 @@ Emprego <- R6::R6Class(
       self$api_key <- api_key %||% Sys.getenv("EMPLOYMENT_API_KEY", "")
       
       # Mostrar mensagem de inicialização
-      version <- Sys.getenv("SDIC_VERSION", "0.4.0")
+      version <- Sys.getenv("SDIC_VERSION", "0.5.0")
       cli::cli_alert_success(
         "API de Emprego inicializada (v{version}) - configuração carregada automaticamente"
       )
@@ -125,7 +125,7 @@ Emprego <- R6::R6Class(
       
       req <- httr2::req_headers(
         req,
-        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.4.0")),
+        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.0")),
         "Accept" = "application/json",
         "Content-Type" = "application/json"
       )
@@ -248,10 +248,14 @@ Emprego <- R6::R6Class(
     },
     
     #' @description
-    #' Alias para compatibilidade - agora todas as funções sempre retornam todos os dados
+    #' \[Deprecated\] Alias de `get_saldo_emprego_as_tibble()` de quando a paginação
+    #' não era automática — hoje é sempre completa, então o alias não tem mais motivo
+    #' de existir. Sem uso externo conhecido (checado nos repositórios consumidores em
+    #' 2026-09-28).
     #' @param ... Argumentos para passar para get_saldo_emprego_detalhado()
     #' @return Um tibble com todos os dados de saldo de emprego
     get_all_pages = function(...) {
+      .Deprecated("get_saldo_emprego_as_tibble")
       return(self$get_saldo_emprego_as_tibble(...))
     },
     
@@ -350,7 +354,7 @@ Emprego <- R6::R6Class(
       
       req <- httr2::req_headers(
         req,
-        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.4.0")),
+        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.0")),
         "Accept" = "application/json",
         "Content-Type" = "application/json"
       )
@@ -1755,7 +1759,13 @@ get_saldo_emprego_detalhado <- function(...) {
 #' # Obter dados municipais para uma cidade específica
 #' dados_cidade <- get_saldo_emprego_as_tibble("municipal", sigla_uf = "SP", municipio = 3550308)
 #' }
+#' @section Deprecated:
+#' Sem uso externo conhecido (checado nos repositórios consumidores em 2026-09-28).
+#' Prefira `get_saldo_emprego_<nivel>_mensal()`/`_anual()` — mesma chamada, já com as
+#' colunas filtradas por nível. Continua funcionando; sem previsão de remoção. Ver
+#' `listar_bases()`.
 get_saldo_emprego_as_tibble <- function(...) {
+  .Deprecated("get_saldo_emprego_nacional_mensal/_estadual_mensal/_municipal_mensal (ou _anual)")
   api <- Emprego$new()
   return(api$get_saldo_emprego_as_tibble(...))
 }
@@ -1802,7 +1812,13 @@ get_saldo_emprego_detalhado_lista_cnae <- function(...) {
 #'   sigla_uf = "MG"
 #' )
 #' }
+#' @section Deprecated:
+#' Sem uso externo conhecido (checado nos repositórios consumidores em 2026-09-28).
+#' Prefira `get_saldo_emprego_<nivel>_mensal_agrupado()` quando o objetivo é o total
+#' do grupo; mantida para quem precisa do detalhamento por CNAE individual. Continua
+#' funcionando; sem previsão de remoção. Ver `listar_bases()`.
 get_saldo_emprego_lista_cnae_as_tibble <- function(...) {
+  .Deprecated("get_saldo_emprego_<nivel>_mensal_agrupado")
   api <- Emprego$new()
   return(api$get_saldo_emprego_lista_cnae_as_tibble(...))
 }
@@ -1825,7 +1841,13 @@ get_saldo_emprego_detalhado_grupos_cnae <- function(...) {
 #' @param ... Argumentos para passar para Emprego$get_saldo_emprego_detalhado_grupos_cnae()
 #' @return Um tibble com dados de saldo de emprego para os grupos CNAE especificados
 #' @export
+#' @section Deprecated:
+#' Sem uso externo conhecido (checado nos repositórios consumidores em 2026-09-28).
+#' Prefira `get_saldo_emprego_<nivel>_mensal_agrupado()`, que já devolve o mesmo
+#' resultado (múltiplos grupos nomeados de uma vez). Continua funcionando; sem
+#' previsão de remoção. Ver `listar_bases()`.
 get_saldo_emprego_grupos_cnae_as_tibble <- function(...) {
+  .Deprecated("get_saldo_emprego_<nivel>_mensal_agrupado")
   api <- Emprego$new()
   items <- api$get_saldo_emprego_detalhado_grupos_cnae(...)
 

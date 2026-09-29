@@ -16,6 +16,14 @@ Um tibble com todos os dados de saldo de emprego
 Função de conveniência para obter rapidamente TODOS os dados de saldo de emprego
 como tibble sem criar explicitamente um objeto Emprego.
 }
+\section{Deprecated}{
+
+Sem uso externo conhecido (checado nos repositórios consumidores em 2026-09-28).
+Prefira \verb{get_saldo_emprego_<nivel>_mensal()}/\verb{_anual()} — mesma chamada, já com as
+colunas filtradas por nível. Continua funcionando; sem previsão de remoção. Ver
+\code{listar_bases()}.
+}
+
 \examples{
 \dontrun{
 # Obter dados municipais para uma cidade específica

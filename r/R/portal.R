@@ -61,7 +61,7 @@ NULL
 # GET de um JSON publicado. 404 -> NULL se opcional, senao erro.
 .portal_emprego_fetch_json <- function(path, opcional = FALSE) {
   timeout <- as.integer(Sys.getenv("API_TIMEOUT", unset = "30"))
-  version <- Sys.getenv("SDIC_VERSION", unset = "0.4.0")
+  version <- Sys.getenv("SDIC_VERSION", unset = "0.5.0")
   url <- paste0(.portal_emprego_base_url(), "/", sub("^/+", "", path))
 
   resp <- tryCatch(
