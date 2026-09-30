@@ -445,6 +445,94 @@ class Comex:
             self._ncm_isic_mapa_cache = self._fetch_all_paginated_get('/ncm_isic_mapa_gcloud', {})
         return self._ncm_isic_mapa_cache
 
+    # ========== AGRUPAMENTOS ==========
+    #
+    # `agrupamento` é um nome de estudo setorial pré-definido no BigQuery
+    # (`parametros_unidade`), com um Departamento e Coordenação-Geral (CG) responsáveis
+    # — não um filtro livre. Descubra o nome com `get_agrupamentos_disponiveis()`. O
+    # mesmo nome pode existir sob departamentos/CGs diferentes (não ocorre hoje nos
+    # dados, mas o retorno sempre traz as duas colunas para desambiguar no seu código;
+    # filtre por `departamento`/`cg` se já souber qual).
+    # PENDENTE DE DEPLOY (2026-09-29): a sdic_api ainda não tem essas colunas/parâmetros
+    # em produção — ver TODO.md.
+
+    def get_exportacao_agrupamentos(self, agrupamento: str, ano_minimo: int = None,
+                                     anos: List[int] = None, departamento: str = None,
+                                     cg: str = None) -> List[Dict[str, Any]]:
+        """Exportações anuais por Agrupamento/Setor/Subsetor/Produto (`/exportacao_agrupamentos`)."""
+        return self._get_movimentacoes_agrupamentos('/exportacao_agrupamentos', agrupamento, ano_minimo, anos, departamento, cg)
+
+    def get_importacao_agrupamentos(self, agrupamento: str, ano_minimo: int = None,
+                                     anos: List[int] = None, departamento: str = None,
+                                     cg: str = None) -> List[Dict[str, Any]]:
+        """Importações anuais por Agrupamento/Setor/Subsetor/Produto (`/importacao_agrupamentos`)."""
+        return self._get_movimentacoes_agrupamentos('/importacao_agrupamentos', agrupamento, ano_minimo, anos, departamento, cg)
+
+    def _get_movimentacoes_agrupamentos(self, endpoint: str, agrupamento: str, ano_minimo: int,
+                                         anos: List[int], departamento: str, cg: str) -> List[Dict[str, Any]]:
+        params: Dict[str, Any] = {'agrupamento': agrupamento}
+        if ano_minimo is not None:
+            params['ano_minimo'] = ano_minimo
+        if anos:
+            params['anos'] = ','.join(str(ano) for ano in anos)
+        if departamento:
+            params['departamento'] = departamento
+        if cg:
+            params['cg'] = cg
+        return self._fetch_all_paginated_get(endpoint, params)
+
+    def get_exportacao_agrupamentos_pais_ncm(self, agrupamento: str, ano_minimo: int = None,
+                                              mes_maximo: int = None, nivel_agregacao: str = None,
+                                              agregado_ano: bool = False, posicao: int = None,
+                                              departamento: str = None, cg: str = None) -> List[Dict[str, Any]]:
+        """Exportações por Agrupamento, desagregadas por país e NCM (`/exportacao_agrupamentos_pais_ncm`).
+
+        `nivel_agregacao`: None/'' (detalhe completo, com país e NCM) ou 'setor'/'subsetor'/'produto'
+        (soma nesse nível, sem país nem NCM). `posicao`: ranking por VLFob dentro de cada grupo.
+        """
+        return self._get_movimentacoes_agrupamentos_pais_ncm(
+            '/exportacao_agrupamentos_pais_ncm', agrupamento, ano_minimo, mes_maximo,
+            nivel_agregacao, agregado_ano, posicao, departamento, cg)
+
+    def get_importacao_agrupamentos_pais_ncm(self, agrupamento: str, ano_minimo: int = None,
+                                              mes_maximo: int = None, nivel_agregacao: str = None,
+                                              agregado_ano: bool = False, posicao: int = None,
+                                              departamento: str = None, cg: str = None) -> List[Dict[str, Any]]:
+        """Importações por Agrupamento, desagregadas por país e NCM (`/importacao_agrupamentos_pais_ncm`). Ver `get_exportacao_agrupamentos_pais_ncm`."""
+        return self._get_movimentacoes_agrupamentos_pais_ncm(
+            '/importacao_agrupamentos_pais_ncm', agrupamento, ano_minimo, mes_maximo,
+            nivel_agregacao, agregado_ano, posicao, departamento, cg)
+
+    def _get_movimentacoes_agrupamentos_pais_ncm(self, endpoint: str, agrupamento: str, ano_minimo: int,
+                                                  mes_maximo: int, nivel_agregacao: str, agregado_ano: bool,
+                                                  posicao: int, departamento: str, cg: str) -> List[Dict[str, Any]]:
+        params: Dict[str, Any] = {'agrupamento': agrupamento, 'agregado_ano': agregado_ano}
+        if ano_minimo is not None:
+            params['ano_minimo'] = ano_minimo
+        if mes_maximo is not None:
+            params['mes_maximo'] = mes_maximo
+        if nivel_agregacao:
+            params['nivel_agregacao'] = nivel_agregacao
+        if posicao is not None:
+            params['posicao'] = posicao
+        if departamento:
+            params['departamento'] = departamento
+        if cg:
+            params['cg'] = cg
+        return self._fetch_all_paginated_get(endpoint, params)
+
+    def get_agrupamentos_disponiveis(self, departamento: str = None, cg: str = None) -> List[Dict[str, Any]]:
+        """Catálogo de agrupamentos de comex (`/agrupamentos_disponiveis`), 1 registro por
+        (Agrupamento, Departamento, CG) — use para descobrir o nome a passar em `agrupamento=`
+        nos outros métodos de agrupamentos, opcionalmente já filtrado."""
+        params: Dict[str, Any] = {}
+        if departamento:
+            params['departamento'] = departamento
+        if cg:
+            params['cg'] = cg
+        response = self._make_request('/agrupamentos_disponiveis', params)
+        return self._extract_items(response)
+
     def close(self):
         """Fechar a sessão HTTP"""
         if hasattr(self, 'session'):
@@ -471,8 +559,10 @@ _COLUNAS = {
     'SecaoISIC': 'secao_isic_desc',  # nos fluxos vem o NOME da seção; no mapa, a letra
     'NomeSecaoISIC': 'secao_isic_desc',
     'QTEstat': 'quantidade_estatistica', 'QuantidadeEstatistica': 'quantidade_estatistica',
-    'KgLiquido': 'kg_liquido', 'VLFob': 'vl_fob',
+    'KgLiquido': 'kg_liquido', 'KGLiquido': 'kg_liquido', 'VLFob': 'vl_fob',
     'UF': 'uf', 'Pais': 'pais', 'Regiao': 'regiao',
+    'Agrupamento': 'agrupamento', 'Setor': 'setor', 'Subsetor': 'subsetor', 'Produto': 'produto',
+    'Departamento': 'departamento', 'CoordenacaoGeral': 'coordenacao_geral',
 }
 
 
@@ -536,3 +626,8 @@ get_importacao_isic_divisao_estadual_mensal = _funcao_df('get_importacao_isic_di
 get_exportacao_pais_nacional_mensal = _funcao_df('get_exportacao_pais_nacional_mensal')
 get_importacao_pais_nacional_mensal = _funcao_df('get_importacao_pais_nacional_mensal')
 get_ncm_isic_mapa = _funcao_df('get_ncm_isic_mapa', mapa=True)
+get_exportacao_agrupamentos = _funcao_df('get_exportacao_agrupamentos')
+get_importacao_agrupamentos = _funcao_df('get_importacao_agrupamentos')
+get_exportacao_agrupamentos_pais_ncm = _funcao_df('get_exportacao_agrupamentos_pais_ncm')
+get_importacao_agrupamentos_pais_ncm = _funcao_df('get_importacao_agrupamentos_pais_ncm')
+get_agrupamentos_disponiveis = _funcao_df('get_agrupamentos_disponiveis')

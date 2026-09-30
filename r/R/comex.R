@@ -283,6 +283,125 @@ Comex <- R6::R6Class(
       return(private$.ncm_isic_mapa_cache)
     },
 
+    # ========== AGRUPAMENTOS ==========
+    #
+    # `agrupamento` é um nome de estudo setorial pré-definido no BigQuery
+    # (`parametros_unidade`), com um Departamento e Coordenação-Geral (CG) responsáveis
+    # — não um filtro livre. Descubra o nome com `get_agrupamentos_disponiveis()`. O
+    # mesmo nome pode existir sob departamentos/CGs diferentes (não ocorre hoje nos
+    # dados, mas o retorno sempre traz as duas colunas para desambiguar no seu código;
+    # filtre por `departamento`/`cg` se já souber qual).
+    # PENDENTE DE DEPLOY (2026-09-29): a sdic_api ainda não tem essas colunas/parâmetros
+    # em produção — ver TODO.md.
+
+    #' @description
+    #' Exportações anuais por Agrupamento/Setor/Subsetor/Produto (`/exportacao_agrupamentos`)
+    #' @param agrupamento Nome do agrupamento (ver `get_agrupamentos_disponiveis()`)
+    #' @param ano_minimo Ano mínimo (opcional)
+    #' @param anos Vetor de anos específicos (opcional)
+    #' @param departamento Filtro por departamento responsável (opcional)
+    #' @param cg Filtro por coordenação-geral responsável (opcional)
+    get_exportacao_agrupamentos = function(agrupamento, ano_minimo = NULL, anos = NULL, departamento = NULL, cg = NULL) {
+      self$.movimentacoes_agrupamentos("/exportacao_agrupamentos", agrupamento, ano_minimo, anos, departamento, cg)
+    },
+
+    #' @description
+    #' Importações anuais por Agrupamento/Setor/Subsetor/Produto (`/importacao_agrupamentos`). Ver `get_exportacao_agrupamentos`.
+    #' @param agrupamento Nome do agrupamento
+    #' @param ano_minimo Ano mínimo (opcional)
+    #' @param anos Vetor de anos específicos (opcional)
+    #' @param departamento Filtro por departamento responsável (opcional)
+    #' @param cg Filtro por coordenação-geral responsável (opcional)
+    get_importacao_agrupamentos = function(agrupamento, ano_minimo = NULL, anos = NULL, departamento = NULL, cg = NULL) {
+      self$.movimentacoes_agrupamentos("/importacao_agrupamentos", agrupamento, ano_minimo, anos, departamento, cg)
+    },
+
+    #' @param endpoint Endpoint (interno)
+    #' @param agrupamento Nome do agrupamento (interno)
+    #' @param ano_minimo Ano mínimo (interno)
+    #' @param anos Vetor de anos (interno)
+    #' @param departamento Departamento (interno)
+    #' @param cg CG (interno)
+    .movimentacoes_agrupamentos = function(endpoint, agrupamento, ano_minimo, anos, departamento, cg) {
+      params <- list(agrupamento = agrupamento)
+      if (!is.null(ano_minimo)) params$ano_minimo <- ano_minimo
+      if (!is.null(anos)) params$anos <- paste(anos, collapse = ",")
+      if (!is.null(departamento)) params$departamento <- departamento
+      if (!is.null(cg)) params$cg <- cg
+      self$.fetch_all_paginated_get(endpoint, params)
+    },
+
+    #' @description
+    #' Exportações por Agrupamento, desagregadas por país e NCM (`/exportacao_agrupamentos_pais_ncm`).
+    #' `nivel_agregacao`: NULL (detalhe completo, com país e NCM) ou "setor"/"subsetor"/"produto"
+    #' (soma nesse nível, sem país nem NCM). `posicao`: ranking por VLFob dentro de cada grupo.
+    #' @param agrupamento Nome do agrupamento
+    #' @param ano_minimo Ano mínimo (opcional)
+    #' @param mes_maximo Mês máximo (opcional)
+    #' @param nivel_agregacao NULL, "setor", "subsetor" ou "produto" (opcional)
+    #' @param agregado_ano Se TRUE, soma no BigQuery (1 linha por ano) (opcional)
+    #' @param posicao Ranking por VLFob dentro de cada grupo (opcional)
+    #' @param departamento Filtro por departamento responsável (opcional)
+    #' @param cg Filtro por coordenação-geral responsável (opcional)
+    get_exportacao_agrupamentos_pais_ncm = function(agrupamento, ano_minimo = NULL, mes_maximo = NULL,
+                                                     nivel_agregacao = NULL, agregado_ano = FALSE, posicao = NULL,
+                                                     departamento = NULL, cg = NULL) {
+      self$.movimentacoes_agrupamentos_pais_ncm("/exportacao_agrupamentos_pais_ncm", agrupamento, ano_minimo,
+                                                mes_maximo, nivel_agregacao, agregado_ano, posicao, departamento, cg)
+    },
+
+    #' @description
+    #' Importações por Agrupamento, desagregadas por país e NCM (`/importacao_agrupamentos_pais_ncm`). Ver `get_exportacao_agrupamentos_pais_ncm`.
+    #' @param agrupamento Nome do agrupamento
+    #' @param ano_minimo Ano mínimo (opcional)
+    #' @param mes_maximo Mês máximo (opcional)
+    #' @param nivel_agregacao NULL, "setor", "subsetor" ou "produto" (opcional)
+    #' @param agregado_ano Se TRUE, soma no BigQuery (1 linha por ano) (opcional)
+    #' @param posicao Ranking por VLFob dentro de cada grupo (opcional)
+    #' @param departamento Filtro por departamento responsável (opcional)
+    #' @param cg Filtro por coordenação-geral responsável (opcional)
+    get_importacao_agrupamentos_pais_ncm = function(agrupamento, ano_minimo = NULL, mes_maximo = NULL,
+                                                     nivel_agregacao = NULL, agregado_ano = FALSE, posicao = NULL,
+                                                     departamento = NULL, cg = NULL) {
+      self$.movimentacoes_agrupamentos_pais_ncm("/importacao_agrupamentos_pais_ncm", agrupamento, ano_minimo,
+                                                mes_maximo, nivel_agregacao, agregado_ano, posicao, departamento, cg)
+    },
+
+    #' @param endpoint Endpoint (interno)
+    #' @param agrupamento Nome do agrupamento (interno)
+    #' @param ano_minimo Ano mínimo (interno)
+    #' @param mes_maximo Mês máximo (interno)
+    #' @param nivel_agregacao Nível de agregação (interno)
+    #' @param agregado_ano Agregar por ano (interno)
+    #' @param posicao Posição/ranking (interno)
+    #' @param departamento Departamento (interno)
+    #' @param cg CG (interno)
+    .movimentacoes_agrupamentos_pais_ncm = function(endpoint, agrupamento, ano_minimo, mes_maximo, nivel_agregacao,
+                                                     agregado_ano, posicao, departamento, cg) {
+      params <- list(agrupamento = agrupamento, agregado_ano = agregado_ano)
+      if (!is.null(ano_minimo)) params$ano_minimo <- ano_minimo
+      if (!is.null(mes_maximo)) params$mes_maximo <- mes_maximo
+      if (!is.null(nivel_agregacao)) params$nivel_agregacao <- nivel_agregacao
+      if (!is.null(posicao)) params$posicao <- posicao
+      if (!is.null(departamento)) params$departamento <- departamento
+      if (!is.null(cg)) params$cg <- cg
+      self$.fetch_all_paginated_get(endpoint, params)
+    },
+
+    #' @description
+    #' Catálogo de agrupamentos de comex (`/agrupamentos_disponiveis`), 1 registro por
+    #' (Agrupamento, Departamento, CG) — use para descobrir o nome a passar em
+    #' `agrupamento=` nos outros métodos de agrupamentos, opcionalmente já filtrado.
+    #' @param departamento Filtro por departamento responsável (opcional)
+    #' @param cg Filtro por coordenação-geral responsável (opcional)
+    get_agrupamentos_disponiveis = function(departamento = NULL, cg = NULL) {
+      params <- list()
+      if (!is.null(departamento)) params$departamento <- departamento
+      if (!is.null(cg)) params$cg <- cg
+      response <- self$.make_request("/agrupamentos_disponiveis", params)
+      self$.extract_items(response)
+    },
+
     #' @description
     #' Códigos NCM pertencentes a uma seção ISIC (aceita a letra, ex. `C`,
     #' ou o nome por extenso, ex. `Indústria de Transformação`).
@@ -455,8 +574,10 @@ Comex <- R6::R6Class(
   SecaoISIC = "secao_isic_desc",  # nos fluxos vem o NOME da seção; no mapa, a letra
   NomeSecaoISIC = "secao_isic_desc",
   QTEstat = "quantidade_estatistica", QuantidadeEstatistica = "quantidade_estatistica",
-  KgLiquido = "kg_liquido", VLFob = "vl_fob",
-  UF = "uf", Pais = "pais", Regiao = "regiao"
+  KgLiquido = "kg_liquido", KGLiquido = "kg_liquido", VLFob = "vl_fob",
+  UF = "uf", Pais = "pais", Regiao = "regiao",
+  Agrupamento = "agrupamento", Setor = "setor", Subsetor = "subsetor", Produto = "produto",
+  Departamento = "departamento", CoordenacaoGeral = "coordenacao_geral"
 )
 
 #' Registros da sdic_api -> tibble com colunas snake_case e tipos fixos
@@ -581,3 +702,46 @@ get_importacao_pais_nacional_mensal <- function(...) .comex_tibble("get_importac
 #' @return tibble
 #' @export
 get_ncm_isic_mapa <- function(...) .comex_tibble("get_ncm_isic_mapa", ..., mapa = TRUE)
+
+#' Exportações por Agrupamento como tibble
+#'
+#' Atalho de `Comex$get_exportacao_agrupamentos()`: mesmos argumentos, mas devolve um tibble
+#' com o esquema padrão. Sempre traz `departamento`/`coordenacao_geral` na saída — descubra o
+#' nome do agrupamento com `get_agrupamentos_disponiveis()`.
+#' @param ... Argumentos de `Comex$get_exportacao_agrupamentos()`
+#' @return tibble
+#' @export
+get_exportacao_agrupamentos <- function(...) .comex_tibble("get_exportacao_agrupamentos", ...)
+
+#' Importações por Agrupamento como tibble
+#'
+#' Atalho de `Comex$get_importacao_agrupamentos()`. Ver `get_exportacao_agrupamentos()`.
+#' @param ... Argumentos de `Comex$get_importacao_agrupamentos()`
+#' @return tibble
+#' @export
+get_importacao_agrupamentos <- function(...) .comex_tibble("get_importacao_agrupamentos", ...)
+
+#' Exportações por Agrupamento, país e NCM como tibble
+#'
+#' Atalho de `Comex$get_exportacao_agrupamentos_pais_ncm()`. Ver `get_exportacao_agrupamentos()`.
+#' @param ... Argumentos de `Comex$get_exportacao_agrupamentos_pais_ncm()`
+#' @return tibble
+#' @export
+get_exportacao_agrupamentos_pais_ncm <- function(...) .comex_tibble("get_exportacao_agrupamentos_pais_ncm", ...)
+
+#' Importações por Agrupamento, país e NCM como tibble
+#'
+#' Atalho de `Comex$get_importacao_agrupamentos_pais_ncm()`. Ver `get_exportacao_agrupamentos()`.
+#' @param ... Argumentos de `Comex$get_importacao_agrupamentos_pais_ncm()`
+#' @return tibble
+#' @export
+get_importacao_agrupamentos_pais_ncm <- function(...) .comex_tibble("get_importacao_agrupamentos_pais_ncm", ...)
+
+#' Catálogo de agrupamentos de comex como tibble
+#'
+#' Atalho de `Comex$get_agrupamentos_disponiveis()`: 1 linha por (Agrupamento, Departamento, CG)
+#' — use para descobrir o nome a passar em `agrupamento =` nas demais funções de agrupamentos.
+#' @param ... Argumentos de `Comex$get_agrupamentos_disponiveis()` (`departamento`/`cg`, opcionais)
+#' @return tibble
+#' @export
+get_agrupamentos_disponiveis <- function(...) .comex_tibble("get_agrupamentos_disponiveis", ...)

@@ -1,26 +1,7 @@
 # Testes unitários do cliente Comex (R6) — mock de `httr2::req_perform` via
 # `testthat::local_mocked_bindings` (sem rede real, sem tocar bindings
 # travados de métodos R6 de um pacote instalado).
-
-mock_response <- function(json_data, status_code = 200) {
-  httr2::response(
-    status_code = status_code,
-    headers = list("Content-Type" = "application/json"),
-    body = charToRaw(jsonlite::toJSON(json_data, auto_unbox = TRUE, null = "null"))
-  )
-}
-
-# Cria uma função substituta para `httr2::req_perform` que devolve as
-# respostas em `respostas`, em sequência, e registra os requests recebidos
-# em `registro$chamadas`.
-mock_req_perform <- function(respostas, registro) {
-  idx <- 0
-  function(req, ...) {
-    idx <<- idx + 1
-    registro$chamadas[[idx]] <- req
-    respostas[[idx]]
-  }
-}
+# `mock_response`/`mock_req_perform`: ver helper-comex.R.
 
 test_that("api_key fica disponivel no objeto", {
   api <- Comex$new(base_url = "https://sdicapi.teste", api_key = "chave-teste")

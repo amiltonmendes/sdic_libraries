@@ -21,6 +21,11 @@ from .api import (
     get_exportacao_pais_nacional_mensal,
     get_importacao_pais_nacional_mensal,
     get_ncm_isic_mapa,
+    get_exportacao_agrupamentos,
+    get_importacao_agrupamentos,
+    get_exportacao_agrupamentos_pais_ncm,
+    get_importacao_agrupamentos_pais_ncm,
+    get_agrupamentos_disponiveis,
 )
 
 __all__ = [
@@ -36,4 +41,9 @@ __all__ = [
     "get_exportacao_pais_nacional_mensal",
     "get_importacao_pais_nacional_mensal",
     "get_ncm_isic_mapa",
+    "get_exportacao_agrupamentos",
+    "get_importacao_agrupamentos",
+    "get_exportacao_agrupamentos_pais_ncm",
+    "get_importacao_agrupamentos_pais_ncm",
+    "get_agrupamentos_disponiveis",
 ]

@@ -1,5 +1,5 @@
 {
-  "_doc": "Contrato Python x R do esquema Comex. 'linha' é uma linha real da sdic_api (28/09/2026); 'colunas' é o esquema esperado (ordem e tipo) após a padronização. Tipos: int, num, str. Colunas 100% nulas na amostra não têm o tipo verificado. Os casos 'api_nova' são linhas no formato da sdic_api corrigida (NCM/divisão como texto, QuantidadeEstatistica + QTEstat obsoleto, mapa com CodigoSecaoISIC); devem produzir o mesmo esquema.",
+  "_doc": "Contrato Python x R do esquema Comex. 'linha' é uma linha real da sdic_api (28/09/2026); 'colunas' é o esquema esperado (ordem e tipo) após a padronização. Tipos: int, num, str. Colunas 100% nulas na amostra não têm o tipo verificado. Os casos 'api_nova' são linhas no formato da sdic_api corrigida (NCM/divisão como texto, QuantidadeEstatistica + QTEstat obsoleto, mapa com CodigoSecaoISIC); devem produzir o mesmo esquema. Os casos 'pendente_deploy' (agrupamentos) são amostras escritas à mão — a sdic_api ainda não tem Departamento/CoordenacaoGeral em produção (2026-09-29, ver TODO.md); trocar por captura real quando o script `sdic_api/scripts/sql/reconstruir_views_agrupamentos_comex.sql` for aplicado e a API for implantada.",
   "casos": [
     {
       "metodo": "get_exportacao_ncm_nacional_mensal",
@@ -213,6 +213,58 @@
         "secao_isic_cod": "A",
         "secao_isic_desc": "Agropecuária"
       }
+    },
+    {
+      "metodo": "get_exportacao_agrupamentos",
+      "mapa": false,
+      "pendente_deploy": true,
+      "linha": {
+        "Ano": 2026, "Agrupamento": "Moda", "Setor": "Têxtil", "Subsetor": "Fios", "Produto": "Algodão",
+        "Departamento": "Departamento de Desenvolvimento da Indústria de Bens de Consumo Não Duráveis e Semiduráveis",
+        "CoordenacaoGeral": "Coordenação das Indústrias de Bens de Consumo não Duráveis e Semiduráveis",
+        "VLFob": 100, "QTEstat": 10, "KGLiquido": 50
+      },
+      "colunas": {
+        "ano": "int", "mes": "int", "agrupamento": "str", "setor": "str", "subsetor": "str", "produto": "str",
+        "departamento": "str", "coordenacao_geral": "str",
+        "vl_fob": "num", "quantidade_estatistica": "num", "kg_liquido": "num"
+      },
+      "valores": {}
+    },
+    {
+      "metodo": "get_exportacao_agrupamentos_pais_ncm",
+      "mapa": false,
+      "pendente_deploy": true,
+      "linha": {
+        "Ano": 2026, "Mes": 1, "NCM": "56039340", "DescricaoNCM": "De raiom viscose", "Pais": "Argentina",
+        "Agrupamento": "Moda", "Setor": "Têxtil", "Subsetor": "Fios", "Produto": "Algodão",
+        "Departamento": "Departamento de Desenvolvimento da Indústria de Bens de Consumo Não Duráveis e Semiduráveis",
+        "CoordenacaoGeral": "Coordenação das Indústrias de Bens de Consumo não Duráveis e Semiduráveis",
+        "VLFob": 100, "QTEstat": 10, "KgLiquido": 50
+      },
+      "colunas": {
+        "ano": "int", "mes": "int", "ncm": "str", "ncm_desc": "str", "pais": "str",
+        "agrupamento": "str", "setor": "str", "subsetor": "str", "produto": "str",
+        "departamento": "str", "coordenacao_geral": "str",
+        "vl_fob": "num", "quantidade_estatistica": "num", "kg_liquido": "num"
+      },
+      "valores": {
+        "ncm": "56039340"
+      }
+    },
+    {
+      "metodo": "get_agrupamentos_disponiveis",
+      "mapa": false,
+      "pendente_deploy": true,
+      "linha": {
+        "Agrupamento": "Moda",
+        "Departamento": "Departamento de Desenvolvimento da Indústria de Bens de Consumo Não Duráveis e Semiduráveis",
+        "CoordenacaoGeral": "Coordenação das Indústrias de Bens de Consumo não Duráveis e Semiduráveis"
+      },
+      "colunas": {
+        "agrupamento": "str", "departamento": "str", "coordenacao_geral": "str"
+      },
+      "valores": {}
     }
   ]
 }

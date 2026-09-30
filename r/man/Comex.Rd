@@ -63,6 +63,13 @@ dados_ue <- api$get_exportacao_isic_divisao_estadual_mensal(ano_minimo = 2023, b
 \item \href{#method-Comex-.fetch_all_paginated_get}{\code{Comex$.fetch_all_paginated_get()}}
 \item \href{#method-Comex-.fetch_all_paginated_post}{\code{Comex$.fetch_all_paginated_post()}}
 \item \href{#method-Comex-get_ncm_isic_mapa}{\code{Comex$get_ncm_isic_mapa()}}
+\item \href{#method-Comex-get_exportacao_agrupamentos}{\code{Comex$get_exportacao_agrupamentos()}}
+\item \href{#method-Comex-get_importacao_agrupamentos}{\code{Comex$get_importacao_agrupamentos()}}
+\item \href{#method-Comex-.movimentacoes_agrupamentos}{\code{Comex$.movimentacoes_agrupamentos()}}
+\item \href{#method-Comex-get_exportacao_agrupamentos_pais_ncm}{\code{Comex$get_exportacao_agrupamentos_pais_ncm()}}
+\item \href{#method-Comex-get_importacao_agrupamentos_pais_ncm}{\code{Comex$get_importacao_agrupamentos_pais_ncm()}}
+\item \href{#method-Comex-.movimentacoes_agrupamentos_pais_ncm}{\code{Comex$.movimentacoes_agrupamentos_pais_ncm()}}
+\item \href{#method-Comex-get_agrupamentos_disponiveis}{\code{Comex$get_agrupamentos_disponiveis()}}
 \item \href{#method-Comex-.ncms_da_secao}{\code{Comex$.ncms_da_secao()}}
 \item \href{#method-Comex-get_exportacao_ncm_nacional_mensal}{\code{Comex$get_exportacao_ncm_nacional_mensal()}}
 \item \href{#method-Comex-get_importacao_ncm_nacional_mensal}{\code{Comex$get_importacao_ncm_nacional_mensal()}}
@@ -245,6 +252,246 @@ memória na instância.
 \if{html}{\out{<div class="r">}}\preformatted{Comex$get_ncm_isic_mapa()}\if{html}{\out{</div>}}
 }
 
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-Comex-get_exportacao_agrupamentos"></a>}}
+\if{latex}{\out{\hypertarget{method-Comex-get_exportacao_agrupamentos}{}}}
+\subsection{Method \code{get_exportacao_agrupamentos()}}{
+Exportações anuais por Agrupamento/Setor/Subsetor/Produto (\verb{/exportacao_agrupamentos})
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{Comex$get_exportacao_agrupamentos(
+  agrupamento,
+  ano_minimo = NULL,
+  anos = NULL,
+  departamento = NULL,
+  cg = NULL
+)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{agrupamento}}{Nome do agrupamento (ver \code{get_agrupamentos_disponiveis()})}
+
+\item{\code{ano_minimo}}{Ano mínimo (opcional)}
+
+\item{\code{anos}}{Vetor de anos específicos (opcional)}
+
+\item{\code{departamento}}{Filtro por departamento responsável (opcional)}
+
+\item{\code{cg}}{Filtro por coordenação-geral responsável (opcional)}
+}
+\if{html}{\out{</div>}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-Comex-get_importacao_agrupamentos"></a>}}
+\if{latex}{\out{\hypertarget{method-Comex-get_importacao_agrupamentos}{}}}
+\subsection{Method \code{get_importacao_agrupamentos()}}{
+Importações anuais por Agrupamento/Setor/Subsetor/Produto (\verb{/importacao_agrupamentos}). Ver \code{get_exportacao_agrupamentos}.
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{Comex$get_importacao_agrupamentos(
+  agrupamento,
+  ano_minimo = NULL,
+  anos = NULL,
+  departamento = NULL,
+  cg = NULL
+)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{agrupamento}}{Nome do agrupamento}
+
+\item{\code{ano_minimo}}{Ano mínimo (opcional)}
+
+\item{\code{anos}}{Vetor de anos específicos (opcional)}
+
+\item{\code{departamento}}{Filtro por departamento responsável (opcional)}
+
+\item{\code{cg}}{Filtro por coordenação-geral responsável (opcional)}
+}
+\if{html}{\out{</div>}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-Comex-.movimentacoes_agrupamentos"></a>}}
+\if{latex}{\out{\hypertarget{method-Comex-.movimentacoes_agrupamentos}{}}}
+\subsection{Method \code{.movimentacoes_agrupamentos()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{Comex$.movimentacoes_agrupamentos(
+  endpoint,
+  agrupamento,
+  ano_minimo,
+  anos,
+  departamento,
+  cg
+)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{endpoint}}{Endpoint (interno)}
+
+\item{\code{agrupamento}}{Nome do agrupamento (interno)}
+
+\item{\code{ano_minimo}}{Ano mínimo (interno)}
+
+\item{\code{anos}}{Vetor de anos (interno)}
+
+\item{\code{departamento}}{Departamento (interno)}
+
+\item{\code{cg}}{CG (interno)}
+}
+\if{html}{\out{</div>}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-Comex-get_exportacao_agrupamentos_pais_ncm"></a>}}
+\if{latex}{\out{\hypertarget{method-Comex-get_exportacao_agrupamentos_pais_ncm}{}}}
+\subsection{Method \code{get_exportacao_agrupamentos_pais_ncm()}}{
+Exportações por Agrupamento, desagregadas por país e NCM (\verb{/exportacao_agrupamentos_pais_ncm}).
+\code{nivel_agregacao}: NULL (detalhe completo, com país e NCM) ou "setor"/"subsetor"/"produto"
+(soma nesse nível, sem país nem NCM). \code{posicao}: ranking por VLFob dentro de cada grupo.
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{Comex$get_exportacao_agrupamentos_pais_ncm(
+  agrupamento,
+  ano_minimo = NULL,
+  mes_maximo = NULL,
+  nivel_agregacao = NULL,
+  agregado_ano = FALSE,
+  posicao = NULL,
+  departamento = NULL,
+  cg = NULL
+)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{agrupamento}}{Nome do agrupamento}
+
+\item{\code{ano_minimo}}{Ano mínimo (opcional)}
+
+\item{\code{mes_maximo}}{Mês máximo (opcional)}
+
+\item{\code{nivel_agregacao}}{NULL, "setor", "subsetor" ou "produto" (opcional)}
+
+\item{\code{agregado_ano}}{Se TRUE, soma no BigQuery (1 linha por ano) (opcional)}
+
+\item{\code{posicao}}{Ranking por VLFob dentro de cada grupo (opcional)}
+
+\item{\code{departamento}}{Filtro por departamento responsável (opcional)}
+
+\item{\code{cg}}{Filtro por coordenação-geral responsável (opcional)}
+}
+\if{html}{\out{</div>}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-Comex-get_importacao_agrupamentos_pais_ncm"></a>}}
+\if{latex}{\out{\hypertarget{method-Comex-get_importacao_agrupamentos_pais_ncm}{}}}
+\subsection{Method \code{get_importacao_agrupamentos_pais_ncm()}}{
+Importações por Agrupamento, desagregadas por país e NCM (\verb{/importacao_agrupamentos_pais_ncm}). Ver \code{get_exportacao_agrupamentos_pais_ncm}.
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{Comex$get_importacao_agrupamentos_pais_ncm(
+  agrupamento,
+  ano_minimo = NULL,
+  mes_maximo = NULL,
+  nivel_agregacao = NULL,
+  agregado_ano = FALSE,
+  posicao = NULL,
+  departamento = NULL,
+  cg = NULL
+)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{agrupamento}}{Nome do agrupamento}
+
+\item{\code{ano_minimo}}{Ano mínimo (opcional)}
+
+\item{\code{mes_maximo}}{Mês máximo (opcional)}
+
+\item{\code{nivel_agregacao}}{NULL, "setor", "subsetor" ou "produto" (opcional)}
+
+\item{\code{agregado_ano}}{Se TRUE, soma no BigQuery (1 linha por ano) (opcional)}
+
+\item{\code{posicao}}{Ranking por VLFob dentro de cada grupo (opcional)}
+
+\item{\code{departamento}}{Filtro por departamento responsável (opcional)}
+
+\item{\code{cg}}{Filtro por coordenação-geral responsável (opcional)}
+}
+\if{html}{\out{</div>}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-Comex-.movimentacoes_agrupamentos_pais_ncm"></a>}}
+\if{latex}{\out{\hypertarget{method-Comex-.movimentacoes_agrupamentos_pais_ncm}{}}}
+\subsection{Method \code{.movimentacoes_agrupamentos_pais_ncm()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{Comex$.movimentacoes_agrupamentos_pais_ncm(
+  endpoint,
+  agrupamento,
+  ano_minimo,
+  mes_maximo,
+  nivel_agregacao,
+  agregado_ano,
+  posicao,
+  departamento,
+  cg
+)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{endpoint}}{Endpoint (interno)}
+
+\item{\code{agrupamento}}{Nome do agrupamento (interno)}
+
+\item{\code{ano_minimo}}{Ano mínimo (interno)}
+
+\item{\code{mes_maximo}}{Mês máximo (interno)}
+
+\item{\code{nivel_agregacao}}{Nível de agregação (interno)}
+
+\item{\code{agregado_ano}}{Agregar por ano (interno)}
+
+\item{\code{posicao}}{Posição/ranking (interno)}
+
+\item{\code{departamento}}{Departamento (interno)}
+
+\item{\code{cg}}{CG (interno)}
+}
+\if{html}{\out{</div>}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-Comex-get_agrupamentos_disponiveis"></a>}}
+\if{latex}{\out{\hypertarget{method-Comex-get_agrupamentos_disponiveis}{}}}
+\subsection{Method \code{get_agrupamentos_disponiveis()}}{
+Catálogo de agrupamentos de comex (\verb{/agrupamentos_disponiveis}), 1 registro por
+(Agrupamento, Departamento, CG) — use para descobrir o nome a passar em
+\verb{agrupamento=} nos outros métodos de agrupamentos, opcionalmente já filtrado.
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{Comex$get_agrupamentos_disponiveis(departamento = NULL, cg = NULL)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{departamento}}{Filtro por departamento responsável (opcional)}
+
+\item{\code{cg}}{Filtro por coordenação-geral responsável (opcional)}
+}
+\if{html}{\out{</div>}}
+}
 }
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-Comex-.ncms_da_secao"></a>}}

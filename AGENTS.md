@@ -13,6 +13,11 @@ repositórios do ecossistema SDIC (`cgid_cargas`, `report_cgid`/`cgid_reports_r`
 `produtividade_trabalho`); ver `[[sdic-ecossistema-repos]]` na memória se disponível, ou pergunte
 antes de assumir que um repositório irmão não usa uma função.
 
+## Backlog
+
+[TODO.md](TODO.md) — leia antes de começar uma tarefa nova; pode já haver uma investigação feita
+(bloqueios reais encontrados, não só "faltou tempo") para o que você está prestes a fazer.
+
 ## Arquitetura (verificada em produção, não deduzida do código)
 
 - **Python e R são implementações paralelas, não um binding de um para o outro.** Mesmo nome de
