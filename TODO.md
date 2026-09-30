@@ -29,29 +29,35 @@ mas afeta a cobertura de produtos de alguns agrupamentos.**
    `lastModifiedTime`) e salvei as definições anteriores em `/tmp/.../scratchpad/rollback_views/`
    (fora do repo, válido só nesta sessão) para rollback manual se precisar.
 
-   **Verificação pós-execução:**
+   **Verificação pós-execução (2026-09-30):**
    - `DEP_RESP IS NULL`: 0 em todas as 4 views — ok.
    - Todo `AGRUPAMENTO` não nulo de `parametros_unidade` aparece em pelo menos uma das 2
      materialized views — ok (a lista de 6 agrupamentos "ausentes" documentada antes de rodar —
      "Café", "Pescados" etc. — usava nomes/capitalização que não existem na tabela; o texto real é
      `"CAFÉ"`, `"ANIMAIS VIVOS (EXCETO PESCADOS)"`, `"PESCADOS"` etc. Provavelmente um erro de
      transcrição anterior à compactação desta conversa — corrigido aqui).
-   - **Achado novo (número real, maior que o documentado antes de rodar):** 16.390 de 16.425
-     linhas de `parametros_unidade` resolvem para um `CO_NCM`/`CO_SH` real (99,8%) — **35
-     linhas continuam sem match** (o texto anterior a esta execução dizia "4", que estava
-     incompleto). Os 35 casos, por agrupamento: Saúde (11), Automotivo (8), Liprode — "Lista de
-     Produtos de Defesa" (8, a maioria com o valor sentinela `"99999999"`, não um código real),
-     Linha Amarela (2), Moda (3 — os mesmos já documentados: `"5602.2"`, `"5603.9"`, `"5603.1"`),
-     "8549 - Desperdícios..." (1), PESCADOS (1: `"0307490"`), Produtos de Higiene Pessoal e
-     Cosméticos (1: `"42021"`), "Regra de Tributação do Mercosul" (1: `"440714"`, SH6 que não
-     existe em `ncm-sh`). Conferido caso a caso: a maioria (Saúde, Automotivo, "440714") são
-     códigos que **não existem em `ncm`/`ncm-sh` sob nenhuma leitura plausível** — defeito de
-     cadastro em `parametros_unidade`, não corrigível por normalização de string. Um caso
-     (PESCADOS, `"0307490"`) mostra que a heurística "faltou zero à esquerda" nem sempre acerta:
-     o código real é `03074900` (zero **depois**, não antes) — `LPAD` à esquerda erra esse caso
-     especificamente. Não tentei um segundo ajuste automático — ficaria fácil de acertar um caso e
-     errar outro sem outro humano olhando cada agrupamento. Nenhuma alteração adicional foi feita
-     na produção além do que já estava no script revisado.
+   - **Achado (número real, maior que o documentado antes de rodar):** logo após a execução,
+     16.390 de 16.425 linhas resolviam (99,8%) — **35 sem match**, não as "4" documentadas antes.
+
+   **Ajuste manual no banco feito por você em seguida (confirmado 2026-09-30, mesmo dia):**
+   `parametros_unidade` foi editada fora deste fluxo (16.425 → 16.364 linhas, -61) — refresh
+   automático das materialized views já picked up a mudança (refresh watermark poucos minutos
+   depois). Reconferido após o ajuste:
+   - As 2 linhas com `AGRUPAMENTO IS NULL` foram removidas.
+   - Os 3 casos de "Moda" (`"5602.2"`, `"5603.9"`, `"5603.1"`) foram **apagados**, não substituídos
+     por códigos válidos — não sobrou nenhum SHNCM começando em `5602`/`5603` pra esse agrupamento;
+     se isso tirou produtos que deveriam existir em "Moda", só quem mexeu no banco sabe dizer.
+   - As outras ~58 linhas removidas não tinham relação com a lista de 35 residuais — eram linhas
+     que já casavam certo antes (`resolvidas` caiu de 16.390 para 16.332 também). Não sei o motivo
+     dessa limpeza; não é algo que dá pra inferir só olhando o resultado.
+   - **Residual atual: 32 linhas sem match** (era 35): Saúde (11), Automotivo (8), Liprode (7, a
+     maioria com o valor sentinela `"99999999"`), Linha Amarela (2), "8549 - Desperdícios..." (1),
+     PESCADOS (1: `"0307490"` — o código real é `"03074900"`, zero **depois**, não antes; a
+     heurística de `LPAD` à esquerda não cobre esse caso), Produtos de Higiene Pessoal e Cosméticos
+     (1: `"42021"`), "Regra de Tributação do Mercosul" (1: `"440714"`, SH6 que não existe em
+     `ncm-sh`). Continuam sendo, na maioria, códigos que não existem em `ncm`/`ncm-sh` sob nenhuma
+     leitura plausível — defeito de cadastro, não corrigível por normalização de string. Nenhuma
+     alteração adicional foi feita nas views ou na produção além do que já estava documentado.
 2. **sdic_api** (`api/models/comex.py`, `api/schemas/comex_gcloud.py`, `api/cruds/comex_gcloud.py`,
    `api/routers/comex_gcloud.py`): `Departamento`/`CoordenacaoGeral` nos 4 endpoints de
    agrupamentos (sempre no retorno); parâmetros `departamento=`/`cg=` opcionais nos 4; endpoint
@@ -77,13 +83,14 @@ mas afeta a cobertura de produtos de alguns agrupamentos.**
 
 1. **Deploy da sdic_api** (Cloud Run) com o código deste item — deploy é de quem opera a nuvem,
    não algo que um agente faz sozinho (ver AGENTS.md, seção Deploy).
-2. **Decidir o que fazer com os 35 casos residuais de `parametros_unidade`** sem `CO_NCM`/`CO_SH`
-   correspondente (ver item 1 de "O que já foi feito" acima para a lista por agrupamento). Não
-   bloqueia o deploy — as views já estão no ar e cobrem 99,8% dos casos — mas alguém que conheça a
-   fonte de `parametros_unidade` precisa decidir: os 8 códigos de "Automotivo" e 11 de "Saúde" são
-   NCM obsoletos/errados (corrigir na fonte)? O `"99999999"` de "Liprode" é proposital (significa
-   "todos os produtos"; nesse caso a view precisaria tratar esse valor à parte, não como um NCM) ou
-   erro de digitação? Isso é decisão de dono de dado, não de query.
+2. **Decidir o que fazer com os 32 casos residuais de `parametros_unidade`** sem `CO_NCM`/`CO_SH`
+   correspondente (ver item 1 de "O que já foi feito" acima para a lista atualizada por
+   agrupamento — Saúde, Automotivo, Liprode, Linha Amarela, PESCADOS, Produtos de Higiene, Regra de
+   Tributação). Não bloqueia o deploy — as views já estão no ar e cobrem 99,8% dos casos — mas
+   alguém que conheça a fonte de `parametros_unidade` precisa decidir: os 8 códigos de "Automotivo"
+   e 11 de "Saúde" são NCM obsoletos/errados (corrigir na fonte)? O `"99999999"` de "Liprode" é
+   proposital (significa "todos os produtos"; nesse caso a view precisaria tratar esse valor à
+   parte, não como um NCM) ou erro de digitação? Isso é decisão de dono de dado, não de query.
 3. **Depois de 1 no ar:**
    - Trocar as amostras `"pendente_deploy": true` de `contrato/comex_amostras.json` por uma
      captura real (mesmo processo já usado pros outros 9 endpoints — GET direto, conferir tipos).
