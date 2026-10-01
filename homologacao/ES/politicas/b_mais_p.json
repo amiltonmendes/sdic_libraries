@@ -4,35 +4,35 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "2.701 atendimentos",
+    "display_value": "2.839 atendimentos",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "flat",
-      "label": "1,7% do total nacional · 16ª entre 27 UFs"
+      "label": "1,7% do total nacional · 17ª entre 27 UFs"
     },
-    "value": 2701
+    "value": 2839
   },
   "story": {
     "escopo": "uf",
     "uf": "ES",
     "regra": "meio",
-    "headline": "2.701 atendimentos no Espírito Santo — 1,7% do total nacional, 16ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Espírito Santo ocupa a 16ª posição entre as 27 UFs participantes do programa e responde por 1,7% do programa no país. Dentro do Sudeste, que soma 71.489 atendimentos, a participação do Espírito Santo é de 3,8%. As empresas atendidas pelo programa no Espírito Santo tiveram ganho médio de 31,8% em produtividade, conforme a modalidade de atendimento. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "headline": "2.839 atendimentos no Espírito Santo — 1,7% do total nacional, 17ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Espírito Santo ocupa a 17ª posição entre as 27 UFs participantes do programa e responde por 1,7% do programa no país. Dentro do Sudeste, que soma 77.670 atendimentos, a participação do Espírito Santo é de 3,7%. As empresas atendidas pelo programa no Espírito Santo tiveram ganho médio de 31,6% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 17,9%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "16ª posição nacional entre as 27 UFs participantes do programa, com 1,7% do total."
+        "text": "17ª posição nacional entre as 27 UFs participantes do programa, com 1,7% do total."
       },
       {
         "tone": "neutral",
-        "text": "3,8% de tudo que o Sudeste registra no programa."
+        "text": "3,7% de tudo que o Sudeste registra no programa."
       }
     ]
   },
@@ -40,32 +40,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -74,41 +66,41 @@
     {
       "id": "senai",
       "label": "SENAI — consultoria técnica (Lean)",
-      "value": 679,
+      "value": 751,
       "unit": "atendimentos",
-      "display_value": "679 atendimentos",
+      "display_value": "751 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 2021,
+      "value": 2086,
       "unit": "atendimentos",
-      "display_value": "2.021 atendimentos",
+      "display_value": "2.086 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "embrapii",
       "label": "EMBRAPII — inovação aplicada",
-      "value": 1,
+      "value": 2,
       "unit": "projetos",
-      "display_value": "1 projetos",
+      "display_value": "2 projetos",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 850.000 mobilizados"
+        "label": "R$ 2,5 mi mobilizados"
       }
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 0,
-      "unit": "operações",
-      "display_value": "0 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 0.0,
+      "unit": "",
+      "display_value": "—",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "— financiados"
+        "label": "0 operações financiadas"
       }
     }
   ],
@@ -128,15 +120,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -162,15 +154,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -180,15 +172,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -198,15 +190,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -216,15 +208,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -234,15 +226,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -252,15 +244,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -283,384 +275,400 @@
       "items": [
         {
           "uf": "ES",
-          "municipio": "VITORIA",
-          "ibge": null,
-          "value": 469,
-          "display_value": "469",
+          "municipio": "Vitória",
+          "ibge": "3205309",
+          "value": 498,
+          "display_value": "498",
           "share": 0.3
         },
         {
           "uf": "ES",
-          "municipio": "VILA VELHA",
-          "ibge": null,
-          "value": 397,
-          "display_value": "397",
-          "share": 0.3
-        },
-        {
-          "uf": "ES",
-          "municipio": "SERRA",
-          "ibge": null,
-          "value": 298,
-          "display_value": "298",
+          "municipio": "Vila Velha",
+          "ibge": "3205200",
+          "value": 419,
+          "display_value": "419",
           "share": 0.2
         },
         {
           "uf": "ES",
-          "municipio": "COLATINA",
-          "ibge": null,
-          "value": 190,
-          "display_value": "190",
+          "municipio": "Serra",
+          "ibge": "3205002",
+          "value": 314,
+          "display_value": "314",
+          "share": 0.2
+        },
+        {
+          "uf": "ES",
+          "municipio": "Colatina",
+          "ibge": "3201506",
+          "value": 212,
+          "display_value": "212",
           "share": 0.1
         },
         {
           "uf": "ES",
-          "municipio": "LINHARES",
-          "ibge": null,
-          "value": 173,
-          "display_value": "173",
+          "municipio": "Linhares",
+          "ibge": "3203205",
+          "value": 180,
+          "display_value": "180",
           "share": 0.1
         },
         {
           "uf": "ES",
-          "municipio": "CARIACICA",
-          "ibge": null,
-          "value": 172,
-          "display_value": "172",
+          "municipio": "Cariacica",
+          "ibge": "3201308",
+          "value": 176,
+          "display_value": "176",
           "share": 0.1
         },
         {
           "uf": "ES",
-          "municipio": "CACHOEIRO DE ITAPEMIRIM",
-          "ibge": null,
-          "value": 142,
-          "display_value": "142",
+          "municipio": "Cachoeiro de Itapemirim",
+          "ibge": "3201209",
+          "value": 152,
+          "display_value": "152",
           "share": 0.1
         },
         {
           "uf": "ES",
-          "municipio": "GUARAPARI",
-          "ibge": null,
-          "value": 95,
-          "display_value": "95",
+          "municipio": "Guarapari",
+          "ibge": "3202405",
+          "value": 98,
+          "display_value": "98",
           "share": 0.1
         },
         {
           "uf": "ES",
-          "municipio": "SAO MATEUS",
-          "ibge": null,
-          "value": 72,
-          "display_value": "72",
+          "municipio": "São Mateus",
+          "ibge": "3204906",
+          "value": 81,
+          "display_value": "81",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "DOMINGOS MARTINS",
-          "ibge": null,
+          "municipio": "Domingos Martins",
+          "ibge": "3201902",
           "value": 51,
           "display_value": "51",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "ARACRUZ",
-          "ibge": null,
-          "value": 39,
-          "display_value": "39",
+          "municipio": "Aracruz",
+          "ibge": "3200607",
+          "value": 43,
+          "display_value": "43",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "SAO GABRIEL DA PALHA",
-          "ibge": null,
-          "value": 37,
-          "display_value": "37",
+          "municipio": "São Gabriel da Palha",
+          "ibge": "3204708",
+          "value": 38,
+          "display_value": "38",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "VENDA NOVA DO IMIGRANTE",
-          "ibge": null,
-          "value": 31,
-          "display_value": "31",
+          "municipio": "Venda Nova do Imigrante",
+          "ibge": "3205069",
+          "value": 32,
+          "display_value": "32",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "VIANA",
-          "ibge": null,
+          "municipio": "Viana",
+          "ibge": "3205101",
           "value": 29,
           "display_value": "29",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "ITARANA",
-          "ibge": null,
+          "municipio": "Itarana",
+          "ibge": "3202900",
           "value": 29,
           "display_value": "29",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "MARILANDIA",
-          "ibge": null,
+          "municipio": "Marilândia",
+          "ibge": "3203353",
           "value": 24,
           "display_value": "24",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "ALEGRE",
-          "ibge": null,
+          "municipio": "Alegre",
+          "ibge": "3200201",
           "value": 23,
           "display_value": "23",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "RIO NOVO DO SUL",
-          "ibge": null,
+          "municipio": "Nova Venécia",
+          "ibge": "3203908",
+          "value": 22,
+          "display_value": "22",
+          "share": 0.0
+        },
+        {
+          "uf": "ES",
+          "municipio": "Rio Novo do Sul",
+          "ibge": "3204401",
           "value": 20,
           "display_value": "20",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "NOVA VENECIA",
-          "ibge": null,
+          "municipio": "Afonso Cláudio",
+          "ibge": "3200102",
           "value": 19,
           "display_value": "19",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "AFONSO CLAUDIO",
-          "ibge": null,
+          "municipio": "Sooretama",
+          "ibge": "3205010",
+          "value": 19,
+          "display_value": "19",
+          "share": 0.0
+        },
+        {
+          "uf": "ES",
+          "municipio": "Guaçuí",
+          "ibge": "3202306",
           "value": 18,
           "display_value": "18",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "GUACUI",
-          "ibge": null,
-          "value": 18,
-          "display_value": "18",
-          "share": 0.0
-        },
-        {
-          "uf": "ES",
-          "municipio": "SOORETAMA",
-          "ibge": null,
-          "value": 18,
-          "display_value": "18",
-          "share": 0.0
-        },
-        {
-          "uf": "ES",
-          "municipio": "SANTA MARIA DE JETIBA",
-          "ibge": null,
+          "municipio": "Santa Maria de Jetibá",
+          "ibge": "3204559",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "SANTA TERESA",
-          "ibge": null,
+          "municipio": "Santa Teresa",
+          "ibge": "3204609",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "JAGUARE",
-          "ibge": null,
+          "municipio": "Jaguaré",
+          "ibge": "3203056",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "JERONIMO MONTEIRO",
-          "ibge": null,
+          "municipio": "Jerônimo Monteiro",
+          "ibge": "3203106",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "MARECHAL FLORIANO",
-          "ibge": null,
+          "municipio": "Marechal Floriano",
+          "ibge": "3203346",
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "ES",
+          "municipio": "Pancas",
+          "ibge": "3204005",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "MUNIZ FREIRE",
-          "ibge": null,
+          "municipio": "Muniz Freire",
+          "ibge": "3203700",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "CASTELO",
-          "ibge": null,
+          "municipio": "Castelo",
+          "ibge": "3201407",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "PANCAS",
-          "ibge": null,
+          "municipio": "Itapemirim",
+          "ibge": "3202801",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "PIUMA",
-          "ibge": null,
+          "municipio": "Piúma",
+          "ibge": "3204203",
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "ES",
+          "municipio": "Iúna",
+          "ibge": "3203007",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "SAO ROQUE DO CANAA",
-          "ibge": null,
+          "municipio": "São Roque do Canaã",
+          "ibge": "3204955",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "IBIRACU",
-          "ibge": null,
+          "municipio": "Ibiraçu",
+          "ibge": "3202504",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "ITAPEMIRIM",
-          "ibge": null,
+          "municipio": "Marataízes",
+          "ibge": "3203320",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "IUNA",
-          "ibge": null,
+          "municipio": "Jaguaré",
+          "ibge": "3203056",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "MARATAIZES",
-          "ibge": null,
-          "value": 8,
-          "display_value": "8",
-          "share": 0.0
-        },
-        {
-          "uf": "ES",
-          "municipio": "ATILIO VIVACQUA",
-          "ibge": null,
+          "municipio": "Atílio Vivácqua",
+          "ibge": "3200706",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "CONCEICAO DA BARRA",
-          "ibge": null,
+          "municipio": "Baixo Guandu",
+          "ibge": "3200805",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "PINHEIROS",
-          "ibge": null,
+          "municipio": "Conceição da Barra",
+          "ibge": "3201605",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "SAO DOMINGOS DO NORTE",
-          "ibge": null,
+          "municipio": "Mimoso do Sul",
+          "ibge": "3203403",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "ALFREDO CHAVES",
-          "ibge": null,
+          "municipio": "Pinheiros",
+          "ibge": "3204104",
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "ES",
+          "municipio": "Presidente Kennedy",
+          "ibge": "3204302",
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "ES",
+          "municipio": "Rio Bananal",
+          "ibge": "3204351",
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "ES",
+          "municipio": "São Domingos do Norte",
+          "ibge": "3204658",
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "ES",
+          "municipio": "Alfredo Chaves",
+          "ibge": "3200300",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "BAIXO GUANDU",
-          "ibge": null,
+          "municipio": "Anchieta",
+          "ibge": "3200409",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "PRESIDENTE KENNEDY",
-          "ibge": null,
+          "municipio": "Conceição do Castelo",
+          "ibge": "3201704",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "RIO BANANAL",
-          "ibge": null,
+          "municipio": "Irupi",
+          "ibge": "3202652",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "CONCEICAO DO CASTELO",
-          "ibge": null,
-          "value": 6,
-          "display_value": "6",
-          "share": 0.0
-        },
-        {
-          "uf": "ES",
-          "municipio": "IRUPI",
-          "ibge": null,
-          "value": 6,
-          "display_value": "6",
-          "share": 0.0
-        },
-        {
-          "uf": "ES",
-          "municipio": "JAGUARÉ",
-          "ibge": null,
-          "value": 6,
-          "display_value": "6",
-          "share": 0.0
-        },
-        {
-          "uf": "ES",
-          "municipio": "JOÃO NEIVA",
-          "ibge": null,
+          "municipio": "João Neiva",
+          "ibge": "3203130",
           "value": 6,
           "display_value": "6",
           "share": 0.0
@@ -675,8 +683,8 @@
         },
         {
           "uf": "ES",
-          "municipio": "PIÚMA",
-          "ibge": null,
+          "municipio": "Piúma",
+          "ibge": "3204203",
           "value": 6,
           "display_value": "6",
           "share": 0.0
@@ -691,8 +699,8 @@
         },
         {
           "uf": "ES",
-          "municipio": "SAO JOSE DO CALCADO",
-          "ibge": null,
+          "municipio": "São José do Calçado",
+          "ibge": "3204807",
           "value": 6,
           "display_value": "6",
           "share": 0.0
@@ -707,88 +715,72 @@
         },
         {
           "uf": "ES",
-          "municipio": "ANCHIETA",
-          "ibge": null,
+          "municipio": "Iconha",
+          "ibge": "3202603",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "APIACA",
-          "ibge": null,
+          "municipio": "Apiacá",
+          "ibge": "3200508",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "BOM JESUS DO NORTE",
-          "ibge": null,
+          "municipio": "Bom Jesus do Norte",
+          "ibge": "3201100",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "BARRA DE SAO FRANCISCO",
-          "ibge": null,
+          "municipio": "Barra de São Francisco",
+          "ibge": "3200904",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "GOVERNADOR LINDENBERG",
-          "ibge": null,
+          "municipio": "Governador Lindenberg",
+          "ibge": "3202256",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "IBATIBA",
-          "ibge": null,
+          "municipio": "Ibatiba",
+          "ibge": "3202454",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "ICONHA",
-          "ibge": null,
+          "municipio": "João Neiva",
+          "ibge": "3203130",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "JOAO NEIVA",
-          "ibge": null,
+          "municipio": "Alto Rio Novo",
+          "ibge": "3200359",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "MIMOSO DO SUL",
-          "ibge": null,
-          "value": 4,
-          "display_value": "4",
-          "share": 0.0
-        },
-        {
-          "uf": "ES",
-          "municipio": "ALTO RIO NOVO",
-          "ibge": null,
-          "value": 4,
-          "display_value": "4",
-          "share": 0.0
-        },
-        {
-          "uf": "ES",
-          "municipio": "VARGEM ALTA",
-          "ibge": null,
+          "municipio": "Vargem Alta",
+          "ibge": "3205036",
           "value": 3,
           "display_value": "3",
           "share": 0.0
@@ -796,7 +788,7 @@
         {
           "uf": "ES",
           "municipio": "Guarapari",
-          "ibge": null,
+          "ibge": "3202405",
           "value": 3,
           "display_value": "3",
           "share": 0.0
@@ -811,24 +803,40 @@
         },
         {
           "uf": "ES",
-          "municipio": "NOVA VENÉCIA",
-          "ibge": null,
+          "municipio": "Boa Esperança",
+          "ibge": "3201001",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "PEDRO CANARIO",
-          "ibge": null,
+          "municipio": "Itaguaçu",
+          "ibge": "3202702",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "VITÓRIA",
-          "ibge": null,
+          "municipio": "Montanha",
+          "ibge": "3203502",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "ES",
+          "municipio": "Pedro Canário",
+          "ibge": "3204054",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "ES",
+          "municipio": "Vitória",
+          "ibge": "3205309",
           "value": 2,
           "display_value": "2",
           "share": 0.0
@@ -843,72 +851,48 @@
         },
         {
           "uf": "ES",
-          "municipio": "LARANJA DA TERRA",
-          "ibge": null,
+          "municipio": "Laranja da Terra",
+          "ibge": "3203163",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "MONTANHA",
-          "ibge": null,
+          "municipio": "Divino de São Lourenço",
+          "ibge": "3201803",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "BOA ESPERANCA",
-          "ibge": null,
+          "municipio": "Dores do Rio Preto",
+          "ibge": "3202009",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "DIVINO DE SAO LOURENCO",
-          "ibge": null,
+          "municipio": "Fundão",
+          "ibge": "3202207",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "DORES DO RIO PRETO",
-          "ibge": null,
+          "municipio": "Mantenópolis",
+          "ibge": "3203304",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "ES",
-          "municipio": "FUNDAO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "ES",
-          "municipio": "ITAGUACU",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "ES",
-          "municipio": "MANTENOPOLIS",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "ES",
-          "municipio": "MUQUI",
-          "ibge": null,
+          "municipio": "Muqui",
+          "ibge": "3203809",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -918,7 +902,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -932,15 +916,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }

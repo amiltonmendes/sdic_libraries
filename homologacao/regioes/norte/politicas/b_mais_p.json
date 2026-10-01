@@ -4,32 +4,32 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "10.790",
+    "display_value": "11.619",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "flat",
-      "label": "7,0% do total nacional · 5ª entre 5 regiões"
+      "label": "6,9% do total nacional · 5ª entre 5 regiões"
     },
-    "value": 10790
+    "value": 11619
   },
   "story": {
     "escopo": "regiao",
     "regiao": "Norte",
     "uf": null,
     "regra": "normal",
-    "headline": "Norte responde por 10.790 atendimentos — 7,0% do total nacional.",
+    "headline": "Norte responde por 11.619 atendimentos — 6,9% do total nacional.",
     "lede": "É a 5ª colocação entre as 5 macrorregiões participantes do programa. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "5ª entre as 5 macrorregiões participantes do programa, com 7,0% do total nacional."
+        "text": "5ª entre as 5 macrorregiões participantes do programa, com 6,9% do total nacional."
       }
     ]
   },
@@ -37,32 +37,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -71,41 +63,41 @@
     {
       "id": "senai",
       "label": "SENAI — consultoria técnica (Lean)",
-      "value": 24130,
+      "value": 26496,
       "unit": "atendimentos",
-      "display_value": "24.130 atendimentos",
+      "display_value": "26.496 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 130177,
+      "value": 140753,
       "unit": "atendimentos",
-      "display_value": "130.177 atendimentos",
+      "display_value": "140.753 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "embrapii",
       "label": "EMBRAPII — inovação aplicada",
-      "value": 410,
+      "value": 387,
       "unit": "projetos",
-      "display_value": "410 projetos",
+      "display_value": "387 projetos",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 534,4 mi mobilizados"
+        "label": "R$ 542,1 mi mobilizados"
       }
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 24,
-      "unit": "operações",
-      "display_value": "24 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 268759312.87,
+      "unit": "",
+      "display_value": "R$ 268,8 mi",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 147,8 mi financiados"
+        "label": "37 operações financiadas"
       }
     }
   ],
@@ -125,15 +117,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -159,15 +151,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -177,15 +169,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -195,15 +187,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -213,15 +205,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -231,15 +223,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -249,15 +241,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -280,314 +272,322 @@
       "items": [
         {
           "uf": "RR",
-          "municipio": "BOA VISTA",
-          "ibge": null,
-          "value": 1360,
-          "display_value": "1.360",
+          "municipio": "Boa Vista",
+          "ibge": "1400100",
+          "value": 1453,
+          "display_value": "1.453",
           "share": 0.9
         },
         {
           "uf": "PA",
-          "municipio": "BELEM",
-          "ibge": null,
-          "value": 1043,
-          "display_value": "1.043",
+          "municipio": "Belém",
+          "ibge": "1501402",
+          "value": 1163,
+          "display_value": "1.163",
           "share": 0.7
         },
         {
           "uf": "AP",
-          "municipio": "MACAPA",
-          "ibge": null,
-          "value": 1025,
-          "display_value": "1.025",
-          "share": 0.7
+          "municipio": "Macapá",
+          "ibge": "1600303",
+          "value": 1066,
+          "display_value": "1.066",
+          "share": 0.6
         },
         {
           "uf": "AM",
-          "municipio": "MANAUS",
-          "ibge": null,
-          "value": 973,
-          "display_value": "973",
+          "municipio": "Manaus",
+          "ibge": "1302603",
+          "value": 1040,
+          "display_value": "1.040",
           "share": 0.6
         },
         {
           "uf": "AC",
-          "municipio": "RIO BRANCO",
-          "ibge": null,
-          "value": 764,
-          "display_value": "764",
+          "municipio": "Rio Branco",
+          "ibge": "1200401",
+          "value": 832,
+          "display_value": "832",
           "share": 0.5
         },
         {
           "uf": "RO",
-          "municipio": "PORTO VELHO",
-          "ibge": null,
-          "value": 480,
-          "display_value": "480",
+          "municipio": "Porto Velho",
+          "ibge": "1100205",
+          "value": 523,
+          "display_value": "523",
           "share": 0.3
         },
         {
           "uf": "RO",
-          "municipio": "CACOAL",
-          "ibge": null,
-          "value": 298,
-          "display_value": "298",
-          "share": 0.2
-        },
-        {
-          "uf": "TO",
-          "municipio": "PALMAS",
-          "ibge": null,
-          "value": 241,
-          "display_value": "241",
+          "municipio": "Cacoal",
+          "ibge": "1100049",
+          "value": 309,
+          "display_value": "309",
           "share": 0.2
         },
         {
           "uf": "AC",
-          "municipio": "CRUZEIRO DO SUL",
-          "ibge": null,
-          "value": 228,
-          "display_value": "228",
+          "municipio": "Cruzeiro do Sul",
+          "ibge": "1200203",
+          "value": 280,
+          "display_value": "280",
+          "share": 0.2
+        },
+        {
+          "uf": "TO",
+          "municipio": "Palmas",
+          "ibge": "1721000",
+          "value": 273,
+          "display_value": "273",
+          "share": 0.2
+        },
+        {
+          "uf": "PA",
+          "municipio": "Santarém",
+          "ibge": "1506807",
+          "value": 242,
+          "display_value": "242",
+          "share": 0.1
+        },
+        {
+          "uf": "RO",
+          "municipio": "Vilhena",
+          "ibge": "1100304",
+          "value": 238,
+          "display_value": "238",
           "share": 0.1
         },
         {
           "uf": "TO",
-          "municipio": "ARAGUAINA",
-          "ibge": null,
-          "value": 223,
-          "display_value": "223",
+          "municipio": "Araguaína",
+          "ibge": "1702109",
+          "value": 235,
+          "display_value": "235",
           "share": 0.1
         },
         {
           "uf": "AP",
-          "municipio": "SANTANA",
-          "ibge": null,
-          "value": 216,
-          "display_value": "216",
+          "municipio": "Santana",
+          "ibge": "1600600",
+          "value": 222,
+          "display_value": "222",
           "share": 0.1
         },
         {
           "uf": "PA",
-          "municipio": "SANTAREM",
-          "ibge": null,
-          "value": 212,
-          "display_value": "212",
-          "share": 0.1
-        },
-        {
-          "uf": "RO",
-          "municipio": "VILHENA",
-          "ibge": null,
-          "value": 208,
-          "display_value": "208",
+          "municipio": "Ananindeua",
+          "ibge": "1500800",
+          "value": 217,
+          "display_value": "217",
           "share": 0.1
         },
         {
           "uf": "PA",
-          "municipio": "ANANINDEUA",
-          "ibge": null,
-          "value": 194,
-          "display_value": "194",
-          "share": 0.1
-        },
-        {
-          "uf": "PA",
-          "municipio": "PARAGOMINAS",
-          "ibge": null,
-          "value": 182,
-          "display_value": "182",
+          "municipio": "Paragominas",
+          "ibge": "1505502",
+          "value": 205,
+          "display_value": "205",
           "share": 0.1
         },
         {
           "uf": "AM",
-          "municipio": "ITACOATIARA",
-          "ibge": null,
-          "value": 171,
-          "display_value": "171",
+          "municipio": "Itacoatiara",
+          "ibge": "1301902",
+          "value": 172,
+          "display_value": "172",
           "share": 0.1
         },
         {
           "uf": "RO",
-          "municipio": "PIMENTA BUENO",
-          "ibge": null,
-          "value": 167,
-          "display_value": "167",
+          "municipio": "Ji-Paraná",
+          "ibge": "1100122",
+          "value": 169,
+          "display_value": "169",
           "share": 0.1
         },
         {
           "uf": "RO",
-          "municipio": "JI-PARANA",
-          "ibge": null,
-          "value": 156,
-          "display_value": "156",
-          "share": 0.1
-        },
-        {
-          "uf": "RO",
-          "municipio": "ARIQUEMES",
-          "ibge": null,
-          "value": 142,
-          "display_value": "142",
+          "municipio": "Pimenta Bueno",
+          "ibge": "1100189",
+          "value": 169,
+          "display_value": "169",
           "share": 0.1
         },
         {
           "uf": "PA",
-          "municipio": "MARABA",
-          "ibge": null,
-          "value": 134,
-          "display_value": "134",
-          "share": 0.1
-        },
-        {
-          "uf": "TO",
-          "municipio": "GURUPI",
-          "ibge": null,
-          "value": 129,
-          "display_value": "129",
+          "municipio": "Marabá",
+          "ibge": "1504208",
+          "value": 152,
+          "display_value": "152",
           "share": 0.1
         },
         {
           "uf": "RO",
-          "municipio": "JARU",
-          "ibge": null,
+          "municipio": "Ariquemes",
+          "ibge": "1100023",
+          "value": 149,
+          "display_value": "149",
+          "share": 0.1
+        },
+        {
+          "uf": "TO",
+          "municipio": "Gurupi",
+          "ibge": "1709500",
+          "value": 144,
+          "display_value": "144",
+          "share": 0.1
+        },
+        {
+          "uf": "RO",
+          "municipio": "Jaru",
+          "ibge": "1100114",
+          "value": 122,
+          "display_value": "122",
+          "share": 0.1
+        },
+        {
+          "uf": "RR",
+          "municipio": "Rorainópolis",
+          "ibge": "1400472",
           "value": 119,
           "display_value": "119",
           "share": 0.1
         },
         {
           "uf": "AM",
-          "municipio": "HUMAITA",
-          "ibge": null,
-          "value": 110,
-          "display_value": "110",
+          "municipio": "Humaitá",
+          "ibge": "1301704",
+          "value": 118,
+          "display_value": "118",
           "share": 0.1
         },
         {
           "uf": "PA",
-          "municipio": "BREVES",
-          "ibge": null,
-          "value": 103,
-          "display_value": "103",
-          "share": 0.1
-        },
-        {
-          "uf": "RR",
-          "municipio": "RORAINOPOLIS",
-          "ibge": null,
-          "value": 101,
-          "display_value": "101",
+          "municipio": "Breves",
+          "ibge": "1501808",
+          "value": 111,
+          "display_value": "111",
           "share": 0.1
         },
         {
           "uf": "PA",
-          "municipio": "CAPANEMA",
-          "ibge": null,
+          "municipio": "Capanema",
+          "ibge": "1502202",
+          "value": 98,
+          "display_value": "98",
+          "share": 0.1
+        },
+        {
+          "uf": "PA",
+          "municipio": "Altamira",
+          "ibge": "1500602",
           "value": 97,
           "display_value": "97",
           "share": 0.1
         },
         {
           "uf": "PA",
-          "municipio": "ALTAMIRA",
-          "ibge": null,
-          "value": 88,
-          "display_value": "88",
+          "municipio": "Abaetetuba",
+          "ibge": "1500107",
+          "value": 84,
+          "display_value": "84",
           "share": 0.1
         },
         {
           "uf": "PA",
-          "municipio": "BRAGANCA",
-          "ibge": null,
-          "value": 80,
-          "display_value": "80",
-          "share": 0.1
-        },
-        {
-          "uf": "PA",
-          "municipio": "ABAETETUBA",
-          "ibge": null,
-          "value": 79,
-          "display_value": "79",
-          "share": 0.1
-        },
-        {
-          "uf": "PA",
-          "municipio": "SOURE",
-          "ibge": null,
-          "value": 75,
-          "display_value": "75",
+          "municipio": "Bragança",
+          "ibge": "1501709",
+          "value": 81,
+          "display_value": "81",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "CASTANHAL",
-          "ibge": null,
-          "value": 64,
-          "display_value": "64",
+          "municipio": "Soure",
+          "ibge": "1507904",
+          "value": 81,
+          "display_value": "81",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "BARCARENA",
-          "ibge": null,
-          "value": 61,
-          "display_value": "61",
+          "municipio": "Castanhal",
+          "ibge": "1502400",
+          "value": 72,
+          "display_value": "72",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "ITAITUBA",
-          "ibge": null,
-          "value": 54,
-          "display_value": "54",
+          "municipio": "Barcarena",
+          "ibge": "1501303",
+          "value": 62,
+          "display_value": "62",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "PARAISO DO TOCANTINS",
-          "ibge": null,
-          "value": 53,
-          "display_value": "53",
+          "municipio": "Paraíso do Tocantins",
+          "ibge": "1716109",
+          "value": 55,
+          "display_value": "55",
+          "share": 0.0
+        },
+        {
+          "uf": "PA",
+          "municipio": "Itaituba",
+          "ibge": "1503606",
+          "value": 55,
+          "display_value": "55",
+          "share": 0.0
+        },
+        {
+          "uf": "PA",
+          "municipio": "Marituba",
+          "ibge": "1504422",
+          "value": 51,
+          "display_value": "51",
           "share": 0.0
         },
         {
           "uf": "AP",
-          "municipio": "OIAPOQUE",
-          "ibge": null,
+          "municipio": "Oiapoque",
+          "ibge": "1600501",
           "value": 44,
           "display_value": "44",
           "share": 0.0
         },
         {
+          "uf": "AP",
+          "municipio": "Porto Grande",
+          "ibge": "1600535",
+          "value": 43,
+          "display_value": "43",
+          "share": 0.0
+        },
+        {
           "uf": "AC",
-          "municipio": "EPITACIOLANDIA",
-          "ibge": null,
+          "municipio": "Epitaciolândia",
+          "ibge": "1200252",
           "value": 42,
           "display_value": "42",
           "share": 0.0
         },
         {
-          "uf": "AP",
-          "municipio": "PORTO GRANDE",
-          "ibge": null,
-          "value": 40,
-          "display_value": "40",
+          "uf": "PA",
+          "municipio": "Canaã dos Carajás",
+          "ibge": "1502152",
+          "value": 41,
+          "display_value": "41",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "MARITUBA",
-          "ibge": null,
-          "value": 36,
-          "display_value": "36",
-          "share": 0.0
-        },
-        {
-          "uf": "PA",
-          "municipio": "PARAUAPEBAS",
-          "ibge": null,
-          "value": 36,
-          "display_value": "36",
+          "municipio": "Parauapebas",
+          "ibge": "1505536",
+          "value": 37,
+          "display_value": "37",
           "share": 0.0
         },
         {
@@ -600,976 +600,1072 @@
         },
         {
           "uf": "AC",
-          "municipio": "BRASILEIA",
-          "ibge": null,
+          "municipio": "Brasiléia",
+          "ibge": "1200104",
           "value": 33,
           "display_value": "33",
           "share": 0.0
         },
         {
           "uf": "AP",
-          "municipio": "LARANJAL DO JARI",
-          "ibge": null,
-          "value": 32,
-          "display_value": "32",
+          "municipio": "Laranjal do Jari",
+          "ibge": "1600279",
+          "value": 33,
+          "display_value": "33",
           "share": 0.0
         },
         {
           "uf": "AM",
-          "municipio": "MANACAPURU",
-          "ibge": null,
+          "municipio": "Manacapuru",
+          "ibge": "1302504",
           "value": 31,
           "display_value": "31",
           "share": 0.0
         },
         {
           "uf": "AP",
-          "municipio": "MACAPÁ",
-          "ibge": null,
+          "municipio": "Macapá",
+          "ibge": "1600303",
           "value": 31,
           "display_value": "31",
           "share": 0.0
         },
         {
           "uf": "AM",
-          "municipio": "TABATINGA",
-          "ibge": null,
+          "municipio": "Tabatinga",
+          "ibge": "1304062",
           "value": 31,
           "display_value": "31",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "CAMETA",
-          "ibge": null,
-          "value": 26,
-          "display_value": "26",
+          "municipio": "Benevides",
+          "ibge": "1501501",
+          "value": 28,
+          "display_value": "28",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "IPIXUNA DO PARA",
-          "ibge": null,
+          "municipio": "Cametá",
+          "ibge": "1502103",
+          "value": 27,
+          "display_value": "27",
+          "share": 0.0
+        },
+        {
+          "uf": "PA",
+          "municipio": "Ipixuna do Pará",
+          "ibge": "1503457",
           "value": 25,
           "display_value": "25",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "REDENCAO",
-          "ibge": null,
+          "municipio": "Redenção",
+          "ibge": "1506138",
           "value": 25,
           "display_value": "25",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "REDENÇÃO",
-          "ibge": null,
+          "municipio": "Redenção",
+          "ibge": "1506138",
           "value": 25,
           "display_value": "25",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "CANAA DOS CARAJAS",
-          "ibge": null,
+          "municipio": "Santa Maria do Pará",
+          "ibge": "1506609",
           "value": 24,
           "display_value": "24",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "SANTA MARIA DO PARA",
-          "ibge": null,
-          "value": 23,
-          "display_value": "23",
-          "share": 0.0
-        },
-        {
-          "uf": "PA",
-          "municipio": "BENEVIDES",
-          "ibge": null,
-          "value": 21,
-          "display_value": "21",
-          "share": 0.0
-        },
-        {
-          "uf": "PA",
-          "municipio": "SALINOPOLIS",
-          "ibge": null,
+          "municipio": "Salinópolis",
+          "ibge": "1506203",
           "value": 19,
           "display_value": "19",
           "share": 0.0
         },
         {
+          "uf": "AC",
+          "municipio": "Tarauacá",
+          "ibge": "1200609",
+          "value": 17,
+          "display_value": "17",
+          "share": 0.0
+        },
+        {
           "uf": "PA",
-          "municipio": "TRAIRAO",
-          "ibge": null,
+          "municipio": "Aurora do Pará",
+          "ibge": "1500958",
+          "value": 17,
+          "display_value": "17",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "Ouro Preto do Oeste",
+          "ibge": "1100155",
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "PA",
+          "municipio": "Trairão",
+          "ibge": "1508050",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "PORTO NACIONAL",
-          "ibge": null,
+          "municipio": "Porto Nacional",
+          "ibge": "1718204",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
-          "uf": "RO",
-          "municipio": "OURO PRETO DO OESTE",
-          "ibge": null,
-          "value": 15,
-          "display_value": "15",
+          "uf": "PA",
+          "municipio": "Santa Bárbara do Pará",
+          "ibge": "1506351",
+          "value": 14,
+          "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "AURORA DO PARA",
-          "ibge": null,
-          "value": 13,
-          "display_value": "13",
-          "share": 0.0
-        },
-        {
-          "uf": "PA",
-          "municipio": "IGARAPE-MIRI",
-          "ibge": null,
+          "municipio": "Igarapé-Miri",
+          "ibge": "1503309",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "AM",
-          "municipio": "IRANDUBA",
-          "ibge": null,
+          "municipio": "Iranduba",
+          "ibge": "1301852",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "VIGIA",
-          "ibge": null,
+          "municipio": "Vigia",
+          "ibge": "1508209",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "RR",
-          "municipio": "CANTA",
-          "ibge": null,
+          "municipio": "Cantá",
+          "ibge": "1400175",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "LIMOEIRO DO AJURU",
-          "ibge": null,
+          "municipio": "Tucumã",
+          "ibge": "1508084",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "MEDICILANDIA",
-          "ibge": null,
+          "municipio": "Limoeiro do Ajuru",
+          "ibge": "1504000",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "SANTA BARBARA DO PARA",
-          "ibge": null,
+          "municipio": "Medicilândia",
+          "ibge": "1504455",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "BRASIL NOVO",
-          "ibge": null,
+          "municipio": "Oeiras do Pará",
+          "ibge": "1505205",
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "PA",
+          "municipio": "Brasil Novo",
+          "ibge": "1501725",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "OEIRAS DO PARA",
-          "ibge": null,
+          "municipio": "Moju",
+          "ibge": "1504703",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "ULIANOPOLIS",
-          "ibge": null,
+          "municipio": "Ulianópolis",
+          "ibge": "1508126",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "URUARA",
-          "ibge": null,
+          "municipio": "Tailândia",
+          "ibge": "1507953",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "IRITUIA",
-          "ibge": null,
+          "municipio": "Uruará",
+          "ibge": "1508159",
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "PA",
+          "municipio": "São João de Pirabas",
+          "ibge": "1507474",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "SAO JOAO DE PIRABAS",
-          "ibge": null,
-          "value": 8,
-          "display_value": "8",
-          "share": 0.0
-        },
-        {
-          "uf": "PA",
-          "municipio": "TOME-ACU",
-          "ibge": null,
+          "municipio": "Tomé-Açu",
+          "ibge": "1508001",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "AC",
-          "municipio": "XAPURI",
-          "ibge": null,
+          "municipio": "Xapuri",
+          "ibge": "1200708",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "CONCEICAO DO ARAGUAIA",
-          "ibge": null,
+          "municipio": "Conceição do Araguaia",
+          "ibge": "1502707",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "SANTARÉM",
-          "ibge": null,
+          "municipio": "Irituia",
+          "ibge": "1503507",
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "AC",
+          "municipio": "Rodrigues Alves",
+          "ibge": "1200427",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
-          "uf": "AC",
-          "municipio": "RODRIGUES ALVES",
-          "ibge": null,
+          "uf": "AP",
+          "municipio": "Pedra Branca do Amapari",
+          "ibge": "1600154",
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "Cacaulândia",
+          "ibge": "1100601",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "PEIXE",
-          "ibge": null,
+          "municipio": "Peixe",
+          "ibge": "1716604",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "TAILANDIA",
-          "ibge": null,
+          "municipio": "Marabá",
+          "ibge": "1504208",
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "PA",
+          "municipio": "Ourilândia do Norte",
+          "ibge": "1505437",
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "Candeias do Jamari",
+          "ibge": "1100809",
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "Colorado do Oeste",
+          "ibge": "1100064",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "AUGUSTINÓPOLIS",
-          "ibge": null,
+          "municipio": "Augustinópolis",
+          "ibge": "1702554",
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "AC",
+          "municipio": "Mâncio Lima",
+          "ibge": "1200336",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "AM",
-          "municipio": "COARI",
-          "ibge": null,
+          "municipio": "Coari",
+          "ibge": "1301209",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "BREU BRANCO",
-          "ibge": null,
+          "municipio": "Breu Branco",
+          "ibge": "1501782",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "MAE DO RIO",
-          "ibge": null,
+          "municipio": "Mãe do Rio",
+          "ibge": "1504059",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "MOJU",
-          "ibge": null,
+          "municipio": "Primavera",
+          "ibge": "1506104",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "PRIMAVERA",
-          "ibge": null,
+          "municipio": "Tucuruí",
+          "ibge": "1508100",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
-          "uf": "PA",
-          "municipio": "TUCURUI",
-          "ibge": null,
-          "value": 5,
-          "display_value": "5",
-          "share": 0.0
-        },
-        {
-          "uf": "RO",
-          "municipio": "CACAULÂNDIA",
-          "ibge": null,
-          "value": 5,
-          "display_value": "5",
-          "share": 0.0
-        },
-        {
-          "uf": "RO",
-          "municipio": "COLORADO DO OESTE",
-          "ibge": null,
+          "uf": "AC",
+          "municipio": "Acrelândia",
+          "ibge": "1200013",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RR",
-          "municipio": "CARACARAI",
-          "ibge": null,
+          "municipio": "Caracaraí",
+          "ibge": "1400209",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RR",
-          "municipio": "MUCAJAI",
-          "ibge": null,
+          "municipio": "Mucajaí",
+          "ibge": "1400308",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "AC",
-          "municipio": "MANCIO LIMA",
-          "ibge": null,
+          "municipio": "Porto Acre",
+          "ibge": "1200807",
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "Maués",
+          "ibge": "1302900",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "ANAJAS",
-          "ibge": null,
+          "municipio": "Anajás",
+          "ibge": "1500701",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "BELTERRA",
-          "ibge": null,
+          "municipio": "Belterra",
+          "ibge": "1501451",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "CACHOEIRA DO ARARI",
-          "ibge": null,
+          "municipio": "Cachoeira do Arari",
+          "ibge": "1502004",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "CAPITAO POCO",
-          "ibge": null,
+          "municipio": "Capitão Poço",
+          "ibge": "1502301",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "DOM ELISEU",
-          "ibge": null,
+          "municipio": "Dom Eliseu",
+          "ibge": "1502939",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "FLORESTA DO ARAGUAIA",
-          "ibge": null,
+          "municipio": "Floresta do Araguaia",
+          "ibge": "1503044",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "IGARAPE-ACU",
-          "ibge": null,
+          "municipio": "Igarapé-Açu",
+          "ibge": "1503200",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "MEDICILÂNDIA",
-          "ibge": null,
+          "municipio": "Medicilândia",
+          "ibge": "1504455",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "SANTA LUZIA DO PARA",
-          "ibge": null,
+          "municipio": "Portel",
+          "ibge": "1505809",
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PA",
+          "municipio": "Santa Luzia do Pará",
+          "ibge": "1506559",
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "Presidente Médici",
+          "ibge": "1100254",
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "Vale do Anari",
+          "ibge": "1101757",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RR",
-          "municipio": "AMAJARI",
-          "ibge": null,
+          "municipio": "Amajari",
+          "ibge": "1400027",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
-          "uf": "AC",
-          "municipio": "ACRELANDIA",
-          "ibge": null,
-          "value": 3,
-          "display_value": "3",
-          "share": 0.0
-        },
-        {
-          "uf": "PA",
-          "municipio": "MARABÁ",
-          "ibge": null,
-          "value": 3,
-          "display_value": "3",
-          "share": 0.0
-        },
-        {
           "uf": "RO",
-          "municipio": "ROLIM DE MOURA",
-          "ibge": null,
+          "municipio": "Rolim de Moura",
+          "ibge": "1100288",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "FORMOSO DO ARAGUAIA",
-          "ibge": null,
+          "municipio": "Formoso do Araguaia",
+          "ibge": "1708205",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "AM",
-          "municipio": "APUI",
-          "ibge": null,
+          "municipio": "Apuí",
+          "ibge": "1300144",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "AM",
-          "municipio": "CAREIRO DA VARZEA",
-          "ibge": null,
+          "municipio": "Careiro da Várzea",
+          "ibge": "1301159",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "AP",
-          "municipio": "FERREIRA GOMES",
-          "ibge": null,
-          "value": 3,
-          "display_value": "3",
-          "share": 0.0
-        },
-        {
-          "uf": "AP",
-          "municipio": "PEDRA BRANCA DO AMAPARÍ",
-          "ibge": null,
+          "municipio": "Ferreira Gomes",
+          "ibge": "1600238",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "AUGUSTO CORREA",
-          "ibge": null,
+          "municipio": "Augusto Corrêa",
+          "ibge": "1500909",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "BONITO",
-          "ibge": null,
+          "municipio": "Bonito",
+          "ibge": "1501600",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "PAU D'ARCO",
-          "ibge": null,
+          "municipio": "Pau D'Arco",
+          "ibge": "1505551",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "CANDEIAS DO JAMARI",
-          "ibge": null,
+          "municipio": "Espigão D'Oeste",
+          "ibge": "1100098",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "ESPIGAO D'OESTE",
-          "ibge": null,
-          "value": 3,
-          "display_value": "3",
-          "share": 0.0
-        },
-        {
-          "uf": "RO",
-          "municipio": "VALE DO PARAISO",
-          "ibge": null,
+          "municipio": "Vale do Paraíso",
+          "ibge": "1101807",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RR",
-          "municipio": "ALTO ALEGRE",
-          "ibge": null,
+          "municipio": "Alto Alegre",
+          "ibge": "1400050",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RR",
-          "municipio": "SAO LUIZ",
-          "ibge": null,
+          "municipio": "São Luiz",
+          "ibge": "1400605",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "CARMOLANDIA",
-          "ibge": null,
+          "municipio": "Carmolândia",
+          "ibge": "1703883",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "PALMEIRAS DO TOCANTINS",
-          "ibge": null,
+          "municipio": "Palmeiras do Tocantins",
+          "ibge": "1713809",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "WANDERLANDIA",
-          "ibge": null,
+          "municipio": "Wanderlândia",
+          "ibge": "1722081",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "AC",
-          "municipio": "SENADOR GUIOMARD",
-          "ibge": null,
+          "municipio": "Senador Guiomard",
+          "ibge": "1200450",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "AP",
-          "municipio": "PEDRA BRANCA DO AMAPARI",
-          "ibge": null,
+          "municipio": "Pedra Branca do Amapari",
+          "ibge": "1600154",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "BELÉM",
-          "ibge": null,
+          "municipio": "Belém",
+          "ibge": "1501402",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "CANAÃ DOS CARAJÁS",
-          "ibge": null,
+          "municipio": "Inhangapi",
+          "ibge": "1503408",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "INHANGAPI",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "PA",
-          "municipio": "TAILÂNDIA",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "PA",
-          "municipio": "TUCUMA",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "TO",
-          "municipio": "ARAGUATINS",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "TO",
-          "municipio": "BURITI DO TOCANTINS",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "TO",
-          "municipio": "COLMEIA",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "TO",
-          "municipio": "PUGMIL",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "AM",
-          "municipio": "AUTAZES",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "AM",
-          "municipio": "BENJAMIN CONSTANT",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "AM",
-          "municipio": "LABREA",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "AM",
-          "municipio": "TEFE",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "AP",
-          "municipio": "MAZAGAO",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "PA",
-          "municipio": "ACARA",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "PA",
-          "municipio": "CACHOEIRA DO PIRIA",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "PA",
-          "municipio": "GARRAFAO DO NORTE",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "PA",
-          "municipio": "NOVA TIMBOTEUA",
-          "ibge": null,
+          "municipio": "Santarém",
+          "ibge": "1506807",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "GOVERNADOR JORGE TEIXEIRA",
-          "ibge": null,
+          "municipio": "Ministro Andreazza",
+          "ibge": "1101203",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "TO",
+          "municipio": "Araguatins",
+          "ibge": "1702208",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "TO",
+          "municipio": "Buriti do Tocantins",
+          "ibge": "1703800",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "TO",
+          "municipio": "Colméia",
+          "ibge": "1716703",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "TO",
+          "municipio": "Pugmil",
+          "ibge": "1718451",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "Autazes",
+          "ibge": "1300300",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "Barreirinha",
+          "ibge": "1300508",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "Benjamin Constant",
+          "ibge": "1300607",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "Lábrea",
+          "ibge": "1302405",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "Presidente Figueiredo",
+          "ibge": "1303536",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "Tefé",
+          "ibge": "1304203",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AP",
+          "municipio": "Mazagão",
+          "ibge": "1600402",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PA",
+          "municipio": "Acará",
+          "ibge": "1500206",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PA",
+          "municipio": "Anapu",
+          "ibge": "1500859",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PA",
+          "municipio": "Cachoeira do Piriá",
+          "ibge": "1501956",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PA",
+          "municipio": "Garrafão do Norte",
+          "ibge": "1503077",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PA",
+          "municipio": "Jacareacanga",
+          "ibge": "1503754",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PA",
+          "municipio": "Nova Timboteua",
+          "ibge": "1505007",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PA",
+          "municipio": "Novo Progresso",
+          "ibge": "1505031",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PA",
+          "municipio": "Salvaterra",
+          "ibge": "1506302",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "Alto Paraíso",
+          "ibge": "1100403",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "Governador Jorge Teixeira",
+          "ibge": "1101005",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "Mirante da Serra",
+          "ibge": "1101302",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "Nova Mamoré",
+          "ibge": "1100338",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "Primavera de Rondônia",
+          "ibge": "1101476",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RR",
-          "municipio": "BONFIM",
-          "ibge": null,
+          "municipio": "Bonfim",
+          "ibge": "1400159",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "BARROLANDIA",
-          "ibge": null,
+          "municipio": "Ananás",
+          "ibge": "1701002",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "COLINAS DO TOCANTINS",
-          "ibge": null,
+          "municipio": "Barrolândia",
+          "ibge": "1703107",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "DUERE",
-          "ibge": null,
+          "municipio": "Colinas do Tocantins",
+          "ibge": "1705508",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "TO",
+          "municipio": "Dueré",
+          "ibge": "1707306",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "TO",
+          "municipio": "Presidente Kennedy",
+          "ibge": "1718402",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "AC",
-          "municipio": "ACRELÂNDIA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "AC",
-          "municipio": "PLACIDO DE CASTRO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RO",
-          "municipio": "JI-PARANÁ",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RO",
-          "municipio": "MINISTRO ANDREAZZA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "TO",
-          "municipio": "AUGUSTINOPOLIS",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "TO",
-          "municipio": "BERNARDO SAYAO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "TO",
-          "municipio": "CRISTALANDIA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "TO",
-          "municipio": "PIUM",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "TO",
-          "municipio": "SAO SEBASTIAO DO TOCANTINS",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "AC",
-          "municipio": "BUJARI",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "AC",
-          "municipio": "MARECHAL THAUMATURGO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "AC",
-          "municipio": "SENA MADUREIRA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "AC",
-          "municipio": "TARAUACA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "AM",
-          "municipio": "ANORI",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "AM",
-          "municipio": "BARREIRINHA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "AM",
-          "municipio": "MANICORE",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "AM",
-          "municipio": "NOVO AIRAO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "AM",
-          "municipio": "PRESIDENTE FIGUEIREDO",
-          "ibge": null,
+          "municipio": "Plácido de Castro",
+          "ibge": "1200385",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "ANAPU",
-          "ibge": null,
+          "municipio": "São Domingos do Araguaia",
+          "ibge": "1507151",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "TO",
+          "municipio": "Augustinópolis",
+          "ibge": "1702554",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "TO",
+          "municipio": "Barrolândia",
+          "ibge": "1703107",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "TO",
+          "municipio": "Bernardo Sayão",
+          "ibge": "1703206",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "TO",
+          "municipio": "Cristalândia",
+          "ibge": "1706100",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "TO",
+          "municipio": "Pium",
+          "ibge": "1717503",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "TO",
+          "municipio": "São Sebastião do Tocantins",
+          "ibge": "1720309",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AC",
+          "municipio": "Bujari",
+          "ibge": "1200138",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AC",
+          "municipio": "Marechal Thaumaturgo",
+          "ibge": "1200351",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AC",
+          "municipio": "Sena Madureira",
+          "ibge": "1200500",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "Anori",
+          "ibge": "1300102",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "Manicoré",
+          "ibge": "1302702",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "Novo Airão",
+          "ibge": "1303205",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -1577,7 +1673,7 @@
         {
           "uf": "PA",
           "municipio": "Augusto Corrêa",
-          "ibge": null,
+          "ibge": "1500909",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -1585,39 +1681,47 @@
         {
           "uf": "PA",
           "municipio": "Bragança",
-          "ibge": null,
+          "ibge": "1501709",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "MOCAJUBA",
-          "ibge": null,
+          "municipio": "Juruti",
+          "ibge": "1503903",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "SALVATERRA",
-          "ibge": null,
+          "municipio": "Mocajuba",
+          "ibge": "1504604",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "SANTANA DO ARAGUAIA",
-          "ibge": null,
+          "municipio": "Santana do Araguaia",
+          "ibge": "1506708",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "SANTO ANTONIO DO TAUA",
-          "ibge": null,
+          "municipio": "Santo Antônio do Tauá",
+          "ibge": "1507003",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PA",
+          "municipio": "São Domingos do Araguaia",
+          "ibge": "1507151",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -1625,167 +1729,183 @@
         {
           "uf": "PA",
           "municipio": "Tracuateua",
-          "ibge": null,
+          "ibge": "1508035",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PA",
-          "municipio": "VISEU",
-          "ibge": null,
+          "municipio": "Viseu",
+          "ibge": "1508308",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "ALTO PARAISO",
-          "ibge": null,
+          "municipio": "Alto Paraíso",
+          "ibge": "1100403",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "GUAJARA-MIRIM",
-          "ibge": null,
+          "municipio": "Cujubim",
+          "ibge": "1100940",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "MIRANTE DA SERRA",
-          "ibge": null,
+          "municipio": "Guajará-Mirim",
+          "ibge": "1100106",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "MONTE NEGRO",
-          "ibge": null,
+          "municipio": "Monte Negro",
+          "ibge": "1101401",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "NOVA BRASILÂNDIA D'OESTE",
-          "ibge": null,
+          "municipio": "Nova Brasilândia D'Oeste",
+          "ibge": "1100148",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "THEOBROMA",
-          "ibge": null,
+          "municipio": "Nova União",
+          "ibge": "1101435",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "Theobroma",
+          "ibge": "1101609",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "Vale do Paraíso",
+          "ibge": "1101807",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "ANANAS",
-          "ibge": null,
+          "municipio": "Aparecida do Rio Negro",
+          "ibge": "1701101",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "APARECIDA DO RIO NEGRO",
-          "ibge": null,
+          "municipio": "Aragominas",
+          "ibge": "1701309",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "ARAGOMINAS",
-          "ibge": null,
+          "municipio": "Araguanã",
+          "ibge": "1702158",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "ARAGUANA",
-          "ibge": null,
+          "municipio": "Babaçulândia",
+          "ibge": "1703008",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "BABACULANDIA",
-          "ibge": null,
+          "municipio": "Barra do Ouro",
+          "ibge": "1703073",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "BARRA DO OURO",
-          "ibge": null,
+          "municipio": "Cachoeirinha",
+          "ibge": "1703826",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "DARCINOPOLIS",
-          "ibge": null,
+          "municipio": "Darcinópolis",
+          "ibge": "1706506",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "MIRACEMA DO TOCANTINS",
-          "ibge": null,
+          "municipio": "Miracema do Tocantins",
+          "ibge": "1713205",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "MURICILANDIA",
-          "ibge": null,
+          "municipio": "Muricilândia",
+          "ibge": "1713957",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "NOVA OLINDA",
-          "ibge": null,
+          "municipio": "Nova Olinda",
+          "ibge": "1714880",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "PRESIDENTE KENNEDY",
-          "ibge": null,
+          "municipio": "Riachinho",
+          "ibge": "1718550",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "SANTA MARIA DO TOCANTINS",
-          "ibge": null,
+          "municipio": "Santa Maria do Tocantins",
+          "ibge": "1718881",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "AM",
-          "municipio": "SAO GABRIEL DA CACHOEIRA",
-          "ibge": null,
+          "municipio": "São Gabriel da Cachoeira",
+          "ibge": "1303809",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -1795,7 +1915,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "regiao",
     "fallback": false,
@@ -1808,15 +1928,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }

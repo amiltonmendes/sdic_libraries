@@ -4,35 +4,35 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "2.654 atendimentos",
+    "display_value": "3.077 atendimentos",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "flat",
-      "label": "1,7% do total nacional · 17ª entre 27 UFs"
+      "label": "1,8% do total nacional · 16ª entre 27 UFs"
     },
-    "value": 2654
+    "value": 3077
   },
   "story": {
     "escopo": "uf",
     "uf": "AL",
     "regra": "meio",
-    "headline": "2.654 atendimentos em Alagoas — 1,7% do total nacional, 17ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Alagoas ocupa a 17ª posição entre as 27 UFs participantes do programa e responde por 1,7% do programa no país. Dentro do Nordeste, que soma 25.119 atendimentos, a participação de Alagoas é de 10,6%. As empresas atendidas pelo programa em Alagoas tiveram ganho médio de 26,0% em produtividade, conforme a modalidade de atendimento. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "headline": "3.077 atendimentos em Alagoas — 1,8% do total nacional, 16ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Alagoas ocupa a 16ª posição entre as 27 UFs participantes do programa e responde por 1,8% do programa no país. Dentro do Nordeste, que soma 27.160 atendimentos, a participação de Alagoas é de 11,3%. As empresas atendidas pelo programa em Alagoas tiveram ganho médio de 26,3% em produtividade, conforme a modalidade de atendimento. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "17ª posição nacional entre as 27 UFs participantes do programa, com 1,7% do total."
+        "text": "16ª posição nacional entre as 27 UFs participantes do programa, com 1,8% do total."
       },
       {
         "tone": "neutral",
-        "text": "10,6% de tudo que o Nordeste registra no programa."
+        "text": "11,3% de tudo que o Nordeste registra no programa."
       }
     ]
   },
@@ -40,32 +40,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -74,41 +66,41 @@
     {
       "id": "senai",
       "label": "SENAI — consultoria técnica (Lean)",
-      "value": 230,
+      "value": 246,
       "unit": "atendimentos",
-      "display_value": "230 atendimentos",
+      "display_value": "246 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 2414,
+      "value": 2822,
       "unit": "atendimentos",
-      "display_value": "2.414 atendimentos",
+      "display_value": "2.822 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "embrapii",
       "label": "EMBRAPII — inovação aplicada",
-      "value": 10,
+      "value": 9,
       "unit": "projetos",
-      "display_value": "10 projetos",
+      "display_value": "9 projetos",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 7,3 mi mobilizados"
+        "label": "R$ 4,7 mi mobilizados"
       }
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 0,
-      "unit": "operações",
-      "display_value": "0 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 0.0,
+      "unit": "",
+      "display_value": "—",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "— financiados"
+        "label": "0 operações financiadas"
       }
     }
   ],
@@ -128,15 +120,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -162,15 +154,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -180,15 +172,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -198,15 +190,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -216,15 +208,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -234,15 +226,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -252,15 +244,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -283,552 +275,584 @@
       "items": [
         {
           "uf": "AL",
-          "municipio": "MACEIO",
-          "ibge": null,
-          "value": 1217,
-          "display_value": "1.217",
+          "municipio": "Maceió",
+          "ibge": "2704302",
+          "value": 1395,
+          "display_value": "1.395",
           "share": 0.8
         },
         {
           "uf": "AL",
-          "municipio": "ARAPIRACA",
-          "ibge": null,
-          "value": 261,
-          "display_value": "261",
+          "municipio": "Arapiraca",
+          "ibge": "2700300",
+          "value": 308,
+          "display_value": "308",
           "share": 0.2
         },
         {
           "uf": "AL",
-          "municipio": "DELMIRO GOUVEIA",
-          "ibge": null,
-          "value": 94,
-          "display_value": "94",
+          "municipio": "Penedo",
+          "ibge": "2706703",
+          "value": 117,
+          "display_value": "117",
           "share": 0.1
         },
         {
           "uf": "AL",
-          "municipio": "MARECHAL DEODORO",
-          "ibge": null,
-          "value": 92,
-          "display_value": "92",
+          "municipio": "Marechal Deodoro",
+          "ibge": "2704708",
+          "value": 103,
+          "display_value": "103",
           "share": 0.1
         },
         {
           "uf": "AL",
-          "municipio": "PENEDO",
-          "ibge": null,
-          "value": 89,
-          "display_value": "89",
+          "municipio": "Delmiro Gouveia",
+          "ibge": "2702405",
+          "value": 99,
+          "display_value": "99",
           "share": 0.1
         },
         {
           "uf": "AL",
-          "municipio": "RIO LARGO",
-          "ibge": null,
-          "value": 80,
-          "display_value": "80",
+          "municipio": "Rio Largo",
+          "ibge": "2707701",
+          "value": 96,
+          "display_value": "96",
           "share": 0.1
         },
         {
           "uf": "AL",
-          "municipio": "UNIAO DOS PALMARES",
-          "ibge": null,
-          "value": 77,
-          "display_value": "77",
+          "municipio": "Palmeira dos Índios",
+          "ibge": "2706307",
+          "value": 91,
+          "display_value": "91",
           "share": 0.1
         },
         {
           "uf": "AL",
-          "municipio": "PALMEIRA DOS INDIOS",
-          "ibge": null,
-          "value": 72,
-          "display_value": "72",
+          "municipio": "União dos Palmares",
+          "ibge": "2709301",
+          "value": 86,
+          "display_value": "86",
+          "share": 0.1
+        },
+        {
+          "uf": "AL",
+          "municipio": "São Miguel dos Campos",
+          "ibge": "2708600",
+          "value": 71,
+          "display_value": "71",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "SAO MIGUEL DOS CAMPOS",
-          "ibge": null,
-          "value": 69,
-          "display_value": "69",
+          "municipio": "Santana do Ipanema",
+          "ibge": "2708006",
+          "value": 68,
+          "display_value": "68",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "SANTANA DO IPANEMA",
-          "ibge": null,
-          "value": 58,
-          "display_value": "58",
+          "municipio": "Cajueiro",
+          "ibge": "2701308",
+          "value": 43,
+          "display_value": "43",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "MARAGOGI",
-          "ibge": null,
+          "municipio": "Maragogi",
+          "ibge": "2704500",
+          "value": 42,
+          "display_value": "42",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "São José da Tapera",
+          "ibge": "2708402",
           "value": 36,
           "display_value": "36",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "SAO JOSE DA TAPERA",
-          "ibge": null,
-          "value": 31,
-          "display_value": "31",
+          "municipio": "Piranhas",
+          "ibge": "2707107",
+          "value": 35,
+          "display_value": "35",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "OLHO D'AGUA DAS FLORES",
-          "ibge": null,
-          "value": 30,
-          "display_value": "30",
+          "municipio": "Olho d'Água das Flores",
+          "ibge": "2705705",
+          "value": 34,
+          "display_value": "34",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "CAJUEIRO",
-          "ibge": null,
-          "value": 29,
-          "display_value": "29",
+          "municipio": "Porto Calvo",
+          "ibge": "2707305",
+          "value": 33,
+          "display_value": "33",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "PIRANHAS",
-          "ibge": null,
-          "value": 27,
-          "display_value": "27",
+          "municipio": "Viçosa",
+          "ibge": "2709400",
+          "value": 28,
+          "display_value": "28",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "PORTO CALVO",
-          "ibge": null,
-          "value": 24,
-          "display_value": "24",
+          "municipio": "Capela",
+          "ibge": "2701704",
+          "value": 25,
+          "display_value": "25",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "VICOSA",
-          "ibge": null,
-          "value": 23,
-          "display_value": "23",
-          "share": 0.0
-        },
-        {
-          "uf": "AL",
-          "municipio": "CAPELA",
-          "ibge": null,
+          "municipio": "Paripueira",
+          "ibge": "2706448",
           "value": 22,
           "display_value": "22",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "SAO LUIS DO QUITUNDE",
-          "ibge": null,
-          "value": 17,
-          "display_value": "17",
+          "municipio": "São Luís do Quitunde",
+          "ibge": "2708501",
+          "value": 19,
+          "display_value": "19",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "PARIPUEIRA",
-          "ibge": null,
+          "municipio": "São Miguel dos Milagres",
+          "ibge": "2708709",
+          "value": 19,
+          "display_value": "19",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "Murici",
+          "ibge": "2705507",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "COITE DO NOIA",
-          "ibge": null,
+          "municipio": "Coité do Nóia",
+          "ibge": "2702009",
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "Porto de Pedras",
+          "ibge": "2707404",
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "Satuba",
+          "ibge": "2708907",
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "Passo de Camaragibe",
+          "ibge": "2706505",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "SATUBA",
-          "ibge": null,
-          "value": 14,
-          "display_value": "14",
-          "share": 0.0
-        },
-        {
-          "uf": "AL",
-          "municipio": "PASSO DE CAMARAGIBE",
-          "ibge": null,
+          "municipio": "Limoeiro de Anadia",
+          "ibge": "2704203",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "PORTO DE PEDRAS",
-          "ibge": null,
+          "municipio": "Piaçabuçu",
+          "ibge": "2706802",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "SAO MIGUEL DOS MILAGRES",
-          "ibge": null,
-          "value": 12,
-          "display_value": "12",
+          "municipio": "Major Isidoro",
+          "ibge": "2704401",
+          "value": 11,
+          "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "MURICI",
-          "ibge": null,
+          "municipio": "Craíbas",
+          "ibge": "2702355",
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "Barra de São Miguel",
+          "ibge": "2700607",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "SAO SEBASTIAO",
-          "ibge": null,
+          "municipio": "Coruripe",
+          "ibge": "2702306",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "CRAIBAS",
-          "ibge": null,
+          "municipio": "São Sebastião",
+          "ibge": "2708808",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "CORURIPE",
-          "ibge": null,
+          "municipio": "Atalaia",
+          "ibge": "2700409",
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "Girau do Ponciano",
+          "ibge": "2702900",
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "Japaratinga",
+          "ibge": "2703601",
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "Igaci",
+          "ibge": "2703106",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "LIMOEIRO DE ANADIA",
-          "ibge": null,
+          "municipio": "Água Branca",
+          "ibge": "2700102",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "MAJOR ISIDORO",
-          "ibge": null,
-          "value": 9,
-          "display_value": "9",
-          "share": 0.0
-        },
-        {
-          "uf": "AL",
-          "municipio": "AGUA BRANCA",
-          "ibge": null,
-          "value": 9,
-          "display_value": "9",
-          "share": 0.0
-        },
-        {
-          "uf": "AL",
-          "municipio": "ATALAIA",
-          "ibge": null,
-          "value": 9,
-          "display_value": "9",
-          "share": 0.0
-        },
-        {
-          "uf": "AL",
-          "municipio": "JAPARATINGA",
-          "ibge": null,
-          "value": 9,
-          "display_value": "9",
-          "share": 0.0
-        },
-        {
-          "uf": "AL",
-          "municipio": "PIACABUCU",
-          "ibge": null,
-          "value": 9,
-          "display_value": "9",
-          "share": 0.0
-        },
-        {
-          "uf": "AL",
-          "municipio": "CAMPO ALEGRE",
-          "ibge": null,
+          "municipio": "Campo Alegre",
+          "ibge": "2701407",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "PARICONHA",
-          "ibge": null,
+          "municipio": "Pariconha",
+          "ibge": "2706422",
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "Matriz de Camaragibe",
+          "ibge": "2705101",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "IGACI",
-          "ibge": null,
+          "municipio": "Pilar",
+          "ibge": "2706901",
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "Igreja Nova",
+          "ibge": "2703205",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "MATRIZ DE CAMARAGIBE",
-          "ibge": null,
-          "value": 6,
-          "display_value": "6",
-          "share": 0.0
-        },
-        {
-          "uf": "AL",
-          "municipio": "PILAR",
-          "ibge": null,
-          "value": 6,
-          "display_value": "6",
-          "share": 0.0
-        },
-        {
-          "uf": "AL",
-          "municipio": "GIRAU DO PONCIANO",
-          "ibge": null,
-          "value": 6,
-          "display_value": "6",
-          "share": 0.0
-        },
-        {
-          "uf": "AL",
-          "municipio": "BARRA DE SAO MIGUEL",
-          "ibge": null,
+          "municipio": "Monteirópolis",
+          "ibge": "2705408",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "MONTEIROPOLIS",
-          "ibge": null,
+          "municipio": "São José da Laje",
+          "ibge": "2708303",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "SAO JOSE DA LAJE",
-          "ibge": null,
-          "value": 5,
-          "display_value": "5",
-          "share": 0.0
-        },
-        {
-          "uf": "AL",
-          "municipio": "IGREJA NOVA",
-          "ibge": null,
+          "municipio": "Mar Vermelho",
+          "ibge": "2704906",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "MAR VERMELHO",
-          "ibge": null,
+          "municipio": "Olho d'Água do Casado",
+          "ibge": "2705804",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "OLHO D'AGUA DO CASADO",
-          "ibge": null,
+          "municipio": "Olivença",
+          "ibge": "2706000",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "CACIMBINHAS",
-          "ibge": null,
+          "municipio": "Batalha",
+          "ibge": "2700706",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "MARIBONDO",
-          "ibge": null,
+          "municipio": "Cacimbinhas",
+          "ibge": "2701209",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "ANADIA",
-          "ibge": null,
+          "municipio": "Maribondo",
+          "ibge": "2704807",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "BARRA DE SANTO ANTONIO",
-          "ibge": null,
+          "municipio": "Anadia",
+          "ibge": "2700201",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "OLIVENCA",
-          "ibge": null,
+          "municipio": "Barra de Santo Antônio",
+          "ibge": "2700508",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "TEOTONIO VILELA",
-          "ibge": null,
+          "municipio": "Maravilha",
+          "ibge": "2704609",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "BATALHA",
-          "ibge": null,
+          "municipio": "Teotônio Vilela",
+          "ibge": "2709152",
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "Chã Preta",
+          "ibge": "2701902",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "CHA PRETA",
-          "ibge": null,
+          "municipio": "Maceió",
+          "ibge": "2704302",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "MACEIÓ",
-          "ibge": null,
+          "municipio": "Pão de Açúcar",
+          "ibge": "2706406",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "PAO DE ACUCAR",
-          "ibge": null,
+          "municipio": "Quebrangulo",
+          "ibge": "2707602",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "BOCA DA MATA",
-          "ibge": null,
+          "municipio": "Boca da Mata",
+          "ibge": "2701001",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "JEQUIA DA PRAIA",
-          "ibge": null,
+          "municipio": "Ibateguara",
+          "ibge": "2703007",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "LAGOA DA CANOA",
-          "ibge": null,
+          "municipio": "Jequiá da Praia",
+          "ibge": "2703759",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "MARAVILHA",
-          "ibge": null,
+          "municipio": "Lagoa da Canoa",
+          "ibge": "2704104",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "TAQUARANA",
-          "ibge": null,
+          "municipio": "Porto Real do Colégio",
+          "ibge": "2707503",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "QUEBRANGULO",
-          "ibge": null,
+          "municipio": "Taquarana",
+          "ibge": "2709103",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "Santa Luzia do Norte",
+          "ibge": "2707909",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "SANTA LUZIA DO NORTE",
-          "ibge": null,
+          "municipio": "Branquinha",
+          "ibge": "2701100",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "BRANQUINHA",
-          "ibge": null,
+          "municipio": "Campestre",
+          "ibge": "2701357",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "CAMPESTRE",
-          "ibge": null,
+          "municipio": "Campo Grande",
+          "ibge": "2701506",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "DOIS RIACHOS",
-          "ibge": null,
+          "municipio": "Dois Riachos",
+          "ibge": "2702504",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "ROTEIRO",
-          "ibge": null,
+          "municipio": "Delmiro Gouveia",
+          "ibge": "2702405",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "AL",
-          "municipio": "SENADOR RUI PALMEIRA",
-          "ibge": null,
+          "municipio": "Roteiro",
+          "ibge": "2707800",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "AL",
+          "municipio": "Senador Rui Palmeira",
+          "ibge": "2708956",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -838,7 +862,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -852,15 +876,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }

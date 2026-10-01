@@ -4,35 +4,35 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "3.791 atendimentos",
+    "display_value": "4.381 atendimentos",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "flat",
-      "label": "2,4% do total nacional · 10ª entre 27 UFs"
+      "label": "2,6% do total nacional · 10ª entre 27 UFs"
     },
-    "value": 3791
+    "value": 4381
   },
   "story": {
     "escopo": "uf",
     "uf": "MT",
     "regra": "meio",
-    "headline": "3.791 atendimentos em Mato Grosso — 2,4% do total nacional, 10ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Mato Grosso ocupa a 10ª posição entre as 27 UFs participantes do programa e responde por 2,4% do programa no país. Dentro do Centro-Oeste, que soma 20.650 atendimentos, a participação de Mato Grosso é de 18,4%. As empresas atendidas pelo programa em Mato Grosso tiveram ganho médio de 35,3% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 15,3%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "headline": "4.381 atendimentos em Mato Grosso — 2,6% do total nacional, 10ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Mato Grosso ocupa a 10ª posição entre as 27 UFs participantes do programa e responde por 2,6% do programa no país. Dentro do Centro-Oeste, que soma 22.717 atendimentos, a participação de Mato Grosso é de 19,3%. As empresas atendidas pelo programa em Mato Grosso tiveram ganho médio de 36,2% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 16,0%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "10ª posição nacional entre as 27 UFs participantes do programa, com 2,4% do total."
+        "text": "10ª posição nacional entre as 27 UFs participantes do programa, com 2,6% do total."
       },
       {
         "tone": "neutral",
-        "text": "18,4% de tudo que o Centro-Oeste registra no programa."
+        "text": "19,3% de tudo que o Centro-Oeste registra no programa."
       }
     ]
   },
@@ -40,32 +40,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -74,41 +66,41 @@
     {
       "id": "senai",
       "label": "SENAI — consultoria técnica (Lean)",
-      "value": 591,
+      "value": 664,
       "unit": "atendimentos",
-      "display_value": "591 atendimentos",
+      "display_value": "664 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 3199,
+      "value": 3715,
       "unit": "atendimentos",
-      "display_value": "3.199 atendimentos",
+      "display_value": "3.715 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "embrapii",
       "label": "EMBRAPII — inovação aplicada",
-      "value": 1,
+      "value": 2,
       "unit": "projetos",
-      "display_value": "1 projetos",
+      "display_value": "2 projetos",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 1,9 mi mobilizados"
+        "label": "R$ 3,5 mi mobilizados"
       }
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 0,
-      "unit": "operações",
-      "display_value": "0 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 0.0,
+      "unit": "",
+      "display_value": "—",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "— financiados"
+        "label": "0 operações financiadas"
       }
     }
   ],
@@ -128,15 +120,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -162,15 +154,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -180,15 +172,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -198,15 +190,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -216,15 +208,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -234,15 +226,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -252,15 +244,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -283,328 +275,344 @@
       "items": [
         {
           "uf": "MT",
-          "municipio": "CUIABA",
-          "ibge": null,
-          "value": 1222,
-          "display_value": "1.222",
+          "municipio": "Cuiabá",
+          "ibge": "5103403",
+          "value": 1384,
+          "display_value": "1.384",
           "share": 0.8
         },
         {
           "uf": "MT",
-          "municipio": "SINOP",
-          "ibge": null,
-          "value": 365,
-          "display_value": "365",
+          "municipio": "Sinop",
+          "ibge": "5107909",
+          "value": 406,
+          "display_value": "406",
           "share": 0.2
         },
         {
           "uf": "MT",
-          "municipio": "RONDONOPOLIS",
-          "ibge": null,
-          "value": 239,
-          "display_value": "239",
+          "municipio": "Rondonópolis",
+          "ibge": "5107602",
+          "value": 306,
+          "display_value": "306",
           "share": 0.2
         },
         {
           "uf": "MT",
-          "municipio": "VARZEA GRANDE",
-          "ibge": null,
-          "value": 234,
-          "display_value": "234",
+          "municipio": "Várzea Grande",
+          "ibge": "5108402",
+          "value": 286,
+          "display_value": "286",
           "share": 0.2
         },
         {
           "uf": "MT",
-          "municipio": "SORRISO",
-          "ibge": null,
-          "value": 174,
-          "display_value": "174",
+          "municipio": "Tangará da Serra",
+          "ibge": "5107958",
+          "value": 223,
+          "display_value": "223",
           "share": 0.1
         },
         {
           "uf": "MT",
-          "municipio": "TANGARA DA SERRA",
-          "ibge": null,
-          "value": 172,
-          "display_value": "172",
+          "municipio": "Nova Mutum",
+          "ibge": "5106224",
+          "value": 185,
+          "display_value": "185",
           "share": 0.1
         },
         {
           "uf": "MT",
-          "municipio": "NOVA MUTUM",
-          "ibge": null,
-          "value": 156,
-          "display_value": "156",
+          "municipio": "Sorriso",
+          "ibge": "5107925",
+          "value": 177,
+          "display_value": "177",
           "share": 0.1
         },
         {
           "uf": "MT",
-          "municipio": "LUCAS DO RIO VERDE",
-          "ibge": null,
-          "value": 136,
-          "display_value": "136",
+          "municipio": "Lucas do Rio Verde",
+          "ibge": "5105259",
+          "value": 153,
+          "display_value": "153",
           "share": 0.1
         },
         {
           "uf": "MT",
-          "municipio": "CACERES",
-          "ibge": null,
-          "value": 109,
-          "display_value": "109",
+          "municipio": "Primavera do Leste",
+          "ibge": "5107040",
+          "value": 141,
+          "display_value": "141",
           "share": 0.1
         },
         {
           "uf": "MT",
-          "municipio": "BARRA DO GARCAS",
-          "ibge": null,
-          "value": 103,
-          "display_value": "103",
+          "municipio": "Cáceres",
+          "ibge": "5102504",
+          "value": 138,
+          "display_value": "138",
           "share": 0.1
         },
         {
           "uf": "MT",
-          "municipio": "PRIMAVERA DO LESTE",
-          "ibge": null,
-          "value": 102,
-          "display_value": "102",
+          "municipio": "Barra do Garças",
+          "ibge": "5101803",
+          "value": 129,
+          "display_value": "129",
           "share": 0.1
         },
         {
           "uf": "MT",
-          "municipio": "ALTA FLORESTA",
-          "ibge": null,
-          "value": 79,
-          "display_value": "79",
+          "municipio": "Alta Floresta",
+          "ibge": "5100250",
+          "value": 101,
+          "display_value": "101",
           "share": 0.1
         },
         {
           "uf": "MT",
-          "municipio": "CONFRESA",
-          "ibge": null,
+          "municipio": "Água Boa",
+          "ibge": "5100201",
+          "value": 80,
+          "display_value": "80",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Confresa",
+          "ibge": "5103353",
           "value": 71,
           "display_value": "71",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "AGUA BOA",
-          "ibge": null,
-          "value": 67,
-          "display_value": "67",
-          "share": 0.0
-        },
-        {
-          "uf": "MT",
-          "municipio": "PARANAÍTA",
-          "ibge": null,
+          "municipio": "Paranaíta",
+          "ibge": "5106299",
           "value": 60,
           "display_value": "60",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "JUINA",
-          "ibge": null,
-          "value": 51,
-          "display_value": "51",
+          "municipio": "Juína",
+          "ibge": "5105150",
+          "value": 52,
+          "display_value": "52",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "COLIDER",
-          "ibge": null,
-          "value": 42,
-          "display_value": "42",
+          "municipio": "Colíder",
+          "ibge": "5103205",
+          "value": 46,
+          "display_value": "46",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "CHAPADA DOS GUIMARAES",
-          "ibge": null,
-          "value": 36,
-          "display_value": "36",
+          "municipio": "Chapada dos Guimarães",
+          "ibge": "5103007",
+          "value": 45,
+          "display_value": "45",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "GUARANTA DO NORTE",
-          "ibge": null,
+          "municipio": "Pontes e Lacerda",
+          "ibge": "5106752",
+          "value": 37,
+          "display_value": "37",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Guarantã do Norte",
+          "ibge": "5104104",
+          "value": 31,
+          "display_value": "31",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Nossa Senhora do Livramento",
+          "ibge": "5106109",
           "value": 30,
           "display_value": "30",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "NOSSA SENHORA DO LIVRAMENTO",
-          "ibge": null,
-          "value": 29,
-          "display_value": "29",
+          "municipio": "Juara",
+          "ibge": "5105101",
+          "value": 23,
+          "display_value": "23",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "JUARA",
-          "ibge": null,
+          "municipio": "Sapezal",
+          "ibge": "5107875",
           "value": 22,
           "display_value": "22",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "SAPEZAL",
-          "ibge": null,
-          "value": 22,
-          "display_value": "22",
-          "share": 0.0
-        },
-        {
-          "uf": "MT",
-          "municipio": "CAMPO VERDE",
-          "ibge": null,
+          "municipio": "Campo Verde",
+          "ibge": "5102678",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "PONTES E LACERDA",
-          "ibge": null,
-          "value": 13,
-          "display_value": "13",
+          "municipio": "Nova Canaã do Norte",
+          "ibge": "5106216",
+          "value": 16,
+          "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "NOVA CANAA DO NORTE",
-          "ibge": null,
+          "municipio": "Nobres",
+          "ibge": "5105903",
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Barra do Bugres",
+          "ibge": "5101704",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "BARRA DO BUGRES",
-          "ibge": null,
+          "municipio": "São José dos Quatro Marcos",
+          "ibge": "5107107",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "SÃO JOSÉ DOS QUATRO MARCOS",
-          "ibge": null,
+          "municipio": "Nova Brasilândia",
+          "ibge": "5106208",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "NOBRES",
-          "ibge": null,
-          "value": 10,
-          "display_value": "10",
-          "share": 0.0
-        },
-        {
-          "uf": "MT",
-          "municipio": "NOVA BRASILANDIA",
-          "ibge": null,
-          "value": 10,
-          "display_value": "10",
-          "share": 0.0
-        },
-        {
-          "uf": "MT",
-          "municipio": "POCONE",
-          "ibge": null,
+          "municipio": "Poconé",
+          "ibge": "5106505",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "POCONÉ",
-          "ibge": null,
+          "municipio": "Jaciara",
+          "ibge": "5104807",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "ARIPUANA",
-          "ibge": null,
+          "municipio": "Santa Carmem",
+          "ibge": "5107248",
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "São José dos Quatro Marcos",
+          "ibge": "5107107",
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Poconé",
+          "ibge": "5106505",
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Aripuanã",
+          "ibge": "5101407",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "CUIABÁ",
-          "ibge": null,
+          "municipio": "Marcelândia",
+          "ibge": "5105580",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "PONTAL DO ARAGUAIA",
-          "ibge": null,
+          "municipio": "Pontal do Araguaia",
+          "ibge": "5106653",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "MARCELANDIA",
-          "ibge": null,
+          "municipio": "Matupá",
+          "ibge": "5105606",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "QUERENCIA",
-          "ibge": null,
+          "municipio": "Querência",
+          "ibge": "5107065",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "RONDONÓPOLIS",
-          "ibge": null,
+          "municipio": "Rondonópolis",
+          "ibge": "5107602",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "SAO JOSE DOS QUATRO MARCOS",
-          "ibge": null,
+          "municipio": "Colíder",
+          "ibge": "5103205",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "COLÍDER",
-          "ibge": null,
+          "municipio": "Mirassol d'Oeste",
+          "ibge": "5105622",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "MIRASSOL D'OESTE",
-          "ibge": null,
-          "value": 6,
-          "display_value": "6",
-          "share": 0.0
-        },
-        {
-          "uf": "MT",
-          "municipio": "SANTA CARMEM",
-          "ibge": null,
+          "municipio": "Cuiabá",
+          "ibge": "5103403",
           "value": 5,
           "display_value": "5",
           "share": 0.0
@@ -619,64 +627,64 @@
         },
         {
           "uf": "MT",
-          "municipio": "VÁRZEA GRANDE",
-          "ibge": null,
+          "municipio": "Várzea Grande",
+          "ibge": "5108402",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "JACIARA",
-          "ibge": null,
+          "municipio": "Itiquira",
+          "ibge": "5104609",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "VERA",
-          "ibge": null,
+          "municipio": "Vera",
+          "ibge": "5108501",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "APIACAS",
-          "ibge": null,
+          "municipio": "Apiacás",
+          "ibge": "5100805",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "CAMPO NOVO DO PARECIS",
-          "ibge": null,
+          "municipio": "Campo Novo do Parecis",
+          "ibge": "5102637",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "ITIQUIRA",
-          "ibge": null,
+          "municipio": "Cuiabá",
+          "ibge": "5103403",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "MARCELÂNDIA",
-          "ibge": null,
+          "municipio": "Chapada dos Guimarães",
+          "ibge": "5103007",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "CHAPADA DOS GUIMARÃES",
-          "ibge": null,
+          "municipio": "Chapada dos Guimarães",
+          "ibge": "5103007",
           "value": 3,
           "display_value": "3",
           "share": 0.0
@@ -684,63 +692,87 @@
         {
           "uf": "MT",
           "municipio": "Marcelândia",
-          "ibge": null,
+          "ibge": "5105580",
           "value": 3,
           "display_value": "3",
-          "share": 0.0
-        },
-        {
-          "uf": "MT",
-          "municipio": "PLANALTO DA SERRA",
-          "ibge": null,
-          "value": 3,
-          "display_value": "3",
-          "share": 0.0
-        },
-        {
-          "uf": "MT",
-          "municipio": "DIAMANTINO",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "MT",
-          "municipio": "NOVA OLIMPIA",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "MT",
-          "municipio": "ROSARIO OESTE",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "MT",
-          "municipio": "Chapada dos Guimarães",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "MT",
-          "municipio": "MATUPA",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MT",
           "municipio": "Nobres",
-          "ibge": null,
+          "ibge": "5105903",
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Planalto da Serra",
+          "ibge": "5106455",
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Colniza",
+          "ibge": "5103254",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Diamantino",
+          "ibge": "5103502",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Nova Olímpia",
+          "ibge": "5106232",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Pedra Preta",
+          "ibge": "5106372",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Rosário Oeste",
+          "ibge": "5107701",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Marcelândia",
+          "ibge": "5105580",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Nova Brasilândia",
+          "ibge": "5106208",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "MT",
+          "municipio": "Nova Canaã do Norte",
+          "ibge": "5106216",
           "value": 2,
           "display_value": "2",
           "share": 0.0
@@ -763,112 +795,112 @@
         },
         {
           "uf": "MT",
-          "municipio": "BRASNORTE",
-          "ibge": null,
+          "municipio": "Brasnorte",
+          "ibge": "5101902",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "CAMPOS DE JULIO",
-          "ibge": null,
+          "municipio": "Campos de Júlio",
+          "ibge": "5102686",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "CLAUDIA",
-          "ibge": null,
+          "municipio": "Cláudia",
+          "ibge": "5103056",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "COLNIZA",
-          "ibge": null,
+          "municipio": "Cáceres",
+          "ibge": "5102504",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "JURUENA",
-          "ibge": null,
+          "municipio": "Juruena",
+          "ibge": "5105176",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "NOVA BANDEIRANTES",
-          "ibge": null,
+          "municipio": "Nova Bandeirantes",
+          "ibge": "5106158",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "NOVA MONTE VERDE",
-          "ibge": null,
+          "municipio": "Nova Monte Verde",
+          "ibge": "5108956",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "NOVA XAVANTINA",
-          "ibge": null,
+          "municipio": "Nova Xavantina",
+          "ibge": "5106257",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "PEDRA PRETA",
-          "ibge": null,
+          "municipio": "Porto dos Gaúchos",
+          "ibge": "5106802",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "PORTO DOS GAUCHOS",
-          "ibge": null,
+          "municipio": "Salto do Céu",
+          "ibge": "5107750",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "SAO JOSE DO RIO CLARO",
-          "ibge": null,
+          "municipio": "São José do Rio Claro",
+          "ibge": "5107305",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "ACORIZAL",
-          "ibge": null,
+          "municipio": "Terra Nova do Norte",
+          "ibge": "5108055",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "NOVA BRASILÂNDIA",
-          "ibge": null,
+          "municipio": "Acorizal",
+          "ibge": "5100102",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "NOVA CANAÃ DO NORTE",
-          "ibge": null,
+          "municipio": "Carlinda",
+          "ibge": "5102793",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -876,7 +908,7 @@
         {
           "uf": "MT",
           "municipio": "Nova Canaã do Norte",
-          "ibge": null,
+          "ibge": "5106216",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -884,31 +916,31 @@
         {
           "uf": "MT",
           "municipio": "Nova Lacerda",
-          "ibge": null,
+          "ibge": "5106182",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "PARANAITA",
-          "ibge": null,
+          "municipio": "Paranaíta",
+          "ibge": "5106299",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "POXOREU",
-          "ibge": null,
+          "municipio": "Poxoréu",
+          "ibge": "5107008",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MT",
-          "municipio": "UNIAO DO SUL",
-          "ibge": null,
+          "municipio": "União do Sul",
+          "ibge": "5108303",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -918,7 +950,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -932,15 +964,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }

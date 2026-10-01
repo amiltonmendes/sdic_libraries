@@ -4,35 +4,35 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "1.635 atendimentos",
+    "display_value": "1.748 atendimentos",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "flat",
-      "label": "1,1% do total nacional · 20ª entre 27 UFs"
+      "label": "1,0% do total nacional · 21ª entre 27 UFs"
     },
-    "value": 1635
+    "value": 1748
   },
   "story": {
     "escopo": "uf",
     "uf": "RO",
     "regra": "meio",
-    "headline": "1.635 atendimentos em Rondônia — 1,1% do total nacional, 20ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Rondônia ocupa a 20ª posição entre as 27 UFs participantes do programa e responde por 1,1% do programa no país. Dentro do Norte, que soma 10.790 atendimentos, a participação de Rondônia é de 15,2%. As empresas atendidas pelo programa em Rondônia tiveram ganho médio de 33,3% em produtividade, conforme a modalidade de atendimento. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "headline": "1.748 atendimentos em Rondônia — 1,0% do total nacional, 21ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Rondônia ocupa a 21ª posição entre as 27 UFs participantes do programa e responde por 1,0% do programa no país. Dentro do Norte, que soma 11.619 atendimentos, a participação de Rondônia é de 15,0%. As empresas atendidas pelo programa em Rondônia tiveram ganho médio de 33,3% em produtividade, conforme a modalidade de atendimento. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "20ª posição nacional entre as 27 UFs participantes do programa, com 1,1% do total."
+        "text": "21ª posição nacional entre as 27 UFs participantes do programa, com 1,0% do total."
       },
       {
         "tone": "neutral",
-        "text": "15,2% de tudo que o Norte registra no programa."
+        "text": "15,0% de tudo que o Norte registra no programa."
       }
     ]
   },
@@ -40,32 +40,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -74,17 +66,17 @@
     {
       "id": "senai",
       "label": "SENAI — consultoria técnica (Lean)",
-      "value": 143,
+      "value": 178,
       "unit": "atendimentos",
-      "display_value": "143 atendimentos",
+      "display_value": "178 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 1491,
+      "value": 1569,
       "unit": "atendimentos",
-      "display_value": "1.491 atendimentos",
+      "display_value": "1.569 atendimentos",
       "period": "acumulado"
     },
     {
@@ -96,19 +88,19 @@
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 484.660 mobilizados"
+        "label": "R$ 485.776 mobilizados"
       }
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 0,
-      "unit": "operações",
-      "display_value": "0 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 0.0,
+      "unit": "",
+      "display_value": "—",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "— financiados"
+        "label": "0 operações financiadas"
       }
     }
   ],
@@ -128,15 +120,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -162,15 +154,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -180,15 +172,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -198,15 +190,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -216,15 +208,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -234,15 +226,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -252,15 +244,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -283,184 +275,240 @@
       "items": [
         {
           "uf": "RO",
-          "municipio": "PORTO VELHO",
-          "ibge": null,
-          "value": 480,
-          "display_value": "480",
+          "municipio": "Porto Velho",
+          "ibge": "1100205",
+          "value": 523,
+          "display_value": "523",
           "share": 0.3
         },
         {
           "uf": "RO",
-          "municipio": "CACOAL",
-          "ibge": null,
-          "value": 298,
-          "display_value": "298",
+          "municipio": "Cacoal",
+          "ibge": "1100049",
+          "value": 309,
+          "display_value": "309",
           "share": 0.2
         },
         {
           "uf": "RO",
-          "municipio": "VILHENA",
-          "ibge": null,
-          "value": 208,
-          "display_value": "208",
+          "municipio": "Vilhena",
+          "ibge": "1100304",
+          "value": 238,
+          "display_value": "238",
           "share": 0.1
         },
         {
           "uf": "RO",
-          "municipio": "PIMENTA BUENO",
-          "ibge": null,
-          "value": 167,
-          "display_value": "167",
+          "municipio": "Ji-Paraná",
+          "ibge": "1100122",
+          "value": 169,
+          "display_value": "169",
           "share": 0.1
         },
         {
           "uf": "RO",
-          "municipio": "JI-PARANA",
-          "ibge": null,
-          "value": 156,
-          "display_value": "156",
+          "municipio": "Pimenta Bueno",
+          "ibge": "1100189",
+          "value": 169,
+          "display_value": "169",
           "share": 0.1
         },
         {
           "uf": "RO",
-          "municipio": "ARIQUEMES",
-          "ibge": null,
-          "value": 142,
-          "display_value": "142",
+          "municipio": "Ariquemes",
+          "ibge": "1100023",
+          "value": 149,
+          "display_value": "149",
           "share": 0.1
         },
         {
           "uf": "RO",
-          "municipio": "JARU",
-          "ibge": null,
-          "value": 119,
-          "display_value": "119",
+          "municipio": "Jaru",
+          "ibge": "1100114",
+          "value": 122,
+          "display_value": "122",
           "share": 0.1
         },
         {
           "uf": "RO",
-          "municipio": "OURO PRETO DO OESTE",
-          "ibge": null,
-          "value": 15,
-          "display_value": "15",
+          "municipio": "Ouro Preto do Oeste",
+          "ibge": "1100155",
+          "value": 16,
+          "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "CACAULÂNDIA",
-          "ibge": null,
+          "municipio": "Cacaulândia",
+          "ibge": "1100601",
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "Candeias do Jamari",
+          "ibge": "1100809",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "COLORADO DO OESTE",
-          "ibge": null,
+          "municipio": "Colorado do Oeste",
+          "ibge": "1100064",
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "Presidente Médici",
+          "ibge": "1100254",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "ROLIM DE MOURA",
-          "ibge": null,
+          "municipio": "Vale do Anari",
+          "ibge": "1101757",
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "Rolim de Moura",
+          "ibge": "1100288",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "CANDEIAS DO JAMARI",
-          "ibge": null,
+          "municipio": "Espigão D'Oeste",
+          "ibge": "1100098",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "ESPIGAO D'OESTE",
-          "ibge": null,
+          "municipio": "Vale do Paraíso",
+          "ibge": "1101807",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "VALE DO PARAISO",
-          "ibge": null,
-          "value": 3,
-          "display_value": "3",
-          "share": 0.0
-        },
-        {
-          "uf": "RO",
-          "municipio": "GOVERNADOR JORGE TEIXEIRA",
-          "ibge": null,
+          "municipio": "Ministro Andreazza",
+          "ibge": "1101203",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "JI-PARANÁ",
-          "ibge": null,
+          "municipio": "Alto Paraíso",
+          "ibge": "1100403",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "Governador Jorge Teixeira",
+          "ibge": "1101005",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "Mirante da Serra",
+          "ibge": "1101302",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "Nova Mamoré",
+          "ibge": "1100338",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "Primavera de Rondônia",
+          "ibge": "1101476",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "RO",
+          "municipio": "Alto Paraíso",
+          "ibge": "1100403",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "MINISTRO ANDREAZZA",
-          "ibge": null,
+          "municipio": "Cujubim",
+          "ibge": "1100940",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "ALTO PARAISO",
-          "ibge": null,
+          "municipio": "Guajará-Mirim",
+          "ibge": "1100106",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "GUAJARA-MIRIM",
-          "ibge": null,
+          "municipio": "Monte Negro",
+          "ibge": "1101401",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "MIRANTE DA SERRA",
-          "ibge": null,
+          "municipio": "Nova Brasilândia D'Oeste",
+          "ibge": "1100148",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "MONTE NEGRO",
-          "ibge": null,
+          "municipio": "Nova União",
+          "ibge": "1101435",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "NOVA BRASILÂNDIA D'OESTE",
-          "ibge": null,
+          "municipio": "Theobroma",
+          "ibge": "1101609",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RO",
-          "municipio": "THEOBROMA",
-          "ibge": null,
+          "municipio": "Vale do Paraíso",
+          "ibge": "1101807",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -470,7 +518,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -484,15 +532,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }

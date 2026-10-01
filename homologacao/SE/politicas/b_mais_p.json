@@ -4,35 +4,35 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "1.633 atendimentos",
+    "display_value": "1.747 atendimentos",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "flat",
-      "label": "1,1% do total nacional · 21ª entre 27 UFs"
+      "label": "1,0% do total nacional · 22ª entre 27 UFs"
     },
-    "value": 1633
+    "value": 1747
   },
   "story": {
     "escopo": "uf",
     "uf": "SE",
     "regra": "meio",
-    "headline": "1.633 atendimentos em Sergipe — 1,1% do total nacional, 21ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Sergipe ocupa a 21ª posição entre as 27 UFs participantes do programa e responde por 1,1% do programa no país. Dentro do Nordeste, que soma 25.119 atendimentos, a participação de Sergipe é de 6,5%. As empresas atendidas pelo programa em Sergipe tiveram ganho médio de 27,7% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 12,0%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "headline": "1.747 atendimentos em Sergipe — 1,0% do total nacional, 22ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Sergipe ocupa a 22ª posição entre as 27 UFs participantes do programa e responde por 1,0% do programa no país. Dentro do Nordeste, que soma 27.160 atendimentos, a participação de Sergipe é de 6,4%. As empresas atendidas pelo programa em Sergipe tiveram ganho médio de 27,4% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 12,0%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "21ª posição nacional entre as 27 UFs participantes do programa, com 1,1% do total."
+        "text": "22ª posição nacional entre as 27 UFs participantes do programa, com 1,0% do total."
       },
       {
         "tone": "neutral",
-        "text": "6,5% de tudo que o Nordeste registra no programa."
+        "text": "6,4% de tudo que o Nordeste registra no programa."
       }
     ]
   },
@@ -40,32 +40,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -74,17 +66,17 @@
     {
       "id": "senai",
       "label": "SENAI — consultoria técnica (Lean)",
-      "value": 109,
+      "value": 139,
       "unit": "atendimentos",
-      "display_value": "109 atendimentos",
+      "display_value": "139 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 1524,
+      "value": 1608,
       "unit": "atendimentos",
-      "display_value": "1.524 atendimentos",
+      "display_value": "1.608 atendimentos",
       "period": "acumulado"
     },
     {
@@ -101,14 +93,14 @@
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 0,
-      "unit": "operações",
-      "display_value": "0 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 0.0,
+      "unit": "",
+      "display_value": "—",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "— financiados"
+        "label": "0 operações financiadas"
       }
     }
   ],
@@ -128,15 +120,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -162,15 +154,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -180,15 +172,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -198,15 +190,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -216,15 +208,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -234,15 +226,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -252,15 +244,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -283,408 +275,416 @@
       "items": [
         {
           "uf": "SE",
-          "municipio": "ARACAJU",
-          "ibge": null,
-          "value": 827,
-          "display_value": "827",
+          "municipio": "Aracaju",
+          "ibge": "2800308",
+          "value": 875,
+          "display_value": "875",
           "share": 0.5
         },
         {
           "uf": "SE",
-          "municipio": "ITABAIANA",
-          "ibge": null,
-          "value": 165,
-          "display_value": "165",
+          "municipio": "Itabaiana",
+          "ibge": "2802908",
+          "value": 174,
+          "display_value": "174",
           "share": 0.1
         },
         {
           "uf": "SE",
-          "municipio": "NOSSA SENHORA DO SOCORRO",
-          "ibge": null,
-          "value": 78,
-          "display_value": "78",
+          "municipio": "Nossa Senhora do Socorro",
+          "ibge": "2804805",
+          "value": 84,
+          "display_value": "84",
           "share": 0.1
         },
         {
           "uf": "SE",
-          "municipio": "SAO CRISTOVAO",
-          "ibge": null,
-          "value": 62,
-          "display_value": "62",
+          "municipio": "São Cristóvão",
+          "ibge": "2806701",
+          "value": 66,
+          "display_value": "66",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "LAGARTO",
-          "ibge": null,
-          "value": 50,
-          "display_value": "50",
+          "municipio": "Lagarto",
+          "ibge": "2803500",
+          "value": 52,
+          "display_value": "52",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "ESTANCIA",
-          "ibge": null,
-          "value": 45,
-          "display_value": "45",
+          "municipio": "Estância",
+          "ibge": "2802106",
+          "value": 48,
+          "display_value": "48",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "ITABAIANINHA",
-          "ibge": null,
-          "value": 41,
-          "display_value": "41",
+          "municipio": "Neópolis",
+          "ibge": "2804409",
+          "value": 46,
+          "display_value": "46",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "NEOPOLIS",
-          "ibge": null,
-          "value": 41,
-          "display_value": "41",
+          "municipio": "Itabaianinha",
+          "ibge": "2803005",
+          "value": 44,
+          "display_value": "44",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "NOSSA SENHORA DA GLORIA",
-          "ibge": null,
-          "value": 33,
-          "display_value": "33",
+          "municipio": "Nossa Senhora da Glória",
+          "ibge": "2804508",
+          "value": 35,
+          "display_value": "35",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "TOBIAS BARRETO",
-          "ibge": null,
-          "value": 27,
-          "display_value": "27",
+          "municipio": "Barra dos Coqueiros",
+          "ibge": "2800605",
+          "value": 30,
+          "display_value": "30",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "PROPRIA",
-          "ibge": null,
-          "value": 21,
-          "display_value": "21",
+          "municipio": "Tobias Barreto",
+          "ibge": "2807402",
+          "value": 29,
+          "display_value": "29",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "BARRA DOS COQUEIROS",
-          "ibge": null,
-          "value": 20,
-          "display_value": "20",
+          "municipio": "Propriá",
+          "ibge": "2805703",
+          "value": 24,
+          "display_value": "24",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "CAMPO DO BRITO",
-          "ibge": null,
+          "municipio": "Canindé de São Francisco",
+          "ibge": "2801207",
+          "value": 22,
+          "display_value": "22",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "Salgado",
+          "ibge": "2806206",
+          "value": 17,
+          "display_value": "17",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "Campo do Brito",
+          "ibge": "2801009",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "SALGADO",
-          "ibge": null,
-          "value": 16,
-          "display_value": "16",
-          "share": 0.0
-        },
-        {
-          "uf": "SE",
-          "municipio": "SANTANA DO SAO FRANCISCO",
-          "ibge": null,
+          "municipio": "Poço Redondo",
+          "ibge": "2805406",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "CANINDE DE SAO FRANCISCO",
-          "ibge": null,
+          "municipio": "Santana do São Francisco",
+          "ibge": "2806404",
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "Simão Dias",
+          "ibge": "2807105",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "POCO REDONDO",
-          "ibge": null,
-          "value": 14,
-          "display_value": "14",
-          "share": 0.0
-        },
-        {
-          "uf": "SE",
-          "municipio": "ILHA DAS FLORES",
-          "ibge": null,
+          "municipio": "Areia Branca",
+          "ibge": "2800506",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "MOITA BONITA",
-          "ibge": null,
+          "municipio": "Ilha das Flores",
+          "ibge": "2802700",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "RIACHUELO",
-          "ibge": null,
+          "municipio": "Moita Bonita",
+          "ibge": "2804102",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "AREIA BRANCA",
-          "ibge": null,
+          "municipio": "Riachuelo",
+          "ibge": "2805901",
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "Nossa Senhora das Dores",
+          "ibge": "2804607",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "NOSSA SENHORA DAS DORES",
-          "ibge": null,
-          "value": 9,
-          "display_value": "9",
-          "share": 0.0
-        },
-        {
-          "uf": "SE",
-          "municipio": "PORTO DA FOLHA",
-          "ibge": null,
+          "municipio": "Porto da Folha",
+          "ibge": "2805604",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "JAPOATA",
-          "ibge": null,
+          "municipio": "Japoatã",
+          "ibge": "2803401",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "BREJO GRANDE",
-          "ibge": null,
+          "municipio": "Brejo Grande",
+          "ibge": "2800704",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "SIMAO DIAS",
-          "ibge": null,
+          "municipio": "Umbaúba",
+          "ibge": "2807600",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "UMBAUBA",
-          "ibge": null,
-          "value": 7,
-          "display_value": "7",
+          "municipio": "Nossa Senhora de Lourdes",
+          "ibge": "2804706",
+          "value": 6,
+          "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "ARAUA",
-          "ibge": null,
+          "municipio": "Pedrinhas",
+          "ibge": "2805109",
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "Arauá",
+          "ibge": "2800407",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "NOSSA SENHORA DE LOURDES",
-          "ibge": null,
+          "municipio": "Pacatuba",
+          "ibge": "2804904",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "PACATUBA",
-          "ibge": null,
+          "municipio": "São Cristóvão",
+          "ibge": "2806701",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "SÃO CRISTÓVÃO",
-          "ibge": null,
-          "value": 5,
-          "display_value": "5",
-          "share": 0.0
-        },
-        {
-          "uf": "SE",
-          "municipio": "ITAPORANGA D'AJUDA",
-          "ibge": null,
+          "municipio": "Itaporanga d'Ajuda",
+          "ibge": "2803203",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "PEDRINHAS",
-          "ibge": null,
-          "value": 4,
-          "display_value": "4",
-          "share": 0.0
-        },
-        {
-          "uf": "SE",
-          "municipio": "LARANJEIRAS",
-          "ibge": null,
+          "municipio": "Laranjeiras",
+          "ibge": "2803609",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "SANTO AMARO DAS BROTAS",
-          "ibge": null,
+          "municipio": "Santo Amaro das Brotas",
+          "ibge": "2806602",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "SAO DOMINGOS",
-          "ibge": null,
+          "municipio": "São Domingos",
+          "ibge": "2806800",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "AQUIDABA",
-          "ibge": null,
+          "municipio": "Aquidabã",
+          "ibge": "2800209",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "BOQUIM",
-          "ibge": null,
+          "municipio": "Boquim",
+          "ibge": "2800670",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "CARMOPOLIS",
-          "ibge": null,
+          "municipio": "Carmópolis",
+          "ibge": "2801504",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "NOSSA SENHORA APARECIDA",
-          "ibge": null,
+          "municipio": "Cedro de São João",
+          "ibge": "2801603",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "RIBEIROPOLIS",
-          "ibge": null,
+          "municipio": "Nossa Senhora Aparecida",
+          "ibge": "2804458",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "SANTA ROSA DE LIMA",
-          "ibge": null,
+          "municipio": "Ribeirópolis",
+          "ibge": "2806008",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "Telha",
+          "ibge": "2807303",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "SE",
+          "municipio": "Santa Rosa de Lima",
+          "ibge": "2806503",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "FEIRA NOVA",
-          "ibge": null,
+          "municipio": "Feira Nova",
+          "ibge": "2802205",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "ITABI",
-          "ibge": null,
+          "municipio": "Itabi",
+          "ibge": "2803104",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "JAPARATUBA",
-          "ibge": null,
+          "municipio": "Japaratuba",
+          "ibge": "2803302",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "MONTE ALEGRE DE SERGIPE",
-          "ibge": null,
+          "municipio": "Monte Alegre de Sergipe",
+          "ibge": "2804201",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "PIRAMBU",
-          "ibge": null,
+          "municipio": "Pirambu",
+          "ibge": "2805307",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "RIACHAO DO DANTAS",
-          "ibge": null,
+          "municipio": "Riachão do Dantas",
+          "ibge": "2805802",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "SANTA LUZIA DO ITANHY",
-          "ibge": null,
+          "municipio": "Santa Luzia do Itanhy",
+          "ibge": "2806305",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SE",
-          "municipio": "SIRIRI",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "SE",
-          "municipio": "TELHA",
-          "ibge": null,
+          "municipio": "Siriri",
+          "ibge": "2807204",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -694,7 +694,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -708,15 +708,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }

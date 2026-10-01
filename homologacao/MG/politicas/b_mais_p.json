@@ -4,27 +4,27 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "19.900 atendimentos",
+    "display_value": "21.681 atendimentos",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "up",
       "label": "12,9% do total nacional · 2ª entre 27 UFs"
     },
-    "value": 19900
+    "value": 21681
   },
   "story": {
     "escopo": "uf",
     "uf": "MG",
     "regra": "top",
-    "headline": "Minas Gerais é o 2º do país: 19.900 atendimentos, 12,9% do total nacional.",
-    "lede": "Minas Gerais ocupa a 2ª posição entre as 27 UFs participantes do programa e responde por 12,9% do programa no país. Dentro do Sudeste, que soma 71.489 atendimentos, a participação de Minas Gerais é de 27,8%. As empresas atendidas pelo programa em Minas Gerais tiveram ganho médio de 28,1% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 25,2%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "headline": "Minas Gerais é o 2º do país: 21.681 atendimentos, 12,9% do total nacional.",
+    "lede": "Minas Gerais ocupa a 2ª posição entre as 27 UFs participantes do programa e responde por 12,9% do programa no país. Dentro do Sudeste, que soma 77.670 atendimentos, a participação de Minas Gerais é de 27,9%. As empresas atendidas pelo programa em Minas Gerais tiveram ganho médio de 27,7% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 25,5%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "pos",
@@ -32,7 +32,7 @@
       },
       {
         "tone": "neutral",
-        "text": "27,8% de tudo que o Sudeste registra no programa."
+        "text": "27,9% de tudo que o Sudeste registra no programa."
       }
     ]
   },
@@ -40,32 +40,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -74,41 +66,41 @@
     {
       "id": "senai",
       "label": "SENAI — consultoria técnica (Lean)",
-      "value": 2372,
+      "value": 2622,
       "unit": "atendimentos",
-      "display_value": "2.372 atendimentos",
+      "display_value": "2.622 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 17459,
+      "value": 18993,
       "unit": "atendimentos",
-      "display_value": "17.459 atendimentos",
+      "display_value": "18.993 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "embrapii",
       "label": "EMBRAPII — inovação aplicada",
-      "value": 60,
+      "value": 57,
       "unit": "projetos",
-      "display_value": "60 projetos",
+      "display_value": "57 projetos",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 61,8 mi mobilizados"
+        "label": "R$ 65,7 mi mobilizados"
       }
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 9,
-      "unit": "operações",
-      "display_value": "9 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 77916458.75,
+      "unit": "",
+      "display_value": "R$ 77,9 mi",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 53,1 mi financiados"
+        "label": "10 operações financiadas"
       }
     }
   ],
@@ -128,15 +120,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -162,15 +154,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -180,15 +172,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -198,15 +190,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -216,15 +208,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -234,15 +226,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -252,15 +244,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -283,1666 +275,1802 @@
       "items": [
         {
           "uf": "MG",
-          "municipio": "BELO HORIZONTE",
-          "ibge": null,
-          "value": 1482,
-          "display_value": "1.482",
+          "municipio": "Belo Horizonte",
+          "ibge": "3106200",
+          "value": 1610,
+          "display_value": "1.610",
           "share": 1.0
         },
         {
           "uf": "MG",
-          "municipio": "UBERLANDIA",
-          "ibge": null,
-          "value": 742,
-          "display_value": "742",
+          "municipio": "Uberlândia",
+          "ibge": "3170206",
+          "value": 798,
+          "display_value": "798",
           "share": 0.5
         },
         {
           "uf": "MG",
-          "municipio": "JUIZ DE FORA",
-          "ibge": null,
-          "value": 668,
-          "display_value": "668",
+          "municipio": "Juiz de Fora",
+          "ibge": "3136702",
+          "value": 769,
+          "display_value": "769",
+          "share": 0.5
+        },
+        {
+          "uf": "MG",
+          "municipio": "Contagem",
+          "ibge": "3118601",
+          "value": 662,
+          "display_value": "662",
           "share": 0.4
         },
         {
           "uf": "MG",
-          "municipio": "CONTAGEM",
-          "ibge": null,
-          "value": 603,
-          "display_value": "603",
-          "share": 0.4
-        },
-        {
-          "uf": "MG",
-          "municipio": "PATOS DE MINAS",
-          "ibge": null,
-          "value": 511,
-          "display_value": "511",
+          "municipio": "Divinópolis",
+          "ibge": "3122306",
+          "value": 584,
+          "display_value": "584",
           "share": 0.3
         },
         {
           "uf": "MG",
-          "municipio": "DIVINOPOLIS",
-          "ibge": null,
-          "value": 507,
-          "display_value": "507",
+          "municipio": "Patos de Minas",
+          "ibge": "3148004",
+          "value": 540,
+          "display_value": "540",
           "share": 0.3
         },
         {
           "uf": "MG",
-          "municipio": "UBERABA",
-          "ibge": null,
-          "value": 502,
-          "display_value": "502",
+          "municipio": "Montes Claros",
+          "ibge": "3143302",
+          "value": 532,
+          "display_value": "532",
           "share": 0.3
         },
         {
           "uf": "MG",
-          "municipio": "MONTES CLAROS",
-          "ibge": null,
-          "value": 500,
-          "display_value": "500",
+          "municipio": "Uberaba",
+          "ibge": "3170107",
+          "value": 528,
+          "display_value": "528",
           "share": 0.3
         },
         {
           "uf": "MG",
-          "municipio": "TEOFILO OTONI",
-          "ibge": null,
-          "value": 377,
-          "display_value": "377",
+          "municipio": "Poços de Caldas",
+          "ibge": "3151800",
+          "value": 403,
+          "display_value": "403",
           "share": 0.2
         },
         {
           "uf": "MG",
-          "municipio": "POCOS DE CALDAS",
-          "ibge": null,
-          "value": 375,
-          "display_value": "375",
+          "municipio": "Teófilo Otoni",
+          "ibge": "3168606",
+          "value": 403,
+          "display_value": "403",
           "share": 0.2
         },
         {
           "uf": "MG",
-          "municipio": "GOVERNADOR VALADARES",
-          "ibge": null,
-          "value": 330,
-          "display_value": "330",
+          "municipio": "Governador Valadares",
+          "ibge": "3127701",
+          "value": 352,
+          "display_value": "352",
           "share": 0.2
         },
         {
           "uf": "MG",
-          "municipio": "PASSOS",
-          "ibge": null,
-          "value": 272,
-          "display_value": "272",
+          "municipio": "Sete Lagoas",
+          "ibge": "3167202",
+          "value": 295,
+          "display_value": "295",
           "share": 0.2
         },
         {
           "uf": "MG",
-          "municipio": "IPATINGA",
-          "ibge": null,
+          "municipio": "Viçosa",
+          "ibge": "3171303",
+          "value": 290,
+          "display_value": "290",
+          "share": 0.2
+        },
+        {
+          "uf": "MG",
+          "municipio": "Ipatinga",
+          "ibge": "3131307",
+          "value": 288,
+          "display_value": "288",
+          "share": 0.2
+        },
+        {
+          "uf": "MG",
+          "municipio": "Passos",
+          "ibge": "3147907",
+          "value": 288,
+          "display_value": "288",
+          "share": 0.2
+        },
+        {
+          "uf": "MG",
+          "municipio": "São João del Rei",
+          "ibge": "3162500",
           "value": 267,
           "display_value": "267",
           "share": 0.2
         },
         {
           "uf": "MG",
-          "municipio": "VICOSA",
-          "ibge": null,
-          "value": 265,
-          "display_value": "265",
+          "municipio": "Pouso Alegre",
+          "ibge": "3152501",
+          "value": 256,
+          "display_value": "256",
           "share": 0.2
         },
         {
           "uf": "MG",
-          "municipio": "SAO JOAO DEL REI",
-          "ibge": null,
-          "value": 250,
-          "display_value": "250",
-          "share": 0.2
-        },
-        {
-          "uf": "MG",
-          "municipio": "SETE LAGOAS",
-          "ibge": null,
-          "value": 244,
-          "display_value": "244",
-          "share": 0.2
-        },
-        {
-          "uf": "MG",
-          "municipio": "POUSO ALEGRE",
-          "ibge": null,
-          "value": 239,
-          "display_value": "239",
-          "share": 0.2
-        },
-        {
-          "uf": "MG",
-          "municipio": "ARAXA",
-          "ibge": null,
-          "value": 215,
-          "display_value": "215",
+          "municipio": "Lavras",
+          "ibge": "3138203",
+          "value": 240,
+          "display_value": "240",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "PATROCINIO",
-          "ibge": null,
-          "value": 215,
-          "display_value": "215",
+          "municipio": "Varginha",
+          "ibge": "3170701",
+          "value": 233,
+          "display_value": "233",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "LAVRAS",
-          "ibge": null,
-          "value": 212,
-          "display_value": "212",
+          "municipio": "Araxá",
+          "ibge": "3104007",
+          "value": 231,
+          "display_value": "231",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "ITAUNA",
-          "ibge": null,
-          "value": 208,
-          "display_value": "208",
+          "municipio": "Itaúna",
+          "ibge": "3133808",
+          "value": 229,
+          "display_value": "229",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "PONTE NOVA",
-          "ibge": null,
-          "value": 197,
-          "display_value": "197",
+          "municipio": "Patrocínio",
+          "ibge": "3148103",
+          "value": 225,
+          "display_value": "225",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "VARGINHA",
-          "ibge": null,
-          "value": 195,
-          "display_value": "195",
+          "municipio": "Ponte Nova",
+          "ibge": "3152105",
+          "value": 213,
+          "display_value": "213",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "UNAI",
-          "ibge": null,
-          "value": 189,
-          "display_value": "189",
+          "municipio": "Barbacena",
+          "ibge": "3105608",
+          "value": 206,
+          "display_value": "206",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "BARBACENA",
-          "ibge": null,
-          "value": 188,
-          "display_value": "188",
+          "municipio": "Unaí",
+          "ibge": "3170404",
+          "value": 193,
+          "display_value": "193",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "BETIM",
-          "ibge": null,
-          "value": 178,
-          "display_value": "178",
+          "municipio": "Betim",
+          "ibge": "3106705",
+          "value": 187,
+          "display_value": "187",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "SANTA RITA DO SAPUCAI",
-          "ibge": null,
-          "value": 157,
-          "display_value": "157",
+          "municipio": "Araguari",
+          "ibge": "3103504",
+          "value": 169,
+          "display_value": "169",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "SAO SEBASTIAO DO PARAISO",
-          "ibge": null,
-          "value": 155,
-          "display_value": "155",
+          "municipio": "Itabira",
+          "ibge": "3131703",
+          "value": 164,
+          "display_value": "164",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "FORMIGA",
-          "ibge": null,
-          "value": 152,
-          "display_value": "152",
+          "municipio": "São Sebastião do Paraíso",
+          "ibge": "3164704",
+          "value": 164,
+          "display_value": "164",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "ARAGUARI",
-          "ibge": null,
-          "value": 147,
-          "display_value": "147",
+          "municipio": "Formiga",
+          "ibge": "3126109",
+          "value": 163,
+          "display_value": "163",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "TIMOTEO",
-          "ibge": null,
-          "value": 146,
-          "display_value": "146",
+          "municipio": "Timóteo",
+          "ibge": "3168705",
+          "value": 162,
+          "display_value": "162",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "ITABIRA",
-          "ibge": null,
-          "value": 142,
-          "display_value": "142",
+          "municipio": "Santa Rita do Sapucaí",
+          "ibge": "3159605",
+          "value": 159,
+          "display_value": "159",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "ITAJUBA",
-          "ibge": null,
-          "value": 131,
-          "display_value": "131",
+          "municipio": "Muriaé",
+          "ibge": "3143906",
+          "value": 144,
+          "display_value": "144",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "ITUIUTABA",
-          "ibge": null,
+          "municipio": "Itajubá",
+          "ibge": "3132404",
+          "value": 141,
+          "display_value": "141",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "Manhuaçu",
+          "ibge": "3139409",
+          "value": 141,
+          "display_value": "141",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "Coronel Fabriciano",
+          "ibge": "3119401",
+          "value": 140,
+          "display_value": "140",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "Ituiutaba",
+          "ibge": "3134202",
+          "value": 133,
+          "display_value": "133",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "Pará de Minas",
+          "ibge": "3147105",
+          "value": 128,
+          "display_value": "128",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "Salinas",
+          "ibge": "3157005",
+          "value": 128,
+          "display_value": "128",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "Cataguases",
+          "ibge": "3115300",
+          "value": 125,
+          "display_value": "125",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "Capelinha",
+          "ibge": "3112307",
           "value": 124,
           "display_value": "124",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "MANHUACU",
-          "ibge": null,
+          "municipio": "João Pinheiro",
+          "ibge": "3136306",
           "value": 122,
           "display_value": "122",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "CORONEL FABRICIANO",
-          "ibge": null,
-          "value": 121,
-          "display_value": "121",
-          "share": 0.1
-        },
-        {
-          "uf": "MG",
-          "municipio": "CATAGUASES",
-          "ibge": null,
+          "municipio": "Nova Lima",
+          "ibge": "3144805",
           "value": 119,
           "display_value": "119",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "MURIAE",
-          "ibge": null,
-          "value": 113,
-          "display_value": "113",
+          "municipio": "Vazante",
+          "ibge": "3171006",
+          "value": 114,
+          "display_value": "114",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "NOVA LIMA",
-          "ibge": null,
-          "value": 110,
-          "display_value": "110",
+          "municipio": "Bocaiúva",
+          "ibge": "3107307",
+          "value": 111,
+          "display_value": "111",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "VAZANTE",
-          "ibge": null,
+          "municipio": "Curvelo",
+          "ibge": "3120904",
+          "value": 111,
+          "display_value": "111",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "Paracatu",
+          "ibge": "3147006",
           "value": 109,
           "display_value": "109",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "JOAO PINHEIRO",
-          "ibge": null,
+          "municipio": "Nova Serrana",
+          "ibge": "3145208",
           "value": 107,
           "display_value": "107",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "CAPELINHA",
-          "ibge": null,
-          "value": 106,
-          "display_value": "106",
-          "share": 0.1
-        },
-        {
-          "uf": "MG",
-          "municipio": "SALINAS",
-          "ibge": null,
-          "value": 106,
-          "display_value": "106",
-          "share": 0.1
-        },
-        {
-          "uf": "MG",
-          "municipio": "PARA DE MINAS",
-          "ibge": null,
-          "value": 104,
-          "display_value": "104",
-          "share": 0.1
-        },
-        {
-          "uf": "MG",
-          "municipio": "CURVELO",
-          "ibge": null,
+          "municipio": "Caratinga",
+          "ibge": "3113404",
           "value": 103,
           "display_value": "103",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "PARACATU",
-          "ibge": null,
+          "municipio": "João Monlevade",
+          "ibge": "3136207",
+          "value": 101,
+          "display_value": "101",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "Conselheiro Lafaiete",
+          "ibge": "3118304",
           "value": 99,
           "display_value": "99",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "CONSELHEIRO LAFAIETE",
-          "ibge": null,
+          "municipio": "Pompéu",
+          "ibge": "3152006",
+          "value": 99,
+          "display_value": "99",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "Cláudio",
+          "ibge": "3116605",
           "value": 98,
           "display_value": "98",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "NOVA SERRANA",
-          "ibge": null,
-          "value": 94,
-          "display_value": "94",
+          "municipio": "Arcos",
+          "ibge": "3104205",
+          "value": 97,
+          "display_value": "97",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "JANAUBA",
-          "ibge": null,
+          "municipio": "Janaúba",
+          "ibge": "3135100",
+          "value": 97,
+          "display_value": "97",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "Guanhães",
+          "ibge": "3128006",
+          "value": 96,
+          "display_value": "96",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "Diamantina",
+          "ibge": "3121605",
+          "value": 95,
+          "display_value": "95",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
+          "municipio": "Almenara",
+          "ibge": "3101706",
           "value": 93,
           "display_value": "93",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "JOAO MONLEVADE",
-          "ibge": null,
+          "municipio": "Itaobim",
+          "ibge": "3133303",
           "value": 92,
           "display_value": "92",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "ITAOBIM",
-          "ibge": null,
-          "value": 92,
-          "display_value": "92",
+          "municipio": "Entre Rios de Minas",
+          "ibge": "3123908",
+          "value": 89,
+          "display_value": "89",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "ALMENARA",
-          "ibge": null,
-          "value": 91,
-          "display_value": "91",
+          "municipio": "Pirapora",
+          "ibge": "3151206",
+          "value": 89,
+          "display_value": "89",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "BOCAIUVA",
-          "ibge": null,
-          "value": 91,
-          "display_value": "91",
+          "municipio": "Jacutinga",
+          "ibge": "3134905",
+          "value": 87,
+          "display_value": "87",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "CARATINGA",
-          "ibge": null,
-          "value": 91,
-          "display_value": "91",
-          "share": 0.1
-        },
-        {
-          "uf": "MG",
-          "municipio": "POMPEU",
-          "ibge": null,
-          "value": 91,
-          "display_value": "91",
-          "share": 0.1
-        },
-        {
-          "uf": "MG",
-          "municipio": "ARCOS",
-          "ibge": null,
-          "value": 88,
-          "display_value": "88",
-          "share": 0.1
-        },
-        {
-          "uf": "MG",
-          "municipio": "CLAUDIO",
-          "ibge": null,
-          "value": 86,
-          "display_value": "86",
-          "share": 0.1
-        },
-        {
-          "uf": "MG",
-          "municipio": "JACUTINGA",
-          "ibge": null,
+          "municipio": "Ubá",
+          "ibge": "3169901",
           "value": 85,
           "display_value": "85",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "JAIBA",
-          "ibge": null,
+          "municipio": "Jaíba",
+          "ibge": "3135050",
           "value": 85,
           "display_value": "85",
           "share": 0.1
         },
         {
           "uf": "MG",
-          "municipio": "UBA",
-          "ibge": null,
-          "value": 84,
-          "display_value": "84",
-          "share": 0.1
-        },
-        {
-          "uf": "MG",
-          "municipio": "ENTRE RIOS DE MINAS",
-          "ibge": null,
-          "value": 84,
-          "display_value": "84",
-          "share": 0.1
-        },
-        {
-          "uf": "MG",
-          "municipio": "GUANHAES",
-          "ibge": null,
-          "value": 84,
-          "display_value": "84",
-          "share": 0.1
-        },
-        {
-          "uf": "MG",
-          "municipio": "PIRAPORA",
-          "ibge": null,
+          "municipio": "Iturama",
+          "ibge": "3134400",
           "value": 79,
           "display_value": "79",
-          "share": 0.1
+          "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ESPINOSA",
-          "ibge": null,
+          "municipio": "Ouro Preto",
+          "ibge": "3146107",
+          "value": 79,
+          "display_value": "79",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Espinosa",
+          "ibge": "3124302",
           "value": 76,
           "display_value": "76",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CARMO DO PARANAIBA",
-          "ibge": null,
+          "municipio": "Guaxupé",
+          "ibge": "3128709",
           "value": 76,
           "display_value": "76",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ITURAMA",
-          "ibge": null,
+          "municipio": "Carmo do Paranaíba",
+          "ibge": "3114303",
+          "value": 76,
+          "display_value": "76",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Monte Carmelo",
+          "ibge": "3143104",
+          "value": 75,
+          "display_value": "75",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Carangola",
+          "ibge": "3113305",
           "value": 74,
           "display_value": "74",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "GUAXUPE",
-          "ibge": null,
+          "municipio": "Araçuaí",
+          "ibge": "3103405",
           "value": 73,
           "display_value": "73",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CARANGOLA",
-          "ibge": null,
+          "municipio": "Visconde do Rio Branco",
+          "ibge": "3172004",
+          "value": 71,
+          "display_value": "71",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Alfenas",
+          "ibge": "3101607",
+          "value": 71,
+          "display_value": "71",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Dom Silvério",
+          "ibge": "3122702",
           "value": 70,
           "display_value": "70",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "DIAMANTINA",
-          "ibge": null,
-          "value": 70,
-          "display_value": "70",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "DOM SILVERIO",
-          "ibge": null,
-          "value": 69,
-          "display_value": "69",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "EXTREMA",
-          "ibge": null,
+          "municipio": "Extrema",
+          "ibge": "3125101",
           "value": 68,
           "display_value": "68",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MONTE CARMELO",
-          "ibge": null,
+          "municipio": "Nanuque",
+          "ibge": "3144300",
+          "value": 68,
+          "display_value": "68",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Francisco Sá",
+          "ibge": "3126703",
           "value": 67,
           "display_value": "67",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "VISCONDE DO RIO BRANCO",
-          "ibge": null,
-          "value": 67,
-          "display_value": "67",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "OURO PRETO",
-          "ibge": null,
-          "value": 67,
-          "display_value": "67",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "TAIOBEIRAS",
-          "ibge": null,
+          "municipio": "Barroso",
+          "ibge": "3105905",
           "value": 66,
           "display_value": "66",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "TURMALINA",
-          "ibge": null,
+          "municipio": "Taiobeiras",
+          "ibge": "3168002",
+          "value": 66,
+          "display_value": "66",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Pedra Azul",
+          "ibge": "3148707",
+          "value": 66,
+          "display_value": "66",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Rio Pomba",
+          "ibge": "3155801",
+          "value": 65,
+          "display_value": "65",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "São João da Ponte",
+          "ibge": "3162401",
           "value": 64,
           "display_value": "64",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "BARROSO",
-          "ibge": null,
+          "municipio": "Turmalina",
+          "ibge": "3169703",
+          "value": 64,
+          "display_value": "64",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Carmo do Cajuru",
+          "ibge": "3114204",
           "value": 63,
           "display_value": "63",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO JOAO DA PONTE",
-          "ibge": null,
-          "value": 62,
-          "display_value": "62",
+          "municipio": "Três Marias",
+          "ibge": "3169356",
+          "value": 63,
+          "display_value": "63",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CARMO DO CAJURU",
-          "ibge": null,
+          "municipio": "Bom Despacho",
+          "ibge": "3107406",
           "value": 61,
           "display_value": "61",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ALFENAS",
-          "ibge": null,
+          "municipio": "Ibirité",
+          "ibge": "3129806",
           "value": 61,
           "display_value": "61",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "NANUQUE",
-          "ibge": null,
+          "municipio": "Leopoldina",
+          "ibge": "3138401",
           "value": 61,
           "display_value": "61",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "IBIRITE",
-          "ibge": null,
-          "value": 59,
-          "display_value": "59",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "ARACUAI",
-          "ibge": null,
-          "value": 58,
-          "display_value": "58",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "RIO POMBA",
-          "ibge": null,
-          "value": 58,
-          "display_value": "58",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "PEDRA AZUL",
-          "ibge": null,
-          "value": 57,
-          "display_value": "57",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "TRES MARIAS",
-          "ibge": null,
+          "municipio": "Sarzedo",
+          "ibge": "3165537",
           "value": 56,
           "display_value": "56",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "BOM DESPACHO",
-          "ibge": null,
+          "municipio": "Mariana",
+          "ibge": "3140001",
+          "value": 56,
+          "display_value": "56",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Águas Formosas",
+          "ibge": "3100906",
           "value": 55,
           "display_value": "55",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SARZEDO",
-          "ibge": null,
-          "value": 55,
-          "display_value": "55",
+          "municipio": "Monte Alegre de Minas",
+          "ibge": "3142809",
+          "value": 53,
+          "display_value": "53",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "AGUAS FORMOSAS",
-          "ibge": null,
-          "value": 54,
-          "display_value": "54",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "FRANCISCO SA",
-          "ibge": null,
-          "value": 54,
-          "display_value": "54",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "DIVINO",
-          "ibge": null,
+          "municipio": "Divino",
+          "ibge": "3122009",
           "value": 50,
           "display_value": "50",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO JOAO DO PARAISO",
-          "ibge": null,
+          "municipio": "São João do Paraíso",
+          "ibge": "3162708",
           "value": 50,
           "display_value": "50",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO GOTARDO",
-          "ibge": null,
+          "municipio": "Itaú de Minas",
+          "ibge": "3133758",
           "value": 49,
           "display_value": "49",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ITAU DE MINAS",
-          "ibge": null,
-          "value": 47,
-          "display_value": "47",
+          "municipio": "São Gotardo",
+          "ibge": "3162104",
+          "value": 49,
+          "display_value": "49",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "LAGOA SANTA",
-          "ibge": null,
-          "value": 45,
-          "display_value": "45",
+          "municipio": "Lagoa Santa",
+          "ibge": "3137601",
+          "value": 48,
+          "display_value": "48",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MARIANA",
-          "ibge": null,
+          "municipio": "Jequitinhonha",
+          "ibge": "3135803",
           "value": 44,
           "display_value": "44",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "LEOPOLDINA",
-          "ibge": null,
+          "municipio": "Oliveira",
+          "ibge": "3145604",
+          "value": 44,
+          "display_value": "44",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Lagoa Formosa",
+          "ibge": "3137502",
+          "value": 43,
+          "display_value": "43",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Porteirinha",
+          "ibge": "3152204",
           "value": 42,
           "display_value": "42",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "AIMORES",
-          "ibge": null,
-          "value": 41,
-          "display_value": "41",
+          "municipio": "Aimorés",
+          "ibge": "3101102",
+          "value": 42,
+          "display_value": "42",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "LAGOA FORMOSA",
-          "ibge": null,
+          "municipio": "Januária",
+          "ibge": "3135209",
           "value": 40,
           "display_value": "40",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MONTE ALEGRE DE MINAS",
-          "ibge": null,
+          "municipio": "Ouro Branco",
+          "ibge": "3145901",
           "value": 40,
           "display_value": "40",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "OURO BRANCO",
-          "ibge": null,
+          "municipio": "Tiradentes",
+          "ibge": "3168804",
           "value": 40,
           "display_value": "40",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "JEQUITINHONHA",
-          "ibge": null,
+          "municipio": "Engenheiro Caldas",
+          "ibge": "3123700",
           "value": 39,
           "display_value": "39",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "RESENDE COSTA",
-          "ibge": null,
+          "municipio": "Resende Costa",
+          "ibge": "3154200",
           "value": 39,
           "display_value": "39",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ENGENHEIRO CALDAS",
-          "ibge": null,
-          "value": 37,
-          "display_value": "37",
+          "municipio": "Juatuba",
+          "ibge": "3136652",
+          "value": 38,
+          "display_value": "38",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "JUATUBA",
-          "ibge": null,
-          "value": 37,
-          "display_value": "37",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "TIRADENTES",
-          "ibge": null,
-          "value": 37,
-          "display_value": "37",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "SANTO ANTONIO DO MONTE",
-          "ibge": null,
+          "municipio": "Elói Mendes",
+          "ibge": "3123601",
           "value": 36,
           "display_value": "36",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "JAPONVAR",
-          "ibge": null,
+          "municipio": "Santo Antônio do Monte",
+          "ibge": "3160405",
           "value": 36,
           "display_value": "36",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ELOI MENDES",
-          "ibge": null,
+          "municipio": "Esmeraldas",
+          "ibge": "3124104",
+          "value": 36,
+          "display_value": "36",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Japonvar",
+          "ibge": "3135357",
+          "value": 36,
+          "display_value": "36",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Brasília de Minas",
+          "ibge": "3108602",
           "value": 35,
           "display_value": "35",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PORTEIRINHA",
-          "ibge": null,
+          "municipio": "Lajinha",
+          "ibge": "3137700",
           "value": 35,
           "display_value": "35",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "BRASILIA DE MINAS",
-          "ibge": null,
-          "value": 35,
-          "display_value": "35",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "TRES PONTAS",
-          "ibge": null,
+          "municipio": "Borda da Mata",
+          "ibge": "3108305",
           "value": 34,
           "display_value": "34",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "BURITIZEIRO",
-          "ibge": null,
+          "municipio": "Perdigão",
+          "ibge": "3149705",
           "value": 34,
           "display_value": "34",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "OLIVEIRA",
-          "ibge": null,
+          "municipio": "Ribeirão das Neves",
+          "ibge": "3154606",
           "value": 34,
           "display_value": "34",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "JANUARIA",
-          "ibge": null,
+          "municipio": "Santana do Paraíso",
+          "ibge": "3158953",
+          "value": 34,
+          "display_value": "34",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Três Pontas",
+          "ibge": "3169406",
+          "value": 34,
+          "display_value": "34",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Vespasiano",
+          "ibge": "3171204",
+          "value": 34,
+          "display_value": "34",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Buritizeiro",
+          "ibge": "3109402",
+          "value": 34,
+          "display_value": "34",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "São João Batista do Glória",
+          "ibge": "3162203",
+          "value": 34,
+          "display_value": "34",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Andradas",
+          "ibge": "3102605",
           "value": 33,
           "display_value": "33",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO JOAO BATISTA DO GLORIA",
-          "ibge": null,
+          "municipio": "Monte Sião",
+          "ibge": "3143401",
           "value": 33,
           "display_value": "33",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CAMBUI",
-          "ibge": null,
+          "municipio": "São João Nepomuceno",
+          "ibge": "3162906",
+          "value": 33,
+          "display_value": "33",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Rio Paranaíba",
+          "ibge": "3155504",
+          "value": 33,
+          "display_value": "33",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Cambuí",
+          "ibge": "3110608",
           "value": 32,
           "display_value": "32",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PERDIGAO",
-          "ibge": null,
+          "municipio": "Lagoa Dourada",
+          "ibge": "3137403",
           "value": 32,
           "display_value": "32",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO JOAO NEPOMUCENO",
-          "ibge": null,
-          "value": 32,
-          "display_value": "32",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "LAJINHA",
-          "ibge": null,
+          "municipio": "Prados",
+          "ibge": "3152709",
           "value": 31,
           "display_value": "31",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "VARZELANDIA",
-          "ibge": null,
+          "municipio": "Varzelândia",
+          "ibge": "3170909",
           "value": 31,
           "display_value": "31",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SANTANA DO PARAISO",
-          "ibge": null,
+          "municipio": "Sabará",
+          "ibge": "3156700",
           "value": 30,
           "display_value": "30",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ANDRELANDIA",
-          "ibge": null,
+          "municipio": "Andrelândia",
+          "ibge": "3102803",
           "value": 30,
           "display_value": "30",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SABARA",
-          "ibge": null,
+          "municipio": "Cássia",
+          "ibge": "3115102",
+          "value": 30,
+          "display_value": "30",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "São Francisco",
+          "ibge": "3161106",
+          "value": 30,
+          "display_value": "30",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Eugenópolis",
+          "ibge": "3124906",
           "value": 29,
           "display_value": "29",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "NOVO CRUZEIRO",
-          "ibge": null,
+          "municipio": "São Gonçalo do Rio Abaixo",
+          "ibge": "3161908",
           "value": 29,
           "display_value": "29",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ANDRADAS",
-          "ibge": null,
+          "municipio": "Congonhas",
+          "ibge": "3118007",
+          "value": 29,
+          "display_value": "29",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Novo Cruzeiro",
+          "ibge": "3145307",
+          "value": 29,
+          "display_value": "29",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Ouro Fino",
+          "ibge": "3146008",
           "value": 28,
           "display_value": "28",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "OURO FINO",
-          "ibge": null,
-          "value": 28,
-          "display_value": "28",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "CONGONHAS",
-          "ibge": null,
-          "value": 28,
-          "display_value": "28",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "SAO FRANCISCO",
-          "ibge": null,
-          "value": 28,
-          "display_value": "28",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "EUGENOPOLIS",
-          "ibge": null,
+          "municipio": "Bueno Brandão",
+          "ibge": "3109105",
           "value": 27,
           "display_value": "27",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PRADOS",
-          "ibge": null,
+          "municipio": "Lontra",
+          "ibge": "3138658",
           "value": 27,
           "display_value": "27",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "VESPASIANO",
-          "ibge": null,
+          "municipio": "Nova Era",
+          "ibge": "3144706",
           "value": 27,
           "display_value": "27",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "LAGOA DOURADA",
-          "ibge": null,
-          "value": 27,
-          "display_value": "27",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "LONTRA",
-          "ibge": null,
-          "value": 27,
-          "display_value": "27",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "RIO PARANAIBA",
-          "ibge": null,
-          "value": 27,
-          "display_value": "27",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "BORDA DA MATA",
-          "ibge": null,
+          "municipio": "Ervália",
+          "ibge": "3124005",
           "value": 26,
           "display_value": "26",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "RIBEIRAO DAS NEVES",
-          "ibge": null,
+          "municipio": "Itambacuri",
+          "ibge": "3132701",
           "value": 26,
           "display_value": "26",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO GONCALO DO RIO ABAIXO",
-          "ibge": null,
+          "municipio": "Santa Cruz de Minas",
+          "ibge": "3157336",
           "value": 26,
           "display_value": "26",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CORACAO DE JESUS",
-          "ibge": null,
+          "municipio": "Coração de Jesus",
+          "ibge": "3118809",
           "value": 26,
           "display_value": "26",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CARLOS CHAGAS",
-          "ibge": null,
+          "municipio": "Carlos Chagas",
+          "ibge": "3113701",
           "value": 25,
           "display_value": "25",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ESMERALDAS",
-          "ibge": null,
+          "municipio": "Santa Vitória",
+          "ibge": "3159803",
           "value": 25,
           "display_value": "25",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ERVALIA",
-          "ibge": null,
+          "municipio": "Araújos",
+          "ibge": "3103900",
+          "value": 24,
+          "display_value": "24",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Itanhandu",
+          "ibge": "3133105",
+          "value": 24,
+          "display_value": "24",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Matias Barbosa",
+          "ibge": "3140803",
+          "value": 24,
+          "display_value": "24",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Dores de Campos",
+          "ibge": "3123007",
           "value": 23,
           "display_value": "23",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ITANHANDU",
-          "ibge": null,
+          "municipio": "Mateus Leme",
+          "ibge": "3140704",
           "value": 23,
           "display_value": "23",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MATEUS LEME",
-          "ibge": null,
+          "municipio": "Virginópolis",
+          "ibge": "3171808",
           "value": 23,
           "display_value": "23",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "NOVA ERA",
-          "ibge": null,
-          "value": 23,
-          "display_value": "23",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "ARAUJOS",
-          "ibge": null,
+          "municipio": "Paraisópolis",
+          "ibge": "3147303",
           "value": 22,
           "display_value": "22",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO TIAGO",
-          "ibge": null,
+          "municipio": "São Tiago",
+          "ibge": "3165008",
           "value": 22,
           "display_value": "22",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MIRABELA",
-          "ibge": null,
+          "municipio": "Mirabela",
+          "ibge": "3142007",
           "value": 22,
           "display_value": "22",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PARAISOPOLIS",
-          "ibge": null,
+          "municipio": "Pedro Leopoldo",
+          "ibge": "3149309",
           "value": 21,
           "display_value": "21",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SANTA CRUZ DE MINAS",
-          "ibge": null,
+          "municipio": "Piranguinho",
+          "ibge": "3151008",
           "value": 21,
           "display_value": "21",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CLARAVAL",
-          "ibge": null,
+          "municipio": "Claraval",
+          "ibge": "3116407",
           "value": 21,
           "display_value": "21",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "BARAO DE COCAIS",
-          "ibge": null,
+          "municipio": "Itacarambi",
+          "ibge": "3132107",
+          "value": 21,
+          "display_value": "21",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Nova Porteirinha",
+          "ibge": "3145059",
+          "value": 21,
+          "display_value": "21",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Presidente Bernardes",
+          "ibge": "3153103",
+          "value": 21,
+          "display_value": "21",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Sabinópolis",
+          "ibge": "3156809",
+          "value": 21,
+          "display_value": "21",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "São João Evangelista",
+          "ibge": "3162807",
+          "value": 21,
+          "display_value": "21",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Barão de Cocais",
+          "ibge": "3105400",
           "value": 20,
           "display_value": "20",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CARMOPOLIS DE MINAS",
-          "ibge": null,
+          "municipio": "Carandaí",
+          "ibge": "3113206",
           "value": 20,
           "display_value": "20",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CASSIA",
-          "ibge": null,
+          "municipio": "Senador Firmino",
+          "ibge": "3165701",
           "value": 20,
           "display_value": "20",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ITACARAMBI",
-          "ibge": null,
+          "municipio": "Carmópolis de Minas",
+          "ibge": "3114501",
           "value": 20,
           "display_value": "20",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MUTUM",
-          "ibge": null,
+          "municipio": "Mutum",
+          "ibge": "3144003",
           "value": 20,
           "display_value": "20",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CAMPO BELO",
-          "ibge": null,
+          "municipio": "Prata",
+          "ibge": "3152808",
+          "value": 20,
+          "display_value": "20",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Campo Belo",
+          "ibge": "3111200",
           "value": 19,
           "display_value": "19",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CARANDAI",
-          "ibge": null,
+          "municipio": "Campanha",
+          "ibge": "3110905",
           "value": 19,
           "display_value": "19",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CAMPANHA",
-          "ibge": null,
+          "municipio": "Guimarânia",
+          "ibge": "3128907",
           "value": 19,
           "display_value": "19",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "IBIRACI",
-          "ibge": null,
+          "municipio": "Ibiraci",
+          "ibge": "3129707",
           "value": 19,
           "display_value": "19",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PRESIDENTE BERNARDES",
-          "ibge": null,
+          "municipio": "Raul Soares",
+          "ibge": "3154002",
           "value": 19,
           "display_value": "19",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "RAUL SOARES",
-          "ibge": null,
-          "value": 19,
-          "display_value": "19",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "VIRGINOPOLIS",
-          "ibge": null,
-          "value": 19,
-          "display_value": "19",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "MATIAS BARBOSA",
-          "ibge": null,
+          "municipio": "Carmo da Mata",
+          "ibge": "3114006",
           "value": 18,
           "display_value": "18",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MIRAI",
-          "ibge": null,
+          "municipio": "Miraí",
+          "ibge": "3142205",
           "value": 18,
           "display_value": "18",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MONTE SIAO",
-          "ibge": null,
+          "municipio": "Monsenhor Paulo",
+          "ibge": "3142601",
           "value": 18,
           "display_value": "18",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PEDRO LEOPOLDO",
-          "ibge": null,
+          "municipio": "Botelhos",
+          "ibge": "3108404",
           "value": 18,
           "display_value": "18",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "BOTELHOS",
-          "ibge": null,
+          "municipio": "Piranga",
+          "ibge": "3150802",
           "value": 18,
           "display_value": "18",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "NOVA PORTEIRINHA",
-          "ibge": null,
+          "municipio": "Várzea da Palma",
+          "ibge": "3170800",
           "value": 18,
           "display_value": "18",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SABINOPOLIS",
-          "ibge": null,
-          "value": 18,
-          "display_value": "18",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "BUENO BRANDAO",
-          "ibge": null,
+          "municipio": "Congonhal",
+          "ibge": "3117900",
           "value": 17,
           "display_value": "17",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CARMO DA MATA",
-          "ibge": null,
+          "municipio": "Santa Luzia",
+          "ibge": "3157807",
           "value": 17,
           "display_value": "17",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CONGONHAL",
-          "ibge": null,
+          "municipio": "Três Corações",
+          "ibge": "3169307",
           "value": 17,
           "display_value": "17",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MONSENHOR PAULO",
-          "ibge": null,
-          "value": 17,
-          "display_value": "17",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "SAO JOAO EVANGELISTA",
-          "ibge": null,
-          "value": 17,
-          "display_value": "17",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "VARZEA DA PALMA",
-          "ibge": null,
-          "value": 17,
-          "display_value": "17",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "PRESIDENTE OLEGARIO",
-          "ibge": null,
+          "municipio": "Nepomuceno",
+          "ibge": "3144607",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SANTA BARBARA",
-          "ibge": null,
+          "municipio": "Poço Fundo",
+          "ibge": "3151701",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SANTA LUZIA",
-          "ibge": null,
+          "municipio": "Presidente Olegário",
+          "ibge": "3153400",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ALTEROSA",
-          "ibge": null,
+          "municipio": "Santa Bárbara",
+          "ibge": "3157203",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "GUIMARANIA",
-          "ibge": null,
+          "municipio": "Alterosa",
+          "ibge": "3102001",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MIRADOURO",
-          "ibge": null,
+          "municipio": "Areado",
+          "ibge": "3104304",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PRATAPOLIS",
-          "ibge": null,
+          "municipio": "Miradouro",
+          "ibge": "3142106",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "DORES DE CAMPOS",
-          "ibge": null,
+          "municipio": "Pratápolis",
+          "ibge": "3152907",
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Paraopeba",
+          "ibge": "3147402",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MONTE AZUL",
-          "ibge": null,
+          "municipio": "Ipanema",
+          "ibge": "3131208",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PARAOPEBA",
-          "ibge": null,
+          "municipio": "Jordânia",
+          "ibge": "3136504",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PIRANGUINHO",
-          "ibge": null,
+          "municipio": "Juruaia",
+          "ibge": "3136900",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "IPANEMA",
-          "ibge": null,
+          "municipio": "Manhumirim",
+          "ibge": "3139508",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "JORDANIA",
-          "ibge": null,
+          "municipio": "Moema",
+          "ibge": "3142403",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MANHUMIRIM",
-          "ibge": null,
+          "municipio": "Paraguaçu",
+          "ibge": "3147204",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MOEMA",
-          "ibge": null,
+          "municipio": "São Francisco de Sales",
+          "ibge": "3161304",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PARAGUACU",
-          "ibge": null,
-          "value": 15,
-          "display_value": "15",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "SAO FRANCISCO DE SALES",
-          "ibge": null,
-          "value": 15,
-          "display_value": "15",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "TRES CORACOES",
-          "ibge": null,
-          "value": 15,
-          "display_value": "15",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "MARIA DA FE",
-          "ibge": null,
+          "municipio": "Camanducaia",
+          "ibge": "3110509",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CABO VERDE",
-          "ibge": null,
+          "municipio": "Dona Euzébia",
+          "ibge": "3122900",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "JURUAIA",
-          "ibge": null,
+          "municipio": "Maria da Fé",
+          "ibge": "3139904",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "NOVA RESENDE",
-          "ibge": null,
+          "municipio": "Monte Azul",
+          "ibge": "3142908",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PERDOES",
-          "ibge": null,
+          "municipio": "Cabo Verde",
+          "ibge": "3109501",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PIRANGA",
-          "ibge": null,
+          "municipio": "Lagamar",
+          "ibge": "3137106",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CAMANDUCAIA",
-          "ibge": null,
+          "municipio": "Nova Resende",
+          "ibge": "3145109",
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Peçanha",
+          "ibge": "3148608",
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Perdões",
+          "ibge": "3149903",
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Porto Firme",
+          "ibge": "3152303",
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "São Sebastião do Oeste",
+          "ibge": "3164605",
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Astolfo Dutra",
+          "ibge": "3104601",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "GUIRICEMA",
-          "ibge": null,
+          "municipio": "Coromandel",
+          "ibge": "3119302",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "POCO FUNDO",
-          "ibge": null,
+          "municipio": "Guiricema",
+          "ibge": "3129004",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CAMPESTRE",
-          "ibge": null,
+          "municipio": "Itaguara",
+          "ibge": "3132206",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "COROACI",
-          "ibge": null,
+          "municipio": "Santa Maria de Itabira",
+          "ibge": "3158003",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "IBIA",
-          "ibge": null,
+          "municipio": "Campestre",
+          "ibge": "3111002",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PORTO FIRME",
-          "ibge": null,
+          "municipio": "Coroaci",
+          "ibge": "3119203",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SARDOA",
-          "ibge": null,
+          "municipio": "Ibiá",
+          "ibge": "3129509",
           "value": 13,
           "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Monte Belo",
+          "ibge": "3143005",
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Resplendor",
+          "ibge": "3154309",
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Sardoá",
+          "ibge": "3165503",
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Bom Jesus do Amparo",
+          "ibge": "3107703",
+          "value": 12,
+          "display_value": "12",
           "share": 0.0
         },
         {
@@ -1955,280 +2083,256 @@
         },
         {
           "uf": "MG",
-          "municipio": "SANTA MARIA DE ITABIRA",
-          "ibge": null,
+          "municipio": "Desterro de Entre Rios",
+          "ibge": "3121407",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "AREADO",
-          "ibge": null,
+          "municipio": "Ferros",
+          "ibge": "3125903",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "DESTERRO DE ENTRE RIOS",
-          "ibge": null,
+          "municipio": "Mantena",
+          "ibge": "3139607",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "FERROS",
-          "ibge": null,
+          "municipio": "Montalvânia",
+          "ibge": "3142700",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "LAGAMAR",
-          "ibge": null,
+          "municipio": "São João das Missões",
+          "ibge": "3162450",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MONTALVANIA",
-          "ibge": null,
-          "value": 12,
-          "display_value": "12",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "PECANHA",
-          "ibge": null,
-          "value": 12,
-          "display_value": "12",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "SAO JOAO DAS MISSOES",
-          "ibge": null,
-          "value": 12,
-          "display_value": "12",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "CORONEL XAVIER CHAVES",
-          "ibge": null,
+          "municipio": "Coronel Xavier Chaves",
+          "ibge": "3119708",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ITAGUARA",
-          "ibge": null,
+          "municipio": "Lima Duarte",
+          "ibge": "3138609",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "LIMA DUARTE",
-          "ibge": null,
+          "municipio": "Antônio Carlos",
+          "ibge": "3102902",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ANTONIO CARLOS",
-          "ibge": null,
+          "municipio": "Corinto",
+          "ibge": "3119104",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CORINTO",
-          "ibge": null,
+          "municipio": "Matias Cardoso",
+          "ibge": "3140852",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MANTENA",
-          "ibge": null,
+          "municipio": "Passa Quatro",
+          "ibge": "3147600",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "NEPOMUCENO",
-          "ibge": null,
+          "municipio": "Paula Cândido",
+          "ibge": "3148301",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PASSA QUATRO",
-          "ibge": null,
+          "municipio": "São Miguel do Anta",
+          "ibge": "3163805",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "RESPLENDOR",
-          "ibge": null,
+          "municipio": "Serra do Salitre",
+          "ibge": "3166808",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO MIGUEL DO ANTA",
-          "ibge": null,
+          "municipio": "Veredinha",
+          "ibge": "3171071",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SERRA DO SALITRE",
-          "ibge": null,
-          "value": 11,
-          "display_value": "11",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "VEREDINHA",
-          "ibge": null,
-          "value": 11,
-          "display_value": "11",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "IGARAPE",
-          "ibge": null,
+          "municipio": "Capinópolis",
+          "ibge": "3112604",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "IGUATAMA",
-          "ibge": null,
+          "municipio": "Conceição dos Ouros",
+          "ibge": "3117801",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MACHADO",
-          "ibge": null,
+          "municipio": "Igarapé",
+          "ibge": "3130101",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PAINS",
-          "ibge": null,
+          "municipio": "Iguatama",
+          "ibge": "3130309",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "COROMANDEL",
-          "ibge": null,
+          "municipio": "Lagoa da Prata",
+          "ibge": "3137205",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ITATIAIUCU",
-          "ibge": null,
+          "municipio": "Machado",
+          "ibge": "3139003",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "JEQUERI",
-          "ibge": null,
+          "municipio": "Pains",
+          "ibge": "3146503",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MATIAS CARDOSO",
-          "ibge": null,
+          "municipio": "São Joaquim de Bicas",
+          "ibge": "3162922",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MUZAMBINHO",
-          "ibge": null,
+          "municipio": "Guaraciaba",
+          "ibge": "3128204",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO SEBASTIAO DO OESTE",
-          "ibge": null,
+          "municipio": "Itatiaiuçu",
+          "ibge": "3133709",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CORREGO FUNDO",
-          "ibge": null,
+          "municipio": "Jequeri",
+          "ibge": "3135506",
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Muzambinho",
+          "ibge": "3144102",
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Córrego Fundo",
+          "ibge": "3119955",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CRISTINA",
-          "ibge": null,
+          "municipio": "Cristina",
+          "ibge": "3120508",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PEDRALVA",
-          "ibge": null,
+          "municipio": "Cruzília",
+          "ibge": "3120805",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO JOAQUIM DE BICAS",
-          "ibge": null,
+          "municipio": "Pedralva",
+          "ibge": "3149101",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "URUCANIA",
-          "ibge": null,
+          "municipio": "Urucânia",
+          "ibge": "3170503",
           "value": 9,
           "display_value": "9",
           "share": 0.0
@@ -2243,2008 +2347,2016 @@
         },
         {
           "uf": "MG",
-          "municipio": "ARAPONGA",
-          "ibge": null,
+          "municipio": "Araponga",
+          "ibge": "3103702",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "GUARACIABA",
-          "ibge": null,
+          "municipio": "Bom Sucesso",
+          "ibge": "3108008",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PAULA CANDIDO",
-          "ibge": null,
+          "municipio": "Dores do Turvo",
+          "ibge": "3123304",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SANTA VITORIA",
-          "ibge": null,
+          "municipio": "Indianópolis",
+          "ibge": "3130705",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO DOMINGOS DO PRATA",
-          "ibge": null,
+          "municipio": "Inhapim",
+          "ibge": "3130903",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CAPINOPOLIS",
-          "ibge": null,
+          "municipio": "Rio Piracicaba",
+          "ibge": "3155702",
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "São Domingos do Prata",
+          "ibge": "3161007",
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Teixeiras",
+          "ibge": "3168507",
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Verdelândia",
+          "ibge": "3171030",
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Conceição das Alagoas",
+          "ibge": "3117306",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CRUZILIA",
-          "ibge": null,
+          "municipio": "Matozinhos",
+          "ibge": "3141108",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "LAGOA DA PRATA",
-          "ibge": null,
+          "municipio": "Monte Santo de Minas",
+          "ibge": "3143203",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MATOZINHOS",
-          "ibge": null,
+          "municipio": "Bonito de Minas",
+          "ibge": "3108255",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "BOM SUCESSO",
-          "ibge": null,
+          "municipio": "Capitólio",
+          "ibge": "3112802",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CAPITOLIO",
-          "ibge": null,
+          "municipio": "Conselheiro Pena",
+          "ibge": "3118403",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CONSELHEIRO PENA",
-          "ibge": null,
+          "municipio": "Divinésia",
+          "ibge": "3121902",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "DIVINESIA",
-          "ibge": null,
+          "municipio": "Iapu",
+          "ibge": "3129301",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "DORES DO TURVO",
-          "ibge": null,
+          "municipio": "Joaíma",
+          "ibge": "3136009",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "IAPU",
-          "ibge": null,
+          "municipio": "Santana da Vargem",
+          "ibge": "3158300",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "JOAIMA",
-          "ibge": null,
-          "value": 8,
-          "display_value": "8",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "RIO PIRACICABA",
-          "ibge": null,
-          "value": 8,
-          "display_value": "8",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "SANTANA DA VARGEM",
-          "ibge": null,
-          "value": 8,
-          "display_value": "8",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "ALPERCATA",
-          "ibge": null,
+          "municipio": "Alpercata",
+          "ibge": "3101805",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CONCEICAO DAS ALAGOAS",
-          "ibge": null,
+          "municipio": "Igaratinga",
+          "ibge": "3130200",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CONCEICAO DOS OUROS",
-          "ibge": null,
+          "municipio": "São Gonçalo do Sapucaí",
+          "ibge": "3162005",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "BOM JESUS DO AMPARO",
-          "ibge": null,
+          "municipio": "São José do Alegre",
+          "ibge": "3163201",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CAPITAO ENEAS",
-          "ibge": null,
+          "municipio": "Capitão Enéas",
+          "ibge": "3112703",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "COQUEIRAL",
-          "ibge": null,
+          "municipio": "Coqueiral",
+          "ibge": "3118700",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "DELFIM MOREIRA",
-          "ibge": null,
+          "municipio": "Delfim Moreira",
+          "ibge": "3121100",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "DIVISA NOVA",
-          "ibge": null,
+          "municipio": "Divisa Nova",
+          "ibge": "3122405",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MAR DE ESPANHA",
-          "ibge": null,
+          "municipio": "Mar de Espanha",
+          "ibge": "3139805",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MINDURI",
-          "ibge": null,
+          "municipio": "Medina",
+          "ibge": "3141405",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO VICENTE DE MINAS",
-          "ibge": null,
+          "municipio": "Minduri",
+          "ibge": "3141900",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ABADIA DOS DOURADOS",
-          "ibge": null,
+          "municipio": "São Vicente de Minas",
+          "ibge": "3165305",
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Abadia dos Dourados",
+          "ibge": "3100104",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ARCEBURGO",
-          "ibge": null,
+          "municipio": "Arceburgo",
+          "ibge": "3104106",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "DONA EUZEBIA",
-          "ibge": null,
+          "municipio": "Bicas",
+          "ibge": "3106903",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ITAPECERICA",
-          "ibge": null,
+          "municipio": "Coimbra",
+          "ibge": "3116704",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "JABOTICATUBAS",
-          "ibge": null,
+          "municipio": "Itapecerica",
+          "ibge": "3133501",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MARIO CAMPOS",
-          "ibge": null,
+          "municipio": "Jaboticatubas",
+          "ibge": "3134608",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PIUMHI",
-          "ibge": null,
+          "municipio": "Mário Campos",
+          "ibge": "3140159",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO GONCALO DO PARA",
-          "ibge": null,
+          "municipio": "Piumhi",
+          "ibge": "3151503",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO GONCALO DO SAPUCAI",
-          "ibge": null,
+          "municipio": "São Geraldo",
+          "ibge": "3161502",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO JOSE DO ALEGRE",
-          "ibge": null,
+          "municipio": "São Gonçalo do Pará",
+          "ibge": "3161809",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO LOURENCO",
-          "ibge": null,
+          "municipio": "São Lourenço",
+          "ibge": "3163706",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SILVIANOPOLIS",
-          "ibge": null,
+          "municipio": "Silvianópolis",
+          "ibge": "3167400",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "UBERLÂNDIA",
-          "ibge": null,
+          "municipio": "Alfredo Vasconcelos",
+          "ibge": "3101631",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ALFREDO VASCONCELOS",
-          "ibge": null,
+          "municipio": "Canaã",
+          "ibge": "3111705",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "BONITO DE MINAS",
-          "ibge": null,
+          "municipio": "Carmésia",
+          "ibge": "3113800",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CANAA",
-          "ibge": null,
+          "municipio": "Carmo do Paranaíba",
+          "ibge": "3114303",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CARMO DO PARANAÍBA",
-          "ibge": null,
+          "municipio": "Cônego Marinho",
+          "ibge": "3117836",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CONEGO MARINHO",
-          "ibge": null,
+          "municipio": "Limeira do Oeste",
+          "ibge": "3138625",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ITAMBACURI",
-          "ibge": null,
+          "municipio": "Manga",
+          "ibge": "3139300",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "LIMEIRA DO OESTE",
-          "ibge": null,
+          "municipio": "Poté",
+          "ibge": "3152402",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MANGA",
-          "ibge": null,
+          "municipio": "Santa Bárbara do Leste",
+          "ibge": "3157252",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MONTE SANTO DE MINAS",
-          "ibge": null,
+          "municipio": "Santa Cruz do Escalvado",
+          "ibge": "3157401",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "POTE",
-          "ibge": null,
+          "municipio": "São Gonçalo do Abaeté",
+          "ibge": "3161700",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SANTA CRUZ DO ESCALVADO",
-          "ibge": null,
+          "municipio": "Simonésia",
+          "ibge": "3167608",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO GONCALO DO ABAETE",
-          "ibge": null,
-          "value": 6,
-          "display_value": "6",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "SIMONESIA",
-          "ibge": null,
-          "value": 6,
-          "display_value": "6",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "TEIXEIRAS",
-          "ibge": null,
-          "value": 6,
-          "display_value": "6",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "BAMBUI",
-          "ibge": null,
+          "municipio": "Bambuí",
+          "ibge": "3105103",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "BICAS",
-          "ibge": null,
+          "municipio": "Cambuquira",
+          "ibge": "3110707",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CAMBUQUIRA",
-          "ibge": null,
+          "municipio": "Ipuiúna",
+          "ibge": "3131505",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "IGARATINGA",
-          "ibge": null,
+          "municipio": "Itamonte",
+          "ibge": "3133006",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "IPUIUNA",
-          "ibge": null,
+          "municipio": "Santa Rita do Sapucaí",
+          "ibge": "3159605",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ITAMONTE",
-          "ibge": null,
+          "municipio": "São Roque de Minas",
+          "ibge": "3164308",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SANTA RITA DO SAPUCAÍ",
-          "ibge": null,
+          "municipio": "Uberlândia",
+          "ibge": "3170206",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO GERALDO",
-          "ibge": null,
+          "municipio": "Wenceslau Braz",
+          "ibge": "3172202",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO ROQUE DE MINAS",
-          "ibge": null,
+          "municipio": "Bela Vista de Minas",
+          "ibge": "3106002",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SENADOR FIRMINO",
-          "ibge": null,
+          "municipio": "Catas Altas",
+          "ibge": "3115359",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "WENCESLAU BRAZ",
-          "ibge": null,
+          "municipio": "Engenheiro Navarro",
+          "ibge": "3123809",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "BELA VISTA DE MINAS",
-          "ibge": null,
+          "municipio": "Leme do Prado",
+          "ibge": "3138351",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CARMESIA",
-          "ibge": null,
+          "municipio": "Reduto",
+          "ibge": "3154150",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CATAS ALTAS",
-          "ibge": null,
+          "municipio": "Ribeirão Vermelho",
+          "ibge": "3154705",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ENGENHEIRO NAVARRO",
-          "ibge": null,
+          "municipio": "Rio Paranaíba",
+          "ibge": "3155504",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "LEME DO PRADO",
-          "ibge": null,
+          "municipio": "São Tiago",
+          "ibge": "3165008",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "REDUTO",
-          "ibge": null,
-          "value": 5,
-          "display_value": "5",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "RIO PARANAÍBA",
-          "ibge": null,
-          "value": 5,
-          "display_value": "5",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "SANTA BARBARA DO LESTE",
-          "ibge": null,
-          "value": 5,
-          "display_value": "5",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "SAO BRAS DO SUACUI",
-          "ibge": null,
-          "value": 5,
-          "display_value": "5",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "SÃO TIAGO",
-          "ibge": null,
-          "value": 5,
-          "display_value": "5",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "ASTOLFO DUTRA",
-          "ibge": null,
+          "municipio": "Baependi",
+          "ibge": "3104908",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CAETANOPOLIS",
-          "ibge": null,
+          "municipio": "Caetanópolis",
+          "ibge": "3109907",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "COIMBRA",
-          "ibge": null,
+          "municipio": "Caldas",
+          "ibge": "3110301",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "GUIDOVAL",
-          "ibge": null,
+          "municipio": "Frutal",
+          "ibge": "3127107",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ITAMARATI DE MINAS",
-          "ibge": null,
+          "municipio": "Guidoval",
+          "ibge": "3128808",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO JOSE DA LAPA",
-          "ibge": null,
+          "municipio": "Itabirito",
+          "ibge": "3131901",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ALVINOPOLIS",
-          "ibge": null,
+          "municipio": "Itamarati de Minas",
+          "ibge": "3132602",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "BELMIRO BRAGA",
-          "ibge": null,
+          "municipio": "Lambari",
+          "ibge": "3137809",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "BOM JARDIM DE MINAS",
-          "ibge": null,
+          "municipio": "Passa Tempo",
+          "ibge": "3147709",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "FERVEDOURO",
-          "ibge": null,
+          "municipio": "Patrocínio do Muriaé",
+          "ibge": "3148202",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "FRANCISCO DUMONT",
-          "ibge": null,
+          "municipio": "Piranguçu",
+          "ibge": "3150901",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "GUARANESIA",
-          "ibge": null,
+          "municipio": "São José da Lapa",
+          "ibge": "3162955",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ITINGA",
-          "ibge": null,
+          "municipio": "Toledo",
+          "ibge": "3169109",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "LAMIM",
-          "ibge": null,
+          "municipio": "Alvinópolis",
+          "ibge": "3102308",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MADRE DE DEUS DE MINAS",
-          "ibge": null,
+          "municipio": "Belmiro Braga",
+          "ibge": "3106101",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MONTE BELO",
-          "ibge": null,
+          "municipio": "Bom Jardim de Minas",
+          "ibge": "3107505",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SÃO GOTARDO",
-          "ibge": null,
+          "municipio": "Buritis",
+          "ibge": "3109303",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "AIURUOCA",
-          "ibge": null,
+          "municipio": "Fervedouro",
+          "ibge": "3125952",
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Francisco Dumont",
+          "ibge": "3126604",
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Guaranésia",
+          "ibge": "3128303",
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Ijaci",
+          "ibge": "3130408",
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Itinga",
+          "ibge": "3134004",
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Lamim",
+          "ibge": "3137908",
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Madre de Deus de Minas",
+          "ibge": "3139102",
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "São Brás do Suaçuí",
+          "ibge": "3160900",
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "São Gotardo",
+          "ibge": "3162104",
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Unaí",
+          "ibge": "3170404",
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Aiuruoca",
+          "ibge": "3101201",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ALPINOPOLIS",
-          "ibge": null,
+          "municipio": "Alpinópolis",
+          "ibge": "3101904",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "BAEPENDI",
-          "ibge": null,
+          "municipio": "Belo Oriente",
+          "ibge": "3106309",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CALDAS",
-          "ibge": null,
+          "municipio": "Careaçu",
+          "ibge": "3113602",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CAREACU",
-          "ibge": null,
+          "municipio": "Córrego do Bom Jesus",
+          "ibge": "3119906",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CORREGO DO BOM JESUS",
-          "ibge": null,
+          "municipio": "Descoberto",
+          "ibge": "3121308",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ITABIRINHA",
-          "ibge": null,
+          "municipio": "Itabirinha",
+          "ibge": "3131802",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ITABIRITO",
-          "ibge": null,
+          "municipio": "Itapeva",
+          "ibge": "3133600",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ITAPEVA",
-          "ibge": null,
+          "municipio": "Recreio",
+          "ibge": "3154101",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PATROCINIO DO MURIAE",
-          "ibge": null,
+          "municipio": "São Francisco de Paula",
+          "ibge": "3161205",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PIRANGUCU",
-          "ibge": null,
+          "municipio": "São João do Manteninha",
+          "ibge": "3162575",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "RECREIO",
-          "ibge": null,
+          "municipio": "Alto Jequitibá",
+          "ibge": "3153509",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO JOAO DO MANTENINHA",
-          "ibge": null,
+          "municipio": "Belo Vale",
+          "ibge": "3106408",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ALTO JEQUITIBA",
-          "ibge": null,
+          "municipio": "Cachoeira de Minas",
+          "ibge": "3109709",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "BELO VALE",
-          "ibge": null,
+          "municipio": "Campos Gerais",
+          "ibge": "3111606",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CAMPOS GERAIS",
-          "ibge": null,
+          "municipio": "Conquista",
+          "ibge": "3118205",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CONQUISTA",
-          "ibge": null,
+          "municipio": "Cuparaque",
+          "ibge": "3120839",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CUPARAQUE",
-          "ibge": null,
+          "municipio": "Divinolândia de Minas",
+          "ibge": "3122207",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "GOUVEIA",
-          "ibge": null,
+          "municipio": "Formoso",
+          "ibge": "3126208",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "GUARACIAMA",
-          "ibge": null,
+          "municipio": "Gouveia",
+          "ibge": "3127602",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "IJACI",
-          "ibge": null,
+          "municipio": "Guaraciama",
+          "ibge": "3128253",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "INHAPIM",
-          "ibge": null,
+          "municipio": "Mamonas",
+          "ibge": "3139250",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ORATORIOS",
-          "ibge": null,
+          "municipio": "Oratórios",
+          "ibge": "3145851",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PIEDADE DE CARATINGA",
-          "ibge": null,
+          "municipio": "Pedras de Maria da Cruz",
+          "ibge": "3149150",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "POUSO ALTO",
-          "ibge": null,
+          "municipio": "Piedade de Caratinga",
+          "ibge": "3150158",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "RIBEIRAO VERMELHO",
-          "ibge": null,
+          "municipio": "Pouso Alto",
+          "ibge": "3152600",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ROSARIO DA LIMEIRA",
-          "ibge": null,
+          "municipio": "Rosário da Limeira",
+          "ibge": "3156452",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SANTOS DUMONT",
-          "ibge": null,
+          "municipio": "Santa Rita de Minas",
+          "ibge": "3159357",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "BELO ORIENTE",
-          "ibge": null,
+          "municipio": "Santos Dumont",
+          "ibge": "3160702",
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
+          "municipio": "Brumadinho",
+          "ibge": "3109006",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CACHOEIRA DA PRATA",
-          "ibge": null,
+          "municipio": "Cachoeira da Prata",
+          "ibge": "3109600",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CANDEIAS",
-          "ibge": null,
+          "municipio": "Candeias",
+          "ibge": "3112000",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CAXAMBU",
-          "ibge": null,
+          "municipio": "Caxambu",
+          "ibge": "3115508",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ESPIRITO SANTO DO DOURADO",
-          "ibge": null,
+          "municipio": "Espírito Santo do Dourado",
+          "ibge": "3124401",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ESTIVA",
-          "ibge": null,
+          "municipio": "Estiva",
+          "ibge": "3124500",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "GALILEIA",
-          "ibge": null,
+          "municipio": "Galiléia",
+          "ibge": "3127305",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "GOIANA",
-          "ibge": null,
+          "municipio": "Goianá",
+          "ibge": "3127388",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "GUARANI",
-          "ibge": null,
+          "municipio": "Guarani",
+          "ibge": "3128402",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "GUARARA",
-          "ibge": null,
+          "municipio": "Guarará",
+          "ibge": "3128501",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "JAPARAIBA",
-          "ibge": null,
+          "municipio": "Japaraíba",
+          "ibge": "3135308",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "LARANJAL",
-          "ibge": null,
+          "municipio": "Laranjal",
+          "ibge": "3138005",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "LUZ",
-          "ibge": null,
+          "municipio": "Luz",
+          "ibge": "3138807",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MUNHOZ",
-          "ibge": null,
+          "municipio": "Munhoz",
+          "ibge": "3143807",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PAPAGAIOS",
-          "ibge": null,
+          "municipio": "Papagaios",
+          "ibge": "3146909",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SANTANA DE CATAGUASES",
-          "ibge": null,
+          "municipio": "Prudente de Morais",
+          "ibge": "3153608",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO FRANCISCO DE PAULA",
-          "ibge": null,
+          "municipio": "Santana de Cataguases",
+          "ibge": "3158409",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "TOCANTINS",
-          "ibge": null,
+          "municipio": "Tocantins",
+          "ibge": "3169000",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "TOLEDO",
-          "ibge": null,
+          "municipio": "Acaiaca",
+          "ibge": "3100401",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ACAIACA",
-          "ibge": null,
+          "municipio": "Além Paraíba",
+          "ibge": "3101508",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ALEM PARAIBA",
-          "ibge": null,
+          "municipio": "Arinos",
+          "ibge": "3104502",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "BOA ESPERANCA",
-          "ibge": null,
+          "municipio": "Boa Esperança",
+          "ibge": "3107109",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "BURITIS",
-          "ibge": null,
+          "municipio": "Brás Pires",
+          "ibge": "3108701",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CANTAGALO",
-          "ibge": null,
+          "municipio": "Cantagalo",
+          "ibge": "3112059",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CAPUTIRA",
-          "ibge": null,
+          "municipio": "Caputira",
+          "ibge": "3112901",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CARVALHOS",
-          "ibge": null,
+          "municipio": "Carvalhos",
+          "ibge": "3114808",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CONCEICAO DA APARECIDA",
-          "ibge": null,
+          "municipio": "Conceição da Aparecida",
+          "ibge": "3117108",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CORONEL PACHECO",
-          "ibge": null,
+          "municipio": "Coronel Pacheco",
+          "ibge": "3119609",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "DIVINOLANDIA DE MINAS",
-          "ibge": null,
+          "municipio": "Espera Feliz",
+          "ibge": "3124203",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ESPERA FELIZ",
-          "ibge": null,
+          "municipio": "Guarda-Mor",
+          "ibge": "3128600",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "FRUTAL",
-          "ibge": null,
+          "municipio": "Ibertioga",
+          "ibge": "3129400",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "IBERTIOGA",
-          "ibge": null,
+          "municipio": "Jeceaba",
+          "ibge": "3135407",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "JECEABA",
-          "ibge": null,
+          "municipio": "Nova Ponte",
+          "ibge": "3145000",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MAMONAS",
-          "ibge": null,
+          "municipio": "Patrocínio",
+          "ibge": "3148103",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "NOVA PONTE",
-          "ibge": null,
+          "municipio": "Piedade do Rio Grande",
+          "ibge": "3150307",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PASSA TEMPO",
-          "ibge": null,
+          "municipio": "Pitangui",
+          "ibge": "3151404",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PATROCÍNIO",
-          "ibge": null,
+          "municipio": "Riachinho",
+          "ibge": "3154457",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PIEDADE DO RIO GRANDE",
-          "ibge": null,
+          "municipio": "Rio Doce",
+          "ibge": "3155009",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PRATA",
-          "ibge": null,
+          "municipio": "Santa Efigênia de Minas",
+          "ibge": "3157500",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "RIO DOCE",
-          "ibge": null,
+          "municipio": "Santo Antônio do Amparo",
+          "ibge": "3159902",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SANTA EFIGENIA DE MINAS",
-          "ibge": null,
+          "municipio": "São Domingos das Dores",
+          "ibge": "3160959",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SANTA RITA DE MINAS",
-          "ibge": null,
+          "municipio": "São Pedro da União",
+          "ibge": "3163904",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SANTO ANTONIO DO AMPARO",
-          "ibge": null,
+          "municipio": "Uruana de Minas",
+          "ibge": "3170479",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "UNAÍ",
-          "ibge": null,
+          "municipio": "Varjão de Minas",
+          "ibge": "3170750",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "VARJAO DE MINAS",
-          "ibge": null,
+          "municipio": "Vieiras",
+          "ibge": "3171402",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "VERDELANDIA",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "VIEIRAS",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "BANDEIRA DO SUL",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "BRUMADINHO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "CAMPO FLORIDO",
-          "ibge": null,
+          "municipio": "Bandeira do Sul",
+          "ibge": "3105301",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CLÁUDIO",
-          "ibge": null,
+          "municipio": "Campo Florido",
+          "ibge": "3111408",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "DESCOBERTO",
-          "ibge": null,
+          "municipio": "Cláudio",
+          "ibge": "3116605",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "DIVINÓPOLIS",
-          "ibge": null,
+          "municipio": "Divinópolis",
+          "ibge": "3122306",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "IBIRITÉ",
-          "ibge": null,
+          "municipio": "Ibirité",
+          "ibge": "3129806",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "INHAUMA",
-          "ibge": null,
+          "municipio": "Inhaúma",
+          "ibge": "3131000",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ITAJUBÁ",
-          "ibge": null,
+          "municipio": "Itajubá",
+          "ibge": "3132404",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ITAÚNA",
-          "ibge": null,
+          "municipio": "Itaúna",
+          "ibge": "3133808",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "LAMBARI",
-          "ibge": null,
+          "municipio": "Maripá de Minas",
+          "ibge": "3140209",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MARIPA DE MINAS",
-          "ibge": null,
+          "municipio": "Pedra do Indaiá",
+          "ibge": "3148905",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PARÁ DE MINAS",
-          "ibge": null,
+          "municipio": "Rio Novo",
+          "ibge": "3155405",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PEDRA DO INDAIA",
-          "ibge": null,
+          "municipio": "Rochedo de Minas",
+          "ibge": "3156205",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "RIO NOVO",
-          "ibge": null,
+          "municipio": "Rodeiro",
+          "ibge": "3156304",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ROCHEDO DE MINAS",
-          "ibge": null,
+          "municipio": "Santa Rita de Caldas",
+          "ibge": "3159209",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "RODEIRO",
-          "ibge": null,
+          "municipio": "São Sebastião da Bela Vista",
+          "ibge": "3164407",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO SEBASTIAO DA BELA VISTA",
-          "ibge": null,
+          "municipio": "Sapucaí-Mirim",
+          "ibge": "3165404",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAPUCAI-MIRIM",
-          "ibge": null,
+          "municipio": "Soledade de Minas",
+          "ibge": "3167806",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SOLEDADE DE MINAS",
-          "ibge": null,
+          "municipio": "Timóteo",
+          "ibge": "3168705",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "TIMÓTEO",
-          "ibge": null,
+          "municipio": "Abre Campo",
+          "ibge": "3100302",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ABRE CAMPO",
-          "ibge": null,
+          "municipio": "Água Boa",
+          "ibge": "3100609",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "AGUA BOA",
-          "ibge": null,
+          "municipio": "Angelândia",
+          "ibge": "3102852",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ANGELANDIA",
-          "ibge": null,
+          "municipio": "Antônio Dias",
+          "ibge": "3103009",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ANTONIO DIAS",
-          "ibge": null,
+          "municipio": "Ataléia",
+          "ibge": "3104700",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ARINOS",
-          "ibge": null,
+          "municipio": "Bocaina de Minas",
+          "ibge": "3107208",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ATALEIA",
-          "ibge": null,
+          "municipio": "Cabeceira Grande",
+          "ibge": "3109451",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "BRAS PIRES",
-          "ibge": null,
+          "municipio": "Cajuri",
+          "ibge": "3110202",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CACHOEIRA DE MINAS",
-          "ibge": null,
+          "municipio": "Campo Azul",
+          "ibge": "3111150",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CAJURI",
-          "ibge": null,
+          "municipio": "Caparaó",
+          "ibge": "3112109",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CAMPO AZUL",
-          "ibge": null,
+          "municipio": "Carmo do Rio Claro",
+          "ibge": "3114402",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CAPARAO",
-          "ibge": null,
+          "municipio": "Chiador",
+          "ibge": "3116209",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CARMO DO RIO CLARO",
-          "ibge": null,
+          "municipio": "Claro dos Poções",
+          "ibge": "3116506",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CHIADOR",
-          "ibge": null,
+          "municipio": "Congonhas do Norte",
+          "ibge": "3118106",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CLARO DOS POCOES",
-          "ibge": null,
+          "municipio": "Estrela do Sul",
+          "ibge": "3124807",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "CONGONHAS DO NORTE",
-          "ibge": null,
+          "municipio": "Gameleiras",
+          "ibge": "3127339",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ESTRELA DO SUL",
-          "ibge": null,
+          "municipio": "Gonçalves",
+          "ibge": "3127404",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "FORMOSO",
-          "ibge": null,
+          "municipio": "Gurinhatã",
+          "ibge": "3129103",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "GAMELEIRAS",
-          "ibge": null,
+          "municipio": "Ibiaí",
+          "ibge": "3129608",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "GONCALVES",
-          "ibge": null,
+          "municipio": "Imbé de Minas",
+          "ibge": "3130556",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "GUARDA-MOR",
-          "ibge": null,
+          "municipio": "Inconfidentes",
+          "ibge": "3130606",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "IBIAI",
-          "ibge": null,
+          "municipio": "Indaiabira",
+          "ibge": "3130655",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "INCONFIDENTES",
-          "ibge": null,
+          "municipio": "Inimutaba",
+          "ibge": "3131109",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "INDAIABIRA",
-          "ibge": null,
+          "municipio": "Ipiaçu",
+          "ibge": "3131406",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "INDIANOPOLIS",
-          "ibge": null,
+          "municipio": "Itaipé",
+          "ibge": "3132305",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "INIMUTABA",
-          "ibge": null,
+          "municipio": "Itueta",
+          "ibge": "3134103",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "IPIACU",
-          "ibge": null,
+          "municipio": "Itumirim",
+          "ibge": "3134301",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ITAIPE",
-          "ibge": null,
+          "municipio": "Itutinga",
+          "ibge": "3134509",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ITUETA",
-          "ibge": null,
+          "municipio": "Jacuí",
+          "ibge": "3134806",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ITUMIRIM",
-          "ibge": null,
+          "municipio": "José Gonçalves de Minas",
+          "ibge": "3136520",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "ITUTINGA",
-          "ibge": null,
+          "municipio": "Ladainha",
+          "ibge": "3137007",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "JACUI",
-          "ibge": null,
+          "municipio": "Lassance",
+          "ibge": "3138104",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "JOSE GONCALVES DE MINAS",
-          "ibge": null,
+          "municipio": "Malacacheta",
+          "ibge": "3139201",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "LADAINHA",
-          "ibge": null,
+          "municipio": "Martins Soares",
+          "ibge": "3140530",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "LASSANCE",
-          "ibge": null,
+          "municipio": "Mato Verde",
+          "ibge": "3141009",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MALACACHETA",
-          "ibge": null,
+          "municipio": "Moeda",
+          "ibge": "3142304",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MARTINS SOARES",
-          "ibge": null,
+          "municipio": "Naque",
+          "ibge": "3144359",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "MOEDA",
-          "ibge": null,
+          "municipio": "Ninheira",
+          "ibge": "3144656",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "NAQUE",
-          "ibge": null,
+          "municipio": "Patis",
+          "ibge": "3147956",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "NINHEIRA",
-          "ibge": null,
+          "municipio": "Perdizes",
+          "ibge": "3149804",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PATIS",
-          "ibge": null,
+          "municipio": "Pimenta",
+          "ibge": "3150505",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "PITANGUI",
-          "ibge": null,
+          "municipio": "Pocrane",
+          "ibge": "3151909",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "POCRANE",
-          "ibge": null,
+          "municipio": "Queluzito",
+          "ibge": "3153806",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "QUELUZITO",
-          "ibge": null,
+          "municipio": "Ressaquinha",
+          "ibge": "3154408",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "RESSAQUINHA",
-          "ibge": null,
+          "municipio": "Santa Bárbara do Tugúrio",
+          "ibge": "3157302",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "RIACHINHO",
-          "ibge": null,
+          "municipio": "Santo Antônio do Aventureiro",
+          "ibge": "3160009",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SANTO ANTONIO DO AVENTUREIRO",
-          "ibge": null,
+          "municipio": "São Francisco do Glória",
+          "ibge": "3161403",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO FRANCISCO DO GLORIA",
-          "ibge": null,
+          "municipio": "São João do Manhuaçu",
+          "ibge": "3162559",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO JOAO DO MANHUACU",
-          "ibge": null,
+          "municipio": "São Sebastião do Rio Verde",
+          "ibge": "3164902",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SAO SEBASTIAO DO RIO VERDE",
-          "ibge": null,
+          "municipio": "São Tomé das Letras",
+          "ibge": "3165206",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SENADOR JOSE BENTO",
-          "ibge": null,
+          "municipio": "Senador José Bento",
+          "ibge": "3165800",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SENHORA DOS REMEDIOS",
-          "ibge": null,
+          "municipio": "Senhora dos Remédios",
+          "ibge": "3166204",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SERRA DOS AIMORES",
-          "ibge": null,
+          "municipio": "Serra dos Aimorés",
+          "ibge": "3166709",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SETUBINHA",
-          "ibge": null,
+          "municipio": "Setubinha",
+          "ibge": "3165552",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "SÃO JOÃO EVANGELISTA",
-          "ibge": null,
+          "municipio": "São João Evangelista",
+          "ibge": "3162807",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "UBAPORANGA",
-          "ibge": null,
+          "municipio": "Ubaporanga",
+          "ibge": "3170057",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "UNIAO DE MINAS",
-          "ibge": null,
+          "municipio": "União de Minas",
+          "ibge": "3170438",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "URUANA DE MINAS",
-          "ibge": null,
+          "municipio": "Vargem Bonita",
+          "ibge": "3170602",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "VARGEM BONITA",
-          "ibge": null,
+          "municipio": "Virgem da Lapa",
+          "ibge": "3171600",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "VIRGEM DA LAPA",
-          "ibge": null,
+          "municipio": "Virgínia",
+          "ibge": "3171709",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "VIRGINIA",
-          "ibge": null,
+          "municipio": "Virgolândia",
+          "ibge": "3171907",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "VIRGOLANDIA",
-          "ibge": null,
+          "municipio": "Fortuna de Minas",
+          "ibge": "3126406",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -4252,7 +4364,7 @@
         {
           "uf": "MG",
           "municipio": "Juiz de Fora",
-          "ibge": null,
+          "ibge": "3136702",
           "value": 0,
           "display_value": "0",
           "share": 0.0
@@ -4262,7 +4374,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -4276,15 +4388,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }

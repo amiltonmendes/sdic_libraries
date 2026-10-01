@@ -4,27 +4,27 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "1.413 atendimentos",
+    "display_value": "1.452 atendimentos",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "flat",
       "label": "0,9% do total nacional · 24ª entre 27 UFs"
     },
-    "value": 1413
+    "value": 1452
   },
   "story": {
     "escopo": "uf",
     "uf": "AP",
     "regra": "meio",
-    "headline": "1.413 atendimentos no Amapá — 0,9% do total nacional, 24ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Amapá ocupa a 24ª posição entre as 27 UFs participantes do programa e responde por 0,9% do programa no país. Dentro do Norte, que soma 10.790 atendimentos, a participação do Amapá é de 13,1%. As empresas atendidas pelo programa no Amapá tiveram ganho médio de 23,6% em produtividade, conforme a modalidade de atendimento. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "headline": "1.452 atendimentos no Amapá — 0,9% do total nacional, 24ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Amapá ocupa a 24ª posição entre as 27 UFs participantes do programa e responde por 0,9% do programa no país. Dentro do Norte, que soma 11.619 atendimentos, a participação do Amapá é de 12,5%. As empresas atendidas pelo programa no Amapá tiveram ganho médio de 24,8% em produtividade, conforme a modalidade de atendimento. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "neutral",
@@ -32,7 +32,7 @@
       },
       {
         "tone": "neutral",
-        "text": "13,1% de tudo que o Norte registra no programa."
+        "text": "12,5% de tudo que o Norte registra no programa."
       }
     ]
   },
@@ -40,32 +40,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -74,17 +66,17 @@
     {
       "id": "senai",
       "label": "SENAI — consultoria técnica (Lean)",
-      "value": 63,
+      "value": 70,
       "unit": "atendimentos",
-      "display_value": "63 atendimentos",
+      "display_value": "70 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 1350,
+      "value": 1382,
       "unit": "atendimentos",
-      "display_value": "1.350 atendimentos",
+      "display_value": "1.382 atendimentos",
       "period": "acumulado"
     },
     {
@@ -101,14 +93,14 @@
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 0,
-      "unit": "operações",
-      "display_value": "0 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 0.0,
+      "unit": "",
+      "display_value": "—",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "— financiados"
+        "label": "0 operações financiadas"
       }
     }
   ],
@@ -128,15 +120,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -162,15 +154,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -180,15 +172,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -198,15 +190,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -216,15 +208,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -234,15 +226,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -252,15 +244,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -283,80 +275,80 @@
       "items": [
         {
           "uf": "AP",
-          "municipio": "MACAPA",
-          "ibge": null,
-          "value": 1025,
-          "display_value": "1.025",
-          "share": 0.7
+          "municipio": "Macapá",
+          "ibge": "1600303",
+          "value": 1066,
+          "display_value": "1.066",
+          "share": 0.6
         },
         {
           "uf": "AP",
-          "municipio": "SANTANA",
-          "ibge": null,
-          "value": 216,
-          "display_value": "216",
+          "municipio": "Santana",
+          "ibge": "1600600",
+          "value": 222,
+          "display_value": "222",
           "share": 0.1
         },
         {
           "uf": "AP",
-          "municipio": "OIAPOQUE",
-          "ibge": null,
+          "municipio": "Oiapoque",
+          "ibge": "1600501",
           "value": 44,
           "display_value": "44",
           "share": 0.0
         },
         {
           "uf": "AP",
-          "municipio": "PORTO GRANDE",
-          "ibge": null,
-          "value": 40,
-          "display_value": "40",
+          "municipio": "Porto Grande",
+          "ibge": "1600535",
+          "value": 43,
+          "display_value": "43",
           "share": 0.0
         },
         {
           "uf": "AP",
-          "municipio": "LARANJAL DO JARI",
-          "ibge": null,
-          "value": 32,
-          "display_value": "32",
+          "municipio": "Laranjal do Jari",
+          "ibge": "1600279",
+          "value": 33,
+          "display_value": "33",
           "share": 0.0
         },
         {
           "uf": "AP",
-          "municipio": "MACAPÁ",
-          "ibge": null,
+          "municipio": "Macapá",
+          "ibge": "1600303",
           "value": 31,
           "display_value": "31",
           "share": 0.0
         },
         {
           "uf": "AP",
-          "municipio": "FERREIRA GOMES",
-          "ibge": null,
+          "municipio": "Pedra Branca do Amapari",
+          "ibge": "1600154",
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "AP",
+          "municipio": "Ferreira Gomes",
+          "ibge": "1600238",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "AP",
-          "municipio": "PEDRA BRANCA DO AMAPARÍ",
-          "ibge": null,
-          "value": 3,
-          "display_value": "3",
-          "share": 0.0
-        },
-        {
-          "uf": "AP",
-          "municipio": "PEDRA BRANCA DO AMAPARI",
-          "ibge": null,
+          "municipio": "Pedra Branca do Amapari",
+          "ibge": "1600154",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "AP",
-          "municipio": "MAZAGAO",
-          "ibge": null,
+          "municipio": "Mazagão",
+          "ibge": "1600402",
           "value": 2,
           "display_value": "2",
           "share": 0.0
@@ -366,7 +358,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -380,15 +372,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }

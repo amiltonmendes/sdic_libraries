@@ -4,35 +4,35 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "3.014 atendimentos",
+    "display_value": "3.408 atendimentos",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "flat",
-      "label": "1,9% do total nacional · 14ª entre 27 UFs"
+      "label": "2,0% do total nacional · 13ª entre 27 UFs"
     },
-    "value": 3014
+    "value": 3408
   },
   "story": {
     "escopo": "uf",
     "uf": "DF",
     "regra": "meio",
-    "headline": "3.014 atendimentos no Distrito Federal — 1,9% do total nacional, 14ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Distrito Federal ocupa a 14ª posição entre as 27 UFs participantes do programa e responde por 1,9% do programa no país. Dentro do Centro-Oeste, que soma 20.650 atendimentos, a participação do Distrito Federal é de 14,6%. As empresas atendidas pelo programa no Distrito Federal tiveram ganho médio de 28,3% em produtividade, conforme a modalidade de atendimento. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "headline": "3.408 atendimentos no Distrito Federal — 2,0% do total nacional, 13ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Distrito Federal ocupa a 13ª posição entre as 27 UFs participantes do programa e responde por 2,0% do programa no país. Dentro do Centro-Oeste, que soma 22.717 atendimentos, a participação do Distrito Federal é de 15,0%. As empresas atendidas pelo programa no Distrito Federal tiveram ganho médio de 28,8% em produtividade, conforme a modalidade de atendimento. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "14ª posição nacional entre as 27 UFs participantes do programa, com 1,9% do total."
+        "text": "13ª posição nacional entre as 27 UFs participantes do programa, com 2,0% do total."
       },
       {
         "tone": "neutral",
-        "text": "14,6% de tudo que o Centro-Oeste registra no programa."
+        "text": "15,0% de tudo que o Centro-Oeste registra no programa."
       }
     ]
   },
@@ -40,32 +40,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -74,17 +66,17 @@
     {
       "id": "senai",
       "label": "SENAI — consultoria técnica (Lean)",
-      "value": 345,
+      "value": 378,
       "unit": "atendimentos",
-      "display_value": "345 atendimentos",
+      "display_value": "378 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 2666,
+      "value": 3027,
       "unit": "atendimentos",
-      "display_value": "2.666 atendimentos",
+      "display_value": "3.027 atendimentos",
       "period": "acumulado"
     },
     {
@@ -96,19 +88,19 @@
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 7,3 mi mobilizados"
+        "label": "R$ 7,7 mi mobilizados"
       }
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 0,
-      "unit": "operações",
-      "display_value": "0 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 0.0,
+      "unit": "",
+      "display_value": "—",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "— financiados"
+        "label": "0 operações financiadas"
       }
     }
   ],
@@ -128,15 +120,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -162,15 +154,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -180,15 +172,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -198,15 +190,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -216,15 +208,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -234,15 +226,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -252,15 +244,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -283,18 +275,18 @@
       "items": [
         {
           "uf": "DF",
-          "municipio": "BRASILIA",
-          "ibge": null,
-          "value": 2982,
-          "display_value": "2.982",
-          "share": 1.9
+          "municipio": "Brasília",
+          "ibge": "5300108",
+          "value": 3394,
+          "display_value": "3.394",
+          "share": 2.0
         },
         {
           "uf": "DF",
-          "municipio": "BRASÍLIA",
-          "ibge": null,
-          "value": 16,
-          "display_value": "16",
+          "municipio": "Brasília",
+          "ibge": "5300108",
+          "value": 14,
+          "display_value": "14",
           "share": 0.0
         },
         {
@@ -310,7 +302,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -324,15 +316,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }

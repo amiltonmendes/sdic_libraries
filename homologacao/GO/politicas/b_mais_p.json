@@ -4,27 +4,27 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "9.147 atendimentos",
+    "display_value": "9.809 atendimentos",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "up",
       "label": "5,9% do total nacional · 4ª entre 27 UFs"
     },
-    "value": 9147
+    "value": 9809
   },
   "story": {
     "escopo": "uf",
     "uf": "GO",
     "regra": "meio",
-    "headline": "9.147 atendimentos em Goiás — 5,9% do total nacional, 4ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Goiás ocupa a 4ª posição entre as 27 UFs participantes do programa e responde por 5,9% do programa no país. Dentro do Centro-Oeste, que soma 20.650 atendimentos, a participação de Goiás é de 44,3%, a maior da região. As empresas atendidas pelo programa em Goiás tiveram ganho médio de 33,3% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 20,2%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "headline": "9.809 atendimentos em Goiás — 5,9% do total nacional, 4ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Goiás ocupa a 4ª posição entre as 27 UFs participantes do programa e responde por 5,9% do programa no país. Dentro do Centro-Oeste, que soma 22.717 atendimentos, a participação de Goiás é de 43,2%, a maior da região. As empresas atendidas pelo programa em Goiás tiveram ganho médio de 33,3% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 20,2%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "pos",
@@ -32,7 +32,7 @@
       },
       {
         "tone": "pos",
-        "text": "44,3% de tudo que o Centro-Oeste registra no programa — maior participação da região."
+        "text": "43,2% de tudo que o Centro-Oeste registra no programa — maior participação da região."
       }
     ]
   },
@@ -40,32 +40,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -74,41 +66,41 @@
     {
       "id": "senai",
       "label": "SENAI — consultoria técnica (Lean)",
-      "value": 905,
+      "value": 996,
       "unit": "atendimentos",
-      "display_value": "905 atendimentos",
+      "display_value": "996 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 8213,
+      "value": 8790,
       "unit": "atendimentos",
-      "display_value": "8.213 atendimentos",
+      "display_value": "8.790 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "embrapii",
       "label": "EMBRAPII — inovação aplicada",
-      "value": 29,
+      "value": 23,
       "unit": "projetos",
-      "display_value": "29 projetos",
+      "display_value": "23 projetos",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 79,0 mi mobilizados"
+        "label": "R$ 70,6 mi mobilizados"
       }
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 0,
-      "unit": "operações",
-      "display_value": "0 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 0.0,
+      "unit": "",
+      "display_value": "—",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "— financiados"
+        "label": "0 operações financiadas"
       }
     }
   ],
@@ -128,15 +120,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -162,15 +154,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -180,15 +172,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -198,15 +190,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -216,15 +208,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -234,15 +226,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -252,15 +244,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -283,856 +275,944 @@
       "items": [
         {
           "uf": "GO",
-          "municipio": "GOIANIA",
-          "ibge": null,
-          "value": 3191,
-          "display_value": "3.191",
-          "share": 2.1
+          "municipio": "Goiânia",
+          "ibge": "5208707",
+          "value": 3404,
+          "display_value": "3.404",
+          "share": 2.0
         },
         {
           "uf": "GO",
-          "municipio": "APARECIDA DE GOIANIA",
-          "ibge": null,
-          "value": 793,
-          "display_value": "793",
+          "municipio": "Aparecida de Goiânia",
+          "ibge": "5201405",
+          "value": 866,
+          "display_value": "866",
           "share": 0.5
         },
         {
           "uf": "GO",
-          "municipio": "ANAPOLIS",
-          "ibge": null,
-          "value": 594,
-          "display_value": "594",
+          "municipio": "Anápolis",
+          "ibge": "5201108",
+          "value": 629,
+          "display_value": "629",
           "share": 0.4
         },
         {
           "uf": "GO",
-          "municipio": "RIO VERDE",
-          "ibge": null,
-          "value": 475,
-          "display_value": "475",
+          "municipio": "Rio Verde",
+          "ibge": "5218805",
+          "value": 520,
+          "display_value": "520",
           "share": 0.3
         },
         {
           "uf": "GO",
-          "municipio": "CATALAO",
-          "ibge": null,
-          "value": 277,
-          "display_value": "277",
+          "municipio": "Catalão",
+          "ibge": "5205109",
+          "value": 285,
+          "display_value": "285",
           "share": 0.2
         },
         {
           "uf": "GO",
-          "municipio": "SENADOR CANEDO",
-          "ibge": null,
+          "municipio": "Senador Canedo",
+          "ibge": "5220454",
           "value": 227,
           "display_value": "227",
           "share": 0.1
         },
         {
           "uf": "GO",
-          "municipio": "CALDAS NOVAS",
-          "ibge": null,
-          "value": 188,
-          "display_value": "188",
+          "municipio": "Caldas Novas",
+          "ibge": "5204508",
+          "value": 202,
+          "display_value": "202",
           "share": 0.1
         },
         {
           "uf": "GO",
-          "municipio": "GOIANESIA",
-          "ibge": null,
-          "value": 159,
-          "display_value": "159",
+          "municipio": "Goianésia",
+          "ibge": "5208608",
+          "value": 185,
+          "display_value": "185",
           "share": 0.1
         },
         {
           "uf": "GO",
-          "municipio": "JATAI",
-          "ibge": null,
-          "value": 158,
-          "display_value": "158",
+          "municipio": "Jataí",
+          "ibge": "5211909",
+          "value": 167,
+          "display_value": "167",
           "share": 0.1
         },
         {
           "uf": "GO",
-          "municipio": "ITABERAI",
-          "ibge": null,
-          "value": 141,
-          "display_value": "141",
+          "municipio": "Itaberaí",
+          "ibge": "5210406",
+          "value": 152,
+          "display_value": "152",
           "share": 0.1
         },
         {
           "uf": "GO",
-          "municipio": "IPORA",
-          "ibge": null,
-          "value": 134,
-          "display_value": "134",
+          "municipio": "Iporá",
+          "ibge": "5210208",
+          "value": 151,
+          "display_value": "151",
           "share": 0.1
         },
         {
           "uf": "GO",
-          "municipio": "LUZIANIA",
-          "ibge": null,
+          "municipio": "Luziânia",
+          "ibge": "5212501",
+          "value": 149,
+          "display_value": "149",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "Valparaíso de Goiás",
+          "ibge": "5221858",
+          "value": 128,
+          "display_value": "128",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "Itumbiara",
+          "ibge": "5211503",
           "value": 127,
           "display_value": "127",
           "share": 0.1
         },
         {
           "uf": "GO",
-          "municipio": "VALPARAISO DE GOIAS",
-          "ibge": null,
-          "value": 114,
-          "display_value": "114",
+          "municipio": "Formosa",
+          "ibge": "5208004",
+          "value": 120,
+          "display_value": "120",
           "share": 0.1
         },
         {
           "uf": "GO",
-          "municipio": "FORMOSA",
-          "ibge": null,
-          "value": 112,
-          "display_value": "112",
+          "municipio": "Jaraguá",
+          "ibge": "5211800",
+          "value": 116,
+          "display_value": "116",
           "share": 0.1
         },
         {
           "uf": "GO",
-          "municipio": "JARAGUA",
-          "ibge": null,
-          "value": 112,
-          "display_value": "112",
+          "municipio": "Águas Lindas de Goiás",
+          "ibge": "5200258",
+          "value": 106,
+          "display_value": "106",
           "share": 0.1
         },
         {
           "uf": "GO",
-          "municipio": "ITUMBIARA",
-          "ibge": null,
-          "value": 109,
-          "display_value": "109",
+          "municipio": "Goianira",
+          "ibge": "5208806",
+          "value": 94,
+          "display_value": "94",
           "share": 0.1
         },
         {
           "uf": "GO",
-          "municipio": "AGUAS LINDAS DE GOIAS",
-          "ibge": null,
-          "value": 98,
-          "display_value": "98",
+          "municipio": "Santo Antônio do Descoberto",
+          "ibge": "5219753",
+          "value": 92,
+          "display_value": "92",
           "share": 0.1
         },
         {
           "uf": "GO",
-          "municipio": "GOIANIRA",
-          "ibge": null,
-          "value": 83,
-          "display_value": "83",
+          "municipio": "Ceres",
+          "ibge": "5205406",
+          "value": 87,
+          "display_value": "87",
           "share": 0.1
         },
         {
           "uf": "GO",
-          "municipio": "NOVO GAMA",
-          "ibge": null,
+          "municipio": "Trindade",
+          "ibge": "5221403",
+          "value": 86,
+          "display_value": "86",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "Posse",
+          "ibge": "5218300",
+          "value": 86,
+          "display_value": "86",
+          "share": 0.1
+        },
+        {
+          "uf": "GO",
+          "municipio": "Novo Gama",
+          "ibge": "5215231",
           "value": 82,
           "display_value": "82",
-          "share": 0.1
-        },
-        {
-          "uf": "GO",
-          "municipio": "TRINDADE",
-          "ibge": null,
-          "value": 79,
-          "display_value": "79",
-          "share": 0.1
-        },
-        {
-          "uf": "GO",
-          "municipio": "CERES",
-          "ibge": null,
-          "value": 79,
-          "display_value": "79",
-          "share": 0.1
-        },
-        {
-          "uf": "GO",
-          "municipio": "POSSE",
-          "ibge": null,
-          "value": 77,
-          "display_value": "77",
-          "share": 0.1
-        },
-        {
-          "uf": "GO",
-          "municipio": "SANTO ANTONIO DO DESCOBERTO",
-          "ibge": null,
-          "value": 77,
-          "display_value": "77",
-          "share": 0.1
-        },
-        {
-          "uf": "GO",
-          "municipio": "CRISTALINA",
-          "ibge": null,
-          "value": 76,
-          "display_value": "76",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "QUIRINOPOLIS",
-          "ibge": null,
-          "value": 71,
-          "display_value": "71",
+          "municipio": "Morrinhos",
+          "ibge": "5213806",
+          "value": 80,
+          "display_value": "80",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "MORRINHOS",
-          "ibge": null,
+          "municipio": "Cristalina",
+          "ibge": "5206206",
+          "value": 78,
+          "display_value": "78",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Porangatu",
+          "ibge": "5218003",
+          "value": 73,
+          "display_value": "73",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Quirinópolis",
+          "ibge": "5218508",
+          "value": 72,
+          "display_value": "72",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Bela Vista de Goiás",
+          "ibge": "5203302",
           "value": 66,
           "display_value": "66",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "PORANGATU",
-          "ibge": null,
-          "value": 65,
-          "display_value": "65",
+          "municipio": "Palmeiras de Goiás",
+          "ibge": "5215702",
+          "value": 63,
+          "display_value": "63",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "BELA VISTA DE GOIAS",
-          "ibge": null,
-          "value": 64,
-          "display_value": "64",
+          "municipio": "Planaltina",
+          "ibge": "5217609",
+          "value": 57,
+          "display_value": "57",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "PLANALTINA",
-          "ibge": null,
-          "value": 55,
-          "display_value": "55",
+          "municipio": "Inhumas",
+          "ibge": "5210000",
+          "value": 52,
+          "display_value": "52",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "INHUMAS",
-          "ibge": null,
+          "municipio": "Jussara",
+          "ibge": "5212204",
           "value": 51,
           "display_value": "51",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "JUSSARA",
-          "ibge": null,
-          "value": 51,
-          "display_value": "51",
+          "municipio": "Uruana",
+          "ibge": "5221700",
+          "value": 50,
+          "display_value": "50",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "PALMEIRAS DE GOIAS",
-          "ibge": null,
-          "value": 51,
-          "display_value": "51",
-          "share": 0.0
-        },
-        {
-          "uf": "GO",
-          "municipio": "GOIATUBA",
-          "ibge": null,
+          "municipio": "Goiatuba",
+          "ibge": "5209101",
           "value": 49,
           "display_value": "49",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "MINEIROS",
-          "ibge": null,
+          "municipio": "Itapaci",
+          "ibge": "5210901",
           "value": 49,
           "display_value": "49",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "PADRE BERNARDO",
-          "ibge": null,
+          "municipio": "Mineiros",
+          "ibge": "5213103",
           "value": 49,
           "display_value": "49",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "URUANA",
-          "ibge": null,
+          "municipio": "Padre Bernardo",
+          "ibge": "5215603",
           "value": 49,
           "display_value": "49",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "ITAPACI",
-          "ibge": null,
-          "value": 48,
-          "display_value": "48",
+          "municipio": "Alexânia",
+          "ibge": "5200308",
+          "value": 46,
+          "display_value": "46",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "ALEXANIA",
-          "ibge": null,
-          "value": 40,
-          "display_value": "40",
+          "municipio": "Campo Limpo de Goiás",
+          "ibge": "5204854",
+          "value": 44,
+          "display_value": "44",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "CAMPO LIMPO DE GOIAS",
-          "ibge": null,
+          "municipio": "Goiânia",
+          "ibge": "5208707",
+          "value": 42,
+          "display_value": "42",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Rialma",
+          "ibge": "5218607",
           "value": 38,
           "display_value": "38",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "PONTALINA",
-          "ibge": null,
-          "value": 36,
-          "display_value": "36",
+          "municipio": "Pontalina",
+          "ibge": "5217708",
+          "value": 37,
+          "display_value": "37",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "SILVANIA",
-          "ibge": null,
+          "municipio": "Silvânia",
+          "ibge": "5220603",
           "value": 35,
           "display_value": "35",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "URUACU",
-          "ibge": null,
+          "municipio": "Uruaçu",
+          "ibge": "5221601",
+          "value": 35,
+          "display_value": "35",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Nerópolis",
+          "ibge": "5214507",
           "value": 34,
           "display_value": "34",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "GOIÂNIA",
-          "ibge": null,
-          "value": 33,
-          "display_value": "33",
+          "municipio": "Pirenópolis",
+          "ibge": "5217302",
+          "value": 32,
+          "display_value": "32",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "PIRENOPOLIS",
-          "ibge": null,
+          "municipio": "Sanclerlândia",
+          "ibge": "5219001",
           "value": 31,
           "display_value": "31",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "SANCLERLANDIA",
-          "ibge": null,
-          "value": 31,
-          "display_value": "31",
-          "share": 0.0
-        },
-        {
-          "uf": "GO",
-          "municipio": "RIALMA",
-          "ibge": null,
-          "value": 29,
-          "display_value": "29",
-          "share": 0.0
-        },
-        {
-          "uf": "GO",
-          "municipio": "NEROPOLIS",
-          "ibge": null,
-          "value": 24,
-          "display_value": "24",
-          "share": 0.0
-        },
-        {
-          "uf": "GO",
-          "municipio": "BARRO ALTO",
-          "ibge": null,
+          "municipio": "Barro Alto",
+          "ibge": "5203203",
           "value": 23,
           "display_value": "23",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "CALDAZINHA",
-          "ibge": null,
+          "municipio": "Caldazinha",
+          "ibge": "5204557",
           "value": 22,
           "display_value": "22",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "CAMPINORTE",
-          "ibge": null,
+          "municipio": "Anápolis",
+          "ibge": "5201108",
           "value": 21,
           "display_value": "21",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "RUBIATABA",
-          "ibge": null,
+          "municipio": "Campinorte",
+          "ibge": "5204706",
+          "value": 21,
+          "display_value": "21",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Rubiataba",
+          "ibge": "5218904",
           "value": 20,
           "display_value": "20",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "SAO LUIS DE MONTES BELOS",
-          "ibge": null,
+          "municipio": "São Luís de Montes Belos",
+          "ibge": "5220108",
           "value": 18,
           "display_value": "18",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "PETROLINA DE GOIAS",
-          "ibge": null,
+          "municipio": "Petrolina de Goiás",
+          "ibge": "5216809",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "NIQUELANDIA",
-          "ibge": null,
+          "municipio": "Santa Helena de Goiás",
+          "ibge": "5219308",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "COCALZINHO DE GOIAS",
-          "ibge": null,
+          "municipio": "Niquelândia",
+          "ibge": "5214606",
+          "value": 16,
+          "display_value": "16",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Cocalzinho de Goiás",
+          "ibge": "5205513",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "SANTA HELENA DE GOIAS",
-          "ibge": null,
+          "municipio": "Hidrolândia",
+          "ibge": "5209705",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "HIDROLANDIA",
-          "ibge": null,
+          "municipio": "Montividiu",
+          "ibge": "5213756",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "MONTIVIDIU",
-          "ibge": null,
-          "value": 15,
-          "display_value": "15",
-          "share": 0.0
-        },
-        {
-          "uf": "GO",
-          "municipio": "GUAPO",
-          "ibge": null,
+          "municipio": "Caçu",
+          "ibge": "5204300",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "GOIANAPOLIS",
-          "ibge": null,
+          "municipio": "Guapó",
+          "ibge": "5209200",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "TEREZOPOLIS DE GOIAS",
-          "ibge": null,
+          "municipio": "Orizona",
+          "ibge": "5215306",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "CACU",
-          "ibge": null,
-          "value": 13,
-          "display_value": "13",
+          "municipio": "Goianápolis",
+          "ibge": "5208400",
+          "value": 14,
+          "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "ANÁPOLIS",
-          "ibge": null,
+          "municipio": "Terezópolis de Goiás",
+          "ibge": "5221197",
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Goianésia",
+          "ibge": "5208608",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "JARAGUÁ",
-          "ibge": null,
+          "municipio": "Cidade Ocidental",
+          "ibge": "5205497",
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Abadiânia",
+          "ibge": "5200100",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "CIDADE OCIDENTAL",
-          "ibge": null,
+          "municipio": "Mara Rosa",
+          "ibge": "5212808",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "ABADIA DE GOIAS",
-          "ibge": null,
+          "municipio": "Abadia de Goiás",
+          "ibge": "5200050",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "GOIANÉSIA",
-          "ibge": null,
+          "municipio": "Jaraguá",
+          "ibge": "5211800",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "NOVA VENEZA",
-          "ibge": null,
+          "municipio": "Nova Veneza",
+          "ibge": "5215009",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "BONFINOPOLIS",
-          "ibge": null,
+          "municipio": "Taquaral de Goiás",
+          "ibge": "5221007",
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Bonfinópolis",
+          "ibge": "5203559",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "CORUMBA DE GOIAS",
-          "ibge": null,
+          "municipio": "Corumbá de Goiás",
+          "ibge": "5205802",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "VIANOPOLIS",
-          "ibge": null,
+          "municipio": "Itaguari",
+          "ibge": "5210562",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "ITAUCU",
-          "ibge": null,
+          "municipio": "Vianópolis",
+          "ibge": "5222005",
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Itapuranga",
+          "ibge": "5211206",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "PIRANHAS",
-          "ibge": null,
+          "municipio": "Iaciara",
+          "ibge": "5209903",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "ITAGUARI",
-          "ibge": null,
+          "municipio": "Itauçu",
+          "ibge": "5211404",
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Piranhas",
+          "ibge": "5217203",
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Taquaral de Goiás",
+          "ibge": "5221007",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "ARAGARCAS",
-          "ibge": null,
+          "municipio": "Aragarças",
+          "ibge": "5201702",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "OURO VERDE DE GOIAS",
-          "ibge": null,
+          "municipio": "Ouro Verde de Goiás",
+          "ibge": "5215405",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "APARECIDA DE GOIÂNIA",
-          "ibge": null,
+          "municipio": "Aragoiânia",
+          "ibge": "5201801",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "ARAGOIANIA",
-          "ibge": null,
+          "municipio": "Uruaçu",
+          "ibge": "5221601",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "ORIZONA",
-          "ibge": null,
+          "municipio": "Guarani de Goiás",
+          "ibge": "5209408",
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Aparecida de Goiânia",
+          "ibge": "5201405",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "GUARANI DE GOIAS",
-          "ibge": null,
-          "value": 4,
-          "display_value": "4",
-          "share": 0.0
-        },
-        {
-          "uf": "GO",
-          "municipio": "ITAPURANGA",
-          "ibge": null,
+          "municipio": "Catalão",
+          "ibge": "5205109",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "LUZIÂNIA",
-          "ibge": null,
+          "municipio": "Acreúna",
+          "ibge": "5200134",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "ACREUNA",
-          "ibge": null,
+          "municipio": "Alto Horizonte",
+          "ibge": "5200555",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "ALTO HORIZONTE",
-          "ibge": null,
+          "municipio": "Carmo do Rio Verde",
+          "ibge": "5205000",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "CARMO DO RIO VERDE",
-          "ibge": null,
-          "value": 3,
-          "display_value": "3",
-          "share": 0.0
-        },
-        {
-          "uf": "GO",
-          "municipio": "ABADIA DE GOIÁS",
-          "ibge": null,
+          "municipio": "Abadia de Goiás",
+          "ibge": "5200050",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "ABADIANIA",
-          "ibge": null,
+          "municipio": "Itaberaí",
+          "ibge": "5210406",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "ALEXÂNIA",
-          "ibge": null,
+          "municipio": "Luziânia",
+          "ibge": "5212501",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "CEZARINA",
-          "ibge": null,
+          "municipio": "Sanclerlândia",
+          "ibge": "5219001",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "HEITORAI",
-          "ibge": null,
+          "municipio": "Cezarina",
+          "ibge": "5205455",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "OUVIDOR",
-          "ibge": null,
+          "municipio": "Fazenda Nova",
+          "ibge": "5207600",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "SANTO ANTONIO DE GOIAS",
-          "ibge": null,
+          "municipio": "Heitoraí",
+          "ibge": "5209606",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "SAO MIGUEL DO PASSA QUATRO",
-          "ibge": null,
+          "municipio": "Ouvidor",
+          "ibge": "5215504",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "TAQUARAL DE GOIAS",
-          "ibge": null,
+          "municipio": "Santo Antônio de Goiás",
+          "ibge": "5219738",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "TRES RANCHOS",
-          "ibge": null,
+          "municipio": "São Miguel do Passa Quatro",
+          "ibge": "5220264",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "CACHOEIRA DOURADA",
-          "ibge": null,
+          "municipio": "Três Ranchos",
+          "ibge": "5221304",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Alexânia",
+          "ibge": "5200308",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "CATALÃO",
-          "ibge": null,
+          "municipio": "Buriti de Goiás",
+          "ibge": "5203939",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "CROMINIA",
-          "ibge": null,
+          "municipio": "Cachoeira Dourada",
+          "ibge": "5204250",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "DAMOLANDIA",
-          "ibge": null,
+          "municipio": "Campos Verdes",
+          "ibge": "5204953",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "GOIANÁPOLIS",
-          "ibge": null,
+          "municipio": "Caçu",
+          "ibge": "5204300",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "GUAPÓ",
-          "ibge": null,
+          "municipio": "Cromínia",
+          "ibge": "5206503",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "ITABERAÍ",
-          "ibge": null,
+          "municipio": "Damolândia",
+          "ibge": "5206800",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "NERÓPOLIS",
-          "ibge": null,
+          "municipio": "Goianápolis",
+          "ibge": "5208400",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "SAO FRANCISCO DE GOIAS",
-          "ibge": null,
+          "municipio": "Guapó",
+          "ibge": "5209200",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "TEREZÓPOLIS DE GOIÁS",
-          "ibge": null,
+          "municipio": "Itaguaru",
+          "ibge": "5210604",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "URUAÇU",
-          "ibge": null,
+          "municipio": "Itapirapuã",
+          "ibge": "5211008",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "ALTO PARAISO DE GOIAS",
-          "ibge": null,
+          "municipio": "Nerópolis",
+          "ibge": "5214507",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Quirinópolis",
+          "ibge": "5218508",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "São Francisco de Goiás",
+          "ibge": "5219902",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Terezópolis de Goiás",
+          "ibge": "5221197",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "GO",
+          "municipio": "Alto Paraíso de Goiás",
+          "ibge": "5200605",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -1147,120 +1227,104 @@
         },
         {
           "uf": "GO",
-          "municipio": "BURITI DE GOIAS",
-          "ibge": null,
+          "municipio": "Buriti de Goiás",
+          "ibge": "5203939",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "CHAPADAO DO CEU",
-          "ibge": null,
+          "municipio": "Chapadão do Céu",
+          "ibge": "5205471",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "FAZENDA NOVA",
-          "ibge": null,
+          "municipio": "Firminópolis",
+          "ibge": "5207808",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "FIRMINOPOLIS",
-          "ibge": null,
+          "municipio": "Goiandira",
+          "ibge": "5208509",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "GOIANDIRA",
-          "ibge": null,
+          "municipio": "Hidrolina",
+          "ibge": "5209804",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "HIDROLINA",
-          "ibge": null,
+          "municipio": "Ipameri",
+          "ibge": "5210109",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "IACIARA",
-          "ibge": null,
+          "municipio": "Leopoldo de Bulhões",
+          "ibge": "5212303",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "IPAMERI",
-          "ibge": null,
+          "municipio": "Minaçu",
+          "ibge": "5213087",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "LEOPOLDO DE BULHOES",
-          "ibge": null,
+          "municipio": "Montes Claros de Goiás",
+          "ibge": "5213707",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "MINACU",
-          "ibge": null,
+          "municipio": "Piracanjuba",
+          "ibge": "5217104",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "MONTES CLAROS DE GOIAS",
-          "ibge": null,
+          "municipio": "Rio Quente",
+          "ibge": "5218789",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "PIRACANJUBA",
-          "ibge": null,
+          "municipio": "Santa Bárbara de Goiás",
+          "ibge": "5219100",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "GO",
-          "municipio": "RIO QUENTE",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "GO",
-          "municipio": "SANTA BARBARA DE GOIAS",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "GO",
-          "municipio": "SAO PATRICIO",
-          "ibge": null,
+          "municipio": "São Patrício",
+          "ibge": "5220280",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -1270,7 +1334,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -1284,15 +1348,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }

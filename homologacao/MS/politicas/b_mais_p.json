@@ -4,35 +4,35 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "4.698 atendimentos",
+    "display_value": "5.119 atendimentos",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "flat",
-      "label": "3,0% do total nacional · 9ª entre 27 UFs"
+      "label": "3,1% do total nacional · 9ª entre 27 UFs"
     },
-    "value": 4698
+    "value": 5119
   },
   "story": {
     "escopo": "uf",
     "uf": "MS",
     "regra": "meio",
-    "headline": "4.698 atendimentos em Mato Grosso do Sul — 3,0% do total nacional, 9ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Mato Grosso do Sul ocupa a 9ª posição entre as 27 UFs participantes do programa e responde por 3,0% do programa no país. Dentro do Centro-Oeste, que soma 20.650 atendimentos, a participação de Mato Grosso do Sul é de 22,8%. As empresas atendidas pelo programa em Mato Grosso do Sul tiveram ganho médio de 30,0% em produtividade, conforme a modalidade de atendimento. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "headline": "5.119 atendimentos em Mato Grosso do Sul — 3,1% do total nacional, 9ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Mato Grosso do Sul ocupa a 9ª posição entre as 27 UFs participantes do programa e responde por 3,1% do programa no país. Dentro do Centro-Oeste, que soma 22.717 atendimentos, a participação de Mato Grosso do Sul é de 22,5%. As empresas atendidas pelo programa em Mato Grosso do Sul tiveram ganho médio de 30,8% em produtividade, conforme a modalidade de atendimento. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "9ª posição nacional entre as 27 UFs participantes do programa, com 3,0% do total."
+        "text": "9ª posição nacional entre as 27 UFs participantes do programa, com 3,1% do total."
       },
       {
         "tone": "neutral",
-        "text": "22,8% de tudo que o Centro-Oeste registra no programa."
+        "text": "22,5% de tudo que o Centro-Oeste registra no programa."
       }
     ]
   },
@@ -40,32 +40,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -74,17 +66,17 @@
     {
       "id": "senai",
       "label": "SENAI — consultoria técnica (Lean)",
-      "value": 304,
+      "value": 334,
       "unit": "atendimentos",
-      "display_value": "304 atendimentos",
+      "display_value": "334 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 4393,
+      "value": 4784,
       "unit": "atendimentos",
-      "display_value": "4.393 atendimentos",
+      "display_value": "4.784 atendimentos",
       "period": "acumulado"
     },
     {
@@ -96,19 +88,19 @@
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 500.000 mobilizados"
+        "label": "R$ 501.151 mobilizados"
       }
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 0,
-      "unit": "operações",
-      "display_value": "0 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 0.0,
+      "unit": "",
+      "display_value": "—",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "— financiados"
+        "label": "0 operações financiadas"
       }
     }
   ],
@@ -128,15 +120,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -162,15 +154,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -180,15 +172,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -198,15 +190,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -216,15 +208,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -234,15 +226,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -252,15 +244,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -283,448 +275,448 @@
       "items": [
         {
           "uf": "MS",
-          "municipio": "CAMPO GRANDE",
-          "ibge": null,
-          "value": 2472,
-          "display_value": "2.472",
+          "municipio": "Campo Grande",
+          "ibge": "5002704",
+          "value": 2686,
+          "display_value": "2.686",
           "share": 1.6
         },
         {
           "uf": "MS",
-          "municipio": "DOURADOS",
-          "ibge": null,
-          "value": 634,
-          "display_value": "634",
-          "share": 0.4
+          "municipio": "Dourados",
+          "ibge": "5003702",
+          "value": 763,
+          "display_value": "763",
+          "share": 0.5
         },
         {
           "uf": "MS",
-          "municipio": "MARACAJU",
-          "ibge": null,
-          "value": 135,
-          "display_value": "135",
+          "municipio": "Maracaju",
+          "ibge": "5005400",
+          "value": 146,
+          "display_value": "146",
           "share": 0.1
         },
         {
           "uf": "MS",
-          "municipio": "NAVIRAI",
-          "ibge": null,
-          "value": 131,
-          "display_value": "131",
+          "municipio": "Naviraí",
+          "ibge": "5005707",
+          "value": 143,
+          "display_value": "143",
           "share": 0.1
         },
         {
           "uf": "MS",
-          "municipio": "CHAPADAO DO SUL",
-          "ibge": null,
-          "value": 120,
-          "display_value": "120",
+          "municipio": "Três Lagoas",
+          "ibge": "5008305",
+          "value": 143,
+          "display_value": "143",
           "share": 0.1
         },
         {
           "uf": "MS",
-          "municipio": "TRES LAGOAS",
-          "ibge": null,
-          "value": 119,
-          "display_value": "119",
+          "municipio": "Chapadão do Sul",
+          "ibge": "5002951",
+          "value": 125,
+          "display_value": "125",
           "share": 0.1
         },
         {
           "uf": "MS",
-          "municipio": "COXIM",
-          "ibge": null,
+          "municipio": "Coxim",
+          "ibge": "5003306",
           "value": 108,
           "display_value": "108",
           "share": 0.1
         },
         {
           "uf": "MS",
-          "municipio": "AQUIDAUANA",
-          "ibge": null,
-          "value": 92,
-          "display_value": "92",
+          "municipio": "Aquidauana",
+          "ibge": "5001102",
+          "value": 98,
+          "display_value": "98",
           "share": 0.1
         },
         {
           "uf": "MS",
-          "municipio": "AMAMBAI",
-          "ibge": null,
-          "value": 87,
-          "display_value": "87",
+          "municipio": "Ponta Porã",
+          "ibge": "5006606",
+          "value": 93,
+          "display_value": "93",
           "share": 0.1
         },
         {
           "uf": "MS",
-          "municipio": "NOVA ANDRADINA",
-          "ibge": null,
-          "value": 81,
-          "display_value": "81",
+          "municipio": "Paranaíba",
+          "ibge": "5006309",
+          "value": 93,
+          "display_value": "93",
           "share": 0.1
         },
         {
           "uf": "MS",
-          "municipio": "PARANAIBA",
-          "ibge": null,
-          "value": 81,
-          "display_value": "81",
+          "municipio": "Nova Andradina",
+          "ibge": "5006200",
+          "value": 89,
+          "display_value": "89",
           "share": 0.1
         },
         {
           "uf": "MS",
-          "municipio": "PONTA PORA",
-          "ibge": null,
-          "value": 75,
-          "display_value": "75",
+          "municipio": "Amambai",
+          "ibge": "5000609",
+          "value": 89,
+          "display_value": "89",
+          "share": 0.1
+        },
+        {
+          "uf": "MS",
+          "municipio": "Bonito",
+          "ibge": "5002209",
+          "value": 77,
+          "display_value": "77",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "BONITO",
-          "ibge": null,
-          "value": 75,
-          "display_value": "75",
-          "share": 0.0
-        },
-        {
-          "uf": "MS",
-          "municipio": "RIO VERDE DE MATO GROSSO",
-          "ibge": null,
+          "municipio": "Rio Verde de Mato Grosso",
+          "ibge": "5007406",
           "value": 52,
           "display_value": "52",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "APARECIDA DO TABOADO",
-          "ibge": null,
-          "value": 32,
-          "display_value": "32",
+          "municipio": "Itaporã",
+          "ibge": "5004502",
+          "value": 40,
+          "display_value": "40",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "ITAPORA",
-          "ibge": null,
-          "value": 29,
-          "display_value": "29",
+          "municipio": "Aparecida do Taboado",
+          "ibge": "5001003",
+          "value": 33,
+          "display_value": "33",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "CAARAPO",
-          "ibge": null,
-          "value": 26,
-          "display_value": "26",
+          "municipio": "Caarapó",
+          "ibge": "5002407",
+          "value": 27,
+          "display_value": "27",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "SAO GABRIEL DO OESTE",
-          "ibge": null,
+          "municipio": "São Gabriel do Oeste",
+          "ibge": "5007695",
           "value": 20,
           "display_value": "20",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "TERENOS",
-          "ibge": null,
+          "municipio": "Terenos",
+          "ibge": "5008008",
           "value": 20,
           "display_value": "20",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "ITAQUIRAÍ",
-          "ibge": null,
+          "municipio": "Deodápolis",
+          "ibge": "5003454",
           "value": 19,
           "display_value": "19",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "DEODAPOLIS",
-          "ibge": null,
+          "municipio": "Itaquiraí",
+          "ibge": "5004601",
+          "value": 19,
+          "display_value": "19",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "Ribas do Rio Pardo",
+          "ibge": "5007109",
           "value": 18,
           "display_value": "18",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "RIBAS DO RIO PARDO",
-          "ibge": null,
+          "municipio": "Três Lagoas",
+          "ibge": "5008305",
           "value": 18,
           "display_value": "18",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "TRÊS LAGOAS",
-          "ibge": null,
-          "value": 18,
-          "display_value": "18",
-          "share": 0.0
-        },
-        {
-          "uf": "MS",
-          "municipio": "SIDROLÂNDIA",
-          "ibge": null,
+          "municipio": "Sidrolândia",
+          "ibge": "5007901",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "IVINHEMA",
-          "ibge": null,
+          "municipio": "Ivinhema",
+          "ibge": "5004700",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "CAARAPÓ",
-          "ibge": null,
+          "municipio": "Caarapó",
+          "ibge": "5002407",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "CORUMBÁ",
-          "ibge": null,
+          "municipio": "Corumbá",
+          "ibge": "5003207",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "PONTA PORÃ",
-          "ibge": null,
+          "municipio": "Ponta Porã",
+          "ibge": "5006606",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "BATAYPORÃ",
-          "ibge": null,
+          "municipio": "Anastácio",
+          "ibge": "5000708",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "JARDIM",
-          "ibge": null,
+          "municipio": "Batayporã",
+          "ibge": "5002001",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "PORTO MURTINHO",
-          "ibge": null,
+          "municipio": "Jardim",
+          "ibge": "5005004",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "CORUMBA",
-          "ibge": null,
+          "municipio": "Porto Murtinho",
+          "ibge": "5006903",
+          "value": 10,
+          "display_value": "10",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "Fátima do Sul",
+          "ibge": "5003801",
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "Corumbá",
+          "ibge": "5003207",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "FATIMA DO SUL",
-          "ibge": null,
+          "municipio": "Glória de Dourados",
+          "ibge": "5004007",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "GLORIA DE DOURADOS",
-          "ibge": null,
+          "municipio": "Rio Brilhante",
+          "ibge": "5007208",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "RIO BRILHANTE",
-          "ibge": null,
-          "value": 8,
-          "display_value": "8",
-          "share": 0.0
-        },
-        {
-          "uf": "MS",
-          "municipio": "ANASTACIO",
-          "ibge": null,
-          "value": 7,
-          "display_value": "7",
-          "share": 0.0
-        },
-        {
-          "uf": "MS",
-          "municipio": "CASSILANDIA",
-          "ibge": null,
+          "municipio": "Cassilândia",
+          "ibge": "5002902",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "CORONEL SAPUCAIA",
-          "ibge": null,
+          "municipio": "Coronel Sapucaia",
+          "ibge": "5003157",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "VICENTINA",
-          "ibge": null,
+          "municipio": "Jaraguari",
+          "ibge": "5004908",
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "Vicentina",
+          "ibge": "5008404",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "BANDEIRANTES",
-          "ibge": null,
+          "municipio": "Bandeirantes",
+          "ibge": "5001508",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "JARAGUARI",
-          "ibge": null,
+          "municipio": "Laguna Carapã",
+          "ibge": "5005251",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "LAGUNA CARAPÃ",
-          "ibge": null,
+          "municipio": "Nova Alvorada do Sul",
+          "ibge": "5006002",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "NOVA ALVORADA DO SUL",
-          "ibge": null,
-          "value": 4,
-          "display_value": "4",
-          "share": 0.0
-        },
-        {
-          "uf": "MS",
-          "municipio": "BATAYPORA",
-          "ibge": null,
+          "municipio": "Sidrolândia",
+          "ibge": "5007901",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "BELA VISTA",
-          "ibge": null,
+          "municipio": "Batayporã",
+          "ibge": "5002001",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "COSTA RICA",
-          "ibge": null,
+          "municipio": "Bela Vista",
+          "ibge": "5002100",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "GUIA LOPES DA LAGUNA",
-          "ibge": null,
+          "municipio": "Costa Rica",
+          "ibge": "5003256",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "MUNDO NOVO",
-          "ibge": null,
+          "municipio": "Guia Lopes da Laguna",
+          "ibge": "5004106",
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "MS",
+          "municipio": "Mundo Novo",
+          "ibge": "5005681",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "NOVO HORIZONTE DO SUL",
-          "ibge": null,
+          "municipio": "Novo Horizonte do Sul",
+          "ibge": "5006259",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "SIDROLANDIA",
-          "ibge": null,
+          "municipio": "Paraíso das Águas",
+          "ibge": "5006275",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "PARAISO DAS AGUAS",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "MS",
-          "municipio": "AGUA CLARA",
-          "ibge": null,
+          "municipio": "Água Clara",
+          "ibge": "5000203",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "CORGUINHO",
-          "ibge": null,
+          "municipio": "Corguinho",
+          "ibge": "5003108",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "IGUATEMI",
-          "ibge": null,
+          "municipio": "Iguatemi",
+          "ibge": "5004304",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "JATEI",
-          "ibge": null,
+          "municipio": "Jateí",
+          "ibge": "5005103",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "MS",
-          "municipio": "ROCHEDO",
-          "ibge": null,
+          "municipio": "Rochedo",
+          "ibge": "5007505",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -734,7 +726,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -748,15 +740,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }

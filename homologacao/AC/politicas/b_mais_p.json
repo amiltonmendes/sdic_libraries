@@ -4,27 +4,27 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "1.097 atendimentos",
+    "display_value": "1.236 atendimentos",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "flat",
       "label": "0,7% do total nacional · 26ª entre 27 UFs"
     },
-    "value": 1097
+    "value": 1236
   },
   "story": {
     "escopo": "uf",
     "uf": "AC",
     "regra": "meio",
-    "headline": "1.097 atendimentos no Acre — 0,7% do total nacional, 26ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Acre ocupa a 26ª posição entre as 27 UFs participantes do programa e responde por 0,7% do programa no país. Dentro do Norte, que soma 10.790 atendimentos, a participação do Acre é de 10,2%. As empresas atendidas pelo programa no Acre tiveram ganho médio de 37,7% em produtividade, conforme a modalidade de atendimento. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "headline": "1.236 atendimentos no Acre — 0,7% do total nacional, 26ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Acre ocupa a 26ª posição entre as 27 UFs participantes do programa e responde por 0,7% do programa no país. Dentro do Norte, que soma 11.619 atendimentos, a participação do Acre é de 10,6%. As empresas atendidas pelo programa no Acre tiveram ganho médio de 37,7% em produtividade, conforme a modalidade de atendimento. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "neutral",
@@ -32,7 +32,7 @@
       },
       {
         "tone": "neutral",
-        "text": "10,2% de tudo que o Norte registra no programa."
+        "text": "10,6% de tudo que o Norte registra no programa."
       }
     ]
   },
@@ -40,32 +40,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -82,9 +74,9 @@
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 1030,
+      "value": 1169,
       "unit": "atendimentos",
-      "display_value": "1.030 atendimentos",
+      "display_value": "1.169 atendimentos",
       "period": "acumulado"
     },
     {
@@ -101,14 +93,14 @@
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 0,
-      "unit": "operações",
-      "display_value": "0 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 0.0,
+      "unit": "",
+      "display_value": "—",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "— financiados"
+        "label": "0 operações financiadas"
       }
     }
   ],
@@ -128,15 +120,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -162,15 +154,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -180,15 +172,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -198,15 +190,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -216,15 +208,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -234,15 +226,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -252,15 +244,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -283,120 +275,120 @@
       "items": [
         {
           "uf": "AC",
-          "municipio": "RIO BRANCO",
-          "ibge": null,
-          "value": 764,
-          "display_value": "764",
+          "municipio": "Rio Branco",
+          "ibge": "1200401",
+          "value": 832,
+          "display_value": "832",
           "share": 0.5
         },
         {
           "uf": "AC",
-          "municipio": "CRUZEIRO DO SUL",
-          "ibge": null,
-          "value": 228,
-          "display_value": "228",
-          "share": 0.1
+          "municipio": "Cruzeiro do Sul",
+          "ibge": "1200203",
+          "value": 280,
+          "display_value": "280",
+          "share": 0.2
         },
         {
           "uf": "AC",
-          "municipio": "EPITACIOLANDIA",
-          "ibge": null,
+          "municipio": "Epitaciolândia",
+          "ibge": "1200252",
           "value": 42,
           "display_value": "42",
           "share": 0.0
         },
         {
           "uf": "AC",
-          "municipio": "BRASILEIA",
-          "ibge": null,
+          "municipio": "Brasiléia",
+          "ibge": "1200104",
           "value": 33,
           "display_value": "33",
           "share": 0.0
         },
         {
           "uf": "AC",
-          "municipio": "XAPURI",
-          "ibge": null,
+          "municipio": "Tarauacá",
+          "ibge": "1200609",
+          "value": 17,
+          "display_value": "17",
+          "share": 0.0
+        },
+        {
+          "uf": "AC",
+          "municipio": "Xapuri",
+          "ibge": "1200708",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "AC",
-          "municipio": "RODRIGUES ALVES",
-          "ibge": null,
+          "municipio": "Rodrigues Alves",
+          "ibge": "1200427",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "AC",
-          "municipio": "MANCIO LIMA",
-          "ibge": null,
+          "municipio": "Mâncio Lima",
+          "ibge": "1200336",
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "AC",
+          "municipio": "Acrelândia",
+          "ibge": "1200013",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "AC",
-          "municipio": "ACRELANDIA",
-          "ibge": null,
-          "value": 3,
-          "display_value": "3",
+          "municipio": "Porto Acre",
+          "ibge": "1200807",
+          "value": 4,
+          "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "AC",
-          "municipio": "SENADOR GUIOMARD",
-          "ibge": null,
+          "municipio": "Senador Guiomard",
+          "ibge": "1200450",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "AC",
-          "municipio": "ACRELÂNDIA",
-          "ibge": null,
+          "municipio": "Plácido de Castro",
+          "ibge": "1200385",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "AC",
-          "municipio": "PLACIDO DE CASTRO",
-          "ibge": null,
+          "municipio": "Bujari",
+          "ibge": "1200138",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "AC",
-          "municipio": "BUJARI",
-          "ibge": null,
+          "municipio": "Marechal Thaumaturgo",
+          "ibge": "1200351",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "AC",
-          "municipio": "MARECHAL THAUMATURGO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "AC",
-          "municipio": "SENA MADUREIRA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "AC",
-          "municipio": "TARAUACA",
-          "ibge": null,
+          "municipio": "Sena Madureira",
+          "ibge": "1200500",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -406,7 +398,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -420,15 +412,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }

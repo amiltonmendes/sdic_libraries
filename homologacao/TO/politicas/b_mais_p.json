@@ -4,27 +4,27 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "720 atendimentos",
+    "display_value": "782 atendimentos",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "flat",
       "label": "0,5% do total nacional · 27ª entre 27 UFs"
     },
-    "value": 720
+    "value": 782
   },
   "story": {
     "escopo": "uf",
     "uf": "TO",
     "regra": "meio",
-    "headline": "720 atendimentos no Tocantins — 0,5% do total nacional, 27ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Tocantins ocupa a 27ª posição entre as 27 UFs participantes do programa e responde por 0,5% do programa no país. Dentro do Norte, que soma 10.790 atendimentos, a participação do Tocantins é de 6,7%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "headline": "782 atendimentos no Tocantins — 0,5% do total nacional, 27ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Tocantins ocupa a 27ª posição entre as 27 UFs participantes do programa e responde por 0,5% do programa no país. Dentro do Norte, que soma 11.619 atendimentos, a participação do Tocantins é de 6,7%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "neutral",
@@ -40,32 +40,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -74,17 +66,17 @@
     {
       "id": "senai",
       "label": "SENAI — consultoria técnica (Lean)",
-      "value": 76,
+      "value": 79,
       "unit": "atendimentos",
-      "display_value": "76 atendimentos",
+      "display_value": "79 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 643,
+      "value": 702,
       "unit": "atendimentos",
-      "display_value": "643 atendimentos",
+      "display_value": "702 atendimentos",
       "period": "acumulado"
     },
     {
@@ -96,19 +88,19 @@
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 953.161 mobilizados"
+        "label": "R$ 990.954 mobilizados"
       }
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 0,
-      "unit": "operações",
-      "display_value": "0 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 0.0,
+      "unit": "",
+      "display_value": "—",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "— financiados"
+        "label": "0 operações financiadas"
       }
     }
   ],
@@ -128,15 +120,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -162,15 +154,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -180,15 +172,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -198,15 +190,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -216,15 +208,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -234,15 +226,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -252,15 +244,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -283,280 +275,304 @@
       "items": [
         {
           "uf": "TO",
-          "municipio": "PALMAS",
-          "ibge": null,
-          "value": 241,
-          "display_value": "241",
+          "municipio": "Palmas",
+          "ibge": "1721000",
+          "value": 273,
+          "display_value": "273",
           "share": 0.2
         },
         {
           "uf": "TO",
-          "municipio": "ARAGUAINA",
-          "ibge": null,
-          "value": 223,
-          "display_value": "223",
+          "municipio": "Araguaína",
+          "ibge": "1702109",
+          "value": 235,
+          "display_value": "235",
           "share": 0.1
         },
         {
           "uf": "TO",
-          "municipio": "GURUPI",
-          "ibge": null,
-          "value": 129,
-          "display_value": "129",
+          "municipio": "Gurupi",
+          "ibge": "1709500",
+          "value": 144,
+          "display_value": "144",
           "share": 0.1
         },
         {
           "uf": "TO",
-          "municipio": "PARAISO DO TOCANTINS",
-          "ibge": null,
-          "value": 53,
-          "display_value": "53",
+          "municipio": "Paraíso do Tocantins",
+          "ibge": "1716109",
+          "value": 55,
+          "display_value": "55",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "PORTO NACIONAL",
-          "ibge": null,
+          "municipio": "Porto Nacional",
+          "ibge": "1718204",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "PEIXE",
-          "ibge": null,
+          "municipio": "Peixe",
+          "ibge": "1716604",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "AUGUSTINÓPOLIS",
-          "ibge": null,
+          "municipio": "Augustinópolis",
+          "ibge": "1702554",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "FORMOSO DO ARAGUAIA",
-          "ibge": null,
+          "municipio": "Formoso do Araguaia",
+          "ibge": "1708205",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "CARMOLANDIA",
-          "ibge": null,
+          "municipio": "Carmolândia",
+          "ibge": "1703883",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "PALMEIRAS DO TOCANTINS",
-          "ibge": null,
+          "municipio": "Palmeiras do Tocantins",
+          "ibge": "1713809",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "WANDERLANDIA",
-          "ibge": null,
+          "municipio": "Wanderlândia",
+          "ibge": "1722081",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "ARAGUATINS",
-          "ibge": null,
+          "municipio": "Araguatins",
+          "ibge": "1702208",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "BURITI DO TOCANTINS",
-          "ibge": null,
+          "municipio": "Buriti do Tocantins",
+          "ibge": "1703800",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "COLMEIA",
-          "ibge": null,
+          "municipio": "Colméia",
+          "ibge": "1716703",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "PUGMIL",
-          "ibge": null,
+          "municipio": "Pugmil",
+          "ibge": "1718451",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "BARROLANDIA",
-          "ibge": null,
+          "municipio": "Ananás",
+          "ibge": "1701002",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "COLINAS DO TOCANTINS",
-          "ibge": null,
+          "municipio": "Barrolândia",
+          "ibge": "1703107",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "DUERE",
-          "ibge": null,
+          "municipio": "Colinas do Tocantins",
+          "ibge": "1705508",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "AUGUSTINOPOLIS",
-          "ibge": null,
+          "municipio": "Dueré",
+          "ibge": "1707306",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "TO",
+          "municipio": "Presidente Kennedy",
+          "ibge": "1718402",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "TO",
+          "municipio": "Augustinópolis",
+          "ibge": "1702554",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "BERNARDO SAYAO",
-          "ibge": null,
+          "municipio": "Barrolândia",
+          "ibge": "1703107",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "CRISTALANDIA",
-          "ibge": null,
+          "municipio": "Bernardo Sayão",
+          "ibge": "1703206",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "PIUM",
-          "ibge": null,
+          "municipio": "Cristalândia",
+          "ibge": "1706100",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "SAO SEBASTIAO DO TOCANTINS",
-          "ibge": null,
+          "municipio": "Pium",
+          "ibge": "1717503",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "ANANAS",
-          "ibge": null,
+          "municipio": "São Sebastião do Tocantins",
+          "ibge": "1720309",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "APARECIDA DO RIO NEGRO",
-          "ibge": null,
+          "municipio": "Aparecida do Rio Negro",
+          "ibge": "1701101",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "ARAGOMINAS",
-          "ibge": null,
+          "municipio": "Aragominas",
+          "ibge": "1701309",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "ARAGUANA",
-          "ibge": null,
+          "municipio": "Araguanã",
+          "ibge": "1702158",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "BABACULANDIA",
-          "ibge": null,
+          "municipio": "Babaçulândia",
+          "ibge": "1703008",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "BARRA DO OURO",
-          "ibge": null,
+          "municipio": "Barra do Ouro",
+          "ibge": "1703073",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "DARCINOPOLIS",
-          "ibge": null,
+          "municipio": "Cachoeirinha",
+          "ibge": "1703826",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "MIRACEMA DO TOCANTINS",
-          "ibge": null,
+          "municipio": "Darcinópolis",
+          "ibge": "1706506",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "MURICILANDIA",
-          "ibge": null,
+          "municipio": "Miracema do Tocantins",
+          "ibge": "1713205",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "NOVA OLINDA",
-          "ibge": null,
+          "municipio": "Muricilândia",
+          "ibge": "1713957",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "PRESIDENTE KENNEDY",
-          "ibge": null,
+          "municipio": "Nova Olinda",
+          "ibge": "1714880",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "TO",
-          "municipio": "SANTA MARIA DO TOCANTINS",
-          "ibge": null,
+          "municipio": "Riachinho",
+          "ibge": "1718550",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "TO",
+          "municipio": "Santa Maria do Tocantins",
+          "ibge": "1718881",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -566,7 +582,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -580,15 +596,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }

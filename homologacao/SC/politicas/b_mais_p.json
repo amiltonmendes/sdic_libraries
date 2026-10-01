@@ -4,35 +4,35 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "14.089 atendimentos",
+    "display_value": "14.812 atendimentos",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "up",
-      "label": "9,1% do total nacional · 3ª entre 27 UFs"
+      "label": "8,8% do total nacional · 3ª entre 27 UFs"
     },
-    "value": 14089
+    "value": 14812
   },
   "story": {
     "escopo": "uf",
     "uf": "SC",
     "regra": "top",
-    "headline": "Santa Catarina é o 3º do país: 14.089 atendimentos, 9,1% do total nacional.",
-    "lede": "Santa Catarina ocupa a 3ª posição entre as 27 UFs participantes do programa e responde por 9,1% do programa no país. Dentro do Sul, que soma 26.693 atendimentos, a participação de Santa Catarina é de 52,8%, a maior da região. As empresas atendidas pelo programa em Santa Catarina tiveram ganho médio de 32,6% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 19,6%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "headline": "Santa Catarina é o 3º do país: 14.812 atendimentos, 8,8% do total nacional.",
+    "lede": "Santa Catarina ocupa a 3ª posição entre as 27 UFs participantes do programa e responde por 8,8% do programa no país. Dentro do Sul, que soma 28.496 atendimentos, a participação de Santa Catarina é de 52,0%, a maior da região. As empresas atendidas pelo programa em Santa Catarina tiveram ganho médio de 32,6% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 19,5%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "pos",
-        "text": "3ª posição nacional entre as 27 UFs participantes do programa, com 9,1% do total."
+        "text": "3ª posição nacional entre as 27 UFs participantes do programa, com 8,8% do total."
       },
       {
         "tone": "pos",
-        "text": "52,8% de tudo que o Sul registra no programa — maior participação da região."
+        "text": "52,0% de tudo que o Sul registra no programa — maior participação da região."
       }
     ]
   },
@@ -40,32 +40,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -74,41 +66,41 @@
     {
       "id": "senai",
       "label": "SENAI — consultoria técnica (Lean)",
-      "value": 1903,
+      "value": 2011,
       "unit": "atendimentos",
-      "display_value": "1.903 atendimentos",
+      "display_value": "2.011 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 12151,
+      "value": 12763,
       "unit": "atendimentos",
-      "display_value": "12.151 atendimentos",
+      "display_value": "12.763 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "embrapii",
       "label": "EMBRAPII — inovação aplicada",
-      "value": 27,
+      "value": 29,
       "unit": "projetos",
-      "display_value": "27 projetos",
+      "display_value": "29 projetos",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 33,8 mi mobilizados"
+        "label": "R$ 39,1 mi mobilizados"
       }
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 8,
-      "unit": "operações",
-      "display_value": "8 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 63930326.62,
+      "unit": "",
+      "display_value": "R$ 63,9 mi",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 53,7 mi financiados"
+        "label": "10 operações financiadas"
       }
     }
   ],
@@ -128,15 +120,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -162,15 +154,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -180,15 +172,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -198,15 +190,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -216,15 +208,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -234,15 +226,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -252,15 +244,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -283,1408 +275,1464 @@
       "items": [
         {
           "uf": "SC",
-          "municipio": "FLORIANOPOLIS",
-          "ibge": null,
-          "value": 1024,
-          "display_value": "1.024",
-          "share": 0.7
+          "municipio": "Florianópolis",
+          "ibge": "4205407",
+          "value": 1059,
+          "display_value": "1.059",
+          "share": 0.6
         },
         {
           "uf": "SC",
-          "municipio": "JOINVILLE",
-          "ibge": null,
-          "value": 786,
-          "display_value": "786",
+          "municipio": "Joinville",
+          "ibge": "4209102",
+          "value": 839,
+          "display_value": "839",
           "share": 0.5
         },
         {
           "uf": "SC",
-          "municipio": "BLUMENAU",
-          "ibge": null,
-          "value": 658,
-          "display_value": "658",
+          "municipio": "Blumenau",
+          "ibge": "4202404",
+          "value": 679,
+          "display_value": "679",
           "share": 0.4
         },
         {
           "uf": "SC",
-          "municipio": "LAGES",
-          "ibge": null,
-          "value": 483,
-          "display_value": "483",
+          "municipio": "Lages",
+          "ibge": "4209300",
+          "value": 513,
+          "display_value": "513",
           "share": 0.3
         },
         {
           "uf": "SC",
-          "municipio": "ITAJAI",
-          "ibge": null,
-          "value": 476,
-          "display_value": "476",
+          "municipio": "Criciúma",
+          "ibge": "4204608",
+          "value": 496,
+          "display_value": "496",
           "share": 0.3
         },
         {
           "uf": "SC",
-          "municipio": "CRICIUMA",
-          "ibge": null,
-          "value": 461,
-          "display_value": "461",
+          "municipio": "Itajaí",
+          "ibge": "4208203",
+          "value": 493,
+          "display_value": "493",
           "share": 0.3
         },
         {
           "uf": "SC",
-          "municipio": "CHAPECO",
-          "ibge": null,
-          "value": 444,
-          "display_value": "444",
+          "municipio": "Chapecó",
+          "ibge": "4204202",
+          "value": 462,
+          "display_value": "462",
           "share": 0.3
         },
         {
           "uf": "SC",
-          "municipio": "SAO JOSE",
-          "ibge": null,
-          "value": 429,
-          "display_value": "429",
+          "municipio": "São Bento do Sul",
+          "ibge": "4215802",
+          "value": 460,
+          "display_value": "460",
           "share": 0.3
         },
         {
           "uf": "SC",
-          "municipio": "SAO BENTO DO SUL",
-          "ibge": null,
-          "value": 424,
-          "display_value": "424",
+          "municipio": "Balneário Camboriú",
+          "ibge": "4202008",
+          "value": 456,
+          "display_value": "456",
           "share": 0.3
         },
         {
           "uf": "SC",
-          "municipio": "BALNEARIO CAMBORIU",
-          "ibge": null,
-          "value": 422,
-          "display_value": "422",
+          "municipio": "São José",
+          "ibge": "4216602",
+          "value": 454,
+          "display_value": "454",
           "share": 0.3
         },
         {
           "uf": "SC",
-          "municipio": "JARAGUA DO SUL",
-          "ibge": null,
-          "value": 346,
-          "display_value": "346",
+          "municipio": "Jaraguá do Sul",
+          "ibge": "4208906",
+          "value": 384,
+          "display_value": "384",
           "share": 0.2
         },
         {
           "uf": "SC",
-          "municipio": "PALHOCA",
-          "ibge": null,
-          "value": 302,
-          "display_value": "302",
+          "municipio": "Palhoça",
+          "ibge": "4211900",
+          "value": 313,
+          "display_value": "313",
           "share": 0.2
         },
         {
           "uf": "SC",
-          "municipio": "BRUSQUE",
-          "ibge": null,
+          "municipio": "Brusque",
+          "ibge": "4202909",
+          "value": 305,
+          "display_value": "305",
+          "share": 0.2
+        },
+        {
+          "uf": "SC",
+          "municipio": "Tubarão",
+          "ibge": "4218707",
           "value": 287,
           "display_value": "287",
           "share": 0.2
         },
         {
           "uf": "SC",
-          "municipio": "TUBARAO",
-          "ibge": null,
-          "value": 273,
-          "display_value": "273",
+          "municipio": "Itapema",
+          "ibge": "4208302",
+          "value": 269,
+          "display_value": "269",
           "share": 0.2
         },
         {
           "uf": "SC",
-          "municipio": "ITAPEMA",
-          "ibge": null,
-          "value": 244,
-          "display_value": "244",
-          "share": 0.2
-        },
-        {
-          "uf": "SC",
-          "municipio": "CACADOR",
-          "ibge": null,
-          "value": 201,
-          "display_value": "201",
+          "municipio": "Caçador",
+          "ibge": "4203006",
+          "value": 205,
+          "display_value": "205",
           "share": 0.1
         },
         {
           "uf": "SC",
-          "municipio": "IMBITUBA",
-          "ibge": null,
-          "value": 174,
-          "display_value": "174",
+          "municipio": "Gaspar",
+          "ibge": "4205902",
+          "value": 180,
+          "display_value": "180",
           "share": 0.1
         },
         {
           "uf": "SC",
-          "municipio": "GASPAR",
-          "ibge": null,
-          "value": 171,
-          "display_value": "171",
+          "municipio": "Imbituba",
+          "ibge": "4207304",
+          "value": 178,
+          "display_value": "178",
           "share": 0.1
         },
         {
           "uf": "SC",
-          "municipio": "JOACABA",
-          "ibge": null,
-          "value": 165,
-          "display_value": "165",
+          "municipio": "Joaçaba",
+          "ibge": "4209003",
+          "value": 169,
+          "display_value": "169",
           "share": 0.1
         },
         {
           "uf": "SC",
-          "municipio": "CAMBORIU",
-          "ibge": null,
-          "value": 162,
-          "display_value": "162",
+          "municipio": "Camboriú",
+          "ibge": "4203204",
+          "value": 167,
+          "display_value": "167",
           "share": 0.1
         },
         {
           "uf": "SC",
-          "municipio": "CONCORDIA",
-          "ibge": null,
-          "value": 160,
-          "display_value": "160",
+          "municipio": "Curitibanos",
+          "ibge": "4204806",
+          "value": 164,
+          "display_value": "164",
           "share": 0.1
         },
         {
           "uf": "SC",
-          "municipio": "CURITIBANOS",
-          "ibge": null,
-          "value": 148,
-          "display_value": "148",
+          "municipio": "Concórdia",
+          "ibge": "4204301",
+          "value": 163,
+          "display_value": "163",
           "share": 0.1
         },
         {
           "uf": "SC",
-          "municipio": "BIGUACU",
-          "ibge": null,
-          "value": 139,
-          "display_value": "139",
+          "municipio": "Içara",
+          "ibge": "4207007",
+          "value": 141,
+          "display_value": "141",
           "share": 0.1
         },
         {
           "uf": "SC",
-          "municipio": "ICARA",
-          "ibge": null,
-          "value": 128,
-          "display_value": "128",
+          "municipio": "Biguaçu",
+          "ibge": "4202305",
+          "value": 140,
+          "display_value": "140",
           "share": 0.1
         },
         {
           "uf": "SC",
-          "municipio": "MAFRA",
-          "ibge": null,
-          "value": 121,
-          "display_value": "121",
+          "municipio": "Rio do Sul",
+          "ibge": "4214805",
+          "value": 132,
+          "display_value": "132",
           "share": 0.1
         },
         {
           "uf": "SC",
-          "municipio": "TIJUCAS",
-          "ibge": null,
-          "value": 121,
-          "display_value": "121",
+          "municipio": "Tijucas",
+          "ibge": "4218004",
+          "value": 130,
+          "display_value": "130",
           "share": 0.1
         },
         {
           "uf": "SC",
-          "municipio": "RIO DO SUL",
-          "ibge": null,
-          "value": 118,
-          "display_value": "118",
+          "municipio": "Indaial",
+          "ibge": "4207502",
+          "value": 125,
+          "display_value": "125",
           "share": 0.1
         },
         {
           "uf": "SC",
-          "municipio": "INDAIAL",
-          "ibge": null,
-          "value": 116,
-          "display_value": "116",
+          "municipio": "Mafra",
+          "ibge": "4210100",
+          "value": 124,
+          "display_value": "124",
           "share": 0.1
         },
         {
           "uf": "SC",
-          "municipio": "SAO MIGUEL DO OESTE",
-          "ibge": null,
-          "value": 110,
-          "display_value": "110",
+          "municipio": "Maravilha",
+          "ibge": "4210506",
+          "value": 117,
+          "display_value": "117",
           "share": 0.1
         },
         {
           "uf": "SC",
-          "municipio": "MARAVILHA",
-          "ibge": null,
+          "municipio": "São Miguel do Oeste",
+          "ibge": "4217204",
+          "value": 115,
+          "display_value": "115",
+          "share": 0.1
+        },
+        {
+          "uf": "SC",
+          "municipio": "Navegantes",
+          "ibge": "4211306",
+          "value": 112,
+          "display_value": "112",
+          "share": 0.1
+        },
+        {
+          "uf": "SC",
+          "municipio": "Porto Belo",
+          "ibge": "4213500",
+          "value": 111,
+          "display_value": "111",
+          "share": 0.1
+        },
+        {
+          "uf": "SC",
+          "municipio": "Pomerode",
+          "ibge": "4213203",
           "value": 108,
           "display_value": "108",
           "share": 0.1
         },
         {
           "uf": "SC",
-          "municipio": "TIMBO",
-          "ibge": null,
-          "value": 105,
-          "display_value": "105",
+          "municipio": "Timbó",
+          "ibge": "4218202",
+          "value": 108,
+          "display_value": "108",
           "share": 0.1
         },
         {
           "uf": "SC",
-          "municipio": "POMERODE",
-          "ibge": null,
+          "municipio": "Rio Negrinho",
+          "ibge": "4215000",
+          "value": 106,
+          "display_value": "106",
+          "share": 0.1
+        },
+        {
+          "uf": "SC",
+          "municipio": "Xanxerê",
+          "ibge": "4219507",
           "value": 104,
           "display_value": "104",
           "share": 0.1
         },
         {
           "uf": "SC",
-          "municipio": "NAVEGANTES",
-          "ibge": null,
-          "value": 101,
-          "display_value": "101",
+          "municipio": "São Joaquim",
+          "ibge": "4216503",
+          "value": 94,
+          "display_value": "94",
           "share": 0.1
         },
         {
           "uf": "SC",
-          "municipio": "XANXERE",
-          "ibge": null,
-          "value": 101,
-          "display_value": "101",
+          "municipio": "Araranguá",
+          "ibge": "4201406",
+          "value": 87,
+          "display_value": "87",
           "share": 0.1
         },
         {
           "uf": "SC",
-          "municipio": "RIO NEGRINHO",
-          "ibge": null,
-          "value": 96,
-          "display_value": "96",
-          "share": 0.1
+          "municipio": "Luiz Alves",
+          "ibge": "4210001",
+          "value": 82,
+          "display_value": "82",
+          "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PORTO BELO",
-          "ibge": null,
-          "value": 95,
-          "display_value": "95",
-          "share": 0.1
+          "municipio": "Bombinhas",
+          "ibge": "4202453",
+          "value": 81,
+          "display_value": "81",
+          "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SAO JOAQUIM",
-          "ibge": null,
-          "value": 85,
-          "display_value": "85",
-          "share": 0.1
-        },
-        {
-          "uf": "SC",
-          "municipio": "ARARANGUA",
-          "ibge": null,
-          "value": 84,
-          "display_value": "84",
-          "share": 0.1
-        },
-        {
-          "uf": "SC",
-          "municipio": "LUIZ ALVES",
-          "ibge": null,
+          "municipio": "Garopaba",
+          "ibge": "4205704",
           "value": 77,
           "display_value": "77",
-          "share": 0.1
-        },
-        {
-          "uf": "SC",
-          "municipio": "GAROPABA",
-          "ibge": null,
-          "value": 76,
-          "display_value": "76",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "BOMBINHAS",
-          "ibge": null,
-          "value": 75,
-          "display_value": "75",
+          "municipio": "Guaramirim",
+          "ibge": "4206504",
+          "value": 74,
+          "display_value": "74",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "VIDEIRA",
-          "ibge": null,
-          "value": 72,
-          "display_value": "72",
+          "municipio": "Videira",
+          "ibge": "4219309",
+          "value": 74,
+          "display_value": "74",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "GUARAMIRIM",
-          "ibge": null,
-          "value": 71,
-          "display_value": "71",
+          "municipio": "Pinhalzinho",
+          "ibge": "4212908",
+          "value": 69,
+          "display_value": "69",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PINHALZINHO",
-          "ibge": null,
-          "value": 67,
-          "display_value": "67",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "SOMBRIO",
-          "ibge": null,
-          "value": 63,
-          "display_value": "63",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "XAXIM",
-          "ibge": null,
-          "value": 60,
-          "display_value": "60",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "ARAQUARI",
-          "ibge": null,
-          "value": 58,
-          "display_value": "58",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "CAMPOS NOVOS",
-          "ibge": null,
-          "value": 55,
-          "display_value": "55",
+          "municipio": "Sombrio",
+          "ibge": "4217709",
+          "value": 66,
+          "display_value": "66",
           "share": 0.0
         },
         {
           "uf": "SC",
           "municipio": "BALNEARIO DE PICARRAS",
           "ibge": null,
+          "value": 64,
+          "display_value": "64",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Barra Velha",
+          "ibge": "4202107",
+          "value": 61,
+          "display_value": "61",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Xaxim",
+          "ibge": "4219705",
+          "value": 60,
+          "display_value": "60",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Araquari",
+          "ibge": "4201307",
+          "value": 59,
+          "display_value": "59",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Guabiruba",
+          "ibge": "4206306",
+          "value": 57,
+          "display_value": "57",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Campos Novos",
+          "ibge": "4203600",
+          "value": 55,
+          "display_value": "55",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Canoinhas",
+          "ibge": "4203808",
+          "value": 55,
+          "display_value": "55",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Fraiburgo",
+          "ibge": "4205506",
           "value": 54,
           "display_value": "54",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "FRAIBURGO",
-          "ibge": null,
-          "value": 54,
-          "display_value": "54",
+          "municipio": "Campo Alegre",
+          "ibge": "4203303",
+          "value": 53,
+          "display_value": "53",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "BARRA VELHA",
-          "ibge": null,
+          "municipio": "Morro da Fumaça",
+          "ibge": "4211207",
           "value": 52,
           "display_value": "52",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "CANOINHAS",
-          "ibge": null,
-          "value": 51,
-          "display_value": "51",
+          "municipio": "Forquilhinha",
+          "ibge": "4205456",
+          "value": 50,
+          "display_value": "50",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "CAMPO ALEGRE",
-          "ibge": null,
-          "value": 47,
-          "display_value": "47",
+          "municipio": "Herval d'Oeste",
+          "ibge": "4206702",
+          "value": 49,
+          "display_value": "49",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "FORQUILHINHA",
-          "ibge": null,
-          "value": 47,
-          "display_value": "47",
+          "municipio": "Ilhota",
+          "ibge": "4207106",
+          "value": 49,
+          "display_value": "49",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ILHOTA",
-          "ibge": null,
-          "value": 47,
-          "display_value": "47",
+          "municipio": "Orleans",
+          "ibge": "4211702",
+          "value": 49,
+          "display_value": "49",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "MORRO DA FUMACA",
-          "ibge": null,
-          "value": 47,
-          "display_value": "47",
+          "municipio": "Jaguaruna",
+          "ibge": "4208807",
+          "value": 48,
+          "display_value": "48",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ORLEANS",
-          "ibge": null,
+          "municipio": "Santo Amaro da Imperatriz",
+          "ibge": "4215703",
+          "value": 48,
+          "display_value": "48",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Laguna",
+          "ibge": "4209409",
           "value": 46,
           "display_value": "46",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "JAGUARUNA",
-          "ibge": null,
+          "municipio": "Nova Veneza",
+          "ibge": "4211603",
           "value": 45,
           "display_value": "45",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SANTO AMARO DA IMPERATRIZ",
-          "ibge": null,
+          "municipio": "Urubici",
+          "ibge": "4218905",
           "value": 45,
           "display_value": "45",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "HERVAL D'OESTE",
-          "ibge": null,
+          "municipio": "Presidente Getúlio",
+          "ibge": "4214003",
           "value": 44,
           "display_value": "44",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "URUBICI",
-          "ibge": null,
-          "value": 44,
-          "display_value": "44",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "LAGUNA",
-          "ibge": null,
-          "value": 43,
-          "display_value": "43",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "SAO JOAO BATISTA",
-          "ibge": null,
-          "value": 42,
-          "display_value": "42",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "PRESIDENTE GETULIO",
-          "ibge": null,
+          "municipio": "São João Batista",
+          "ibge": "4216305",
           "value": 41,
           "display_value": "41",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "BRACO DO NORTE",
-          "ibge": null,
+          "municipio": "Braço do Norte",
+          "ibge": "4202800",
           "value": 40,
           "display_value": "40",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "GUABIRUBA",
-          "ibge": null,
-          "value": 40,
-          "display_value": "40",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "TURVO",
-          "ibge": null,
+          "municipio": "Itapiranga",
+          "ibge": "4208401",
           "value": 39,
           "display_value": "39",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "BOM RETIRO",
-          "ibge": null,
+          "municipio": "Seara",
+          "ibge": "4217501",
+          "value": 39,
+          "display_value": "39",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Bom Retiro",
+          "ibge": "4202602",
           "value": 38,
           "display_value": "38",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ITAPIRANGA",
-          "ibge": null,
+          "municipio": "Turvo",
+          "ibge": "4218806",
           "value": 38,
           "display_value": "38",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "NOVA VENEZA",
-          "ibge": null,
-          "value": 38,
-          "display_value": "38",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "SEARA",
-          "ibge": null,
-          "value": 38,
-          "display_value": "38",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "IBIRAMA",
-          "ibge": null,
+          "municipio": "Ibirama",
+          "ibge": "4206900",
           "value": 37,
           "display_value": "37",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "MASSARANDUBA",
-          "ibge": null,
+          "municipio": "Iporã do Oeste",
+          "ibge": "4207650",
           "value": 37,
           "display_value": "37",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "URUSSANGA",
-          "ibge": null,
+          "municipio": "Massaranduba",
+          "ibge": "4210605",
           "value": 37,
           "display_value": "37",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "CATANDUVAS",
-          "ibge": null,
+          "municipio": "Urussanga",
+          "ibge": "4219002",
+          "value": 37,
+          "display_value": "37",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Catanduvas",
+          "ibge": "4204004",
           "value": 36,
           "display_value": "36",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "IPORA DO OESTE",
-          "ibge": null,
+          "municipio": "Cocal do Sul",
+          "ibge": "4204251",
+          "value": 36,
+          "display_value": "36",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Águas Mornas",
+          "ibge": "4200606",
           "value": 35,
           "display_value": "35",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "CORUPA",
-          "ibge": null,
+          "municipio": "Corupá",
+          "ibge": "4204509",
+          "value": 35,
+          "display_value": "35",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Guaraciaba",
+          "ibge": "4206405",
           "value": 34,
           "display_value": "34",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "GUARACIABA",
-          "ibge": null,
+          "municipio": "Itaiópolis",
+          "ibge": "4208104",
           "value": 34,
           "display_value": "34",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ITAIOPOLIS",
-          "ibge": null,
+          "municipio": "Santa Cecília",
+          "ibge": "4215505",
           "value": 34,
           "display_value": "34",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SANTA CECILIA",
-          "ibge": null,
+          "municipio": "Penha",
+          "ibge": "4212502",
           "value": 34,
           "display_value": "34",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "AGUAS MORNAS",
-          "ibge": null,
+          "municipio": "Cunha Porã",
+          "ibge": "4204707",
           "value": 33,
           "display_value": "33",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "LUZERNA",
-          "ibge": null,
+          "municipio": "Luzerna",
+          "ibge": "4210035",
           "value": 33,
           "display_value": "33",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "COCAL DO SUL",
-          "ibge": null,
+          "municipio": "Mondaí",
+          "ibge": "4211009",
           "value": 32,
           "display_value": "32",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "MONDAI",
-          "ibge": null,
+          "municipio": "Otacílio Costa",
+          "ibge": "4211751",
           "value": 32,
           "display_value": "32",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "OTACILIO COSTA",
-          "ibge": null,
+          "municipio": "Schroeder",
+          "ibge": "4217402",
           "value": 31,
           "display_value": "31",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PENHA",
-          "ibge": null,
-          "value": 30,
-          "display_value": "30",
+          "municipio": "Agrolândia",
+          "ibge": "4200200",
+          "value": 29,
+          "display_value": "29",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SCHROEDER",
-          "ibge": null,
+          "municipio": "Ituporanga",
+          "ibge": "4208500",
           "value": 28,
           "display_value": "28",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "AGROLANDIA",
-          "ibge": null,
+          "municipio": "Correia Pinto",
+          "ibge": "4204558",
           "value": 26,
           "display_value": "26",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "CUNHA PORA",
-          "ibge": null,
+          "municipio": "Pouso Redondo",
+          "ibge": "4213708",
           "value": 26,
           "display_value": "26",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "RODEIO",
-          "ibge": null,
-          "value": 26,
-          "display_value": "26",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "CORREIA PINTO",
-          "ibge": null,
+          "municipio": "Laurentino",
+          "ibge": "4209508",
           "value": 25,
           "display_value": "25",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "LAURENTINO",
-          "ibge": null,
+          "municipio": "Lontras",
+          "ibge": "4209904",
           "value": 25,
           "display_value": "25",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "NOVA TRENTO",
-          "ibge": null,
+          "municipio": "Rodeio",
+          "ibge": "4215109",
           "value": 25,
           "display_value": "25",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PORTO UNIAO",
-          "ibge": null,
+          "municipio": "Capinzal",
+          "ibge": "4203907",
           "value": 24,
           "display_value": "24",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "POUSO REDONDO",
-          "ibge": null,
+          "municipio": "Nova Trento",
+          "ibge": "4211504",
           "value": 24,
           "display_value": "24",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "TAIO",
-          "ibge": null,
+          "municipio": "Porto União",
+          "ibge": "4213609",
           "value": 24,
           "display_value": "24",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "CAPINZAL",
-          "ibge": null,
+          "municipio": "Taió",
+          "ibge": "4217808",
+          "value": 24,
+          "display_value": "24",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Papanduva",
+          "ibge": "4212205",
           "value": 23,
           "display_value": "23",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "LONTRAS",
-          "ibge": null,
+          "municipio": "Vidal Ramos",
+          "ibge": "4219200",
           "value": 23,
           "display_value": "23",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PAPANDUVA",
-          "ibge": null,
-          "value": 23,
-          "display_value": "23",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "ASCURRA",
-          "ibge": null,
+          "municipio": "Ascurra",
+          "ibge": "4201703",
           "value": 22,
           "display_value": "22",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PALMITOS",
-          "ibge": null,
+          "municipio": "Canelinha",
+          "ibge": "4203709",
           "value": 22,
           "display_value": "22",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "BOM JARDIM DA SERRA",
-          "ibge": null,
+          "municipio": "Palmitos",
+          "ibge": "4212106",
           "value": 22,
           "display_value": "22",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "RIQUEZA",
-          "ibge": null,
+          "municipio": "Bom Jardim da Serra",
+          "ibge": "4202503",
           "value": 22,
           "display_value": "22",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "LAURO MULLER",
-          "ibge": null,
+          "municipio": "Riqueza",
+          "ibge": "4215075",
+          "value": 22,
+          "display_value": "22",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Jaborá",
+          "ibge": "4208609",
           "value": 21,
           "display_value": "21",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SAO JOSE DO CEDRO",
-          "ibge": null,
+          "municipio": "Lauro Müller",
+          "ibge": "4209607",
           "value": 21,
           "display_value": "21",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "CANELINHA",
-          "ibge": null,
+          "municipio": "Peritiba",
+          "ibge": "4212601",
+          "value": 21,
+          "display_value": "21",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "São José do Cedro",
+          "ibge": "4216701",
+          "value": 21,
+          "display_value": "21",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Balneário Gaivota",
+          "ibge": "4202073",
           "value": 20,
           "display_value": "20",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "CAPIVARI DE BAIXO",
-          "ibge": null,
+          "municipio": "Capivari de Baixo",
+          "ibge": "4203956",
           "value": 20,
           "display_value": "20",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "VIDAL RAMOS",
-          "ibge": null,
+          "municipio": "São Carlos",
+          "ibge": "4216008",
           "value": 20,
           "display_value": "20",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ITUPORANGA",
-          "ibge": null,
+          "municipio": "Itapoá",
+          "ibge": "4208450",
           "value": 19,
           "display_value": "19",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SANGAO",
-          "ibge": null,
+          "municipio": "Nova Erechim",
+          "ibge": "4211405",
           "value": 19,
           "display_value": "19",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ANITA GARIBALDI",
-          "ibge": null,
+          "municipio": "Sangão",
+          "ibge": "4215455",
+          "value": 19,
+          "display_value": "19",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Treze Tílias",
+          "ibge": "4218509",
+          "value": 19,
+          "display_value": "19",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Anita Garibaldi",
+          "ibge": "4201000",
           "value": 18,
           "display_value": "18",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "BALNEARIO GAIVOTA",
-          "ibge": null,
+          "municipio": "Nova Itaberaba",
+          "ibge": "4211454",
           "value": 18,
           "display_value": "18",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ITAPOA",
-          "ibge": null,
-          "value": 18,
-          "display_value": "18",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "JABORA",
-          "ibge": null,
-          "value": 18,
-          "display_value": "18",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "TREZE TILIAS",
-          "ibge": null,
-          "value": 18,
-          "display_value": "18",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "GUATAMBU",
-          "ibge": null,
+          "municipio": "Gravatal",
+          "ibge": "4206207",
           "value": 17,
           "display_value": "17",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "NOVA ITABERABA",
-          "ibge": null,
+          "municipio": "Guatambú",
+          "ibge": "4206652",
           "value": 17,
           "display_value": "17",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PERITIBA",
-          "ibge": null,
+          "municipio": "São Ludgero",
+          "ibge": "4217006",
           "value": 17,
           "display_value": "17",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SAO LUDGERO",
-          "ibge": null,
+          "municipio": "Urupema",
+          "ibge": "4218954",
           "value": 17,
           "display_value": "17",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "URUPEMA",
-          "ibge": null,
-          "value": 17,
-          "display_value": "17",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "APIUNA",
-          "ibge": null,
+          "municipio": "Apiúna",
+          "ibge": "4201257",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "GRAVATAL",
-          "ibge": null,
+          "municipio": "Major Vieira",
+          "ibge": "4210308",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "MAJOR VIEIRA",
-          "ibge": null,
+          "municipio": "Ouro",
+          "ibge": "4211801",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "NOVA ERECHIM",
-          "ibge": null,
+          "municipio": "Petrolândia",
+          "ibge": "4212700",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "OURO",
-          "ibge": null,
+          "municipio": "Rancho Queimado",
+          "ibge": "4214300",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "RANCHO QUEIMADO",
-          "ibge": null,
+          "municipio": "Siderópolis",
+          "ibge": "4217600",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SAO CARLOS",
-          "ibge": null,
+          "municipio": "Trombudo Central",
+          "ibge": "4218608",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "TROMBUDO CENTRAL",
-          "ibge": null,
-          "value": 16,
-          "display_value": "16",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "AGRONOMICA",
-          "ibge": null,
+          "municipio": "Agronômica",
+          "ibge": "4200309",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PAULO LOPES",
-          "ibge": null,
+          "municipio": "Ipumirim",
+          "ibge": "4207700",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SAUDADES",
-          "ibge": null,
+          "municipio": "Paulo Lopes",
+          "ibge": "4212304",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "BANDEIRANTE",
-          "ibge": null,
+          "municipio": "Saudades",
+          "ibge": "4217303",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PETROLANDIA",
-          "ibge": null,
+          "municipio": "Bandeirante",
+          "ibge": "4202081",
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Imaruí",
+          "ibge": "4207205",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SAO LOURENCO DO OESTE",
-          "ibge": null,
+          "municipio": "Rio das Antas",
+          "ibge": "4214409",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SIDEROPOLIS",
-          "ibge": null,
+          "municipio": "Santa Rosa do Sul",
+          "ibge": "4215653",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "TREZE DE MAIO",
-          "ibge": null,
+          "municipio": "São Lourenço do Oeste",
+          "ibge": "4216909",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "CAIBI",
-          "ibge": null,
+          "municipio": "Treze de Maio",
+          "ibge": "4218400",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PONTE ALTA DO NORTE",
-          "ibge": null,
+          "municipio": "Caibi",
+          "ibge": "4203105",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ARVOREDO",
-          "ibge": null,
+          "municipio": "São José do Cerrito",
+          "ibge": "4216800",
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Arvoredo",
+          "ibge": "4201653",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "IMARUI",
-          "ibge": null,
+          "municipio": "Balneário Arroio do Silva",
+          "ibge": "4201950",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "IPUMIRIM",
-          "ibge": null,
+          "municipio": "Monte Castelo",
+          "ibge": "4211108",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "MONTE CASTELO",
-          "ibge": null,
+          "municipio": "Pinheiro Preto",
+          "ibge": "4213005",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PINHEIRO PRETO",
-          "ibge": null,
+          "municipio": "São Francisco do Sul",
+          "ibge": "4216206",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "RIO DAS ANTAS",
-          "ibge": null,
+          "municipio": "Piratuba",
+          "ibge": "4213104",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SANTA ROSA DO SUL",
-          "ibge": null,
+          "municipio": "Ponte Alta do Norte",
+          "ibge": "4213351",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SAO JOSE DO CERRITO",
-          "ibge": null,
-          "value": 13,
-          "display_value": "13",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "AURORA",
-          "ibge": null,
+          "municipio": "Aurora",
+          "ibge": "4201901",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "BALNEARIO ARROIO DO SILVA",
-          "ibge": null,
+          "municipio": "Botuverá",
+          "ibge": "4202701",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SAO FRANCISCO DO SUL",
-          "ibge": null,
+          "municipio": "Praia Grande",
+          "ibge": "4213807",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "DESCANSO",
-          "ibge": null,
+          "municipio": "Balneário Rincão",
+          "ibge": "4220000",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PONTE ALTA",
-          "ibge": null,
+          "municipio": "Descanso",
+          "ibge": "4204905",
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Jacinto Machado",
+          "ibge": "4208708",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "BALNEARIO RINCAO",
-          "ibge": null,
+          "municipio": "Modelo",
+          "ibge": "4210902",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PONTE SERRADA",
-          "ibge": null,
+          "municipio": "Ponte Alta",
+          "ibge": "4213302",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ANTONIO CARLOS",
-          "ibge": null,
+          "municipio": "Ponte Serrada",
+          "ibge": "4213401",
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Romelândia",
+          "ibge": "4215208",
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Água Doce",
+          "ibge": "4200408",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "BOTUVERA",
-          "ibge": null,
+          "municipio": "Antônio Carlos",
+          "ibge": "4201208",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "GARUVA",
-          "ibge": null,
+          "municipio": "Garuva",
+          "ibge": "4205803",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "GOVERNADOR CELSO RAMOS",
-          "ibge": null,
+          "municipio": "Governador Celso Ramos",
+          "ibge": "4206009",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SALTO VELOSO",
-          "ibge": null,
+          "municipio": "Salto Veloso",
+          "ibge": "4215406",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SAO JOAO DO ITAPERIU",
-          "ibge": null,
+          "municipio": "São João do Itaperiú",
+          "ibge": "4216354",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PIRATUBA",
-          "ibge": null,
-          "value": 10,
-          "display_value": "10",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "ARMAZEM",
-          "ibge": null,
+          "municipio": "Armazém",
+          "ibge": "4201505",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ARROIO TRINTA",
-          "ibge": null,
+          "municipio": "Arroio Trinta",
+          "ibge": "4201604",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "BRUNOPOLIS",
-          "ibge": null,
+          "municipio": "Brunópolis",
+          "ibge": "4202875",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "CORDILHEIRA ALTA",
-          "ibge": null,
+          "municipio": "Cordilheira Alta",
+          "ibge": "4204350",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ITA",
-          "ibge": null,
+          "municipio": "Irineópolis",
+          "ibge": "4207908",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "MODELO",
-          "ibge": null,
+          "municipio": "Maracajá",
+          "ibge": "4210407",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PRESIDENTE NEREU",
-          "ibge": null,
+          "municipio": "Presidente Nereu",
+          "ibge": "4214102",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SAO JOAO DO OESTE",
-          "ibge": null,
+          "municipio": "Rio Rufino",
+          "ibge": "4215059",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "TUNAPOLIS",
-          "ibge": null,
+          "municipio": "São João do Oeste",
+          "ibge": "4216255",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "QUILOMBO",
-          "ibge": null,
+          "municipio": "São João do Sul",
+          "ibge": "4216404",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "RIO DOS CEDROS",
-          "ibge": null,
+          "municipio": "Tunápolis",
+          "ibge": "4218756",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ROMELANDIA",
-          "ibge": null,
+          "municipio": "Frei Rogério",
+          "ibge": "4205555",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "AGUA DOCE",
-          "ibge": null,
+          "municipio": "Quilombo",
+          "ibge": "4214201",
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Rio dos Cedros",
+          "ibge": "4214706",
+          "value": 9,
+          "display_value": "9",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Anitápolis",
+          "ibge": "4201109",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ANITAPOLIS",
-          "ibge": null,
+          "municipio": "Celso Ramos",
+          "ibge": "4204152",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "CELSO RAMOS",
-          "ibge": null,
+          "municipio": "Coronel Freitas",
+          "ibge": "4204400",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "CORONEL FREITAS",
-          "ibge": null,
+          "municipio": "Ermo",
+          "ibge": "4205191",
           "value": 8,
           "display_value": "8",
           "share": 0.0
@@ -1699,864 +1747,816 @@
         },
         {
           "uf": "SC",
-          "municipio": "JACINTO MACHADO",
-          "ibge": null,
+          "municipio": "Itá",
+          "ibge": "4208005",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "MARACAJA",
-          "ibge": null,
+          "municipio": "Matos Costa",
+          "ibge": "4210704",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "MATOS COSTA",
-          "ibge": null,
+          "municipio": "Palmeira",
+          "ibge": "4212056",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PALMEIRA",
-          "ibge": null,
+          "municipio": "Paraíso",
+          "ibge": "4212239",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PARAISO",
-          "ibge": null,
+          "municipio": "Saltinho",
+          "ibge": "4215356",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PRAIA GRANDE",
-          "ibge": null,
+          "municipio": "Angelina",
+          "ibge": "4200903",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SALTINHO",
-          "ibge": null,
+          "municipio": "Bom Jesus do Oeste",
+          "ibge": "4202578",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SAO JOAO DO SUL",
-          "ibge": null,
+          "municipio": "Iraceminha",
+          "ibge": "4207759",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ANGELINA",
-          "ibge": null,
+          "municipio": "Vargem",
+          "ibge": "4219150",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "IRACEMINHA",
-          "ibge": null,
-          "value": 8,
-          "display_value": "8",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "RIO RUFINO",
-          "ibge": null,
-          "value": 8,
-          "display_value": "8",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "VARGEM",
-          "ibge": null,
-          "value": 8,
-          "display_value": "8",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "BELMONTE",
-          "ibge": null,
+          "municipio": "Belmonte",
+          "ibge": "4202156",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "BENEDITO NOVO",
-          "ibge": null,
+          "municipio": "Benedito Novo",
+          "ibge": "4202206",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ERMO",
-          "ibge": null,
+          "municipio": "Ibicaré",
+          "ibge": "4206801",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "IBICARE",
-          "ibge": null,
+          "municipio": "José Boiteux",
+          "ibge": "4209151",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "JOSE BOITEUX",
-          "ibge": null,
+          "municipio": "Rio do Oeste",
+          "ibge": "4214607",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "DIONISIO CERQUEIRA",
-          "ibge": null,
+          "municipio": "Cunhataí",
+          "ibge": "4204756",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PAINEL",
-          "ibge": null,
+          "municipio": "Dionísio Cerqueira",
+          "ibge": "4205001",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ABELARDO LUZ",
-          "ibge": null,
+          "municipio": "Painel",
+          "ibge": "4211892",
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Abelardo Luz",
+          "ibge": "4200101",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "IBIAM",
-          "ibge": null,
+          "municipio": "Águas Frias",
+          "ibge": "4200556",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "LEBON REGIS",
-          "ibge": null,
+          "municipio": "Ibiam",
+          "ibge": "4206751",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "RIO DO OESTE",
-          "ibge": null,
+          "municipio": "Lebon Régis",
+          "ibge": "4209706",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ALFREDO WAGNER",
-          "ibge": null,
+          "municipio": "Meleiro",
+          "ibge": "4210803",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "CUNHATAI",
-          "ibge": null,
+          "municipio": "São Bernardino",
+          "ibge": "4215752",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ERVAL VELHO",
-          "ibge": null,
+          "municipio": "Alfredo Wagner",
+          "ibge": "4200705",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "FAXINAL DOS GUEDES",
-          "ibge": null,
+          "municipio": "Erval Velho",
+          "ibge": "4205209",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "MACIEIRA",
-          "ibge": null,
+          "municipio": "Faxinal dos Guedes",
+          "ibge": "4205308",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "TANGARA",
-          "ibge": null,
+          "municipio": "Macieira",
+          "ibge": "4210050",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "AGUAS FRIAS",
-          "ibge": null,
+          "municipio": "São Cristóvão do Sul",
+          "ibge": "4216057",
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Tangará",
+          "ibge": "4217907",
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Atalanta",
+          "ibge": "4201802",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "CAMPO ERE",
-          "ibge": null,
+          "municipio": "Campo Erê",
+          "ibge": "4203501",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "DOUTOR PEDRINHO",
-          "ibge": null,
+          "municipio": "Doutor Pedrinho",
+          "ibge": "4205159",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "GUARUJA DO SUL",
-          "ibge": null,
+          "municipio": "Guarujá do Sul",
+          "ibge": "4206603",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "IRINEOPOLIS",
-          "ibge": null,
+          "municipio": "Abdon Batista",
+          "ibge": "4200051",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "MELEIRO",
-          "ibge": null,
+          "municipio": "Anchieta",
+          "ibge": "4200804",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ABDON BATISTA",
-          "ibge": null,
+          "municipio": "Balneário Barra do Sul",
+          "ibge": "4202057",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "BARRA BONITA",
-          "ibge": null,
+          "municipio": "Barra Bonita",
+          "ibge": "4202099",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "BOM JESUS DO OESTE",
-          "ibge": null,
+          "municipio": "Lacerdópolis",
+          "ibge": "4209201",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "FREI ROGERIO",
-          "ibge": null,
+          "municipio": "Vargem Bonita",
+          "ibge": "4219176",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "LACERDOPOLIS",
-          "ibge": null,
-          "value": 5,
-          "display_value": "5",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "SAO BERNARDINO",
-          "ibge": null,
-          "value": 5,
-          "display_value": "5",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "SAO CRISTOVAO DO SUL",
-          "ibge": null,
-          "value": 5,
-          "display_value": "5",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "VARGEM BONITA",
-          "ibge": null,
-          "value": 5,
-          "display_value": "5",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "BRACO DO TROMBUDO",
-          "ibge": null,
+          "municipio": "Braço do Trombudo",
+          "ibge": "4202859",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "CAMPO BELO DO SUL",
-          "ibge": null,
+          "municipio": "Campo Belo do Sul",
+          "ibge": "4203402",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "IOMERE",
-          "ibge": null,
+          "municipio": "Iomerê",
+          "ibge": "4207577",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "IPIRA",
-          "ibge": null,
+          "municipio": "Ipira",
+          "ibge": "4207601",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "JARAGUÁ DO SUL",
-          "ibge": null,
+          "municipio": "Planalto Alegre",
+          "ibge": "4213153",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PLANALTO ALEGRE",
-          "ibge": null,
+          "municipio": "Santa Terezinha",
+          "ibge": "4215679",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SANTA TEREZINHA",
-          "ibge": null,
+          "municipio": "Serra Alta",
+          "ibge": "4217550",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SERRA ALTA",
-          "ibge": null,
+          "municipio": "São Miguel do Oeste",
+          "ibge": "4217204",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SÃO MIGUEL DO OESTE",
-          "ibge": null,
+          "municipio": "Ipuaçu",
+          "ibge": "4207684",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "BALNEARIO BARRA DO SUL",
-          "ibge": null,
+          "municipio": "Paial",
+          "ibge": "4211876",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "IPUACU",
-          "ibge": null,
+          "municipio": "Pescaria Brava",
+          "ibge": "4212650",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PAIAL",
-          "ibge": null,
+          "municipio": "Presidente Castello Branco",
+          "ibge": "4213906",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PESCARIA BRAVA",
-          "ibge": null,
+          "municipio": "Zortéa",
+          "ibge": "4219853",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ZORTEA",
-          "ibge": null,
-          "value": 4,
-          "display_value": "4",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "ATALANTA",
-          "ibge": null,
+          "municipio": "Bom Jesus",
+          "ibge": "4202537",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "BOM JESUS",
-          "ibge": null,
+          "municipio": "Jaraguá do Sul",
+          "ibge": "4208906",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PASSO DE TORRES",
-          "ibge": null,
+          "municipio": "Passo de Torres",
+          "ibge": "4212254",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PRINCESA",
-          "ibge": null,
+          "municipio": "Princesa",
+          "ibge": "4214151",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ALTO BELA VISTA",
-          "ibge": null,
+          "municipio": "Alto Bela Vista",
+          "ibge": "4200754",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "ANCHIETA",
-          "ibge": null,
+          "municipio": "Caxambu do Sul",
+          "ibge": "4204103",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "CAXAMBU DO SUL",
-          "ibge": null,
+          "municipio": "Imbuia",
+          "ibge": "4207403",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "IMBUIA",
-          "ibge": null,
+          "municipio": "Lindóia do Sul",
+          "ibge": "4209854",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "LINDOIA DO SUL",
-          "ibge": null,
+          "municipio": "Pedras Grandes",
+          "ibge": "4212403",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PEDRAS GRANDES",
-          "ibge": null,
+          "municipio": "Rio Fortuna",
+          "ibge": "4214904",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PRESIDENTE CASTELLO BRANCO",
-          "ibge": null,
+          "municipio": "Santa Rosa de Lima",
+          "ibge": "4215604",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "RIO FORTUNA",
-          "ibge": null,
+          "municipio": "São Bonifácio",
+          "ibge": "4215901",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SAO BONIFACIO",
-          "ibge": null,
+          "municipio": "São Pedro de Alcântara",
+          "ibge": "4217253",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SAO PEDRO DE ALCANTARA",
-          "ibge": null,
+          "municipio": "União do Oeste",
+          "ibge": "4218855",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "UNIAO DO OESTE",
-          "ibge": null,
-          "value": 3,
-          "display_value": "3",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "CHAPECÓ",
-          "ibge": null,
+          "municipio": "Bela Vista do Toldo",
+          "ibge": "4202131",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "FLORIANÓPOLIS",
-          "ibge": null,
+          "municipio": "Caçador",
+          "ibge": "4203006",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PALMA SOLA",
-          "ibge": null,
+          "municipio": "Chapecó",
+          "ibge": "4204202",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "PASSOS MAIA",
-          "ibge": null,
+          "municipio": "Florianópolis",
+          "ibge": "4205407",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SALETE",
-          "ibge": null,
+          "municipio": "Palma Sola",
+          "ibge": "4212007",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SANTA HELENA",
-          "ibge": null,
+          "municipio": "Passos Maia",
+          "ibge": "4212270",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "TRES BARRAS",
-          "ibge": null,
+          "municipio": "Rio do Campo",
+          "ibge": "4214508",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "BOCAINA DO SUL",
-          "ibge": null,
+          "municipio": "Salete",
+          "ibge": "4215307",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "CALMON",
-          "ibge": null,
+          "municipio": "Santa Helena",
+          "ibge": "4215554",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "CERRO NEGRO",
-          "ibge": null,
+          "municipio": "Bocaina do Sul",
+          "ibge": "4202438",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "MAJOR GERCINO",
-          "ibge": null,
+          "municipio": "Calmon",
+          "ibge": "4203154",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "MONTE CARLO",
-          "ibge": null,
+          "municipio": "Cerro Negro",
+          "ibge": "4204178",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "MORRO GRANDE",
-          "ibge": null,
+          "municipio": "Major Gercino",
+          "ibge": "4210209",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SAO MIGUEL DA BOA VISTA",
-          "ibge": null,
+          "municipio": "Monte Carlo",
+          "ibge": "4211058",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SUL BRASIL",
-          "ibge": null,
+          "municipio": "Morro Grande",
+          "ibge": "4211256",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "VARGEAO",
-          "ibge": null,
+          "municipio": "São Miguel da Boa Vista",
+          "ibge": "4217154",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "VITOR MEIRELES",
-          "ibge": null,
+          "municipio": "Sul Brasil",
+          "ibge": "4217758",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "BELA VISTA DO TOLDO",
-          "ibge": null,
+          "municipio": "Timbé do Sul",
+          "ibge": "4218103",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Vargeão",
+          "ibge": "4219101",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Vitor Meireles",
+          "ibge": "4219358",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "SC",
+          "municipio": "Capão Alto",
+          "ibge": "4203253",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "BOTUVERÁ",
-          "ibge": null,
+          "municipio": "Concórdia",
+          "ibge": "4204301",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "CAPAO ALTO",
-          "ibge": null,
+          "municipio": "Formosa do Sul",
+          "ibge": "4205431",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "CAÇADOR",
-          "ibge": null,
+          "municipio": "Galvão",
+          "ibge": "4205605",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "CONCÓRDIA",
-          "ibge": null,
+          "municipio": "Irati",
+          "ibge": "4207858",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "FORMOSA DO SUL",
-          "ibge": null,
+          "municipio": "Novo Horizonte",
+          "ibge": "4211652",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "GALVAO",
-          "ibge": null,
+          "municipio": "São Martinho",
+          "ibge": "4217105",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "IRATI",
-          "ibge": null,
+          "municipio": "Três Barras",
+          "ibge": "4218301",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "NOVO HORIZONTE",
-          "ibge": null,
+          "municipio": "Treviso",
+          "ibge": "4218350",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "RIO DO CAMPO",
-          "ibge": null,
+          "municipio": "Águas de Chapecó",
+          "ibge": "4200507",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "SAO MARTINHO",
-          "ibge": null,
+          "municipio": "Dona Emma",
+          "ibge": "4205100",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "TREVISO",
-          "ibge": null,
+          "municipio": "Flor do Sertão",
+          "ibge": "4205357",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "DONA EMMA",
-          "ibge": null,
+          "municipio": "Irani",
+          "ibge": "4207809",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "FLOR DO SERTAO",
-          "ibge": null,
+          "municipio": "Jupiá",
+          "ibge": "4209177",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "IRANI",
-          "ibge": null,
+          "municipio": "Lajeado Grande",
+          "ibge": "4209458",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "SC",
-          "municipio": "JUPIA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "LAJEADO GRANDE",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "SANTA ROSA DE LIMA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "SC",
-          "municipio": "SAO DOMINGOS",
-          "ibge": null,
+          "municipio": "São Domingos",
+          "ibge": "4216107",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -2566,7 +2566,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -2580,15 +2580,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }

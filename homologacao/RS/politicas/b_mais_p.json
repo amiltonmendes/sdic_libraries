@@ -4,35 +4,35 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "6.150 atendimentos",
+    "display_value": "6.840 atendimentos",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "flat",
-      "label": "4,0% do total nacional · 6ª entre 27 UFs"
+      "label": "4,1% do total nacional · 6ª entre 27 UFs"
     },
-    "value": 6150
+    "value": 6840
   },
   "story": {
     "escopo": "uf",
     "uf": "RS",
     "regra": "meio",
-    "headline": "6.150 atendimentos no Rio Grande do Sul — 4,0% do total nacional, 6ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Rio Grande do Sul ocupa a 6ª posição entre as 27 UFs participantes do programa e responde por 4,0% do programa no país. Dentro do Sul, que soma 26.693 atendimentos, a participação do Rio Grande do Sul é de 23,0%. As empresas atendidas pelo programa no Rio Grande do Sul tiveram ganho médio de 35,4% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 27,0%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "headline": "6.840 atendimentos no Rio Grande do Sul — 4,1% do total nacional, 6ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Rio Grande do Sul ocupa a 6ª posição entre as 27 UFs participantes do programa e responde por 4,1% do programa no país. Dentro do Sul, que soma 28.496 atendimentos, a participação do Rio Grande do Sul é de 24,0%. As empresas atendidas pelo programa no Rio Grande do Sul tiveram ganho médio de 35,5% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 27,1%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "6ª posição nacional entre as 27 UFs participantes do programa, com 4,0% do total."
+        "text": "6ª posição nacional entre as 27 UFs participantes do programa, com 4,1% do total."
       },
       {
         "tone": "neutral",
-        "text": "23,0% de tudo que o Sul registra no programa."
+        "text": "24,0% de tudo que o Sul registra no programa."
       }
     ]
   },
@@ -40,32 +40,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -74,41 +66,41 @@
     {
       "id": "senai",
       "label": "SENAI — consultoria técnica (Lean)",
-      "value": 1801,
+      "value": 2009,
       "unit": "atendimentos",
-      "display_value": "1.801 atendimentos",
+      "display_value": "2.009 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 4313,
+      "value": 4799,
       "unit": "atendimentos",
-      "display_value": "4.313 atendimentos",
+      "display_value": "4.799 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "embrapii",
       "label": "EMBRAPII — inovação aplicada",
-      "value": 33,
+      "value": 29,
       "unit": "projetos",
-      "display_value": "33 projetos",
+      "display_value": "29 projetos",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 36,2 mi mobilizados"
+        "label": "R$ 29,0 mi mobilizados"
       }
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 3,
-      "unit": "operações",
-      "display_value": "3 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 35671351.9,
+      "unit": "",
+      "display_value": "R$ 35,7 mi",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 25,1 mi financiados"
+        "label": "4 operações financiadas"
       }
     }
   ],
@@ -128,15 +120,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -162,15 +154,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -180,15 +172,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -198,15 +190,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -216,15 +208,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -234,15 +226,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -252,15 +244,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -283,760 +275,792 @@
       "items": [
         {
           "uf": "RS",
-          "municipio": "PORTO ALEGRE",
-          "ibge": null,
-          "value": 665,
-          "display_value": "665",
+          "municipio": "Porto Alegre",
+          "ibge": "4314902",
+          "value": 709,
+          "display_value": "709",
           "share": 0.4
         },
         {
           "uf": "RS",
-          "municipio": "CAXIAS DO SUL",
-          "ibge": null,
-          "value": 627,
-          "display_value": "627",
+          "municipio": "Caxias do Sul",
+          "ibge": "4305108",
+          "value": 696,
+          "display_value": "696",
           "share": 0.4
         },
         {
           "uf": "RS",
-          "municipio": "RIO GRANDE",
-          "ibge": null,
-          "value": 236,
-          "display_value": "236",
+          "municipio": "Rio Grande",
+          "ibge": "4315602",
+          "value": 282,
+          "display_value": "282",
           "share": 0.2
         },
         {
           "uf": "RS",
-          "municipio": "PELOTAS",
-          "ibge": null,
-          "value": 232,
-          "display_value": "232",
+          "municipio": "Pelotas",
+          "ibge": "4314407",
+          "value": 269,
+          "display_value": "269",
           "share": 0.2
         },
         {
           "uf": "RS",
-          "municipio": "NOVO HAMBURGO",
-          "ibge": null,
-          "value": 230,
-          "display_value": "230",
+          "municipio": "Novo Hamburgo",
+          "ibge": "4313409",
+          "value": 266,
+          "display_value": "266",
+          "share": 0.2
+        },
+        {
+          "uf": "RS",
+          "municipio": "Bento Gonçalves",
+          "ibge": "4302105",
+          "value": 222,
+          "display_value": "222",
           "share": 0.1
         },
         {
           "uf": "RS",
-          "municipio": "BENTO GONCALVES",
-          "ibge": null,
-          "value": 203,
-          "display_value": "203",
+          "municipio": "Santa Maria",
+          "ibge": "4316907",
+          "value": 175,
+          "display_value": "175",
           "share": 0.1
         },
         {
           "uf": "RS",
-          "municipio": "SANTA CRUZ DO SUL",
-          "ibge": null,
-          "value": 173,
-          "display_value": "173",
+          "municipio": "Santa Cruz do Sul",
+          "ibge": "4316808",
+          "value": 174,
+          "display_value": "174",
           "share": 0.1
         },
         {
           "uf": "RS",
-          "municipio": "SANTA MARIA",
-          "ibge": null,
-          "value": 148,
-          "display_value": "148",
+          "municipio": "São Leopoldo",
+          "ibge": "4318705",
+          "value": 162,
+          "display_value": "162",
           "share": 0.1
         },
         {
           "uf": "RS",
-          "municipio": "SAO LEOPOLDO",
-          "ibge": null,
-          "value": 148,
-          "display_value": "148",
+          "municipio": "Lajeado",
+          "ibge": "4311403",
+          "value": 151,
+          "display_value": "151",
           "share": 0.1
         },
         {
           "uf": "RS",
-          "municipio": "ERECHIM",
-          "ibge": null,
-          "value": 145,
-          "display_value": "145",
+          "municipio": "Erechim",
+          "ibge": "4307005",
+          "value": 147,
+          "display_value": "147",
           "share": 0.1
         },
         {
           "uf": "RS",
-          "municipio": "LAJEADO",
-          "ibge": null,
-          "value": 135,
-          "display_value": "135",
+          "municipio": "Bagé",
+          "ibge": "4301602",
+          "value": 133,
+          "display_value": "133",
           "share": 0.1
         },
         {
           "uf": "RS",
-          "municipio": "BAGE",
-          "ibge": null,
-          "value": 108,
-          "display_value": "108",
+          "municipio": "Canoas",
+          "ibge": "4304606",
+          "value": 122,
+          "display_value": "122",
           "share": 0.1
         },
         {
           "uf": "RS",
-          "municipio": "CANOAS",
-          "ibge": null,
-          "value": 106,
-          "display_value": "106",
+          "municipio": "Passo Fundo",
+          "ibge": "4314100",
+          "value": 102,
+          "display_value": "102",
           "share": 0.1
         },
         {
           "uf": "RS",
-          "municipio": "PASSO FUNDO",
-          "ibge": null,
+          "municipio": "Alegrete",
+          "ibge": "4300406",
           "value": 99,
           "display_value": "99",
           "share": 0.1
         },
         {
           "uf": "RS",
-          "municipio": "GARIBALDI",
-          "ibge": null,
-          "value": 84,
-          "display_value": "84",
+          "municipio": "Vacaria",
+          "ibge": "4322509",
+          "value": 98,
+          "display_value": "98",
           "share": 0.1
         },
         {
           "uf": "RS",
-          "municipio": "CACHOEIRINHA",
-          "ibge": null,
-          "value": 81,
-          "display_value": "81",
+          "municipio": "Garibaldi",
+          "ibge": "4308607",
+          "value": 87,
+          "display_value": "87",
           "share": 0.1
         },
         {
           "uf": "RS",
-          "municipio": "VACARIA",
-          "ibge": null,
-          "value": 74,
-          "display_value": "74",
+          "municipio": "Cachoeirinha",
+          "ibge": "4303103",
+          "value": 83,
+          "display_value": "83",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "FARROUPILHA",
-          "ibge": null,
-          "value": 69,
-          "display_value": "69",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "ALEGRETE",
-          "ibge": null,
-          "value": 60,
-          "display_value": "60",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "GRAVATAI",
-          "ibge": null,
-          "value": 53,
-          "display_value": "53",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "PANAMBI",
-          "ibge": null,
-          "value": 52,
-          "display_value": "52",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "CACHOEIRA DO SUL",
-          "ibge": null,
-          "value": 51,
-          "display_value": "51",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "SAPUCAIA DO SUL",
-          "ibge": null,
-          "value": 50,
-          "display_value": "50",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "TEUTONIA",
-          "ibge": null,
-          "value": 50,
-          "display_value": "50",
+          "municipio": "Farroupilha",
+          "ibge": "4307906",
+          "value": 75,
+          "display_value": "75",
           "share": 0.0
         },
         {
           "uf": "RS",
           "municipio": "SANTANA DO LIVRAMENTO",
           "ibge": null,
+          "value": 70,
+          "display_value": "70",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Gravataí",
+          "ibge": "4309209",
+          "value": 67,
+          "display_value": "67",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Uruguaiana",
+          "ibge": "4322400",
+          "value": 65,
+          "display_value": "65",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Teutônia",
+          "ibge": "4321451",
+          "value": 58,
+          "display_value": "58",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Estrela",
+          "ibge": "4307807",
+          "value": 56,
+          "display_value": "56",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Panambi",
+          "ibge": "4313904",
+          "value": 56,
+          "display_value": "56",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Sapucaia do Sul",
+          "ibge": "4320008",
+          "value": 55,
+          "display_value": "55",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Cachoeira do Sul",
+          "ibge": "4303004",
+          "value": 51,
+          "display_value": "51",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Campo Bom",
+          "ibge": "4303905",
+          "value": 51,
+          "display_value": "51",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Venâncio Aires",
+          "ibge": "4322608",
           "value": 50,
           "display_value": "50",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "ESTRELA",
-          "ibge": null,
+          "municipio": "Capão da Canoa",
+          "ibge": "4304630",
+          "value": 49,
+          "display_value": "49",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Estância Velha",
+          "ibge": "4307609",
           "value": 48,
           "display_value": "48",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "IJUI",
-          "ibge": null,
+          "municipio": "Ijuí",
+          "ibge": "4310207",
           "value": 48,
           "display_value": "48",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "CAMPO BOM",
-          "ibge": null,
-          "value": 44,
-          "display_value": "44",
+          "municipio": "Portão",
+          "ibge": "4314803",
+          "value": 47,
+          "display_value": "47",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "VENANCIO AIRES",
-          "ibge": null,
-          "value": 44,
-          "display_value": "44",
+          "municipio": "Arroio do Meio",
+          "ibge": "4301008",
+          "value": 46,
+          "display_value": "46",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "ARROIO DO MEIO",
-          "ibge": null,
-          "value": 43,
-          "display_value": "43",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "SANTO ANGELO",
-          "ibge": null,
+          "municipio": "Santo Ângelo",
+          "ibge": "4317509",
           "value": 42,
           "display_value": "42",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "URUGUAIANA",
-          "ibge": null,
-          "value": 40,
-          "display_value": "40",
+          "municipio": "Torres",
+          "ibge": "4321501",
+          "value": 41,
+          "display_value": "41",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "TORRES",
-          "ibge": null,
+          "municipio": "Sapiranga",
+          "ibge": "4319901",
+          "value": 39,
+          "display_value": "39",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Encantado",
+          "ibge": "4306809",
           "value": 38,
           "display_value": "38",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SANTA ROSA",
-          "ibge": null,
-          "value": 37,
-          "display_value": "37",
+          "municipio": "Santa Rosa",
+          "ibge": "4317202",
+          "value": 38,
+          "display_value": "38",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "ENCANTADO",
-          "ibge": null,
+          "municipio": "Carlos Barbosa",
+          "ibge": "4304804",
           "value": 35,
           "display_value": "35",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "CARLOS BARBOSA",
-          "ibge": null,
+          "municipio": "Dois Irmãos",
+          "ibge": "4306403",
           "value": 33,
           "display_value": "33",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SAPIRANGA",
-          "ibge": null,
+          "municipio": "Flores da Cunha",
+          "ibge": "4308201",
           "value": 33,
           "display_value": "33",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "ESTANCIA VELHA",
-          "ibge": null,
-          "value": 32,
-          "display_value": "32",
+          "municipio": "Soledade",
+          "ibge": "4320800",
+          "value": 33,
+          "display_value": "33",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SOLEDADE",
-          "ibge": null,
-          "value": 32,
-          "display_value": "32",
+          "municipio": "Esteio",
+          "ibge": "4307708",
+          "value": 31,
+          "display_value": "31",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "ESTEIO",
-          "ibge": null,
+          "municipio": "Viamão",
+          "ibge": "4323002",
           "value": 30,
           "display_value": "30",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "FLORES DA CUNHA",
-          "ibge": null,
-          "value": 30,
-          "display_value": "30",
+          "municipio": "Sarandi",
+          "ibge": "4320107",
+          "value": 28,
+          "display_value": "28",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "VIAMAO",
-          "ibge": null,
-          "value": 30,
-          "display_value": "30",
+          "municipio": "Horizontina",
+          "ibge": "4309605",
+          "value": 27,
+          "display_value": "27",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "DOIS IRMAOS",
-          "ibge": null,
-          "value": 29,
-          "display_value": "29",
+          "municipio": "Osório",
+          "ibge": "4313508",
+          "value": 27,
+          "display_value": "27",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "CAMAQUA",
-          "ibge": null,
+          "municipio": "Camaquã",
+          "ibge": "4303509",
           "value": 26,
           "display_value": "26",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "HORIZONTINA",
-          "ibge": null,
+          "municipio": "Ivoti",
+          "ibge": "4310801",
           "value": 26,
           "display_value": "26",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "PORTAO",
-          "ibge": null,
+          "municipio": "Montenegro",
+          "ibge": "4312401",
           "value": 26,
           "display_value": "26",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SARANDI",
-          "ibge": null,
-          "value": 26,
-          "display_value": "26",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "MONTENEGRO",
-          "ibge": null,
+          "municipio": "Gramado",
+          "ibge": "4309100",
           "value": 25,
           "display_value": "25",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SAO MARCOS",
-          "ibge": null,
+          "municipio": "Guaíba",
+          "ibge": "4309308",
+          "value": 25,
+          "display_value": "25",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "São Marcos",
+          "ibge": "4319000",
+          "value": 25,
+          "display_value": "25",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Guaporé",
+          "ibge": "4309407",
           "value": 24,
           "display_value": "24",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "TRES DE MAIO",
-          "ibge": null,
+          "municipio": "Três de Maio",
+          "ibge": "4321808",
           "value": 24,
           "display_value": "24",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "GUAPORE",
-          "ibge": null,
-          "value": 23,
-          "display_value": "23",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "OSORIO",
-          "ibge": null,
-          "value": 23,
-          "display_value": "23",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "CARAZINHO",
-          "ibge": null,
+          "municipio": "Carazinho",
+          "ibge": "4304705",
           "value": 22,
           "display_value": "22",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "CANGUCU",
-          "ibge": null,
+          "municipio": "Estação",
+          "ibge": "4307559",
           "value": 22,
           "display_value": "22",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "ESTACAO",
-          "ibge": null,
+          "municipio": "Veranópolis",
+          "ibge": "4322806",
+          "value": 22,
+          "display_value": "22",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Canguçu",
+          "ibge": "4304507",
+          "value": 22,
+          "display_value": "22",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Serafina Corrêa",
+          "ibge": "4320404",
           "value": 21,
           "display_value": "21",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SERAFINA CORREA",
-          "ibge": null,
+          "municipio": "Vera Cruz",
+          "ibge": "4322707",
           "value": 21,
           "display_value": "21",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "VERANOPOLIS",
-          "ibge": null,
-          "value": 21,
-          "display_value": "21",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "ARVOREZINHA",
-          "ibge": null,
+          "municipio": "Arvorezinha",
+          "ibge": "4301404",
           "value": 20,
           "display_value": "20",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "GRAMADO",
-          "ibge": null,
+          "municipio": "Marau",
+          "ibge": "4311809",
           "value": 20,
           "display_value": "20",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "GUAIBA",
-          "ibge": null,
-          "value": 20,
-          "display_value": "20",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "VERA CRUZ",
-          "ibge": null,
-          "value": 20,
-          "display_value": "20",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "MARAU",
-          "ibge": null,
+          "municipio": "Igrejinha",
+          "ibge": "4310108",
           "value": 19,
           "display_value": "19",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "CAPAO DA CANOA",
-          "ibge": null,
+          "municipio": "Bom Princípio",
+          "ibge": "4302352",
           "value": 18,
           "display_value": "18",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "BROCHIER",
-          "ibge": null,
+          "municipio": "Brochier",
+          "ibge": "4302659",
           "value": 17,
           "display_value": "17",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "IGREJINHA",
-          "ibge": null,
+          "municipio": "São Sebastião do Caí",
+          "ibge": "4319505",
           "value": 17,
           "display_value": "17",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "IVOTI",
-          "ibge": null,
+          "municipio": "Tapejara",
+          "ibge": "4320909",
           "value": 17,
           "display_value": "17",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SAO SEBASTIAO DO CAI",
-          "ibge": null,
-          "value": 17,
-          "display_value": "17",
+          "municipio": "Não-Me-Toque",
+          "ibge": "4312658",
+          "value": 16,
+          "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "TAPEJARA",
-          "ibge": null,
-          "value": 17,
-          "display_value": "17",
+          "municipio": "Tramandaí",
+          "ibge": "4321600",
+          "value": 16,
+          "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "BOM PRINCIPIO",
-          "ibge": null,
+          "municipio": "Bom Retiro do Sul",
+          "ibge": "4302402",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "TAQUARA",
-          "ibge": null,
+          "municipio": "Cruz Alta",
+          "ibge": "4306106",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "ALVORADA",
-          "ibge": null,
+          "municipio": "Eldorado do Sul",
+          "ibge": "4306767",
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Parobé",
+          "ibge": "4314050",
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Taquara",
+          "ibge": "4321204",
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Alvorada",
+          "ibge": "4300604",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "CRUZ ALTA",
-          "ibge": null,
+          "municipio": "Frederico Westphalen",
+          "ibge": "4308508",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "FREDERICO WESTPHALEN",
-          "ibge": null,
+          "municipio": "Ronda Alta",
+          "ibge": "4316105",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "NAO-ME-TOQUE",
-          "ibge": null,
+          "municipio": "São José do Norte",
+          "ibge": "4318507",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "RONDA ALTA",
-          "ibge": null,
-          "value": 14,
-          "display_value": "14",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "SAO LUIZ GONZAGA",
-          "ibge": null,
+          "municipio": "São Luiz Gonzaga",
+          "ibge": "4318903",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "ELDORADO DO SUL",
-          "ibge": null,
+          "municipio": "Ilópolis",
+          "ibge": "4310306",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "PAROBE",
-          "ibge": null,
+          "municipio": "Lagoa Vermelha",
+          "ibge": "4311304",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SAO JOSE DO NORTE",
-          "ibge": null,
+          "municipio": "São Lourenço do Sul",
+          "ibge": "4318804",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "DOM PEDRITO",
-          "ibge": null,
+          "municipio": "Dom Pedrito",
+          "ibge": "4306601",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "FAXINAL DO SOTURNO",
-          "ibge": null,
+          "municipio": "Faxinal do Soturno",
+          "ibge": "4308003",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "TRAMANDAI",
-          "ibge": null,
-          "value": 12,
-          "display_value": "12",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "ILOPOLIS",
-          "ibge": null,
+          "municipio": "Nova Petrópolis",
+          "ibge": "4313201",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "LAGOA VERMELHA",
-          "ibge": null,
+          "municipio": "Santo Antônio da Patrulha",
+          "ibge": "4317608",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SANTO ANTONIO DA PATRULHA",
-          "ibge": null,
+          "municipio": "Três Cachoeiras",
+          "ibge": "4321667",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "ROSARIO DO SUL",
-          "ibge": null,
+          "municipio": "Xangri-lá",
+          "ibge": "4323804",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "ANTA GORDA",
-          "ibge": null,
+          "municipio": "Rosário do Sul",
+          "ibge": "4316402",
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Anta Gorda",
+          "ibge": "4300703",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "BARAO DE COTEGIPE",
-          "ibge": null,
+          "municipio": "Barão de Cotegipe",
+          "ibge": "4301701",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "IMIGRANTE",
-          "ibge": null,
+          "municipio": "Constantina",
+          "ibge": "4305801",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "JACUTINGA",
-          "ibge": null,
+          "municipio": "Imigrante",
+          "ibge": "4310363",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SAO LOURENCO DO SUL",
-          "ibge": null,
+          "municipio": "Jacutinga",
+          "ibge": "4310900",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "TRES CACHOEIRAS",
-          "ibge": null,
+          "municipio": "Caçapava do Sul",
+          "ibge": "4302808",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "CACAPAVA DO SUL",
-          "ibge": null,
+          "municipio": "Tapes",
+          "ibge": "4321105",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "TAPES",
-          "ibge": null,
-          "value": 10,
-          "display_value": "10",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "CONSTANTINA",
-          "ibge": null,
+          "municipio": "Aratiba",
+          "ibge": "4300901",
           "value": 9,
           "display_value": "9",
           "share": 0.0
@@ -1051,136 +1075,144 @@
         },
         {
           "uf": "RS",
-          "municipio": "LINHA NOVA",
-          "ibge": null,
+          "municipio": "Linha Nova",
+          "ibge": "4311643",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "MARQUES DE SOUZA",
-          "ibge": null,
+          "municipio": "Marques de Souza",
+          "ibge": "4312054",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "NOVA SANTA RITA",
-          "ibge": null,
+          "municipio": "Nova Santa Rita",
+          "ibge": "4313375",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "PRESIDENTE LUCENA",
-          "ibge": null,
+          "municipio": "Presidente Lucena",
+          "ibge": "4315149",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SANANDUVA",
-          "ibge": null,
+          "municipio": "Sananduva",
+          "ibge": "4316600",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SAO PEDRO DA SERRA",
-          "ibge": null,
+          "municipio": "São Pedro da Serra",
+          "ibge": "4319356",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "XANGRI-LA",
-          "ibge": null,
+          "municipio": "Hulha Negra",
+          "ibge": "4309654",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "HULHA NEGRA",
-          "ibge": null,
-          "value": 9,
-          "display_value": "9",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "ARATIBA",
-          "ibge": null,
+          "municipio": "Candelária",
+          "ibge": "4304200",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "CANDELARIA",
-          "ibge": null,
+          "municipio": "Encruzilhada do Sul",
+          "ibge": "4306908",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "ENCRUZILHADA DO SUL",
-          "ibge": null,
+          "municipio": "Fazenda Vilanova",
+          "ibge": "4308078",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "FAZENDA VILANOVA",
-          "ibge": null,
+          "municipio": "Picada Café",
+          "ibge": "4314423",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SANTA CLARA DO SUL",
-          "ibge": null,
+          "municipio": "Rolante",
+          "ibge": "4316006",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SAO FRANCISCO DE PAULA",
-          "ibge": null,
+          "municipio": "Santa Clara do Sul",
+          "ibge": "4316758",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SAO JOAO DA URTIGA",
-          "ibge": null,
+          "municipio": "Santiago",
+          "ibge": "4317400",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SEBERI",
-          "ibge": null,
+          "municipio": "São Francisco de Paula",
+          "ibge": "4318200",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "TRES COROAS",
-          "ibge": null,
+          "municipio": "São João da Urtiga",
+          "ibge": "4318424",
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Seberi",
+          "ibge": "4320206",
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Três Coroas",
+          "ibge": "4321709",
           "value": 8,
           "display_value": "8",
           "share": 0.0
@@ -1195,224 +1227,248 @@
         },
         {
           "uf": "RS",
-          "municipio": "CRUZEIRO DO SUL",
-          "ibge": null,
+          "municipio": "Cruzeiro do Sul",
+          "ibge": "4306205",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "VIADUTOS",
-          "ibge": null,
+          "municipio": "Viadutos",
+          "ibge": "4322905",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "CAMPINAS DO SUL",
-          "ibge": null,
+          "municipio": "Antônio Prado",
+          "ibge": "4300802",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "CHARQUEADAS",
-          "ibge": null,
+          "municipio": "Campinas do Sul",
+          "ibge": "4303806",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "PUTINGA",
-          "ibge": null,
+          "municipio": "Capela de Santana",
+          "ibge": "4304689",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "ROLANTE",
-          "ibge": null,
+          "municipio": "Charqueadas",
+          "ibge": "4305355",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SANTIAGO",
-          "ibge": null,
+          "municipio": "Condor",
+          "ibge": "4305702",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SAO PEDRO DO SUL",
-          "ibge": null,
+          "municipio": "Getúlio Vargas",
+          "ibge": "4308904",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "ANTONIO PRADO",
-          "ibge": null,
+          "municipio": "Putinga",
+          "ibge": "4315206",
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "São Pedro do Sul",
+          "ibge": "4319406",
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Canela",
+          "ibge": "4304408",
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Capão do Leão",
+          "ibge": "4304663",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "CAPAO DO LEAO",
-          "ibge": null,
+          "municipio": "Chapada",
+          "ibge": "4305306",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "CAPELA DE SANTANA",
-          "ibge": null,
+          "municipio": "Nova Candelária",
+          "ibge": "4313011",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "CONDOR",
-          "ibge": null,
+          "municipio": "Paraí",
+          "ibge": "4314001",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "GETULIO VARGAS",
-          "ibge": null,
+          "municipio": "Paulo Bento",
+          "ibge": "4314134",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "NOVA PETROPOLIS",
-          "ibge": null,
+          "municipio": "Rosário do Sul",
+          "ibge": "4316402",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "PARAI",
-          "ibge": null,
+          "municipio": "Tuparendi",
+          "ibge": "4322301",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "PAULO BENTO",
-          "ibge": null,
+          "municipio": "Butiá",
+          "ibge": "4302709",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "PICADA CAFE",
-          "ibge": null,
+          "municipio": "Mato Queimado",
+          "ibge": "4312179",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "BUTIA",
-          "ibge": null,
+          "municipio": "Morrinhos do Sul",
+          "ibge": "4312443",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "CANELA",
-          "ibge": null,
+          "municipio": "Pejuçara",
+          "ibge": "4314308",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "MORRINHOS DO SUL",
-          "ibge": null,
+          "municipio": "Venâncio Aires",
+          "ibge": "4322608",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "PEJUCARA",
-          "ibge": null,
-          "value": 6,
-          "display_value": "6",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "BOM RETIRO DO SUL",
-          "ibge": null,
+          "municipio": "Harmonia",
+          "ibge": "4309555",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "CHAPADA",
-          "ibge": null,
+          "municipio": "Lagoa dos Três Cantos",
+          "ibge": "4311270",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "LAGOA DOS TRES CANTOS",
-          "ibge": null,
+          "municipio": "Muçum",
+          "ibge": "4312609",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "NOVA CANDELARIA",
-          "ibge": null,
+          "municipio": "Nova Prata",
+          "ibge": "4313300",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "TUPARENDI",
-          "ibge": null,
+          "municipio": "São Gabriel",
+          "ibge": "4318309",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "VILA FLORES",
-          "ibge": null,
+          "municipio": "Severiano de Almeida",
+          "ibge": "4320602",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "BARÃO DE COTEGIPE",
-          "ibge": null,
+          "municipio": "Vila Flores",
+          "ibge": "4323309",
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Barão de Cotegipe",
+          "ibge": "4301701",
           "value": 5,
           "display_value": "5",
           "share": 0.0
@@ -1427,184 +1483,136 @@
         },
         {
           "uf": "RS",
-          "municipio": "ITAARA",
-          "ibge": null,
+          "municipio": "Itaara",
+          "ibge": "4310538",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "MATO QUEIMADO",
-          "ibge": null,
+          "municipio": "Morro Redondo",
+          "ibge": "4312450",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "MORRO REDONDO",
-          "ibge": null,
+          "municipio": "Porto Xavier",
+          "ibge": "4315107",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "PORTO XAVIER",
-          "ibge": null,
+          "municipio": "Quaraí",
+          "ibge": "4315305",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "QUARAI",
-          "ibge": null,
+          "municipio": "Sinimbu",
+          "ibge": "4320677",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "ROSÁRIO DO SUL",
-          "ibge": null,
+          "municipio": "Sobradinho",
+          "ibge": "4320701",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SINIMBU",
-          "ibge": null,
-          "value": 5,
-          "display_value": "5",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "SOBRADINHO",
-          "ibge": null,
-          "value": 5,
-          "display_value": "5",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "VENÂNCIO AIRES",
-          "ibge": null,
-          "value": 5,
-          "display_value": "5",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "AJURICABA",
-          "ibge": null,
+          "municipio": "Ajuricaba",
+          "ibge": "4300208",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "AUREA",
-          "ibge": null,
+          "municipio": "Áurea",
+          "ibge": "4301552",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "EREBANGO",
-          "ibge": null,
+          "municipio": "Erebango",
+          "ibge": "4306973",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "LINDOLFO COLLOR",
-          "ibge": null,
+          "municipio": "Lindolfo Collor",
+          "ibge": "4311627",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "NOVA PRATA",
-          "ibge": null,
+          "municipio": "São Valentim do Sul",
+          "ibge": "4319711",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "NÃO-ME-TOQUE",
-          "ibge": null,
+          "municipio": "Tapera",
+          "ibge": "4321006",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SAO GABRIEL",
-          "ibge": null,
+          "municipio": "Vale Real",
+          "ibge": "4322541",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SAO VALENTIM DO SUL",
-          "ibge": null,
+          "municipio": "Vila Maria",
+          "ibge": "4323408",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SEVERIANO DE ALMEIDA",
-          "ibge": null,
+          "municipio": "Arroio do Sal",
+          "ibge": "4301057",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "TAPERA",
-          "ibge": null,
+          "municipio": "Barão",
+          "ibge": "4301651",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "VALE REAL",
-          "ibge": null,
-          "value": 4,
-          "display_value": "4",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "VILA MARIA",
-          "ibge": null,
-          "value": 4,
-          "display_value": "4",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "ARROIO DO SAL",
-          "ibge": null,
-          "value": 4,
-          "display_value": "4",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "BARAO",
-          "ibge": null,
+          "municipio": "Campina das Missões",
+          "ibge": "4303707",
           "value": 4,
           "display_value": "4",
           "share": 0.0
@@ -1619,968 +1627,536 @@
         },
         {
           "uf": "RS",
-          "municipio": "INDEPENDÊNCIA",
-          "ibge": null,
+          "municipio": "Independência",
+          "ibge": "4310405",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "JÓIA",
-          "ibge": null,
+          "municipio": "Jóia",
+          "ibge": "4311155",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SAO BORJA",
-          "ibge": null,
+          "municipio": "Santa Vitória do Palmar",
+          "ibge": "4317301",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SÃO BORJA",
-          "ibge": null,
+          "municipio": "São Borja",
+          "ibge": "4318002",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "ARARICA",
-          "ibge": null,
+          "municipio": "São Borja",
+          "ibge": "4318002",
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Araricá",
+          "ibge": "4300877",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "BOA VISTA DO BURICA",
-          "ibge": null,
+          "municipio": "Boa Vista do Buricá",
+          "ibge": "4302204",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "DOIS LAJEADOS",
-          "ibge": null,
+          "municipio": "Dois Lajeados",
+          "ibge": "4306452",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "ESPUMOSO",
-          "ibge": null,
+          "municipio": "Espumoso",
+          "ibge": "4307500",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "HARMONIA",
-          "ibge": null,
+          "municipio": "Fagundes Varela",
+          "ibge": "4307864",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "MUCUM",
-          "ibge": null,
+          "municipio": "Nova Boa Vista",
+          "ibge": "4312955",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "NOVA BOA VISTA",
-          "ibge": null,
+          "municipio": "Paim Filho",
+          "ibge": "4313607",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "PAIM FILHO",
-          "ibge": null,
+          "municipio": "Pareci Novo",
+          "ibge": "4314035",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "PINHAL",
-          "ibge": null,
+          "municipio": "Paverama",
+          "ibge": "4314159",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SANTO ANTONIO DO PALMA",
-          "ibge": null,
+          "municipio": "Pinhal",
+          "ibge": "4314456",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SAO JERONIMO",
-          "ibge": null,
+          "municipio": "Santo Antônio do Palma",
+          "ibge": "4317558",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "TAQUARI",
-          "ibge": null,
+          "municipio": "São Jerônimo",
+          "ibge": "4318408",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "TRIUNFO",
-          "ibge": null,
+          "municipio": "Taquari",
+          "ibge": "4321303",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "BARAO DO TRIUNFO",
-          "ibge": null,
+          "municipio": "Terra de Areia",
+          "ibge": "4321436",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "BARRA DO QUARAI",
-          "ibge": null,
+          "municipio": "Triunfo",
+          "ibge": "4322004",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "CORONEL BARROS",
-          "ibge": null,
+          "municipio": "Balneário Pinhal",
+          "ibge": "4301636",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "FELIZ",
-          "ibge": null,
+          "municipio": "Barão do Triunfo",
+          "ibge": "4301750",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "FLORIANO PEIXOTO",
-          "ibge": null,
+          "municipio": "Barra do Quaraí",
+          "ibge": "4301875",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "PANTANO GRANDE",
-          "ibge": null,
+          "municipio": "Coronel Barros",
+          "ibge": "4305871",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "POCO DAS ANTAS",
-          "ibge": null,
+          "municipio": "Feliz",
+          "ibge": "4308102",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "RIO DOS INDIOS",
-          "ibge": null,
+          "municipio": "Floriano Peixoto",
+          "ibge": "4308250",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SANTA VITORIA DO PALMAR",
-          "ibge": null,
+          "municipio": "Giruá",
+          "ibge": "4309001",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SAO JOAO DO POLESINE",
-          "ibge": null,
+          "municipio": "Glorinha",
+          "ibge": "4309050",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SENTINELA DO SUL",
-          "ibge": null,
+          "municipio": "Imbé",
+          "ibge": "4310330",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "ALECRIM",
-          "ibge": null,
+          "municipio": "Pantano Grande",
+          "ibge": "4313953",
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Piratini",
+          "ibge": "4314605",
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Poço das Antas",
+          "ibge": "4314753",
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Rio dos Índios",
+          "ibge": "4315552",
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "São João do Polêsine",
+          "ibge": "4318432",
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Sentinela do Sul",
+          "ibge": "4320354",
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Alecrim",
+          "ibge": "4300307",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "ARROIO DO TIGRE",
-          "ibge": null,
+          "municipio": "Arroio do Tigre",
+          "ibge": "4301206",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "BENTO GONÇALVES",
-          "ibge": null,
+          "municipio": "Colinas",
+          "ibge": "4305587",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "COLINAS",
-          "ibge": null,
+          "municipio": "Ipiranga do Sul",
+          "ibge": "4310462",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "FAGUNDES VARELA",
-          "ibge": null,
+          "municipio": "Júlio de Castilhos",
+          "ibge": "4311205",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "IPIRANGA DO SUL",
-          "ibge": null,
+          "municipio": "Lagoão",
+          "ibge": "4311254",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "JULIO DE CASTILHOS",
-          "ibge": null,
+          "municipio": "Maratá",
+          "ibge": "4311791",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "LAGOAO",
-          "ibge": null,
+          "municipio": "Nova Bassano",
+          "ibge": "4312906",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "MARATA",
-          "ibge": null,
+          "municipio": "Não-Me-Toque",
+          "ibge": "4312658",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "PAVERAMA",
-          "ibge": null,
+          "municipio": "Passo do Sobrado",
+          "ibge": "4314076",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "ROCA SALES",
-          "ibge": null,
+          "municipio": "Roca Sales",
+          "ibge": "4315800",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "RODEIO BONITO",
-          "ibge": null,
+          "municipio": "Rodeio Bonito",
+          "ibge": "4315909",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SANTO CRISTO",
-          "ibge": null,
+          "municipio": "Santo Cristo",
+          "ibge": "4317905",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SAO JOSE DO INHACORA",
-          "ibge": null,
+          "municipio": "São José do Inhacorá",
+          "ibge": "4318499",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "SAO VENDELINO",
-          "ibge": null,
+          "municipio": "São Vendelino",
+          "ibge": "4319752",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "TENENTE PORTELA",
-          "ibge": null,
+          "municipio": "Tenente Portela",
+          "ibge": "4321402",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "TERRA DE AREIA",
-          "ibge": null,
+          "municipio": "Três Palmeiras",
+          "ibge": "4321857",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "TRES PALMEIRAS",
-          "ibge": null,
+          "municipio": "Victor Graeff",
+          "ibge": "4323200",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "VICTOR GRAEFF",
-          "ibge": null,
+          "municipio": "Westfália",
+          "ibge": "4323770",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "BALNEARIO PINHAL",
-          "ibge": null,
+          "municipio": "Cerro Grande do Sul",
+          "ibge": "4305173",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "CERRO GRANDE DO SUL",
-          "ibge": null,
+          "municipio": "Crissiumal",
+          "ibge": "4306007",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "CRISSIUMAL",
-          "ibge": null,
+          "municipio": "Cristal",
+          "ibge": "4306056",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "CRISTAL",
-          "ibge": null,
+          "municipio": "Erval Grande",
+          "ibge": "4307203",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "ERVAL GRANDE",
-          "ibge": null,
+          "municipio": "Formigueiro",
+          "ibge": "4308409",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "FORQUETINHA",
-          "ibge": null,
+          "municipio": "Forquetinha",
+          "ibge": "4308433",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "GIRUA",
-          "ibge": null,
+          "municipio": "Machadinho",
+          "ibge": "4311700",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "GLORINHA",
-          "ibge": null,
+          "municipio": "Sertão Santana",
+          "ibge": "4320552",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "MACHADINHO",
-          "ibge": null,
+          "municipio": "Vale do Sol",
+          "ibge": "4322533",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "PIRATINI",
-          "ibge": null,
+          "municipio": "Vespasiano Corrêa",
+          "ibge": "4322855",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "VALE DO SOL",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "VESPASIANO CORREA",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "AMETISTA DO SUL",
-          "ibge": null,
+          "municipio": "Ametista do Sul",
+          "ibge": "4300646",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "BARRA DO RIBEIRO",
-          "ibge": null,
+          "municipio": "Barra do Ribeiro",
+          "ibge": "4301909",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RS",
-          "municipio": "BARRA FUNDA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "CAICARA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "CAPITAO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "CASCA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "CENTENARIO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "CHUVISCA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "CIRIACO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "COLORADO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "ESTÂNCIA VELHA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "GENERAL CAMARA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "IBIRAIARAS",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "IBIRAPUITA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "IBIRUBA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "MONTAURI",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "NOVA ARACA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "NOVA BASSANO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "NOVA HARTZ",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "NOVO BARREIRO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "PINTO BANDEIRA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "QUINZE DE NOVEMBRO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "RELVADO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "RESTINGA SECA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "RONDINHA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "ROQUE GONZALES",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "SAGRADA FAMILIA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "SÃO LEOPOLDO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "SÃO MARCOS",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "SÃO SEBASTIÃO DO CAÍ",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "TABAI",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "TUPANCI DO SUL",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "TURUCU",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "WESTFALIA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "ALTO FELIZ",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "AMARAL FERRADOR",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "ARROIO DOS RATOS",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "BAGÉ",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "CAMPESTRE DA SERRA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "CAMPINA DAS MISSOES",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "CAPIVARI DO SUL",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "DOM FELICIANO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "ERNESTINA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "FORMIGUEIRO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "GENTIL",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "IMBE",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "ITAQUI",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "ITATIBA DO SUL",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "LIBERATO SALZANO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "MATO LEITAO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "MONTE BELO DO SUL",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "MORRO REUTER",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "PARECI NOVO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "PASSO DO SOBRADO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "PLANALTO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "POUSO NOVO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "SANTA MARGARIDA DO SUL",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "SANTO AUGUSTO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "SERTAO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "SERTAO SANTANA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "TRES ARROIOS",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RS",
-          "municipio": "TUPANCIRETA",
-          "ibge": null,
+          "municipio": "Barra Funda",
+          "ibge": "4301958",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -2588,7 +2164,463 @@
         {
           "uf": "RS",
           "municipio": "Bento Gonçalves",
-          "ibge": null,
+          "ibge": "4302105",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Caiçara",
+          "ibge": "4303400",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Cândido Godói",
+          "ibge": "4304309",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Capitão",
+          "ibge": "4304697",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Casca",
+          "ibge": "4304903",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Centenário",
+          "ibge": "4305116",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Cerro Largo",
+          "ibge": "4305207",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Chuvisca",
+          "ibge": "4305447",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Ciríaco",
+          "ibge": "4305504",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Colorado",
+          "ibge": "4305603",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Coronel Pilar",
+          "ibge": "4305934",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Estância Velha",
+          "ibge": "4307609",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "General Câmara",
+          "ibge": "4308805",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Ibiraiaras",
+          "ibge": "4309902",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Ibirapuitã",
+          "ibge": "4309951",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Ibirubá",
+          "ibge": "4310009",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Montauri",
+          "ibge": "4312351",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Nova Araçá",
+          "ibge": "4312807",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Nova Hartz",
+          "ibge": "4313060",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Novo Barreiro",
+          "ibge": "4313490",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Pinto Bandeira",
+          "ibge": "4314548",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Quinze de Novembro",
+          "ibge": "4315354",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Relvado",
+          "ibge": "4315453",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Restinga Sêca",
+          "ibge": "4315503",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Rondinha",
+          "ibge": "4316204",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Roque Gonzales",
+          "ibge": "4316303",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Sagrada Família",
+          "ibge": "4316428",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "São José das Missões",
+          "ibge": "4318457",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "São Sebastião do Caí",
+          "ibge": "4319505",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Tabaí",
+          "ibge": "4320859",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Tupanci do Sul",
+          "ibge": "4322186",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Turuçu",
+          "ibge": "4322327",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Alto Feliz",
+          "ibge": "4300570",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Amaral Ferrador",
+          "ibge": "4300638",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Arroio dos Ratos",
+          "ibge": "4301107",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Bagé",
+          "ibge": "4301602",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Benjamin Constant do Sul",
+          "ibge": "4302055",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Campestre da Serra",
+          "ibge": "4303673",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Capivari do Sul",
+          "ibge": "4304671",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Dom Feliciano",
+          "ibge": "4306502",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Ernestina",
+          "ibge": "4307054",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Gentil",
+          "ibge": "4308854",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Itaqui",
+          "ibge": "4310603",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Itatiba do Sul",
+          "ibge": "4310702",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Liberato Salzano",
+          "ibge": "4311601",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Mato Leitão",
+          "ibge": "4312153",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Monte Belo do Sul",
+          "ibge": "4312385",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Morro Reuter",
+          "ibge": "4312476",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Nova Roma do Sul",
+          "ibge": "4313359",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Pinheiro Machado",
+          "ibge": "4314506",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Planalto",
+          "ibge": "4314704",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Pouso Novo",
+          "ibge": "4315131",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Santa Margarida do Sul",
+          "ibge": "4316972",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Santo Augusto",
+          "ibge": "4317806",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Sertão",
+          "ibge": "4320503",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Três Arroios",
+          "ibge": "4321634",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Tupanciretã",
+          "ibge": "4322202",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RS",
+          "municipio": "Bento Gonçalves",
+          "ibge": "4302105",
           "value": 0,
           "display_value": "0",
           "share": 0.0
@@ -2604,7 +2636,7 @@
         {
           "uf": "RS",
           "municipio": "São Leopoldo",
-          "ibge": null,
+          "ibge": "4318705",
           "value": 0,
           "display_value": "0",
           "share": 0.0
@@ -2614,7 +2646,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -2628,15 +2660,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }

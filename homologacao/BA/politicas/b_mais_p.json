@@ -4,35 +4,35 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "3.313 atendimentos",
+    "display_value": "3.415 atendimentos",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "flat",
-      "label": "2,1% do total nacional · 11ª entre 27 UFs"
+      "label": "2,0% do total nacional · 12ª entre 27 UFs"
     },
-    "value": 3313
+    "value": 3415
   },
   "story": {
     "escopo": "uf",
     "uf": "BA",
     "regra": "meio",
-    "headline": "3.313 atendimentos na Bahia — 2,1% do total nacional, 11ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Bahia ocupa a 11ª posição entre as 27 UFs participantes do programa e responde por 2,1% do programa no país. Dentro do Nordeste, que soma 25.119 atendimentos, a participação da Bahia é de 13,2%. As empresas atendidas pelo programa na Bahia tiveram ganho médio de 36,3% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 42,5%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "headline": "3.415 atendimentos na Bahia — 2,0% do total nacional, 12ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Bahia ocupa a 12ª posição entre as 27 UFs participantes do programa e responde por 2,0% do programa no país. Dentro do Nordeste, que soma 27.160 atendimentos, a participação da Bahia é de 12,6%. As empresas atendidas pelo programa na Bahia tiveram ganho médio de 36,3% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 42,5%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "11ª posição nacional entre as 27 UFs participantes do programa, com 2,1% do total."
+        "text": "12ª posição nacional entre as 27 UFs participantes do programa, com 2,0% do total."
       },
       {
         "tone": "neutral",
-        "text": "13,2% de tudo que o Nordeste registra no programa."
+        "text": "12,6% de tudo que o Nordeste registra no programa."
       }
     ]
   },
@@ -40,32 +40,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -74,17 +66,17 @@
     {
       "id": "senai",
       "label": "SENAI — consultoria técnica (Lean)",
-      "value": 1155,
+      "value": 1217,
       "unit": "atendimentos",
-      "display_value": "1.155 atendimentos",
+      "display_value": "1.217 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 2146,
+      "value": 2186,
       "unit": "atendimentos",
-      "display_value": "2.146 atendimentos",
+      "display_value": "2.186 atendimentos",
       "period": "acumulado"
     },
     {
@@ -96,19 +88,19 @@
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 10,9 mi mobilizados"
+        "label": "R$ 11,1 mi mobilizados"
       }
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 0,
-      "unit": "operações",
-      "display_value": "0 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 0.0,
+      "unit": "",
+      "display_value": "—",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "— financiados"
+        "label": "0 operações financiadas"
       }
     }
   ],
@@ -128,15 +120,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -162,15 +154,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -180,15 +172,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -198,15 +190,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -216,15 +208,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -234,15 +226,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -252,15 +244,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -283,344 +275,352 @@
       "items": [
         {
           "uf": "BA",
-          "municipio": "SALVADOR",
-          "ibge": null,
-          "value": 823,
-          "display_value": "823",
+          "municipio": "Salvador",
+          "ibge": "2927408",
+          "value": 855,
+          "display_value": "855",
           "share": 0.5
         },
         {
           "uf": "BA",
-          "municipio": "FEIRA DE SANTANA",
-          "ibge": null,
-          "value": 269,
-          "display_value": "269",
+          "municipio": "Feira de Santana",
+          "ibge": "2910800",
+          "value": 281,
+          "display_value": "281",
           "share": 0.2
         },
         {
           "uf": "BA",
-          "municipio": "LAURO DE FREITAS",
-          "ibge": null,
-          "value": 245,
-          "display_value": "245",
+          "municipio": "Lauro de Freitas",
+          "ibge": "2919207",
+          "value": 260,
+          "display_value": "260",
           "share": 0.2
         },
         {
           "uf": "BA",
-          "municipio": "JUAZEIRO",
-          "ibge": null,
-          "value": 156,
-          "display_value": "156",
+          "municipio": "Juazeiro",
+          "ibge": "2918407",
+          "value": 159,
+          "display_value": "159",
           "share": 0.1
         },
         {
           "uf": "BA",
-          "municipio": "ILHEUS",
-          "ibge": null,
-          "value": 144,
-          "display_value": "144",
+          "municipio": "Ilhéus",
+          "ibge": "2913606",
+          "value": 146,
+          "display_value": "146",
           "share": 0.1
         },
         {
           "uf": "BA",
-          "municipio": "CAMACARI",
-          "ibge": null,
-          "value": 132,
-          "display_value": "132",
+          "municipio": "Camaçari",
+          "ibge": "2905701",
+          "value": 133,
+          "display_value": "133",
           "share": 0.1
         },
         {
           "uf": "BA",
-          "municipio": "TEIXEIRA DE FREITAS",
-          "ibge": null,
-          "value": 122,
-          "display_value": "122",
+          "municipio": "Teixeira de Freitas",
+          "ibge": "2931350",
+          "value": 123,
+          "display_value": "123",
           "share": 0.1
         },
         {
           "uf": "BA",
-          "municipio": "SIMOES FILHO",
-          "ibge": null,
-          "value": 112,
-          "display_value": "112",
+          "municipio": "Simões Filho",
+          "ibge": "2930709",
+          "value": 115,
+          "display_value": "115",
           "share": 0.1
         },
         {
           "uf": "BA",
-          "municipio": "JACOBINA",
-          "ibge": null,
-          "value": 92,
-          "display_value": "92",
+          "municipio": "Jacobina",
+          "ibge": "2917508",
+          "value": 94,
+          "display_value": "94",
           "share": 0.1
         },
         {
           "uf": "BA",
-          "municipio": "ITABUNA",
-          "ibge": null,
-          "value": 86,
-          "display_value": "86",
+          "municipio": "Itabuna",
+          "ibge": "2914802",
+          "value": 89,
+          "display_value": "89",
           "share": 0.1
         },
         {
           "uf": "BA",
-          "municipio": "ALAGOINHAS",
-          "ibge": null,
+          "municipio": "Alagoinhas",
+          "ibge": "2900702",
           "value": 73,
           "display_value": "73",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "IPIRA",
-          "ibge": null,
+          "municipio": "Ipirá",
+          "ibge": "2914000",
           "value": 71,
           "display_value": "71",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "SANTO ANTONIO DE JESUS",
-          "ibge": null,
-          "value": 54,
-          "display_value": "54",
+          "municipio": "Santo Antônio de Jesus",
+          "ibge": "2928703",
+          "value": 61,
+          "display_value": "61",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "VALENCA",
-          "ibge": null,
-          "value": 53,
-          "display_value": "53",
+          "municipio": "Valença",
+          "ibge": "2932903",
+          "value": 55,
+          "display_value": "55",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "PORTO SEGURO",
-          "ibge": null,
-          "value": 48,
-          "display_value": "48",
+          "municipio": "Porto Seguro",
+          "ibge": "2925303",
+          "value": 49,
+          "display_value": "49",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "PAULO AFONSO",
-          "ibge": null,
-          "value": 40,
-          "display_value": "40",
+          "municipio": "Paulo Afonso",
+          "ibge": "2924009",
+          "value": 41,
+          "display_value": "41",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "VITORIA DA CONQUISTA",
-          "ibge": null,
+          "municipio": "Dias d'Ávila",
+          "ibge": "2910057",
           "value": 36,
           "display_value": "36",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "DIAS D'AVILA",
-          "ibge": null,
+          "municipio": "Vitória da Conquista",
+          "ibge": "2933307",
           "value": 34,
           "display_value": "34",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "EUNAPOLIS",
-          "ibge": null,
+          "municipio": "Eunápolis",
+          "ibge": "2910727",
           "value": 31,
           "display_value": "31",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "BARREIRAS",
-          "ibge": null,
+          "municipio": "Barreiras",
+          "ibge": "2903201",
           "value": 28,
           "display_value": "28",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "CRUZ DAS ALMAS",
-          "ibge": null,
+          "municipio": "Cruz das Almas",
+          "ibge": "2909802",
+          "value": 24,
+          "display_value": "24",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "Santo Amaro",
+          "ibge": "2928604",
           "value": 22,
           "display_value": "22",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "SANTO AMARO",
-          "ibge": null,
+          "municipio": "Tucano",
+          "ibge": "2931905",
           "value": 22,
           "display_value": "22",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "TUCANO",
-          "ibge": null,
-          "value": 22,
-          "display_value": "22",
-          "share": 0.0
-        },
-        {
-          "uf": "BA",
-          "municipio": "INHAMBUPE",
-          "ibge": null,
+          "municipio": "Conceição do Coité",
+          "ibge": "2908408",
           "value": 21,
           "display_value": "21",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "JEQUIE",
-          "ibge": null,
+          "municipio": "Inhambupe",
+          "ibge": "2913705",
+          "value": 21,
+          "display_value": "21",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "São Gonçalo dos Campos",
+          "ibge": "2929305",
+          "value": 21,
+          "display_value": "21",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "Jequié",
+          "ibge": "2918001",
           "value": 20,
           "display_value": "20",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "SAO GONCALO DOS CAMPOS",
-          "ibge": null,
+          "municipio": "Itaberaba",
+          "ibge": "2914703",
           "value": 20,
           "display_value": "20",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "LUIS EDUARDO MAGALHAES",
-          "ibge": null,
+          "municipio": "Luís Eduardo Magalhães",
+          "ibge": "2919553",
           "value": 19,
           "display_value": "19",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "ITABERABA",
-          "ibge": null,
-          "value": 17,
-          "display_value": "17",
-          "share": 0.0
-        },
-        {
-          "uf": "BA",
-          "municipio": "CONCEICAO DO COITE",
-          "ibge": null,
-          "value": 16,
-          "display_value": "16",
-          "share": 0.0
-        },
-        {
-          "uf": "BA",
-          "municipio": "ITAMARAJU",
-          "ibge": null,
+          "municipio": "Itamaraju",
+          "ibge": "2915601",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "SENHOR DO BONFIM",
-          "ibge": null,
+          "municipio": "Senhor do Bonfim",
+          "ibge": "2930105",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "MATA DE SAO JOAO",
-          "ibge": null,
+          "municipio": "Mata de São João",
+          "ibge": "2921005",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "SAO SEBASTIAO DO PASSE",
-          "ibge": null,
+          "municipio": "São Sebastião do Passé",
+          "ibge": "2929503",
+          "value": 12,
+          "display_value": "12",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "Gandu",
+          "ibge": "2911204",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "MUCUGE",
-          "ibge": null,
+          "municipio": "Mucugê",
+          "ibge": "2921906",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "CONCEICAO DO JACUIPE",
-          "ibge": null,
+          "municipio": "Conceição do Jacuípe",
+          "ibge": "2908507",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "GLORIA",
-          "ibge": null,
+          "municipio": "Glória",
+          "ibge": "2911402",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "IRECE",
-          "ibge": null,
+          "municipio": "Irecê",
+          "ibge": "2914604",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "MORRO DO CHAPEU",
-          "ibge": null,
+          "municipio": "Morro do Chapéu",
+          "ibge": "2921708",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "AMARGOSA",
-          "ibge": null,
+          "municipio": "Amargosa",
+          "ibge": "2901007",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "GANDU",
-          "ibge": null,
+          "municipio": "Ituberá",
+          "ibge": "2917300",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "VARZEA NOVA",
-          "ibge": null,
+          "municipio": "Várzea Nova",
+          "ibge": "2933158",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "MARAU",
-          "ibge": null,
+          "municipio": "Maraú",
+          "ibge": "2920700",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "FILADELFIA",
-          "ibge": null,
+          "municipio": "Filadélfia",
+          "ibge": "2910859",
           "value": 8,
           "display_value": "8",
           "share": 0.0
@@ -635,328 +635,360 @@
         },
         {
           "uf": "BA",
-          "municipio": "ITUBERA",
-          "ibge": null,
+          "municipio": "São Felipe",
+          "ibge": "2929107",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "SAO FELIPE",
-          "ibge": null,
-          "value": 8,
-          "display_value": "8",
-          "share": 0.0
-        },
-        {
-          "uf": "BA",
-          "municipio": "CAMPO FORMOSO",
-          "ibge": null,
+          "municipio": "Campo Formoso",
+          "ibge": "2906006",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "LAJE",
-          "ibge": null,
+          "municipio": "Laje",
+          "ibge": "2918803",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "POJUCA",
-          "ibge": null,
+          "municipio": "Pojuca",
+          "ibge": "2925204",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "TAPEROA",
-          "ibge": null,
+          "municipio": "Taperoá",
+          "ibge": "2931202",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "ALMADINA",
-          "ibge": null,
+          "municipio": "Almadina",
+          "ibge": "2900900",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "MANOEL VITORINO",
-          "ibge": null,
+          "municipio": "Euclides da Cunha",
+          "ibge": "2910701",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "URUCUCA",
-          "ibge": null,
+          "municipio": "Manoel Vitorino",
+          "ibge": "2920403",
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "Uruçuca",
+          "ibge": "2932705",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "CANAVIEIRAS",
-          "ibge": null,
+          "municipio": "Canavieiras",
+          "ibge": "2906303",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "EUCLIDES DA CUNHA",
-          "ibge": null,
+          "municipio": "Ibicoara",
+          "ibge": "2912202",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "IBICOARA",
-          "ibge": null,
+          "municipio": "Ibirapitanga",
+          "ibge": "2912707",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "IBIRAPITANGA",
-          "ibge": null,
+          "municipio": "Santaluz",
+          "ibge": "2928000",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "NILO PECANHA",
-          "ibge": null,
+          "municipio": "Jiquiriçá",
+          "ibge": "2918209",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "ABARE",
-          "ibge": null,
+          "municipio": "Nilo Peçanha",
+          "ibge": "2922607",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "ARATUIPE",
-          "ibge": null,
+          "municipio": "Riachão do Jacuípe",
+          "ibge": "2926301",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "COCOS",
-          "ibge": null,
+          "municipio": "Abaré",
+          "ibge": "2900207",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "CONCEICAO DA FEIRA",
-          "ibge": null,
+          "municipio": "Aratuípe",
+          "ibge": "2902302",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "JUSSARA",
-          "ibge": null,
+          "municipio": "Cocos",
+          "ibge": "2908101",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "OUROLANDIA",
-          "ibge": null,
+          "municipio": "Conceição da Feira",
+          "ibge": "2908200",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "SANTALUZ",
-          "ibge": null,
+          "municipio": "Jussara",
+          "ibge": "2918506",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "ENTRE RIOS",
-          "ibge": null,
+          "municipio": "Ourolândia",
+          "ibge": "2923357",
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "Una",
+          "ibge": "2932507",
+          "value": 5,
+          "display_value": "5",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "Entre Rios",
+          "ibge": "2910503",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "ITAPE",
-          "ibge": null,
+          "municipio": "Itapé",
+          "ibge": "2916203",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "JIQUIRICA",
-          "ibge": null,
+          "municipio": "Muritiba",
+          "ibge": "2922300",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "MURITIBA",
-          "ibge": null,
+          "municipio": "Mutuípe",
+          "ibge": "2922409",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "RIACHAO DO JACUIPE",
-          "ibge": null,
+          "municipio": "Ubaíra",
+          "ibge": "2932101",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "UBAIRA",
-          "ibge": null,
+          "municipio": "Abaíra",
+          "ibge": "2900108",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "ABAIRA",
-          "ibge": null,
+          "municipio": "Buerarema",
+          "ibge": "2904704",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "BUERAREMA",
-          "ibge": null,
+          "municipio": "Cristópolis",
+          "ibge": "2909703",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "CRISTOPOLIS",
-          "ibge": null,
+          "municipio": "Curaçá",
+          "ibge": "2909901",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "CURACA",
-          "ibge": null,
+          "municipio": "Jeremoabo",
+          "ibge": "2918100",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "SEABRA",
-          "ibge": null,
+          "municipio": "Seabra",
+          "ibge": "2929909",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "BARRA DO CHOCA",
-          "ibge": null,
+          "municipio": "Barra do Choça",
+          "ibge": "2902906",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "JAGUAQUARA",
-          "ibge": null,
+          "municipio": "Jaguaquara",
+          "ibge": "2917607",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "MUTUIPE",
-          "ibge": null,
+          "municipio": "São Miguel das Matas",
+          "ibge": "2929404",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "SAO MIGUEL DAS MATAS",
-          "ibge": null,
+          "municipio": "Serrinha",
+          "ibge": "2930501",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "SERRINHA",
-          "ibge": null,
+          "municipio": "Adustina",
+          "ibge": "2900355",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "CAMAMU",
-          "ibge": null,
+          "municipio": "Antas",
+          "ibge": "2901601",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "CATU",
-          "ibge": null,
+          "municipio": "Camamu",
+          "ibge": "2905800",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "FEIRA DA MATA",
-          "ibge": null,
+          "municipio": "Catu",
+          "ibge": "2907509",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "ITACARE",
-          "ibge": null,
+          "municipio": "Dom Macedo Costa",
+          "ibge": "2910206",
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "Feira da Mata",
+          "ibge": "2910776",
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "Itacaré",
+          "ibge": "2914901",
           "value": 3,
           "display_value": "3",
           "share": 0.0
@@ -964,591 +996,583 @@
         {
           "uf": "BA",
           "municipio": "Ibicoara",
-          "ibge": null,
+          "ibge": "2912202",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "JEREMOABO",
-          "ibge": null,
+          "municipio": "Mucugê",
+          "ibge": "2921906",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "MUCUGÊ",
-          "ibge": null,
+          "municipio": "Mundo Novo",
+          "ibge": "2922102",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "PIATA",
-          "ibge": null,
+          "municipio": "Piatã",
+          "ibge": "2924306",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "PRADO",
-          "ibge": null,
+          "municipio": "Prado",
+          "ibge": "2925501",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "SAPEACU",
-          "ibge": null,
+          "municipio": "São Domingos",
+          "ibge": "2928950",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "WENCESLAU GUIMARAES",
-          "ibge": null,
+          "municipio": "Sapeaçu",
+          "ibge": "2929602",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "AMELIA RODRIGUES",
-          "ibge": null,
+          "municipio": "Wenceslau Guimarães",
+          "ibge": "2933505",
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "BA",
+          "municipio": "Amélia Rodrigues",
+          "ibge": "2901106",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "CANDEIAS",
-          "ibge": null,
+          "municipio": "Anguera",
+          "ibge": "2901502",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "CAPIM GROSSO",
-          "ibge": null,
+          "municipio": "Candeias",
+          "ibge": "2906501",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "GUANAMBI",
-          "ibge": null,
+          "municipio": "Capim Grosso",
+          "ibge": "2906873",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "MEDEIROS NETO",
-          "ibge": null,
+          "municipio": "Guanambi",
+          "ibge": "2911709",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "SIMÕES FILHO",
-          "ibge": null,
+          "municipio": "Medeiros Neto",
+          "ibge": "2921104",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "ADUSTINA",
-          "ibge": null,
+          "municipio": "Araci",
+          "ibge": "2902104",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "ANTAS",
-          "ibge": null,
+          "municipio": "Barro Preto",
+          "ibge": "2903300",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "ARACI",
-          "ibge": null,
+          "municipio": "Caetité",
+          "ibge": "2905206",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "BARRO PRETO",
-          "ibge": null,
+          "municipio": "Canarana",
+          "ibge": "2906204",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "CAETITE",
-          "ibge": null,
+          "municipio": "Caravelas",
+          "ibge": "2906907",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "CASA NOVA",
-          "ibge": null,
+          "municipio": "Casa Nova",
+          "ibge": "2907202",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "CORRENTINA",
-          "ibge": null,
+          "municipio": "Correntina",
+          "ibge": "2909307",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "DOM MACEDO COSTA",
-          "ibge": null,
+          "municipio": "Floresta Azul",
+          "ibge": "2911006",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "FLORESTA AZUL",
-          "ibge": null,
+          "municipio": "Itagibá",
+          "ibge": "2915205",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "ITAGIBA",
-          "ibge": null,
+          "municipio": "Itajuípe",
+          "ibge": "2915502",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "ITAJUIPE",
-          "ibge": null,
+          "municipio": "Morpará",
+          "ibge": "2921609",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "MORPARÁ",
-          "ibge": null,
+          "municipio": "Remanso",
+          "ibge": "2926004",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "MUNDO NOVO",
-          "ibge": null,
+          "municipio": "Riacho de Santana",
+          "ibge": "2926400",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "RIACHO DE SANTANA",
-          "ibge": null,
+          "municipio": "Serra do Ramalho",
+          "ibge": "2930154",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "SAO DOMINGOS",
-          "ibge": null,
+          "municipio": "Sobradinho",
+          "ibge": "2930774",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "SERRA DO RAMALHO",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "BA",
-          "municipio": "SOBRADINHO",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "BA",
-          "municipio": "APORA",
-          "ibge": null,
+          "municipio": "Aporá",
+          "ibge": "2901908",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "ARAMARI",
-          "ibge": null,
+          "municipio": "Aramari",
+          "ibge": "2902203",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "CAMAÇARI",
-          "ibge": null,
+          "municipio": "Camaçari",
+          "ibge": "2905701",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "CASTRO ALVES",
-          "ibge": null,
+          "municipio": "Castro Alves",
+          "ibge": "2907301",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "CORACAO DE MARIA",
-          "ibge": null,
+          "municipio": "Coração de Maria",
+          "ibge": "2908903",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "IRARA",
-          "ibge": null,
+          "municipio": "Irará",
+          "ibge": "2914505",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "ITANAGRA",
-          "ibge": null,
+          "municipio": "Itanagra",
+          "ibge": "2915908",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "MUCURI",
-          "ibge": null,
+          "municipio": "Mucuri",
+          "ibge": "2922003",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "PALMAS DE MONTE ALTO",
-          "ibge": null,
+          "municipio": "Palmas de Monte Alto",
+          "ibge": "2923407",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "PEDRAO",
-          "ibge": null,
+          "municipio": "Pedrão",
+          "ibge": "2924108",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "PLANALTO",
-          "ibge": null,
+          "municipio": "Planalto",
+          "ibge": "2925006",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "POCOES",
-          "ibge": null,
+          "municipio": "Poções",
+          "ibge": "2925105",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "SAO DESIDERIO",
-          "ibge": null,
+          "municipio": "São Desidério",
+          "ibge": "2928901",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "URUÇUCA",
-          "ibge": null,
+          "municipio": "Simões Filho",
+          "ibge": "2930709",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "AGUA FRIA",
-          "ibge": null,
+          "municipio": "Uruçuca",
+          "ibge": "2932705",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "ANDORINHA",
-          "ibge": null,
+          "municipio": "Água Fria",
+          "ibge": "2900405",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "ANGICAL",
-          "ibge": null,
+          "municipio": "Angical",
+          "ibge": "2901403",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "AURELINO LEAL",
-          "ibge": null,
+          "municipio": "Antônio Gonçalves",
+          "ibge": "2901809",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "BELMONTE",
-          "ibge": null,
+          "municipio": "Aurelino Leal",
+          "ibge": "2902401",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "BREJOES",
-          "ibge": null,
+          "municipio": "Belmonte",
+          "ibge": "2903409",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "CACHOEIRA",
-          "ibge": null,
+          "municipio": "Brejões",
+          "ibge": "2904308",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "CANARANA",
-          "ibge": null,
+          "municipio": "Cachoeira",
+          "ibge": "2904902",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "CANSANCAO",
-          "ibge": null,
+          "municipio": "Cansanção",
+          "ibge": "2906808",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "CONDE",
-          "ibge": null,
+          "municipio": "Conde",
+          "ibge": "2908606",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "FATIMA",
-          "ibge": null,
+          "municipio": "Fátima",
+          "ibge": "2910750",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "GOVERNADOR MANGABEIRA",
-          "ibge": null,
+          "municipio": "Governador Mangabeira",
+          "ibge": "2911600",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "IBOTIRAMA",
-          "ibge": null,
+          "municipio": "Ibotirama",
+          "ibge": "2913200",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "ITABELA",
-          "ibge": null,
+          "municipio": "Itabela",
+          "ibge": "2914653",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "ITAPITANGA",
-          "ibge": null,
+          "municipio": "Itapitanga",
+          "ibge": "2916609",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "ITIRUCU",
-          "ibge": null,
+          "municipio": "Itiruçu",
+          "ibge": "2916906",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "JAGUARARI",
-          "ibge": null,
+          "municipio": "Jaguarari",
+          "ibge": "2917706",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "JAGUARIPE",
-          "ibge": null,
+          "municipio": "Jaguaripe",
+          "ibge": "2917805",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "LAMARAO",
-          "ibge": null,
+          "municipio": "Lamarão",
+          "ibge": "2919108",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "MARAGOGIPE",
-          "ibge": null,
+          "municipio": "Maragogipe",
+          "ibge": "2920601",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "MUNIZ FERREIRA",
-          "ibge": null,
+          "municipio": "Muniz Ferreira",
+          "ibge": "2922201",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "PALMEIRAS",
-          "ibge": null,
+          "municipio": "Palmeiras",
+          "ibge": "2923506",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "PAU BRASIL",
-          "ibge": null,
+          "municipio": "Pau Brasil",
+          "ibge": "2923902",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "REMANSO",
-          "ibge": null,
+          "municipio": "Retirolândia",
+          "ibge": "2926103",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "RETIROLANDIA",
-          "ibge": null,
+          "municipio": "Ruy Barbosa",
+          "ibge": "2927200",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "RUY BARBOSA",
-          "ibge": null,
+          "municipio": "Santa Rita de Cássia",
+          "ibge": "2928406",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "SANTA RITA DE CASSIA",
-          "ibge": null,
+          "municipio": "São José do Jacuípe",
+          "ibge": "2929370",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "SÃO JOSÉ DO JACUÍPE",
-          "ibge": null,
+          "municipio": "Tanque Novo",
+          "ibge": "2931053",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "TANQUE NOVO",
-          "ibge": null,
+          "municipio": "Vera Cruz",
+          "ibge": "2933208",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "BA",
-          "municipio": "VERA CRUZ",
-          "ibge": null,
+          "municipio": "Itapetinga",
+          "ibge": "2916401",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -1566,7 +1590,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -1580,15 +1604,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }

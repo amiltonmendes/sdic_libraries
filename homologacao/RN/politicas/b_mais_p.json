@@ -4,35 +4,35 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "1.603 atendimentos",
+    "display_value": "1.780 atendimentos",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "flat",
-      "label": "1,0% do total nacional · 22ª entre 27 UFs"
+      "label": "1,1% do total nacional · 20ª entre 27 UFs"
     },
-    "value": 1603
+    "value": 1780
   },
   "story": {
     "escopo": "uf",
     "uf": "RN",
     "regra": "meio",
-    "headline": "1.603 atendimentos no Rio Grande do Norte — 1,0% do total nacional, 22ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Rio Grande do Norte ocupa a 22ª posição entre as 27 UFs participantes do programa e responde por 1,0% do programa no país. Dentro do Nordeste, que soma 25.119 atendimentos, a participação do Rio Grande do Norte é de 6,4%. As empresas atendidas pelo programa no Rio Grande do Norte tiveram ganho médio de 38,5% em produtividade, conforme a modalidade de atendimento. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "headline": "1.780 atendimentos no Rio Grande do Norte — 1,1% do total nacional, 20ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Rio Grande do Norte ocupa a 20ª posição entre as 27 UFs participantes do programa e responde por 1,1% do programa no país. Dentro do Nordeste, que soma 27.160 atendimentos, a participação do Rio Grande do Norte é de 6,6%. As empresas atendidas pelo programa no Rio Grande do Norte tiveram ganho médio de 37,5% em produtividade, conforme a modalidade de atendimento. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "22ª posição nacional entre as 27 UFs participantes do programa, com 1,0% do total."
+        "text": "20ª posição nacional entre as 27 UFs participantes do programa, com 1,1% do total."
       },
       {
         "tone": "neutral",
-        "text": "6,4% de tudo que o Nordeste registra no programa."
+        "text": "6,6% de tudo que o Nordeste registra no programa."
       }
     ]
   },
@@ -40,32 +40,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -74,41 +66,41 @@
     {
       "id": "senai",
       "label": "SENAI — consultoria técnica (Lean)",
-      "value": 214,
+      "value": 271,
       "unit": "atendimentos",
-      "display_value": "214 atendimentos",
+      "display_value": "271 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 1376,
+      "value": 1499,
       "unit": "atendimentos",
-      "display_value": "1.376 atendimentos",
+      "display_value": "1.499 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "embrapii",
       "label": "EMBRAPII — inovação aplicada",
-      "value": 13,
+      "value": 10,
       "unit": "projetos",
-      "display_value": "13 projetos",
+      "display_value": "10 projetos",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 5,2 mi mobilizados"
+        "label": "R$ 3,9 mi mobilizados"
       }
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 0,
-      "unit": "operações",
-      "display_value": "0 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 0.0,
+      "unit": "",
+      "display_value": "—",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "— financiados"
+        "label": "0 operações financiadas"
       }
     }
   ],
@@ -128,15 +120,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -162,15 +154,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -180,15 +172,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -198,15 +190,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -216,15 +208,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -234,15 +226,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -252,15 +244,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -283,800 +275,816 @@
       "items": [
         {
           "uf": "RN",
-          "municipio": "NATAL",
-          "ibge": null,
-          "value": 432,
-          "display_value": "432",
+          "municipio": "Natal",
+          "ibge": "2408102",
+          "value": 486,
+          "display_value": "486",
           "share": 0.3
         },
         {
           "uf": "RN",
-          "municipio": "MOSSORO",
-          "ibge": null,
-          "value": 201,
-          "display_value": "201",
+          "municipio": "Mossoró",
+          "ibge": "2408003",
+          "value": 215,
+          "display_value": "215",
           "share": 0.1
         },
         {
           "uf": "RN",
-          "municipio": "CAICO",
-          "ibge": null,
+          "municipio": "Caicó",
+          "ibge": "2402006",
+          "value": 137,
+          "display_value": "137",
+          "share": 0.1
+        },
+        {
+          "uf": "RN",
+          "municipio": "Parnamirim",
+          "ibge": "2403251",
           "value": 120,
           "display_value": "120",
           "share": 0.1
         },
         {
           "uf": "RN",
-          "municipio": "CURRAIS NOVOS",
-          "ibge": null,
-          "value": 96,
-          "display_value": "96",
+          "municipio": "Currais Novos",
+          "ibge": "2403103",
+          "value": 105,
+          "display_value": "105",
           "share": 0.1
         },
         {
           "uf": "RN",
-          "municipio": "PARNAMIRIM",
-          "ibge": null,
-          "value": 91,
-          "display_value": "91",
-          "share": 0.1
+          "municipio": "Macaíba",
+          "ibge": "2407104",
+          "value": 54,
+          "display_value": "54",
+          "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "MACAIBA",
-          "ibge": null,
+          "municipio": "São Gonçalo do Amarante",
+          "ibge": "2412005",
           "value": 53,
           "display_value": "53",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "SAO GONCALO DO AMARANTE",
-          "ibge": null,
-          "value": 41,
-          "display_value": "41",
-          "share": 0.0
-        },
-        {
-          "uf": "RN",
           "municipio": "ASSU",
           "ibge": null,
-          "value": 39,
-          "display_value": "39",
+          "value": 49,
+          "display_value": "49",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "ANGICOS",
-          "ibge": null,
+          "municipio": "Macau",
+          "ibge": "2407203",
+          "value": 34,
+          "display_value": "34",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "Apodi",
+          "ibge": "2401008",
+          "value": 25,
+          "display_value": "25",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "Angicos",
+          "ibge": "2400802",
           "value": 23,
           "display_value": "23",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "MACAU",
-          "ibge": null,
-          "value": 22,
-          "display_value": "22",
-          "share": 0.0
-        },
-        {
-          "uf": "RN",
-          "municipio": "ITAJA",
-          "ibge": null,
+          "municipio": "Itajá",
+          "ibge": "2404853",
           "value": 21,
           "display_value": "21",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "PAU DOS FERROS",
-          "ibge": null,
+          "municipio": "Pau dos Ferros",
+          "ibge": "2409407",
           "value": 21,
           "display_value": "21",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "ACARI",
-          "ibge": null,
+          "municipio": "Acari",
+          "ibge": "2400109",
           "value": 20,
           "display_value": "20",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "APODI",
-          "ibge": null,
-          "value": 20,
-          "display_value": "20",
-          "share": 0.0
-        },
-        {
-          "uf": "RN",
-          "municipio": "LAGOA NOVA",
-          "ibge": null,
+          "municipio": "Jucurutu",
+          "ibge": "2406106",
           "value": 19,
           "display_value": "19",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "SAO JOSE DE MIPIBU",
-          "ibge": null,
+          "municipio": "Lagoa Nova",
+          "ibge": "2406502",
           "value": 19,
           "display_value": "19",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "JUCURUTU",
-          "ibge": null,
+          "municipio": "São José de Mipibu",
+          "ibge": "2412203",
+          "value": 19,
+          "display_value": "19",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "Afonso Bezerra",
+          "ibge": "2400307",
           "value": 18,
           "display_value": "18",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "AFONSO BEZERRA",
-          "ibge": null,
-          "value": 18,
-          "display_value": "18",
-          "share": 0.0
-        },
-        {
-          "uf": "RN",
-          "municipio": "SANTA CRUZ",
-          "ibge": null,
+          "municipio": "Santa Cruz",
+          "ibge": "2411205",
           "value": 17,
           "display_value": "17",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "JARDIM DO SERIDO",
-          "ibge": null,
+          "municipio": "Jardim do Seridó",
+          "ibge": "2405702",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "CEARA-MIRIM",
-          "ibge": null,
-          "value": 13,
-          "display_value": "13",
+          "municipio": "Tenente Laurentino Cruz",
+          "ibge": "2414159",
+          "value": 16,
+          "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "EXTREMOZ",
-          "ibge": null,
-          "value": 13,
-          "display_value": "13",
+          "municipio": "Ceará-Mirim",
+          "ibge": "2402600",
+          "value": 15,
+          "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "PARELHAS",
-          "ibge": null,
+          "municipio": "Extremoz",
+          "ibge": "2403608",
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "Serra Negra do Norte",
+          "ibge": "2413409",
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "Parelhas",
+          "ibge": "2408904",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "PUREZA",
-          "ibge": null,
+          "municipio": "Pureza",
+          "ibge": "2410405",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "SERRA NEGRA DO NORTE",
-          "ibge": null,
-          "value": 10,
-          "display_value": "10",
-          "share": 0.0
-        },
-        {
-          "uf": "RN",
-          "municipio": "TENENTE LAURENTINO CRUZ",
-          "ibge": null,
-          "value": 10,
-          "display_value": "10",
-          "share": 0.0
-        },
-        {
-          "uf": "RN",
-          "municipio": "PASSA E FICA",
-          "ibge": null,
+          "municipio": "Passa e Fica",
+          "ibge": "2409100",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "CARNAUBA DOS DANTAS",
-          "ibge": null,
+          "municipio": "Cerro Corá",
+          "ibge": "2402709",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "CERRO CORA",
-          "ibge": null,
+          "municipio": "Cruzeta",
+          "ibge": "2403004",
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "Carnaúba dos Dantas",
+          "ibge": "2402402",
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "Mossoró",
+          "ibge": "2408003",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "CRUZETA",
-          "ibge": null,
+          "municipio": "Santo Antônio",
+          "ibge": "2411502",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "SANTO ANTONIO",
-          "ibge": null,
+          "municipio": "Pedro Avelino",
+          "ibge": "2409704",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "PEDRO AVELINO",
-          "ibge": null,
+          "municipio": "São João do Sabugi",
+          "ibge": "2412104",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "SÃO JOÃO DO SABUGI",
-          "ibge": null,
-          "value": 7,
-          "display_value": "7",
-          "share": 0.0
-        },
-        {
-          "uf": "RN",
-          "municipio": "GUAMARE",
-          "ibge": null,
+          "municipio": "São José do Seridó",
+          "ibge": "2412401",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "MOSSORÓ",
-          "ibge": null,
+          "municipio": "Tangará",
+          "ibge": "2414001",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "TIBAU DO SUL",
-          "ibge": null,
+          "municipio": "Guamaré",
+          "ibge": "2404507",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "SAO FRANCISCO DO OESTE",
-          "ibge": null,
+          "municipio": "Tibau do Sul",
+          "ibge": "2414209",
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "Brejinho",
+          "ibge": "2401800",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "SAO JOSE DO SERIDO",
-          "ibge": null,
+          "municipio": "Ipanguaçu",
+          "ibge": "2404705",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "TANGARA",
-          "ibge": null,
+          "municipio": "São Francisco do Oeste",
+          "ibge": "2411908",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "ALTO DO RODRIGUES",
-          "ibge": null,
+          "municipio": "Alto do Rodrigues",
+          "ibge": "2400703",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "CANGUARETAMA",
-          "ibge": null,
+          "municipio": "Canguaretama",
+          "ibge": "2402204",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "GALINHOS",
-          "ibge": null,
+          "municipio": "Galinhos",
+          "ibge": "2404101",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "BREJINHO",
-          "ibge": null,
+          "municipio": "São Fernando",
+          "ibge": "2411809",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "IPANGUACU",
-          "ibge": null,
+          "municipio": "Umarizal",
+          "ibge": "2414506",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "SAO FERNANDO",
-          "ibge": null,
+          "municipio": "Caicó",
+          "ibge": "2402006",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "UMARIZAL",
-          "ibge": null,
+          "municipio": "Carnaúba dos Dantas",
+          "ibge": "2402402",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "CAICÓ",
-          "ibge": null,
+          "municipio": "Jaçanã",
+          "ibge": "2405009",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "CARNAÚBA DOS DANTAS",
-          "ibge": null,
+          "municipio": "Rafael Fernandes",
+          "ibge": "2410504",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "JACANA",
-          "ibge": null,
+          "municipio": "Serra do Mel",
+          "ibge": "2413359",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "RAFAEL FERNANDES",
-          "ibge": null,
+          "municipio": "Timbaúba dos Batistas",
+          "ibge": "2414308",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "SAO MIGUEL",
-          "ibge": null,
-          "value": 4,
-          "display_value": "4",
-          "share": 0.0
-        },
-        {
-          "uf": "RN",
-          "municipio": "SERRA DO MEL",
-          "ibge": null,
-          "value": 4,
-          "display_value": "4",
-          "share": 0.0
-        },
-        {
-          "uf": "RN",
-          "municipio": "TIMBAUBA DOS BATISTAS",
-          "ibge": null,
-          "value": 4,
-          "display_value": "4",
-          "share": 0.0
-        },
-        {
-          "uf": "RN",
-          "municipio": "GOIANINHA",
-          "ibge": null,
+          "municipio": "Goianinha",
+          "ibge": "2404200",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "OURO BRANCO",
-          "ibge": null,
+          "municipio": "Ouro Branco",
+          "ibge": "2408508",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "ALEXANDRIA",
-          "ibge": null,
+          "municipio": "Alexandria",
+          "ibge": "2400505",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "BARAUNA",
-          "ibge": null,
+          "municipio": "Baraúna",
+          "ibge": "2401453",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "MONTE ALEGRE",
-          "ibge": null,
+          "municipio": "Monte Alegre",
+          "ibge": "2407807",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "SAO PEDRO",
-          "ibge": null,
+          "municipio": "São Miguel",
+          "ibge": "2412500",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "TABOLEIRO GRANDE",
-          "ibge": null,
+          "municipio": "São Pedro",
+          "ibge": "2412708",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "ANTONIO MARTINS",
-          "ibge": null,
+          "municipio": "São Tomé",
+          "ibge": "2412906",
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "Taboleiro Grande",
+          "ibge": "2413805",
+          "value": 3,
+          "display_value": "3",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "Antônio Martins",
+          "ibge": "2400901",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "SERRA DE SAO BENTO",
-          "ibge": null,
+          "municipio": "Serra de São Bento",
+          "ibge": "2413300",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "IPANGUAÇU",
-          "ibge": null,
+          "municipio": "Ipanguaçu",
+          "ibge": "2404705",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "JARDIM DE PIRANHAS",
-          "ibge": null,
+          "municipio": "Jardim de Piranhas",
+          "ibge": "2405603",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "LAJES",
-          "ibge": null,
+          "municipio": "Lajes",
+          "ibge": "2406700",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "MARCELINO VIEIRA",
-          "ibge": null,
+          "municipio": "Marcelino Vieira",
+          "ibge": "2407302",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "NISIA FLORESTA",
-          "ibge": null,
+          "municipio": "Nísia Floresta",
+          "ibge": "2408201",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "NOVA CRUZ",
-          "ibge": null,
+          "municipio": "Nova Cruz",
+          "ibge": "2408300",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "PORTALEGRE",
-          "ibge": null,
+          "municipio": "Portalegre",
+          "ibge": "2410207",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "SAO TOME",
-          "ibge": null,
+          "municipio": "Serra Caiada",
+          "ibge": "2410306",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "SERRA CAIADA",
-          "ibge": null,
+          "municipio": "Taipu",
+          "ibge": "2413904",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "TAIPU",
-          "ibge": null,
-          "value": 2,
-          "display_value": "2",
-          "share": 0.0
-        },
-        {
-          "uf": "RN",
-          "municipio": "BODO",
-          "ibge": null,
+          "municipio": "Bodó",
+          "ibge": "2401651",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "JOAO CAMARA",
-          "ibge": null,
+          "municipio": "João Câmara",
+          "ibge": "2405801",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "MARTINS",
-          "ibge": null,
+          "municipio": "Martins",
+          "ibge": "2407401",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "MESSIAS TARGINO",
-          "ibge": null,
+          "municipio": "Messias Targino",
+          "ibge": "2407609",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "MONTANHAS",
-          "ibge": null,
+          "municipio": "Montanhas",
+          "ibge": "2407708",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "SANTANA DO SERIDO",
-          "ibge": null,
+          "municipio": "Santana do Seridó",
+          "ibge": "2411429",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "SAO JOSE DO CAMPESTRE",
-          "ibge": null,
+          "municipio": "São José do Campestre",
+          "ibge": "2412302",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "CAICARA DO RIO DO VENTO",
-          "ibge": null,
+          "municipio": "São Miguel do Gostoso",
+          "ibge": "2412559",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "CARAUBAS",
-          "ibge": null,
+          "municipio": "Caiçara do Rio do Vento",
+          "ibge": "2401909",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "CARNAUBAIS",
-          "ibge": null,
+          "municipio": "Caraúbas",
+          "ibge": "2402303",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "ENCANTO",
-          "ibge": null,
+          "municipio": "Carnaubais",
+          "ibge": "2402501",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "FLORANIA",
-          "ibge": null,
+          "municipio": "Encanto",
+          "ibge": "2403301",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "FRANCISCO DANTAS",
-          "ibge": null,
+          "municipio": "Florânia",
+          "ibge": "2403806",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "GOVERNADOR DIX-SEPT ROSADO",
-          "ibge": null,
+          "municipio": "Francisco Dantas",
+          "ibge": "2403905",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "GROSSOS",
-          "ibge": null,
+          "municipio": "Governador Dix-Sept Rosado",
+          "ibge": "2404309",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "IPUEIRA",
-          "ibge": null,
+          "municipio": "Grossos",
+          "ibge": "2404408",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "JANDUIS",
-          "ibge": null,
+          "municipio": "Ipueira",
+          "ibge": "2404804",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "LAGOA SALGADA",
-          "ibge": null,
+          "municipio": "Janduís",
+          "ibge": "2405207",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "PEDRO VELHO",
-          "ibge": null,
+          "municipio": "Lagoa Salgada",
+          "ibge": "2406601",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "PENDENCIAS",
-          "ibge": null,
+          "municipio": "Parazinho",
+          "ibge": "2408805",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "PORTO DO MANGUE",
-          "ibge": null,
+          "municipio": "Pedro Velho",
+          "ibge": "2409803",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "RIO DO FOGO",
-          "ibge": null,
+          "municipio": "Pendências",
+          "ibge": "2409902",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "SANTANA DO MATOS",
-          "ibge": null,
+          "municipio": "Porto do Mangue",
+          "ibge": "2410256",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "SAO JOAO DO SABUGI",
-          "ibge": null,
+          "municipio": "Rio do Fogo",
+          "ibge": "2408953",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "SAO PAULO DO POTENGI",
-          "ibge": null,
+          "municipio": "Santana do Matos",
+          "ibge": "2411403",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "SAO VICENTE",
-          "ibge": null,
+          "municipio": "São João do Sabugi",
+          "ibge": "2412104",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "SEVERIANO MELO",
-          "ibge": null,
+          "municipio": "São Paulo do Potengi",
+          "ibge": "2412609",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RN",
-          "municipio": "TRIUNFO POTIGUAR",
-          "ibge": null,
+          "municipio": "São Vicente",
+          "ibge": "2413003",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "Severiano Melo",
+          "ibge": "2413607",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "RN",
+          "municipio": "Triunfo Potiguar",
+          "ibge": "2414456",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -1086,7 +1094,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -1100,15 +1108,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }

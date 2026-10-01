@@ -4,35 +4,35 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "4.959 atendimentos",
+    "display_value": "5.533 atendimentos",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "flat",
-      "label": "3,2% do total nacional · 8ª entre 27 UFs"
+      "label": "3,3% do total nacional · 8ª entre 27 UFs"
     },
-    "value": 4959
+    "value": 5533
   },
   "story": {
     "escopo": "uf",
     "uf": "RJ",
     "regra": "meio",
-    "headline": "4.959 atendimentos no Rio de Janeiro — 3,2% do total nacional, 8ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Rio de Janeiro ocupa a 8ª posição entre as 27 UFs participantes do programa e responde por 3,2% do programa no país. Dentro do Sudeste, que soma 71.489 atendimentos, a participação do Rio de Janeiro é de 6,9%. As empresas atendidas pelo programa no Rio de Janeiro tiveram ganho médio de 40,5% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 26,7%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "headline": "5.533 atendimentos no Rio de Janeiro — 3,3% do total nacional, 8ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Rio de Janeiro ocupa a 8ª posição entre as 27 UFs participantes do programa e responde por 3,3% do programa no país. Dentro do Sudeste, que soma 77.670 atendimentos, a participação do Rio de Janeiro é de 7,1%. As empresas atendidas pelo programa no Rio de Janeiro tiveram ganho médio de 40,0% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 28,0%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "8ª posição nacional entre as 27 UFs participantes do programa, com 3,2% do total."
+        "text": "8ª posição nacional entre as 27 UFs participantes do programa, com 3,3% do total."
       },
       {
         "tone": "neutral",
-        "text": "6,9% de tudo que o Sudeste registra no programa."
+        "text": "7,1% de tudo que o Sudeste registra no programa."
       }
     ]
   },
@@ -40,32 +40,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -74,41 +66,41 @@
     {
       "id": "senai",
       "label": "SENAI — consultoria técnica (Lean)",
-      "value": 1064,
+      "value": 1188,
       "unit": "atendimentos",
-      "display_value": "1.064 atendimentos",
+      "display_value": "1.188 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 3876,
+      "value": 4321,
       "unit": "atendimentos",
-      "display_value": "3.876 atendimentos",
+      "display_value": "4.321 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "embrapii",
       "label": "EMBRAPII — inovação aplicada",
-      "value": 19,
+      "value": 24,
       "unit": "projetos",
-      "display_value": "19 projetos",
+      "display_value": "24 projetos",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 19,2 mi mobilizados"
+        "label": "R$ 28,5 mi mobilizados"
       }
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 0,
-      "unit": "operações",
-      "display_value": "0 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 0.0,
+      "unit": "",
+      "display_value": "—",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "— financiados"
+        "label": "0 operações financiadas"
       }
     }
   ],
@@ -128,15 +120,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -162,15 +154,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -180,15 +172,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -198,15 +190,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -216,15 +208,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -234,15 +226,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -252,15 +244,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -283,672 +275,672 @@
       "items": [
         {
           "uf": "RJ",
-          "municipio": "RIO DE JANEIRO",
-          "ibge": null,
-          "value": 1562,
-          "display_value": "1.562",
+          "municipio": "Rio de Janeiro",
+          "ibge": "3304557",
+          "value": 1729,
+          "display_value": "1.729",
           "share": 1.0
         },
         {
           "uf": "RJ",
-          "municipio": "CAMPOS DOS GOYTACAZES",
-          "ibge": null,
-          "value": 283,
-          "display_value": "283",
+          "municipio": "Campos dos Goytacazes",
+          "ibge": "3301009",
+          "value": 305,
+          "display_value": "305",
           "share": 0.2
         },
         {
           "uf": "RJ",
-          "municipio": "MACAE",
-          "ibge": null,
-          "value": 231,
-          "display_value": "231",
+          "municipio": "Macaé",
+          "ibge": "3302403",
+          "value": 264,
+          "display_value": "264",
           "share": 0.2
         },
         {
           "uf": "RJ",
-          "municipio": "NOVA FRIBURGO",
-          "ibge": null,
-          "value": 223,
-          "display_value": "223",
+          "municipio": "Nova Friburgo",
+          "ibge": "3303401",
+          "value": 245,
+          "display_value": "245",
           "share": 0.1
         },
         {
           "uf": "RJ",
-          "municipio": "DUQUE DE CAXIAS",
-          "ibge": null,
-          "value": 216,
-          "display_value": "216",
+          "municipio": "Duque de Caxias",
+          "ibge": "3301702",
+          "value": 242,
+          "display_value": "242",
           "share": 0.1
         },
         {
           "uf": "RJ",
-          "municipio": "ITAPERUNA",
-          "ibge": null,
-          "value": 189,
-          "display_value": "189",
+          "municipio": "Itaperuna",
+          "ibge": "3302205",
+          "value": 204,
+          "display_value": "204",
           "share": 0.1
         },
         {
           "uf": "RJ",
-          "municipio": "NOVA IGUACU",
-          "ibge": null,
-          "value": 177,
-          "display_value": "177",
+          "municipio": "Niterói",
+          "ibge": "3303302",
+          "value": 194,
+          "display_value": "194",
           "share": 0.1
         },
         {
           "uf": "RJ",
-          "municipio": "NITEROI",
-          "ibge": null,
-          "value": 172,
-          "display_value": "172",
+          "municipio": "Nova Iguaçu",
+          "ibge": "3303500",
+          "value": 183,
+          "display_value": "183",
           "share": 0.1
         },
         {
           "uf": "RJ",
-          "municipio": "PETROPOLIS",
-          "ibge": null,
-          "value": 151,
-          "display_value": "151",
+          "municipio": "Petrópolis",
+          "ibge": "3303906",
+          "value": 156,
+          "display_value": "156",
           "share": 0.1
         },
         {
           "uf": "RJ",
-          "municipio": "VOLTA REDONDA",
-          "ibge": null,
-          "value": 132,
-          "display_value": "132",
+          "municipio": "Volta Redonda",
+          "ibge": "3306305",
+          "value": 142,
+          "display_value": "142",
           "share": 0.1
         },
         {
           "uf": "RJ",
-          "municipio": "TRES RIOS",
-          "ibge": null,
-          "value": 109,
-          "display_value": "109",
+          "municipio": "Três Rios",
+          "ibge": "3306008",
+          "value": 137,
+          "display_value": "137",
           "share": 0.1
         },
         {
           "uf": "RJ",
-          "municipio": "SAO GONCALO",
-          "ibge": null,
+          "municipio": "São Gonçalo",
+          "ibge": "3304904",
+          "value": 119,
+          "display_value": "119",
+          "share": 0.1
+        },
+        {
+          "uf": "RJ",
+          "municipio": "Cabo Frio",
+          "ibge": "3300704",
           "value": 103,
           "display_value": "103",
           "share": 0.1
         },
         {
           "uf": "RJ",
-          "municipio": "CABO FRIO",
-          "ibge": null,
-          "value": 91,
-          "display_value": "91",
+          "municipio": "Teresópolis",
+          "ibge": "3305802",
+          "value": 96,
+          "display_value": "96",
           "share": 0.1
         },
         {
           "uf": "RJ",
-          "municipio": "TERESOPOLIS",
-          "ibge": null,
-          "value": 73,
-          "display_value": "73",
+          "municipio": "Itaguaí",
+          "ibge": "3302007",
+          "value": 88,
+          "display_value": "88",
+          "share": 0.1
+        },
+        {
+          "uf": "RJ",
+          "municipio": "Araruama",
+          "ibge": "3300209",
+          "value": 71,
+          "display_value": "71",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "ITAGUAI",
-          "ibge": null,
-          "value": 72,
-          "display_value": "72",
+          "municipio": "Rio das Ostras",
+          "ibge": "3304524",
+          "value": 71,
+          "display_value": "71",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "ARARUAMA",
-          "ibge": null,
-          "value": 63,
-          "display_value": "63",
+          "municipio": "Barra Mansa",
+          "ibge": "3300407",
+          "value": 64,
+          "display_value": "64",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "BARRA MANSA",
-          "ibge": null,
-          "value": 63,
-          "display_value": "63",
+          "municipio": "São João de Meriti",
+          "ibge": "3305109",
+          "value": 62,
+          "display_value": "62",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "SAO JOAO DE MERITI",
-          "ibge": null,
-          "value": 61,
-          "display_value": "61",
+          "municipio": "Resende",
+          "ibge": "3304201",
+          "value": 58,
+          "display_value": "58",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "RIO DAS OSTRAS",
-          "ibge": null,
-          "value": 55,
-          "display_value": "55",
+          "municipio": "Angra dos Reis",
+          "ibge": "3300100",
+          "value": 52,
+          "display_value": "52",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "ANGRA DOS REIS",
-          "ibge": null,
-          "value": 51,
-          "display_value": "51",
+          "municipio": "Cantagalo",
+          "ibge": "3301108",
+          "value": 48,
+          "display_value": "48",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "MIGUEL PEREIRA",
-          "ibge": null,
-          "value": 44,
-          "display_value": "44",
+          "municipio": "Miguel Pereira",
+          "ibge": "3302908",
+          "value": 46,
+          "display_value": "46",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "RESENDE",
-          "ibge": null,
-          "value": 44,
-          "display_value": "44",
+          "municipio": "Belford Roxo",
+          "ibge": "3300456",
+          "value": 42,
+          "display_value": "42",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "BELFORD ROXO",
-          "ibge": null,
-          "value": 41,
-          "display_value": "41",
+          "municipio": "Itaboraí",
+          "ibge": "3301900",
+          "value": 42,
+          "display_value": "42",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "CANTAGALO",
-          "ibge": null,
-          "value": 39,
-          "display_value": "39",
+          "municipio": "São Pedro da Aldeia",
+          "ibge": "3305208",
+          "value": 37,
+          "display_value": "37",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "ITABORAI",
-          "ibge": null,
-          "value": 36,
-          "display_value": "36",
+          "municipio": "Mesquita",
+          "ibge": "3302858",
+          "value": 35,
+          "display_value": "35",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "MESQUITA",
-          "ibge": null,
+          "municipio": "Bom Jesus do Itabapoana",
+          "ibge": "3300605",
           "value": 34,
           "display_value": "34",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "SAO PEDRO DA ALDEIA",
-          "ibge": null,
+          "municipio": "Valença",
+          "ibge": "3306107",
           "value": 33,
           "display_value": "33",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "VALENCA",
-          "ibge": null,
-          "value": 32,
-          "display_value": "32",
+          "municipio": "Paraíba do Sul",
+          "ibge": "3303708",
+          "value": 31,
+          "display_value": "31",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "BOM JESUS DO ITABAPOANA",
-          "ibge": null,
-          "value": 28,
-          "display_value": "28",
+          "municipio": "Cachoeiras de Macacu",
+          "ibge": "3300803",
+          "value": 30,
+          "display_value": "30",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "PARAIBA DO SUL",
-          "ibge": null,
+          "municipio": "Natividade",
+          "ibge": "3303104",
+          "value": 29,
+          "display_value": "29",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "Cordeiro",
+          "ibge": "3301504",
+          "value": 27,
+          "display_value": "27",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "Queimados",
+          "ibge": "3304144",
+          "value": 27,
+          "display_value": "27",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "Paraty",
+          "ibge": "3303807",
+          "value": 27,
+          "display_value": "27",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "Saquarema",
+          "ibge": "3305505",
+          "value": 26,
+          "display_value": "26",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "Barra do Piraí",
+          "ibge": "3300308",
           "value": 25,
           "display_value": "25",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "QUEIMADOS",
-          "ibge": null,
-          "value": 25,
-          "display_value": "25",
-          "share": 0.0
-        },
-        {
-          "uf": "RJ",
-          "municipio": "SAQUAREMA",
-          "ibge": null,
-          "value": 24,
-          "display_value": "24",
-          "share": 0.0
-        },
-        {
-          "uf": "RJ",
-          "municipio": "CACHOEIRAS DE MACACU",
-          "ibge": null,
+          "municipio": "Nilópolis",
+          "ibge": "3303203",
           "value": 23,
           "display_value": "23",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "BARRA DO PIRAI",
-          "ibge": null,
-          "value": 22,
-          "display_value": "22",
-          "share": 0.0
-        },
-        {
-          "uf": "RJ",
-          "municipio": "CORDEIRO",
-          "ibge": null,
-          "value": 22,
-          "display_value": "22",
-          "share": 0.0
-        },
-        {
-          "uf": "RJ",
-          "municipio": "NILOPOLIS",
-          "ibge": null,
+          "municipio": "Santo Antônio de Pádua",
+          "ibge": "3304706",
           "value": 21,
           "display_value": "21",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "NATIVIDADE",
-          "ibge": null,
+          "municipio": "Maricá",
+          "ibge": "3302700",
+          "value": 20,
+          "display_value": "20",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "Rio Bonito",
+          "ibge": "3304300",
+          "value": 19,
+          "display_value": "19",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "Arraial do Cabo",
+          "ibge": "3300258",
+          "value": 19,
+          "display_value": "19",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "São João da Barra",
+          "ibge": "3305000",
           "value": 18,
           "display_value": "18",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "RIO BONITO",
-          "ibge": null,
-          "value": 18,
-          "display_value": "18",
-          "share": 0.0
-        },
-        {
-          "uf": "RJ",
-          "municipio": "ARRAIAL DO CABO",
-          "ibge": null,
-          "value": 18,
-          "display_value": "18",
-          "share": 0.0
-        },
-        {
-          "uf": "RJ",
-          "municipio": "SAO JOAO DA BARRA",
-          "ibge": null,
+          "municipio": "Paty do Alferes",
+          "ibge": "3303856",
           "value": 17,
           "display_value": "17",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "MARICA",
-          "ibge": null,
+          "municipio": "Itaocara",
+          "ibge": "3302106",
           "value": 16,
           "display_value": "16",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "PATY DO ALFERES",
-          "ibge": null,
-          "value": 16,
-          "display_value": "16",
-          "share": 0.0
-        },
-        {
-          "uf": "RJ",
-          "municipio": "MAGE",
-          "ibge": null,
+          "municipio": "Magé",
+          "ibge": "3302502",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "ITAOCARA",
-          "ibge": null,
+          "municipio": "Miracema",
+          "ibge": "3303005",
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "Armação dos Búzios",
+          "ibge": "3300233",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "MIRACEMA",
-          "ibge": null,
+          "municipio": "Seropédica",
+          "ibge": "3305554",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "SEROPEDICA",
-          "ibge": null,
+          "municipio": "Bom Jardim",
+          "ibge": "3300506",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "BOM JARDIM",
-          "ibge": null,
+          "municipio": "Pinheiral",
+          "ibge": "3303955",
+          "value": 11,
+          "display_value": "11",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "Guapimirim",
+          "ibge": "3301850",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "GUAPIMIRIM",
-          "ibge": null,
-          "value": 10,
-          "display_value": "10",
-          "share": 0.0
-        },
-        {
-          "uf": "RJ",
-          "municipio": "PINHEIRAL",
-          "ibge": null,
-          "value": 10,
-          "display_value": "10",
-          "share": 0.0
-        },
-        {
-          "uf": "RJ",
-          "municipio": "PARATY",
-          "ibge": null,
-          "value": 10,
-          "display_value": "10",
-          "share": 0.0
-        },
-        {
-          "uf": "RJ",
-          "municipio": "ARMACAO DOS BUZIOS",
-          "ibge": null,
+          "municipio": "Porciúncula",
+          "ibge": "3304102",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "PORCIUNCULA",
-          "ibge": null,
-          "value": 9,
-          "display_value": "9",
-          "share": 0.0
-        },
-        {
-          "uf": "RJ",
-          "municipio": "PIRAI",
-          "ibge": null,
+          "municipio": "Areal",
+          "ibge": "3300225",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "SANTO ANTONIO DE PADUA",
-          "ibge": null,
+          "municipio": "Macuco",
+          "ibge": "3302452",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "QUISSAMA",
-          "ibge": null,
+          "municipio": "Piraí",
+          "ibge": "3304003",
           "value": 8,
           "display_value": "8",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "COMENDADOR LEVY GASPARIAN",
-          "ibge": null,
+          "municipio": "Quissamã",
+          "ibge": "3304151",
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "Casimiro de Abreu",
+          "ibge": "3301306",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "SAO FIDELIS",
-          "ibge": null,
+          "municipio": "Comendador Levy Gasparian",
+          "ibge": "3300951",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "PARACAMBI",
-          "ibge": null,
+          "municipio": "Conceição de Macabu",
+          "ibge": "3301405",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "CARMO",
-          "ibge": null,
+          "municipio": "Japeri",
+          "ibge": "3302270",
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "São Fidélis",
+          "ibge": "3304805",
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "Paracambi",
+          "ibge": "3303609",
+          "value": 7,
+          "display_value": "7",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "Carmo",
+          "ibge": "3301207",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "ENGENHEIRO PAULO DE FRONTIN",
-          "ibge": null,
+          "municipio": "Engenheiro Paulo de Frontin",
+          "ibge": "3301801",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "IGUABA GRANDE",
-          "ibge": null,
+          "municipio": "Iguaba Grande",
+          "ibge": "3301876",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "JAPERI",
-          "ibge": null,
+          "municipio": "Itatiaia",
+          "ibge": "3302254",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "MACUCO",
-          "ibge": null,
+          "municipio": "Vassouras",
+          "ibge": "3306206",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "VASSOURAS",
-          "ibge": null,
-          "value": 6,
-          "display_value": "6",
-          "share": 0.0
-        },
-        {
-          "uf": "RJ",
-          "municipio": "AREAL",
-          "ibge": null,
-          "value": 6,
-          "display_value": "6",
-          "share": 0.0
-        },
-        {
-          "uf": "RJ",
-          "municipio": "CASIMIRO DE ABREU",
-          "ibge": null,
+          "municipio": "Mendes",
+          "ibge": "3302809",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "MENDES",
-          "ibge": null,
+          "municipio": "Tanguá",
+          "ibge": "3305752",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "TANGUA",
-          "ibge": null,
-          "value": 5,
-          "display_value": "5",
-          "share": 0.0
-        },
-        {
-          "uf": "RJ",
-          "municipio": "CONCEICAO DE MACABU",
-          "ibge": null,
-          "value": 5,
-          "display_value": "5",
-          "share": 0.0
-        },
-        {
-          "uf": "RJ",
-          "municipio": "ITATIAIA",
-          "ibge": null,
+          "municipio": "Cardoso Moreira",
+          "ibge": "3301157",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "SAO FRANCISCO DE ITABAPOANA",
-          "ibge": null,
+          "municipio": "São Francisco de Itabapoana",
+          "ibge": "3304755",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "SAPUCAIA",
-          "ibge": null,
+          "municipio": "Sapucaia",
+          "ibge": "3305406",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "PORTO REAL",
-          "ibge": null,
+          "municipio": "Mangaratiba",
+          "ibge": "3302601",
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "RJ",
+          "municipio": "Aperibé",
+          "ibge": "3300159",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "SILVA JARDIM",
-          "ibge": null,
+          "municipio": "Porto Real",
+          "ibge": "3304110",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "CARDOSO MOREIRA",
-          "ibge": null,
+          "municipio": "Silva Jardim",
+          "ibge": "3305604",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "MANGARATIBA",
-          "ibge": null,
-          "value": 3,
-          "display_value": "3",
-          "share": 0.0
-        },
-        {
-          "uf": "RJ",
-          "municipio": "BARRA DO PIRAÍ",
-          "ibge": null,
+          "municipio": "Cambuci",
+          "ibge": "3300902",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "ITALVA",
-          "ibge": null,
+          "municipio": "Italva",
+          "ibge": "3302056",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "SAO JOSE DO VALE DO RIO PRETO",
-          "ibge": null,
+          "municipio": "São José do Vale do Rio Preto",
+          "ibge": "3305158",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "VARRE-SAI",
-          "ibge": null,
+          "municipio": "Varre-Sai",
+          "ibge": "3306156",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "LAJE DO MURIAE",
-          "ibge": null,
+          "municipio": "Laje do Muriaé",
+          "ibge": "3302304",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "APERIBE",
-          "ibge": null,
+          "municipio": "Barra do Piraí",
+          "ibge": "3300308",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "CONCEIÇÃO DE MACABU",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RJ",
-          "municipio": "NILÓPOLIS",
-          "ibge": null,
+          "municipio": "Nilópolis",
+          "ibge": "3303203",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -963,88 +955,80 @@
         },
         {
           "uf": "RJ",
-          "municipio": "QUATIS",
-          "ibge": null,
+          "municipio": "Quatis",
+          "ibge": "3304128",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "RIO CLARO",
-          "ibge": null,
+          "municipio": "Rio Claro",
+          "ibge": "3304409",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "RIO DAS FLORES",
-          "ibge": null,
+          "municipio": "Rio das Flores",
+          "ibge": "3304508",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "SUMIDOURO",
-          "ibge": null,
+          "municipio": "Sumidouro",
+          "ibge": "3305703",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "TRAJANO DE MORAES",
-          "ibge": null,
+          "municipio": "Santo Antônio de Pádua",
+          "ibge": "3304706",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "TRÊS RIOS",
-          "ibge": null,
+          "municipio": "Trajano de Moraes",
+          "ibge": "3305901",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "CAMBUCI",
-          "ibge": null,
+          "municipio": "Carapebus",
+          "ibge": "3300936",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "CARAPEBUS",
-          "ibge": null,
+          "municipio": "Duas Barras",
+          "ibge": "3301603",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "DUAS BARRAS",
-          "ibge": null,
+          "municipio": "São José de Ubá",
+          "ibge": "3305133",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "RJ",
-          "municipio": "SAO JOSE DE UBA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "RJ",
-          "municipio": "SAO SEBASTIAO DO ALTO",
-          "ibge": null,
+          "municipio": "São Sebastião do Alto",
+          "ibge": "3305307",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -1052,7 +1036,7 @@
         {
           "uf": "RJ",
           "municipio": "Duque de Caxias",
-          "ibge": null,
+          "ibge": "3301702",
           "value": 0,
           "display_value": "0",
           "share": 0.0
@@ -1060,7 +1044,7 @@
         {
           "uf": "RJ",
           "municipio": "Niterói",
-          "ibge": null,
+          "ibge": "3303302",
           "value": 0,
           "display_value": "0",
           "share": 0.0
@@ -1078,7 +1062,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -1092,15 +1076,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }

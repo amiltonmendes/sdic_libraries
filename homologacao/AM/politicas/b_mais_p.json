@@ -4,27 +4,27 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "1.367 atendimentos",
+    "display_value": "1.436 atendimentos",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "flat",
       "label": "0,9% do total nacional · 25ª entre 27 UFs"
     },
-    "value": 1367
+    "value": 1436
   },
   "story": {
     "escopo": "uf",
     "uf": "AM",
     "regra": "meio",
-    "headline": "1.367 atendimentos no Amazonas — 0,9% do total nacional, 25ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Amazonas ocupa a 25ª posição entre as 27 UFs participantes do programa e responde por 0,9% do programa no país. Dentro do Norte, que soma 10.790 atendimentos, a participação do Amazonas é de 12,7%. As empresas atendidas pelo programa no Amazonas tiveram ganho médio de 31,6% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 15,5%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "headline": "1.436 atendimentos no Amazonas — 0,9% do total nacional, 25ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Amazonas ocupa a 25ª posição entre as 27 UFs participantes do programa e responde por 0,9% do programa no país. Dentro do Norte, que soma 11.619 atendimentos, a participação do Amazonas é de 12,4%. As empresas atendidas pelo programa no Amazonas tiveram ganho médio de 31,4% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 15,6%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "neutral",
@@ -32,7 +32,7 @@
       },
       {
         "tone": "neutral",
-        "text": "12,7% de tudo que o Norte registra no programa."
+        "text": "12,4% de tudo que o Norte registra no programa."
       }
     ]
   },
@@ -40,32 +40,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -74,41 +66,41 @@
     {
       "id": "senai",
       "label": "SENAI — consultoria técnica (Lean)",
-      "value": 183,
+      "value": 197,
       "unit": "atendimentos",
-      "display_value": "183 atendimentos",
+      "display_value": "197 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 1170,
+      "value": 1227,
       "unit": "atendimentos",
-      "display_value": "1.170 atendimentos",
+      "display_value": "1.227 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "embrapii",
       "label": "EMBRAPII — inovação aplicada",
-      "value": 14,
+      "value": 12,
       "unit": "projetos",
-      "display_value": "14 projetos",
+      "display_value": "12 projetos",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 17,5 mi mobilizados"
+        "label": "R$ 10,9 mi mobilizados"
       }
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 0,
-      "unit": "operações",
-      "display_value": "0 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 0.0,
+      "unit": "",
+      "display_value": "—",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "— financiados"
+        "label": "0 operações financiadas"
       }
     }
   ],
@@ -128,15 +120,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -162,15 +154,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -180,15 +172,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -198,15 +190,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -216,15 +208,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -234,15 +226,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -252,15 +244,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -283,152 +275,160 @@
       "items": [
         {
           "uf": "AM",
-          "municipio": "MANAUS",
-          "ibge": null,
-          "value": 973,
-          "display_value": "973",
+          "municipio": "Manaus",
+          "ibge": "1302603",
+          "value": 1040,
+          "display_value": "1.040",
           "share": 0.6
         },
         {
           "uf": "AM",
-          "municipio": "ITACOATIARA",
-          "ibge": null,
-          "value": 171,
-          "display_value": "171",
+          "municipio": "Itacoatiara",
+          "ibge": "1301902",
+          "value": 172,
+          "display_value": "172",
           "share": 0.1
         },
         {
           "uf": "AM",
-          "municipio": "HUMAITA",
-          "ibge": null,
-          "value": 110,
-          "display_value": "110",
+          "municipio": "Humaitá",
+          "ibge": "1301704",
+          "value": 118,
+          "display_value": "118",
           "share": 0.1
         },
         {
           "uf": "AM",
-          "municipio": "MANACAPURU",
-          "ibge": null,
+          "municipio": "Manacapuru",
+          "ibge": "1302504",
           "value": 31,
           "display_value": "31",
           "share": 0.0
         },
         {
           "uf": "AM",
-          "municipio": "TABATINGA",
-          "ibge": null,
+          "municipio": "Tabatinga",
+          "ibge": "1304062",
           "value": 31,
           "display_value": "31",
           "share": 0.0
         },
         {
           "uf": "AM",
-          "municipio": "IRANDUBA",
-          "ibge": null,
+          "municipio": "Iranduba",
+          "ibge": "1301852",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "AM",
-          "municipio": "COARI",
-          "ibge": null,
+          "municipio": "Coari",
+          "ibge": "1301209",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "AM",
-          "municipio": "APUI",
-          "ibge": null,
+          "municipio": "Maués",
+          "ibge": "1302900",
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "Apuí",
+          "ibge": "1300144",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "AM",
-          "municipio": "CAREIRO DA VARZEA",
-          "ibge": null,
+          "municipio": "Careiro da Várzea",
+          "ibge": "1301159",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "AM",
-          "municipio": "AUTAZES",
-          "ibge": null,
+          "municipio": "Autazes",
+          "ibge": "1300300",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "AM",
-          "municipio": "BENJAMIN CONSTANT",
-          "ibge": null,
+          "municipio": "Barreirinha",
+          "ibge": "1300508",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "AM",
-          "municipio": "LABREA",
-          "ibge": null,
+          "municipio": "Benjamin Constant",
+          "ibge": "1300607",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "AM",
-          "municipio": "TEFE",
-          "ibge": null,
+          "municipio": "Lábrea",
+          "ibge": "1302405",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "AM",
-          "municipio": "ANORI",
-          "ibge": null,
+          "municipio": "Presidente Figueiredo",
+          "ibge": "1303536",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "Tefé",
+          "ibge": "1304203",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "AM",
+          "municipio": "Anori",
+          "ibge": "1300102",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "AM",
-          "municipio": "BARREIRINHA",
-          "ibge": null,
+          "municipio": "Manicoré",
+          "ibge": "1302702",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "AM",
-          "municipio": "MANICORE",
-          "ibge": null,
+          "municipio": "Novo Airão",
+          "ibge": "1303205",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "AM",
-          "municipio": "NOVO AIRAO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "AM",
-          "municipio": "PRESIDENTE FIGUEIREDO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "AM",
-          "municipio": "SAO GABRIEL DA CACHOEIRA",
-          "ibge": null,
+          "municipio": "São Gabriel da Cachoeira",
+          "ibge": "1303809",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -438,7 +438,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -452,15 +452,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }

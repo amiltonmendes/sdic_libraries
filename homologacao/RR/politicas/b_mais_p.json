@@ -4,27 +4,27 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "1.516 atendimentos",
+    "display_value": "1.604 atendimentos",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "flat",
       "label": "1,0% do total nacional · 23ª entre 27 UFs"
     },
-    "value": 1516
+    "value": 1604
   },
   "story": {
     "escopo": "uf",
     "uf": "RR",
     "regra": "meio",
-    "headline": "1.516 atendimentos em Roraima — 1,0% do total nacional, 23ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Roraima ocupa a 23ª posição entre as 27 UFs participantes do programa e responde por 1,0% do programa no país. Dentro do Norte, que soma 10.790 atendimentos, a participação de Roraima é de 14,1%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "headline": "1.604 atendimentos em Roraima — 1,0% do total nacional, 23ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Roraima ocupa a 23ª posição entre as 27 UFs participantes do programa e responde por 1,0% do programa no país. Dentro do Norte, que soma 11.619 atendimentos, a participação de Roraima é de 13,8%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "neutral",
@@ -32,7 +32,7 @@
       },
       {
         "tone": "neutral",
-        "text": "14,1% de tudo que o Norte registra no programa."
+        "text": "13,8% de tudo que o Norte registra no programa."
       }
     ]
   },
@@ -40,32 +40,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -74,41 +66,41 @@
     {
       "id": "senai",
       "label": "SENAI — consultoria técnica (Lean)",
-      "value": 51,
+      "value": 52,
       "unit": "atendimentos",
-      "display_value": "51 atendimentos",
+      "display_value": "52 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 1465,
+      "value": 1551,
       "unit": "atendimentos",
-      "display_value": "1.465 atendimentos",
+      "display_value": "1.551 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "embrapii",
       "label": "EMBRAPII — inovação aplicada",
-      "value": 0,
+      "value": 1,
       "unit": "projetos",
-      "display_value": "0 projetos",
+      "display_value": "1 projetos",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "— mobilizados"
+        "label": "R$ 1,3 mi mobilizados"
       }
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 0,
-      "unit": "operações",
-      "display_value": "0 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 0.0,
+      "unit": "",
+      "display_value": "—",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "— financiados"
+        "label": "0 operações financiadas"
       }
     }
   ],
@@ -128,15 +120,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -162,15 +154,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -180,15 +172,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -198,15 +190,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -216,15 +208,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -234,15 +226,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -252,15 +244,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -283,72 +275,72 @@
       "items": [
         {
           "uf": "RR",
-          "municipio": "BOA VISTA",
-          "ibge": null,
-          "value": 1360,
-          "display_value": "1.360",
+          "municipio": "Boa Vista",
+          "ibge": "1400100",
+          "value": 1453,
+          "display_value": "1.453",
           "share": 0.9
         },
         {
           "uf": "RR",
-          "municipio": "RORAINOPOLIS",
-          "ibge": null,
-          "value": 101,
-          "display_value": "101",
+          "municipio": "Rorainópolis",
+          "ibge": "1400472",
+          "value": 119,
+          "display_value": "119",
           "share": 0.1
         },
         {
           "uf": "RR",
-          "municipio": "CANTA",
-          "ibge": null,
+          "municipio": "Cantá",
+          "ibge": "1400175",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "RR",
-          "municipio": "CARACARAI",
-          "ibge": null,
+          "municipio": "Caracaraí",
+          "ibge": "1400209",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RR",
-          "municipio": "MUCAJAI",
-          "ibge": null,
+          "municipio": "Mucajaí",
+          "ibge": "1400308",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RR",
-          "municipio": "AMAJARI",
-          "ibge": null,
+          "municipio": "Amajari",
+          "ibge": "1400027",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "RR",
-          "municipio": "ALTO ALEGRE",
-          "ibge": null,
+          "municipio": "Alto Alegre",
+          "ibge": "1400050",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RR",
-          "municipio": "SAO LUIZ",
-          "ibge": null,
+          "municipio": "São Luiz",
+          "ibge": "1400605",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "RR",
-          "municipio": "BONFIM",
-          "ibge": null,
+          "municipio": "Bonfim",
+          "ibge": "1400159",
           "value": 2,
           "display_value": "2",
           "share": 0.0
@@ -358,7 +350,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -372,15 +364,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }

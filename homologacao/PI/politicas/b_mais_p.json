@@ -4,27 +4,27 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "2.251 atendimentos",
+    "display_value": "2.471 atendimentos",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "flat",
       "label": "1,5% do total nacional · 18ª entre 27 UFs"
     },
-    "value": 2251
+    "value": 2471
   },
   "story": {
     "escopo": "uf",
     "uf": "PI",
     "regra": "meio",
-    "headline": "2.251 atendimentos no Piauí — 1,5% do total nacional, 18ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Piauí ocupa a 18ª posição entre as 27 UFs participantes do programa e responde por 1,5% do programa no país. Dentro do Nordeste, que soma 25.119 atendimentos, a participação do Piauí é de 9,0%. As empresas atendidas pelo programa no Piauí tiveram ganho médio de 31,7% em produtividade, conforme a modalidade de atendimento. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "headline": "2.471 atendimentos no Piauí — 1,5% do total nacional, 18ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Piauí ocupa a 18ª posição entre as 27 UFs participantes do programa e responde por 1,5% do programa no país. Dentro do Nordeste, que soma 27.160 atendimentos, a participação do Piauí é de 9,1%. As empresas atendidas pelo programa no Piauí tiveram ganho médio de 31,7% em produtividade, conforme a modalidade de atendimento. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "neutral",
@@ -32,7 +32,7 @@
       },
       {
         "tone": "neutral",
-        "text": "9,0% de tudo que o Nordeste registra no programa."
+        "text": "9,1% de tudo que o Nordeste registra no programa."
       }
     ]
   },
@@ -40,32 +40,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -74,17 +66,17 @@
     {
       "id": "senai",
       "label": "SENAI — consultoria técnica (Lean)",
-      "value": 161,
+      "value": 172,
       "unit": "atendimentos",
-      "display_value": "161 atendimentos",
+      "display_value": "172 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 2089,
+      "value": 2298,
       "unit": "atendimentos",
-      "display_value": "2.089 atendimentos",
+      "display_value": "2.298 atendimentos",
       "period": "acumulado"
     },
     {
@@ -96,19 +88,19 @@
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 1,4 mi mobilizados"
+        "label": "R$ 1,5 mi mobilizados"
       }
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 0,
-      "unit": "operações",
-      "display_value": "0 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 0.0,
+      "unit": "",
+      "display_value": "—",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "— financiados"
+        "label": "0 operações financiadas"
       }
     }
   ],
@@ -128,15 +120,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -162,15 +154,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -180,15 +172,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -198,15 +190,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -216,15 +208,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -234,15 +226,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -252,15 +244,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -283,784 +275,880 @@
       "items": [
         {
           "uf": "PI",
-          "municipio": "TERESINA",
-          "ibge": null,
-          "value": 878,
-          "display_value": "878",
+          "municipio": "Teresina",
+          "ibge": "2211001",
+          "value": 931,
+          "display_value": "931",
           "share": 0.6
         },
         {
           "uf": "PI",
-          "municipio": "PARNAIBA",
-          "ibge": null,
-          "value": 222,
-          "display_value": "222",
+          "municipio": "Parnaíba",
+          "ibge": "2207702",
+          "value": 252,
+          "display_value": "252",
+          "share": 0.2
+        },
+        {
+          "uf": "PI",
+          "municipio": "Floriano",
+          "ibge": "2203909",
+          "value": 130,
+          "display_value": "130",
           "share": 0.1
         },
         {
           "uf": "PI",
-          "municipio": "FLORIANO",
-          "ibge": null,
+          "municipio": "Bom Jesus",
+          "ibge": "2201903",
+          "value": 112,
+          "display_value": "112",
+          "share": 0.1
+        },
+        {
+          "uf": "PI",
+          "municipio": "Picos",
+          "ibge": "2208007",
           "value": 110,
           "display_value": "110",
           "share": 0.1
         },
         {
           "uf": "PI",
-          "municipio": "BOM JESUS",
-          "ibge": null,
-          "value": 107,
-          "display_value": "107",
+          "municipio": "Esperantina",
+          "ibge": "2203701",
+          "value": 99,
+          "display_value": "99",
           "share": 0.1
         },
         {
           "uf": "PI",
-          "municipio": "PICOS",
-          "ibge": null,
-          "value": 96,
-          "display_value": "96",
+          "municipio": "Campo Maior",
+          "ibge": "2202208",
+          "value": 91,
+          "display_value": "91",
           "share": 0.1
         },
         {
           "uf": "PI",
-          "municipio": "CORRENTE",
-          "ibge": null,
-          "value": 85,
-          "display_value": "85",
+          "municipio": "Paulistana",
+          "ibge": "2207801",
+          "value": 89,
+          "display_value": "89",
           "share": 0.1
         },
         {
           "uf": "PI",
-          "municipio": "CAMPO MAIOR",
-          "ibge": null,
-          "value": 78,
-          "display_value": "78",
+          "municipio": "Corrente",
+          "ibge": "2202901",
+          "value": 87,
+          "display_value": "87",
           "share": 0.1
         },
         {
           "uf": "PI",
-          "municipio": "ESPERANTINA",
-          "ibge": null,
-          "value": 77,
-          "display_value": "77",
-          "share": 0.1
-        },
-        {
-          "uf": "PI",
-          "municipio": "PAULISTANA",
-          "ibge": null,
-          "value": 75,
-          "display_value": "75",
+          "municipio": "São Raimundo Nonato",
+          "ibge": "2210607",
+          "value": 82,
+          "display_value": "82",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "SAO RAIMUNDO NONATO",
-          "ibge": null,
-          "value": 70,
-          "display_value": "70",
+          "municipio": "Piripiri",
+          "ibge": "2208403",
+          "value": 66,
+          "display_value": "66",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "PIRIPIRI",
-          "ibge": null,
-          "value": 64,
-          "display_value": "64",
-          "share": 0.0
-        },
-        {
-          "uf": "PI",
-          "municipio": "CAJUEIRO DA PRAIA",
-          "ibge": null,
+          "municipio": "Cajueiro da Praia",
+          "ibge": "2202083",
           "value": 46,
           "display_value": "46",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "BURITI DOS LOPES",
-          "ibge": null,
+          "municipio": "Luís Correia",
+          "ibge": "2205706",
+          "value": 29,
+          "display_value": "29",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "Buriti dos Lopes",
+          "ibge": "2202000",
           "value": 28,
           "display_value": "28",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "LUIS CORREIA",
-          "ibge": null,
-          "value": 27,
-          "display_value": "27",
+          "municipio": "Itainópolis",
+          "ibge": "2205003",
+          "value": 23,
+          "display_value": "23",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "ITAINOPOLIS",
-          "ibge": null,
+          "municipio": "Cristino Castro",
+          "ibge": "2203107",
           "value": 18,
           "display_value": "18",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "VALENCA DO PIAUI",
-          "ibge": null,
+          "municipio": "Valença do Piauí",
+          "ibge": "2211308",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "PIO IX",
-          "ibge": null,
+          "municipio": "Pio IX",
+          "ibge": "2208205",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "SANTA LUZ",
-          "ibge": null,
+          "municipio": "Santa Luz",
+          "ibge": "2209302",
+          "value": 14,
+          "display_value": "14",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "Altos",
+          "ibge": "2200400",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "ALTOS",
-          "ibge": null,
-          "value": 11,
-          "display_value": "11",
-          "share": 0.0
-        },
-        {
-          "uf": "PI",
-          "municipio": "PEDRO II",
-          "ibge": null,
+          "municipio": "Pedro II",
+          "ibge": "2207900",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "CRISTINO CASTRO",
-          "ibge": null,
+          "municipio": "Marcos Parente",
+          "ibge": "2206001",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "MARCOS PARENTE",
-          "ibge": null,
-          "value": 7,
-          "display_value": "7",
-          "share": 0.0
-        },
-        {
-          "uf": "PI",
-          "municipio": "SUSSUAPARA",
-          "ibge": null,
+          "municipio": "Joaquim Pires",
+          "ibge": "2205409",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "AMARANTE",
-          "ibge": null,
+          "municipio": "Sussuapara",
+          "ibge": "2210938",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "GEMINIANO",
-          "ibge": null,
+          "municipio": "Amarante",
+          "ibge": "2200509",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "QUEIMADA NOVA",
-          "ibge": null,
+          "municipio": "Geminiano",
+          "ibge": "2204352",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "JOAQUIM PIRES",
-          "ibge": null,
+          "municipio": "Queimada Nova",
+          "ibge": "2208650",
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "Redenção do Gurguéia",
+          "ibge": "2208700",
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "Betânia do Piauí",
+          "ibge": "2201739",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "BETÂNIA DO PIAUÍ",
-          "ibge": null,
+          "municipio": "Fronteiras",
+          "ibge": "2204303",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "FRONTEIRAS",
-          "ibge": null,
-          "value": 5,
-          "display_value": "5",
-          "share": 0.0
-        },
-        {
-          "uf": "PI",
-          "municipio": "JAICOS",
-          "ibge": null,
+          "municipio": "Jaicós",
+          "ibge": "2205201",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "AGUA BRANCA",
-          "ibge": null,
+          "municipio": "Água Branca",
+          "ibge": "2200202",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "BARRAS",
-          "ibge": null,
+          "municipio": "Barras",
+          "ibge": "2201200",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "CURRAIS",
-          "ibge": null,
+          "municipio": "Capitão de Campos",
+          "ibge": "2202406",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "INHUMA",
-          "ibge": null,
+          "municipio": "Cristalândia do Piauí",
+          "ibge": "2203008",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "JACOBINA DO PIAUI",
-          "ibge": null,
+          "municipio": "Currais",
+          "ibge": "2203230",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "OEIRAS",
-          "ibge": null,
+          "municipio": "Inhuma",
+          "ibge": "2204709",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "SAO BRAZ DO PIAUI",
-          "ibge": null,
+          "municipio": "Jacobina do Piauí",
+          "ibge": "2205151",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "CABECEIRAS DO PIAUI",
-          "ibge": null,
+          "municipio": "Oeiras",
+          "ibge": "2207009",
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "São Braz do Piauí",
+          "ibge": "2209559",
+          "value": 4,
+          "display_value": "4",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "Cabeceiras do Piauí",
+          "ibge": "2202059",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "UNIAO",
-          "ibge": null,
+          "municipio": "União",
+          "ibge": "2211100",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "BAIXA GRANDE DO RIBEIRO",
-          "ibge": null,
+          "municipio": "Baixa Grande do Ribeiro",
+          "ibge": "2201150",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "BONFIM DO PIAUI",
-          "ibge": null,
+          "municipio": "Beneditinos",
+          "ibge": "2201606",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "CAMPO GRANDE DO PIAUI",
-          "ibge": null,
+          "municipio": "Betânia do Piauí",
+          "ibge": "2201739",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "CAPITAO DE CAMPOS",
-          "ibge": null,
+          "municipio": "Bonfim do Piauí",
+          "ibge": "2201929",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "CORONEL JOSE DIAS",
-          "ibge": null,
+          "municipio": "Campo Grande do Piauí",
+          "ibge": "2202133",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "CRISTALANDIA DO PIAUI",
-          "ibge": null,
+          "municipio": "Coronel José Dias",
+          "ibge": "2202851",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "CURRALINHOS",
-          "ibge": null,
+          "municipio": "Curralinhos",
+          "ibge": "2203255",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "ILHA GRANDE",
-          "ibge": null,
+          "municipio": "Ilha Grande",
+          "ibge": "2204659",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "JOSE DE FREITAS",
-          "ibge": null,
+          "municipio": "José de Freitas",
+          "ibge": "2205508",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "PALMEIRA DO PIAUI",
-          "ibge": null,
+          "municipio": "Palmeira do Piauí",
+          "ibge": "2207405",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "SAO GONCALO DO GURGUEIA",
-          "ibge": null,
+          "municipio": "São Gonçalo do Gurguéia",
+          "ibge": "2209757",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "SAO LOURENCO DO PIAUI",
-          "ibge": null,
+          "municipio": "São Lourenço do Piauí",
+          "ibge": "2210359",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "URUCUI",
-          "ibge": null,
+          "municipio": "Uruçuí",
+          "ibge": "2211209",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "MIGUEL ALVES",
-          "ibge": null,
+          "municipio": "Miguel Alves",
+          "ibge": "2206209",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "NAZARIA",
-          "ibge": null,
+          "municipio": "Nazária",
+          "ibge": "2206720",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "ACAUA",
-          "ibge": null,
+          "municipio": "Acauã",
+          "ibge": "2200053",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "ACAUÃ",
-          "ibge": null,
+          "municipio": "Acauã",
+          "ibge": "2200053",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "COCAL DE TELHA",
-          "ibge": null,
+          "municipio": "Caridade do Piauí",
+          "ibge": "2202554",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "DEMERVAL LOBAO",
-          "ibge": null,
+          "municipio": "Cocal de Telha",
+          "ibge": "2202711",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "DOM EXPEDITO LOPES",
-          "ibge": null,
+          "municipio": "Demerval Lobão",
+          "ibge": "2203305",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "FRANCISCO MACEDO",
-          "ibge": null,
+          "municipio": "Dirceu Arcoverde",
+          "ibge": "2203354",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "GUADALUPE",
-          "ibge": null,
+          "municipio": "Dom Expedito Lopes",
+          "ibge": "2203404",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "LAGOA DE SAO FRANCISCO",
-          "ibge": null,
+          "municipio": "Francisco Macedo",
+          "ibge": "2204154",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "MATIAS OLIMPIO",
-          "ibge": null,
+          "municipio": "Guadalupe",
+          "ibge": "2204501",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "MONTE ALEGRE DO PIAUI",
-          "ibge": null,
+          "municipio": "Lagoa de São Francisco",
+          "ibge": "2205573",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "PARNAGUA",
-          "ibge": null,
+          "municipio": "Matias Olímpio",
+          "ibge": "2206100",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "PATOS DO PIAUI",
-          "ibge": null,
+          "municipio": "Monsenhor Gil",
+          "ibge": "2206407",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "RIACHO FRIO",
-          "ibge": null,
+          "municipio": "Monte Alegre do Piauí",
+          "ibge": "2206605",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "VERA MENDES",
-          "ibge": null,
+          "municipio": "Parnaguá",
+          "ibge": "2207603",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "CAMPO LARGO DO PIAUI",
-          "ibge": null,
+          "municipio": "Patos do Piauí",
+          "ibge": "2207777",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "Riacho Frio",
+          "ibge": "2208858",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "Sebastião Barros",
+          "ibge": "2210623",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "Vera Mendes",
+          "ibge": "2211506",
+          "value": 2,
+          "display_value": "2",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "Campo Largo do Piauí",
+          "ibge": "2202174",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "PARNAÍBA",
-          "ibge": null,
+          "municipio": "São João do Piauí",
+          "ibge": "2210003",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "SAO JOAO DO PIAUI",
-          "ibge": null,
+          "municipio": "Alegrete do Piauí",
+          "ibge": "2200277",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "ALEGRETE DO PIAUI",
-          "ibge": null,
+          "municipio": "Alto Longá",
+          "ibge": "2200301",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "ALVORADA DO GURGUEIA",
-          "ibge": null,
+          "municipio": "Alvorada do Gurguéia",
+          "ibge": "2200459",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "BATALHA",
-          "ibge": null,
+          "municipio": "Batalha",
+          "ibge": "2201507",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "BERTOLINIA",
-          "ibge": null,
+          "municipio": "Bertolínia",
+          "ibge": "2201705",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "BRASILEIRA",
-          "ibge": null,
+          "municipio": "Brasileira",
+          "ibge": "2201960",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "CANTO DO BURITI",
-          "ibge": null,
+          "municipio": "Canto do Buriti",
+          "ibge": "2202307",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "COLONIA DO GURGUEIA",
-          "ibge": null,
+          "municipio": "Caracol",
+          "ibge": "2202505",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "CONCEIÇÃO DO CANINDÉ",
-          "ibge": null,
+          "municipio": "Coivaras",
+          "ibge": "2202737",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "CURIMATA",
-          "ibge": null,
+          "municipio": "Colônia do Gurguéia",
+          "ibge": "2202752",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "DOM INOCENCIO",
-          "ibge": null,
+          "municipio": "Conceição do Canindé",
+          "ibge": "2202802",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "FARTURA DO PIAUI",
-          "ibge": null,
+          "municipio": "Curimatá",
+          "ibge": "2203206",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "FRANCISCO SANTOS",
-          "ibge": null,
+          "municipio": "Dom Inocêncio",
+          "ibge": "2203453",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "GILBUES",
-          "ibge": null,
+          "municipio": "Fartura do Piauí",
+          "ibge": "2203750",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "IPIRANGA DO PIAUI",
-          "ibge": null,
+          "municipio": "Francisco Santos",
+          "ibge": "2204204",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "ITAUEIRA",
-          "ibge": null,
+          "municipio": "Gilbués",
+          "ibge": "2204402",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "JATOBA DO PIAUI",
-          "ibge": null,
+          "municipio": "Ipiranga do Piauí",
+          "ibge": "2204808",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "LUZILANDIA",
-          "ibge": null,
+          "municipio": "Itaueira",
+          "ibge": "2205102",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "MONSENHOR GIL",
-          "ibge": null,
+          "municipio": "Jatobá do Piauí",
+          "ibge": "2205276",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "PAQUETÁ",
-          "ibge": null,
+          "municipio": "Lagoa do Piauí",
+          "ibge": "2205581",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "REGENERACAO",
-          "ibge": null,
+          "municipio": "Luzilândia",
+          "ibge": "2205805",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "RIO GRANDE DO PIAUI",
-          "ibge": null,
+          "municipio": "Nossa Senhora dos Remédios",
+          "ibge": "2206803",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "SANTO ANTONIO DE LISBOA",
-          "ibge": null,
+          "municipio": "Paquetá",
+          "ibge": "2207553",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "SAO JOAO DO ARRAIAL",
-          "ibge": null,
+          "municipio": "Regeneração",
+          "ibge": "2208809",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "SIMPLICIO MENDES",
-          "ibge": null,
+          "municipio": "Rio Grande do Piauí",
+          "ibge": "2209005",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "SIMPLÍCIO MENDES",
-          "ibge": null,
+          "municipio": "Santa Cruz do Piauí",
+          "ibge": "2209104",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "SIMÕES",
-          "ibge": null,
+          "municipio": "Santo Antônio de Lisboa",
+          "ibge": "2209401",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PI",
-          "municipio": "SÃO FRANCISCO DE ASSIS DO PIAUÍ",
-          "ibge": null,
+          "municipio": "São Francisco do Piauí",
+          "ibge": "2209708",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "São João do Arraial",
+          "ibge": "2209971",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "Simplício Mendes",
+          "ibge": "2210805",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "Simplício Mendes",
+          "ibge": "2210805",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "Simões",
+          "ibge": "2210706",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PI",
+          "municipio": "São Francisco de Assis do Piauí",
+          "ibge": "2209658",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -1070,7 +1158,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -1084,15 +1172,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }

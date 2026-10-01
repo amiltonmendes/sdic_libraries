@@ -4,35 +4,35 @@
   "nome": "Brasil Mais Produtivo",
   "sigla": "B+P",
   "categoria": "Extensionismo industrial e ganho de produtividade",
-  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES",
+  "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
   "reference": "2023-2026",
-  "updated_at": "2026-08-04",
+  "updated_at": "2026-09-21",
   "capa_kpi": {
     "id": "capa_bp",
     "label": "Empresas atendidas",
-    "display_value": "5.541 atendimentos",
+    "display_value": "5.837 atendimentos",
     "unit": "",
     "period": "acumulado",
     "delta": {
       "dir": "flat",
-      "label": "3,6% do total nacional · 7ª entre 27 UFs"
+      "label": "3,5% do total nacional · 7ª entre 27 UFs"
     },
-    "value": 5541
+    "value": 5837
   },
   "story": {
     "escopo": "uf",
     "uf": "PE",
     "regra": "meio",
-    "headline": "5.541 atendimentos em Pernambuco — 3,6% do total nacional, 7ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Pernambuco ocupa a 7ª posição entre as 27 UFs participantes do programa e responde por 3,6% do programa no país. Dentro do Nordeste, que soma 25.119 atendimentos, a participação de Pernambuco é de 22,1%, a maior da região. As empresas atendidas pelo programa em Pernambuco tiveram ganho médio de 33,3% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 23,7%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "headline": "5.837 atendimentos em Pernambuco — 3,5% do total nacional, 7ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Pernambuco ocupa a 7ª posição entre as 27 UFs participantes do programa e responde por 3,5% do programa no país. Dentro do Nordeste, que soma 27.160 atendimentos, a participação de Pernambuco é de 21,5%, a maior da região. As empresas atendidas pelo programa em Pernambuco tiveram ganho médio de 33,3% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 24,0%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "7ª posição nacional entre as 27 UFs participantes do programa, com 3,6% do total."
+        "text": "7ª posição nacional entre as 27 UFs participantes do programa, com 3,5% do total."
       },
       {
         "tone": "pos",
-        "text": "22,1% de tudo que o Nordeste registra no programa — maior participação da região."
+        "text": "21,5% de tudo que o Nordeste registra no programa — maior participação da região."
       }
     ]
   },
@@ -40,32 +40,24 @@
     {
       "id": "empresas",
       "label": "Empresas atendidas",
-      "value": 137572,
-      "display_value": "137.572",
+      "value": 149282,
+      "display_value": "149.282",
       "unit": "empresas",
       "period": "acumulado"
     },
     {
       "id": "atendimentos",
       "label": "Atendimentos realizados",
-      "value": 154741,
-      "display_value": "154.741",
+      "value": 167662,
+      "display_value": "167.662",
       "unit": "atendimentos",
-      "period": "acumulado"
-    },
-    {
-      "id": "investimento",
-      "label": "Investimento mobilizado",
-      "value": 682164430.35,
-      "display_value": "R$ 682,2 mi",
-      "unit": "",
       "period": "acumulado"
     },
     {
       "id": "ganho_lean",
       "label": "Ganho mediano de produtividade (indústria)",
-      "value": 32.2,
-      "display_value": "32,2",
+      "value": 32.0,
+      "display_value": "32,0",
       "unit": "%",
       "period": "concluintes SENAI"
     }
@@ -74,41 +66,41 @@
     {
       "id": "senai",
       "label": "SENAI — consultoria técnica (Lean)",
-      "value": 605,
+      "value": 652,
       "unit": "atendimentos",
-      "display_value": "605 atendimentos",
+      "display_value": "652 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "sebrae",
       "label": "SEBRAE/ALI — pequenos negócios",
-      "value": 4927,
+      "value": 5174,
       "unit": "atendimentos",
-      "display_value": "4.927 atendimentos",
+      "display_value": "5.174 atendimentos",
       "period": "acumulado"
     },
     {
       "id": "embrapii",
       "label": "EMBRAPII — inovação aplicada",
-      "value": 9,
+      "value": 11,
       "unit": "projetos",
-      "display_value": "9 projetos",
+      "display_value": "11 projetos",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "R$ 14,1 mi mobilizados"
+        "label": "R$ 21,6 mi mobilizados"
       }
     },
     {
       "id": "bndes",
-      "label": "BNDES — financiamento",
-      "value": 0,
-      "unit": "operações",
-      "display_value": "0 operações",
+      "label": "Financiamento à digitalização (BNDES + FINEP)",
+      "value": 0.0,
+      "unit": "",
+      "display_value": "—",
       "period": "acumulado",
       "delta": {
         "dir": "flat",
-        "label": "— financiados"
+        "label": "0 operações financiadas"
       }
     }
   ],
@@ -128,15 +120,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 55984
+              "v": 57399
             },
             {
               "t": 2025,
-              "v": 56590
+              "v": 57130
             },
             {
               "t": 2026,
-              "v": 41426
+              "v": 52565
             }
           ]
         }
@@ -162,15 +154,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 17155
+              "v": 17473
             },
             {
               "t": 2025,
-              "v": 13708
+              "v": 13921
             },
             {
               "t": 2026,
-              "v": 12800
+              "v": 15975
             }
           ]
         },
@@ -180,15 +172,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5982
+              "v": 6110
             },
             {
               "t": 2025,
-              "v": 7828
+              "v": 7858
             },
             {
               "t": 2026,
-              "v": 5978
+              "v": 7613
             }
           ]
         },
@@ -198,15 +190,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 5227
+              "v": 5425
             },
             {
               "t": 2025,
-              "v": 4958
+              "v": 5117
             },
             {
               "t": 2026,
-              "v": 3848
+              "v": 4217
             }
           ]
         },
@@ -216,15 +208,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 3073
+              "v": 3154
             },
             {
               "t": 2025,
-              "v": 3300
+              "v": 3294
             },
             {
               "t": 2026,
-              "v": 2643
+              "v": 3197
             }
           ]
         },
@@ -234,15 +226,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2525
+              "v": 2679
             },
             {
               "t": 2025,
-              "v": 2189
+              "v": 2129
             },
             {
               "t": 2026,
-              "v": 1615
+              "v": 1968
             }
           ]
         },
@@ -252,15 +244,15 @@
           "points": [
             {
               "t": 2024,
-              "v": 2533
+              "v": 2579
             },
             {
               "t": 2025,
-              "v": 1496
+              "v": 1487
             },
             {
               "t": 2026,
-              "v": 1484
+              "v": 1743
             }
           ]
         }
@@ -283,704 +275,720 @@
       "items": [
         {
           "uf": "PE",
-          "municipio": "RECIFE",
-          "ibge": null,
-          "value": 1846,
-          "display_value": "1.846",
-          "share": 1.2
+          "municipio": "Recife",
+          "ibge": "2611606",
+          "value": 1920,
+          "display_value": "1.920",
+          "share": 1.1
         },
         {
           "uf": "PE",
-          "municipio": "PETROLINA",
-          "ibge": null,
-          "value": 616,
-          "display_value": "616",
+          "municipio": "Petrolina",
+          "ibge": "2611101",
+          "value": 624,
+          "display_value": "624",
           "share": 0.4
         },
         {
           "uf": "PE",
-          "municipio": "JABOATAO DOS GUARARAPES",
-          "ibge": null,
-          "value": 316,
-          "display_value": "316",
+          "municipio": "Jaboatão dos Guararapes",
+          "ibge": "2607901",
+          "value": 351,
+          "display_value": "351",
           "share": 0.2
         },
         {
           "uf": "PE",
-          "municipio": "CARUARU",
-          "ibge": null,
-          "value": 295,
-          "display_value": "295",
+          "municipio": "Caruaru",
+          "ibge": "2604106",
+          "value": 317,
+          "display_value": "317",
           "share": 0.2
         },
         {
           "uf": "PE",
-          "municipio": "OLINDA",
-          "ibge": null,
-          "value": 253,
-          "display_value": "253",
+          "municipio": "Olinda",
+          "ibge": "2609600",
+          "value": 270,
+          "display_value": "270",
           "share": 0.2
         },
         {
           "uf": "PE",
-          "municipio": "ARARIPINA",
-          "ibge": null,
-          "value": 247,
-          "display_value": "247",
+          "municipio": "Araripina",
+          "ibge": "2601102",
+          "value": 265,
+          "display_value": "265",
           "share": 0.2
         },
         {
           "uf": "PE",
-          "municipio": "GARANHUNS",
-          "ibge": null,
-          "value": 221,
-          "display_value": "221",
+          "municipio": "Garanhuns",
+          "ibge": "2606002",
+          "value": 230,
+          "display_value": "230",
           "share": 0.1
         },
         {
           "uf": "PE",
-          "municipio": "PAULISTA",
-          "ibge": null,
-          "value": 211,
-          "display_value": "211",
+          "municipio": "Paulista",
+          "ibge": "2610707",
+          "value": 225,
+          "display_value": "225",
           "share": 0.1
         },
         {
           "uf": "PE",
-          "municipio": "SERRA TALHADA",
-          "ibge": null,
-          "value": 88,
-          "display_value": "88",
+          "municipio": "Trindade",
+          "ibge": "2615607",
+          "value": 96,
+          "display_value": "96",
           "share": 0.1
         },
         {
           "uf": "PE",
-          "municipio": "TRINDADE",
-          "ibge": null,
-          "value": 85,
-          "display_value": "85",
+          "municipio": "Serra Talhada",
+          "ibge": "2613909",
+          "value": 91,
+          "display_value": "91",
           "share": 0.1
         },
         {
           "uf": "PE",
-          "municipio": "CAMARAGIBE",
-          "ibge": null,
-          "value": 71,
-          "display_value": "71",
+          "municipio": "Camaragibe",
+          "ibge": "2603454",
+          "value": 77,
+          "display_value": "77",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "SALGUEIRO",
-          "ibge": null,
-          "value": 65,
-          "display_value": "65",
+          "municipio": "Cabo de Santo Agostinho",
+          "ibge": "2602902",
+          "value": 76,
+          "display_value": "76",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "SANTA CRUZ DO CAPIBARIBE",
-          "ibge": null,
+          "municipio": "Salgueiro",
+          "ibge": "2612208",
+          "value": 75,
+          "display_value": "75",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "Santa Cruz do Capibaribe",
+          "ibge": "2612505",
           "value": 59,
           "display_value": "59",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "CABO DE SANTO AGOSTINHO",
-          "ibge": null,
-          "value": 57,
-          "display_value": "57",
+          "municipio": "São Lourenço da Mata",
+          "ibge": "2613701",
+          "value": 59,
+          "display_value": "59",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "SAO JOSE DO EGITO",
-          "ibge": null,
+          "municipio": "Vitória de Santo Antão",
+          "ibge": "2616407",
+          "value": 55,
+          "display_value": "55",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "Lajedo",
+          "ibge": "2608800",
           "value": 53,
           "display_value": "53",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "SAO LOURENCO DA MATA",
-          "ibge": null,
+          "municipio": "São José do Egito",
+          "ibge": "2613602",
           "value": 53,
           "display_value": "53",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "VITORIA DE SANTO ANTAO",
-          "ibge": null,
-          "value": 53,
-          "display_value": "53",
-          "share": 0.0
-        },
-        {
-          "uf": "PE",
-          "municipio": "LAJEDO",
-          "ibge": null,
+          "municipio": "Afogados da Ingazeira",
+          "ibge": "2600104",
           "value": 50,
           "display_value": "50",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "PETROLANDIA",
-          "ibge": null,
+          "municipio": "Petrolândia",
+          "ibge": "2611002",
           "value": 47,
           "display_value": "47",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "IGARASSU",
-          "ibge": null,
-          "value": 39,
-          "display_value": "39",
+          "municipio": "Igarassu",
+          "ibge": "2606804",
+          "value": 41,
+          "display_value": "41",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "AFOGADOS DA INGAZEIRA",
-          "ibge": null,
-          "value": 35,
-          "display_value": "35",
+          "municipio": "Gravatá",
+          "ibge": "2606408",
+          "value": 33,
+          "display_value": "33",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "GRAVATA",
-          "ibge": null,
-          "value": 32,
-          "display_value": "32",
+          "municipio": "São Bento do Una",
+          "ibge": "2613008",
+          "value": 28,
+          "display_value": "28",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "ABREU E LIMA",
-          "ibge": null,
+          "municipio": "Ouricuri",
+          "ibge": "2609907",
+          "value": 27,
+          "display_value": "27",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "Bom Conselho",
+          "ibge": "2602100",
+          "value": 26,
+          "display_value": "26",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "Abreu e Lima",
+          "ibge": "2600054",
           "value": 25,
           "display_value": "25",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "IPUBI",
-          "ibge": null,
+          "municipio": "Ipojuca",
+          "ibge": "2607208",
           "value": 25,
           "display_value": "25",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "ITAIBA",
-          "ibge": null,
+          "municipio": "Ipubi",
+          "ibge": "2607307",
           "value": 25,
           "display_value": "25",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "IPOJUCA",
-          "ibge": null,
+          "municipio": "Itaíba",
+          "ibge": "2607505",
+          "value": 25,
+          "display_value": "25",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "Tabira",
+          "ibge": "2614600",
           "value": 24,
           "display_value": "24",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "OURICURI",
-          "ibge": null,
-          "value": 24,
-          "display_value": "24",
+          "municipio": "Floresta",
+          "ibge": "2605707",
+          "value": 22,
+          "display_value": "22",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "TABIRA",
-          "ibge": null,
-          "value": 24,
-          "display_value": "24",
-          "share": 0.0
-        },
-        {
-          "uf": "PE",
-          "municipio": "SAO BENTO DO UNA",
-          "ibge": null,
-          "value": 23,
-          "display_value": "23",
-          "share": 0.0
-        },
-        {
-          "uf": "PE",
-          "municipio": "CUPIRA",
-          "ibge": null,
+          "municipio": "Caetés",
+          "ibge": "2603207",
           "value": 21,
           "display_value": "21",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "BELO JARDIM",
-          "ibge": null,
-          "value": 18,
-          "display_value": "18",
+          "municipio": "Cupira",
+          "ibge": "2605004",
+          "value": 21,
+          "display_value": "21",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "CAETES",
-          "ibge": null,
-          "value": 18,
-          "display_value": "18",
+          "municipio": "Belo Jardim",
+          "ibge": "2601706",
+          "value": 20,
+          "display_value": "20",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "BEZERROS",
-          "ibge": null,
+          "municipio": "Bezerros",
+          "ibge": "2601904",
           "value": 17,
           "display_value": "17",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "PANELAS",
-          "ibge": null,
+          "municipio": "Panelas",
+          "ibge": "2610202",
           "value": 17,
           "display_value": "17",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "FLORESTA",
-          "ibge": null,
-          "value": 16,
-          "display_value": "16",
-          "share": 0.0
-        },
-        {
-          "uf": "PE",
-          "municipio": "LIMOEIRO",
-          "ibge": null,
+          "municipio": "Goiana",
+          "ibge": "2606200",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "SURUBIM",
-          "ibge": null,
+          "municipio": "Limoeiro",
+          "ibge": "2608909",
           "value": 15,
           "display_value": "15",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "GOIANA",
-          "ibge": null,
+          "municipio": "Moreno",
+          "ibge": "2609402",
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "Surubim",
+          "ibge": "2614501",
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "Sertânia",
+          "ibge": "2614105",
+          "value": 15,
+          "display_value": "15",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "João Alfredo",
+          "ibge": "2608107",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "FEIRA NOVA",
-          "ibge": null,
+          "municipio": "Feira Nova",
+          "ibge": "2605400",
           "value": 14,
           "display_value": "14",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "AGRESTINA",
-          "ibge": null,
+          "municipio": "Agrestina",
+          "ibge": "2600302",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "JOAO ALFREDO",
-          "ibge": null,
+          "municipio": "Carpina",
+          "ibge": "2604007",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "MORENO",
-          "ibge": null,
+          "municipio": "Taquaritinga do Norte",
+          "ibge": "2615003",
           "value": 13,
           "display_value": "13",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "ARCOVERDE",
-          "ibge": null,
+          "municipio": "Toritama",
+          "ibge": "2615409",
+          "value": 13,
+          "display_value": "13",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "Arcoverde",
+          "ibge": "2601201",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "BOM CONSELHO",
-          "ibge": null,
+          "municipio": "Tamandaré",
+          "ibge": "2614857",
           "value": 12,
           "display_value": "12",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "CARPINA",
-          "ibge": null,
-          "value": 12,
-          "display_value": "12",
-          "share": 0.0
-        },
-        {
-          "uf": "PE",
-          "municipio": "TAQUARITINGA DO NORTE",
-          "ibge": null,
-          "value": 12,
-          "display_value": "12",
-          "share": 0.0
-        },
-        {
-          "uf": "PE",
-          "municipio": "TAMANDARE",
-          "ibge": null,
-          "value": 12,
-          "display_value": "12",
-          "share": 0.0
-        },
-        {
-          "uf": "PE",
-          "municipio": "PALMARES",
-          "ibge": null,
+          "municipio": "Palmares",
+          "ibge": "2610004",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "TORITAMA",
-          "ibge": null,
+          "municipio": "Paranatama",
+          "ibge": "2610301",
           "value": 11,
           "display_value": "11",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "PARANATAMA",
-          "ibge": null,
-          "value": 11,
-          "display_value": "11",
-          "share": 0.0
-        },
-        {
-          "uf": "PE",
-          "municipio": "CANHOTINHO",
-          "ibge": null,
+          "municipio": "Canhotinho",
+          "ibge": "2603702",
           "value": 10,
           "display_value": "10",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "TRIUNFO",
-          "ibge": null,
+          "municipio": "Triunfo",
+          "ibge": "2615706",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "FERNANDO DE NORONHA",
-          "ibge": null,
+          "municipio": "Fernando de Noronha",
+          "ibge": "2605459",
           "value": 9,
           "display_value": "9",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "BOM JARDIM",
-          "ibge": null,
+          "municipio": "Bom Jardim",
+          "ibge": "2602209",
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "Carnaíba",
+          "ibge": "2603900",
+          "value": 8,
+          "display_value": "8",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "Paudalho",
+          "ibge": "2610608",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "PAUDALHO",
-          "ibge": null,
+          "municipio": "Pombos",
+          "ibge": "2611309",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "POMBOS",
-          "ibge": null,
+          "municipio": "São João",
+          "ibge": "2613206",
           "value": 7,
           "display_value": "7",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "ALTINHO",
-          "ibge": null,
+          "municipio": "Altinho",
+          "ibge": "2600807",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "CARNAIBA",
-          "ibge": null,
+          "municipio": "Brejão",
+          "ibge": "2602407",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "SAIRE",
-          "ibge": null,
+          "municipio": "Timbaúba",
+          "ibge": "2615300",
           "value": 6,
           "display_value": "6",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "BREJAO",
-          "ibge": null,
+          "municipio": "Calçado",
+          "ibge": "2603306",
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "Sairé",
+          "ibge": "2612000",
+          "value": 6,
+          "display_value": "6",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "Chã Grande",
+          "ibge": "2604502",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "CHA GRANDE",
-          "ibge": null,
+          "municipio": "Águas Belas",
+          "ibge": "2600500",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "AGUAS BELAS",
-          "ibge": null,
+          "municipio": "Bodocó",
+          "ibge": "2602001",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "BODOCO",
-          "ibge": null,
+          "municipio": "Jupi",
+          "ibge": "2608305",
           "value": 5,
           "display_value": "5",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "CALCADO",
-          "ibge": null,
-          "value": 5,
-          "display_value": "5",
-          "share": 0.0
-        },
-        {
-          "uf": "PE",
-          "municipio": "SAO JOAO",
-          "ibge": null,
-          "value": 5,
-          "display_value": "5",
-          "share": 0.0
-        },
-        {
-          "uf": "PE",
-          "municipio": "ALIANCA",
-          "ibge": null,
+          "municipio": "Aliança",
+          "ibge": "2600708",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "ESCADA",
-          "ibge": null,
+          "municipio": "Escada",
+          "ibge": "2605202",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "ITAPISSUMA",
-          "ibge": null,
+          "municipio": "Itapissuma",
+          "ibge": "2607752",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "RIBEIRAO",
-          "ibge": null,
+          "municipio": "Parnamirim",
+          "ibge": "2610400",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "SAO CAITANO",
-          "ibge": null,
+          "municipio": "Ribeirão",
+          "ibge": "2611804",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "TIMBAUBA",
-          "ibge": null,
+          "municipio": "São Caitano",
+          "ibge": "2613107",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "VERTENTES",
-          "ibge": null,
+          "municipio": "Vertentes",
+          "ibge": "2616209",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "CAPOEIRAS",
-          "ibge": null,
+          "municipio": "Capoeiras",
+          "ibge": "2603801",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "JUPI",
-          "ibge": null,
+          "municipio": "Lagoa Grande",
+          "ibge": "2608750",
           "value": 4,
           "display_value": "4",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "LAGOA GRANDE",
-          "ibge": null,
-          "value": 4,
-          "display_value": "4",
-          "share": 0.0
-        },
-        {
-          "uf": "PE",
-          "municipio": "ALAGOINHA",
-          "ibge": null,
+          "municipio": "Alagoinha",
+          "ibge": "2600609",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "BARRA DE GUABIRABA",
-          "ibge": null,
+          "municipio": "Barra de Guabiraba",
+          "ibge": "2601300",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "BREJO DA MADRE DE DEUS",
-          "ibge": null,
+          "municipio": "Brejo da Madre de Deus",
+          "ibge": "2602605",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "CUSTODIA",
-          "ibge": null,
+          "municipio": "Custódia",
+          "ibge": "2605103",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "PEDRA",
-          "ibge": null,
+          "municipio": "Pedra",
+          "ibge": "2610806",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "SAO JOSE DA COROA GRANDE",
-          "ibge": null,
+          "municipio": "São José da Coroa Grande",
+          "ibge": "2613404",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "BONITO",
-          "ibge": null,
+          "municipio": "Bonito",
+          "ibge": "2602308",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "BREJINHO",
-          "ibge": null,
+          "municipio": "Brejinho",
+          "ibge": "2602506",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "JUREMA",
-          "ibge": null,
+          "municipio": "Jurema",
+          "ibge": "2608404",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "NAZARE DA MATA",
-          "ibge": null,
+          "municipio": "Nazaré da Mata",
+          "ibge": "2609501",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "PESQUEIRA",
-          "ibge": null,
+          "municipio": "Pesqueira",
+          "ibge": "2610905",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "SAO JOSE DO BELMONTE",
-          "ibge": null,
+          "municipio": "São José do Belmonte",
+          "ibge": "2613503",
           "value": 3,
           "display_value": "3",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "TACARATU",
-          "ibge": null,
+          "municipio": "Tacaratu",
+          "ibge": "2614808",
           "value": 3,
           "display_value": "3",
           "share": 0.0
@@ -995,136 +1003,136 @@
         },
         {
           "uf": "PE",
-          "municipio": "BUIQUE",
-          "ibge": null,
+          "municipio": "Buíque",
+          "ibge": "2602803",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "CONDADO",
-          "ibge": null,
+          "municipio": "Condado",
+          "ibge": "2604601",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "SÃO LOURENÇO DA MATA",
-          "ibge": null,
+          "municipio": "Afrânio",
+          "ibge": "2600203",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "AFRANIO",
-          "ibge": null,
+          "municipio": "Amaraji",
+          "ibge": "2600906",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "AMARAJI",
-          "ibge": null,
+          "municipio": "Barreiros",
+          "ibge": "2601409",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "BARREIROS",
-          "ibge": null,
+          "municipio": "Camocim de São Félix",
+          "ibge": "2603504",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "CUMARU",
-          "ibge": null,
+          "municipio": "Cumaru",
+          "ibge": "2604908",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "DORMENTES",
-          "ibge": null,
+          "municipio": "Dormentes",
+          "ibge": "2605152",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "EXU",
-          "ibge": null,
+          "municipio": "Exu",
+          "ibge": "2605301",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "FLORES",
-          "ibge": null,
+          "municipio": "Flores",
+          "ibge": "2605608",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "LAGOA DO CARRO",
-          "ibge": null,
+          "municipio": "Lagoa do Carro",
+          "ibge": "2608453",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "MIRANDIBA",
-          "ibge": null,
+          "municipio": "Mirandiba",
+          "ibge": "2609303",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "RIO FORMOSO",
-          "ibge": null,
+          "municipio": "Rio Formoso",
+          "ibge": "2611903",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "TUPANATINGA",
-          "ibge": null,
+          "municipio": "Tupanatinga",
+          "ibge": "2615805",
           "value": 2,
           "display_value": "2",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "ITAMBE",
-          "ibge": null,
+          "municipio": "Itambé",
+          "ibge": "2607653",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "JAQUEIRA",
-          "ibge": null,
+          "municipio": "Jaqueira",
+          "ibge": "2607950",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "JATAUBA",
-          "ibge": null,
+          "municipio": "Jataúba",
+          "ibge": "2608008",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -1139,80 +1147,80 @@
         },
         {
           "uf": "PE",
-          "municipio": "PARNAMIRIM",
-          "ibge": null,
+          "municipio": "Riacho das Almas",
+          "ibge": "2611705",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "RIACHO DAS ALMAS",
-          "ibge": null,
+          "municipio": "São Lourenço da Mata",
+          "ibge": "2613701",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "CALUMBI",
-          "ibge": null,
+          "municipio": "Venturosa",
+          "ibge": "2616001",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "CAMOCIM DE SAO FELIX",
-          "ibge": null,
+          "municipio": "Calumbi",
+          "ibge": "2603405",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "CATENDE",
-          "ibge": null,
+          "municipio": "Catende",
+          "ibge": "2604205",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "CEDRO",
-          "ibge": null,
+          "municipio": "Cedro",
+          "ibge": "2604304",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "FREI MIGUELINHO",
-          "ibge": null,
+          "municipio": "Frei Miguelinho",
+          "ibge": "2605806",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "GLORIA DO GOITA",
-          "ibge": null,
+          "municipio": "Glória do Goitá",
+          "ibge": "2606101",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "IATI",
-          "ibge": null,
+          "municipio": "Iati",
+          "ibge": "2606507",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "IBIMIRIM",
-          "ibge": null,
+          "municipio": "Ibimirim",
+          "ibge": "2606606",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -1227,7 +1235,31 @@
         },
         {
           "uf": "PE",
-          "municipio": "ILHA DE ITAMARACA",
+          "municipio": "Ilha de Itamaracá",
+          "ibge": "2607604",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "Itapetim",
+          "ibge": "2607703",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "Jatobá",
+          "ibge": "2608057",
+          "value": 1,
+          "display_value": "1",
+          "share": 0.0
+        },
+        {
+          "uf": "PE",
+          "municipio": "LAGOA DO ITAENGA",
           "ibge": null,
           "value": 1,
           "display_value": "1",
@@ -1235,96 +1267,72 @@
         },
         {
           "uf": "PE",
-          "municipio": "ITAPETIM",
-          "ibge": null,
+          "municipio": "Machados",
+          "ibge": "2609105",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "JATOBA",
-          "ibge": null,
+          "municipio": "Quixaba",
+          "ibge": "2611533",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "MACHADOS",
-          "ibge": null,
+          "municipio": "Saloá",
+          "ibge": "2612307",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "QUIXABA",
-          "ibge": null,
+          "municipio": "Santa Cruz da Baixa Verde",
+          "ibge": "2612471",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "SALOA",
-          "ibge": null,
+          "municipio": "Santa Maria da Boa Vista",
+          "ibge": "2612604",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "SANTA CRUZ DA BAIXA VERDE",
-          "ibge": null,
+          "municipio": "Santa Maria do Cambucá",
+          "ibge": "2612703",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "SANTA MARIA DA BOA VISTA",
-          "ibge": null,
+          "municipio": "Santa Terezinha",
+          "ibge": "2612802",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "SANTA MARIA DO CAMBUCA",
-          "ibge": null,
+          "municipio": "Tacaimbó",
+          "ibge": "2614709",
           "value": 1,
           "display_value": "1",
           "share": 0.0
         },
         {
           "uf": "PE",
-          "municipio": "SANTA TEREZINHA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "PE",
-          "municipio": "SERTANIA",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "PE",
-          "municipio": "TACAIMBO",
-          "ibge": null,
-          "value": 1,
-          "display_value": "1",
-          "share": 0.0
-        },
-        {
-          "uf": "PE",
-          "municipio": "TEREZINHA",
-          "ibge": null,
+          "municipio": "Terezinha",
+          "ibge": "2615102",
           "value": 1,
           "display_value": "1",
           "share": 0.0
@@ -1334,7 +1342,7 @@
   ],
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
-  "data_aceitacao": "2026-08-04",
+  "data_aceitacao": "2026-09-21",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -1348,15 +1356,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "154.741 atendimentos realizados em todas as 27 unidades da federação."
+        "text": "167.662 atendimentos realizados em todas as 27 unidades da federação."
       },
       {
         "tone": "pos",
-        "text": "Ganho mediano de 32,2% de produtividade nas empresas industriais concluintes (SENAI)."
-      },
-      {
-        "tone": "neutral",
-        "text": "R$ 682,2 mi mobilizados em inovação e financiamento (EMBRAPII + BNDES)."
+        "text": "Ganho mediano de 32,0% de produtividade nas empresas industriais concluintes (SENAI)."
       }
     ]
   }
