@@ -4,7 +4,7 @@
   "title": "PIB Estadual",
   "source": "Contas Regionais e PIA / IBGE",
   "reference": "2023",
-  "updated_at": "2026-09-10",
+  "updated_at": "2026-10-01",
   "capa_kpi": {
     "id": "capa_pib_estadual",
     "label": "PIB total",
@@ -17,7 +17,7 @@
     }
   },
   "story": {
-    "headline": "PIB estadual soma {{kpis[pib_total].display_value}} {{kpis[pib_total].unit}}.",
+    "headline": "Soma do PIB das 27 UFs: {{kpis[pib_total].display_value}} {{kpis[pib_total].unit}}.",
     "lede": "Dados de Contas Regionais do IBGE (PIB a preços correntes), com a participação dos principais setores industriais detalhada a partir da Pesquisa Industrial Anual (PIA/IBGE).",
     "highlights": [
       {
