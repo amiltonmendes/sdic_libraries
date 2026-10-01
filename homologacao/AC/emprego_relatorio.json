@@ -3,8 +3,8 @@
   "section_id": "emprego",
   "title": "Emprego — dados para relatórios",
   "source": "Novo CAGED / MTE",
-  "reference": "Jul/2026",
-  "updated_at": "2026-09-14",
+  "reference": "Ago/2026",
+  "updated_at": "2026-10-01",
   "saldo_mensal": [
     {
       "competencia": "202001",
@@ -828,11 +828,11 @@
       "__uf__": "AC",
       "cnae_divisao": "01",
       "cnae_descricao": "Agricultura, Pecuária E Serviços Relacionados",
-      "saldo": 0.0,
-      "saldo_sem_reajuste": 0.0,
+      "saldo": 1.0,
+      "saldo_sem_reajuste": 1.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 146.0,
-      "acumulado_12m": 102.0
+      "acumulado_ano": 147.0,
+      "acumulado_12m": 103.0
     },
     {
       "competencia": "202510",
@@ -843,8 +843,8 @@
       "saldo": -8.0,
       "saldo_sem_reajuste": -8.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 138.0,
-      "acumulado_12m": 122.0
+      "acumulado_ano": 139.0,
+      "acumulado_12m": 123.0
     },
     {
       "competencia": "202511",
@@ -852,8 +852,8 @@
       "__uf__": "AC",
       "cnae_divisao": "01",
       "cnae_descricao": "Agricultura, Pecuária E Serviços Relacionados",
-      "saldo": 29.0,
-      "saldo_sem_reajuste": 29.0,
+      "saldo": 28.0,
+      "saldo_sem_reajuste": 28.0,
       "codigo_uf": "AC",
       "acumulado_ano": 167.0,
       "acumulado_12m": 173.0
@@ -900,11 +900,11 @@
       "__uf__": "AC",
       "cnae_divisao": "01",
       "cnae_descricao": "Agricultura, Pecuária E Serviços Relacionados",
-      "saldo": -4.0,
-      "saldo_sem_reajuste": -4.0,
+      "saldo": -5.0,
+      "saldo_sem_reajuste": -5.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 30.0,
-      "acumulado_12m": 183.0
+      "acumulado_ano": 29.0,
+      "acumulado_12m": 182.0
     },
     {
       "competencia": "202604",
@@ -915,8 +915,8 @@
       "saldo": 21.0,
       "saldo_sem_reajuste": 21.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 51.0,
-      "acumulado_12m": 197.0
+      "acumulado_ano": 50.0,
+      "acumulado_12m": 196.0
     },
     {
       "competencia": "202605",
@@ -924,8 +924,8 @@
       "__uf__": "AC",
       "cnae_divisao": "01",
       "cnae_descricao": "Agricultura, Pecuária E Serviços Relacionados",
-      "saldo": 26.0,
-      "saldo_sem_reajuste": 26.0,
+      "saldo": 27.0,
+      "saldo_sem_reajuste": 27.0,
       "codigo_uf": "AC",
       "acumulado_ano": 77.0,
       "acumulado_12m": 227.0
@@ -948,11 +948,23 @@
       "__uf__": "AC",
       "cnae_divisao": "01",
       "cnae_descricao": "Agricultura, Pecuária E Serviços Relacionados",
-      "saldo": 12.0,
-      "saldo_sem_reajuste": 12.0,
+      "saldo": 15.0,
+      "saldo_sem_reajuste": 15.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 82.0,
-      "acumulado_12m": 142.0
+      "acumulado_ano": 85.0,
+      "acumulado_12m": 145.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "01",
+      "cnae_descricao": "Agricultura, Pecuária E Serviços Relacionados",
+      "saldo": 39.0,
+      "saldo_sem_reajuste": 39.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 124.0,
+      "acumulado_12m": 146.0
     },
     {
       "competencia": "202001",
@@ -1891,6 +1903,18 @@
       "acumulado_12m": 12.0
     },
     {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "02",
+      "cnae_descricao": "Produção Florestal",
+      "saldo": -9.0,
+      "saldo_sem_reajuste": -9.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 36.0,
+      "acumulado_12m": 3.0
+    },
+    {
       "competencia": "202001",
       "cod_uf": "AC",
       "__uf__": "AC",
@@ -2429,6 +2453,18 @@
       "codigo_uf": "AC",
       "acumulado_ano": 4.0,
       "acumulado_12m": -1.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "03",
+      "cnae_descricao": "Pesca E Aqüicultura",
+      "saldo": 1.0,
+      "saldo_sem_reajuste": 1.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 5.0,
+      "acumulado_12m": 0.0
     },
     {
       "competencia": "202001",
@@ -3355,6 +3391,18 @@
       "acumulado_12m": -10.0
     },
     {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "08",
+      "cnae_descricao": "Extração De Minerais Não Metálicos",
+      "saldo": -2.0,
+      "saldo_sem_reajuste": -2.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": -9.0,
+      "acumulado_12m": -14.0
+    },
+    {
       "competencia": "202001",
       "cod_uf": "AC",
       "__uf__": "AC",
@@ -4188,11 +4236,11 @@
       "__uf__": "AC",
       "cnae_divisao": "10",
       "cnae_descricao": "Fabricação De Produtos Alimentícios",
-      "saldo": -74.0,
-      "saldo_sem_reajuste": -74.0,
+      "saldo": -73.0,
+      "saldo_sem_reajuste": -73.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 175.0,
-      "acumulado_12m": 203.0
+      "acumulado_ano": 176.0,
+      "acumulado_12m": 204.0
     },
     {
       "competencia": "202511",
@@ -4203,8 +4251,8 @@
       "saldo": 23.0,
       "saldo_sem_reajuste": 23.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 198.0,
-      "acumulado_12m": 211.0
+      "acumulado_ano": 199.0,
+      "acumulado_12m": 212.0
     },
     {
       "competencia": "202512",
@@ -4215,8 +4263,8 @@
       "saldo": 137.0,
       "saldo_sem_reajuste": 137.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 335.0,
-      "acumulado_12m": 335.0
+      "acumulado_ano": 336.0,
+      "acumulado_12m": 336.0
     },
     {
       "competencia": "202601",
@@ -4228,7 +4276,7 @@
       "saldo_sem_reajuste": 36.0,
       "codigo_uf": "AC",
       "acumulado_ano": 36.0,
-      "acumulado_12m": 450.0
+      "acumulado_12m": 451.0
     },
     {
       "competencia": "202602",
@@ -4240,7 +4288,7 @@
       "saldo_sem_reajuste": 186.0,
       "codigo_uf": "AC",
       "acumulado_ano": 222.0,
-      "acumulado_12m": 579.0
+      "acumulado_12m": 580.0
     },
     {
       "competencia": "202603",
@@ -4252,7 +4300,7 @@
       "saldo_sem_reajuste": 98.0,
       "codigo_uf": "AC",
       "acumulado_ano": 320.0,
-      "acumulado_12m": 684.0
+      "acumulado_12m": 685.0
     },
     {
       "competencia": "202604",
@@ -4260,10 +4308,10 @@
       "__uf__": "AC",
       "cnae_divisao": "10",
       "cnae_descricao": "Fabricação De Produtos Alimentícios",
-      "saldo": -26.0,
-      "saldo_sem_reajuste": -26.0,
+      "saldo": -27.0,
+      "saldo_sem_reajuste": -27.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 294.0,
+      "acumulado_ano": 293.0,
       "acumulado_12m": 576.0
     },
     {
@@ -4275,7 +4323,7 @@
       "saldo": 28.0,
       "saldo_sem_reajuste": 28.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 322.0,
+      "acumulado_ano": 321.0,
       "acumulado_12m": 529.0
     },
     {
@@ -4284,11 +4332,11 @@
       "__uf__": "AC",
       "cnae_divisao": "10",
       "cnae_descricao": "Fabricação De Produtos Alimentícios",
-      "saldo": 95.0,
-      "saldo_sem_reajuste": 95.0,
+      "saldo": 96.0,
+      "saldo_sem_reajuste": 96.0,
       "codigo_uf": "AC",
       "acumulado_ano": 417.0,
-      "acumulado_12m": 600.0
+      "acumulado_12m": 601.0
     },
     {
       "competencia": "202607",
@@ -4296,11 +4344,23 @@
       "__uf__": "AC",
       "cnae_divisao": "10",
       "cnae_descricao": "Fabricação De Produtos Alimentícios",
-      "saldo": 30.0,
-      "saldo_sem_reajuste": 30.0,
+      "saldo": 29.0,
+      "saldo_sem_reajuste": 29.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 447.0,
+      "acumulado_ano": 446.0,
       "acumulado_12m": 597.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "10",
+      "cnae_descricao": "Fabricação De Produtos Alimentícios",
+      "saldo": -22.0,
+      "saldo_sem_reajuste": -22.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 424.0,
+      "acumulado_12m": 537.0
     },
     {
       "competencia": "202001",
@@ -5249,6 +5309,18 @@
       "codigo_uf": "AC",
       "acumulado_ano": -10.0,
       "acumulado_12m": 6.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "11",
+      "cnae_descricao": "Fabricação De Bebidas",
+      "saldo": -6.0,
+      "saldo_sem_reajuste": -6.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": -16.0,
+      "acumulado_12m": -1.0
     },
     {
       "competencia": "202001",
@@ -6720,11 +6792,11 @@
       "__uf__": "AC",
       "cnae_divisao": "14",
       "cnae_descricao": "Confecção De Artigos Do Vestuário E Acessórios",
-      "saldo": 8.0,
-      "saldo_sem_reajuste": 8.0,
+      "saldo": 9.0,
+      "saldo_sem_reajuste": 9.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 67.0,
-      "acumulado_12m": 61.0
+      "acumulado_ano": 68.0,
+      "acumulado_12m": 62.0
     },
     {
       "competencia": "202512",
@@ -6735,8 +6807,8 @@
       "saldo": 2.0,
       "saldo_sem_reajuste": 2.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 69.0,
-      "acumulado_12m": 69.0
+      "acumulado_ano": 70.0,
+      "acumulado_12m": 70.0
     },
     {
       "competencia": "202601",
@@ -6748,7 +6820,7 @@
       "saldo_sem_reajuste": -6.0,
       "codigo_uf": "AC",
       "acumulado_ano": -6.0,
-      "acumulado_12m": 64.0
+      "acumulado_12m": 65.0
     },
     {
       "competencia": "202602",
@@ -6760,7 +6832,7 @@
       "saldo_sem_reajuste": 1.0,
       "codigo_uf": "AC",
       "acumulado_ano": -5.0,
-      "acumulado_12m": 64.0
+      "acumulado_12m": 65.0
     },
     {
       "competencia": "202603",
@@ -6772,7 +6844,7 @@
       "saldo_sem_reajuste": 6.0,
       "codigo_uf": "AC",
       "acumulado_ano": 1.0,
-      "acumulado_12m": 62.0
+      "acumulado_12m": 63.0
     },
     {
       "competencia": "202604",
@@ -6784,7 +6856,7 @@
       "saldo_sem_reajuste": 3.0,
       "codigo_uf": "AC",
       "acumulado_ano": 4.0,
-      "acumulado_12m": 59.0
+      "acumulado_12m": 60.0
     },
     {
       "competencia": "202605",
@@ -6796,7 +6868,7 @@
       "saldo_sem_reajuste": 1.0,
       "codigo_uf": "AC",
       "acumulado_ano": 5.0,
-      "acumulado_12m": 44.0
+      "acumulado_12m": 45.0
     },
     {
       "competencia": "202606",
@@ -6808,7 +6880,7 @@
       "saldo_sem_reajuste": 1.0,
       "codigo_uf": "AC",
       "acumulado_ano": 6.0,
-      "acumulado_12m": 36.0
+      "acumulado_12m": 37.0
     },
     {
       "competencia": "202607",
@@ -6820,7 +6892,19 @@
       "saldo_sem_reajuste": 1.0,
       "codigo_uf": "AC",
       "acumulado_ano": 7.0,
-      "acumulado_12m": 30.0
+      "acumulado_12m": 31.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "14",
+      "cnae_descricao": "Confecção De Artigos Do Vestuário E Acessórios",
+      "saldo": 4.0,
+      "saldo_sem_reajuste": 4.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 11.0,
+      "acumulado_12m": 38.0
     },
     {
       "competencia": "202001",
@@ -7745,6 +7829,18 @@
       "codigo_uf": "AC",
       "acumulado_ano": -2.0,
       "acumulado_12m": -2.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "15",
+      "cnae_descricao": "Preparação De Couros E Fabricação De Artefatos De Couro, Artigos Para Viagem E Calçados",
+      "saldo": -10.0,
+      "saldo_sem_reajuste": -10.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": -12.0,
+      "acumulado_12m": -13.0
     },
     {
       "competencia": "202001",
@@ -8676,11 +8772,11 @@
       "__uf__": "AC",
       "cnae_divisao": "16",
       "cnae_descricao": "Fabricação De Produtos De Madeira",
-      "saldo": 31.0,
-      "saldo_sem_reajuste": 31.0,
+      "saldo": 30.0,
+      "saldo_sem_reajuste": 30.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 86.0,
-      "acumulado_12m": -41.0
+      "acumulado_ano": 85.0,
+      "acumulado_12m": -42.0
     },
     {
       "competencia": "202607",
@@ -8688,11 +8784,23 @@
       "__uf__": "AC",
       "cnae_divisao": "16",
       "cnae_descricao": "Fabricação De Produtos De Madeira",
-      "saldo": 17.0,
-      "saldo_sem_reajuste": 17.0,
+      "saldo": 29.0,
+      "saldo_sem_reajuste": 29.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 103.0,
-      "acumulado_12m": -14.0
+      "acumulado_ano": 114.0,
+      "acumulado_12m": -3.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "16",
+      "cnae_descricao": "Fabricação De Produtos De Madeira",
+      "saldo": 11.0,
+      "saldo_sem_reajuste": 11.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 125.0,
+      "acumulado_12m": 34.0
     },
     {
       "competencia": "202112",
@@ -9955,6 +10063,18 @@
       "acumulado_12m": -1.0
     },
     {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "18",
+      "cnae_descricao": "Impressão E Reprodução De Gravações",
+      "saldo": 5.0,
+      "saldo_sem_reajuste": 5.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 2.0,
+      "acumulado_12m": 5.0
+    },
+    {
       "competencia": "202102",
       "cod_uf": "AC",
       "__uf__": "AC",
@@ -10421,6 +10541,18 @@
       "codigo_uf": "AC",
       "acumulado_ano": 29.0,
       "acumulado_12m": 27.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "19",
+      "cnae_descricao": "Fabricação De Coque, De Produtos Derivados Do Petróleo E De Biocombustíveis",
+      "saldo": 4.0,
+      "saldo_sem_reajuste": 4.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 33.0,
+      "acumulado_12m": 21.0
     },
     {
       "competencia": "202001",
@@ -11323,6 +11455,18 @@
       "acumulado_12m": 8.0
     },
     {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "20",
+      "cnae_descricao": "Fabricação De Produtos Químicos",
+      "saldo": 3.0,
+      "saldo_sem_reajuste": 3.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 8.0,
+      "acumulado_12m": 9.0
+    },
+    {
       "competencia": "202003",
       "cod_uf": "AC",
       "__uf__": "AC",
@@ -12427,6 +12571,18 @@
       "acumulado_12m": 8.0
     },
     {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "22",
+      "cnae_descricao": "Fabricação De Produtos De Borracha E De Material Plástico",
+      "saldo": -5.0,
+      "saldo_sem_reajuste": -5.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": -1.0,
+      "acumulado_12m": 5.0
+    },
+    {
       "competencia": "202001",
       "cod_uf": "AC",
       "__uf__": "AC",
@@ -13308,11 +13464,11 @@
       "__uf__": "AC",
       "cnae_divisao": "23",
       "cnae_descricao": "Fabricação De Produtos De Minerais Não Metálicos",
-      "saldo": 20.0,
-      "saldo_sem_reajuste": 20.0,
+      "saldo": 21.0,
+      "saldo_sem_reajuste": 21.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 34.0,
-      "acumulado_12m": 40.0
+      "acumulado_ano": 35.0,
+      "acumulado_12m": 41.0
     },
     {
       "competencia": "202603",
@@ -13320,11 +13476,11 @@
       "__uf__": "AC",
       "cnae_divisao": "23",
       "cnae_descricao": "Fabricação De Produtos De Minerais Não Metálicos",
-      "saldo": -12.0,
-      "saldo_sem_reajuste": -12.0,
+      "saldo": -11.0,
+      "saldo_sem_reajuste": -11.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 22.0,
-      "acumulado_12m": 18.0
+      "acumulado_ano": 24.0,
+      "acumulado_12m": 20.0
     },
     {
       "competencia": "202604",
@@ -13335,8 +13491,8 @@
       "saldo": -5.0,
       "saldo_sem_reajuste": -5.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 17.0,
-      "acumulado_12m": 12.0
+      "acumulado_ano": 19.0,
+      "acumulado_12m": 14.0
     },
     {
       "competencia": "202605",
@@ -13347,8 +13503,8 @@
       "saldo": -1.0,
       "saldo_sem_reajuste": -1.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 16.0,
-      "acumulado_12m": 1.0
+      "acumulado_ano": 18.0,
+      "acumulado_12m": 3.0
     },
     {
       "competencia": "202606",
@@ -13359,8 +13515,8 @@
       "saldo": 22.0,
       "saldo_sem_reajuste": 22.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 38.0,
-      "acumulado_12m": 26.0
+      "acumulado_ano": 40.0,
+      "acumulado_12m": 28.0
     },
     {
       "competencia": "202607",
@@ -13371,8 +13527,20 @@
       "saldo": 11.0,
       "saldo_sem_reajuste": 11.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 49.0,
-      "acumulado_12m": 33.0
+      "acumulado_ano": 51.0,
+      "acumulado_12m": 35.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "23",
+      "cnae_descricao": "Fabricação De Produtos De Minerais Não Metálicos",
+      "saldo": -18.0,
+      "saldo_sem_reajuste": -18.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 33.0,
+      "acumulado_12m": 19.0
     },
     {
       "competencia": "202101",
@@ -14467,6 +14635,18 @@
       "acumulado_12m": -9.0
     },
     {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "25",
+      "cnae_descricao": "Fabricação De Produtos De Metal, Exceto Máquinas\nE Equipamentos",
+      "saldo": -4.0,
+      "saldo_sem_reajuste": -4.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 2.0,
+      "acumulado_12m": -3.0
+    },
+    {
       "competencia": "202107",
       "cod_uf": "AC",
       "__uf__": "AC",
@@ -14920,6 +15100,18 @@
       "saldo_sem_reajuste": 3.0,
       "codigo_uf": "AC",
       "acumulado_ano": 2.0,
+      "acumulado_12m": -1.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "27",
+      "cnae_descricao": "Fabricação De Máquinas, Aparelhos E Materiais Elétricos",
+      "saldo": -1.0,
+      "saldo_sem_reajuste": -1.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 1.0,
       "acumulado_12m": -1.0
     },
     {
@@ -16087,6 +16279,18 @@
       "acumulado_12m": 0.0
     },
     {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "29",
+      "cnae_descricao": "Fabricação De Veículos Automotores, Reboques E Carrocerias",
+      "saldo": 1.0,
+      "saldo_sem_reajuste": 1.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 4.0,
+      "acumulado_12m": 1.0
+    },
+    {
       "competencia": "202001",
       "cod_uf": "AC",
       "__uf__": "AC",
@@ -16985,6 +17189,18 @@
       "codigo_uf": "AC",
       "acumulado_ano": 12.0,
       "acumulado_12m": 12.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "30",
+      "cnae_descricao": "Fabricação De Outros Equipamentos De Transporte, Exceto Veículos Automotores",
+      "saldo": -3.0,
+      "saldo_sem_reajuste": -3.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 9.0,
+      "acumulado_12m": 10.0
     },
     {
       "competencia": "202001",
@@ -17928,11 +18144,23 @@
       "__uf__": "AC",
       "cnae_divisao": "31",
       "cnae_descricao": "Fabricação De Móveis",
-      "saldo": -5.0,
-      "saldo_sem_reajuste": -5.0,
+      "saldo": -6.0,
+      "saldo_sem_reajuste": -6.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 3.0,
-      "acumulado_12m": -5.0
+      "acumulado_ano": 2.0,
+      "acumulado_12m": -6.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "31",
+      "cnae_descricao": "Fabricação De Móveis",
+      "saldo": -2.0,
+      "saldo_sem_reajuste": -2.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 0.0,
+      "acumulado_12m": -7.0
     },
     {
       "competencia": "202001",
@@ -18725,6 +18953,18 @@
       "codigo_uf": "AC",
       "acumulado_ano": 6.0,
       "acumulado_12m": 19.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "32",
+      "cnae_descricao": "Fabricação De Produtos Diversos",
+      "saldo": 1.0,
+      "saldo_sem_reajuste": 1.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 7.0,
+      "acumulado_12m": 18.0
     },
     {
       "competencia": "202001",
@@ -19637,6 +19877,18 @@
       "codigo_uf": "AC",
       "acumulado_ano": -6.0,
       "acumulado_12m": 14.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "33",
+      "cnae_descricao": "Manutenção, Reparação E Instalação De Máquinas E Equipamentos",
+      "saldo": 3.0,
+      "saldo_sem_reajuste": 3.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": -3.0,
+      "acumulado_12m": 12.0
     },
     {
       "competencia": "202001",
@@ -20587,6 +20839,18 @@
       "acumulado_12m": -9.0
     },
     {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "35",
+      "cnae_descricao": "Eletricidade, Gás E Outras Utilidades",
+      "saldo": 1.0,
+      "saldo_sem_reajuste": 1.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": -9.0,
+      "acumulado_12m": -10.0
+    },
+    {
       "competencia": "202001",
       "cod_uf": "AC",
       "__uf__": "AC",
@@ -21451,6 +21715,18 @@
       "acumulado_12m": -14.0
     },
     {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "36",
+      "cnae_descricao": "Captação, Tratamento E Distribuição De Água",
+      "saldo": -4.0,
+      "saldo_sem_reajuste": -4.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": -1.0,
+      "acumulado_12m": -8.0
+    },
+    {
       "competencia": "202602",
       "cod_uf": "AC",
       "__uf__": "AC",
@@ -21509,6 +21785,18 @@
       "codigo_uf": "AC",
       "acumulado_ano": 5.0,
       "acumulado_12m": 5.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "37",
+      "cnae_descricao": "Esgoto E Atividades Relacionadas",
+      "saldo": 3.0,
+      "saldo_sem_reajuste": 3.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 8.0,
+      "acumulado_12m": 8.0
     },
     {
       "competencia": "202001",
@@ -22423,6 +22711,18 @@
       "acumulado_12m": 5.0
     },
     {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "38",
+      "cnae_descricao": "Coleta, Tratamento E Disposição De Resíduos; Recuperação De Materiais",
+      "saldo": 5.0,
+      "saldo_sem_reajuste": 5.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 9.0,
+      "acumulado_12m": 8.0
+    },
+    {
       "competencia": "202001",
       "cod_uf": "AC",
       "__uf__": "AC",
@@ -23088,11 +23388,11 @@
       "__uf__": "AC",
       "cnae_divisao": "41",
       "cnae_descricao": "Construção De Edifícios",
-      "saldo": 38.0,
-      "saldo_sem_reajuste": 38.0,
+      "saldo": 37.0,
+      "saldo_sem_reajuste": 37.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 441.0,
-      "acumulado_12m": 399.0
+      "acumulado_ano": 440.0,
+      "acumulado_12m": 398.0
     },
     {
       "competencia": "202409",
@@ -23103,8 +23403,8 @@
       "saldo": -9.0,
       "saldo_sem_reajuste": -9.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 432.0,
-      "acumulado_12m": 420.0
+      "acumulado_ano": 431.0,
+      "acumulado_12m": 419.0
     },
     {
       "competencia": "202410",
@@ -23115,8 +23415,8 @@
       "saldo": 5.0,
       "saldo_sem_reajuste": 5.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 437.0,
-      "acumulado_12m": 366.0
+      "acumulado_ano": 436.0,
+      "acumulado_12m": 365.0
     },
     {
       "competencia": "202411",
@@ -23127,8 +23427,8 @@
       "saldo": -34.0,
       "saldo_sem_reajuste": -34.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 403.0,
-      "acumulado_12m": 346.0
+      "acumulado_ano": 402.0,
+      "acumulado_12m": 345.0
     },
     {
       "competencia": "202412",
@@ -23139,8 +23439,8 @@
       "saldo": -75.0,
       "saldo_sem_reajuste": -75.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 328.0,
-      "acumulado_12m": 328.0
+      "acumulado_ano": 327.0,
+      "acumulado_12m": 327.0
     },
     {
       "competencia": "202501",
@@ -23152,7 +23452,7 @@
       "saldo_sem_reajuste": 8.0,
       "codigo_uf": "AC",
       "acumulado_ano": 8.0,
-      "acumulado_12m": 319.0
+      "acumulado_12m": 318.0
     },
     {
       "competencia": "202502",
@@ -23164,7 +23464,7 @@
       "saldo_sem_reajuste": 16.0,
       "codigo_uf": "AC",
       "acumulado_ano": 24.0,
-      "acumulado_12m": 299.0
+      "acumulado_12m": 298.0
     },
     {
       "competencia": "202503",
@@ -23176,7 +23476,7 @@
       "saldo_sem_reajuste": -18.0,
       "codigo_uf": "AC",
       "acumulado_ano": 6.0,
-      "acumulado_12m": 299.0
+      "acumulado_12m": 298.0
     },
     {
       "competencia": "202504",
@@ -23188,7 +23488,7 @@
       "saldo_sem_reajuste": 7.0,
       "codigo_uf": "AC",
       "acumulado_ano": 13.0,
-      "acumulado_12m": 224.0
+      "acumulado_12m": 223.0
     },
     {
       "competencia": "202505",
@@ -23200,7 +23500,7 @@
       "saldo_sem_reajuste": 14.0,
       "codigo_uf": "AC",
       "acumulado_ano": 27.0,
-      "acumulado_12m": 170.0
+      "acumulado_12m": 169.0
     },
     {
       "competencia": "202506",
@@ -23212,7 +23512,7 @@
       "saldo_sem_reajuste": 77.0,
       "codigo_uf": "AC",
       "acumulado_ano": 104.0,
-      "acumulado_12m": 123.0
+      "acumulado_12m": 122.0
     },
     {
       "competencia": "202507",
@@ -23224,7 +23524,7 @@
       "saldo_sem_reajuste": 62.0,
       "codigo_uf": "AC",
       "acumulado_ano": 166.0,
-      "acumulado_12m": 91.0
+      "acumulado_12m": 90.0
     },
     {
       "competencia": "202508",
@@ -23232,11 +23532,11 @@
       "__uf__": "AC",
       "cnae_divisao": "41",
       "cnae_descricao": "Construção De Edifícios",
-      "saldo": 119.0,
-      "saldo_sem_reajuste": 119.0,
+      "saldo": 120.0,
+      "saldo_sem_reajuste": 120.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 285.0,
-      "acumulado_12m": 172.0
+      "acumulado_ano": 286.0,
+      "acumulado_12m": 173.0
     },
     {
       "competencia": "202509",
@@ -23247,8 +23547,8 @@
       "saldo": 20.0,
       "saldo_sem_reajuste": 20.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 305.0,
-      "acumulado_12m": 201.0
+      "acumulado_ano": 306.0,
+      "acumulado_12m": 202.0
     },
     {
       "competencia": "202510",
@@ -23259,8 +23559,8 @@
       "saldo": 51.0,
       "saldo_sem_reajuste": 51.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 356.0,
-      "acumulado_12m": 247.0
+      "acumulado_ano": 357.0,
+      "acumulado_12m": 248.0
     },
     {
       "competencia": "202511",
@@ -23271,8 +23571,8 @@
       "saldo": -15.0,
       "saldo_sem_reajuste": -15.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 341.0,
-      "acumulado_12m": 266.0
+      "acumulado_ano": 342.0,
+      "acumulado_12m": 267.0
     },
     {
       "competencia": "202512",
@@ -23280,11 +23580,11 @@
       "__uf__": "AC",
       "cnae_divisao": "41",
       "cnae_descricao": "Construção De Edifícios",
-      "saldo": -168.0,
-      "saldo_sem_reajuste": -168.0,
+      "saldo": -167.0,
+      "saldo_sem_reajuste": -167.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 173.0,
-      "acumulado_12m": 173.0
+      "acumulado_ano": 175.0,
+      "acumulado_12m": 175.0
     },
     {
       "competencia": "202601",
@@ -23296,7 +23596,7 @@
       "saldo_sem_reajuste": -24.0,
       "codigo_uf": "AC",
       "acumulado_ano": -24.0,
-      "acumulado_12m": 141.0
+      "acumulado_12m": 143.0
     },
     {
       "competencia": "202602",
@@ -23308,7 +23608,7 @@
       "saldo_sem_reajuste": -26.0,
       "codigo_uf": "AC",
       "acumulado_ano": -50.0,
-      "acumulado_12m": 99.0
+      "acumulado_12m": 101.0
     },
     {
       "competencia": "202603",
@@ -23316,11 +23616,11 @@
       "__uf__": "AC",
       "cnae_divisao": "41",
       "cnae_descricao": "Construção De Edifícios",
-      "saldo": 55.0,
-      "saldo_sem_reajuste": 55.0,
+      "saldo": 58.0,
+      "saldo_sem_reajuste": 58.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 5.0,
-      "acumulado_12m": 172.0
+      "acumulado_ano": 8.0,
+      "acumulado_12m": 177.0
     },
     {
       "competencia": "202604",
@@ -23328,11 +23628,11 @@
       "__uf__": "AC",
       "cnae_divisao": "41",
       "cnae_descricao": "Construção De Edifícios",
-      "saldo": 46.0,
-      "saldo_sem_reajuste": 46.0,
+      "saldo": 48.0,
+      "saldo_sem_reajuste": 48.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 51.0,
-      "acumulado_12m": 211.0
+      "acumulado_ano": 56.0,
+      "acumulado_12m": 218.0
     },
     {
       "competencia": "202605",
@@ -23340,11 +23640,11 @@
       "__uf__": "AC",
       "cnae_divisao": "41",
       "cnae_descricao": "Construção De Edifícios",
-      "saldo": 81.0,
-      "saldo_sem_reajuste": 81.0,
+      "saldo": 82.0,
+      "saldo_sem_reajuste": 82.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 132.0,
-      "acumulado_12m": 278.0
+      "acumulado_ano": 138.0,
+      "acumulado_12m": 286.0
     },
     {
       "competencia": "202606",
@@ -23352,11 +23652,11 @@
       "__uf__": "AC",
       "cnae_divisao": "41",
       "cnae_descricao": "Construção De Edifícios",
-      "saldo": 52.0,
-      "saldo_sem_reajuste": 52.0,
+      "saldo": 54.0,
+      "saldo_sem_reajuste": 54.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 184.0,
-      "acumulado_12m": 253.0
+      "acumulado_ano": 192.0,
+      "acumulado_12m": 263.0
     },
     {
       "competencia": "202607",
@@ -23364,11 +23664,23 @@
       "__uf__": "AC",
       "cnae_divisao": "41",
       "cnae_descricao": "Construção De Edifícios",
-      "saldo": -71.0,
-      "saldo_sem_reajuste": -71.0,
+      "saldo": -67.0,
+      "saldo_sem_reajuste": -67.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 113.0,
-      "acumulado_12m": 120.0
+      "acumulado_ano": 125.0,
+      "acumulado_12m": 134.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "41",
+      "cnae_descricao": "Construção De Edifícios",
+      "saldo": -34.0,
+      "saldo_sem_reajuste": -34.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 91.0,
+      "acumulado_12m": -20.0
     },
     {
       "competencia": "202001",
@@ -24288,11 +24600,11 @@
       "__uf__": "AC",
       "cnae_divisao": "42",
       "cnae_descricao": "Obras De Infraestrutura",
-      "saldo": 27.0,
-      "saldo_sem_reajuste": 27.0,
+      "saldo": 26.0,
+      "saldo_sem_reajuste": 26.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 18.0,
-      "acumulado_12m": 255.0
+      "acumulado_ano": 17.0,
+      "acumulado_12m": 254.0
     },
     {
       "competencia": "202606",
@@ -24303,8 +24615,8 @@
       "saldo": 54.0,
       "saldo_sem_reajuste": 54.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 72.0,
-      "acumulado_12m": 73.0
+      "acumulado_ano": 71.0,
+      "acumulado_12m": 72.0
     },
     {
       "competencia": "202607",
@@ -24312,11 +24624,23 @@
       "__uf__": "AC",
       "cnae_divisao": "42",
       "cnae_descricao": "Obras De Infraestrutura",
-      "saldo": 18.0,
-      "saldo_sem_reajuste": 18.0,
+      "saldo": 20.0,
+      "saldo_sem_reajuste": 20.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 90.0,
-      "acumulado_12m": 108.0
+      "acumulado_ano": 91.0,
+      "acumulado_12m": 109.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "42",
+      "cnae_descricao": "Obras De Infraestrutura",
+      "saldo": -28.0,
+      "saldo_sem_reajuste": -28.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 63.0,
+      "acumulado_12m": 53.0
     },
     {
       "competencia": "202001",
@@ -25188,11 +25512,11 @@
       "__uf__": "AC",
       "cnae_divisao": "43",
       "cnae_descricao": "Serviços Especializados Para Construção",
-      "saldo": 21.0,
-      "saldo_sem_reajuste": 21.0,
+      "saldo": 19.0,
+      "saldo_sem_reajuste": 19.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 21.0,
-      "acumulado_12m": 7.0
+      "acumulado_ano": 19.0,
+      "acumulado_12m": 5.0
     },
     {
       "competencia": "202602",
@@ -25200,11 +25524,11 @@
       "__uf__": "AC",
       "cnae_divisao": "43",
       "cnae_descricao": "Serviços Especializados Para Construção",
-      "saldo": 32.0,
-      "saldo_sem_reajuste": 32.0,
+      "saldo": 31.0,
+      "saldo_sem_reajuste": 31.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 53.0,
-      "acumulado_12m": 15.0
+      "acumulado_ano": 50.0,
+      "acumulado_12m": 12.0
     },
     {
       "competencia": "202603",
@@ -25212,11 +25536,11 @@
       "__uf__": "AC",
       "cnae_divisao": "43",
       "cnae_descricao": "Serviços Especializados Para Construção",
-      "saldo": 128.0,
-      "saldo_sem_reajuste": 128.0,
+      "saldo": 126.0,
+      "saldo_sem_reajuste": 126.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 181.0,
-      "acumulado_12m": 187.0
+      "acumulado_ano": 176.0,
+      "acumulado_12m": 182.0
     },
     {
       "competencia": "202604",
@@ -25227,8 +25551,8 @@
       "saldo": 86.0,
       "saldo_sem_reajuste": 86.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 267.0,
-      "acumulado_12m": 242.0
+      "acumulado_ano": 262.0,
+      "acumulado_12m": 237.0
     },
     {
       "competencia": "202605",
@@ -25236,11 +25560,11 @@
       "__uf__": "AC",
       "cnae_divisao": "43",
       "cnae_descricao": "Serviços Especializados Para Construção",
-      "saldo": 40.0,
-      "saldo_sem_reajuste": 40.0,
+      "saldo": 38.0,
+      "saldo_sem_reajuste": 38.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 307.0,
-      "acumulado_12m": 180.0
+      "acumulado_ano": 300.0,
+      "acumulado_12m": 173.0
     },
     {
       "competencia": "202606",
@@ -25251,8 +25575,8 @@
       "saldo": 10.0,
       "saldo_sem_reajuste": 10.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 317.0,
-      "acumulado_12m": 93.0
+      "acumulado_ano": 310.0,
+      "acumulado_12m": 86.0
     },
     {
       "competencia": "202607",
@@ -25260,11 +25584,23 @@
       "__uf__": "AC",
       "cnae_divisao": "43",
       "cnae_descricao": "Serviços Especializados Para Construção",
-      "saldo": -123.0,
-      "saldo_sem_reajuste": -123.0,
+      "saldo": -128.0,
+      "saldo_sem_reajuste": -128.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 194.0,
-      "acumulado_12m": -75.0
+      "acumulado_ano": 182.0,
+      "acumulado_12m": -87.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "43",
+      "cnae_descricao": "Serviços Especializados Para Construção",
+      "saldo": 13.0,
+      "saldo_sem_reajuste": 13.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 195.0,
+      "acumulado_12m": -181.0
     },
     {
       "competencia": "202001",
@@ -26136,11 +26472,11 @@
       "__uf__": "AC",
       "cnae_divisao": "45",
       "cnae_descricao": "Comércio E Reparação De Veículos Automotores E Motocicletas",
-      "saldo": 13.0,
-      "saldo_sem_reajuste": 13.0,
+      "saldo": 12.0,
+      "saldo_sem_reajuste": 12.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 13.0,
-      "acumulado_12m": 151.0
+      "acumulado_ano": 12.0,
+      "acumulado_12m": 150.0
     },
     {
       "competencia": "202602",
@@ -26151,8 +26487,8 @@
       "saldo": 16.0,
       "saldo_sem_reajuste": 16.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 29.0,
-      "acumulado_12m": 125.0
+      "acumulado_ano": 28.0,
+      "acumulado_12m": 124.0
     },
     {
       "competencia": "202603",
@@ -26160,11 +26496,11 @@
       "__uf__": "AC",
       "cnae_divisao": "45",
       "cnae_descricao": "Comércio E Reparação De Veículos Automotores E Motocicletas",
-      "saldo": 60.0,
-      "saldo_sem_reajuste": 60.0,
+      "saldo": 59.0,
+      "saldo_sem_reajuste": 59.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 89.0,
-      "acumulado_12m": 212.0
+      "acumulado_ano": 87.0,
+      "acumulado_12m": 210.0
     },
     {
       "competencia": "202604",
@@ -26175,8 +26511,8 @@
       "saldo": 54.0,
       "saldo_sem_reajuste": 54.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 143.0,
-      "acumulado_12m": 269.0
+      "acumulado_ano": 141.0,
+      "acumulado_12m": 267.0
     },
     {
       "competencia": "202605",
@@ -26184,11 +26520,11 @@
       "__uf__": "AC",
       "cnae_divisao": "45",
       "cnae_descricao": "Comércio E Reparação De Veículos Automotores E Motocicletas",
-      "saldo": 41.0,
-      "saldo_sem_reajuste": 41.0,
+      "saldo": 42.0,
+      "saldo_sem_reajuste": 42.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 184.0,
-      "acumulado_12m": 292.0
+      "acumulado_ano": 183.0,
+      "acumulado_12m": 291.0
     },
     {
       "competencia": "202606",
@@ -26199,8 +26535,8 @@
       "saldo": 28.0,
       "saldo_sem_reajuste": 28.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 212.0,
-      "acumulado_12m": 269.0
+      "acumulado_ano": 211.0,
+      "acumulado_12m": 268.0
     },
     {
       "competencia": "202607",
@@ -26208,11 +26544,23 @@
       "__uf__": "AC",
       "cnae_divisao": "45",
       "cnae_descricao": "Comércio E Reparação De Veículos Automotores E Motocicletas",
-      "saldo": 10.0,
-      "saldo_sem_reajuste": 10.0,
+      "saldo": 8.0,
+      "saldo_sem_reajuste": 8.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 222.0,
-      "acumulado_12m": 287.0
+      "acumulado_ano": 219.0,
+      "acumulado_12m": 284.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "45",
+      "cnae_descricao": "Comércio E Reparação De Veículos Automotores E Motocicletas",
+      "saldo": 0.0,
+      "saldo_sem_reajuste": 0.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 219.0,
+      "acumulado_12m": 282.0
     },
     {
       "competencia": "202001",
@@ -27144,11 +27492,11 @@
       "__uf__": "AC",
       "cnae_divisao": "46",
       "cnae_descricao": "Comércio Por Atacado, Exceto Veículos Automotores E Motocicletas",
-      "saldo": -38.0,
-      "saldo_sem_reajuste": -38.0,
+      "saldo": -34.0,
+      "saldo_sem_reajuste": -34.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -69.0,
-      "acumulado_12m": -25.0
+      "acumulado_ano": -65.0,
+      "acumulado_12m": -21.0
     },
     {
       "competencia": "202607",
@@ -27156,11 +27504,23 @@
       "__uf__": "AC",
       "cnae_divisao": "46",
       "cnae_descricao": "Comércio Por Atacado, Exceto Veículos Automotores E Motocicletas",
-      "saldo": 24.0,
-      "saldo_sem_reajuste": 24.0,
+      "saldo": 25.0,
+      "saldo_sem_reajuste": 25.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -45.0,
-      "acumulado_12m": 26.0
+      "acumulado_ano": -40.0,
+      "acumulado_12m": 31.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "46",
+      "cnae_descricao": "Comércio Por Atacado, Exceto Veículos Automotores E Motocicletas",
+      "saldo": -39.0,
+      "saldo_sem_reajuste": -39.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": -79.0,
+      "acumulado_12m": -27.0
     },
     {
       "competencia": "202001",
@@ -27912,11 +28272,11 @@
       "__uf__": "AC",
       "cnae_divisao": "47",
       "cnae_descricao": "Comércio Varejista",
-      "saldo": -15.0,
-      "saldo_sem_reajuste": -15.0,
+      "saldo": -14.0,
+      "saldo_sem_reajuste": -14.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 47.0,
-      "acumulado_12m": 1118.0
+      "acumulado_ano": 48.0,
+      "acumulado_12m": 1119.0
     },
     {
       "competencia": "202504",
@@ -27927,8 +28287,8 @@
       "saldo": 183.0,
       "saldo_sem_reajuste": 183.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 230.0,
-      "acumulado_12m": 1156.0
+      "acumulado_ano": 231.0,
+      "acumulado_12m": 1157.0
     },
     {
       "competencia": "202505",
@@ -27939,8 +28299,8 @@
       "saldo": 59.0,
       "saldo_sem_reajuste": 59.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 289.0,
-      "acumulado_12m": 1114.0
+      "acumulado_ano": 290.0,
+      "acumulado_12m": 1115.0
     },
     {
       "competencia": "202506",
@@ -27951,8 +28311,8 @@
       "saldo": 87.0,
       "saldo_sem_reajuste": 87.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 376.0,
-      "acumulado_12m": 1053.0
+      "acumulado_ano": 377.0,
+      "acumulado_12m": 1054.0
     },
     {
       "competencia": "202507",
@@ -27963,8 +28323,8 @@
       "saldo": 0.0,
       "saldo_sem_reajuste": 0.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 376.0,
-      "acumulado_12m": 932.0
+      "acumulado_ano": 377.0,
+      "acumulado_12m": 933.0
     },
     {
       "competencia": "202508",
@@ -27975,8 +28335,8 @@
       "saldo": 114.0,
       "saldo_sem_reajuste": 114.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 490.0,
-      "acumulado_12m": 961.0
+      "acumulado_ano": 491.0,
+      "acumulado_12m": 962.0
     },
     {
       "competencia": "202509",
@@ -27987,8 +28347,8 @@
       "saldo": 83.0,
       "saldo_sem_reajuste": 83.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 573.0,
-      "acumulado_12m": 832.0
+      "acumulado_ano": 574.0,
+      "acumulado_12m": 833.0
     },
     {
       "competencia": "202510",
@@ -27999,8 +28359,8 @@
       "saldo": -36.0,
       "saldo_sem_reajuste": -36.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 537.0,
-      "acumulado_12m": 802.0
+      "acumulado_ano": 538.0,
+      "acumulado_12m": 803.0
     },
     {
       "competencia": "202511",
@@ -28008,11 +28368,11 @@
       "__uf__": "AC",
       "cnae_divisao": "47",
       "cnae_descricao": "Comércio Varejista",
-      "saldo": 215.0,
-      "saldo_sem_reajuste": 215.0,
+      "saldo": 216.0,
+      "saldo_sem_reajuste": 216.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 752.0,
-      "acumulado_12m": 801.0
+      "acumulado_ano": 754.0,
+      "acumulado_12m": 803.0
     },
     {
       "competencia": "202512",
@@ -28023,8 +28383,8 @@
       "saldo": 25.0,
       "saldo_sem_reajuste": 25.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 777.0,
-      "acumulado_12m": 777.0
+      "acumulado_ano": 779.0,
+      "acumulado_12m": 779.0
     },
     {
       "competencia": "202601",
@@ -28036,7 +28396,7 @@
       "saldo_sem_reajuste": -177.0,
       "codigo_uf": "AC",
       "acumulado_ano": -177.0,
-      "acumulado_12m": 605.0
+      "acumulado_12m": 607.0
     },
     {
       "competencia": "202602",
@@ -28048,7 +28408,7 @@
       "saldo_sem_reajuste": -222.0,
       "codigo_uf": "AC",
       "acumulado_ano": -399.0,
-      "acumulado_12m": 316.0
+      "acumulado_12m": 318.0
     },
     {
       "competencia": "202603",
@@ -28056,11 +28416,11 @@
       "__uf__": "AC",
       "cnae_divisao": "47",
       "cnae_descricao": "Comércio Varejista",
-      "saldo": 66.0,
-      "saldo_sem_reajuste": 66.0,
+      "saldo": 67.0,
+      "saldo_sem_reajuste": 67.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -333.0,
-      "acumulado_12m": 397.0
+      "acumulado_ano": -332.0,
+      "acumulado_12m": 399.0
     },
     {
       "competencia": "202604",
@@ -28068,11 +28428,11 @@
       "__uf__": "AC",
       "cnae_divisao": "47",
       "cnae_descricao": "Comércio Varejista",
-      "saldo": 31.0,
-      "saldo_sem_reajuste": 31.0,
+      "saldo": 32.0,
+      "saldo_sem_reajuste": 32.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -302.0,
-      "acumulado_12m": 245.0
+      "acumulado_ano": -300.0,
+      "acumulado_12m": 248.0
     },
     {
       "competencia": "202605",
@@ -28080,11 +28440,11 @@
       "__uf__": "AC",
       "cnae_divisao": "47",
       "cnae_descricao": "Comércio Varejista",
-      "saldo": 69.0,
-      "saldo_sem_reajuste": 69.0,
+      "saldo": 71.0,
+      "saldo_sem_reajuste": 71.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -233.0,
-      "acumulado_12m": 255.0
+      "acumulado_ano": -229.0,
+      "acumulado_12m": 260.0
     },
     {
       "competencia": "202606",
@@ -28092,11 +28452,11 @@
       "__uf__": "AC",
       "cnae_divisao": "47",
       "cnae_descricao": "Comércio Varejista",
-      "saldo": 199.0,
-      "saldo_sem_reajuste": 199.0,
+      "saldo": 200.0,
+      "saldo_sem_reajuste": 200.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -34.0,
-      "acumulado_12m": 367.0
+      "acumulado_ano": -29.0,
+      "acumulado_12m": 373.0
     },
     {
       "competencia": "202607",
@@ -28104,11 +28464,23 @@
       "__uf__": "AC",
       "cnae_divisao": "47",
       "cnae_descricao": "Comércio Varejista",
-      "saldo": 7.0,
-      "saldo_sem_reajuste": 7.0,
+      "saldo": 10.0,
+      "saldo_sem_reajuste": 10.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -27.0,
-      "acumulado_12m": 374.0
+      "acumulado_ano": -19.0,
+      "acumulado_12m": 383.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "47",
+      "cnae_descricao": "Comércio Varejista",
+      "saldo": 28.0,
+      "saldo_sem_reajuste": 28.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 9.0,
+      "acumulado_12m": 297.0
     },
     {
       "competencia": "202001",
@@ -29004,11 +29376,11 @@
       "__uf__": "AC",
       "cnae_divisao": "49",
       "cnae_descricao": "Transporte Terrestre",
-      "saldo": 3.0,
-      "saldo_sem_reajuste": 3.0,
+      "saldo": 2.0,
+      "saldo_sem_reajuste": 2.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -104.0,
-      "acumulado_12m": -30.0
+      "acumulado_ano": -105.0,
+      "acumulado_12m": -31.0
     },
     {
       "competencia": "202604",
@@ -29016,8 +29388,8 @@
       "__uf__": "AC",
       "cnae_divisao": "49",
       "cnae_descricao": "Transporte Terrestre",
-      "saldo": 11.0,
-      "saldo_sem_reajuste": 11.0,
+      "saldo": 12.0,
+      "saldo_sem_reajuste": 12.0,
       "codigo_uf": "AC",
       "acumulado_ano": -93.0,
       "acumulado_12m": -21.0
@@ -29057,6 +29429,18 @@
       "codigo_uf": "AC",
       "acumulado_ano": -236.0,
       "acumulado_12m": -174.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "49",
+      "cnae_descricao": "Transporte Terrestre",
+      "saldo": -22.0,
+      "saldo_sem_reajuste": -22.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": -258.0,
+      "acumulado_12m": -222.0
     },
     {
       "competencia": "202001",
@@ -29909,6 +30293,18 @@
       "codigo_uf": "AC",
       "acumulado_ano": -8.0,
       "acumulado_12m": -5.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "50",
+      "cnae_descricao": "Transporte Aquaviário",
+      "saldo": 2.0,
+      "saldo_sem_reajuste": 2.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": -6.0,
+      "acumulado_12m": -3.0
     },
     {
       "competencia": "202001",
@@ -30833,6 +31229,18 @@
       "codigo_uf": "AC",
       "acumulado_ano": 0.0,
       "acumulado_12m": 9.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "51",
+      "cnae_descricao": "Transporte Aéreo",
+      "saldo": 3.0,
+      "saldo_sem_reajuste": 3.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 3.0,
+      "acumulado_12m": 12.0
     },
     {
       "competencia": "202001",
@@ -31776,11 +32184,23 @@
       "__uf__": "AC",
       "cnae_divisao": "52",
       "cnae_descricao": "Armazenamento E Atividades Auxiliares Dos Transportes",
-      "saldo": -8.0,
-      "saldo_sem_reajuste": -8.0,
+      "saldo": -7.0,
+      "saldo_sem_reajuste": -7.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -23.0,
-      "acumulado_12m": -47.0
+      "acumulado_ano": -22.0,
+      "acumulado_12m": -46.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "52",
+      "cnae_descricao": "Armazenamento E Atividades Auxiliares Dos Transportes",
+      "saldo": 3.0,
+      "saldo_sem_reajuste": 3.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": -19.0,
+      "acumulado_12m": -22.0
     },
     {
       "competencia": "202002",
@@ -32719,6 +33139,18 @@
       "acumulado_12m": 35.0
     },
     {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "53",
+      "cnae_descricao": "Correio E Outras Atividades De Entrega",
+      "saldo": 12.0,
+      "saldo_sem_reajuste": 12.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 3.0,
+      "acumulado_12m": 38.0
+    },
+    {
       "competencia": "202001",
       "cod_uf": "AC",
       "__uf__": "AC",
@@ -33516,11 +33948,11 @@
       "__uf__": "AC",
       "cnae_divisao": "55",
       "cnae_descricao": "Alojamento",
-      "saldo": 2.0,
-      "saldo_sem_reajuste": 2.0,
+      "saldo": 3.0,
+      "saldo_sem_reajuste": 3.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 4.0,
-      "acumulado_12m": 29.0
+      "acumulado_ano": 5.0,
+      "acumulado_12m": 30.0
     },
     {
       "competencia": "202508",
@@ -33528,8 +33960,8 @@
       "__uf__": "AC",
       "cnae_divisao": "55",
       "cnae_descricao": "Alojamento",
-      "saldo": 3.0,
-      "saldo_sem_reajuste": 3.0,
+      "saldo": 2.0,
+      "saldo_sem_reajuste": 2.0,
       "codigo_uf": "AC",
       "acumulado_ano": 7.0,
       "acumulado_12m": 24.0
@@ -33660,11 +34092,23 @@
       "__uf__": "AC",
       "cnae_divisao": "55",
       "cnae_descricao": "Alojamento",
+      "saldo": 5.0,
+      "saldo_sem_reajuste": 5.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": -17.0,
+      "acumulado_12m": 17.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "55",
+      "cnae_descricao": "Alojamento",
       "saldo": 6.0,
       "saldo_sem_reajuste": 6.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -16.0,
-      "acumulado_12m": 19.0
+      "acumulado_ano": -11.0,
+      "acumulado_12m": 21.0
     },
     {
       "competencia": "202001",
@@ -34476,11 +34920,11 @@
       "__uf__": "AC",
       "cnae_divisao": "56",
       "cnae_descricao": "Alimentação",
-      "saldo": 53.0,
-      "saldo_sem_reajuste": 53.0,
+      "saldo": 54.0,
+      "saldo_sem_reajuste": 54.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 125.0,
-      "acumulado_12m": 180.0
+      "acumulado_ano": 126.0,
+      "acumulado_12m": 181.0
     },
     {
       "competencia": "202509",
@@ -34491,8 +34935,8 @@
       "saldo": 12.0,
       "saldo_sem_reajuste": 12.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 137.0,
-      "acumulado_12m": 148.0
+      "acumulado_ano": 138.0,
+      "acumulado_12m": 149.0
     },
     {
       "competencia": "202510",
@@ -34503,8 +34947,8 @@
       "saldo": 16.0,
       "saldo_sem_reajuste": 16.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 153.0,
-      "acumulado_12m": 201.0
+      "acumulado_ano": 154.0,
+      "acumulado_12m": 202.0
     },
     {
       "competencia": "202511",
@@ -34515,8 +34959,8 @@
       "saldo": 29.0,
       "saldo_sem_reajuste": 29.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 182.0,
-      "acumulado_12m": 180.0
+      "acumulado_ano": 183.0,
+      "acumulado_12m": 181.0
     },
     {
       "competencia": "202512",
@@ -34524,11 +34968,11 @@
       "__uf__": "AC",
       "cnae_divisao": "56",
       "cnae_descricao": "Alimentação",
-      "saldo": -8.0,
-      "saldo_sem_reajuste": -8.0,
+      "saldo": -7.0,
+      "saldo_sem_reajuste": -7.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 174.0,
-      "acumulado_12m": 174.0
+      "acumulado_ano": 176.0,
+      "acumulado_12m": 176.0
     },
     {
       "competencia": "202601",
@@ -34536,11 +34980,11 @@
       "__uf__": "AC",
       "cnae_divisao": "56",
       "cnae_descricao": "Alimentação",
-      "saldo": -32.0,
-      "saldo_sem_reajuste": -32.0,
+      "saldo": -33.0,
+      "saldo_sem_reajuste": -33.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -32.0,
-      "acumulado_12m": 133.0
+      "acumulado_ano": -33.0,
+      "acumulado_12m": 134.0
     },
     {
       "competencia": "202602",
@@ -34548,11 +34992,11 @@
       "__uf__": "AC",
       "cnae_divisao": "56",
       "cnae_descricao": "Alimentação",
-      "saldo": -7.0,
-      "saldo_sem_reajuste": -7.0,
+      "saldo": -6.0,
+      "saldo_sem_reajuste": -6.0,
       "codigo_uf": "AC",
       "acumulado_ano": -39.0,
-      "acumulado_12m": 107.0
+      "acumulado_12m": 109.0
     },
     {
       "competencia": "202603",
@@ -34564,7 +35008,7 @@
       "saldo_sem_reajuste": 20.0,
       "codigo_uf": "AC",
       "acumulado_ano": -19.0,
-      "acumulado_12m": 126.0
+      "acumulado_12m": 128.0
     },
     {
       "competencia": "202604",
@@ -34572,10 +35016,10 @@
       "__uf__": "AC",
       "cnae_divisao": "56",
       "cnae_descricao": "Alimentação",
-      "saldo": -16.0,
-      "saldo_sem_reajuste": -16.0,
+      "saldo": -18.0,
+      "saldo_sem_reajuste": -18.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -35.0,
+      "acumulado_ano": -37.0,
       "acumulado_12m": 71.0
     },
     {
@@ -34587,7 +35031,7 @@
       "saldo": 4.0,
       "saldo_sem_reajuste": 4.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -31.0,
+      "acumulado_ano": -33.0,
       "acumulado_12m": 99.0
     },
     {
@@ -34599,7 +35043,7 @@
       "saldo": -15.0,
       "saldo_sem_reajuste": -15.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -46.0,
+      "acumulado_ano": -48.0,
       "acumulado_12m": 76.0
     },
     {
@@ -34608,11 +35052,23 @@
       "__uf__": "AC",
       "cnae_divisao": "56",
       "cnae_descricao": "Alimentação",
-      "saldo": 14.0,
-      "saldo_sem_reajuste": 14.0,
+      "saldo": 17.0,
+      "saldo_sem_reajuste": 17.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -32.0,
-      "acumulado_12m": 70.0
+      "acumulado_ano": -31.0,
+      "acumulado_12m": 73.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "56",
+      "cnae_descricao": "Alimentação",
+      "saldo": 9.0,
+      "saldo_sem_reajuste": 9.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": -22.0,
+      "acumulado_12m": 28.0
     },
     {
       "competencia": "202002",
@@ -35479,6 +35935,18 @@
       "acumulado_12m": 1.0
     },
     {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "58",
+      "cnae_descricao": "Edição E Edição Integrada À Impressão",
+      "saldo": -1.0,
+      "saldo_sem_reajuste": -1.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": -3.0,
+      "acumulado_12m": -1.0
+    },
+    {
       "competencia": "202002",
       "cod_uf": "AC",
       "__uf__": "AC",
@@ -36233,6 +36701,18 @@
       "codigo_uf": "AC",
       "acumulado_ano": -2.0,
       "acumulado_12m": -2.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "59",
+      "cnae_descricao": "Atividades Cinematográficas, Produção De Vídeos E De Programas De Televisão; Gravação De Som E Edição De Música",
+      "saldo": -3.0,
+      "saldo_sem_reajuste": -3.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": -5.0,
+      "acumulado_12m": -5.0
     },
     {
       "competencia": "202001",
@@ -37176,11 +37656,23 @@
       "__uf__": "AC",
       "cnae_divisao": "60",
       "cnae_descricao": "Atividades De Rádio E De Televisão",
-      "saldo": -1.0,
-      "saldo_sem_reajuste": -1.0,
+      "saldo": -2.0,
+      "saldo_sem_reajuste": -2.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 3.0,
-      "acumulado_12m": 2.0
+      "acumulado_ano": 2.0,
+      "acumulado_12m": 1.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "60",
+      "cnae_descricao": "Atividades De Rádio E De Televisão",
+      "saldo": -2.0,
+      "saldo_sem_reajuste": -2.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 0.0,
+      "acumulado_12m": 0.0
     },
     {
       "competencia": "202001",
@@ -38016,11 +38508,11 @@
       "__uf__": "AC",
       "cnae_divisao": "61",
       "cnae_descricao": "Telecomunicações",
-      "saldo": 3.0,
-      "saldo_sem_reajuste": 3.0,
+      "saldo": 5.0,
+      "saldo_sem_reajuste": 5.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 100.0,
-      "acumulado_12m": 92.0
+      "acumulado_ano": 102.0,
+      "acumulado_12m": 94.0
     },
     {
       "competencia": "202511",
@@ -38031,8 +38523,8 @@
       "saldo": -4.0,
       "saldo_sem_reajuste": -4.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 96.0,
-      "acumulado_12m": 75.0
+      "acumulado_ano": 98.0,
+      "acumulado_12m": 77.0
     },
     {
       "competencia": "202512",
@@ -38043,8 +38535,8 @@
       "saldo": -3.0,
       "saldo_sem_reajuste": -3.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 93.0,
-      "acumulado_12m": 93.0
+      "acumulado_ano": 95.0,
+      "acumulado_12m": 95.0
     },
     {
       "competencia": "202601",
@@ -38056,7 +38548,7 @@
       "saldo_sem_reajuste": 7.0,
       "codigo_uf": "AC",
       "acumulado_ano": 7.0,
-      "acumulado_12m": 98.0
+      "acumulado_12m": 100.0
     },
     {
       "competencia": "202602",
@@ -38068,7 +38560,7 @@
       "saldo_sem_reajuste": -14.0,
       "codigo_uf": "AC",
       "acumulado_ano": -7.0,
-      "acumulado_12m": 78.0
+      "acumulado_12m": 80.0
     },
     {
       "competencia": "202603",
@@ -38080,7 +38572,7 @@
       "saldo_sem_reajuste": 6.0,
       "codigo_uf": "AC",
       "acumulado_ano": -1.0,
-      "acumulado_12m": 78.0
+      "acumulado_12m": 80.0
     },
     {
       "competencia": "202604",
@@ -38092,7 +38584,7 @@
       "saldo_sem_reajuste": 2.0,
       "codigo_uf": "AC",
       "acumulado_ano": 1.0,
-      "acumulado_12m": 38.0
+      "acumulado_12m": 40.0
     },
     {
       "competencia": "202605",
@@ -38104,7 +38596,7 @@
       "saldo_sem_reajuste": -2.0,
       "codigo_uf": "AC",
       "acumulado_ano": -1.0,
-      "acumulado_12m": 37.0
+      "acumulado_12m": 39.0
     },
     {
       "competencia": "202606",
@@ -38112,11 +38604,11 @@
       "__uf__": "AC",
       "cnae_divisao": "61",
       "cnae_descricao": "Telecomunicações",
-      "saldo": -2.0,
-      "saldo_sem_reajuste": -2.0,
+      "saldo": -1.0,
+      "saldo_sem_reajuste": -1.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -3.0,
-      "acumulado_12m": 28.0
+      "acumulado_ano": -2.0,
+      "acumulado_12m": 31.0
     },
     {
       "competencia": "202607",
@@ -38127,8 +38619,20 @@
       "saldo": -3.0,
       "saldo_sem_reajuste": -3.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -6.0,
-      "acumulado_12m": 9.0
+      "acumulado_ano": -5.0,
+      "acumulado_12m": 12.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "61",
+      "cnae_descricao": "Telecomunicações",
+      "saldo": -3.0,
+      "saldo_sem_reajuste": -3.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": -8.0,
+      "acumulado_12m": -4.0
     },
     {
       "competencia": "202001",
@@ -39055,6 +39559,18 @@
       "acumulado_12m": 12.0
     },
     {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "62",
+      "cnae_descricao": "Atividades Dos Serviços De Tecnologia Da Informação",
+      "saldo": -1.0,
+      "saldo_sem_reajuste": -1.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 32.0,
+      "acumulado_12m": -23.0
+    },
+    {
       "competencia": "202001",
       "cod_uf": "AC",
       "__uf__": "AC",
@@ -39972,11 +40488,11 @@
       "__uf__": "AC",
       "cnae_divisao": "63",
       "cnae_descricao": "Atividades De Prestação De Serviços De Informação",
-      "saldo": 20.0,
-      "saldo_sem_reajuste": 20.0,
+      "saldo": 19.0,
+      "saldo_sem_reajuste": 19.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 18.0,
-      "acumulado_12m": 33.0
+      "acumulado_ano": 17.0,
+      "acumulado_12m": 32.0
     },
     {
       "competencia": "202606",
@@ -39987,8 +40503,8 @@
       "saldo": 0.0,
       "saldo_sem_reajuste": 0.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 18.0,
-      "acumulado_12m": 31.0
+      "acumulado_ano": 17.0,
+      "acumulado_12m": 30.0
     },
     {
       "competencia": "202607",
@@ -39999,8 +40515,20 @@
       "saldo": 4.0,
       "saldo_sem_reajuste": 4.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 22.0,
-      "acumulado_12m": 35.0
+      "acumulado_ano": 21.0,
+      "acumulado_12m": 34.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "63",
+      "cnae_descricao": "Atividades De Prestação De Serviços De Informação",
+      "saldo": -3.0,
+      "saldo_sem_reajuste": -3.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 18.0,
+      "acumulado_12m": 25.0
     },
     {
       "competencia": "202001",
@@ -40920,11 +41448,11 @@
       "__uf__": "AC",
       "cnae_divisao": "64",
       "cnae_descricao": "Atividades De Serviços Financeiros",
-      "saldo": -3.0,
-      "saldo_sem_reajuste": -3.0,
+      "saldo": -2.0,
+      "saldo_sem_reajuste": -2.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -14.0,
-      "acumulado_12m": -20.0
+      "acumulado_ano": -13.0,
+      "acumulado_12m": -19.0
     },
     {
       "competencia": "202606",
@@ -40935,8 +41463,8 @@
       "saldo": 0.0,
       "saldo_sem_reajuste": 0.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -14.0,
-      "acumulado_12m": -17.0
+      "acumulado_ano": -13.0,
+      "acumulado_12m": -16.0
     },
     {
       "competencia": "202607",
@@ -40947,8 +41475,20 @@
       "saldo": 7.0,
       "saldo_sem_reajuste": 7.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -7.0,
-      "acumulado_12m": -14.0
+      "acumulado_ano": -6.0,
+      "acumulado_12m": -13.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "64",
+      "cnae_descricao": "Atividades De Serviços Financeiros",
+      "saldo": 12.0,
+      "saldo_sem_reajuste": 12.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 6.0,
+      "acumulado_12m": 3.0
     },
     {
       "competencia": "202001",
@@ -41873,6 +42413,18 @@
       "codigo_uf": "AC",
       "acumulado_ano": 5.0,
       "acumulado_12m": 8.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "65",
+      "cnae_descricao": "Seguros, Resseguros, Previdência Complementar E Planos De Saúde",
+      "saldo": 0.0,
+      "saldo_sem_reajuste": 0.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 5.0,
+      "acumulado_12m": 4.0
     },
     {
       "competencia": "202001",
@@ -42804,11 +43356,23 @@
       "__uf__": "AC",
       "cnae_divisao": "66",
       "cnae_descricao": "Atividades Auxiliares Dos Serviços Financeiros, Seguros, Previdência Complementar E Planos De Saúde",
-      "saldo": -15.0,
-      "saldo_sem_reajuste": -15.0,
+      "saldo": -16.0,
+      "saldo_sem_reajuste": -16.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -471.0,
-      "acumulado_12m": -568.0
+      "acumulado_ano": -472.0,
+      "acumulado_12m": -569.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "66",
+      "cnae_descricao": "Atividades Auxiliares Dos Serviços Financeiros, Seguros, Previdência Complementar E Planos De Saúde",
+      "saldo": 5.0,
+      "saldo_sem_reajuste": 5.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": -467.0,
+      "acumulado_12m": -625.0
     },
     {
       "competencia": "202001",
@@ -43759,6 +44323,18 @@
       "acumulado_12m": -35.0
     },
     {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "68",
+      "cnae_descricao": "Atividades Imobiliárias",
+      "saldo": 7.0,
+      "saldo_sem_reajuste": 7.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 7.0,
+      "acumulado_12m": -36.0
+    },
+    {
       "competencia": "202001",
       "cod_uf": "AC",
       "__uf__": "AC",
@@ -44592,11 +45168,11 @@
       "__uf__": "AC",
       "cnae_divisao": "69",
       "cnae_descricao": "Atividades Jurídicas, De Contabilidade E De Auditoria",
-      "saldo": -10.0,
-      "saldo_sem_reajuste": -10.0,
+      "saldo": -9.0,
+      "saldo_sem_reajuste": -9.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 62.0,
-      "acumulado_12m": 55.0
+      "acumulado_ano": 63.0,
+      "acumulado_12m": 56.0
     },
     {
       "competencia": "202511",
@@ -44607,8 +45183,8 @@
       "saldo": -8.0,
       "saldo_sem_reajuste": -8.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 54.0,
-      "acumulado_12m": 46.0
+      "acumulado_ano": 55.0,
+      "acumulado_12m": 47.0
     },
     {
       "competencia": "202512",
@@ -44619,8 +45195,8 @@
       "saldo": 13.0,
       "saldo_sem_reajuste": 13.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 67.0,
-      "acumulado_12m": 67.0
+      "acumulado_ano": 68.0,
+      "acumulado_12m": 68.0
     },
     {
       "competencia": "202601",
@@ -44632,7 +45208,7 @@
       "saldo_sem_reajuste": 15.0,
       "codigo_uf": "AC",
       "acumulado_ano": 15.0,
-      "acumulado_12m": 121.0
+      "acumulado_12m": 122.0
     },
     {
       "competencia": "202602",
@@ -44644,7 +45220,7 @@
       "saldo_sem_reajuste": 12.0,
       "codigo_uf": "AC",
       "acumulado_ano": 27.0,
-      "acumulado_12m": 107.0
+      "acumulado_12m": 108.0
     },
     {
       "competencia": "202603",
@@ -44656,7 +45232,7 @@
       "saldo_sem_reajuste": -13.0,
       "codigo_uf": "AC",
       "acumulado_ano": 14.0,
-      "acumulado_12m": 80.0
+      "acumulado_12m": 81.0
     },
     {
       "competencia": "202604",
@@ -44668,7 +45244,7 @@
       "saldo_sem_reajuste": 9.0,
       "codigo_uf": "AC",
       "acumulado_ano": 23.0,
-      "acumulado_12m": 69.0
+      "acumulado_12m": 70.0
     },
     {
       "competencia": "202605",
@@ -44676,11 +45252,11 @@
       "__uf__": "AC",
       "cnae_divisao": "69",
       "cnae_descricao": "Atividades Jurídicas, De Contabilidade E De Auditoria",
-      "saldo": 10.0,
-      "saldo_sem_reajuste": 10.0,
+      "saldo": 11.0,
+      "saldo_sem_reajuste": 11.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 33.0,
-      "acumulado_12m": 71.0
+      "acumulado_ano": 34.0,
+      "acumulado_12m": 73.0
     },
     {
       "competencia": "202606",
@@ -44688,11 +45264,11 @@
       "__uf__": "AC",
       "cnae_divisao": "69",
       "cnae_descricao": "Atividades Jurídicas, De Contabilidade E De Auditoria",
-      "saldo": -1.0,
-      "saldo_sem_reajuste": -1.0,
+      "saldo": -2.0,
+      "saldo_sem_reajuste": -2.0,
       "codigo_uf": "AC",
       "acumulado_ano": 32.0,
-      "acumulado_12m": 65.0
+      "acumulado_12m": 66.0
     },
     {
       "competencia": "202607",
@@ -44700,11 +45276,23 @@
       "__uf__": "AC",
       "cnae_divisao": "69",
       "cnae_descricao": "Atividades Jurídicas, De Contabilidade E De Auditoria",
-      "saldo": 3.0,
-      "saldo_sem_reajuste": 3.0,
+      "saldo": 2.0,
+      "saldo_sem_reajuste": 2.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 35.0,
+      "acumulado_ano": 34.0,
       "acumulado_12m": 60.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "69",
+      "cnae_descricao": "Atividades Jurídicas, De Contabilidade E De Auditoria",
+      "saldo": 14.0,
+      "saldo_sem_reajuste": 14.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 48.0,
+      "acumulado_12m": 61.0
     },
     {
       "competencia": "202001",
@@ -45629,6 +46217,18 @@
       "codigo_uf": "AC",
       "acumulado_ano": 391.0,
       "acumulado_12m": 240.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "70",
+      "cnae_descricao": "Atividades De Sedes De Empresas E De Consultoria Em Gestão Empresarial",
+      "saldo": 189.0,
+      "saldo_sem_reajuste": 189.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 580.0,
+      "acumulado_12m": 664.0
     },
     {
       "competencia": "202001",
@@ -46579,6 +47179,18 @@
       "acumulado_12m": -85.0
     },
     {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "71",
+      "cnae_descricao": "Serviços De Arquitetura E Engenharia; Testes E Análises Técnicas",
+      "saldo": 32.0,
+      "saldo_sem_reajuste": 32.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 37.0,
+      "acumulado_12m": -82.0
+    },
+    {
       "competencia": "202001",
       "cod_uf": "AC",
       "__uf__": "AC",
@@ -46949,6 +47561,18 @@
       "codigo_uf": "AC",
       "acumulado_ano": 17.0,
       "acumulado_12m": 23.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "72",
+      "cnae_descricao": "Pesquisa E Desenvolvimento Científico",
+      "saldo": 1.0,
+      "saldo_sem_reajuste": 1.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 18.0,
+      "acumulado_12m": 24.0
     },
     {
       "competencia": "202001",
@@ -47899,6 +48523,18 @@
       "acumulado_12m": 58.0
     },
     {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "73",
+      "cnae_descricao": "Publicidade E Pesquisa De Mercado",
+      "saldo": -6.0,
+      "saldo_sem_reajuste": -6.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 25.0,
+      "acumulado_12m": 47.0
+    },
+    {
       "competencia": "202001",
       "cod_uf": "AC",
       "__uf__": "AC",
@@ -48840,11 +49476,23 @@
       "__uf__": "AC",
       "cnae_divisao": "74",
       "cnae_descricao": "Outras Atividades Profissionais, Científicas E Técnicas",
-      "saldo": -7.0,
-      "saldo_sem_reajuste": -7.0,
+      "saldo": -5.0,
+      "saldo_sem_reajuste": -5.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 96.0,
-      "acumulado_12m": 93.0
+      "acumulado_ano": 98.0,
+      "acumulado_12m": 95.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "74",
+      "cnae_descricao": "Outras Atividades Profissionais, Científicas E Técnicas",
+      "saldo": 19.0,
+      "saldo_sem_reajuste": 19.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 117.0,
+      "acumulado_12m": 124.0
     },
     {
       "competencia": "202001",
@@ -49795,6 +50443,18 @@
       "acumulado_12m": -8.0
     },
     {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "75",
+      "cnae_descricao": "Atividades Veterinárias",
+      "saldo": 7.0,
+      "saldo_sem_reajuste": 7.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 4.0,
+      "acumulado_12m": 1.0
+    },
+    {
       "competencia": "202001",
       "cod_uf": "AC",
       "__uf__": "AC",
@@ -50664,11 +51324,11 @@
       "__uf__": "AC",
       "cnae_divisao": "77",
       "cnae_descricao": "Aluguéis Não Imobiliários E Gestão De Ativos Intangíveis Não Financeiros",
-      "saldo": -62.0,
-      "saldo_sem_reajuste": -62.0,
+      "saldo": -63.0,
+      "saldo_sem_reajuste": -63.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -62.0,
-      "acumulado_12m": -28.0
+      "acumulado_ano": -63.0,
+      "acumulado_12m": -29.0
     },
     {
       "competencia": "202602",
@@ -50679,8 +51339,8 @@
       "saldo": 29.0,
       "saldo_sem_reajuste": 29.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -33.0,
-      "acumulado_12m": 9.0
+      "acumulado_ano": -34.0,
+      "acumulado_12m": 8.0
     },
     {
       "competencia": "202603",
@@ -50691,8 +51351,8 @@
       "saldo": 33.0,
       "saldo_sem_reajuste": 33.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 0.0,
-      "acumulado_12m": 19.0
+      "acumulado_ano": -1.0,
+      "acumulado_12m": 18.0
     },
     {
       "competencia": "202604",
@@ -50703,8 +51363,8 @@
       "saldo": 418.0,
       "saldo_sem_reajuste": 418.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 418.0,
-      "acumulado_12m": 422.0
+      "acumulado_ano": 417.0,
+      "acumulado_12m": 421.0
     },
     {
       "competencia": "202605",
@@ -50715,8 +51375,8 @@
       "saldo": -15.0,
       "saldo_sem_reajuste": -15.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 403.0,
-      "acumulado_12m": 423.0
+      "acumulado_ano": 402.0,
+      "acumulado_12m": 422.0
     },
     {
       "competencia": "202606",
@@ -50724,11 +51384,11 @@
       "__uf__": "AC",
       "cnae_divisao": "77",
       "cnae_descricao": "Aluguéis Não Imobiliários E Gestão De Ativos Intangíveis Não Financeiros",
-      "saldo": 107.0,
-      "saldo_sem_reajuste": 107.0,
+      "saldo": 104.0,
+      "saldo_sem_reajuste": 104.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 510.0,
-      "acumulado_12m": 533.0
+      "acumulado_ano": 506.0,
+      "acumulado_12m": 529.0
     },
     {
       "competencia": "202607",
@@ -50739,8 +51399,20 @@
       "saldo": -2.0,
       "saldo_sem_reajuste": -2.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 508.0,
-      "acumulado_12m": 516.0
+      "acumulado_ano": 504.0,
+      "acumulado_12m": 512.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "77",
+      "cnae_descricao": "Aluguéis Não Imobiliários E Gestão De Ativos Intangíveis Não Financeiros",
+      "saldo": 25.0,
+      "saldo_sem_reajuste": 25.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 529.0,
+      "acumulado_12m": 543.0
     },
     {
       "competencia": "202001",
@@ -51612,11 +52284,11 @@
       "__uf__": "AC",
       "cnae_divisao": "78",
       "cnae_descricao": "Seleção, Agenciamento E Locação De Mão De Obra",
-      "saldo": 33.0,
-      "saldo_sem_reajuste": 33.0,
+      "saldo": 32.0,
+      "saldo_sem_reajuste": 32.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 33.0,
-      "acumulado_12m": 835.0
+      "acumulado_ano": 32.0,
+      "acumulado_12m": 834.0
     },
     {
       "competencia": "202602",
@@ -51627,8 +52299,8 @@
       "saldo": -201.0,
       "saldo_sem_reajuste": -201.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -168.0,
-      "acumulado_12m": 726.0
+      "acumulado_ano": -169.0,
+      "acumulado_12m": 725.0
     },
     {
       "competencia": "202603",
@@ -51639,8 +52311,8 @@
       "saldo": 284.0,
       "saldo_sem_reajuste": 284.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 116.0,
-      "acumulado_12m": 1086.0
+      "acumulado_ano": 115.0,
+      "acumulado_12m": 1085.0
     },
     {
       "competencia": "202604",
@@ -51651,8 +52323,8 @@
       "saldo": 128.0,
       "saldo_sem_reajuste": 128.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 244.0,
-      "acumulado_12m": 1157.0
+      "acumulado_ano": 243.0,
+      "acumulado_12m": 1156.0
     },
     {
       "competencia": "202605",
@@ -51663,8 +52335,8 @@
       "saldo": 157.0,
       "saldo_sem_reajuste": 157.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 401.0,
-      "acumulado_12m": 1264.0
+      "acumulado_ano": 400.0,
+      "acumulado_12m": 1263.0
     },
     {
       "competencia": "202606",
@@ -51672,11 +52344,11 @@
       "__uf__": "AC",
       "cnae_divisao": "78",
       "cnae_descricao": "Seleção, Agenciamento E Locação De Mão De Obra",
-      "saldo": 237.0,
-      "saldo_sem_reajuste": 237.0,
+      "saldo": 236.0,
+      "saldo_sem_reajuste": 236.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 638.0,
-      "acumulado_12m": 1468.0
+      "acumulado_ano": 636.0,
+      "acumulado_12m": 1466.0
     },
     {
       "competencia": "202607",
@@ -51687,8 +52359,20 @@
       "saldo": 134.0,
       "saldo_sem_reajuste": 134.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 772.0,
-      "acumulado_12m": 1571.0
+      "acumulado_ano": 770.0,
+      "acumulado_12m": 1569.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "78",
+      "cnae_descricao": "Seleção, Agenciamento E Locação De Mão De Obra",
+      "saldo": -85.0,
+      "saldo_sem_reajuste": -85.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 685.0,
+      "acumulado_12m": 1422.0
     },
     {
       "competencia": "202001",
@@ -52634,6 +53318,18 @@
       "cnae_descricao": "Agências De Viagens, Operadores Turísticos E Serviços De Reservas",
       "saldo": -9.0,
       "saldo_sem_reajuste": -9.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": -13.0,
+      "acumulado_12m": -9.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "79",
+      "cnae_descricao": "Agências De Viagens, Operadores Turísticos E Serviços De Reservas",
+      "saldo": 0.0,
+      "saldo_sem_reajuste": 0.0,
       "codigo_uf": "AC",
       "acumulado_ano": -13.0,
       "acumulado_12m": -9.0
@@ -53587,6 +54283,18 @@
       "acumulado_12m": 74.0
     },
     {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "80",
+      "cnae_descricao": "Atividades De Vigilância, Segurança E Investigação",
+      "saldo": 46.0,
+      "saldo_sem_reajuste": 46.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 137.0,
+      "acumulado_12m": 132.0
+    },
+    {
       "competencia": "202001",
       "cod_uf": "AC",
       "__uf__": "AC",
@@ -54168,11 +54876,11 @@
       "__uf__": "AC",
       "cnae_divisao": "81",
       "cnae_descricao": "Serviços Para Edifícios E Atividades Paisagísticas",
-      "saldo": 153.0,
-      "saldo_sem_reajuste": 153.0,
+      "saldo": 152.0,
+      "saldo_sem_reajuste": 152.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 153.0,
-      "acumulado_12m": 483.0
+      "acumulado_ano": 152.0,
+      "acumulado_12m": 482.0
     },
     {
       "competencia": "202402",
@@ -54180,8 +54888,8 @@
       "__uf__": "AC",
       "cnae_divisao": "81",
       "cnae_descricao": "Serviços Para Edifícios E Atividades Paisagísticas",
-      "saldo": 129.0,
-      "saldo_sem_reajuste": 129.0,
+      "saldo": 130.0,
+      "saldo_sem_reajuste": 130.0,
       "codigo_uf": "AC",
       "acumulado_ano": 282.0,
       "acumulado_12m": 529.0
@@ -54316,7 +55024,7 @@
       "saldo_sem_reajuste": -110.0,
       "codigo_uf": "AC",
       "acumulado_ano": -110.0,
-      "acumulado_12m": 512.0
+      "acumulado_12m": 513.0
     },
     {
       "competencia": "202502",
@@ -54408,11 +55116,11 @@
       "__uf__": "AC",
       "cnae_divisao": "81",
       "cnae_descricao": "Serviços Para Edifícios E Atividades Paisagísticas",
-      "saldo": 113.0,
-      "saldo_sem_reajuste": 113.0,
+      "saldo": 114.0,
+      "saldo_sem_reajuste": 114.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 360.0,
-      "acumulado_12m": 194.0
+      "acumulado_ano": 361.0,
+      "acumulado_12m": 195.0
     },
     {
       "competencia": "202510",
@@ -54423,8 +55131,8 @@
       "saldo": 19.0,
       "saldo_sem_reajuste": 19.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 379.0,
-      "acumulado_12m": 193.0
+      "acumulado_ano": 380.0,
+      "acumulado_12m": 194.0
     },
     {
       "competencia": "202511",
@@ -54432,8 +55140,8 @@
       "__uf__": "AC",
       "cnae_divisao": "81",
       "cnae_descricao": "Serviços Para Edifícios E Atividades Paisagísticas",
-      "saldo": -233.0,
-      "saldo_sem_reajuste": -233.0,
+      "saldo": -234.0,
+      "saldo_sem_reajuste": -234.0,
       "codigo_uf": "AC",
       "acumulado_ano": 146.0,
       "acumulado_12m": 58.0
@@ -54516,11 +55224,11 @@
       "__uf__": "AC",
       "cnae_divisao": "81",
       "cnae_descricao": "Serviços Para Edifícios E Atividades Paisagísticas",
-      "saldo": -3.0,
-      "saldo_sem_reajuste": -3.0,
+      "saldo": -2.0,
+      "saldo_sem_reajuste": -2.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -50.0,
-      "acumulado_12m": -211.0
+      "acumulado_ano": -49.0,
+      "acumulado_12m": -210.0
     },
     {
       "competencia": "202607",
@@ -54531,8 +55239,20 @@
       "saldo": 152.0,
       "saldo_sem_reajuste": 152.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 102.0,
-      "acumulado_12m": -35.0
+      "acumulado_ano": 103.0,
+      "acumulado_12m": -34.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "81",
+      "cnae_descricao": "Serviços Para Edifícios E Atividades Paisagísticas",
+      "saldo": 28.0,
+      "saldo_sem_reajuste": 28.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 131.0,
+      "acumulado_12m": 23.0
     },
     {
       "competencia": "202001",
@@ -55344,11 +56064,11 @@
       "__uf__": "AC",
       "cnae_divisao": "82",
       "cnae_descricao": "Serviços De Escritório, De Apoio Administrativo E Outros Serviços Prestados Principalmente Às\nEmpresas",
-      "saldo": 346.0,
-      "saldo_sem_reajuste": 346.0,
+      "saldo": 348.0,
+      "saldo_sem_reajuste": 348.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 873.0,
-      "acumulado_12m": 1995.0
+      "acumulado_ano": 875.0,
+      "acumulado_12m": 1997.0
     },
     {
       "competencia": "202509",
@@ -55356,11 +56076,11 @@
       "__uf__": "AC",
       "cnae_divisao": "82",
       "cnae_descricao": "Serviços De Escritório, De Apoio Administrativo E Outros Serviços Prestados Principalmente Às\nEmpresas",
-      "saldo": 181.0,
-      "saldo_sem_reajuste": 181.0,
+      "saldo": 180.0,
+      "saldo_sem_reajuste": 180.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 1054.0,
-      "acumulado_12m": 1638.0
+      "acumulado_ano": 1055.0,
+      "acumulado_12m": 1639.0
     },
     {
       "competencia": "202510",
@@ -55371,8 +56091,8 @@
       "saldo": -136.0,
       "saldo_sem_reajuste": -136.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 918.0,
-      "acumulado_12m": 935.0
+      "acumulado_ano": 919.0,
+      "acumulado_12m": 936.0
     },
     {
       "competencia": "202511",
@@ -55383,8 +56103,8 @@
       "saldo": -28.0,
       "saldo_sem_reajuste": -28.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 890.0,
-      "acumulado_12m": 860.0
+      "acumulado_ano": 891.0,
+      "acumulado_12m": 861.0
     },
     {
       "competencia": "202512",
@@ -55392,8 +56112,8 @@
       "__uf__": "AC",
       "cnae_divisao": "82",
       "cnae_descricao": "Serviços De Escritório, De Apoio Administrativo E Outros Serviços Prestados Principalmente Às\nEmpresas",
-      "saldo": -195.0,
-      "saldo_sem_reajuste": -195.0,
+      "saldo": -196.0,
+      "saldo_sem_reajuste": -196.0,
       "codigo_uf": "AC",
       "acumulado_ano": 695.0,
       "acumulado_12m": 695.0
@@ -55416,11 +56136,11 @@
       "__uf__": "AC",
       "cnae_divisao": "82",
       "cnae_descricao": "Serviços De Escritório, De Apoio Administrativo E Outros Serviços Prestados Principalmente Às\nEmpresas",
-      "saldo": 218.0,
-      "saldo_sem_reajuste": 218.0,
+      "saldo": 220.0,
+      "saldo_sem_reajuste": 220.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 216.0,
-      "acumulado_12m": 1081.0
+      "acumulado_ano": 218.0,
+      "acumulado_12m": 1083.0
     },
     {
       "competencia": "202603",
@@ -55431,8 +56151,8 @@
       "saldo": 118.0,
       "saldo_sem_reajuste": 118.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 334.0,
-      "acumulado_12m": 832.0
+      "acumulado_ano": 336.0,
+      "acumulado_12m": 834.0
     },
     {
       "competencia": "202604",
@@ -55440,11 +56160,11 @@
       "__uf__": "AC",
       "cnae_divisao": "82",
       "cnae_descricao": "Serviços De Escritório, De Apoio Administrativo E Outros Serviços Prestados Principalmente Às\nEmpresas",
-      "saldo": 66.0,
-      "saldo_sem_reajuste": 66.0,
+      "saldo": 67.0,
+      "saldo_sem_reajuste": 67.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 400.0,
-      "acumulado_12m": 798.0
+      "acumulado_ano": 403.0,
+      "acumulado_12m": 801.0
     },
     {
       "competencia": "202605",
@@ -55452,11 +56172,11 @@
       "__uf__": "AC",
       "cnae_divisao": "82",
       "cnae_descricao": "Serviços De Escritório, De Apoio Administrativo E Outros Serviços Prestados Principalmente Às\nEmpresas",
-      "saldo": 289.0,
-      "saldo_sem_reajuste": 289.0,
+      "saldo": 288.0,
+      "saldo_sem_reajuste": 288.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 689.0,
-      "acumulado_12m": 730.0
+      "acumulado_ano": 691.0,
+      "acumulado_12m": 732.0
     },
     {
       "competencia": "202606",
@@ -55464,11 +56184,11 @@
       "__uf__": "AC",
       "cnae_divisao": "82",
       "cnae_descricao": "Serviços De Escritório, De Apoio Administrativo E Outros Serviços Prestados Principalmente Às\nEmpresas",
-      "saldo": 25.0,
-      "saldo_sem_reajuste": 25.0,
+      "saldo": 21.0,
+      "saldo_sem_reajuste": 21.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 714.0,
-      "acumulado_12m": 735.0
+      "acumulado_ano": 712.0,
+      "acumulado_12m": 733.0
     },
     {
       "competencia": "202607",
@@ -55479,8 +56199,20 @@
       "saldo": 184.0,
       "saldo_sem_reajuste": 184.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 898.0,
-      "acumulado_12m": 1066.0
+      "acumulado_ano": 896.0,
+      "acumulado_12m": 1064.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "82",
+      "cnae_descricao": "Serviços De Escritório, De Apoio Administrativo E Outros Serviços Prestados Principalmente Às\nEmpresas",
+      "saldo": 79.0,
+      "saldo_sem_reajuste": 79.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 975.0,
+      "acumulado_12m": 795.0
     },
     {
       "competencia": "202001",
@@ -56388,11 +57120,23 @@
       "__uf__": "AC",
       "cnae_divisao": "84",
       "cnae_descricao": "Administração Pública, Defesa E Seguridade Social",
-      "saldo": -3.0,
-      "saldo_sem_reajuste": -3.0,
+      "saldo": -6.0,
+      "saldo_sem_reajuste": -6.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 109.0,
-      "acumulado_12m": 23.0
+      "acumulado_ano": 106.0,
+      "acumulado_12m": 20.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "84",
+      "cnae_descricao": "Administração Pública, Defesa E Seguridade Social",
+      "saldo": -1.0,
+      "saldo_sem_reajuste": -1.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 105.0,
+      "acumulado_12m": 22.0
     },
     {
       "competencia": "202001",
@@ -57216,11 +57960,11 @@
       "__uf__": "AC",
       "cnae_divisao": "85",
       "cnae_descricao": "Educação",
-      "saldo": 56.0,
-      "saldo_sem_reajuste": 56.0,
+      "saldo": 57.0,
+      "saldo_sem_reajuste": 57.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 613.0,
-      "acumulado_12m": 535.0
+      "acumulado_ano": 614.0,
+      "acumulado_12m": 536.0
     },
     {
       "competencia": "202510",
@@ -57231,8 +57975,8 @@
       "saldo": -1.0,
       "saldo_sem_reajuste": -1.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 612.0,
-      "acumulado_12m": 536.0
+      "acumulado_ano": 613.0,
+      "acumulado_12m": 537.0
     },
     {
       "competencia": "202511",
@@ -57243,8 +57987,8 @@
       "saldo": -112.0,
       "saldo_sem_reajuste": -112.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 500.0,
-      "acumulado_12m": 406.0
+      "acumulado_ano": 501.0,
+      "acumulado_12m": 407.0
     },
     {
       "competencia": "202512",
@@ -57255,8 +57999,8 @@
       "saldo": -159.0,
       "saldo_sem_reajuste": -159.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 341.0,
-      "acumulado_12m": 341.0
+      "acumulado_ano": 342.0,
+      "acumulado_12m": 342.0
     },
     {
       "competencia": "202601",
@@ -57268,7 +58012,7 @@
       "saldo_sem_reajuste": -41.0,
       "codigo_uf": "AC",
       "acumulado_ano": -41.0,
-      "acumulado_12m": 321.0
+      "acumulado_12m": 322.0
     },
     {
       "competencia": "202602",
@@ -57280,7 +58024,7 @@
       "saldo_sem_reajuste": 230.0,
       "codigo_uf": "AC",
       "acumulado_ano": 189.0,
-      "acumulado_12m": 172.0
+      "acumulado_12m": 173.0
     },
     {
       "competencia": "202603",
@@ -57292,7 +58036,7 @@
       "saldo_sem_reajuste": 36.0,
       "codigo_uf": "AC",
       "acumulado_ano": 225.0,
-      "acumulado_12m": 201.0
+      "acumulado_12m": 202.0
     },
     {
       "competencia": "202604",
@@ -57304,7 +58048,7 @@
       "saldo_sem_reajuste": -33.0,
       "codigo_uf": "AC",
       "acumulado_ano": 192.0,
-      "acumulado_12m": 102.0
+      "acumulado_12m": 103.0
     },
     {
       "competencia": "202605",
@@ -57312,11 +58056,11 @@
       "__uf__": "AC",
       "cnae_divisao": "85",
       "cnae_descricao": "Educação",
-      "saldo": 18.0,
-      "saldo_sem_reajuste": 18.0,
+      "saldo": 19.0,
+      "saldo_sem_reajuste": 19.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 210.0,
-      "acumulado_12m": 85.0
+      "acumulado_ano": 211.0,
+      "acumulado_12m": 87.0
     },
     {
       "competencia": "202606",
@@ -57324,11 +58068,11 @@
       "__uf__": "AC",
       "cnae_divisao": "85",
       "cnae_descricao": "Educação",
-      "saldo": -14.0,
-      "saldo_sem_reajuste": -14.0,
+      "saldo": -15.0,
+      "saldo_sem_reajuste": -15.0,
       "codigo_uf": "AC",
       "acumulado_ano": 196.0,
-      "acumulado_12m": 53.0
+      "acumulado_12m": 54.0
     },
     {
       "competencia": "202607",
@@ -57336,11 +58080,23 @@
       "__uf__": "AC",
       "cnae_divisao": "85",
       "cnae_descricao": "Educação",
-      "saldo": -62.0,
-      "saldo_sem_reajuste": -62.0,
+      "saldo": -32.0,
+      "saldo_sem_reajuste": -32.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 134.0,
-      "acumulado_12m": -9.0
+      "acumulado_ano": 164.0,
+      "acumulado_12m": 22.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "85",
+      "cnae_descricao": "Educação",
+      "saldo": 62.0,
+      "saldo_sem_reajuste": 62.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 226.0,
+      "acumulado_12m": 11.0
     },
     {
       "competencia": "202001",
@@ -58236,11 +58992,11 @@
       "__uf__": "AC",
       "cnae_divisao": "86",
       "cnae_descricao": "Atividades De Atenção À Saúde Humana",
-      "saldo": 73.0,
-      "saldo_sem_reajuste": 73.0,
+      "saldo": 72.0,
+      "saldo_sem_reajuste": 72.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 37.0,
-      "acumulado_12m": 163.0
+      "acumulado_ano": 36.0,
+      "acumulado_12m": 162.0
     },
     {
       "competencia": "202604",
@@ -58251,8 +59007,8 @@
       "saldo": 34.0,
       "saldo_sem_reajuste": 34.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 71.0,
-      "acumulado_12m": 183.0
+      "acumulado_ano": 70.0,
+      "acumulado_12m": 182.0
     },
     {
       "competencia": "202605",
@@ -58260,11 +59016,11 @@
       "__uf__": "AC",
       "cnae_divisao": "86",
       "cnae_descricao": "Atividades De Atenção À Saúde Humana",
-      "saldo": 33.0,
-      "saldo_sem_reajuste": 33.0,
+      "saldo": 32.0,
+      "saldo_sem_reajuste": 32.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 104.0,
-      "acumulado_12m": 206.0
+      "acumulado_ano": 102.0,
+      "acumulado_12m": 204.0
     },
     {
       "competencia": "202606",
@@ -58272,11 +59028,11 @@
       "__uf__": "AC",
       "cnae_divisao": "86",
       "cnae_descricao": "Atividades De Atenção À Saúde Humana",
-      "saldo": 95.0,
-      "saldo_sem_reajuste": 95.0,
+      "saldo": 96.0,
+      "saldo_sem_reajuste": 96.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 199.0,
-      "acumulado_12m": 282.0
+      "acumulado_ano": 198.0,
+      "acumulado_12m": 281.0
     },
     {
       "competencia": "202607",
@@ -58284,11 +59040,23 @@
       "__uf__": "AC",
       "cnae_divisao": "86",
       "cnae_descricao": "Atividades De Atenção À Saúde Humana",
-      "saldo": 27.0,
-      "saldo_sem_reajuste": 27.0,
+      "saldo": 29.0,
+      "saldo_sem_reajuste": 29.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 226.0,
-      "acumulado_12m": 307.0
+      "acumulado_ano": 227.0,
+      "acumulado_12m": 308.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "86",
+      "cnae_descricao": "Atividades De Atenção À Saúde Humana",
+      "saldo": 13.0,
+      "saldo_sem_reajuste": 13.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 240.0,
+      "acumulado_12m": 305.0
     },
     {
       "competencia": "202001",
@@ -59057,6 +59825,18 @@
       "codigo_uf": "AC",
       "acumulado_ano": 17.0,
       "acumulado_12m": 28.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "87",
+      "cnae_descricao": "Atividades De Atenção À Saúde Humana Integradas Com Assistência Social, Prestadas Em Residências Coletivas E Particulares",
+      "saldo": 6.0,
+      "saldo_sem_reajuste": 6.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 23.0,
+      "acumulado_12m": 29.0
     },
     {
       "competencia": "202001",
@@ -60007,6 +60787,18 @@
       "acumulado_12m": -22.0
     },
     {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "88",
+      "cnae_descricao": "Serviços De Assistência Social Sem Alojamento",
+      "saldo": -7.0,
+      "saldo_sem_reajuste": -7.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": -22.0,
+      "acumulado_12m": -28.0
+    },
+    {
       "competencia": "202003",
       "cod_uf": "AC",
       "__uf__": "AC",
@@ -60521,6 +61313,18 @@
       "codigo_uf": "AC",
       "acumulado_ano": 19.0,
       "acumulado_12m": 20.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "90",
+      "cnae_descricao": "Atividades Artísticas, Criativas E De Espetáculos",
+      "saldo": -1.0,
+      "saldo_sem_reajuste": -1.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 18.0,
+      "acumulado_12m": 19.0
     },
     {
       "competencia": "202203",
@@ -61692,11 +62496,23 @@
       "__uf__": "AC",
       "cnae_divisao": "93",
       "cnae_descricao": "Atividades Esportivas E De Recreação E Lazer",
-      "saldo": -18.0,
-      "saldo_sem_reajuste": -18.0,
+      "saldo": -19.0,
+      "saldo_sem_reajuste": -19.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 17.0,
-      "acumulado_12m": 18.0
+      "acumulado_ano": 16.0,
+      "acumulado_12m": 17.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "93",
+      "cnae_descricao": "Atividades Esportivas E De Recreação E Lazer",
+      "saldo": 10.0,
+      "saldo_sem_reajuste": 10.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 26.0,
+      "acumulado_12m": 36.0
     },
     {
       "competencia": "202001",
@@ -62647,6 +63463,18 @@
       "acumulado_12m": 9.0
     },
     {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "94",
+      "cnae_descricao": "Atividades De Organizações Associativas",
+      "saldo": 4.0,
+      "saldo_sem_reajuste": 4.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": -8.0,
+      "acumulado_12m": -17.0
+    },
+    {
       "competencia": "202001",
       "cod_uf": "AC",
       "__uf__": "AC",
@@ -63540,11 +64368,11 @@
       "__uf__": "AC",
       "cnae_divisao": "95",
       "cnae_descricao": "Reparação E Manutenção De Equipamentos De Informática E Comunicação E De Objetos Pessoais E Domésticos",
-      "saldo": -3.0,
-      "saldo_sem_reajuste": -3.0,
+      "saldo": -2.0,
+      "saldo_sem_reajuste": -2.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -3.0,
-      "acumulado_12m": 10.0
+      "acumulado_ano": -2.0,
+      "acumulado_12m": 11.0
     },
     {
       "competencia": "202604",
@@ -63555,8 +64383,8 @@
       "saldo": 2.0,
       "saldo_sem_reajuste": 2.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -1.0,
-      "acumulado_12m": 13.0
+      "acumulado_ano": 0.0,
+      "acumulado_12m": 14.0
     },
     {
       "competencia": "202605",
@@ -63567,8 +64395,8 @@
       "saldo": -1.0,
       "saldo_sem_reajuste": -1.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -2.0,
-      "acumulado_12m": 11.0
+      "acumulado_ano": -1.0,
+      "acumulado_12m": 12.0
     },
     {
       "competencia": "202606",
@@ -63579,8 +64407,8 @@
       "saldo": -3.0,
       "saldo_sem_reajuste": -3.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -5.0,
-      "acumulado_12m": 3.0
+      "acumulado_ano": -4.0,
+      "acumulado_12m": 4.0
     },
     {
       "competencia": "202607",
@@ -63591,8 +64419,20 @@
       "saldo": 1.0,
       "saldo_sem_reajuste": 1.0,
       "codigo_uf": "AC",
-      "acumulado_ano": -4.0,
-      "acumulado_12m": 7.0
+      "acumulado_ano": -3.0,
+      "acumulado_12m": 8.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "95",
+      "cnae_descricao": "Reparação E Manutenção De Equipamentos De Informática E Comunicação E De Objetos Pessoais E Domésticos",
+      "saldo": 6.0,
+      "saldo_sem_reajuste": 6.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 3.0,
+      "acumulado_12m": 1.0
     },
     {
       "competencia": "202001",
@@ -64536,11 +65376,23 @@
       "__uf__": "AC",
       "cnae_divisao": "96",
       "cnae_descricao": "Outras Atividades De Serviços Pessoais",
-      "saldo": -6.0,
-      "saldo_sem_reajuste": -6.0,
+      "saldo": -5.0,
+      "saldo_sem_reajuste": -5.0,
       "codigo_uf": "AC",
-      "acumulado_ano": 7.0,
-      "acumulado_12m": 14.0
+      "acumulado_ano": 8.0,
+      "acumulado_12m": 15.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "96",
+      "cnae_descricao": "Outras Atividades De Serviços Pessoais",
+      "saldo": 1.0,
+      "saldo_sem_reajuste": 1.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": 9.0,
+      "acumulado_12m": 16.0
     },
     {
       "competencia": "202202",
@@ -64649,6 +65501,18 @@
       "codigo_uf": "AC",
       "acumulado_ano": -1.0,
       "acumulado_12m": 0.0
+    },
+    {
+      "competencia": "202608",
+      "cod_uf": "AC",
+      "__uf__": "AC",
+      "cnae_divisao": "97",
+      "cnae_descricao": "Serviços Domésticos",
+      "saldo": -1.0,
+      "saldo_sem_reajuste": -1.0,
+      "codigo_uf": "AC",
+      "acumulado_ano": -1.0,
+      "acumulado_12m": -1.0
     },
     {
       "competencia": "202312",
