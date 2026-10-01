@@ -3,16 +3,16 @@
   "policy_id": "construa_brasil",
   "nome": "Construa Brasil",
   "sigla": "Construa Brasil",
-  "categoria": "Capacitação, digitalização e desburocratização — construção civil",
+  "categoria": "Capacitação em desburocratização, digitalização e industrialização — construção civil",
   "source": "SDIC/DIBEN/CGDC via ENAP, em parceria com ABDI",
   "reference": "2023-2026",
-  "updated_at": "2026-09-11",
+  "updated_at": "2026-10-01",
   "capa_kpi": {
     "id": "capa",
     "label": "Certificados emitidos",
     "display_value": "1.788",
     "unit": "",
-    "period": "2025-2026",
+    "period": "2023-2026",
     "delta": {
       "dir": "up",
       "label": "7,1% do total nacional · 4ª entre 27 UFs"
@@ -24,7 +24,7 @@
     "uf": "PR",
     "regra": "meio",
     "headline": "1.788 certificados emitidos no Paraná — 7,1% do total nacional, 4ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Paraná ocupa a 4ª posição entre as 27 UFs participantes do programa e responde por 7,1% do programa no país. Dentro do Sul, que soma 4.545 certificados emitidos, a participação do Paraná é de 39,3%, a maior da região. Programa de capacitação, digitalização e desburocratização da construção civil.",
+    "lede": "Paraná ocupa a 4ª posição entre as 27 UFs participantes do programa e responde por 7,1% do programa no país. Dentro do Sul, que soma 4.545 certificados emitidos, a participação do Paraná é de 39,3%, a maior da região. Programas de capacitação em desburocratização, digitalização e industrialização da construção civil.",
     "highlights": [
       {
         "tone": "pos",
@@ -43,7 +43,7 @@
       "value": 25374,
       "display_value": "25.374",
       "unit": "certificados",
-      "period": "2025-2026"
+      "period": "2023-2026"
     },
     {
       "id": "profissionais",
@@ -51,7 +51,7 @@
       "value": 17848,
       "display_value": "17.848",
       "unit": "profissionais",
-      "period": "2025-2026"
+      "period": "2023-2026"
     },
     {
       "id": "valor",
@@ -67,7 +67,7 @@
       "value": 56,
       "display_value": "56",
       "unit": "profissionais",
-      "period": "2025-2026"
+      "period": "2023-2026"
     },
     {
       "id": "labs",
@@ -128,7 +128,7 @@
   "story_nacional": {
     "escopo": "nacional",
     "headline": "Construa Brasil já capacitou {{kpis[profissionais].display_value}} profissionais em 27 UFs, com {{kpis[certificados].display_value}} certificados emitidos e {{kpis[valor].display_value}} investidos em 5 frentes de capacitação e digitalização.",
-    "lede": "Programa de capacitação, digitalização e desburocratização da construção civil. Reúne cursos EAD (via ENAP) e laboratórios e mentorias BIM em universidades.",
+    "lede": "Programas de capacitação em desburocratização, digitalização e industrialização da construção civil. Reúne cursos EAD (via ENAP) e laboratórios e mentorias BIM em universidades.",
     "highlights": [
       {
         "tone": "pos",

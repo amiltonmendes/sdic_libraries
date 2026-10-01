@@ -3,16 +3,16 @@
   "policy_id": "construa_brasil",
   "nome": "Construa Brasil",
   "sigla": "Construa Brasil",
-  "categoria": "Capacitação, digitalização e desburocratização — construção civil",
+  "categoria": "Capacitação em desburocratização, digitalização e industrialização — construção civil",
   "source": "SDIC/DIBEN/CGDC via ENAP, em parceria com ABDI",
   "reference": "2023-2026",
-  "updated_at": "2026-09-11",
+  "updated_at": "2026-10-01",
   "capa_kpi": {
     "id": "capa",
     "label": "Certificados emitidos",
     "display_value": "10.139",
     "unit": "",
-    "period": "2025-2026",
+    "period": "2023-2026",
     "delta": {
       "dir": "up",
       "label": "40,1% do total nacional · 1ª entre 5 regiões"
@@ -25,7 +25,7 @@
     "uf": null,
     "regra": "lider",
     "headline": "Sudeste lidera o país: 10.139 certificados emitidos, 40,1% do total nacional.",
-    "lede": "É a 1ª colocação entre as 5 macrorregiões participantes do programa. Programa de capacitação, digitalização e desburocratização da construção civil.",
+    "lede": "É a 1ª colocação entre as 5 macrorregiões participantes do programa. Programas de capacitação em desburocratização, digitalização e industrialização da construção civil.",
     "highlights": [
       {
         "tone": "pos",
@@ -40,7 +40,7 @@
       "value": 25374,
       "display_value": "25.374",
       "unit": "certificados",
-      "period": "2025-2026"
+      "period": "2023-2026"
     },
     {
       "id": "profissionais",
@@ -48,7 +48,7 @@
       "value": 17848,
       "display_value": "17.848",
       "unit": "profissionais",
-      "period": "2025-2026"
+      "period": "2023-2026"
     },
     {
       "id": "valor",
@@ -64,7 +64,7 @@
       "value": 56,
       "display_value": "56",
       "unit": "profissionais",
-      "period": "2025-2026"
+      "period": "2023-2026"
     },
     {
       "id": "labs",
@@ -124,7 +124,7 @@
   "story_nacional": {
     "escopo": "nacional",
     "headline": "Construa Brasil já capacitou {{kpis[profissionais].display_value}} profissionais em 27 UFs, com {{kpis[certificados].display_value}} certificados emitidos e {{kpis[valor].display_value}} investidos em 5 frentes de capacitação e digitalização.",
-    "lede": "Programa de capacitação, digitalização e desburocratização da construção civil. Reúne cursos EAD (via ENAP) e laboratórios e mentorias BIM em universidades.",
+    "lede": "Programas de capacitação em desburocratização, digitalização e industrialização da construção civil. Reúne cursos EAD (via ENAP) e laboratórios e mentorias BIM em universidades.",
     "highlights": [
       {
         "tone": "pos",
