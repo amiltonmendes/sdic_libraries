@@ -4,7 +4,7 @@
   "title": "Produção Industrial",
   "source": "PIM-PF + PIA / IBGE",
   "reference": "2026-07-01",
-  "updated_at": "2026-09-10",
+  "updated_at": "2026-10-01",
   "uf": "BRASIL",
   "cobertura_pimpf": true,
   "capa_kpi": {
@@ -27,7 +27,7 @@
       },
       {
         "tone": "neutral",
-        "text": "Índice de produção física em {{kpis[indice].display_value}} pontos, ante {{kpis[indice_brasil].display_value}} do Brasil (base 100 = 2022)."
+        "text": "Índice de produção física em {{kpis[indice].display_value}} pontos (base 100 = 2022)."
       },
       {
         "tone": "pos",
