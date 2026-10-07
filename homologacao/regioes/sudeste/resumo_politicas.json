@@ -2,12 +2,12 @@
   "schema_version": "1.2",
   "n_politicas": 10,
   "recursos": {
-    "value": 328017417685.57,
-    "display_value": "R$ 328,02 bi"
+    "value": 328071783290.12,
+    "display_value": "R$ 328,07 bi"
   },
   "atendimentos": {
-    "value": 88347,
-    "display_value": "88.347"
+    "value": 89004,
+    "display_value": "89.004"
   },
   "top_politicas": [
     {
@@ -26,15 +26,15 @@
       "id": "depreciacao_acelerada",
       "sigla": "DA",
       "nome": "Depreciação Acelerada",
-      "display_value": "R$ 4,21 bi"
+      "display_value": "R$ 4,26 bi"
     }
   ],
   "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
   "story": {
     "escopo": "regiao",
     "regra": "normal",
-    "headline": "Sudeste: R$ 328,02 bi mobilizados em 10 políticas da SDIC.",
-    "lede": "As maiores são P+P (R$ 319,38 bi), REIQ (R$ 4,43 bi) e DA (R$ 4,21 bi). As políticas não monetárias somam 88.347 projetos, empresas e atendimentos. Soma entre políticas de unidades diferentes — ver nota metodológica.",
+    "headline": "Sudeste: R$ 328,07 bi mobilizados em 10 políticas da SDIC.",
+    "lede": "As maiores são P+P (R$ 319,38 bi), REIQ (R$ 4,43 bi) e DA (R$ 4,26 bi). As políticas não monetárias somam 89.004 projetos, empresas e atendimentos. Soma entre políticas de unidades diferentes — ver nota metodológica.",
     "highlights": []
   },
   "regiao": "Sudeste"

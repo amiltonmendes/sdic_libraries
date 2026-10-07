@@ -10,37 +10,37 @@
   "capa_kpi": {
     "id": "capa_da",
     "label": "Investimento incentivado",
-    "display_value": "R$ 2,51 bi",
+    "display_value": "R$ 2,54 bi",
     "unit": "",
     "period": "2024-2026",
     "delta": {
       "dir": "up",
-      "label": "29,0% do total nacional · 1ª entre 23 UFs"
+      "label": "29,1% do total nacional · 1ª entre 23 UFs"
     },
-    "value": 2514299763.28
+    "value": 2544379341.57
   },
   "capa_kpi_secundario": {
     "id": "capa_da_bf",
     "label": "Benefício fiscal",
-    "display_value": "R$ 854,9 mi",
+    "display_value": "R$ 865,1 mi",
     "unit": "",
     "period": "2024-2026",
-    "value": 854861919.52
+    "value": 865088976.13
   },
   "story": {
     "escopo": "uf",
     "uf": "SP",
     "regra": "lider",
-    "headline": "São Paulo lidera o país: R$ 2,51 bi, 29,0% do total nacional.",
-    "lede": "São Paulo ocupa a 1ª posição entre as 23 UFs participantes do programa e responde por 29,0% do programa no país. Dentro do Sudeste, que soma R$ 4,21 bi, a participação de São Paulo é de 59,8%, a maior da região. Programa de depreciação acelerada — incentivo à renovação do parque de máquinas e equipamentos (âmbito do acordo Mercosul–UE).",
+    "headline": "São Paulo lidera o país: R$ 2,54 bi, 29,1% do total nacional.",
+    "lede": "São Paulo ocupa a 1ª posição entre as 23 UFs participantes do programa e responde por 29,1% do programa no país. Dentro do Sudeste, que soma R$ 4,26 bi, a participação de São Paulo é de 59,7%, a maior da região. Programa de depreciação acelerada — incentivo à renovação do parque de máquinas e equipamentos (âmbito do acordo Mercosul–UE).",
     "highlights": [
       {
         "tone": "pos",
-        "text": "1ª posição nacional entre as 23 UFs participantes do programa, com 29,0% do total."
+        "text": "1ª posição nacional entre as 23 UFs participantes do programa, com 29,1% do total."
       },
       {
         "tone": "pos",
-        "text": "59,8% de tudo que o Sudeste registra no programa — maior participação da região."
+        "text": "59,7% de tudo que o Sudeste registra no programa — maior participação da região."
       }
     ]
   },
@@ -48,32 +48,32 @@
     {
       "id": "capex",
       "label": "Investimento incentivado",
-      "value": 8675450824.36,
-      "display_value": "R$ 8,68 bi",
+      "value": 8754775701.2,
+      "display_value": "R$ 8,75 bi",
       "unit": "",
       "period": "2024-2026"
     },
     {
       "id": "beneficio",
       "label": "Benefício fiscal",
-      "value": 2949653280.28,
-      "display_value": "R$ 2,95 bi",
+      "value": 2976623738.41,
+      "display_value": "R$ 2,98 bi",
       "unit": "",
       "period": "2024-2026"
     },
     {
       "id": "pedidos",
       "label": "Pedidos deferidos",
-      "value": 7284,
-      "display_value": "7.284",
+      "value": 7376,
+      "display_value": "7.376",
       "unit": "pedidos",
       "period": "2024-2026"
     },
     {
       "id": "empresas",
       "label": "Empresas beneficiadas",
-      "value": 751,
-      "display_value": "751",
+      "value": 754,
+      "display_value": "754",
       "unit": "empresas",
       "period": "2024-2026"
     }
@@ -93,23 +93,23 @@
         },
         {
           "name": "Fabricação de Produtos Alimentícios",
-          "value": 1010914242.46,
-          "display_value": "R$ 1,01 bi"
+          "value": 1036996087.22,
+          "display_value": "R$ 1,04 bi"
         },
         {
           "name": "Fabricação de produtos de borracha e de material plástico",
-          "value": 715951249.68,
-          "display_value": "R$ 716,0 mi"
-        },
-        {
-          "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
-          "value": 622228232.5,
-          "display_value": "R$ 622,2 mi"
+          "value": 732285633.13,
+          "display_value": "R$ 732,3 mi"
         },
         {
           "name": "Fabricação de biocombustíveis",
-          "value": 618573937.06,
-          "display_value": "R$ 618,6 mi"
+          "value": 622713216.09,
+          "display_value": "R$ 622,7 mi"
+        },
+        {
+          "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
+          "value": 622448009.85,
+          "display_value": "R$ 622,4 mi"
         }
       ]
     }
@@ -137,7 +137,7 @@
             },
             {
               "t": 2026,
-              "v": 1.274
+              "v": 1.354
             }
           ]
         }
@@ -161,54 +161,54 @@
           "name": "Transportes Terrestre",
           "value": 1117513789.43,
           "display_value": "R$ 1,12 bi",
-          "share": 12.9
+          "share": 12.8
         },
         {
           "name": "Fabricação de Produtos Alimentícios",
-          "value": 1010914242.46,
-          "display_value": "R$ 1,01 bi",
-          "share": 11.7
+          "value": 1036996087.22,
+          "display_value": "R$ 1,04 bi",
+          "share": 11.8
         },
         {
           "name": "Fabricação de produtos de borracha e de material plástico",
-          "value": 715951249.68,
-          "display_value": "R$ 716,0 mi",
-          "share": 8.3
-        },
-        {
-          "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
-          "value": 622228232.5,
-          "display_value": "R$ 622,2 mi",
-          "share": 7.2
+          "value": 732285633.13,
+          "display_value": "R$ 732,3 mi",
+          "share": 8.4
         },
         {
           "name": "Fabricação de biocombustíveis",
-          "value": 618573937.06,
-          "display_value": "R$ 618,6 mi",
+          "value": 622713216.09,
+          "display_value": "R$ 622,7 mi",
+          "share": 7.1
+        },
+        {
+          "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
+          "value": 622448009.85,
+          "display_value": "R$ 622,4 mi",
           "share": 7.1
         },
         {
           "name": "Fabricação de máquinas, aparelhos e materiais elétricos",
-          "value": 615809421.51,
-          "display_value": "R$ 615,8 mi",
+          "value": 617232835.26,
+          "display_value": "R$ 617,2 mi",
           "share": 7.1
         },
         {
           "name": "Fabricação de máquinas e equipamentos",
-          "value": 556430973.81,
-          "display_value": "R$ 556,4 mi",
+          "value": 558830586.25,
+          "display_value": "R$ 558,8 mi",
           "share": 6.4
         },
         {
           "name": "Fabricação de Produtos Têxteis",
           "value": 483396604.29,
           "display_value": "R$ 483,4 mi",
-          "share": 5.6
+          "share": 5.5
         },
         {
           "name": "Demais setores",
-          "value": 2934632373.62,
-          "display_value": "R$ 2,93 bi",
+          "value": 2963358939.68,
+          "display_value": "R$ 2,96 bi",
           "share": 33.8
         }
       ]
@@ -226,7 +226,7 @@
           "ibge": "3538006",
           "value": 170548734.77,
           "display_value": "R$ 170,5 mi",
-          "share": 2.0
+          "share": 1.9
         },
         {
           "uf": "SP",
@@ -248,8 +248,8 @@
           "uf": "SP",
           "municipio": "São Paulo",
           "ibge": "3550308",
-          "value": 107852419.39,
-          "display_value": "R$ 107,9 mi",
+          "value": 108888219.39,
+          "display_value": "R$ 108,9 mi",
           "share": 1.2
         },
         {
@@ -266,7 +266,7 @@
           "ibge": "3513801",
           "value": 82721706.55999999,
           "display_value": "R$ 82,7 mi",
-          "share": 1.0
+          "share": 0.9
         },
         {
           "uf": "SP",
@@ -296,7 +296,7 @@
           "uf": "SP",
           "municipio": "Jaguariúna",
           "ibge": "3524709",
-          "value": 59330601.779999994,
+          "value": 59330601.78,
           "display_value": "R$ 59,3 mi",
           "share": 0.7
         },
@@ -304,9 +304,9 @@
           "uf": "SP",
           "municipio": "Itatiba",
           "ibge": "3523404",
-          "value": 56363971.22,
-          "display_value": "R$ 56,4 mi",
-          "share": 0.6
+          "value": 58099651.48,
+          "display_value": "R$ 58,1 mi",
+          "share": 0.7
         },
         {
           "uf": "SP",
@@ -360,8 +360,8 @@
           "uf": "SP",
           "municipio": "São Bernardo do Campo",
           "ibge": "3548708",
-          "value": 39596178.120000005,
-          "display_value": "R$ 39,6 mi",
+          "value": 39819505.78,
+          "display_value": "R$ 39,8 mi",
           "share": 0.5
         },
         {
@@ -370,7 +370,7 @@
           "ibge": "3537404",
           "value": 39187669.57,
           "display_value": "R$ 39,2 mi",
-          "share": 0.5
+          "share": 0.4
         },
         {
           "uf": "SP",
@@ -422,6 +422,14 @@
         },
         {
           "uf": "SP",
+          "municipio": "Itapuí",
+          "ibge": "3522901",
+          "value": 27627330.14,
+          "display_value": "R$ 27,6 mi",
+          "share": 0.3
+        },
+        {
+          "uf": "SP",
           "municipio": "São Paulo",
           "ibge": "3550308",
           "value": 26578234.63,
@@ -448,7 +456,7 @@
           "uf": "SP",
           "municipio": "Campinas",
           "ibge": "3509502",
-          "value": 24221290.97,
+          "value": 24221290.970000003,
           "display_value": "R$ 24,2 mi",
           "share": 0.3
         },
@@ -520,7 +528,7 @@
           "uf": "SP",
           "municipio": "Sumaré",
           "ibge": "3552403",
-          "value": 16533197.05,
+          "value": 16533197.049999999,
           "display_value": "R$ 16,5 mi",
           "share": 0.2
         },
@@ -536,7 +544,7 @@
           "uf": "SP",
           "municipio": "Taboão da Serra",
           "ibge": "3552809",
-          "value": 15986194.5,
+          "value": 15995976.33,
           "display_value": "R$ 16,0 mi",
           "share": 0.2
         },
@@ -576,7 +584,7 @@
           "uf": "SP",
           "municipio": "Osasco",
           "ibge": "3534401",
-          "value": 13691968.709999999,
+          "value": 13691968.71,
           "display_value": "R$ 13,7 mi",
           "share": 0.2
         },
@@ -654,6 +662,14 @@
         },
         {
           "uf": "SP",
+          "municipio": "Arujá",
+          "ibge": "3503901",
+          "value": 9805072.26,
+          "display_value": "R$ 9,8 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
           "municipio": "Martinópolis",
           "ibge": "3529203",
           "value": 9299529.63,
@@ -710,9 +726,9 @@
         },
         {
           "uf": "SP",
-          "municipio": "Arujá",
-          "ibge": "3503901",
-          "value": 7936633.15,
+          "municipio": "Limeira",
+          "ibge": "3526902",
+          "value": 7885776.89,
           "display_value": "R$ 7,9 mi",
           "share": 0.1
         },
@@ -730,14 +746,6 @@
           "ibge": "3506300",
           "value": 7779103.53,
           "display_value": "R$ 7,8 mi",
-          "share": 0.1
-        },
-        {
-          "uf": "SP",
-          "municipio": "Limeira",
-          "ibge": "3526902",
-          "value": 7719438.77,
-          "display_value": "R$ 7,7 mi",
           "share": 0.1
         },
         {
@@ -768,7 +776,7 @@
           "uf": "SP",
           "municipio": "Cotia",
           "ibge": "3513009",
-          "value": 7249680.81,
+          "value": 7249680.8100000005,
           "display_value": "R$ 7,2 mi",
           "share": 0.1
         },
@@ -785,6 +793,14 @@
           "municipio": "Mauá",
           "ibge": "3529401",
           "value": 7030569.07,
+          "display_value": "R$ 7,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "SP",
+          "municipio": "MOGI-GUACU",
+          "ibge": null,
+          "value": 7029789.29,
           "display_value": "R$ 7,0 mi",
           "share": 0.1
         },
@@ -816,7 +832,7 @@
           "uf": "SP",
           "municipio": "Votorantim",
           "ibge": "3557006",
-          "value": 6559708.3,
+          "value": 6559708.299999999,
           "display_value": "R$ 6,6 mi",
           "share": 0.1
         },
@@ -842,14 +858,6 @@
           "ibge": "3556206",
           "value": 6165924.34,
           "display_value": "R$ 6,2 mi",
-          "share": 0.1
-        },
-        {
-          "uf": "SP",
-          "municipio": "Itapuí",
-          "ibge": "3522901",
-          "value": 5900000.0,
-          "display_value": "R$ 5,9 mi",
           "share": 0.1
         },
         {
@@ -962,14 +970,6 @@
           "ibge": "3551702",
           "value": 4054886.25,
           "display_value": "R$ 4,1 mi",
-          "share": 0.0
-        },
-        {
-          "uf": "SP",
-          "municipio": "MOGI-GUACU",
-          "ibge": null,
-          "value": 3936685.47,
-          "display_value": "R$ 3,9 mi",
           "share": 0.0
         },
         {
@@ -1662,6 +1662,14 @@
         },
         {
           "uf": "SP",
+          "municipio": "Campo Limpo Paulista",
+          "ibge": "3509601",
+          "value": 219777.35,
+          "display_value": "R$ 219.777",
+          "share": 0.0
+        },
+        {
+          "uf": "SP",
           "municipio": "Águas de Lindóia",
           "ibge": "3500501",
           "value": 197070.1,
@@ -1880,11 +1888,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "7.284 pedidos deferidos, de 751 empresas."
+        "text": "7.376 pedidos deferidos, de 754 empresas."
       },
       {
         "tone": "neutral",
-        "text": "São Paulo concentra 29,0% do investimento nacional."
+        "text": "São Paulo concentra 29,1% do investimento nacional."
       },
       {
         "tone": "neutral",

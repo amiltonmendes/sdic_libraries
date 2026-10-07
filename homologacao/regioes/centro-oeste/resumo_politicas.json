@@ -2,12 +2,12 @@
   "schema_version": "1.2",
   "n_politicas": 8,
   "recursos": {
-    "value": 71241139395.11,
-    "display_value": "R$ 71,24 bi"
+    "value": 71245879941.34,
+    "display_value": "R$ 71,25 bi"
   },
   "atendimentos": {
-    "value": 26120,
-    "display_value": "26.120"
+    "value": 26295,
+    "display_value": "26.295"
   },
   "top_politicas": [
     {
@@ -20,15 +20,15 @@
       "id": "depreciacao_acelerada",
       "sigla": "DA",
       "nome": "Depreciação Acelerada",
-      "display_value": "R$ 917,4 mi"
+      "display_value": "R$ 922,1 mi"
     }
   ],
   "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
   "story": {
     "escopo": "regiao",
     "regra": "normal",
-    "headline": "Centro-Oeste: R$ 71,24 bi mobilizados em 8 políticas da SDIC.",
-    "lede": "As maiores são P+P (R$ 70,32 bi) e DA (R$ 917,4 mi). As políticas não monetárias somam 26.120 projetos, empresas e atendimentos. Soma entre políticas de unidades diferentes — ver nota metodológica.",
+    "headline": "Centro-Oeste: R$ 71,25 bi mobilizados em 8 políticas da SDIC.",
+    "lede": "As maiores são P+P (R$ 70,32 bi) e DA (R$ 922,1 mi). As políticas não monetárias somam 26.295 projetos, empresas e atendimentos. Soma entre políticas de unidades diferentes — ver nota metodológica.",
     "highlights": []
   },
   "regiao": "Centro-Oeste"

@@ -10,21 +10,21 @@
   "capa_kpi": {
     "id": "capa",
     "label": "Certificados emitidos",
-    "display_value": "472",
+    "display_value": "505",
     "unit": "",
     "period": "2023-2026",
     "delta": {
       "dir": "flat",
       "label": "1,9% do total nacional · 15ª entre 27 UFs"
     },
-    "value": 472
+    "value": 505
   },
   "story": {
     "escopo": "uf",
     "uf": "AM",
     "regra": "meio",
-    "headline": "472 certificados emitidos no Amazonas — 1,9% do total nacional, 15ª posição entre as 27 UFs participantes do programa.",
-    "lede": "Amazonas ocupa a 15ª posição entre as 27 UFs participantes do programa e responde por 1,9% do programa no país. Dentro do Norte, que soma 1.934 certificados emitidos, a participação do Amazonas é de 24,4%. Programas de capacitação em desburocratização, digitalização e industrialização da construção civil.",
+    "headline": "505 certificados emitidos no Amazonas — 1,9% do total nacional, 15ª posição entre as 27 UFs participantes do programa.",
+    "lede": "Amazonas ocupa a 15ª posição entre as 27 UFs participantes do programa e responde por 1,9% do programa no país. Dentro do Norte, que soma 2.046 certificados emitidos, a participação do Amazonas é de 24,7%. Programas de capacitação em desburocratização, digitalização e industrialização da construção civil.",
     "highlights": [
       {
         "tone": "neutral",
@@ -32,7 +32,7 @@
       },
       {
         "tone": "neutral",
-        "text": "24,4% de tudo que o Norte registra no programa."
+        "text": "24,7% de tudo que o Norte registra no programa."
       }
     ]
   },
@@ -40,16 +40,16 @@
     {
       "id": "certificados",
       "label": "Certificados emitidos (cursos EAD)",
-      "value": 25374,
-      "display_value": "25.374",
+      "value": 26827,
+      "display_value": "26.827",
       "unit": "certificados",
       "period": "2023-2026"
     },
     {
       "id": "profissionais",
       "label": "Profissionais certificados (usuários únicos)",
-      "value": 17848,
-      "display_value": "17.848",
+      "value": 18921,
+      "display_value": "18.921",
       "unit": "profissionais",
       "period": "2023-2026"
     },
@@ -64,8 +64,8 @@
     {
       "id": "estrangeiros",
       "label": "Estrangeiros certificados",
-      "value": 56,
-      "display_value": "56",
+      "value": 62,
+      "display_value": "62",
       "unit": "profissionais",
       "period": "2023-2026"
     },
@@ -96,18 +96,18 @@
       "items": [
         {
           "name": "Desburocratização da Construção Civil",
-          "value": 4537,
-          "display_value": "4.537"
+          "value": 4703,
+          "display_value": "4.703"
         },
         {
           "name": "Digitalização (BIM EAD)",
-          "value": 17884,
-          "display_value": "17.884"
+          "value": 18454,
+          "display_value": "18.454"
         },
         {
           "name": "Construção Industrializada",
-          "value": 2953,
-          "display_value": "2.953"
+          "value": 3670,
+          "display_value": "3.670"
         }
       ]
     }
@@ -118,7 +118,7 @@
   "_nota_metodologica_certificados": "O levantamento do número de \"certificados emitidos\" e de \"usuários capacitados\" é realizado com base nos dados disponibilizados pelo sistema da ENAP.",
   "_nota_definicao_bim": "BIM (Building Information Modelling) ou Modelagem da Informação da Construção é o conjunto integrado de processos e tecnologias que permite criar, utilizar, atualizar e compartilhar, colaborativamente, modelos digitais de uma construção, de forma a servir potencialmente a todos os participantes do empreendimento durante o ciclo de vida da construção (Estratégia BIM BR — Decreto nº 11.888, de 22/01/2024). O uso do BIM possibilita \"construir virtualmente\" e realizar diversos tipos de análises e simulações, antecipando eventuais problemas que não eram possíveis de serem identificados no método tradicional de elaboração de projetos. Definição conforme Plano de Trabalho da Estratégia BIM BR.",
   "competencia": "2026S2",
-  "data_aceitacao": "2026-09-11",
+  "data_aceitacao": "2026-10-07",
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -132,15 +132,15 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "25.374 certificados emitidos nas 3 modalidades de curso EAD, presentes em todas as 27 UFs."
+        "text": "26.827 certificados emitidos nas 3 modalidades de curso EAD, presentes em todas as 27 UFs."
       },
       {
         "tone": "neutral",
-        "text": "17.848 profissionais certificados (usuários únicos — uma pessoa pode ter mais de 1 certificado)."
+        "text": "18.921 profissionais certificados (usuários únicos — uma pessoa pode ter mais de 1 certificado)."
       },
       {
         "tone": "pos",
-        "text": "Alcance Internacional com 56 usuários estrangeiros atendidos."
+        "text": "Alcance Internacional com 62 usuários estrangeiros atendidos."
       },
       {
         "tone": "neutral",

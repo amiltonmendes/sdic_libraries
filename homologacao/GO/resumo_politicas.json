@@ -2,12 +2,12 @@
   "schema_version": "1.2",
   "n_politicas": 7,
   "recursos": {
-    "value": 25604429666.21,
-    "display_value": "R$ 25,60 bi"
+    "value": 25608705902.02,
+    "display_value": "R$ 25,61 bi"
   },
   "atendimentos": {
-    "value": 10815,
-    "display_value": "10.815"
+    "value": 10857,
+    "display_value": "10.857"
   },
   "top_politicas": [
     {
@@ -20,7 +20,7 @@
       "id": "depreciacao_acelerada",
       "sigla": "DA",
       "nome": "Depreciação Acelerada",
-      "display_value": "R$ 352,6 mi"
+      "display_value": "R$ 356,9 mi"
     }
   ],
   "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
@@ -37,8 +37,8 @@
     "escopo": "uf",
     "uf": "GO",
     "regra": "com_recursos",
-    "headline": "Goiás soma R$ 25,60 bi em 7 políticas da SDIC com dado próprio do estado.",
-    "lede": "Goiás é o 9º do país em recursos mobilizados, com 3,6% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 25,25 bi) e DA (R$ 352,6 mi). As políticas não monetárias somam 10.815 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "headline": "Goiás soma R$ 25,61 bi em 7 políticas da SDIC com dado próprio do estado.",
+    "lede": "Goiás é o 9º do país em recursos mobilizados, com 3,6% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 25,25 bi) e DA (R$ 356,9 mi). As políticas não monetárias somam 10.857 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
     "highlights": [
       {
         "tone": "pos",

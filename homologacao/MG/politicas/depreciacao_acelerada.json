@@ -10,37 +10,37 @@
   "capa_kpi": {
     "id": "capa_da",
     "label": "Investimento incentivado",
-    "display_value": "R$ 1,55 bi",
+    "display_value": "R$ 1,57 bi",
     "unit": "",
     "period": "2024-2026",
     "delta": {
       "dir": "up",
-      "label": "17,8% do total nacional · 2ª entre 23 UFs"
+      "label": "17,9% do total nacional · 2ª entre 23 UFs"
     },
-    "value": 1546879564.15
+    "value": 1571165590.41
   },
   "capa_kpi_secundario": {
     "id": "capa_da_bf",
     "label": "Benefício fiscal",
-    "display_value": "R$ 525,9 mi",
+    "display_value": "R$ 534,2 mi",
     "unit": "",
     "period": "2024-2026",
-    "value": 525939051.81
+    "value": 534196300.74
   },
   "story": {
     "escopo": "uf",
     "uf": "MG",
     "regra": "top",
-    "headline": "Minas Gerais é o 2º do país: R$ 1,55 bi, 17,8% do total nacional.",
-    "lede": "Minas Gerais ocupa a 2ª posição entre as 23 UFs participantes do programa e responde por 17,8% do programa no país. Dentro do Sudeste, que soma R$ 4,21 bi, a participação de Minas Gerais é de 36,8%. Programa de depreciação acelerada — incentivo à renovação do parque de máquinas e equipamentos (âmbito do acordo Mercosul–UE).",
+    "headline": "Minas Gerais é o 2º do país: R$ 1,57 bi, 17,9% do total nacional.",
+    "lede": "Minas Gerais ocupa a 2ª posição entre as 23 UFs participantes do programa e responde por 17,9% do programa no país. Dentro do Sudeste, que soma R$ 4,26 bi, a participação de Minas Gerais é de 36,9%. Programa de depreciação acelerada — incentivo à renovação do parque de máquinas e equipamentos (âmbito do acordo Mercosul–UE).",
     "highlights": [
       {
         "tone": "pos",
-        "text": "2ª posição nacional entre as 23 UFs participantes do programa, com 17,8% do total."
+        "text": "2ª posição nacional entre as 23 UFs participantes do programa, com 17,9% do total."
       },
       {
         "tone": "neutral",
-        "text": "36,8% de tudo que o Sudeste registra no programa."
+        "text": "36,9% de tudo que o Sudeste registra no programa."
       }
     ]
   },
@@ -48,32 +48,32 @@
     {
       "id": "capex",
       "label": "Investimento incentivado",
-      "value": 8675450824.36,
-      "display_value": "R$ 8,68 bi",
+      "value": 8754775701.2,
+      "display_value": "R$ 8,75 bi",
       "unit": "",
       "period": "2024-2026"
     },
     {
       "id": "beneficio",
       "label": "Benefício fiscal",
-      "value": 2949653280.28,
-      "display_value": "R$ 2,95 bi",
+      "value": 2976623738.41,
+      "display_value": "R$ 2,98 bi",
       "unit": "",
       "period": "2024-2026"
     },
     {
       "id": "pedidos",
       "label": "Pedidos deferidos",
-      "value": 7284,
-      "display_value": "7.284",
+      "value": 7376,
+      "display_value": "7.376",
       "unit": "pedidos",
       "period": "2024-2026"
     },
     {
       "id": "empresas",
       "label": "Empresas beneficiadas",
-      "value": 751,
-      "display_value": "751",
+      "value": 754,
+      "display_value": "754",
       "unit": "empresas",
       "period": "2024-2026"
     }
@@ -93,23 +93,23 @@
         },
         {
           "name": "Fabricação de Produtos Alimentícios",
-          "value": 1010914242.46,
-          "display_value": "R$ 1,01 bi"
+          "value": 1036996087.22,
+          "display_value": "R$ 1,04 bi"
         },
         {
           "name": "Fabricação de produtos de borracha e de material plástico",
-          "value": 715951249.68,
-          "display_value": "R$ 716,0 mi"
-        },
-        {
-          "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
-          "value": 622228232.5,
-          "display_value": "R$ 622,2 mi"
+          "value": 732285633.13,
+          "display_value": "R$ 732,3 mi"
         },
         {
           "name": "Fabricação de biocombustíveis",
-          "value": 618573937.06,
-          "display_value": "R$ 618,6 mi"
+          "value": 622713216.09,
+          "display_value": "R$ 622,7 mi"
+        },
+        {
+          "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
+          "value": 622448009.85,
+          "display_value": "R$ 622,4 mi"
         }
       ]
     }
@@ -137,7 +137,7 @@
             },
             {
               "t": 2026,
-              "v": 1.274
+              "v": 1.354
             }
           ]
         }
@@ -161,54 +161,54 @@
           "name": "Transportes Terrestre",
           "value": 1117513789.43,
           "display_value": "R$ 1,12 bi",
-          "share": 12.9
+          "share": 12.8
         },
         {
           "name": "Fabricação de Produtos Alimentícios",
-          "value": 1010914242.46,
-          "display_value": "R$ 1,01 bi",
-          "share": 11.7
+          "value": 1036996087.22,
+          "display_value": "R$ 1,04 bi",
+          "share": 11.8
         },
         {
           "name": "Fabricação de produtos de borracha e de material plástico",
-          "value": 715951249.68,
-          "display_value": "R$ 716,0 mi",
-          "share": 8.3
-        },
-        {
-          "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
-          "value": 622228232.5,
-          "display_value": "R$ 622,2 mi",
-          "share": 7.2
+          "value": 732285633.13,
+          "display_value": "R$ 732,3 mi",
+          "share": 8.4
         },
         {
           "name": "Fabricação de biocombustíveis",
-          "value": 618573937.06,
-          "display_value": "R$ 618,6 mi",
+          "value": 622713216.09,
+          "display_value": "R$ 622,7 mi",
+          "share": 7.1
+        },
+        {
+          "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
+          "value": 622448009.85,
+          "display_value": "R$ 622,4 mi",
           "share": 7.1
         },
         {
           "name": "Fabricação de máquinas, aparelhos e materiais elétricos",
-          "value": 615809421.51,
-          "display_value": "R$ 615,8 mi",
+          "value": 617232835.26,
+          "display_value": "R$ 617,2 mi",
           "share": 7.1
         },
         {
           "name": "Fabricação de máquinas e equipamentos",
-          "value": 556430973.81,
-          "display_value": "R$ 556,4 mi",
+          "value": 558830586.25,
+          "display_value": "R$ 558,8 mi",
           "share": 6.4
         },
         {
           "name": "Fabricação de Produtos Têxteis",
           "value": 483396604.29,
           "display_value": "R$ 483,4 mi",
-          "share": 5.6
+          "share": 5.5
         },
         {
           "name": "Demais setores",
-          "value": 2934632373.62,
-          "display_value": "R$ 2,93 bi",
+          "value": 2963358939.68,
+          "display_value": "R$ 2,96 bi",
           "share": 33.8
         }
       ]
@@ -226,7 +226,7 @@
           "ibge": "3136702",
           "value": 459464736.93,
           "display_value": "R$ 459,5 mi",
-          "share": 5.3
+          "share": 5.2
         },
         {
           "uf": "MG",
@@ -246,18 +246,18 @@
         },
         {
           "uf": "MG",
+          "municipio": "Três Pontas",
+          "ibge": "3169406",
+          "value": 92264355.35,
+          "display_value": "R$ 92,3 mi",
+          "share": 1.1
+        },
+        {
+          "uf": "MG",
           "municipio": "Betim",
           "ibge": "3106705",
           "value": 81583063.05,
           "display_value": "R$ 81,6 mi",
-          "share": 0.9
-        },
-        {
-          "uf": "MG",
-          "municipio": "Três Pontas",
-          "ibge": "3169406",
-          "value": 75929971.9,
-          "display_value": "R$ 75,9 mi",
           "share": 0.9
         },
         {
@@ -320,8 +320,8 @@
           "uf": "MG",
           "municipio": "Coromandel",
           "ibge": "3119302",
-          "value": 16310297.75,
-          "display_value": "R$ 16,3 mi",
+          "value": 20312950.75,
+          "display_value": "R$ 20,3 mi",
           "share": 0.2
         },
         {
@@ -414,6 +414,14 @@
         },
         {
           "uf": "MG",
+          "municipio": "Uberlândia",
+          "ibge": "3170206",
+          "value": 5987290.85,
+          "display_value": "R$ 6,0 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
           "municipio": "Governador Valadares",
           "ibge": "3127701",
           "value": 5933372.0,
@@ -430,19 +438,19 @@
         },
         {
           "uf": "MG",
+          "municipio": "Planura",
+          "ibge": "3151602",
+          "value": 4733340.32,
+          "display_value": "R$ 4,7 mi",
+          "share": 0.1
+        },
+        {
+          "uf": "MG",
           "municipio": "Rio Pomba",
           "ibge": "3155801",
           "value": 4576045.0,
           "display_value": "R$ 4,6 mi",
           "share": 0.1
-        },
-        {
-          "uf": "MG",
-          "municipio": "Uberlândia",
-          "ibge": "3170206",
-          "value": 4096894.31,
-          "display_value": "R$ 4,1 mi",
-          "share": 0.0
         },
         {
           "uf": "MG",
@@ -454,18 +462,10 @@
         },
         {
           "uf": "MG",
-          "municipio": "Planura",
-          "ibge": "3151602",
-          "value": 3309926.57,
-          "display_value": "R$ 3,3 mi",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
           "municipio": "Itajubá",
           "ibge": "3132404",
-          "value": 3273160.36,
-          "display_value": "R$ 3,3 mi",
+          "value": 3589800.46,
+          "display_value": "R$ 3,6 mi",
           "share": 0.0
         },
         {
@@ -638,6 +638,14 @@
         },
         {
           "uf": "MG",
+          "municipio": "Nova Ponte",
+          "ibge": "3145000",
+          "value": 316314.03,
+          "display_value": "R$ 316.314",
+          "share": 0.0
+        },
+        {
+          "uf": "MG",
           "municipio": "Lagoa Formosa",
           "ibge": "3137502",
           "value": 313013.67,
@@ -646,18 +654,18 @@
         },
         {
           "uf": "MG",
-          "municipio": "Lavras",
-          "ibge": "3138203",
-          "value": 288552.33999999997,
-          "display_value": "R$ 288.552",
+          "municipio": "Bom Despacho",
+          "ibge": "3107406",
+          "value": 290693.62,
+          "display_value": "R$ 290.694",
           "share": 0.0
         },
         {
           "uf": "MG",
-          "municipio": "Bom Despacho",
-          "ibge": "3107406",
-          "value": 236886.3,
-          "display_value": "R$ 236.886",
+          "municipio": "Lavras",
+          "ibge": "3138203",
+          "value": 288552.33999999997,
+          "display_value": "R$ 288.552",
           "share": 0.0
         },
         {
@@ -698,14 +706,6 @@
           "ibge": "3156908",
           "value": 67976.09,
           "display_value": "R$ 67.976",
-          "share": 0.0
-        },
-        {
-          "uf": "MG",
-          "municipio": "Nova Ponte",
-          "ibge": "3145000",
-          "value": 51581.93000000001,
-          "display_value": "R$ 51.582",
           "share": 0.0
         },
         {
@@ -792,11 +792,11 @@
     "highlights": [
       {
         "tone": "pos",
-        "text": "7.284 pedidos deferidos, de 751 empresas."
+        "text": "7.376 pedidos deferidos, de 754 empresas."
       },
       {
         "tone": "neutral",
-        "text": "São Paulo concentra 29,0% do investimento nacional."
+        "text": "São Paulo concentra 29,1% do investimento nacional."
       },
       {
         "tone": "neutral",
