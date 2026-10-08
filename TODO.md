@@ -55,7 +55,7 @@ mas afeta a cobertura de produtos de alguns agrupamentos.**
      PESCADOS (1: `"0307490"` — o código real é `"03074900"`, zero **depois**, não antes; a
      heurística de `LPAD` à esquerda não cobre esse caso), Produtos de Higiene Pessoal e Cosméticos
      (1: `"42021"`), "Regra de Tributação do Mercosul" (1: `"440714"`, SH6 que não existe em
-     `ncm-sh`). Continuam sendo, na maioria, códigos que não existem em `ncm`/`ncm-sh` sob nenhuma
+     `ncm-sh`, tabela antiga; desde 08/10/2026 as visões usam `ncm_sh`). Continuam sendo, na maioria, códigos que não existem em `ncm`/`ncm_sh` sob nenhuma
      leitura plausível — defeito de cadastro, não corrigível por normalização de string. Nenhuma
      alteração adicional foi feita nas views ou na produção além do que já estava documentado.
 2. **sdic_api** (`api/models/comex.py`, `api/schemas/comex_gcloud.py`, `api/cruds/comex_gcloud.py`,

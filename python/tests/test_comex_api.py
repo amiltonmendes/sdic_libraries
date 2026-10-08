@@ -103,6 +103,17 @@ class TestPaginacao:
         assert kwargs["json"]["ano_minimo"] == 2023
 
 
+    def test_lista_ncms_vai_como_texto_de_8_digitos(self, cliente):
+        # CO_NCM é STRING no BigQuery desde 08/10/2026: número no corpo dava 500 na sdic_api 2.0.
+        pagina_1 = _mock_response({"count": 0, "items": []})
+
+        with patch.object(cliente.session, "post", return_value=pagina_1) as mock_post:
+            cliente.get_exportacao_ncm_nacional_mensal(ano_minimo=2026, lista_ncms=[4032000, "09011110", " 1011010 "])
+
+        _, kwargs = mock_post.call_args
+        assert kwargs["json"]["lista_ncms"] == ["04032000", "09011110", "01011010"]
+
+
 class TestErros:
     def test_erro_http_vira_comex_api_error(self, cliente):
         with patch.object(cliente.session, "get") as mock_get:

@@ -16,7 +16,7 @@ import inspect
 import logging
 import os
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Union
 
 import pandas as pd
 import requests
@@ -105,7 +105,7 @@ class Comex:
         self.session = requests.Session()
         self.logger = logging.getLogger(__name__)
 
-        version = os.getenv('SDIC_VERSION', '0.5.0')
+        version = os.getenv('SDIC_VERSION', '0.5.1')
         self.session.headers.update({
             'User-Agent': f'sdic-libraries/{version}',
             'Accept': 'application/json',
@@ -288,13 +288,15 @@ class Comex:
         }
 
     def _get_ncm_nacional_mensal(self, endpoint: str, ano_minimo: int = None, mes_maximo: int = None,
-                                  anos: List[int] = None, lista_ncms: List[int] = None,
+                                  anos: List[int] = None, lista_ncms: List[Union[int, str]] = None,
                                   secao: str = None, agregado_ano: bool = False) -> List[Dict[str, Any]]:
         body: Dict[str, Any] = {
             'ano_minimo': ano_minimo or 0,
             'mes_maximo': mes_maximo or 0,
             'anos': anos or [],
-            'lista_ncms': lista_ncms or [],
+            # NCM como texto de 8 dígitos (CO_NCM é STRING no BigQuery desde 08/10/2026);
+            # aceita 4032000 ou "04032000" e funciona com a sdic_api 2.x e 3.x.
+            'lista_ncms': [str(int(str(n).strip())).zfill(8) for n in (lista_ncms or [])],
             'agregado_ano': agregado_ano,
         }
         items = self._fetch_all_paginated_post(endpoint, body, {})
@@ -304,7 +306,7 @@ class Comex:
         return items
 
     def get_exportacao_ncm_nacional_mensal(self, ano_minimo: int = None, mes_maximo: int = None,
-                                            anos: List[int] = None, lista_ncms: List[int] = None,
+                                            anos: List[int] = None, lista_ncms: List[Union[int, str]] = None,
                                             secao: str = None, agregado_ano: bool = False) -> List[Dict[str, Any]]:
         """Exportações nacionais agregadas por NCM (`/exportacao_agregada_ncm`).
 
@@ -318,7 +320,7 @@ class Comex:
         return self._get_ncm_nacional_mensal('/exportacao_agregada_ncm', ano_minimo, mes_maximo, anos, lista_ncms, secao, agregado_ano)
 
     def get_importacao_ncm_nacional_mensal(self, ano_minimo: int = None, mes_maximo: int = None,
-                                            anos: List[int] = None, lista_ncms: List[int] = None,
+                                            anos: List[int] = None, lista_ncms: List[Union[int, str]] = None,
                                             secao: str = None, agregado_ano: bool = False) -> List[Dict[str, Any]]:
         """Importações nacionais agregadas por NCM (`/importacao_agregada_ncm`). Ver `get_exportacao_ncm_nacional_mensal`."""
         return self._get_ncm_nacional_mensal('/importacao_agregada_ncm', ano_minimo, mes_maximo, anos, lista_ncms, secao, agregado_ano)

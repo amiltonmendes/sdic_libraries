@@ -3,6 +3,20 @@
 Formato livre (sem [Keep a Changelog](https://keepachangelog.com) ainda) — o essencial é: o que
 muda pro usuário ao atualizar. Versionamento nas duas linguagens juntas; ver [AGENTS.md](AGENTS.md#versionamento).
 
+## [0.5.1] — 2026-10-08
+
+### Corrigido
+- Comex: `get_exportacao_ncm_nacional_mensal`/`get_importacao_ncm_nacional_mensal` com `lista_ncms`
+  voltaram a funcionar. A carga do ComexStat de 08/10/2026 passou os códigos para texto no BigQuery,
+  e a lista com números dava erro 500 na sdic_api 2.0. Os NCMs agora vão como texto de 8 dígitos
+  (`4032000` → `"04032000"`); continue passando número ou texto, como preferir (Python e R).
+
+### Compatibilidade
+- Funciona com a sdic_api 2.x e 3.x. Os filtros `divisao=` e `bloco=` dependem da **sdic_api 3.0.0**
+  (já em produção), que aceita o código como número ou texto.
+- Nenhuma mudança no esquema dos `DataFrame`/`tibble` devolvidos. A sdic_api 3.0.0 passou a
+  devolver `CodigoNCM` como texto em `/ncms`, mas a biblioteca não usa esse endpoint.
+
 ## [0.5.0] — 2026-09-29
 
 ### Adicionado

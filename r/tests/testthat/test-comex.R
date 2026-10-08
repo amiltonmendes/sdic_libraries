@@ -134,3 +134,19 @@ test_that("erro HTTP vira cli_abort (falha de requisicao tratada)", {
   api <- Comex$new(base_url = "https://sdicapi.teste")
   expect_error(api$get_exportacao_pais_nacional_mensal())
 })
+
+test_that("lista_ncms vai como texto de 8 digitos no corpo do POST", {
+  # CO_NCM e STRING no BigQuery desde 08/10/2026: numero no corpo dava 500 na sdic_api 2.0.
+  registro <- new.env()
+  registro$chamadas <- list()
+  testthat::local_mocked_bindings(
+    req_perform = mock_req_perform(list(mock_response(list(count = 0, items = list()))), registro),
+    .package = "httr2"
+  )
+
+  api <- Comex$new(base_url = "https://sdicapi.teste", api_key = "chave-teste")
+  api$get_exportacao_ncm_nacional_mensal(ano_minimo = 2026, lista_ncms = c(4032000, 9011110))
+
+  corpo <- registro$chamadas[[1]]$body$data
+  expect_equal(unlist(corpo$lista_ncms), c("04032000", "09011110"))
+})

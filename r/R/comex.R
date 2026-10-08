@@ -54,7 +54,7 @@ Comex <- R6::R6Class(
       resolved_api_key <- api_key %||% Sys.getenv("COMEX_API_KEY", "")
       self$api_key <- if (nzchar(resolved_api_key)) resolved_api_key else NULL
 
-      version <- Sys.getenv("SDIC_VERSION", "0.5.0")
+      version <- Sys.getenv("SDIC_VERSION", "0.5.1")
       cli::cli_alert_success(
         "API de Comex inicializada (v{version}) - configuração carregada automaticamente"
       )
@@ -115,7 +115,7 @@ Comex <- R6::R6Class(
       }
       req <- httr2::req_headers(
         req,
-        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.0")),
+        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.1")),
         "Accept" = "application/json",
         "Content-Type" = "application/json"
       )
@@ -151,7 +151,7 @@ Comex <- R6::R6Class(
       }
       req <- httr2::req_headers(
         req,
-        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.0")),
+        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.1")),
         "Accept" = "application/json",
         "Content-Type" = "application/json"
       )
@@ -546,7 +546,9 @@ Comex <- R6::R6Class(
         ano_minimo = ano_minimo %||% 0,
         mes_maximo = mes_maximo %||% 0,
         anos = anos %||% list(),
-        lista_ncms = lista_ncms %||% list(),
+        # NCM como texto de 8 dígitos (CO_NCM é STRING no BigQuery desde 08/10/2026);
+        # aceita 4032000 ou "04032000" e funciona com a sdic_api 2.x e 3.x.
+        lista_ncms = if (is.null(lista_ncms)) list() else as.list(sprintf("%08.0f", as.numeric(lista_ncms))),
         agregado_ano = agregado_ano
       )
       items <- self$.fetch_all_paginated_post(endpoint, body, list())

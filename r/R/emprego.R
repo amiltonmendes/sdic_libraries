@@ -58,7 +58,7 @@ Emprego <- R6::R6Class(
       self$api_key <- api_key %||% Sys.getenv("EMPLOYMENT_API_KEY", "")
       
       # Mostrar mensagem de inicialização
-      version <- Sys.getenv("SDIC_VERSION", "0.5.0")
+      version <- Sys.getenv("SDIC_VERSION", "0.5.1")
       cli::cli_alert_success(
         "API de Emprego inicializada (v{version}) - configuração carregada automaticamente"
       )
@@ -125,7 +125,7 @@ Emprego <- R6::R6Class(
       
       req <- httr2::req_headers(
         req,
-        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.0")),
+        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.1")),
         "Accept" = "application/json",
         "Content-Type" = "application/json"
       )
@@ -354,7 +354,7 @@ Emprego <- R6::R6Class(
       
       req <- httr2::req_headers(
         req,
-        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.0")),
+        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.1")),
         "Accept" = "application/json",
         "Content-Type" = "application/json"
       )
