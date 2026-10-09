@@ -318,5 +318,5 @@ MIT — veja [LICENSE](LICENSE).
 
 ---
 
-**Versão**: 0.5.1 · **Compatibilidade**: Python 3.8+ | R 4.0+ · [AGENTS.md](AGENTS.md) ·
+**Versão**: 0.5.2 · **Compatibilidade**: Python 3.8+ | R 4.0+ · [AGENTS.md](AGENTS.md) ·
 [CATALOGO.md](CATALOGO.md) · [CHANGELOG.md](CHANGELOG.md)

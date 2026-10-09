@@ -22,6 +22,7 @@ import pandas as pd
 import requests
 
 from ...utils.cache import com_cache
+from ...utils.erros import detalhe_api
 
 
 class ComexAPIError(Exception):
@@ -32,6 +33,16 @@ class ComexAPIError(Exception):
 def _get_user_friendly_error_message(error: Exception, status_code: int = None) -> str:
     """Converte erros técnicos em mensagens amigáveis, sem expor URLs/detalhes internos."""
     error_str = str(error).lower()
+    resposta = getattr(error, 'response', None)
+    # `e.response` de um 4xx/5xx é falso em contexto booleano (Response.__bool__ = .ok):
+    # os chamadores passavam status_code=None; obtém aqui da própria resposta.
+    status_code = status_code or getattr(resposta, 'status_code', None)
+
+    # 400/422: a sdic_api explica o que está errado (ex.: formato de data) — repasse.
+    if status_code in (400, 422):
+        detalhe = detalhe_api(resposta)
+        if detalhe:
+            return f"Parâmetros inválidos: {detalhe}"
 
     if any(x in error_str for x in ['connection', 'conexão', 'timeout', 'timed out']):
         return ("Problema de conectividade detectado. "
@@ -105,7 +116,7 @@ class Comex:
         self.session = requests.Session()
         self.logger = logging.getLogger(__name__)
 
-        version = os.getenv('SDIC_VERSION', '0.5.1')
+        version = os.getenv('SDIC_VERSION', '0.5.2')
         self.session.headers.update({
             'User-Agent': f'sdic-libraries/{version}',
             'Accept': 'application/json',

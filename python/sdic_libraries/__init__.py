@@ -16,7 +16,7 @@ from .catalogo import listar_bases
 # `data_access` ainda existe e reexporta `dados`, mas só é carregado (e só emite o
 # DeprecationWarning) quando importado explicitamente — não no import do pacote.
 
-__version__ = "0.5.1"
+__version__ = "0.5.2"
 __author__ = "SDIC Team"
 __email__ = "sdic.dados@mdic.gov.br"
 __license__ = "MIT"

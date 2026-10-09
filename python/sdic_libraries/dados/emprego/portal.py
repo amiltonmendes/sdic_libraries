@@ -85,7 +85,7 @@ class PortalEmprego:
 
         self.session = requests.Session()
         self.logger = logging.getLogger(__name__)
-        version = os.getenv("SDIC_VERSION", "0.5.1")
+        version = os.getenv("SDIC_VERSION", "0.5.2")
         self.session.headers.update({
             "User-Agent": f"sdic-libraries/{version}",
             "Accept": "application/json",

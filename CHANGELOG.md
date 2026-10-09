@@ -3,6 +3,24 @@
 Formato livre (sem [Keep a Changelog](https://keepachangelog.com) ainda) — o essencial é: o que
 muda pro usuário ao atualizar. Versionamento nas duas linguagens juntas; ver [AGENTS.md](AGENTS.md#versionamento).
 
+## [0.5.2] — 2026-10-09
+
+### Corrigido
+- Mensagens de erro: quando a sdic_api recusa um parâmetro (HTTP 400/422), a biblioteca agora mostra
+  a explicação da API em vez de "Erro temporário no serviço". Ex.: `data_minima='2025-01'` →
+  `Parâmetros inválidos: data_minima: '2025-01' inválida; use o formato AAAA-MM-DD (ex.: 2026-08-01 …)`.
+  Em R, a mensagem passa a ser `HTTP 422: <explicação da API>`.
+- Python: o código HTTP do erro se perdia (um `requests.Response` de erro é falso em `if`), e toda
+  falha virava a mensagem genérica. Agora 500 → "em manutenção", 401/403 → autenticação, como
+  pretendido. Erros 5xx continuam sem expor detalhes internos.
+
+### Compatibilidade
+- Nenhuma mudança de função, parâmetro ou coluna. Só o texto das exceções (`EmpregoAPIError`/`ComexAPIError`
+  em Python; o erro de `stop()` em R) muda — código que compara a mensagem exata precisa ser revisto.
+- A sdic_api 3.1.0 (em produção desde 09/10/2026) aceita UF por sigla, nome ou código IBGE em todos os
+  parâmetros de estado (`estado=`, `uf=`, `siglas_uf=`) e responde 422 a datas do CAGED fora do formato
+  `AAAA-MM-DD`; as funções da biblioteca já repassam esses valores sem alteração.
+
 ## [0.5.1] — 2026-10-08
 
 ### Corrigido

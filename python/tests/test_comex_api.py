@@ -121,6 +121,34 @@ class TestErros:
             with pytest.raises(ComexAPIError):
                 cliente.get_exportacao_pais_nacional_mensal()
 
+    @staticmethod
+    def _resposta_real(status_code, corpo):
+        # requests.Response de verdade: um 4xx/5xx é falso em contexto booleano, o que
+        # um MagicMock esconde (era assim que o status_code se perdia antes da 0.5.2).
+        import json
+        resposta = requests.Response()
+        resposta.status_code = status_code
+        resposta._content = json.dumps(corpo).encode()
+        return resposta
+
+    def test_422_repassa_detail_da_api(self, cliente):
+        detalhe = "data_minima: '2025-01' inválida; use o formato AAAA-MM-DD (ex.: 2026-08-01 para agosto/2026)."
+        with patch.object(cliente.session, "get", return_value=self._resposta_real(422, {"detail": detalhe})):
+            with pytest.raises(ComexAPIError, match="AAAA-MM-DD"):
+                cliente.get_exportacao_pais_nacional_mensal()
+
+    def test_422_validacao_fastapi_em_lista(self, cliente):
+        corpo = {"detail": [{"loc": ["query", "estado"], "msg": "Field required", "type": "missing"}]}
+        with patch.object(cliente.session, "get", return_value=self._resposta_real(422, corpo)):
+            with pytest.raises(ComexAPIError, match="estado: Field required"):
+                cliente.get_exportacao_pais_nacional_mensal()
+
+    def test_500_reconhecido_sem_expor_detail(self, cliente):
+        with patch.object(cliente.session, "get", return_value=self._resposta_real(500, {"detail": "SELECT * FROM x"})):
+            with pytest.raises(ComexAPIError, match="manutenção") as exc:
+                cliente.get_exportacao_pais_nacional_mensal()
+        assert "SELECT" not in str(exc.value)
+
     def test_erro_conexao_vira_comex_api_error(self, cliente):
         with patch.object(cliente.session, "get", side_effect=requests.exceptions.ConnectionError("falhou")):
             with pytest.raises(ComexAPIError):

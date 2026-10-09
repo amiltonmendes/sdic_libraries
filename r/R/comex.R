@@ -54,7 +54,7 @@ Comex <- R6::R6Class(
       resolved_api_key <- api_key %||% Sys.getenv("COMEX_API_KEY", "")
       self$api_key <- if (nzchar(resolved_api_key)) resolved_api_key else NULL
 
-      version <- Sys.getenv("SDIC_VERSION", "0.5.1")
+      version <- Sys.getenv("SDIC_VERSION", "0.5.2")
       cli::cli_alert_success(
         "API de Comex inicializada (v{version}) - configuração carregada automaticamente"
       )
@@ -115,7 +115,7 @@ Comex <- R6::R6Class(
       }
       req <- httr2::req_headers(
         req,
-        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.1")),
+        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.2")),
         "Accept" = "application/json",
         "Content-Type" = "application/json"
       )
@@ -151,7 +151,7 @@ Comex <- R6::R6Class(
       }
       req <- httr2::req_headers(
         req,
-        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.1")),
+        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.2")),
         "Accept" = "application/json",
         "Content-Type" = "application/json"
       )

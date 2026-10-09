@@ -55,3 +55,19 @@ test_that("expirado ou corrompido busca de novo; erro não é gravado", {
   expect_error(novo_cliente()$.make_request("/z"))
   expect_length(list.files(pasta_erro), 0)
 })
+
+test_that("4xx traz o detail da sdic_api na mensagem e não é gravado no cache", {
+  pasta <- withr::local_tempdir()
+  withr::local_envvar(SDIC_CACHE_DIR = pasta, SDIC_CACHE_TTL = "60")
+  resposta <- function(status, corpo) function(req, ...) httr2::response(
+    status_code = status, headers = list("Content-Type" = "application/json"),
+    body = charToRaw(as.character(jsonlite::toJSON(corpo, auto_unbox = TRUE))))
+  testthat::local_mocked_bindings(.package = "httr2",
+    req_perform = resposta(422, list(detail = "data_minima: '2025-01' inválida; use o formato AAAA-MM-DD")))
+  expect_error(novo_cliente()$.make_request("/saldo"), "HTTP 422: data_minima.*AAAA-MM-DD")
+  expect_length(list.files(pasta), 0)
+
+  testthat::local_mocked_bindings(.package = "httr2", req_perform = resposta(422,
+    list(detail = list(list(loc = list("query", "estado"), msg = "Field required")))))
+  expect_error(novo_cliente()$.make_request("/x"), "estado: Field required")
+})
