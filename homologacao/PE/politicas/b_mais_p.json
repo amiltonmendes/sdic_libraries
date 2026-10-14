@@ -1343,6 +1343,11 @@
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
   "competencia": "2026T3",
   "data_aceitacao": "2026-09-21",
+  "cobertura": "Atendimentos de 2023 a 2026 (SENAI, SEBRAE, EMBRAPII, BNDES e FINEP).",
+  "ultima_referencia": "2026, parcial, sem data de corte informada",
+  "ressalvas": [
+    "2026 é parcial e não deve ser comparado diretamente com anos completos."
+  ],
   "geo": {
     "nivel": "uf",
     "fallback": false,

@@ -21,16 +21,12 @@
   },
   "story": {
     "escopo": "nacional",
-    "headline": "PADIS viabilizou {{kpis[investimento].display_value}} em investimento de P&D no setor de semicondutores entre 2020 e 2025.",
-    "lede": "Incentivo fiscal para empresas de componentes e circuitos eletrônicos, condicionado a investimento em pesquisa e desenvolvimento.",
+    "headline": "O PADIS registra R$ 517,3 mi em investimento acumulado de P&D entre 2020 e 2025.",
+    "lede": "Incentivo fiscal para empresas de componentes e circuitos eletrônicos, condicionado a investimento em pesquisa e desenvolvimento. As séries anuais permitem acompanhar investimento em P&D e crédito financeiro como grandezas distintas.",
     "highlights": [
       {
-        "tone": "pos",
-        "text": "R$ 517,3 mi em investimento de P&D acumulado entre 2020 e 2025."
-      },
-      {
-        "tone": "pos",
-        "text": "Investimento em P&D passou de R$ 68,0 mi em 2024 para R$ 188,3 mi em 2025."
+        "tone": "neutral",
+        "text": "Investimento em P&D de R$ 68,0 mi em 2024 e R$ 188,3 mi em 2025."
       },
       {
         "tone": "neutral",
@@ -38,6 +34,13 @@
       }
     ]
   },
+  "cobertura": "Série anual de 2020 a 2025; dado nacional.",
+  "ultima_referencia": "2025, última observação anual",
+  "ressalvas": [
+    "Valores financeiros nominais, sem correção monetária.",
+    "Investimento em P&D e crédito financeiro não são somáveis.",
+    "Pessoal alocado em P&D não foi informado para 2025; pessoas de anos diferentes não são somadas como pessoas únicas."
+  ],
   "kpis": [
     {
       "id": "investimento",

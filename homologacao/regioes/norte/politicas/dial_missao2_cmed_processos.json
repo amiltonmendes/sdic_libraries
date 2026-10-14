@@ -9,30 +9,38 @@
   "updated_at": "2026-10-13",
   "capa_kpi": {
     "id": "capa",
-    "label": "Processos concluídos e em análise",
-    "value": 197,
-    "display_value": "197 processos",
+    "label": "Processos concluídos",
+    "value": 178,
+    "display_value": "178 processos",
     "unit": "",
-    "period": "2023-2026; 2026 até 02/10",
+    "period": "2023 a 02/10/2026",
     "delta": {
       "dir": "flat",
-      "label": ""
+      "label": "19 em análise"
     }
   },
   "story": {
     "escopo": "nacional",
-    "headline": "Processos CMED relatados pelo MDIC: 197 processos na base recebida.",
-    "lede": "178 processos concluídos e 19 em análise. A série anual detalha somente os concluídos; 2026 até 02/10.",
+    "headline": "O quadro relatado pelo MDIC registra 178 processos CMED concluídos e 19 em análise.",
+    "lede": "Processos da CMED relatados pelo MDIC, por tipo e situação. A série anual cobre só os concluídos, de 2023 a 02/10/2026; os processos em análise não têm ano informado.",
     "highlights": []
   },
   "kpis": [
     {
-      "id": "total",
-      "label": "Processos concluídos e em análise",
-      "value": 197,
-      "display_value": "197",
+      "id": "concluidos",
+      "label": "Processos concluídos",
+      "value": 178,
+      "display_value": "178",
       "unit": "processos",
-      "period": "2023-2026; 2026 até 02/10"
+      "period": "2023 a 02/10/2026"
+    },
+    {
+      "id": "em_analise",
+      "label": "Processos em análise",
+      "value": 19,
+      "display_value": "19",
+      "unit": "processos",
+      "period": "sem data de corte informada"
     }
   ],
   "charts": [
@@ -87,6 +95,34 @@
           "name": "Em análise",
           "value": 19,
           "display_value": "19 processos"
+        }
+      ]
+    },
+    {
+      "id": "por_tipo",
+      "title": "Processos por tipo (concluídos e em análise)",
+      "dimension_label": "Tipo",
+      "unit": "processos",
+      "items": [
+        {
+          "name": "Infração",
+          "value": 156,
+          "display_value": "146 concluídos · 10 em análise"
+        },
+        {
+          "name": "DIP",
+          "value": 21,
+          "display_value": "21 concluídos · 0 em análise"
+        },
+        {
+          "name": "Casos omissos CM",
+          "value": 11,
+          "display_value": "11 concluídos · 0 em análise"
+        },
+        {
+          "name": "Reexames necessários",
+          "value": 9,
+          "display_value": "0 concluídos · 9 em análise"
         }
       ]
     }
@@ -162,6 +198,14 @@
     "summary_rows_not_added_to_annual_series": 3,
     "totals_reconciled": true
   },
+  "cobertura": "Processos concluídos de 2023 a 02/10/2026; processos em análise sem distribuição anual informada.",
+  "ultima_referencia": "Concluídos: 02/10/2026; em análise: sem data de corte informada",
+  "ressalvas": [
+    "O total de 197 processos serve só como contexto; os subtotais por tipo não são observações adicionais.",
+    "Os processos em análise não são atribuídos a 2026.",
+    "Prazo, produtividade ou taxa de conclusão não são calculados: falta o universo administrativo.",
+    "Resoluções e processos são universos distintos e não são somados."
+  ],
   "competencia": "2026S2",
   "data_aceitacao": "2026-10-13",
   "geo": {

@@ -21,11 +21,11 @@
   },
   "story": {
     "escopo": "nacional",
-    "headline": "O PDIL reúne {{kpis[projetos].display_value}} projetos aprovados, apresentados por 23 proponentes.",
-    "lede": "Projetos de desenvolvimento e inovação para ampliar capacidades produtivas e tecnológicas do Complexo Econômico-Industrial da Saúde.",
+    "headline": "O PDIL reúne 54 projetos aprovados, apresentados por 23 proponentes distintos na base.",
+    "lede": "Projetos de desenvolvimento e inovação para ampliar capacidades produtivas e tecnológicas do Complexo Econômico-Industrial da Saúde. Os proponentes dos projetos estão localizados em 8 UFs; São Paulo reúne 16 projetos, Paraná 10 e Paraíba 9.",
     "highlights": [
       {
-        "tone": "pos",
+        "tone": "neutral",
         "text": "Todos os 54 projetos da aba constam como aprovados."
       },
       {
@@ -38,6 +38,13 @@
       }
     ]
   },
+  "cobertura": "54 projetos aprovados em 2025-2026, com localização do proponente em 8 UFs.",
+  "ultima_referencia": "14/01/2026, data da portaria de aprovação mais recente na base",
+  "ressalvas": [
+    "A UF indica a localização do proponente, sem presumir alcance ou execução do projeto.",
+    "Proponentes distintos são as denominações normalizadas da fonte, sem consolidação de identidades."
+  ],
+  "uf_indica": "localizacao",
   "kpis": [
     {
       "id": "projetos",
@@ -85,12 +92,12 @@
           "display_value": "4 projetos"
         },
         {
-          "name": "SENAI CIMATEC",
+          "name": "Fiocruz (presidencia ou vice)",
           "value": 3,
           "display_value": "3 projetos"
         },
         {
-          "name": "Fiocruz (presidencia ou vice)",
+          "name": "SENAI CIMATEC",
           "value": 3,
           "display_value": "3 projetos"
         },
@@ -105,17 +112,17 @@
           "display_value": "2 projetos"
         },
         {
-          "name": "INCT TEC CIS 4.0 - iCEIS/UFPE",
-          "value": 2,
-          "display_value": "2 projetos"
-        },
-        {
           "name": "Hospital das Clínicas da Faculdade de Medicina da Universidade de São Paulo - FMUSP",
           "value": 2,
           "display_value": "2 projetos"
         },
         {
-          "name": "Bio-Manguinhos/Fiocruz",
+          "name": "INCT TEC CIS 4.0 - iCEIS/UFPE",
+          "value": 2,
+          "display_value": "2 projetos"
+        },
+        {
+          "name": "BAHIAFARMA",
           "value": 1,
           "display_value": "1 projetos"
         },
@@ -125,22 +132,12 @@
           "display_value": "1 projetos"
         },
         {
-          "name": "Instituto de Pesquisas Tecnológicas - IPT",
+          "name": "Bio-Manguinhos/Fiocruz",
           "value": 1,
           "display_value": "1 projetos"
         },
         {
-          "name": "BAHIAFARMA",
-          "value": 1,
-          "display_value": "1 projetos"
-        },
-        {
-          "name": "Fiocruz - Ribeirão Preto-SP",
-          "value": 1,
-          "display_value": "1 projetos"
-        },
-        {
-          "name": "Instituto de Pesquisas Energéticas e Nucleares/Comissão Nacional de Energia Nuclear - IPEN/CNEN",
+          "name": "Faculdade de Medicina da Universidade de São Paulo - FMUSP",
           "value": 1,
           "display_value": "1 projetos"
         },
@@ -150,7 +147,7 @@
           "display_value": "1 projetos"
         },
         {
-          "name": "UNIVERSIDADE FEDERAL DE CAMPINA GRANDE - CERTBIO/UFCG",
+          "name": "Fiocruz - Ribeirão Preto-SP",
           "value": 1,
           "display_value": "1 projetos"
         },
@@ -160,7 +157,7 @@
           "display_value": "1 projetos"
         },
         {
-          "name": "Instituto de Pesquisa Eldorado",
+          "name": "Fundação Zerbini",
           "value": 1,
           "display_value": "1 projetos"
         },
@@ -170,46 +167,22 @@
           "display_value": "1 projetos"
         },
         {
-          "name": "Fundação Zerbini",
+          "name": "Instituto de Pesquisa Eldorado",
           "value": 1,
           "display_value": "1 projetos"
         },
         {
-          "name": "Faculdade de Medicina da Universidade de São Paulo - FMUSP",
-          "value": 1,
-          "display_value": "1 projetos"
-        }
-      ]
-    },
-    {
-      "id": "por_portaria",
-      "title": "Projetos por portaria de aprovação",
-      "metric_label": "Projetos",
-      "unit": "projetos",
-      "tone": "neutral",
-      "items": [
-        {
-          "name": "Portaria GM/MS Nº 8.475, 20/10/2025",
-          "value": 29,
-          "display_value": "29 projetos"
-        },
-        {
-          "name": "Portaria GM/MS Nº 7.279, 23/06/2025",
-          "value": 22,
-          "display_value": "22 projetos"
-        },
-        {
-          "name": "Portaria GM/MS Nº 10.154, 14/01/2026",
+          "name": "Instituto de Pesquisas Energéticas e Nucleares/Comissão Nacional de Energia Nuclear - IPEN/CNEN",
           "value": 1,
           "display_value": "1 projetos"
         },
         {
-          "name": "Portaria GM/MS Nº 6.644, 25/02/2025",
+          "name": "Instituto de Pesquisas Tecnológicas - IPT",
           "value": 1,
           "display_value": "1 projetos"
         },
         {
-          "name": "Portaria GM/MS Nº 6.643, 25/02/2025",
+          "name": "UNIVERSIDADE FEDERAL DE CAMPINA GRANDE - CERTBIO/UFCG",
           "value": 1,
           "display_value": "1 projetos"
         }
@@ -217,6 +190,55 @@
     }
   ],
   "charts": [
+    {
+      "id": "projetos_por_uf_proponente",
+      "type": "bars",
+      "title": "Projetos por UF do proponente",
+      "subtitle": "UF do proponente, não do alcance do projeto",
+      "unit": "projetos",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "projetos_por_uf_proponente",
+          "label": "Projetos por UF do proponente",
+          "points": [
+            {
+              "t": "SP",
+              "v": 16
+            },
+            {
+              "t": "PR",
+              "v": 10
+            },
+            {
+              "t": "PB",
+              "v": 9
+            },
+            {
+              "t": "RJ",
+              "v": 6
+            },
+            {
+              "t": "BA",
+              "v": 5
+            },
+            {
+              "t": "MG",
+              "v": 5
+            },
+            {
+              "t": "PE",
+              "v": 2
+            },
+            {
+              "t": "AM",
+              "v": 1
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    },
     {
       "id": "projetos_por_portaria",
       "type": "bars",
@@ -242,11 +264,11 @@
               "v": 1
             },
             {
-              "t": "Portaria GM/MS Nº 6.644, 25/02/2025",
+              "t": "Portaria GM/MS Nº 6.643, 25/02/2025",
               "v": 1
             },
             {
-              "t": "Portaria GM/MS Nº 6.643, 25/02/2025",
+              "t": "Portaria GM/MS Nº 6.644, 25/02/2025",
               "v": 1
             }
           ]

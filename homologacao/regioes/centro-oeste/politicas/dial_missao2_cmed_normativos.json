@@ -9,9 +9,9 @@
   "updated_at": "2026-10-13",
   "capa_kpi": {
     "id": "capa",
-    "label": "Normativos relacionados",
+    "label": "Resoluções relacionadas",
     "value": 4,
-    "display_value": "4 normativos",
+    "display_value": "4 resoluções",
     "unit": "",
     "period": "2025-2026",
     "delta": {
@@ -21,17 +21,17 @@
   },
   "story": {
     "escopo": "nacional",
-    "headline": "Normativos CMED: 4 normativos na base recebida.",
-    "lede": "Atos CMED relacionados em base própria, sem sobreposição com os normativos CGIS da recepção.",
+    "headline": "A base CMED reúne 4 resoluções, publicadas entre 2025 e 2026.",
+    "lede": "Resoluções do Conselho de Ministros da Câmara de Regulação do Mercado de Medicamentos (CMED) relacionadas pela SDIC/DIAL. Não há sobreposição com os normativos CGIS desta recepção.",
     "highlights": []
   },
   "kpis": [
     {
       "id": "total",
-      "label": "Normativos relacionados",
+      "label": "Resoluções relacionadas",
       "value": 4,
       "display_value": "4",
-      "unit": "normativos",
+      "unit": "resoluções",
       "period": "2025-2026"
     }
   ],
@@ -100,6 +100,12 @@
     "overlap_with_cgis_records": 0,
     "related_policy_id": "dial_missao2_normativos_cgis"
   },
+  "cobertura": "Resoluções de 2025-2026.",
+  "ultima_referencia": "28/05/2026, data do ato mais recente",
+  "ressalvas": [
+    "A contagem não é indicador de preços, vendas ou acesso a medicamentos.",
+    "Resoluções e processos são universos distintos e não são somados."
+  ],
   "competencia": "2026S2",
   "data_aceitacao": "2026-10-13",
   "geo": {

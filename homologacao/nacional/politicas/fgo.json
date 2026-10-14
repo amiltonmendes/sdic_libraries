@@ -21,7 +21,7 @@
   },
   "story": {
     "escopo": "nacional",
-    "headline": "FGO impulsionou {{kpis[valor].display_value}} em crédito para quase 5 milhões de mutuários entre 2023 e 2026.",
+    "headline": "O FGO registra {{kpis[valor].display_value}} em crédito com garantia do fundo para quase 5 milhões de mutuários entre 2023 e 2026.",
     "lede": "Fundo Garantidor de Operações, administrado pelo Banco do Brasil, reduz o risco de crédito para bancos, ampliando o acesso a financiamento por MPMEs. Gestão do CPFGMPME.",
     "highlights": [
       {
@@ -143,6 +143,11 @@
   "_nota_fonte_dados": "Série numérica transcrita manualmente de texto livre (ver docstring deste script) — não há coluna estruturada na fonte original.",
   "competencia": "2026S2",
   "data_aceitacao": "2026-09-22",
+  "cobertura": "Operações de 2023 a 31/07/2026; dado nacional.",
+  "ultima_referencia": "31/07/2026, conforme o texto da fonte",
+  "ressalvas": [
+    "Números copiados de texto livre da fonte, sem planilha estruturada."
+  ],
   "geo": {
     "nivel": "nacional",
     "fallback": false

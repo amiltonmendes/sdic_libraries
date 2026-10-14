@@ -9,82 +9,72 @@
   "updated_at": "2026-10-13",
   "capa_kpi": {
     "id": "capa",
-    "label": "Produtos catalogados",
-    "display_value": "2459 produtos",
+    "label": "Registros de produtos classificados",
+    "value": 2459,
+    "display_value": "2.459 registros",
     "unit": "",
     "period": "acumulado",
     "delta": {
-      "dir": "up",
-      "label": "389 empresas"
-    },
-    "value": null
+      "dir": "flat",
+      "label": "2.346 PED · 113 PRODE"
+    }
   },
   "story": {
     "escopo": "nacional",
-    "headline": "A Comissão Mista da Indústria de Defesa (CMID) catalogou 2459 produtos de 389 empresas, entre Produtos de Defesa (PRODE) e Produtos Estratégicos de Defesa (PED).",
-    "lede": "Relação geral de produtos de defesa (PRODE) e produtos estratégicos de defesa (PED) da CMID. Dado o caráter estratégico dos itens, o JSON publica apenas contagens agregadas.",
-    "highlights": [
-      {
-        "tone": "neutral",
-        "text": "2346 Produtos Estratégicos de Defesa (PED) e 113 Produtos de Defesa (PRODE)."
-      },
-      {
-        "tone": "neutral",
-        "text": "389 empresas distintas têm ao menos 1 produto catalogado."
-      }
-    ]
+    "headline": "A base de produtos de defesa reúne 2.459 registros classificados como Produto de Defesa (PRODE) ou Produto Estratégico de Defesa (PED).",
+    "lede": "Relação geral de produtos de defesa da Comissão Mista da Indústria de Defesa (CMID), publicada só em contagens agregadas, dado o caráter estratégico dos itens. São 2.346 registros PED e 113 PRODE.",
+    "highlights": []
   },
+  "cobertura": "Posição cadastral da base recebida.",
+  "ultima_referencia": "Posição cadastral sem data de corte informada",
+  "ressalvas": [
+    "Registros de produtos, sem garantia de unicidade: a fonte não tem identificador estável.",
+    "Empresas e produtos são bases distintas: não há vínculo inferido entre elas.",
+    "Não há série de evolução: a fonte não traz data de classificação."
+  ],
   "kpis": [
     {
       "id": "produtos",
-      "label": "Produtos catalogados",
+      "label": "Registros de produtos classificados",
       "value": 2459,
-      "display_value": "2459",
-      "unit": "produtos",
-      "period": "acumulado"
-    },
-    {
-      "id": "empresas",
-      "label": "Empresas com produto catalogado",
-      "value": 389,
-      "display_value": "389",
-      "unit": "empresas",
+      "display_value": "2.459",
+      "unit": "registros",
       "period": "acumulado"
     },
     {
       "id": "ped",
-      "label": "Produtos Estratégicos de Defesa (PED)",
+      "label": "Produto Estratégico de Defesa (PED)",
       "value": 2346,
-      "display_value": "2346",
-      "unit": "produtos",
+      "display_value": "2.346",
+      "unit": "registros",
       "period": "acumulado"
     },
     {
       "id": "prode",
-      "label": "Produtos de Defesa (PRODE)",
+      "label": "Produto de Defesa (PRODE)",
       "value": 113,
       "display_value": "113",
-      "unit": "produtos",
+      "unit": "registros",
       "period": "acumulado"
     }
   ],
   "ranked_lists": [
     {
       "id": "por_classificacao",
-      "title": "Produtos por classificação",
-      "metric_label": "Produtos",
-      "unit": "produtos",
+      "title": "Registros de produtos por classificação",
+      "metric_label": "Registros",
+      "unit": "registros",
       "tone": "neutral",
       "items": [
         {
           "name": "PED",
           "value": 2346,
-          "display_value": "2346 produtos"
+          "display_value": "2.346 registros"
         },
         {
           "name": "PRODE",
           "value": 113,
-          "display_value": "113 produtos"
+          "display_value": "113 registros"
         }
       ]
     }

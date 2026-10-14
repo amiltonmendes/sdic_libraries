@@ -2,12 +2,12 @@
   "schema_version": "1.2",
   "n_politicas": 30,
   "recursos": {
-    "value": 1654837300000.0,
-    "display_value": "R$ 1,65 tri"
+    "value": 1632340620000.0,
+    "display_value": "R$ 1,63 tri"
   },
   "atendimentos": {
-    "value": 196840,
-    "display_value": "196.840"
+    "value": 198891,
+    "display_value": "198.891"
   },
   "top_politicas": [
     {
@@ -35,47 +35,33 @@
       "display_value": "R$ 143 bi"
     },
     {
-      "id": "dial_missao4_lei_tics",
-      "sigla": "Lei de TICs",
-      "nome": "Lei de Informática (Lei de TICs)",
-      "display_value": "R$ 36,45 bi"
-    },
-    {
       "id": "move_brasil",
       "sigla": "Move Brasil",
       "nome": "Move Brasil",
       "display_value": "R$ 25,63 bi"
+    },
+    {
+      "id": "dial_missao4_lei_tics",
+      "sigla": "Lei de TICs",
+      "nome": "Lei de Informática (Lei de TICs)",
+      "display_value": "R$ 13,95 bi"
     }
   ],
   "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
   "story": {
     "escopo": "nacional",
     "regra": "normal",
-    "headline": "Brasil: R$ 1,65 tri mobilizados em 30 políticas da SDIC.",
-    "lede": "As maiores são P+P (R$ 755,22 bi), Ações DIBEN (R$ 407,02 bi) e FGI (R$ 264 bi). As políticas não monetárias somam 196.840 projetos, empresas e atendimentos. Soma entre políticas de unidades diferentes — ver nota metodológica.",
+    "headline": "Brasil: R$ 1,63 tri mobilizados em 30 políticas da SDIC.",
+    "lede": "As maiores são P+P (R$ 755,22 bi), Ações DIBEN (R$ 407,02 bi) e FGI (R$ 264 bi). As políticas não monetárias somam 198.891 projetos, empresas e atendimentos. Soma entre políticas de unidades diferentes — ver nota metodológica.",
     "highlights": []
   },
   "todas_politicas": [
-    {
-      "id": "acoes_diben",
-      "sigla": "Ações DIBEN",
-      "nome": "Ações DIBEN",
-      "regionalizavel": true,
-      "display_value": "R$ 407,02 bi"
-    },
     {
       "id": "b_mais_p",
       "sigla": "B+P",
       "nome": "Brasil Mais Produtivo",
       "regionalizavel": true,
       "display_value": "149.282 empresas"
-    },
-    {
-      "id": "capacitacao_textil_senai_rn",
-      "sigla": "Capacitação Têxtil RN",
-      "nome": "Capacitação Têxtil — Convênio SENAI-RN",
-      "regionalizavel": true,
-      "display_value": "1.410"
     },
     {
       "id": "construa_brasil",
@@ -92,25 +78,11 @@
       "display_value": "~60 empresas"
     },
     {
-      "id": "construcao_galpoes_industriais",
-      "sigla": "Galpões Industriais",
-      "nome": "Construção de Galpões Industriais",
-      "regionalizavel": true,
-      "display_value": "31 galpões"
-    },
-    {
       "id": "depreciacao_acelerada",
       "sigla": "DA",
       "nome": "Depreciação Acelerada",
       "regionalizavel": true,
       "display_value": "R$ 8,75 bi"
-    },
-    {
-      "id": "naval",
-      "sigla": "Naval",
-      "nome": "Depreciação Acelerada — Indústria Naval",
-      "regionalizavel": false,
-      "display_value": "R$ 2,40 bi"
     },
     {
       "id": "decos_ecommerce_br",
@@ -127,6 +99,62 @@
       "display_value": "185 empresas"
     },
     {
+      "id": "dial_missao2_pdp",
+      "sigla": "PDP Saúde",
+      "nome": "Parcerias para o Desenvolvimento Produtivo — Saúde",
+      "regionalizavel": true,
+      "display_value": "95 registros"
+    },
+    {
+      "id": "dial_missao2_pdil",
+      "sigla": "PDIL",
+      "nome": "Programa de Desenvolvimento e Inovação Local",
+      "regionalizavel": false,
+      "display_value": "54 projetos"
+    },
+    {
+      "id": "dial_missao2_normativos_cgis",
+      "sigla": "Normativos CEIS",
+      "nome": "Marco normativo do Complexo Econômico-Industrial da Saúde",
+      "regionalizavel": false,
+      "display_value": "10 normativos"
+    },
+    {
+      "id": "dial_missao2_cmed_normativos",
+      "sigla": "Norm-CMED",
+      "nome": "Normativos CMED",
+      "regionalizavel": false,
+      "display_value": "4 resoluções"
+    },
+    {
+      "id": "dial_missao2_cmed_processos",
+      "sigla": "Proc-CMED",
+      "nome": "Processos CMED relatados pelo MDIC",
+      "regionalizavel": false,
+      "display_value": "178 processos"
+    },
+    {
+      "id": "dial_missao4_lei_tics",
+      "sigla": "Lei de TICs",
+      "nome": "Lei de Informática (Lei de TICs)",
+      "regionalizavel": false,
+      "display_value": "R$ 13,95 bi"
+    },
+    {
+      "id": "dial_missao4_padis",
+      "sigla": "PADIS",
+      "nome": "PADIS — Semicondutores e Componentes",
+      "regionalizavel": false,
+      "display_value": "R$ 517,3 mi"
+    },
+    {
+      "id": "dial_missao4_ppb",
+      "sigla": "PPB",
+      "nome": "Processo Produtivo Básico",
+      "regionalizavel": false,
+      "display_value": "572 portarias"
+    },
+    {
       "id": "dial_missao6_ed_eed",
       "sigla": "ED/EED",
       "nome": "Empresas Credenciadas — Material de Defesa (ED/EED)",
@@ -134,18 +162,11 @@
       "display_value": "338 empresas"
     },
     {
-      "id": "ex_tarifario_autopecas",
-      "sigla": "Ex-Tarifário Autopeças",
-      "nome": "Ex-Tarifário — Autopeças",
+      "id": "dial_missao6_prode_ped",
+      "sigla": "PRODE/PED",
+      "nome": "Produtos de Defesa e Produtos Estratégicos de Defesa (CMID)",
       "regionalizavel": false,
-      "display_value": "10.556 códigos"
-    },
-    {
-      "id": "ex_tarifario_bk_bit",
-      "sigla": "Ex-Tarifário BK/BIT",
-      "nome": "Ex-Tarifário — Bens de Capital e Bens de Informática/Telecom",
-      "regionalizavel": false,
-      "display_value": "7.418 códigos"
+      "display_value": "2.459 registros"
     },
     {
       "id": "fgi",
@@ -162,18 +183,60 @@
       "display_value": "R$ 143 bi"
     },
     {
-      "id": "dial_missao4_lei_tics",
-      "sigla": "Lei de TICs",
-      "nome": "Lei de Informática (Lei de TICs)",
-      "regionalizavel": false,
-      "display_value": "R$ 36,45 bi"
+      "id": "p_mais_p",
+      "sigla": "P+P",
+      "nome": "Plano Mais Produção",
+      "regionalizavel": true,
+      "display_value": "R$ 755,22 bi"
     },
     {
-      "id": "dial_missao2_normativos_cgis",
-      "sigla": "Normativos CEIS",
-      "nome": "Marco normativo do Complexo Econômico-Industrial da Saúde",
+      "id": "reiq",
+      "sigla": "REIQ",
+      "nome": "REIQ — Regime Especial da Indústria Química",
+      "regionalizavel": true,
+      "display_value": "R$ 5,44 bi"
+    },
+    {
+      "id": "acoes_diben",
+      "sigla": "Ações DIBEN",
+      "nome": "Ações DIBEN",
+      "regionalizavel": true,
+      "display_value": "R$ 407,02 bi"
+    },
+    {
+      "id": "capacitacao_textil_senai_rn",
+      "sigla": "Capacitação Têxtil RN",
+      "nome": "Capacitação Têxtil — Convênio SENAI-RN",
+      "regionalizavel": true,
+      "display_value": "1.410"
+    },
+    {
+      "id": "construcao_galpoes_industriais",
+      "sigla": "Galpões Industriais",
+      "nome": "Construção de Galpões Industriais",
+      "regionalizavel": true,
+      "display_value": "31 galpões"
+    },
+    {
+      "id": "naval",
+      "sigla": "Naval",
+      "nome": "Depreciação Acelerada — Indústria Naval",
       "regionalizavel": false,
-      "display_value": "10 normativos"
+      "display_value": "R$ 2,40 bi"
+    },
+    {
+      "id": "ex_tarifario_autopecas",
+      "sigla": "Ex-Tarifário Autopeças",
+      "nome": "Ex-Tarifário — Autopeças",
+      "regionalizavel": false,
+      "display_value": "10.556 códigos"
+    },
+    {
+      "id": "ex_tarifario_bk_bit",
+      "sigla": "Ex-Tarifário BK/BIT",
+      "nome": "Ex-Tarifário — Bens de Capital e Bens de Informática/Telecom",
+      "regionalizavel": false,
+      "display_value": "7.418 códigos"
     },
     {
       "id": "move_brasil",
@@ -190,74 +253,11 @@
       "display_value": "284 habilitações"
     },
     {
-      "id": "dial_missao2_cmed_normativos",
-      "sigla": "Norm-CMED",
-      "nome": "Normativos CMED",
-      "regionalizavel": false,
-      "display_value": "4 normativos"
-    },
-    {
-      "id": "dial_missao4_padis",
-      "sigla": "PADIS",
-      "nome": "PADIS — Semicondutores e Componentes",
-      "regionalizavel": false,
-      "display_value": "R$ 517,3 mi"
-    },
-    {
-      "id": "dial_missao2_pdp",
-      "sigla": "PDP Saúde",
-      "nome": "Parcerias para o Desenvolvimento Produtivo — Saúde",
-      "regionalizavel": true,
-      "display_value": "95 registros"
-    },
-    {
-      "id": "p_mais_p",
-      "sigla": "P+P",
-      "nome": "Plano Mais Produção",
-      "regionalizavel": true,
-      "display_value": "R$ 755,22 bi"
-    },
-    {
       "id": "padr",
       "sigla": "PADR",
       "nome": "Política Automotiva de Desenvolvimento Regional",
       "regionalizavel": false,
       "display_value": "R$ 6,41 bi"
-    },
-    {
-      "id": "dial_missao4_ppb",
-      "sigla": "PPB",
-      "nome": "Processo Produtivo Básico",
-      "regionalizavel": false,
-      "display_value": "572 portarias"
-    },
-    {
-      "id": "dial_missao2_cmed_processos",
-      "sigla": "Proc-CMED",
-      "nome": "Processos CMED relatados pelo MDIC",
-      "regionalizavel": false,
-      "display_value": "197 processos"
-    },
-    {
-      "id": "dial_missao6_prode_ped",
-      "sigla": "PRODE/PED",
-      "nome": "Produtos de Defesa e Produtos Estratégicos de Defesa (CMID)",
-      "regionalizavel": false,
-      "display_value": "2459 produtos"
-    },
-    {
-      "id": "dial_missao2_pdil",
-      "sigla": "PDIL",
-      "nome": "Programa de Desenvolvimento e Inovação Local",
-      "regionalizavel": false,
-      "display_value": "54 projetos"
-    },
-    {
-      "id": "reiq",
-      "sigla": "REIQ",
-      "nome": "REIQ — Regime Especial da Indústria Química",
-      "regionalizavel": true,
-      "display_value": "R$ 5,44 bi"
     },
     {
       "id": "dial_missao6_tles",

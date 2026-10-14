@@ -21,19 +21,22 @@
   },
   "story": {
     "escopo": "nacional",
-    "headline": "A base reúne {{kpis[normativos].display_value}} normativos relacionados ao Complexo Econômico-Industrial da Saúde.",
-    "lede": "Leis, decretos, resoluções e portarias que estruturam programas, instâncias de governança e regras do complexo da saúde.",
+    "headline": "A base CGIS relaciona 10 normativos do Complexo Econômico-Industrial da Saúde.",
+    "lede": "Leis, decretos e portarias que estruturam programas, instâncias de governança e regras do complexo da saúde. Por categoria: Portarias do Ministério da Saúde (8); Decretos (1); Lei (1). Os atos CMED são apresentados em conjunto próprio.",
     "highlights": [
-      {
-        "tone": "neutral",
-        "text": "Portarias do Ministério da Saúde representam 8 registros."
-      },
       {
         "tone": "neutral",
         "text": "Cada registro inclui súmula e endereço eletrônico."
       }
     ]
   },
+  "cobertura": "Atos relacionados na aba CGIS, publicados entre 2023 e 2026.",
+  "ultima_referencia": "2026, ano mais recente dos atos relacionados",
+  "ressalvas": [
+    "A relação recebida não é um inventário completo de atos vigentes.",
+    "Os destaques se apoiam nas súmulas da fonte, sem hierarquia de relevância entre os atos.",
+    "Os atos CMED são distintos dos atos CGIS nesta recepção e não entram nesta contagem."
+  ],
   "kpis": [
     {
       "id": "normativos",
@@ -58,12 +61,12 @@
           "display_value": "8 normativos"
         },
         {
-          "name": "Lei",
+          "name": "Decretos",
           "value": 1,
           "display_value": "1 normativos"
         },
         {
-          "name": "Decretos",
+          "name": "Lei",
           "value": 1,
           "display_value": "1 normativos"
         }

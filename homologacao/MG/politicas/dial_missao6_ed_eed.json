@@ -22,20 +22,19 @@
   "story": {
     "escopo": "uf",
     "uf": "MG",
-    "regra": "meio",
-    "headline": "24 empresas credenciadas em Minas Gerais — 7,1% do total nacional, 4ª posição entre as 16 UFs participantes do programa.",
-    "lede": "Minas Gerais ocupa a 4ª posição entre as 16 UFs participantes do programa e responde por 7,1% do programa no país. Dentro do Sudeste, que soma 223 empresas credenciadas, a participação de Minas Gerais é de 10,8%. Credenciamento de empresas da indústria de defesa junto ao Ministério da Defesa (CMID).",
-    "highlights": [
-      {
-        "tone": "pos",
-        "text": "4ª posição nacional entre as 16 UFs participantes do programa, com 7,1% do total."
-      },
-      {
-        "tone": "neutral",
-        "text": "10,8% de tudo que o Sudeste registra no programa."
-      }
-    ]
+    "regra": "localizacao",
+    "headline": "24 empresas credenciadas com localização em Minas Gerais (7,1% do total nacional).",
+    "lede": "Nesta política, a UF indica onde está a instituição ou a empresa registrada, não o alcance da política. Credenciamento de empresas da indústria de defesa junto ao Ministério da Defesa (CMID), que não expressa volume de investimento ou faturamento.",
+    "highlights": []
   },
+  "cobertura": "Empresas credenciadas, posição em 08/06/2026.",
+  "ultima_referencia": "08/06/2026, posição informada na fonte",
+  "ressalvas": [
+    "A UF indica a localização da empresa, sem indicar abrangência de atuação. 337 registros têm UF informada e 1 não, sem alterar o total.",
+    "Empresas e produtos são bases distintas: não há vínculo inferido entre elas.",
+    "Não há série de novos credenciamentos: as datas da fonte não têm definição administrativa."
+  ],
+  "uf_indica": "localizacao",
   "kpis": [
     {
       "id": "credenciadas",
@@ -192,17 +191,8 @@
   },
   "story_nacional": {
     "escopo": "nacional",
-    "headline": "338 empresas estão credenciadas como Empresa de Material de Defesa (ED) ou Empresa Estratégica de Defesa (EED), em 16 UFs.",
-    "lede": "Credenciamento de empresas da indústria de defesa junto ao Ministério da Defesa (CMID). Não expressa volume de investimento ou faturamento — só a condição de credenciada.",
-    "highlights": [
-      {
-        "tone": "neutral",
-        "text": "292 Empresas Estratégicas de Defesa (EED) e 46 Empresas de Material de Defesa (ED)."
-      },
-      {
-        "tone": "neutral",
-        "text": "Credenciadas em 16 UFs."
-      }
-    ]
+    "headline": "A base de Defesa reúne 338 empresas credenciadas como Empresa de Material de Defesa (ED) ou Empresa Estratégica de Defesa (EED).",
+    "lede": "Credenciamento de empresas da indústria de defesa junto ao Ministério da Defesa (CMID), que não expressa volume de investimento ou faturamento. São 292 EED e 46 ED, localizadas em 16 UFs.",
+    "highlights": []
   }
 }

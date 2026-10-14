@@ -2,12 +2,12 @@
   "schema_version": "1.2",
   "n_politicas": 30,
   "recursos": {
-    "value": 1654837300000.0,
-    "display_value": "R$ 1,65 tri"
+    "value": 1632340620000.0,
+    "display_value": "R$ 1,63 tri"
   },
   "atendimentos": {
-    "value": 196840,
-    "display_value": "196.840"
+    "value": 198891,
+    "display_value": "198.891"
   },
   "top_politicas": [
     {
@@ -35,24 +35,24 @@
       "display_value": "R$ 143 bi"
     },
     {
-      "id": "dial_missao4_lei_tics",
-      "sigla": "Lei de TICs",
-      "nome": "Lei de Informática (Lei de TICs)",
-      "display_value": "R$ 36,45 bi"
-    },
-    {
       "id": "move_brasil",
       "sigla": "Move Brasil",
       "nome": "Move Brasil",
       "display_value": "R$ 25,63 bi"
+    },
+    {
+      "id": "dial_missao4_lei_tics",
+      "sigla": "Lei de TICs",
+      "nome": "Lei de Informática (Lei de TICs)",
+      "display_value": "R$ 13,95 bi"
     }
   ],
   "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
   "story": {
     "escopo": "nacional",
     "regra": "normal",
-    "headline": "Brasil: R$ 1,65 tri mobilizados em 30 políticas da SDIC.",
-    "lede": "As maiores são P+P (R$ 755,22 bi), Ações DIBEN (R$ 407,02 bi) e FGI (R$ 264 bi). As políticas não monetárias somam 196.840 projetos, empresas e atendimentos. Soma entre políticas de unidades diferentes — ver nota metodológica.",
+    "headline": "Brasil: R$ 1,63 tri mobilizados em 30 políticas da SDIC.",
+    "lede": "As maiores são P+P (R$ 755,22 bi), Ações DIBEN (R$ 407,02 bi) e FGI (R$ 264 bi). As políticas não monetárias somam 198.891 projetos, empresas e atendimentos. Soma entre políticas de unidades diferentes — ver nota metodológica.",
     "highlights": []
   }
 }

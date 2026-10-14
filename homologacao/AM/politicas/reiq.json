@@ -59,7 +59,7 @@
     },
     {
       "id": "empregos",
-      "label": "Empregos indiretos gerados",
+      "label": "Empregos indiretos informados",
       "value": 14660,
       "display_value": "14.660",
       "unit": "empregos",
@@ -145,6 +145,12 @@
   "_nota_anonimizacao": "Nenhum nome de empresa ou município incluído. Com só 7 empresas na base, e 1 única empresa dominando várias UFs, UF é o limite seguro de granularidade — não há nível intermediário anônimo entre 'nacional' e 'empresa individual'.",
   "competencia": "2026A",
   "data_aceitacao": "2026-08-07",
+  "cobertura": "Projetos aprovados de 2024 a 2026.",
+  "ultima_referencia": "Não informado",
+  "ressalvas": [
+    "Um único projeto responde pela maior parte do investimento e dos empregos indiretos.",
+    "Empregos indiretos são os informados nos projetos, não medidos após a execução."
+  ],
   "geo": {
     "nivel": "uf",
     "fallback": false,
@@ -153,7 +159,7 @@
   },
   "story_nacional": {
     "escopo": "nacional",
-    "headline": "REIQ mobilizou {{kpis[investimento].display_value}} em investimentos na cadeia petroquímica, dos quais {{kpis[beneficiado].display_value}} foram efetivamente beneficiados pelo regime, com {{kpis[empregos].display_value}} empregos indiretos gerados.",
+    "headline": "O REIQ registra {{kpis[investimento].display_value}} em investimentos de projetos na cadeia petroquímica, dos quais {{kpis[beneficiado].display_value}} beneficiados pelo regime, e {{kpis[empregos].display_value}} empregos indiretos informados nos projetos.",
     "lede": "Regime Especial da Indústria Química — incentivo fiscal a projetos de expansão, modernização e diversificação da cadeia petroquímica brasileira.",
     "highlights": [
       {
@@ -162,11 +168,11 @@
       },
       {
         "tone": "neutral",
-        "text": "Do total mobilizado, R$ 1,77 bi foram efetivamente aprovados e beneficiados pelo regime fiscal do REIQ."
+        "text": "Do investimento total, R$ 1,77 bi foram aprovados e beneficiados pelo regime fiscal do REIQ."
       },
       {
-        "tone": "pos",
-        "text": "14.660 empregos indiretos gerados, concentrados em um único grande projeto."
+        "tone": "neutral",
+        "text": "14.660 empregos indiretos informados nos projetos, concentrados em um único grande projeto."
       },
       {
         "tone": "neutral",

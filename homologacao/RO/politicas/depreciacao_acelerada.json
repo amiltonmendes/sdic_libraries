@@ -235,6 +235,12 @@
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas agregados por UF/setor.",
   "competencia": "2026M09",
   "data_aceitacao": "2026-10-07",
+  "cobertura": "Pedidos deferidos de 2024 a 2026, base acumulada de deferimentos.",
+  "ultima_referencia": "2026, parcial, sem data de corte informada",
+  "ressalvas": [
+    "Benefício fiscal estimado a 17% do valor do bem: estimativa preliminar, não cálculo tributário real.",
+    "2026 é parcial e não deve ser comparado diretamente com anos completos."
+  ],
   "geo": {
     "nivel": "uf",
     "fallback": false,

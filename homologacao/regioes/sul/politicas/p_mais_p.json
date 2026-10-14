@@ -389,6 +389,12 @@
     }
   ],
   "_nota_fonte": "Consolidado a partir de dados_painel_2026T2.json (pipeline novo/, período 2026T2), 1978 registros agregados por ano × fonte × eixo × missão × UF. 18 registros sem UF resolvida ficam fora do breakdown por_uf, mas contam nos totais nacionais.",
+  "cobertura": "Financiamentos da Nova Indústria Brasil por BNDES, Finep, BASA, BNB, Caixa e BB.",
+  "ultima_referencia": "2026, parcial, sem data de corte informada",
+  "ressalvas": [
+    "Registros sem UF entram no total nacional, mas não no recorte por estado.",
+    "2026 é parcial e não deve ser comparado diretamente com anos completos."
+  ],
   "geo": {
     "nivel": "regiao",
     "fallback": false,

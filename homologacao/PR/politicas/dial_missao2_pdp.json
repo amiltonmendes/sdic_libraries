@@ -15,23 +15,29 @@
     "period": "acumulado",
     "delta": {
       "dir": "flat",
-      "label": "2,1% do total nacional · 8ª entre 8 UFs"
+      "label": "2,1% do total nacional · 7ª entre 8 UFs"
     },
     "value": 2
   },
   "story": {
     "escopo": "uf",
     "uf": "PR",
-    "regra": "meio",
-    "headline": "2 registros no Paraná — 2,1% do total nacional, 8ª posição entre as 8 UFs participantes do programa.",
-    "lede": "Paraná ocupa a 8ª posição entre as 8 UFs participantes do programa e responde por 2,1% do programa no país. Projetos para internalizar a produção de medicamentos e insumos estratégicos de saúde no Brasil.",
-    "highlights": [
-      {
-        "tone": "neutral",
-        "text": "8ª posição nacional entre as 8 UFs participantes do programa, com 2,1% do total."
-      }
-    ]
+    "regra": "localizacao",
+    "headline": "2 registros com localização no Paraná (2,1% do total nacional).",
+    "lede": "Nesta política, a UF indica onde está a instituição ou a empresa registrada, não o alcance da política. Projetos para internalizar a produção de medicamentos e insumos estratégicos de saúde no Brasil.",
+    "highlights": []
   },
+  "cobertura": "Posição cadastral recebida, com identificação, fase e situação dos registros.",
+  "ultima_referencia": "Publicação no DOU mais recente em 02/07/2026; data de corte da posição cadastral não informada",
+  "ressalvas": [
+    "Fase e situação são dimensões distintas; a fase IV não indica, por si, PDP concluída.",
+    "A UF indica a localização da instituição pública, não o alcance do projeto ou do produto.",
+    "Registros com mais de uma publicação no DOU preservam todas as datas, que não indicam início, conclusão ou atualização da PDP.",
+    "A passagem de 136 para 95 registros entre versões da base não comprova queda ou cancelamentos.",
+    "Produtos distintos são as denominações da fonte, sem identificação regulatória de produto único.",
+    "O valor de aquisições não é apresentado: unidade e período não foram informados e falta em parte dos registros."
+  ],
+  "uf_indica": "localizacao",
   "kpis": [
     {
       "id": "parcerias",
@@ -59,12 +65,12 @@
       "tone": "neutral",
       "items": [
         {
-          "name": "LAFEPE",
+          "name": "Fiocruz/Farmanguinhos",
           "value": 14,
           "display_value": "14 registros"
         },
         {
-          "name": "Fiocruz/Farmanguinhos",
+          "name": "LAFEPE",
           "value": 14,
           "display_value": "14 registros"
         },
@@ -89,14 +95,117 @@
           "display_value": "7 registros"
         },
         {
-          "name": "IVB",
+          "name": "FUNED",
           "value": 5,
           "display_value": "5 registros"
         },
         {
-          "name": "FUNED",
+          "name": "IVB",
           "value": 5,
           "display_value": "5 registros"
+        }
+      ]
+    },
+    {
+      "id": "parceiros_nacionais_por_estado",
+      "title": "Parceiros privados nacionais: registros por estado",
+      "metric_label": "Registros",
+      "unit": "registros",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "São Paulo",
+          "value": 66,
+          "display_value": "66 registros"
+        },
+        {
+          "name": "Não informado",
+          "value": 17,
+          "display_value": "17 registros"
+        },
+        {
+          "name": "MINAS GERAIS",
+          "value": 3,
+          "display_value": "3 registros"
+        },
+        {
+          "name": "Rio de Janeiro",
+          "value": 3,
+          "display_value": "3 registros"
+        },
+        {
+          "name": "Goiás",
+          "value": 2,
+          "display_value": "2 registros"
+        },
+        {
+          "name": "Paraná",
+          "value": 2,
+          "display_value": "2 registros"
+        },
+        {
+          "name": "Rio Grande do Sul",
+          "value": 2,
+          "display_value": "2 registros"
+        }
+      ]
+    },
+    {
+      "id": "parceiros_internacionais_por_pais",
+      "title": "Parceiros privados internacionais: registros por país",
+      "metric_label": "Registros",
+      "unit": "registros",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "Não informado",
+          "value": 62,
+          "display_value": "62 registros"
+        },
+        {
+          "name": "Estados Unidos",
+          "value": 9,
+          "display_value": "9 registros"
+        },
+        {
+          "name": "Alemanha",
+          "value": 5,
+          "display_value": "5 registros"
+        },
+        {
+          "name": "Coreia do Sul",
+          "value": 5,
+          "display_value": "5 registros"
+        },
+        {
+          "name": "China",
+          "value": 4,
+          "display_value": "4 registros"
+        },
+        {
+          "name": "Índia",
+          "value": 4,
+          "display_value": "4 registros"
+        },
+        {
+          "name": "Reino Unido",
+          "value": 2,
+          "display_value": "2 registros"
+        },
+        {
+          "name": "Suíça",
+          "value": 2,
+          "display_value": "2 registros"
+        },
+        {
+          "name": "Israel",
+          "value": 1,
+          "display_value": "1 registros"
+        },
+        {
+          "name": "Japão",
+          "value": 1,
+          "display_value": "1 registros"
         }
       ]
     }
@@ -139,12 +248,74 @@
               "v": 4
             },
             {
-              "t": "PB",
+              "t": "PR",
               "v": 2
             },
             {
-              "t": "PR",
+              "t": "PB",
               "v": 2
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    },
+    {
+      "id": "por_fase",
+      "type": "bars",
+      "title": "Registros de PDP por fase",
+      "subtitle": "",
+      "unit": "registros",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "por_fase",
+          "label": "Registros de PDP por fase",
+          "points": [
+            {
+              "t": "II",
+              "v": 41
+            },
+            {
+              "t": "III",
+              "v": 20
+            },
+            {
+              "t": "IV",
+              "v": 34
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    },
+    {
+      "id": "por_situacao",
+      "type": "bars",
+      "title": "Registros de PDP por situação",
+      "subtitle": "",
+      "unit": "registros",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "por_situacao",
+          "label": "Registros de PDP por situação",
+          "points": [
+            {
+              "t": "Preparação para a execução da transferência de tecnologia",
+              "v": 36
+            },
+            {
+              "t": "Verificação da Internalização da Tecnologia",
+              "v": 34
+            },
+            {
+              "t": "Transferência de tecnologia em curso",
+              "v": 19
+            },
+            {
+              "t": "Suspensa",
+              "v": 6
             }
           ]
         }
@@ -237,24 +408,16 @@
   },
   "story_nacional": {
     "escopo": "nacional",
-    "headline": "A base reúne 95 registros de Parcerias para o Desenvolvimento Produtivo, relativos a {{kpis[produtos].display_value}} produtos e instituições públicas em 8 UFs.",
-    "lede": "Projetos para internalizar a produção de medicamentos e insumos estratégicos de saúde no Brasil. A contagem reproduz os registros identificados na base recebida.",
+    "headline": "A base reúne 95 registros identificados de PDP, relativos a 80 produtos distintos.",
+    "lede": "Projetos para internalizar a produção de medicamentos e insumos estratégicos de saúde no Brasil. São 19 registros com transferência de tecnologia em curso e 34 em verificação da internalização da tecnologia.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "80 produtos distintos aparecem na base."
-      },
-      {
-        "tone": "neutral",
-        "text": "LAFEPE concentra 14 registros de PDP."
+        "text": "Instituições públicas em 8 UFs; Fiocruz/Farmanguinhos reúne 14 registros."
       },
       {
         "tone": "neutral",
         "text": "Os 95 registros possuem identificadores únicos nesta versão da fonte."
-      },
-      {
-        "tone": "neutral",
-        "text": "O recorte por UF indica a localização da instituição pública responsável pelo registro, não necessariamente o alcance territorial do projeto ou produto."
       }
     ]
   }
