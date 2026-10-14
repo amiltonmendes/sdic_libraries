@@ -1,0 +1,301 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "dial_missao2_pdp",
+  "nome": "Parcerias para o Desenvolvimento Produtivo — Saúde",
+  "sigla": "PDP Saúde",
+  "categoria": "Complexo econômico-industrial da saúde",
+  "source": "SDIC/DIAL — Missão 2 - PDPs",
+  "reference": "acumulado",
+  "updated_at": "2026-10-13",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Registros de PDP",
+    "display_value": "4 registros",
+    "unit": "",
+    "period": "acumulado",
+    "delta": {
+      "dir": "up",
+      "label": "4,2% do total nacional · 5ª entre 8 UFs"
+    },
+    "value": 4
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "BA",
+    "regra": "meio",
+    "headline": "4 registros na Bahia — 4,2% do total nacional, 5ª posição entre as 8 UFs participantes do programa.",
+    "lede": "Bahia ocupa a 5ª posição entre as 8 UFs participantes do programa e responde por 4,2% do programa no país. Dentro do Nordeste, que soma 25 registros, a participação da Bahia é de 16,0%. Projetos para internalizar a produção de medicamentos e insumos estratégicos de saúde no Brasil.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "5ª posição nacional entre as 8 UFs participantes do programa, com 4,2% do total."
+      },
+      {
+        "tone": "neutral",
+        "text": "16,0% de tudo que o Nordeste registra no programa."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "parcerias",
+      "label": "Registros de PDP",
+      "value": 95,
+      "display_value": "95",
+      "unit": "registros",
+      "period": "acumulado"
+    },
+    {
+      "id": "produtos",
+      "label": "Produtos distintos",
+      "value": 80,
+      "display_value": "80",
+      "unit": "produtos",
+      "period": "acumulado"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "por_instituicao",
+      "title": "Registros por instituição pública",
+      "metric_label": "Registros",
+      "unit": "registros",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "LAFEPE",
+          "value": 14,
+          "display_value": "14 registros"
+        },
+        {
+          "name": "Fiocruz/Farmanguinhos",
+          "value": 14,
+          "display_value": "14 registros"
+        },
+        {
+          "name": "Fiocruz/Bio-Manguinhos",
+          "value": 13,
+          "display_value": "13 registros"
+        },
+        {
+          "name": "Butantan",
+          "value": 10,
+          "display_value": "10 registros"
+        },
+        {
+          "name": "LFM",
+          "value": 8,
+          "display_value": "8 registros"
+        },
+        {
+          "name": "FURP",
+          "value": 7,
+          "display_value": "7 registros"
+        },
+        {
+          "name": "IVB",
+          "value": 5,
+          "display_value": "5 registros"
+        },
+        {
+          "name": "FUNED",
+          "value": 5,
+          "display_value": "5 registros"
+        }
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "id": "por_uf",
+      "type": "bars",
+      "title": "Registros de PDP por UF da instituição pública",
+      "subtitle": "UF da instituição pública, não do alcance do projeto",
+      "unit": "registros",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "registros",
+          "label": "Registros",
+          "points": [
+            {
+              "t": "RJ",
+              "v": 46
+            },
+            {
+              "t": "SP",
+              "v": 17
+            },
+            {
+              "t": "PE",
+              "v": 15
+            },
+            {
+              "t": "MG",
+              "v": 5
+            },
+            {
+              "t": "BA",
+              "v": 4
+            },
+            {
+              "t": "RN",
+              "v": 4
+            },
+            {
+              "t": "PB",
+              "v": 2
+            },
+            {
+              "t": "PR",
+              "v": 2
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    }
+  ],
+  "breakdowns": [],
+  "records": [
+    {
+      "uf_ip": "BA",
+      "id_pdp": "P225",
+      "termo_compromisso": "TC nº 22/2026",
+      "publicacao_dou": [
+        "2026-03-31"
+      ],
+      "produto": "Bevacizumabe",
+      "apresentacao": "Solução injetável (40mg/mL)",
+      "indicacao": "Câncer colorretal metastático (CCRm); câncer de pulmão de não pequenas células localmente avançado, metastático ou recorrente; câncer de mama metastático ou localmente recorrente (CMM); câncer de células renais metastático e/ou avançado (mRCC); câncer epitelial de ovário, tuba uterina e peritoneal primário e câncer de colo do útero.",
+      "instituicao_publica": "Bahiafarma",
+      "regiao_ip": "NORDESTE",
+      "estado_ip": "BAHIA",
+      "plataforma": "Biotecnológico",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "BA",
+      "id_pdp": "P254",
+      "termo_compromisso": "TC nº 20/2026",
+      "publicacao_dou": [
+        "2026-03-31"
+      ],
+      "produto": "Eculizumabe",
+      "apresentacao": "Frasco ampola 300mg/30mL",
+      "indicacao": "Hemoglobinúria Paroxística Noturna (HPN)",
+      "instituicao_publica": "Bahiafarma",
+      "regiao_ip": "NORDESTE",
+      "estado_ip": "BAHIA",
+      "plataforma": "Biotecnológico",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "BA",
+      "id_pdp": "P294",
+      "termo_compromisso": "TC nº 12/2026",
+      "publicacao_dou": [
+        "2026-03-10"
+      ],
+      "produto": "Nivolumabe",
+      "apresentacao": "Solução injetável (40mg); Frasco ampola 40mg/4mL; Solução injetável (100mg); Frasco ampola 100mg/10mL",
+      "indicacao": "Melanoma Avançado (Irressecável ou Metastático); Tratamento Adjuvante de Melanoma; Câncer de Pulmão de Células Não Pequenas (CPCNP); Carcinoma de Células Renais Avançado (CCR); Linfoma de Hodgkin Clássico (LHc); Carcinoma de Células Escamosas de Cabeça e Pescoço (CCECP); Carcinoma Urotelial (CU); Carcinoma de Células Escamosas do Esôfago (CCEE); Tratamento adjuvante de Câncer Esofágico ou de Câncer da Junção Gastroesofágica, completamente ressecados (CE, CJEG); Carcinoma Hepatocelular (CHC); Mesotelioma Pleural Maligno (MPM) e Câncer Gástrico, Câncer da Junção Gastroesofágica e Adenocarcinoma Esofágico (CG, CJEG, ACE).",
+      "instituicao_publica": "Bahiafarma",
+      "regiao_ip": "NORDESTE",
+      "estado_ip": "BAHIA",
+      "plataforma": "Biotecnológico",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "BA",
+      "id_pdp": "P305",
+      "termo_compromisso": "TC nº 11/2026",
+      "publicacao_dou": [
+        "2026-03-05"
+      ],
+      "produto": "Pertuzumabe",
+      "apresentacao": "Solução para diluição (420mg/14mL)",
+      "indicacao": "Câncer de Mama Metastático e Câncer de Mama Inicial",
+      "instituicao_publica": "Bahiafarma",
+      "regiao_ip": "NORDESTE",
+      "estado_ip": "BAHIA",
+      "plataforma": "Biotecnológico",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    }
+  ],
+  "source_breakdowns": {
+    "por_fase": {
+      "II": 4
+    },
+    "por_situacao": {
+      "Preparação para a execução da transferência de tecnologia": 4
+    }
+  },
+  "data_quality": {
+    "source_rows": 95,
+    "raw_exact_duplicate_occurrences": 0,
+    "raw_exact_duplicate_groups": 0,
+    "normalized_exact_duplicate_occurrences": 0,
+    "normalized_exact_duplicate_groups": 0,
+    "business_key_duplicate_groups": 0,
+    "business_key": [
+      "produto",
+      "apresentacao",
+      "indicacao",
+      "instituicao_publica",
+      "parceiro_nacional",
+      "parceiro_internacional",
+      "entidade_ifa",
+      "plataforma"
+    ],
+    "source_identifier": "id_pdp",
+    "distinct_source_ids": 95,
+    "duplicate_policy": "reject_missing_or_duplicate_source_identifier",
+    "publication_date_missing_records": 4,
+    "publication_multiple_date_records": 2,
+    "acquisition_value_present_records": 54,
+    "acquisition_value_missing_records": 41,
+    "acquisition_value_unit": null,
+    "acquisition_value_period": null
+  },
+  "_nota_anonimizacao": "Nomes de parceiros privados e entidades fornecedoras de IFA não são publicados.",
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-10-13",
+  "geo": {
+    "nivel": "uf",
+    "fallback": false,
+    "uf": "BA",
+    "regiao": "Nordeste"
+  },
+  "story_nacional": {
+    "escopo": "nacional",
+    "headline": "A base reúne 95 registros de Parcerias para o Desenvolvimento Produtivo, relativos a {{kpis[produtos].display_value}} produtos e instituições públicas em 8 UFs.",
+    "lede": "Projetos para internalizar a produção de medicamentos e insumos estratégicos de saúde no Brasil. A contagem reproduz os registros identificados na base recebida.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "80 produtos distintos aparecem na base."
+      },
+      {
+        "tone": "neutral",
+        "text": "LAFEPE concentra 14 registros de PDP."
+      },
+      {
+        "tone": "neutral",
+        "text": "Os 95 registros possuem identificadores únicos nesta versão da fonte."
+      },
+      {
+        "tone": "neutral",
+        "text": "O recorte por UF indica a localização da instituição pública responsável pelo registro, não necessariamente o alcance territorial do projeto ou produto."
+      }
+    ]
+  }
+}

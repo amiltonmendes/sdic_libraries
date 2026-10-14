@@ -1,0 +1,286 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "dial_missao4_ppb",
+  "nome": "Processo Produtivo Básico",
+  "sigla": "PPB",
+  "categoria": "Política industrial",
+  "source": "SDIC/DIAL — Missão 4 - PPB",
+  "reference": "2017-2026; 2026 parcial",
+  "updated_at": "2026-10-13",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Portarias publicadas",
+    "value": 572,
+    "display_value": "572 portarias",
+    "unit": "",
+    "period": "2017-2026; 2026 parcial",
+    "delta": {
+      "dir": "flat",
+      "label": ""
+    }
+  },
+  "story": {
+    "escopo": "nacional",
+    "headline": "Processo Produtivo Básico: 572 portarias na base recebida.",
+    "lede": "2017-2026; 2026 parcial",
+    "highlights": []
+  },
+  "kpis": [
+    {
+      "id": "total",
+      "label": "Portarias publicadas",
+      "value": 572,
+      "display_value": "572",
+      "unit": "portarias",
+      "period": "2017-2026; 2026 parcial"
+    }
+  ],
+  "charts": [
+    {
+      "id": "portarias_anuais",
+      "type": "bars",
+      "title": "Portarias publicadas por ano",
+      "subtitle": "2026 parcial",
+      "unit": "portarias",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "portarias_anuais",
+          "label": "Portarias publicadas por ano",
+          "points": [
+            {
+              "t": 2017,
+              "v": 59
+            },
+            {
+              "t": 2018,
+              "v": 51
+            },
+            {
+              "t": 2019,
+              "v": 72
+            },
+            {
+              "t": 2020,
+              "v": 75
+            },
+            {
+              "t": 2021,
+              "v": 104
+            },
+            {
+              "t": 2022,
+              "v": 48
+            },
+            {
+              "t": 2023,
+              "v": 32
+            },
+            {
+              "t": 2024,
+              "v": 45
+            },
+            {
+              "t": 2025,
+              "v": 63
+            },
+            {
+              "t": 2026,
+              "v": 23
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    },
+    {
+      "id": "consultas_publicas_anuais",
+      "type": "bars",
+      "title": "Consultas públicas por ano",
+      "subtitle": "2026 parcial",
+      "unit": "consultas",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "consultas_publicas_anuais",
+          "label": "Consultas públicas por ano",
+          "points": [
+            {
+              "t": 2017,
+              "v": 31
+            },
+            {
+              "t": 2018,
+              "v": 44
+            },
+            {
+              "t": 2019,
+              "v": 41
+            },
+            {
+              "t": 2020,
+              "v": 67
+            },
+            {
+              "t": 2021,
+              "v": 55
+            },
+            {
+              "t": 2022,
+              "v": 39
+            },
+            {
+              "t": 2023,
+              "v": 32
+            },
+            {
+              "t": 2024,
+              "v": 35
+            },
+            {
+              "t": 2025,
+              "v": 42
+            },
+            {
+              "t": 2026,
+              "v": 26
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    },
+    {
+      "id": "fiscalizacoes_anuais",
+      "type": "bars",
+      "title": "Fiscalizações por ano",
+      "subtitle": "2026 parcial",
+      "unit": "fiscalizações",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "fiscalizacoes_anuais",
+          "label": "Fiscalizações por ano",
+          "points": [
+            {
+              "t": 2017,
+              "v": 32
+            },
+            {
+              "t": 2018,
+              "v": 30
+            },
+            {
+              "t": 2019,
+              "v": 37
+            },
+            {
+              "t": 2020,
+              "v": 16
+            },
+            {
+              "t": 2021,
+              "v": 32
+            },
+            {
+              "t": 2022,
+              "v": 34
+            },
+            {
+              "t": 2023,
+              "v": 36
+            },
+            {
+              "t": 2024,
+              "v": 31
+            },
+            {
+              "t": 2025,
+              "v": 40
+            },
+            {
+              "t": 2026,
+              "v": 20
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    }
+  ],
+  "ranked_lists": [],
+  "breakdowns": [],
+  "records": [
+    {
+      "ano": 2017,
+      "portarias": 59,
+      "consultas_publicas": 31,
+      "fiscalizacoes": 32
+    },
+    {
+      "ano": 2018,
+      "portarias": 51,
+      "consultas_publicas": 44,
+      "fiscalizacoes": 30
+    },
+    {
+      "ano": 2019,
+      "portarias": 72,
+      "consultas_publicas": 41,
+      "fiscalizacoes": 37
+    },
+    {
+      "ano": 2020,
+      "portarias": 75,
+      "consultas_publicas": 67,
+      "fiscalizacoes": 16
+    },
+    {
+      "ano": 2021,
+      "portarias": 104,
+      "consultas_publicas": 55,
+      "fiscalizacoes": 32
+    },
+    {
+      "ano": 2022,
+      "portarias": 48,
+      "consultas_publicas": 39,
+      "fiscalizacoes": 34
+    },
+    {
+      "ano": 2023,
+      "portarias": 32,
+      "consultas_publicas": 32,
+      "fiscalizacoes": 36
+    },
+    {
+      "ano": 2024,
+      "portarias": 45,
+      "consultas_publicas": 35,
+      "fiscalizacoes": 31
+    },
+    {
+      "ano": 2025,
+      "portarias": 63,
+      "consultas_publicas": 42,
+      "fiscalizacoes": 40
+    },
+    {
+      "ano": 2026,
+      "portarias": 23,
+      "consultas_publicas": 26,
+      "fiscalizacoes": 20
+    }
+  ],
+  "data_quality": {
+    "source_rows": 10,
+    "duplicate_years": 0,
+    "partial_year": 2026
+  },
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-10-13",
+  "geo": {
+    "nivel": "nacional",
+    "fallback": false
+  }
+}

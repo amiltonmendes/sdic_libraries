@@ -1,0 +1,503 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "dial_missao2_pdp",
+  "nome": "Parcerias para o Desenvolvimento Produtivo — Saúde",
+  "sigla": "PDP Saúde",
+  "categoria": "Complexo econômico-industrial da saúde",
+  "source": "SDIC/DIAL — Missão 2 - PDPs",
+  "reference": "acumulado",
+  "updated_at": "2026-10-13",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Registros de PDP",
+    "display_value": "15 registros",
+    "unit": "",
+    "period": "acumulado",
+    "delta": {
+      "dir": "up",
+      "label": "15,8% do total nacional · 3ª entre 8 UFs"
+    },
+    "value": 15
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "PE",
+    "regra": "top",
+    "headline": "Pernambuco é o 3º do país: 15 registros, 15,8% do total nacional.",
+    "lede": "Pernambuco ocupa a 3ª posição entre as 8 UFs participantes do programa e responde por 15,8% do programa no país. Dentro do Nordeste, que soma 25 registros, a participação de Pernambuco é de 60,0%, a maior da região. Projetos para internalizar a produção de medicamentos e insumos estratégicos de saúde no Brasil.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "3ª posição nacional entre as 8 UFs participantes do programa, com 15,8% do total."
+      },
+      {
+        "tone": "pos",
+        "text": "60,0% de tudo que o Nordeste registra no programa — maior participação da região."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "parcerias",
+      "label": "Registros de PDP",
+      "value": 95,
+      "display_value": "95",
+      "unit": "registros",
+      "period": "acumulado"
+    },
+    {
+      "id": "produtos",
+      "label": "Produtos distintos",
+      "value": 80,
+      "display_value": "80",
+      "unit": "produtos",
+      "period": "acumulado"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "por_instituicao",
+      "title": "Registros por instituição pública",
+      "metric_label": "Registros",
+      "unit": "registros",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "LAFEPE",
+          "value": 14,
+          "display_value": "14 registros"
+        },
+        {
+          "name": "Fiocruz/Farmanguinhos",
+          "value": 14,
+          "display_value": "14 registros"
+        },
+        {
+          "name": "Fiocruz/Bio-Manguinhos",
+          "value": 13,
+          "display_value": "13 registros"
+        },
+        {
+          "name": "Butantan",
+          "value": 10,
+          "display_value": "10 registros"
+        },
+        {
+          "name": "LFM",
+          "value": 8,
+          "display_value": "8 registros"
+        },
+        {
+          "name": "FURP",
+          "value": 7,
+          "display_value": "7 registros"
+        },
+        {
+          "name": "IVB",
+          "value": 5,
+          "display_value": "5 registros"
+        },
+        {
+          "name": "FUNED",
+          "value": 5,
+          "display_value": "5 registros"
+        }
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "id": "por_uf",
+      "type": "bars",
+      "title": "Registros de PDP por UF da instituição pública",
+      "subtitle": "UF da instituição pública, não do alcance do projeto",
+      "unit": "registros",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "registros",
+          "label": "Registros",
+          "points": [
+            {
+              "t": "RJ",
+              "v": 46
+            },
+            {
+              "t": "SP",
+              "v": 17
+            },
+            {
+              "t": "PE",
+              "v": 15
+            },
+            {
+              "t": "MG",
+              "v": 5
+            },
+            {
+              "t": "BA",
+              "v": 4
+            },
+            {
+              "t": "RN",
+              "v": 4
+            },
+            {
+              "t": "PB",
+              "v": 2
+            },
+            {
+              "t": "PR",
+              "v": 2
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    }
+  ],
+  "breakdowns": [],
+  "records": [
+    {
+      "uf_ip": "PE",
+      "id_pdp": "P001",
+      "termo_compromisso": "TC nº 08/2009",
+      "publicacao_dou": [
+        "2009-11-03"
+      ],
+      "produto": "Clozapina",
+      "apresentacao": "Comprimido (25mg; 100mg)",
+      "indicacao": "Doença de Parkinson",
+      "instituicao_publica": "LAFEPE",
+      "regiao_ip": "NORDESTE",
+      "estado_ip": "PERNAMBUCO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 158365248.36
+    },
+    {
+      "uf_ip": "PE",
+      "id_pdp": "P005",
+      "termo_compromisso": "TC nº 08/2009",
+      "publicacao_dou": [
+        "2009-11-03"
+      ],
+      "produto": "Olanzapina",
+      "apresentacao": "Comprimido revestido (5mg; 10mg)",
+      "indicacao": "Esquizofrenia",
+      "instituicao_publica": "LAFEPE",
+      "regiao_ip": "NORDESTE",
+      "estado_ip": "PERNAMBUCO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 822491304.57
+    },
+    {
+      "uf_ip": "PE",
+      "id_pdp": "P006",
+      "termo_compromisso": "TC nº 08/2009",
+      "publicacao_dou": [
+        "2009-11-03"
+      ],
+      "produto": "Quetiapina",
+      "apresentacao": "Comprimido (25mg; 100mg; 200mg)",
+      "indicacao": "Antipsicótico",
+      "instituicao_publica": "LAFEPE",
+      "regiao_ip": "NORDESTE",
+      "estado_ip": "PERNAMBUCO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 607700909.4
+    },
+    {
+      "uf_ip": "PE",
+      "id_pdp": "P012",
+      "termo_compromisso": "TC nº 06/2009",
+      "publicacao_dou": [
+        "2009-11-03"
+      ],
+      "produto": "Tenofovir",
+      "apresentacao": "Comprimido revestido (300mg)",
+      "indicacao": "Infecção pelo HIV em adultos; Infecção pelo HIV em crianças e adolescentes; Tratamento de Hepatite B e Coinfecções",
+      "instituicao_publica": "LAFEPE",
+      "regiao_ip": "NORDESTE",
+      "estado_ip": "PERNAMBUCO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 316011390.0
+    },
+    {
+      "uf_ip": "PE",
+      "id_pdp": "P020",
+      "termo_compromisso": "TC nº 07/2010",
+      "publicacao_dou": [
+        "2010-05-25"
+      ],
+      "produto": "Ritonavir Termoestável",
+      "apresentacao": "Comprimido (100mg)",
+      "indicacao": "Infecção pelo HIV em adultos",
+      "instituicao_publica": "LAFEPE",
+      "regiao_ip": "NORDESTE",
+      "estado_ip": "PERNAMBUCO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 387839499.3
+    },
+    {
+      "uf_ip": "PE",
+      "id_pdp": "P044",
+      "termo_compromisso": "TC nº 20/2012",
+      "publicacao_dou": [
+        "2012-10-31"
+      ],
+      "produto": "Fator VIII Recombinante",
+      "apresentacao": "Pó liofilizado para solução injetável (250UI; 500UI; 1000UI)",
+      "indicacao": "Profilaxia primária e tratamento de pacientes com hemofilia A; Reposição do fator VIII da coagulação deficiente",
+      "instituicao_publica": "Hemobrás",
+      "regiao_ip": "NORDESTE",
+      "estado_ip": "PERNAMBUCO",
+      "plataforma": "Biotecnológico",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 6487054297.5
+    },
+    {
+      "uf_ip": "PE",
+      "id_pdp": "P058",
+      "termo_compromisso": "TC nº 05/2012",
+      "publicacao_dou": [
+        "2012-10-31"
+      ],
+      "produto": "Tenofovir + Lamivudina (2 em 1)",
+      "apresentacao": "Comprimido revestido (300mg+300mg)",
+      "indicacao": "Infecção pelo HIV em adultos Infecção pelo HIV em crianças e adolescentes",
+      "instituicao_publica": "LAFEPE",
+      "regiao_ip": "NORDESTE",
+      "estado_ip": "PERNAMBUCO",
+      "plataforma": "Sintético",
+      "fase": "III",
+      "situacao": "Transferência de tecnologia em curso",
+      "valor_aquisicoes": 913498415.4
+    },
+    {
+      "uf_ip": "PE",
+      "id_pdp": "P145",
+      "termo_compromisso": "TC nº 17/2018",
+      "publicacao_dou": [
+        "2018-08-27"
+      ],
+      "produto": "Darunavir",
+      "apresentacao": "Comprimido revestido (75mg; 150mg; 600mg, 800mg)",
+      "indicacao": "Infecção pelo HIV em adultos; Infecção pelo HIV em crianças e adolescentes",
+      "instituicao_publica": "LAFEPE",
+      "regiao_ip": "NORDESTE",
+      "estado_ip": "PERNAMBUCO",
+      "plataforma": "Sintético",
+      "fase": "III",
+      "situacao": "Transferência de tecnologia em curso",
+      "valor_aquisicoes": 525981909.0
+    },
+    {
+      "uf_ip": "PE",
+      "id_pdp": "P154",
+      "termo_compromisso": "TC nº 18/2018",
+      "publicacao_dou": [
+        "2021-11-04"
+      ],
+      "produto": "Dolutegravir",
+      "apresentacao": "Comprimido revestido (50mg)",
+      "indicacao": "Infecção pelo HIV em adultos; Infecção pelo HIV em crianças e adolescentes",
+      "instituicao_publica": "LAFEPE",
+      "regiao_ip": "NORDESTE",
+      "estado_ip": "PERNAMBUCO",
+      "plataforma": "Sintético",
+      "fase": "III",
+      "situacao": "Transferência de tecnologia em curso",
+      "valor_aquisicoes": 325950000.0
+    },
+    {
+      "uf_ip": "PE",
+      "id_pdp": "P173",
+      "termo_compromisso": "TC nº 20/2018",
+      "publicacao_dou": [
+        "2018-12-11"
+      ],
+      "produto": "Fingolimode",
+      "apresentacao": "Cápsula dura (0,5mg)",
+      "indicacao": "Esclerose Múltipla",
+      "instituicao_publica": "LAFEPE",
+      "regiao_ip": "NORDESTE",
+      "estado_ip": "PERNAMBUCO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "PE",
+      "id_pdp": "P198",
+      "termo_compromisso": "TC nº 19/2018",
+      "publicacao_dou": [
+        "2021-11-12"
+      ],
+      "produto": "Oseltamivir",
+      "apresentacao": "Cápsula dura (30mg, 45mg, 75mg)",
+      "indicacao": "Antivirótico (reduz a proliferação, multiplicação dos vírus da gripe, influenza A e B)",
+      "instituicao_publica": "LAFEPE",
+      "regiao_ip": "NORDESTE",
+      "estado_ip": "PERNAMBUCO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "PE",
+      "id_pdp": "P266",
+      "termo_compromisso": "TC nº 15/2026",
+      "publicacao_dou": [
+        "2026-03-06"
+      ],
+      "produto": "Fosfato monohidratado de sitagliptina",
+      "apresentacao": "Comprimido revestido (25mg; 50mg; 100mg)",
+      "indicacao": "Diabetes",
+      "instituicao_publica": "LAFEPE",
+      "regiao_ip": "NORDESTE",
+      "estado_ip": "PERNAMBUCO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "PE",
+      "id_pdp": "P278",
+      "termo_compromisso": "TC nº 8/2026",
+      "publicacao_dou": [
+        "2026-02-04"
+      ],
+      "produto": "Lamivudina + Dolutegravir",
+      "apresentacao": "Comprimido revestido (300mg + 50mg)",
+      "indicacao": "Infecção pelo HIV em adultos; Infecção pelo HIV em crianças e adolescentes",
+      "instituicao_publica": "LAFEPE",
+      "regiao_ip": "NORDESTE",
+      "estado_ip": "PERNAMBUCO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "PE",
+      "id_pdp": "P318",
+      "termo_compromisso": "TC nº 16/2025",
+      "publicacao_dou": [
+        "2025-12-31"
+      ],
+      "produto": "Sirolimo",
+      "apresentacao": "Drágea (1mg; 2mg)",
+      "indicacao": "Linfangioleiomiomatose em adultos; Profilaxia da rejeição de órgãos em pacientes transplantados renais para pacientes adultos e pediátricos acima de 13 anos de idade.",
+      "instituicao_publica": "LAFEPE",
+      "regiao_ip": "NORDESTE",
+      "estado_ip": "PERNAMBUCO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "PE",
+      "id_pdp": "P349",
+      "termo_compromisso": "TC nº 6/2026",
+      "publicacao_dou": [
+        "2026-02-04"
+      ],
+      "produto": "Tofacitinibe",
+      "apresentacao": "Comprimido revestido 5 mg",
+      "indicacao": "Artrite reumatoide; artrite psoríaca; espondilite anquilosante; colite ulcerativa",
+      "instituicao_publica": "LAFEPE",
+      "regiao_ip": "NORDESTE",
+      "estado_ip": "PERNAMBUCO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    }
+  ],
+  "source_breakdowns": {
+    "por_fase": {
+      "IV": 6,
+      "III": 3,
+      "II": 6
+    },
+    "por_situacao": {
+      "Verificação da Internalização da Tecnologia": 6,
+      "Transferência de tecnologia em curso": 3,
+      "Preparação para a execução da transferência de tecnologia": 6
+    }
+  },
+  "data_quality": {
+    "source_rows": 95,
+    "raw_exact_duplicate_occurrences": 0,
+    "raw_exact_duplicate_groups": 0,
+    "normalized_exact_duplicate_occurrences": 0,
+    "normalized_exact_duplicate_groups": 0,
+    "business_key_duplicate_groups": 0,
+    "business_key": [
+      "produto",
+      "apresentacao",
+      "indicacao",
+      "instituicao_publica",
+      "parceiro_nacional",
+      "parceiro_internacional",
+      "entidade_ifa",
+      "plataforma"
+    ],
+    "source_identifier": "id_pdp",
+    "distinct_source_ids": 95,
+    "duplicate_policy": "reject_missing_or_duplicate_source_identifier",
+    "publication_date_missing_records": 4,
+    "publication_multiple_date_records": 2,
+    "acquisition_value_present_records": 54,
+    "acquisition_value_missing_records": 41,
+    "acquisition_value_unit": null,
+    "acquisition_value_period": null
+  },
+  "_nota_anonimizacao": "Nomes de parceiros privados e entidades fornecedoras de IFA não são publicados.",
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-10-13",
+  "geo": {
+    "nivel": "uf",
+    "fallback": false,
+    "uf": "PE",
+    "regiao": "Nordeste"
+  },
+  "story_nacional": {
+    "escopo": "nacional",
+    "headline": "A base reúne 95 registros de Parcerias para o Desenvolvimento Produtivo, relativos a {{kpis[produtos].display_value}} produtos e instituições públicas em 8 UFs.",
+    "lede": "Projetos para internalizar a produção de medicamentos e insumos estratégicos de saúde no Brasil. A contagem reproduz os registros identificados na base recebida.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "80 produtos distintos aparecem na base."
+      },
+      {
+        "tone": "neutral",
+        "text": "LAFEPE concentra 14 registros de PDP."
+      },
+      {
+        "tone": "neutral",
+        "text": "Os 95 registros possuem identificadores únicos nesta versão da fonte."
+      },
+      {
+        "tone": "neutral",
+        "text": "O recorte por UF indica a localização da instituição pública responsável pelo registro, não necessariamente o alcance territorial do projeto ou produto."
+      }
+    ]
+  }
+}

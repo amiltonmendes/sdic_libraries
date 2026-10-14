@@ -1,13 +1,13 @@
 {
   "schema_version": "1.2",
-  "n_politicas": 27,
+  "n_politicas": 30,
   "recursos": {
     "value": 1654837300000.0,
     "display_value": "R$ 1,65 tri"
   },
   "atendimentos": {
-    "value": 196064,
-    "display_value": "196.064"
+    "value": 196840,
+    "display_value": "196.840"
   },
   "top_politicas": [
     {
@@ -35,7 +35,7 @@
       "display_value": "R$ 143 bi"
     },
     {
-      "id": "dial_lei_tics",
+      "id": "dial_missao4_lei_tics",
       "sigla": "Lei de TICs",
       "nome": "Lei de Informática (Lei de TICs)",
       "display_value": "R$ 36,45 bi"
@@ -51,8 +51,8 @@
   "story": {
     "escopo": "nacional",
     "regra": "normal",
-    "headline": "Brasil: R$ 1,65 tri mobilizados em 27 políticas da SDIC.",
-    "lede": "As maiores são P+P (R$ 755,22 bi), Ações DIBEN (R$ 407,02 bi) e FGI (R$ 264 bi). As políticas não monetárias somam 196.064 projetos, empresas e atendimentos. Soma entre políticas de unidades diferentes — ver nota metodológica.",
+    "headline": "Brasil: R$ 1,65 tri mobilizados em 30 políticas da SDIC.",
+    "lede": "As maiores são P+P (R$ 755,22 bi), Ações DIBEN (R$ 407,02 bi) e FGI (R$ 264 bi). As políticas não monetárias somam 196.840 projetos, empresas e atendimentos. Soma entre políticas de unidades diferentes — ver nota metodológica.",
     "highlights": []
   },
   "todas_politicas": [
@@ -127,7 +127,7 @@
       "display_value": "185 empresas"
     },
     {
-      "id": "dial_missao6_eeds_eds",
+      "id": "dial_missao6_ed_eed",
       "sigla": "ED/EED",
       "nome": "Empresas Credenciadas — Material de Defesa (ED/EED)",
       "regionalizavel": true,
@@ -162,18 +162,18 @@
       "display_value": "R$ 143 bi"
     },
     {
-      "id": "dial_lei_tics",
+      "id": "dial_missao4_lei_tics",
       "sigla": "Lei de TICs",
       "nome": "Lei de Informática (Lei de TICs)",
       "regionalizavel": false,
       "display_value": "R$ 36,45 bi"
     },
     {
-      "id": "dial_normativos_cgis",
+      "id": "dial_missao2_normativos_cgis",
       "sigla": "Normativos CEIS",
       "nome": "Marco normativo do Complexo Econômico-Industrial da Saúde",
       "regionalizavel": false,
-      "display_value": "14 normativos"
+      "display_value": "10 normativos"
     },
     {
       "id": "move_brasil",
@@ -190,18 +190,25 @@
       "display_value": "284 habilitações"
     },
     {
-      "id": "dial_padis",
+      "id": "dial_missao2_cmed_normativos",
+      "sigla": "Norm-CMED",
+      "nome": "Normativos CMED",
+      "regionalizavel": false,
+      "display_value": "4 normativos"
+    },
+    {
+      "id": "dial_missao4_padis",
       "sigla": "PADIS",
       "nome": "PADIS — Semicondutores e Componentes",
       "regionalizavel": false,
       "display_value": "R$ 517,3 mi"
     },
     {
-      "id": "dial_missao2_pdps",
+      "id": "dial_missao2_pdp",
       "sigla": "PDP Saúde",
       "nome": "Parcerias para o Desenvolvimento Produtivo — Saúde",
       "regionalizavel": true,
-      "display_value": "136 registros"
+      "display_value": "95 registros"
     },
     {
       "id": "p_mais_p",
@@ -218,14 +225,28 @@
       "display_value": "R$ 6,41 bi"
     },
     {
-      "id": "dial_missao6_cmid",
+      "id": "dial_missao4_ppb",
+      "sigla": "PPB",
+      "nome": "Processo Produtivo Básico",
+      "regionalizavel": false,
+      "display_value": "572 portarias"
+    },
+    {
+      "id": "dial_missao2_cmed_processos",
+      "sigla": "Proc-CMED",
+      "nome": "Processos CMED relatados pelo MDIC",
+      "regionalizavel": false,
+      "display_value": "197 processos"
+    },
+    {
+      "id": "dial_missao6_prode_ped",
       "sigla": "PRODE/PED",
       "nome": "Produtos de Defesa e Produtos Estratégicos de Defesa (CMID)",
       "regionalizavel": false,
       "display_value": "2463 produtos"
     },
     {
-      "id": "dial_pdil",
+      "id": "dial_missao2_pdil",
       "sigla": "PDIL",
       "nome": "Programa de Desenvolvimento e Inovação Local",
       "regionalizavel": false,

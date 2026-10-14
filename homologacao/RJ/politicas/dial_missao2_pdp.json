@@ -1,0 +1,1055 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "dial_missao2_pdp",
+  "nome": "Parcerias para o Desenvolvimento Produtivo — Saúde",
+  "sigla": "PDP Saúde",
+  "categoria": "Complexo econômico-industrial da saúde",
+  "source": "SDIC/DIAL — Missão 2 - PDPs",
+  "reference": "acumulado",
+  "updated_at": "2026-10-13",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Registros de PDP",
+    "display_value": "46 registros",
+    "unit": "",
+    "period": "acumulado",
+    "delta": {
+      "dir": "up",
+      "label": "48,4% do total nacional · 1ª entre 8 UFs"
+    },
+    "value": 46
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "RJ",
+    "regra": "lider",
+    "headline": "Rio de Janeiro lidera o país: 46 registros, 48,4% do total nacional.",
+    "lede": "Rio de Janeiro ocupa a 1ª posição entre as 8 UFs participantes do programa e responde por 48,4% do programa no país. Dentro do Sudeste, que soma 68 registros, a participação do Rio de Janeiro é de 67,6%, a maior da região. Projetos para internalizar a produção de medicamentos e insumos estratégicos de saúde no Brasil.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "1ª posição nacional entre as 8 UFs participantes do programa, com 48,4% do total."
+      },
+      {
+        "tone": "pos",
+        "text": "67,6% de tudo que o Sudeste registra no programa — maior participação da região."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "parcerias",
+      "label": "Registros de PDP",
+      "value": 95,
+      "display_value": "95",
+      "unit": "registros",
+      "period": "acumulado"
+    },
+    {
+      "id": "produtos",
+      "label": "Produtos distintos",
+      "value": 80,
+      "display_value": "80",
+      "unit": "produtos",
+      "period": "acumulado"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "por_instituicao",
+      "title": "Registros por instituição pública",
+      "metric_label": "Registros",
+      "unit": "registros",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "LAFEPE",
+          "value": 14,
+          "display_value": "14 registros"
+        },
+        {
+          "name": "Fiocruz/Farmanguinhos",
+          "value": 14,
+          "display_value": "14 registros"
+        },
+        {
+          "name": "Fiocruz/Bio-Manguinhos",
+          "value": 13,
+          "display_value": "13 registros"
+        },
+        {
+          "name": "Butantan",
+          "value": 10,
+          "display_value": "10 registros"
+        },
+        {
+          "name": "LFM",
+          "value": 8,
+          "display_value": "8 registros"
+        },
+        {
+          "name": "FURP",
+          "value": 7,
+          "display_value": "7 registros"
+        },
+        {
+          "name": "IVB",
+          "value": 5,
+          "display_value": "5 registros"
+        },
+        {
+          "name": "FUNED",
+          "value": 5,
+          "display_value": "5 registros"
+        }
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "id": "por_uf",
+      "type": "bars",
+      "title": "Registros de PDP por UF da instituição pública",
+      "subtitle": "UF da instituição pública, não do alcance do projeto",
+      "unit": "registros",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "registros",
+          "label": "Registros",
+          "points": [
+            {
+              "t": "RJ",
+              "v": 46
+            },
+            {
+              "t": "SP",
+              "v": 17
+            },
+            {
+              "t": "PE",
+              "v": 15
+            },
+            {
+              "t": "MG",
+              "v": 5
+            },
+            {
+              "t": "BA",
+              "v": 4
+            },
+            {
+              "t": "RN",
+              "v": 4
+            },
+            {
+              "t": "PB",
+              "v": 2
+            },
+            {
+              "t": "PR",
+              "v": 2
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    }
+  ],
+  "breakdowns": [],
+  "records": [
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P008",
+      "termo_compromisso": "TC nº 09/2009",
+      "publicacao_dou": [
+        "2009-11-04"
+      ],
+      "produto": "Rifampicina + Isoniazida + Pirazinamida + Etambutol (4 em 1 Tuberculostático)",
+      "apresentacao": "Comprimido (150mg + 75mg + 400mg + 275mg)",
+      "indicacao": "Tuberculose sensível e meningoencefálica em adolescentes e adultos",
+      "instituicao_publica": "Fiocruz/Farmanguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 66341309.55
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P009",
+      "termo_compromisso": "TC nº 01/2009",
+      "publicacao_dou": [
+        "2009-10-08"
+      ],
+      "produto": "Rivastigmina",
+      "apresentacao": "Cápsulas (1,5mg; 3mg; 4,5mg; 6mg)",
+      "indicacao": "Doença de Alzheimer",
+      "instituicao_publica": "IVB",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 229670096.1
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P010",
+      "termo_compromisso": "TC nº 07/2009",
+      "publicacao_dou": [
+        "2009-11-04"
+      ],
+      "produto": "Tacrolimo",
+      "apresentacao": "Cápsula dura (1mg; 5mg)",
+      "indicacao": "Imunossupressão no Transplante Hepático em Adulto; Imunossupressão no Transplante Hepático em Pediatria; Imunossupressão no Transplante Renal; Síndrome Nefrótica Primária em Crianças e Adolescentes",
+      "instituicao_publica": "Fiocruz/Farmanguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 830085679.0
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P013",
+      "termo_compromisso": "TC nº 10/2010",
+      "publicacao_dou": null,
+      "produto": "Alfataliglicerase",
+      "apresentacao": "Pó liófilo para solução injetável Frasco-ampola (200 U)",
+      "indicacao": "Doença de Gaucher",
+      "instituicao_publica": "Fiocruz/Bio-Manguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Biotecnológico",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 134728043.16
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P014",
+      "termo_compromisso": "TC nº 11/2010",
+      "publicacao_dou": [
+        "2013-09-15"
+      ],
+      "produto": "Betainterferona 1A",
+      "apresentacao": "Solução injetável (22µg; 44µg)",
+      "indicacao": "Esclerose Múltipla",
+      "instituicao_publica": "Fiocruz/Bio-Manguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Biotecnológico",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 626246486.05
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P023",
+      "termo_compromisso": "TC nº 09/2010",
+      "publicacao_dou": [
+        "2010-04-15"
+      ],
+      "produto": "Ziprasidona",
+      "apresentacao": "Cápsula dura (40mg; 80mg)",
+      "indicacao": "Esquizofrenia; Transtorno Esquizoafetivo e Esquizofreniforme",
+      "instituicao_publica": "LFM",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 114551917.4
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P024",
+      "termo_compromisso": "TC nº 02/2011",
+      "publicacao_dou": [
+        "2011-04-05"
+      ],
+      "produto": "Atazanavir",
+      "apresentacao": "Cápsula dura (300mg)",
+      "indicacao": "Infecção pelo HIV em adultos Infecção pelo HIV em crianças e adolescentes",
+      "instituicao_publica": "Fiocruz/Farmanguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 574933534.8
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P025",
+      "termo_compromisso": "TC nº 08/2011",
+      "publicacao_dou": [
+        "2011-06-03"
+      ],
+      "produto": "Cabergolina",
+      "apresentacao": "Comprimido (0,5mg)",
+      "indicacao": "Acromegalia Hiperprolactinemia",
+      "instituicao_publica": "Fiocruz/Farmanguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 28899666.8
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P028",
+      "termo_compromisso": "TC nº 09/2011",
+      "publicacao_dou": [
+        "2011-06-03"
+      ],
+      "produto": "Leflunomida",
+      "apresentacao": "Comprimido (20mg)",
+      "indicacao": "Artrite Psoríaca; Artrite Reumatóide",
+      "instituicao_publica": "LFM",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 282232469.2
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P030",
+      "termo_compromisso": "TC nº 05/2011",
+      "publicacao_dou": [
+        "2011-04-05"
+      ],
+      "produto": "Pramipexol",
+      "apresentacao": "Comprimido (0,125mg; 0,25mg; 1mg)",
+      "indicacao": "Doença de Parkinson",
+      "instituicao_publica": "Fiocruz/Farmanguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 222197510.83
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P032",
+      "termo_compromisso": "TC nº 06/2011",
+      "publicacao_dou": [
+        "2011-06-03"
+      ],
+      "produto": "Riluzol",
+      "apresentacao": "Comprimido revestido (50mg)",
+      "indicacao": "Esclerose Lateral Amiotrófica – ELA",
+      "instituicao_publica": "LFM",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 33428862.04
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P033",
+      "termo_compromisso": "TC nº 07/2011",
+      "publicacao_dou": [
+        "2011-06-03"
+      ],
+      "produto": "Sevelâmer",
+      "apresentacao": "Comprimido revestido (800mg)",
+      "indicacao": "Distúrbio Mineral Ósseo na Doença Renal Crônica",
+      "instituicao_publica": "Fiocruz/Farmanguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 286583963.0
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P041",
+      "termo_compromisso": "TC nº 02/2012",
+      "publicacao_dou": [
+        "2012-10-31"
+      ],
+      "produto": "Etanercepte",
+      "apresentacao": "Solução injetável (25mg/0,5ml; 50mg/mL)",
+      "indicacao": "Artrite Reumatoide; Artrite Psoríaca; Espondilite Ancilosante",
+      "instituicao_publica": "Fiocruz/Bio-Manguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Biotecnológico",
+      "fase": "III",
+      "situacao": "Transferência de tecnologia em curso",
+      "valor_aquisicoes": 1281912149.48
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P050",
+      "termo_compromisso": "TC nº 01/2012",
+      "publicacao_dou": [
+        "2012-04-18"
+      ],
+      "produto": "Mesilato de Imatinibe",
+      "apresentacao": "Comprimido revestido (100mg; 400mg)",
+      "indicacao": "Carcinoma Diferenciado de Tireóide Leucemia Mielóie Crônica do adulto Linfoma Folicular Tratamento da leucemia mielóide crônica de criança e adolescente Tratamento da leucemia linfoblástica aguda cromossoma Philadelphia positivo de criança e adolescente Tumor do Estroma Gastrointestinal",
+      "instituicao_publica": "IVB",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 511255145.4
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P051",
+      "termo_compromisso": "TC nº 01/2012",
+      "publicacao_dou": [
+        "2012-04-18"
+      ],
+      "produto": "Mesilato de Imatinibe",
+      "apresentacao": "Comprimido revestido (100mg; 400mg)",
+      "indicacao": "Carcinoma Diferenciado de Tireóide Leucemia Mielóie Crônica do adulto Linfoma Folicular Tratamento da leucemia mielóide crônica de criança e adolescente Tratamento da leucemia linfoblástica aguda cromossoma Philadelphia positivo de criança e adolescente Tumor do Estroma Gastrointestinal",
+      "instituicao_publica": "Fiocruz/Farmanguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 459091713.0
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P054",
+      "termo_compromisso": "TC nº 15/2012; TC nº 27/2018",
+      "publicacao_dou": [
+        "2012-10-31"
+      ],
+      "produto": "Micofenolato de Sódio",
+      "apresentacao": "Comprimido revestido (180mg; 360mg)",
+      "indicacao": "Transplante renal e transplante hepático em pediatria",
+      "instituicao_publica": "LQFEx",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 610262352.0
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P056",
+      "termo_compromisso": "TC nº 03/2012",
+      "publicacao_dou": [
+        "2012-10-31"
+      ],
+      "produto": "Rituximabe",
+      "apresentacao": "Solução injetável Frasco-ampola com 10mL e com 50mL (10mg/mL)",
+      "indicacao": "Artrite Reumatoide; Linfoma não Hodgkin de células B, (folicular e difuso de grandes células B)",
+      "instituicao_publica": "Fiocruz/Bio-Manguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Biotecnológico",
+      "fase": "III",
+      "situacao": "Transferência de tecnologia em curso",
+      "valor_aquisicoes": 391933228.77
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P059",
+      "termo_compromisso": "TC nº 05/2012",
+      "publicacao_dou": [
+        "2012-10-31"
+      ],
+      "produto": "Tenofovir + Lamivudina (2 em 1)",
+      "apresentacao": "Comprimido revestido (300mg+300mg)",
+      "indicacao": "Infecção pelo HIV em adultos Infecção pelo HIV em crianças e adolescentes",
+      "instituicao_publica": "Fiocruz/Farmanguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 861692007.0
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P061",
+      "termo_compromisso": "TC nº 05/2012",
+      "publicacao_dou": [
+        "2012-10-31"
+      ],
+      "produto": "Tenofovir + Lamivudina + Efavirenz (3 em 1)",
+      "apresentacao": "Comprimido revestido (300mg+300mg+600mg)",
+      "indicacao": "Infecção pelo HIV em adultos Infecção pelo HIV em crianças e adolescentes",
+      "instituicao_publica": "Fiocruz/Farmanguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Suspensa",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P064",
+      "termo_compromisso": "TC nº 10/2012",
+      "publicacao_dou": null,
+      "produto": "Vacina Tetraviral (MMRV)",
+      "apresentacao": "Pó para solução injetável",
+      "indicacao": "Imunização contra sarampo, caxumba, rubéola e varicela",
+      "instituicao_publica": "Fiocruz/Bio-Manguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Vacina",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 478771433.57
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P065",
+      "termo_compromisso": "TC nº 19/2013; TC nº 03/2017",
+      "publicacao_dou": [
+        "2018-02-22"
+      ],
+      "produto": "Adalimumabe",
+      "apresentacao": "Seringa pré-preenchida 40mg/0,8mL / Ampola 40mg/0,8mL",
+      "indicacao": "Artrite Psoríaca; Artrite Reumatoide; Doença de Crohn; Espondilite Ancilosante; Hidradenite supurativa ativa moderada a grave; Psoríase; Uveítes não infecciosa intermediária, posterior e pan-uveítes ativa",
+      "instituicao_publica": "Fiocruz/Bio-Manguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Biotecnológico",
+      "fase": "III",
+      "situacao": "Suspensa",
+      "valor_aquisicoes": 1813776353.82
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P089",
+      "termo_compromisso": "TC nº 32/2013; TA nº 01/2014",
+      "publicacao_dou": [
+        "2013-06-18"
+      ],
+      "produto": "Infliximabe",
+      "apresentacao": "Pó liófilo para solução injetável 100mg; Frasco-ampola com 10mL (10 mg/mL)",
+      "indicacao": "Artrite Reumatoide; Artrite Psoríaca; Doença de Crohn; Espondilite Ancilosante; Retocolite ulcerativa moderada a grave",
+      "instituicao_publica": "Fiocruz/Bio-Manguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Biotecnológico",
+      "fase": "III",
+      "situacao": "Transferência de tecnologia em curso",
+      "valor_aquisicoes": 3612050339.75
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P110",
+      "termo_compromisso": "TC nº 36/2013",
+      "publicacao_dou": [
+        "2013-09-11"
+      ],
+      "produto": "Sildenafila",
+      "apresentacao": "Comprimido revestido (20mg; 25mg; 50mg)",
+      "indicacao": "Comprimido de 20 mg – Hipertensão Arterial Pulmonar; Comprimidos 25 e 50 mg – Esclerose Sistêmica (Tratamento do Fenômeno de Reynaud)",
+      "instituicao_publica": "LFM",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 97979451.44
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P114",
+      "termo_compromisso": "TC nº 26/2013; TC nº 16/2017",
+      "publicacao_dou": [
+        "2013-06-18",
+        "2017-12-14"
+      ],
+      "produto": "Somatropina",
+      "apresentacao": "Pó liofilizado para solução injetável Frasco-ampola (4 UI; 12 UI)",
+      "indicacao": "Hipopituitarismo; Síndrome de Turner",
+      "instituicao_publica": "Fiocruz/Bio-Manguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Biotecnológico",
+      "fase": "III",
+      "situacao": "Transferência de tecnologia em curso",
+      "valor_aquisicoes": 1642473972.5
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P118",
+      "termo_compromisso": "TC nº 24/2013 ; TC nº 06/2017",
+      "publicacao_dou": [
+        "2013-06-18"
+      ],
+      "produto": "Trastuzumabe",
+      "apresentacao": "Pó para solução injetável (150mg; 440mg)",
+      "indicacao": "Câncer de mama HER2-positivo metastático; Câncer de mama inicial; Câncer de mama localmente avançado",
+      "instituicao_publica": "Fiocruz/Bio-Manguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Biotecnológico",
+      "fase": "III",
+      "situacao": "Transferência de tecnologia em curso",
+      "valor_aquisicoes": 1890194468.88
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P133",
+      "termo_compromisso": "TC nº 14/2018",
+      "publicacao_dou": null,
+      "produto": "Capecitabina",
+      "apresentacao": "Comprimido revestido (150mg; 500mg)",
+      "indicacao": "Adenocarcinoma de estômago; Carcinoma de células renais; Carcinoma de colón e reto; Carcinoma de fígado no adulto; Carcinoma de mama metastático",
+      "instituicao_publica": "IVB",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Suspensa",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P143",
+      "termo_compromisso": "TC nº 07/2018",
+      "publicacao_dou": [
+        "2018-08-27"
+      ],
+      "produto": "Daclatasvir",
+      "apresentacao": "Comprimido revestido (30mg; 60mg)",
+      "indicacao": "Tratamento de Hepatite C e Coinfecções",
+      "instituicao_publica": "Fiocruz/Farmanguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "III",
+      "situacao": "Transferência de tecnologia em curso",
+      "valor_aquisicoes": 23100000.0
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P146",
+      "termo_compromisso": "TC nº 22/2018",
+      "publicacao_dou": [
+        "2018-08-27"
+      ],
+      "produto": "Darunavir",
+      "apresentacao": "Comprimido revestido (75mg; 150mg; 600mg; 800mg)",
+      "indicacao": "Infecção pelo HIV em adultos; Infecção pelo HIV em crianças e adolescentes",
+      "instituicao_publica": "LAQFA",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "III",
+      "situacao": "Transferência de tecnologia em curso",
+      "valor_aquisicoes": 182586700.8
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P153",
+      "termo_compromisso": "TC nº 23/2018",
+      "publicacao_dou": [
+        "2021-11-04"
+      ],
+      "produto": "Dolutegravir",
+      "apresentacao": "Comprimido revestido (50mg)",
+      "indicacao": "Infecção pelo HIV em adultos; Infecção pelo HIV em crianças e adolescentes",
+      "instituicao_publica": "LAQFA",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P159",
+      "termo_compromisso": "TC nº 08/2018",
+      "publicacao_dou": [
+        "2018-08-27"
+      ],
+      "produto": "Entricitabina + Tenofovir",
+      "apresentacao": "Comprimido revestido (200mg+300mg)",
+      "indicacao": "Profilaxia Pré-exposição (PrEP) para populações sob maior risco de adquirir o HIV",
+      "instituicao_publica": "Fiocruz/Farmanguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 338846469.5
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P164",
+      "termo_compromisso": "TC nº 15/2018",
+      "publicacao_dou": null,
+      "produto": "Erlotinibe",
+      "apresentacao": "Comprimido revestido (25mg; 100mg; 150mg)",
+      "indicacao": "Carcinoma de fígado no adulto Câncer de pulmão",
+      "instituicao_publica": "IVB",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Suspensa",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P169",
+      "termo_compromisso": "TC nº 09/2018",
+      "publicacao_dou": [
+        "2018-08-27"
+      ],
+      "produto": "Everolimo",
+      "apresentacao": "Comprimido (0,5mg; 0,75mg; 1mg)",
+      "indicacao": "Imunossupressor para transplante hepático",
+      "instituicao_publica": "Fiocruz/Farmanguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "III",
+      "situacao": "Transferência de tecnologia em curso",
+      "valor_aquisicoes": 68854860.82
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P175",
+      "termo_compromisso": "TC nº 03/2018",
+      "publicacao_dou": [
+        "2018-08-27"
+      ],
+      "produto": "Golimumabe",
+      "apresentacao": "Solução injetável (50mg); Seringa preenchida de 0,5 mL (100 mg/mL)",
+      "indicacao": "Artrite Reumatoide; Artrite Psoríaca; Espondilite Ancilosante; Retocolite ulcerativa moderada a grave",
+      "instituicao_publica": "Fiocruz/Bio-Manguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Biotecnológico",
+      "fase": "III",
+      "situacao": "Transferência de tecnologia em curso",
+      "valor_aquisicoes": 2537783552.87
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P176",
+      "termo_compromisso": "TC nº 16/2018",
+      "publicacao_dou": [
+        "2019-01-02"
+      ],
+      "produto": "Hidroxiureia",
+      "apresentacao": "Cápsula (500mg)",
+      "indicacao": "Leucemia Mielóie Crônica do adulto; Leucemia Mieloide Crônica - Crianças e Adolescentes; Doença Falciforme",
+      "instituicao_publica": "IVB",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Suspensa",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P209",
+      "termo_compromisso": "TC nº 11/2018",
+      "publicacao_dou": [
+        "2018-08-27"
+      ],
+      "produto": "Sofosbuvir",
+      "apresentacao": "Comprimido revestido (400mg)",
+      "indicacao": "Tratamento de Hepatite C e Coinfecções",
+      "instituicao_publica": "Fiocruz/Farmanguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "III",
+      "situacao": "Transferência de tecnologia em curso",
+      "valor_aquisicoes": 63721770.0
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P212",
+      "termo_compromisso": "TC nº 26/2018",
+      "publicacao_dou": [
+        "2021-11-05"
+      ],
+      "produto": "Teriflunomida",
+      "apresentacao": "Comprimido revestido (14mg)",
+      "indicacao": "Esclerose Múltipla",
+      "instituicao_publica": "LFM",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P215",
+      "termo_compromisso": "TC nº 04/2018",
+      "publicacao_dou": [
+        "2022-06-10"
+      ],
+      "produto": "Tocilizumabe",
+      "apresentacao": "Seringa preenchida (162mg/0,9mL) Concentrado para solução para infusão (20mg/mL)",
+      "indicacao": "Artrite Reumatoide",
+      "instituicao_publica": "Fiocruz/Bio-Manguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Biotecnológico",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P231",
+      "termo_compromisso": "TC nº 04/2025",
+      "publicacao_dou": [
+        "2025-07-30"
+      ],
+      "produto": "Cladribina",
+      "apresentacao": "Comprimido (10 mg)",
+      "indicacao": "Esclerose Múltipla",
+      "instituicao_publica": "Fiocruz/Farmanguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P250",
+      "termo_compromisso": "TC nº 07/2025",
+      "publicacao_dou": [
+        "2025-07-29"
+      ],
+      "produto": "Dicloridrato de Trientina",
+      "apresentacao": "Cápsula dura (250 mg)",
+      "indicacao": "Doença de Wilson",
+      "instituicao_publica": "LFM",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P272",
+      "termo_compromisso": "TC nº 01/2025",
+      "publicacao_dou": [
+        "2025-05-08"
+      ],
+      "produto": "Insulina Glargina",
+      "apresentacao": "Carpule contendo 3 mL de solução para aplicação com caneta (caneta aplicadora reutilizável), concentração 100 UI/mL",
+      "indicacao": "Diabetes",
+      "instituicao_publica": "Fiocruz/Bio-Manguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Biotecnológico",
+      "fase": "III",
+      "situacao": "Transferência de tecnologia em curso",
+      "valor_aquisicoes": 469914210.0
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P279",
+      "termo_compromisso": "TC nº 9/2026",
+      "publicacao_dou": [
+        "2026-02-11"
+      ],
+      "produto": "Lamivudina + Dolutegravir",
+      "apresentacao": "Comprimido revestido (300mg + 50mg)",
+      "indicacao": "Infecção pelo HIV em adultos; Infecção pelo HIV em crianças e adolescentes",
+      "instituicao_publica": "LAQFA",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P287",
+      "termo_compromisso": "TC nº 12/2025",
+      "publicacao_dou": [
+        "2025-11-28"
+      ],
+      "produto": "Malato de Sunitinibe",
+      "apresentacao": "50 mg cápsula gelatinosa dura",
+      "indicacao": "Tumor estromal gastrointestinal (GIST) após progressão da doença em uso de imatinibe ou intolerância ao imatinibe; Câncer no rim irressecável ou metastático em primeira linha; e Pacientes com tumores neuroendócrinos avançados (NET) localizados no pâncreas.",
+      "instituicao_publica": "LAQFA",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P288",
+      "termo_compromisso": "TC nº 11/2025",
+      "publicacao_dou": [
+        "2025-12-03"
+      ],
+      "produto": "Maraviroque",
+      "apresentacao": "Comprimido revestido (150mg)",
+      "indicacao": "Infecção pelo HIV em adultos; Infecção pelo HIV em crianças e adolescentes",
+      "instituicao_publica": "LFM",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P292",
+      "termo_compromisso": "TC nº 5/2026",
+      "publicacao_dou": [
+        "2026-01-27"
+      ],
+      "produto": "Nilotinibe",
+      "apresentacao": "Cápsula gelatinosa dura (200mg)",
+      "indicacao": "Leucemia Mielóie Crônica em fase crônica ou fase acelerada",
+      "instituicao_publica": "LAQFA",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P296",
+      "termo_compromisso": "TC nº 09/2025",
+      "publicacao_dou": [
+        "2025-08-27"
+      ],
+      "produto": "Nusinersena",
+      "apresentacao": "Solução injetável: frasco ampola de 5 ml de solução com 12 mg (12mg/5mL)",
+      "indicacao": "Atrofia Muscular Espinhal (AME)",
+      "instituicao_publica": "Fiocruz/Bio-Manguinhos",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Biotecnológico",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "RJ",
+      "id_pdp": "P368",
+      "termo_compromisso": "TC nº 7/2026",
+      "publicacao_dou": [
+        "2026-02-20"
+      ],
+      "produto": "Voriconazol",
+      "apresentacao": "Comprimido revestido 200 mg",
+      "indicacao": "Antifúngico",
+      "instituicao_publica": "LFM",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "RIO DE JANEIRO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    }
+  ],
+  "source_breakdowns": {
+    "por_fase": {
+      "IV": 19,
+      "III": 12,
+      "II": 15
+    },
+    "por_situacao": {
+      "Verificação da Internalização da Tecnologia": 19,
+      "Transferência de tecnologia em curso": 11,
+      "Suspensa": 5,
+      "Preparação para a execução da transferência de tecnologia": 11
+    }
+  },
+  "data_quality": {
+    "source_rows": 95,
+    "raw_exact_duplicate_occurrences": 0,
+    "raw_exact_duplicate_groups": 0,
+    "normalized_exact_duplicate_occurrences": 0,
+    "normalized_exact_duplicate_groups": 0,
+    "business_key_duplicate_groups": 0,
+    "business_key": [
+      "produto",
+      "apresentacao",
+      "indicacao",
+      "instituicao_publica",
+      "parceiro_nacional",
+      "parceiro_internacional",
+      "entidade_ifa",
+      "plataforma"
+    ],
+    "source_identifier": "id_pdp",
+    "distinct_source_ids": 95,
+    "duplicate_policy": "reject_missing_or_duplicate_source_identifier",
+    "publication_date_missing_records": 4,
+    "publication_multiple_date_records": 2,
+    "acquisition_value_present_records": 54,
+    "acquisition_value_missing_records": 41,
+    "acquisition_value_unit": null,
+    "acquisition_value_period": null
+  },
+  "_nota_anonimizacao": "Nomes de parceiros privados e entidades fornecedoras de IFA não são publicados.",
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-10-13",
+  "geo": {
+    "nivel": "uf",
+    "fallback": false,
+    "uf": "RJ",
+    "regiao": "Sudeste"
+  },
+  "story_nacional": {
+    "escopo": "nacional",
+    "headline": "A base reúne 95 registros de Parcerias para o Desenvolvimento Produtivo, relativos a {{kpis[produtos].display_value}} produtos e instituições públicas em 8 UFs.",
+    "lede": "Projetos para internalizar a produção de medicamentos e insumos estratégicos de saúde no Brasil. A contagem reproduz os registros identificados na base recebida.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "80 produtos distintos aparecem na base."
+      },
+      {
+        "tone": "neutral",
+        "text": "LAFEPE concentra 14 registros de PDP."
+      },
+      {
+        "tone": "neutral",
+        "text": "Os 95 registros possuem identificadores únicos nesta versão da fonte."
+      },
+      {
+        "tone": "neutral",
+        "text": "O recorte por UF indica a localização da instituição pública responsável pelo registro, não necessariamente o alcance territorial do projeto ou produto."
+      }
+    ]
+  }
+}

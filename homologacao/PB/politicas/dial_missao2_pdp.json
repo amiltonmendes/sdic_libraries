@@ -1,0 +1,265 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "dial_missao2_pdp",
+  "nome": "Parcerias para o Desenvolvimento Produtivo — Saúde",
+  "sigla": "PDP Saúde",
+  "categoria": "Complexo econômico-industrial da saúde",
+  "source": "SDIC/DIAL — Missão 2 - PDPs",
+  "reference": "acumulado",
+  "updated_at": "2026-10-13",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Registros de PDP",
+    "display_value": "2 registros",
+    "unit": "",
+    "period": "acumulado",
+    "delta": {
+      "dir": "flat",
+      "label": "2,1% do total nacional · 7ª entre 8 UFs"
+    },
+    "value": 2
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "PB",
+    "regra": "meio",
+    "headline": "2 registros na Paraíba — 2,1% do total nacional, 7ª posição entre as 8 UFs participantes do programa.",
+    "lede": "Paraíba ocupa a 7ª posição entre as 8 UFs participantes do programa e responde por 2,1% do programa no país. Dentro do Nordeste, que soma 25 registros, a participação da Paraíba é de 8,0%. Projetos para internalizar a produção de medicamentos e insumos estratégicos de saúde no Brasil.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "7ª posição nacional entre as 8 UFs participantes do programa, com 2,1% do total."
+      },
+      {
+        "tone": "neutral",
+        "text": "8,0% de tudo que o Nordeste registra no programa."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "parcerias",
+      "label": "Registros de PDP",
+      "value": 95,
+      "display_value": "95",
+      "unit": "registros",
+      "period": "acumulado"
+    },
+    {
+      "id": "produtos",
+      "label": "Produtos distintos",
+      "value": 80,
+      "display_value": "80",
+      "unit": "produtos",
+      "period": "acumulado"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "por_instituicao",
+      "title": "Registros por instituição pública",
+      "metric_label": "Registros",
+      "unit": "registros",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "LAFEPE",
+          "value": 14,
+          "display_value": "14 registros"
+        },
+        {
+          "name": "Fiocruz/Farmanguinhos",
+          "value": 14,
+          "display_value": "14 registros"
+        },
+        {
+          "name": "Fiocruz/Bio-Manguinhos",
+          "value": 13,
+          "display_value": "13 registros"
+        },
+        {
+          "name": "Butantan",
+          "value": 10,
+          "display_value": "10 registros"
+        },
+        {
+          "name": "LFM",
+          "value": 8,
+          "display_value": "8 registros"
+        },
+        {
+          "name": "FURP",
+          "value": 7,
+          "display_value": "7 registros"
+        },
+        {
+          "name": "IVB",
+          "value": 5,
+          "display_value": "5 registros"
+        },
+        {
+          "name": "FUNED",
+          "value": 5,
+          "display_value": "5 registros"
+        }
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "id": "por_uf",
+      "type": "bars",
+      "title": "Registros de PDP por UF da instituição pública",
+      "subtitle": "UF da instituição pública, não do alcance do projeto",
+      "unit": "registros",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "registros",
+          "label": "Registros",
+          "points": [
+            {
+              "t": "RJ",
+              "v": 46
+            },
+            {
+              "t": "SP",
+              "v": 17
+            },
+            {
+              "t": "PE",
+              "v": 15
+            },
+            {
+              "t": "MG",
+              "v": 5
+            },
+            {
+              "t": "BA",
+              "v": 4
+            },
+            {
+              "t": "RN",
+              "v": 4
+            },
+            {
+              "t": "PB",
+              "v": 2
+            },
+            {
+              "t": "PR",
+              "v": 2
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    }
+  ],
+  "breakdowns": [],
+  "records": [
+    {
+      "uf_ip": "PB",
+      "id_pdp": "P078",
+      "termo_compromisso": "TC Nº 45/2013",
+      "publicacao_dou": [
+        "2013-12-11"
+      ],
+      "produto": "Desfibrilador/Cardioversor",
+      "apresentacao": "Desfibrilador Lifeshock PRO",
+      "indicacao": null,
+      "instituicao_publica": "UEPB",
+      "regiao_ip": "NORDESTE",
+      "estado_ip": "PARAÍBA",
+      "plataforma": "Dispositivo Médico",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 33341139.0
+    },
+    {
+      "uf_ip": "PB",
+      "id_pdp": "P107",
+      "termo_compromisso": "TC Nº 44/2013",
+      "publicacao_dou": [
+        "2013-12-11"
+      ],
+      "produto": "Monitor multiparamétrico",
+      "apresentacao": "Lifetouch 10, Lifetouch L12 e Lifetouch 17",
+      "indicacao": null,
+      "instituicao_publica": "UEPB",
+      "regiao_ip": "NORDESTE",
+      "estado_ip": "PARAÍBA",
+      "plataforma": "Dispositivo Médico",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 30533714.88
+    }
+  ],
+  "source_breakdowns": {
+    "por_fase": {
+      "IV": 2
+    },
+    "por_situacao": {
+      "Verificação da Internalização da Tecnologia": 2
+    }
+  },
+  "data_quality": {
+    "source_rows": 95,
+    "raw_exact_duplicate_occurrences": 0,
+    "raw_exact_duplicate_groups": 0,
+    "normalized_exact_duplicate_occurrences": 0,
+    "normalized_exact_duplicate_groups": 0,
+    "business_key_duplicate_groups": 0,
+    "business_key": [
+      "produto",
+      "apresentacao",
+      "indicacao",
+      "instituicao_publica",
+      "parceiro_nacional",
+      "parceiro_internacional",
+      "entidade_ifa",
+      "plataforma"
+    ],
+    "source_identifier": "id_pdp",
+    "distinct_source_ids": 95,
+    "duplicate_policy": "reject_missing_or_duplicate_source_identifier",
+    "publication_date_missing_records": 4,
+    "publication_multiple_date_records": 2,
+    "acquisition_value_present_records": 54,
+    "acquisition_value_missing_records": 41,
+    "acquisition_value_unit": null,
+    "acquisition_value_period": null
+  },
+  "_nota_anonimizacao": "Nomes de parceiros privados e entidades fornecedoras de IFA não são publicados.",
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-10-13",
+  "geo": {
+    "nivel": "uf",
+    "fallback": false,
+    "uf": "PB",
+    "regiao": "Nordeste"
+  },
+  "story_nacional": {
+    "escopo": "nacional",
+    "headline": "A base reúne 95 registros de Parcerias para o Desenvolvimento Produtivo, relativos a {{kpis[produtos].display_value}} produtos e instituições públicas em 8 UFs.",
+    "lede": "Projetos para internalizar a produção de medicamentos e insumos estratégicos de saúde no Brasil. A contagem reproduz os registros identificados na base recebida.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "80 produtos distintos aparecem na base."
+      },
+      {
+        "tone": "neutral",
+        "text": "LAFEPE concentra 14 registros de PDP."
+      },
+      {
+        "tone": "neutral",
+        "text": "Os 95 registros possuem identificadores únicos nesta versão da fonte."
+      },
+      {
+        "tone": "neutral",
+        "text": "O recorte por UF indica a localização da instituição pública responsável pelo registro, não necessariamente o alcance territorial do projeto ou produto."
+      }
+    ]
+  }
+}

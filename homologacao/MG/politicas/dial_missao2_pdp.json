@@ -1,0 +1,323 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "dial_missao2_pdp",
+  "nome": "Parcerias para o Desenvolvimento Produtivo — Saúde",
+  "sigla": "PDP Saúde",
+  "categoria": "Complexo econômico-industrial da saúde",
+  "source": "SDIC/DIAL — Missão 2 - PDPs",
+  "reference": "acumulado",
+  "updated_at": "2026-10-13",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Registros de PDP",
+    "display_value": "5 registros",
+    "unit": "",
+    "period": "acumulado",
+    "delta": {
+      "dir": "up",
+      "label": "5,3% do total nacional · 4ª entre 8 UFs"
+    },
+    "value": 5
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "MG",
+    "regra": "meio",
+    "headline": "5 registros em Minas Gerais — 5,3% do total nacional, 4ª posição entre as 8 UFs participantes do programa.",
+    "lede": "Minas Gerais ocupa a 4ª posição entre as 8 UFs participantes do programa e responde por 5,3% do programa no país. Dentro do Sudeste, que soma 68 registros, a participação de Minas Gerais é de 7,4%. Projetos para internalizar a produção de medicamentos e insumos estratégicos de saúde no Brasil.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "4ª posição nacional entre as 8 UFs participantes do programa, com 5,3% do total."
+      },
+      {
+        "tone": "neutral",
+        "text": "7,4% de tudo que o Sudeste registra no programa."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "parcerias",
+      "label": "Registros de PDP",
+      "value": 95,
+      "display_value": "95",
+      "unit": "registros",
+      "period": "acumulado"
+    },
+    {
+      "id": "produtos",
+      "label": "Produtos distintos",
+      "value": 80,
+      "display_value": "80",
+      "unit": "produtos",
+      "period": "acumulado"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "por_instituicao",
+      "title": "Registros por instituição pública",
+      "metric_label": "Registros",
+      "unit": "registros",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "LAFEPE",
+          "value": 14,
+          "display_value": "14 registros"
+        },
+        {
+          "name": "Fiocruz/Farmanguinhos",
+          "value": 14,
+          "display_value": "14 registros"
+        },
+        {
+          "name": "Fiocruz/Bio-Manguinhos",
+          "value": 13,
+          "display_value": "13 registros"
+        },
+        {
+          "name": "Butantan",
+          "value": 10,
+          "display_value": "10 registros"
+        },
+        {
+          "name": "LFM",
+          "value": 8,
+          "display_value": "8 registros"
+        },
+        {
+          "name": "FURP",
+          "value": 7,
+          "display_value": "7 registros"
+        },
+        {
+          "name": "IVB",
+          "value": 5,
+          "display_value": "5 registros"
+        },
+        {
+          "name": "FUNED",
+          "value": 5,
+          "display_value": "5 registros"
+        }
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "id": "por_uf",
+      "type": "bars",
+      "title": "Registros de PDP por UF da instituição pública",
+      "subtitle": "UF da instituição pública, não do alcance do projeto",
+      "unit": "registros",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "registros",
+          "label": "Registros",
+          "points": [
+            {
+              "t": "RJ",
+              "v": 46
+            },
+            {
+              "t": "SP",
+              "v": 17
+            },
+            {
+              "t": "PE",
+              "v": 15
+            },
+            {
+              "t": "MG",
+              "v": 5
+            },
+            {
+              "t": "BA",
+              "v": 4
+            },
+            {
+              "t": "RN",
+              "v": 4
+            },
+            {
+              "t": "PB",
+              "v": 2
+            },
+            {
+              "t": "PR",
+              "v": 2
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    }
+  ],
+  "breakdowns": [],
+  "records": [
+    {
+      "uf_ip": "MG",
+      "id_pdp": "P011",
+      "termo_compromisso": "TC nº 05/2009",
+      "publicacao_dou": [
+        "2009-11-04"
+      ],
+      "produto": "Tenofovir",
+      "apresentacao": "Comprimido revestido (300mg)",
+      "indicacao": "Infecção pelo HIV em adultos; Infecção pelo HIV em crianças e adolescentes; Tratamento de Hepatite B e Coinfecções",
+      "instituicao_publica": "FUNED",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "MINAS GERAIS",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 379889034.0
+    },
+    {
+      "uf_ip": "MG",
+      "id_pdp": "P018",
+      "termo_compromisso": "TC nº 05/2010",
+      "publicacao_dou": [
+        "2010-06-01"
+      ],
+      "produto": "Entecavir",
+      "apresentacao": "Comprimido revestido (0,5mg)",
+      "indicacao": "Tratamento de Hepatite B e Coinfecções",
+      "instituicao_publica": "FUNED",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "MINAS GERAIS",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 178699404.0
+    },
+    {
+      "uf_ip": "MG",
+      "id_pdp": "P185",
+      "termo_compromisso": "TC nº 02/2017",
+      "publicacao_dou": [
+        "2018-01-31"
+      ],
+      "produto": "Insulina Humana Recombinante (NPH e Regular)",
+      "apresentacao": "Suspensão injetável em frasco ampola de 10 mL, na apresentação de 100 Ul/mL (Regular); Suspensão injetável em frasco ampola de 10 mL, na apresentação de 100 Ul/mL (NPH); Solução injetável em carpule 3mL, na apresentação de 100 Ul/mL (Regular); Solução injetável em carpule 3mL, na apresentação de 100 Ul/mL (NPH)",
+      "indicacao": "Diabetes",
+      "instituicao_publica": "FUNED",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "MINAS GERAIS",
+      "plataforma": "Biotecnológico",
+      "fase": "III",
+      "situacao": "Transferência de tecnologia em curso",
+      "valor_aquisicoes": 142079500.0
+    },
+    {
+      "uf_ip": "MG",
+      "id_pdp": "P219",
+      "termo_compromisso": "TC nº 21/2026",
+      "publicacao_dou": [
+        "2026-03-31"
+      ],
+      "produto": "Aflibercepte",
+      "apresentacao": "Solução injetável",
+      "indicacao": "Degeneração macular relacionada à idade, neovascular (DMRI) (úmida); Deficiência visual devido ao edema macular secundário à oclusão da veia da retina (oclusão da veia central da retina (OVCR) ou oclusão de ramo da veia da retina (ORVR); Deficiência visual devido ao edema macular diabético (EMD); Deficiência visual devido à neovascularização coroidal miópica (NVC miópica); e Retinopatia da prematuridade (ROP) com zona I (fase 1+, 2+ 3 ou 3+), zona II (estágio 2+ e 3+) ou a doença RP-PA (RP posterior agressiva).",
+      "instituicao_publica": "FUNED",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "MINAS GERAIS",
+      "plataforma": "Biotecnológico",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "MG",
+      "id_pdp": "P280",
+      "termo_compromisso": "TC nº 4/2026",
+      "publicacao_dou": [
+        "2026-02-12"
+      ],
+      "produto": "Lenalidomida",
+      "apresentacao": "Comprimido (5 mg, 10 mg, 15 mg, 20 mg e 25 mg)",
+      "indicacao": "Mieloma múltiplo, Síndromes mielodisplásicas, Linfoma de células do manto e Linfoma folicular/Linfoma de zona marginal",
+      "instituicao_publica": "FUNED",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "MINAS GERAIS",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    }
+  ],
+  "source_breakdowns": {
+    "por_fase": {
+      "IV": 2,
+      "III": 1,
+      "II": 2
+    },
+    "por_situacao": {
+      "Verificação da Internalização da Tecnologia": 2,
+      "Transferência de tecnologia em curso": 1,
+      "Preparação para a execução da transferência de tecnologia": 2
+    }
+  },
+  "data_quality": {
+    "source_rows": 95,
+    "raw_exact_duplicate_occurrences": 0,
+    "raw_exact_duplicate_groups": 0,
+    "normalized_exact_duplicate_occurrences": 0,
+    "normalized_exact_duplicate_groups": 0,
+    "business_key_duplicate_groups": 0,
+    "business_key": [
+      "produto",
+      "apresentacao",
+      "indicacao",
+      "instituicao_publica",
+      "parceiro_nacional",
+      "parceiro_internacional",
+      "entidade_ifa",
+      "plataforma"
+    ],
+    "source_identifier": "id_pdp",
+    "distinct_source_ids": 95,
+    "duplicate_policy": "reject_missing_or_duplicate_source_identifier",
+    "publication_date_missing_records": 4,
+    "publication_multiple_date_records": 2,
+    "acquisition_value_present_records": 54,
+    "acquisition_value_missing_records": 41,
+    "acquisition_value_unit": null,
+    "acquisition_value_period": null
+  },
+  "_nota_anonimizacao": "Nomes de parceiros privados e entidades fornecedoras de IFA não são publicados.",
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-10-13",
+  "geo": {
+    "nivel": "uf",
+    "fallback": false,
+    "uf": "MG",
+    "regiao": "Sudeste"
+  },
+  "story_nacional": {
+    "escopo": "nacional",
+    "headline": "A base reúne 95 registros de Parcerias para o Desenvolvimento Produtivo, relativos a {{kpis[produtos].display_value}} produtos e instituições públicas em 8 UFs.",
+    "lede": "Projetos para internalizar a produção de medicamentos e insumos estratégicos de saúde no Brasil. A contagem reproduz os registros identificados na base recebida.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "80 produtos distintos aparecem na base."
+      },
+      {
+        "tone": "neutral",
+        "text": "LAFEPE concentra 14 registros de PDP."
+      },
+      {
+        "tone": "neutral",
+        "text": "Os 95 registros possuem identificadores únicos nesta versão da fonte."
+      },
+      {
+        "tone": "neutral",
+        "text": "O recorte por UF indica a localização da instituição pública responsável pelo registro, não necessariamente o alcance territorial do projeto ou produto."
+      }
+    ]
+  }
+}

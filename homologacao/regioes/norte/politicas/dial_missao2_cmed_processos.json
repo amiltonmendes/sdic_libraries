@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "dial_missao2_cmed_processos",
+  "nome": "Processos CMED relatados pelo MDIC",
+  "sigla": "Proc-CMED",
+  "categoria": "Regulação de medicamentos",
+  "source": "SDIC/DIAL — Missao 2 - CMED_quadro",
+  "reference": "2023-2026; 2026 até 02/10",
+  "updated_at": "2026-10-13",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Processos concluídos e em análise",
+    "value": 197,
+    "display_value": "197 processos",
+    "unit": "",
+    "period": "2023-2026; 2026 até 02/10",
+    "delta": {
+      "dir": "flat",
+      "label": ""
+    }
+  },
+  "story": {
+    "escopo": "nacional",
+    "headline": "Processos CMED relatados pelo MDIC: 197 processos na base recebida.",
+    "lede": "178 processos concluídos e 19 em análise. A série anual detalha somente os concluídos; 2026 até 02/10.",
+    "highlights": []
+  },
+  "kpis": [
+    {
+      "id": "total",
+      "label": "Processos concluídos e em análise",
+      "value": 197,
+      "display_value": "197",
+      "unit": "processos",
+      "period": "2023-2026; 2026 até 02/10"
+    }
+  ],
+  "charts": [
+    {
+      "id": "concluidos_por_ano",
+      "type": "bars",
+      "title": "Processos concluídos por ano",
+      "subtitle": "2026 até 02/10",
+      "unit": "processos",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "concluidos_por_ano",
+          "label": "Processos concluídos por ano",
+          "points": [
+            {
+              "t": 2023,
+              "v": 4
+            },
+            {
+              "t": 2024,
+              "v": 19
+            },
+            {
+              "t": 2025,
+              "v": 71
+            },
+            {
+              "t": 2026,
+              "v": 84
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    }
+  ],
+  "ranked_lists": [],
+  "breakdowns": [
+    {
+      "id": "por_situacao",
+      "title": "Processos por situação",
+      "dimension_label": "Situação",
+      "unit": "processos",
+      "items": [
+        {
+          "name": "Concluídos",
+          "value": 178,
+          "display_value": "178 processos"
+        },
+        {
+          "name": "Em análise",
+          "value": 19,
+          "display_value": "19 processos"
+        }
+      ]
+    }
+  ],
+  "records": [
+    {
+      "ano": 2023,
+      "periodo": "2023",
+      "situacao": "concluido",
+      "infracao": 0,
+      "dip": 4,
+      "casos_omissos_cm": 0,
+      "reexames_necessarios": 0,
+      "total": 4
+    },
+    {
+      "ano": 2024,
+      "periodo": "2024",
+      "situacao": "concluido",
+      "infracao": 12,
+      "dip": 6,
+      "casos_omissos_cm": 1,
+      "reexames_necessarios": 0,
+      "total": 19
+    },
+    {
+      "ano": 2025,
+      "periodo": "2025",
+      "situacao": "concluido",
+      "infracao": 58,
+      "dip": 8,
+      "casos_omissos_cm": 5,
+      "reexames_necessarios": 0,
+      "total": 71
+    },
+    {
+      "ano": 2026,
+      "periodo": "2026 (até 02/10)",
+      "situacao": "concluido",
+      "infracao": 76,
+      "dip": 3,
+      "casos_omissos_cm": 5,
+      "reexames_necessarios": 0,
+      "total": 84
+    }
+  ],
+  "source_totals": {
+    "Em análise": {
+      "infracao": 10,
+      "dip": 0,
+      "casos_omissos_cm": 0,
+      "reexames_necessarios": 9,
+      "total": 19
+    },
+    "Total (concluídos + em análise)": {
+      "infracao": 156,
+      "dip": 21,
+      "casos_omissos_cm": 11,
+      "reexames_necessarios": 9,
+      "total": 197
+    },
+    "Total concluídos": {
+      "infracao": 146,
+      "dip": 21,
+      "casos_omissos_cm": 11,
+      "reexames_necessarios": 0,
+      "total": 178
+    }
+  },
+  "data_quality": {
+    "source_rows": 7,
+    "annual_rows": 4,
+    "summary_rows_not_added_to_annual_series": 3,
+    "totals_reconciled": true
+  },
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-10-13",
+  "geo": {
+    "nivel": "nacional",
+    "fallback": true,
+    "regiao": "Norte"
+  }
+}

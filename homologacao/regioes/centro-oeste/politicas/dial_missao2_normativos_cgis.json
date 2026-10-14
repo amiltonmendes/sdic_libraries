@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "dial_missao2_normativos_cgis",
+  "nome": "Marco normativo do Complexo Econômico-Industrial da Saúde",
+  "sigla": "Normativos CEIS",
+  "categoria": "Marco normativo",
+  "source": "SDIC/DIAL — Normativos CGIS",
+  "reference": "normativos publicados entre 2023 e 2026",
+  "updated_at": "2026-10-13",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Normativos relacionados",
+    "value": 10,
+    "display_value": "10 normativos",
+    "unit": "",
+    "period": "2023-2026",
+    "delta": {
+      "dir": "up",
+      "label": "3 categorias"
+    }
+  },
+  "story": {
+    "escopo": "nacional",
+    "headline": "A base reúne {{kpis[normativos].display_value}} normativos relacionados ao Complexo Econômico-Industrial da Saúde.",
+    "lede": "Leis, decretos, resoluções e portarias que estruturam programas, instâncias de governança e regras do complexo da saúde.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "Portarias do Ministério da Saúde representam 8 registros."
+      },
+      {
+        "tone": "neutral",
+        "text": "Cada registro inclui súmula e endereço eletrônico."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "normativos",
+      "label": "Normativos relacionados",
+      "value": 10,
+      "display_value": "10",
+      "unit": "normativos",
+      "period": "2023-2026"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "por_categoria_normativo",
+      "title": "Normativos por categoria",
+      "metric_label": "Normativos",
+      "unit": "normativos",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "Portarias do Ministério da Saúde",
+          "value": 8,
+          "display_value": "8 normativos"
+        },
+        {
+          "name": "Lei",
+          "value": 1,
+          "display_value": "1 normativos"
+        },
+        {
+          "name": "Decretos",
+          "value": 1,
+          "display_value": "1 normativos"
+        }
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "id": "normativos_por_ano",
+      "type": "bars",
+      "title": "Normativos por ano",
+      "subtitle": "2023-2026",
+      "unit": "normativos",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "normativos",
+          "label": "Normativos",
+          "points": [
+            {
+              "t": "2023",
+              "v": 2
+            },
+            {
+              "t": "2024",
+              "v": 4
+            },
+            {
+              "t": "2025",
+              "v": 1
+            },
+            {
+              "t": "2026",
+              "v": 3
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    }
+  ],
+  "breakdowns": [],
+  "records": [
+    {
+      "categoria": "Lei",
+      "normativo": "Lei 15.471/2026",
+      "sumula": "Institui a Estratégia Nacional de Saúde do Complexo Econômico-Industrial da Saúde (Ensceis); e altera a Lei nº 6.360, de 23 de setembro de 1976, a Lei nº 14.133, de 1º de abril de 2021 (Lei de Licitações e Contratos Administrativos), e a Lei nº 8.080, de 19 de setembro de 1990 (Lei Orgânica da Saúde).",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2026/lei/l15471.htm"
+    },
+    {
+      "categoria": "Portarias do Ministério da Saúde",
+      "normativo": "Portaria GM/MS nº 11.921, de 3 de julho de 2026",
+      "sumula": "Altera a Portaria de Consolidação GM/MS nº 5, de 28 de setembro de 2017, para instituir o Programa Nacional de Inovação Radical em Saúde - PNIRS, no âmbito do Ministério da Saúde.",
+      "url": "https://pesquisa.in.gov.br/imprensa/jsp/visualiza/index.jsp?data=06/07/2026&jornal=515&pagina=119&totalArquivos=226"
+    },
+    {
+      "categoria": "Portarias do Ministério da Saúde",
+      "normativo": "Resolução SCTIE/MS nº 1, de 28 de maio de 2026",
+      "sumula": "Aprova o Regimento Interno do Grupo Executivo do Complexo Econômico-Industrial da Saúde - Geceis.",
+      "url": "https://www.in.gov.br/web/dou/-/resolucao-sctie/ms-n-1-de-28-de-maio-de-2026-709518307"
+    },
+    {
+      "categoria": "Portarias do Ministério da Saúde",
+      "normativo": "Portaria CONJUNTA MS/MDIC/MGI nº 7.203, de 11 de junho de 2025",
+      "sumula": "Institui o Comitê Permanente de Articulação e Monitoramento de Ações Regulatórias referentes ao Complexo Econômico-Industrial da Saúde - CEIS.",
+      "url": "https://www.in.gov.br/web/dou/-/portaria-conjunta-ms/mdic/mgi-n-7.203-de-11-de-junho-de-2025-636297027"
+    },
+    {
+      "categoria": "Portarias do Ministério da Saúde",
+      "normativo": "Portaria GM/MS nº 6.097, de 16 de dezembro de 2024",
+      "sumula": "Aprova o Regimento Interno e estabelece o funcionamento do Comitê Deliberativo - CD, no âmbito do Complexo Econômico Industrial da Saúde e define, em caráter complementar, critérios de análise e competências para o processo de avaliação e deliberação das propostas de projeto de Parceria para o Desenvolvimento Produtivo - PDP e Programa de Desenvolvimento e Inovação Local - PDIL.",
+      "url": "https://www.in.gov.br/en/web/dou/-/portaria-gm/ms-n-6.097-de-16-de-dezembro-de-2024-602593930"
+    },
+    {
+      "categoria": "Portarias do Ministério da Saúde",
+      "normativo": "Resolução SECTICS/MS nº 1, de 9 de dezembro de 2024",
+      "sumula": "Aprova o Regimento Interno e estabelece o funcionamento da Comissão Técnica de Avaliação - CTA, no âmbito do Complexo Econômico-Industrial da Saúde e define, em caráter complementar, critérios de análise e competências para o processo de avaliação e deliberação das propostas de projeto de Parceria para o Desenvolvimento Produtivo - PDP e Programa de Desenvolvimento e Inovação Local - PDIL.",
+      "url": "https://www.in.gov.br/en/web/dou/-/resolucao-sectics/ms-n-1-de-9-de-dezembro-de-2024-600543309"
+    },
+    {
+      "categoria": "Portarias do Ministério da Saúde",
+      "normativo": "Portaria GM/MS nº 4.472, de 20 de junho de 2024",
+      "sumula": "Altera a Portaria de Consolidação GM/MS nº 5, de 28 de setembro de 2017, para dispor sobre o Programa de Parcerias para o Desenvolvimento Produtivo - PDP.",
+      "url": "https://www.in.gov.br/en/web/dou/-/portaria-gm/ms-n-4.472-de-20-de-junho-de-2024-567221914"
+    },
+    {
+      "categoria": "Portarias do Ministério da Saúde",
+      "normativo": "Portaria GM/MS nº 4.473, de 20 de junho de 2024",
+      "sumula": "Altera a Portaria de Consolidação MS nº 5, de 28 de setembro de 2017, e institui o Programa de Desenvolvimento e Inovação Local - PDIL.",
+      "url": "https://www.in.gov.br/en/web/dou/-/portaria-gm/ms-n-4.473-de-20-de-junho-de-2024-567227027"
+    },
+    {
+      "categoria": "Portarias do Ministério da Saúde",
+      "normativo": "Portaria GM/MS nº 2.261, de 8 de dezembro de 2023",
+      "sumula": "Estabelece a Matriz de Desafios Produtivos e Tecnológicos em Saúde.",
+      "url": "https://www.in.gov.br/en/web/dou/-/portaria-gm/ms-n-2.261-de-8-de-dezembro-de-2023-529259361"
+    },
+    {
+      "categoria": "Decretos",
+      "normativo": "Decreto nº 11.714, de 26 de setembro de 2023",
+      "sumula": "Dispõe sobre o Comitê Deliberativo e a Comissão Técnica de Avaliação no âmbito do Complexo Econômico-Industrial da Saúde.",
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2023/decreto/d11714.htm"
+    }
+  ],
+  "data_quality": {
+    "source_rows": 10,
+    "exact_duplicate_occurrences": 0,
+    "duplicate_normatives": 0,
+    "duplicate_urls": 0
+  },
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-10-13",
+  "geo": {
+    "nivel": "nacional",
+    "fallback": true,
+    "regiao": "Centro-Oeste"
+  }
+}

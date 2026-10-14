@@ -1,0 +1,541 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "dial_missao2_pdp",
+  "nome": "Parcerias para o Desenvolvimento Produtivo — Saúde",
+  "sigla": "PDP Saúde",
+  "categoria": "Complexo econômico-industrial da saúde",
+  "source": "SDIC/DIAL — Missão 2 - PDPs",
+  "reference": "acumulado",
+  "updated_at": "2026-10-13",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Registros de PDP",
+    "display_value": "17 registros",
+    "unit": "",
+    "period": "acumulado",
+    "delta": {
+      "dir": "up",
+      "label": "17,9% do total nacional · 2ª entre 8 UFs"
+    },
+    "value": 17
+  },
+  "story": {
+    "escopo": "uf",
+    "uf": "SP",
+    "regra": "top",
+    "headline": "São Paulo é o 2º do país: 17 registros, 17,9% do total nacional.",
+    "lede": "São Paulo ocupa a 2ª posição entre as 8 UFs participantes do programa e responde por 17,9% do programa no país. Dentro do Sudeste, que soma 68 registros, a participação de São Paulo é de 25,0%. Projetos para internalizar a produção de medicamentos e insumos estratégicos de saúde no Brasil.",
+    "highlights": [
+      {
+        "tone": "pos",
+        "text": "2ª posição nacional entre as 8 UFs participantes do programa, com 17,9% do total."
+      },
+      {
+        "tone": "neutral",
+        "text": "25,0% de tudo que o Sudeste registra no programa."
+      }
+    ]
+  },
+  "kpis": [
+    {
+      "id": "parcerias",
+      "label": "Registros de PDP",
+      "value": 95,
+      "display_value": "95",
+      "unit": "registros",
+      "period": "acumulado"
+    },
+    {
+      "id": "produtos",
+      "label": "Produtos distintos",
+      "value": 80,
+      "display_value": "80",
+      "unit": "produtos",
+      "period": "acumulado"
+    }
+  ],
+  "ranked_lists": [
+    {
+      "id": "por_instituicao",
+      "title": "Registros por instituição pública",
+      "metric_label": "Registros",
+      "unit": "registros",
+      "tone": "neutral",
+      "items": [
+        {
+          "name": "LAFEPE",
+          "value": 14,
+          "display_value": "14 registros"
+        },
+        {
+          "name": "Fiocruz/Farmanguinhos",
+          "value": 14,
+          "display_value": "14 registros"
+        },
+        {
+          "name": "Fiocruz/Bio-Manguinhos",
+          "value": 13,
+          "display_value": "13 registros"
+        },
+        {
+          "name": "Butantan",
+          "value": 10,
+          "display_value": "10 registros"
+        },
+        {
+          "name": "LFM",
+          "value": 8,
+          "display_value": "8 registros"
+        },
+        {
+          "name": "FURP",
+          "value": 7,
+          "display_value": "7 registros"
+        },
+        {
+          "name": "IVB",
+          "value": 5,
+          "display_value": "5 registros"
+        },
+        {
+          "name": "FUNED",
+          "value": 5,
+          "display_value": "5 registros"
+        }
+      ]
+    }
+  ],
+  "charts": [
+    {
+      "id": "por_uf",
+      "type": "bars",
+      "title": "Registros de PDP por UF da instituição pública",
+      "subtitle": "UF da instituição pública, não do alcance do projeto",
+      "unit": "registros",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "registros",
+          "label": "Registros",
+          "points": [
+            {
+              "t": "RJ",
+              "v": 46
+            },
+            {
+              "t": "SP",
+              "v": 17
+            },
+            {
+              "t": "PE",
+              "v": 15
+            },
+            {
+              "t": "MG",
+              "v": 5
+            },
+            {
+              "t": "BA",
+              "v": 4
+            },
+            {
+              "t": "RN",
+              "v": 4
+            },
+            {
+              "t": "PB",
+              "v": 2
+            },
+            {
+              "t": "PR",
+              "v": 2
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    }
+  ],
+  "breakdowns": [],
+  "records": [
+    {
+      "uf_ip": "SP",
+      "id_pdp": "P063",
+      "termo_compromisso": "TC nº 09/2012",
+      "publicacao_dou": [
+        "2012-10-31"
+      ],
+      "produto": "Vacina Adsorvida Hepatite A (inativada)",
+      "apresentacao": "Suspensão injetável Frasco-ampola de 0,5 mL",
+      "indicacao": "Prevenção da Hepatite A",
+      "instituicao_publica": "Butantan",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "SÃO PAULO",
+      "plataforma": "Vacina",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 812880000.0
+    },
+    {
+      "uf_ip": "SP",
+      "id_pdp": "P082",
+      "termo_compromisso": "TC nº 28/2013",
+      "publicacao_dou": [
+        "2013-06-18"
+      ],
+      "produto": "Etanercepte",
+      "apresentacao": "Seringa pré-preenchida 50 mg",
+      "indicacao": "Artrite Reumatoide; Artrite Psoríaca; Espondilite Ancilosante",
+      "instituicao_publica": "Butantan",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "SÃO PAULO",
+      "plataforma": "Biotecnológico",
+      "fase": "II",
+      "situacao": "Suspensa",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "SP",
+      "id_pdp": "P086",
+      "termo_compromisso": "TC nº 05/2013",
+      "publicacao_dou": [
+        "2018-03-27"
+      ],
+      "produto": "Galantamina",
+      "apresentacao": "Cápsula gelatinosa (8mg; 16mg; 24mg)",
+      "indicacao": "Doença de Alzheimer",
+      "instituicao_publica": "FURP",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "SÃO PAULO",
+      "plataforma": "Sintético",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 93080725.16
+    },
+    {
+      "uf_ip": "SP",
+      "id_pdp": "P119",
+      "termo_compromisso": "TC nº 35/2013",
+      "publicacao_dou": [
+        "2013-12-11"
+      ],
+      "produto": "Vacina Dtpa (Vacina Adsorvida Difteria, Tétano e Pertussis Acelular)",
+      "apresentacao": "Suspensão injetável",
+      "indicacao": "Prevenção da difteria, tétano e coqueluche - dTpa",
+      "instituicao_publica": "Butantan",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "SÃO PAULO",
+      "plataforma": "Vacina",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 870350000.0
+    },
+    {
+      "uf_ip": "SP",
+      "id_pdp": "P120",
+      "termo_compromisso": "TC nº 37/2013",
+      "publicacao_dou": [
+        "2013-12-11"
+      ],
+      "produto": "Vacina HPV",
+      "apresentacao": "Suspensão injetável / Frasco-ampola de 0,5mL",
+      "indicacao": "Prevenção da infecção pelo HPV",
+      "instituicao_publica": "Butantan",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "SÃO PAULO",
+      "plataforma": "Vacina",
+      "fase": "IV",
+      "situacao": "Verificação da Internalização da Tecnologia",
+      "valor_aquisicoes": 2297530000.0
+    },
+    {
+      "uf_ip": "SP",
+      "id_pdp": "P129",
+      "termo_compromisso": "TC nº 13/2017; TC nº 05/2018",
+      "publicacao_dou": [
+        "2018-01-31",
+        "2018-12-14"
+      ],
+      "produto": "Adalimumabe",
+      "apresentacao": "Seringa pré-preenchida 40 mg",
+      "indicacao": "Artrite Psoríaca; Artrite Reumatoide; Doença de Crohn; Espondilite Ancilosante; Hidradenite supurativa ativa moderada a grave; Psoríase; Uveítes não infecciosa intermediária, posterior e pan-uveítes ativa",
+      "instituicao_publica": "Butantan",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "SÃO PAULO",
+      "plataforma": "Biotecnológico",
+      "fase": "III",
+      "situacao": "Transferência de tecnologia em curso",
+      "valor_aquisicoes": 1012061310.66
+    },
+    {
+      "uf_ip": "SP",
+      "id_pdp": "P210",
+      "termo_compromisso": "TC nº 13/2018",
+      "publicacao_dou": [
+        "2018-08-27"
+      ],
+      "produto": "Sofosbuvir",
+      "apresentacao": "Comprimido revestido (400mg)",
+      "indicacao": "Tratamento de Hepatite C e Coinfecções",
+      "instituicao_publica": "FURP",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "SÃO PAULO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "SP",
+      "id_pdp": "P226",
+      "termo_compromisso": "TC nº 39/2026",
+      "publicacao_dou": [
+        "2026-07-02"
+      ],
+      "produto": "Bevacizumabe",
+      "apresentacao": "Solução injetável (25mg/mL)",
+      "indicacao": "Câncer colorretal metastático (CCRm); câncer de pulmão de não pequenas células localmente avançado, metastático ou recorrente; câncer de mama metastático ou localmente recorrente (CMM); câncer de células renais metastático e/ou avançado (mRCC); câncer epitelial de ovário, tuba uterina e peritoneal primário e câncer de colo do útero.",
+      "instituicao_publica": "Butantan",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "SÃO PAULO",
+      "plataforma": "Biotecnológico",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "SP",
+      "id_pdp": "P241",
+      "termo_compromisso": "TC nº 16/2026",
+      "publicacao_dou": [
+        "2026-03-05"
+      ],
+      "produto": "Dasatinibe",
+      "apresentacao": "Comprimido revestido (20mg; 100mg)",
+      "indicacao": "Leucemia Mielóie Crônica do adulto",
+      "instituicao_publica": "FURP",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "SÃO PAULO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "SP",
+      "id_pdp": "P273",
+      "termo_compromisso": "TC nº 05/2025",
+      "publicacao_dou": [
+        "2025-07-28"
+      ],
+      "produto": "Ivacaftor",
+      "apresentacao": "Comprimido Revestido (150 mg)",
+      "indicacao": "Fibrose cística",
+      "instituicao_publica": "FURP",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "SÃO PAULO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "SP",
+      "id_pdp": "P277",
+      "termo_compromisso": "TC nº 1/2026",
+      "publicacao_dou": [
+        "2026-01-12"
+      ],
+      "produto": "Lamivudina + Dolutegravir",
+      "apresentacao": "Comprimido revestido (300mg + 50mg)",
+      "indicacao": "Infecção pelo HIV em adultos; Infecção pelo HIV em crianças e adolescentes",
+      "instituicao_publica": "FURP",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "SÃO PAULO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "SP",
+      "id_pdp": "P291",
+      "termo_compromisso": "TC nº 10/2025",
+      "publicacao_dou": [
+        "2025-09-05"
+      ],
+      "produto": "Natalizumabe",
+      "apresentacao": "20mg/mL, solução injetável frasco 15 mL",
+      "indicacao": "Esclerose multipla",
+      "instituicao_publica": "Butantan",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "SÃO PAULO",
+      "plataforma": "Biotecnológico",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "SP",
+      "id_pdp": "P299",
+      "termo_compromisso": "TC nº 15/2025",
+      "publicacao_dou": [
+        "2025-12-31"
+      ],
+      "produto": "Pazopanibe",
+      "apresentacao": "Comprimido revestido (200mg; 400mg)",
+      "indicacao": "Carcinoma de Células Renais (RCC), tratamento de carcinoma de células renais (RCC) avançado e/ou metastático, sarcoma de partes moles (STS) e tratamento de pacientes adultos com subtipos específicos de sarcoma de partes moles (STS)",
+      "instituicao_publica": "FURP",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "SÃO PAULO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "SP",
+      "id_pdp": "P302",
+      "termo_compromisso": "TC nº 19/2026",
+      "publicacao_dou": [
+        "2026-03-31"
+      ],
+      "produto": "Pembrolizumabe",
+      "apresentacao": "Solução injetável (25mg/mL)",
+      "indicacao": "Melanoma metastático ou irressecável; Carcinoma de pulmão de não pequenas células; Câncer de mama triplo-negativo",
+      "instituicao_publica": "Butantan",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "SÃO PAULO",
+      "plataforma": "Biotecnológico",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "SP",
+      "id_pdp": "P323",
+      "termo_compromisso": "TC nº 2/2026",
+      "publicacao_dou": [
+        "2026-01-27"
+      ],
+      "produto": "Tafamidis meglumina",
+      "apresentacao": "Cápsula mole 20 mg",
+      "indicacao": "Polineuropatia amiloidótica familiar relacionada à proteína transtirretina",
+      "instituicao_publica": "FURP",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "SÃO PAULO",
+      "plataforma": "Sintético",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "SP",
+      "id_pdp": "P358",
+      "termo_compromisso": "TC nº 3/2026",
+      "publicacao_dou": [
+        "2026-01-12"
+      ],
+      "produto": "Vacina COVID (RNAm)",
+      "apresentacao": "Suspensão injetável",
+      "indicacao": "Doença coronavírus 2019 (COVID-19)",
+      "instituicao_publica": "Butantan",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "SÃO PAULO",
+      "plataforma": "Biotecnológico",
+      "fase": "II",
+      "situacao": "Preparação para a execução da transferência de tecnologia",
+      "valor_aquisicoes": null
+    },
+    {
+      "uf_ip": "SP",
+      "id_pdp": "P366",
+      "termo_compromisso": "TC nº 03/2025",
+      "publicacao_dou": [
+        "2025-07-24"
+      ],
+      "produto": "Vacina Sincicial Respiratório (VSR)",
+      "apresentacao": "Pó para solução injetável",
+      "indicacao": "Prevenção da doença do trato respiratório inferior causada pelo vírus sincicial respiratório (VSR)",
+      "instituicao_publica": "Butantan",
+      "regiao_ip": "SUDESTE",
+      "estado_ip": "SÃO PAULO",
+      "plataforma": "Vacina",
+      "fase": "III",
+      "situacao": "Transferência de tecnologia em curso",
+      "valor_aquisicoes": 1173019776.0
+    }
+  ],
+  "source_breakdowns": {
+    "por_fase": {
+      "IV": 4,
+      "II": 11,
+      "III": 2
+    },
+    "por_situacao": {
+      "Verificação da Internalização da Tecnologia": 4,
+      "Suspensa": 1,
+      "Transferência de tecnologia em curso": 2,
+      "Preparação para a execução da transferência de tecnologia": 10
+    }
+  },
+  "data_quality": {
+    "source_rows": 95,
+    "raw_exact_duplicate_occurrences": 0,
+    "raw_exact_duplicate_groups": 0,
+    "normalized_exact_duplicate_occurrences": 0,
+    "normalized_exact_duplicate_groups": 0,
+    "business_key_duplicate_groups": 0,
+    "business_key": [
+      "produto",
+      "apresentacao",
+      "indicacao",
+      "instituicao_publica",
+      "parceiro_nacional",
+      "parceiro_internacional",
+      "entidade_ifa",
+      "plataforma"
+    ],
+    "source_identifier": "id_pdp",
+    "distinct_source_ids": 95,
+    "duplicate_policy": "reject_missing_or_duplicate_source_identifier",
+    "publication_date_missing_records": 4,
+    "publication_multiple_date_records": 2,
+    "acquisition_value_present_records": 54,
+    "acquisition_value_missing_records": 41,
+    "acquisition_value_unit": null,
+    "acquisition_value_period": null
+  },
+  "_nota_anonimizacao": "Nomes de parceiros privados e entidades fornecedoras de IFA não são publicados.",
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-10-13",
+  "geo": {
+    "nivel": "uf",
+    "fallback": false,
+    "uf": "SP",
+    "regiao": "Sudeste"
+  },
+  "story_nacional": {
+    "escopo": "nacional",
+    "headline": "A base reúne 95 registros de Parcerias para o Desenvolvimento Produtivo, relativos a {{kpis[produtos].display_value}} produtos e instituições públicas em 8 UFs.",
+    "lede": "Projetos para internalizar a produção de medicamentos e insumos estratégicos de saúde no Brasil. A contagem reproduz os registros identificados na base recebida.",
+    "highlights": [
+      {
+        "tone": "neutral",
+        "text": "80 produtos distintos aparecem na base."
+      },
+      {
+        "tone": "neutral",
+        "text": "LAFEPE concentra 14 registros de PDP."
+      },
+      {
+        "tone": "neutral",
+        "text": "Os 95 registros possuem identificadores únicos nesta versão da fonte."
+      },
+      {
+        "tone": "neutral",
+        "text": "O recorte por UF indica a localização da instituição pública responsável pelo registro, não necessariamente o alcance territorial do projeto ou produto."
+      }
+    ]
+  }
+}

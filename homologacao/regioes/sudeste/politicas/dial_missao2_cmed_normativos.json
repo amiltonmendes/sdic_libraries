@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.1",
+  "policy_id": "dial_missao2_cmed_normativos",
+  "nome": "Normativos CMED",
+  "sigla": "Norm-CMED",
+  "categoria": "Marco normativo",
+  "source": "SDIC/DIAL — Missao 2 - CMED_norm",
+  "reference": "2025-2026",
+  "updated_at": "2026-10-13",
+  "capa_kpi": {
+    "id": "capa",
+    "label": "Normativos relacionados",
+    "value": 4,
+    "display_value": "4 normativos",
+    "unit": "",
+    "period": "2025-2026",
+    "delta": {
+      "dir": "flat",
+      "label": ""
+    }
+  },
+  "story": {
+    "escopo": "nacional",
+    "headline": "Normativos CMED: 4 normativos na base recebida.",
+    "lede": "Atos CMED relacionados em base própria, sem sobreposição com os normativos CGIS da recepção.",
+    "highlights": []
+  },
+  "kpis": [
+    {
+      "id": "total",
+      "label": "Normativos relacionados",
+      "value": 4,
+      "display_value": "4",
+      "unit": "normativos",
+      "period": "2025-2026"
+    }
+  ],
+  "charts": [
+    {
+      "id": "normativos_por_ano",
+      "type": "bars",
+      "title": "Normativos CMED por ano",
+      "subtitle": "",
+      "unit": "normativos",
+      "x_kind": "category",
+      "series": [
+        {
+          "id": "normativos_por_ano",
+          "label": "Normativos CMED por ano",
+          "points": [
+            {
+              "t": 2025,
+              "v": 2
+            },
+            {
+              "t": 2026,
+              "v": 2
+            }
+          ]
+        }
+      ],
+      "annotations": []
+    }
+  ],
+  "ranked_lists": [],
+  "breakdowns": [],
+  "records": [
+    {
+      "categoria": "Resoluções do Conselho de Ministros da Câmara de Regulação do Mercado de Medicamentos (CMED)",
+      "normativo": "Resolução CM-CMED nº 7, de 28 de maio de 2026",
+      "sumula": "Altera a Resolução CM-CMED nº 3, de 29 de dezembro de 2025, que dispõe sobre os critérios para definição de preços de produtos novos e novas apresentações de medicamentos, de que trata o art. 7º da Lei nº 10.742, de 6 de outubro de 2003, e sobre o procedimento para a apresentação de Documento Informativo de Preço - DIP.",
+      "url": "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/legislacao/RESOLUOCMCMED7DE28DEMAIODE2026DOU.pdf",
+      "ano": 2026
+    },
+    {
+      "categoria": "Resoluções do Conselho de Ministros da Câmara de Regulação do Mercado de Medicamentos (CMED)",
+      "normativo": "Resolução CM-CMED nº 5, de 30 de março de 2026",
+      "sumula": "Dispõe sobre a forma de definição do Preço Fábrica (PF) e do Preço Máximo ao Consumidor (PMC) dos medicamentos.",
+      "url": "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/legislacao/RESOLUOCMCMEDN.5DE30DEMARODE2026DOU.pdf",
+      "ano": 2026
+    },
+    {
+      "categoria": "Resoluções do Conselho de Ministros da Câmara de Regulação do Mercado de Medicamentos (CMED)",
+      "normativo": "Resolução CM-CMED nº 3, de 29 de dezembro de 2025",
+      "sumula": "Dispõe sobre os critérios para definição de preços de produtos novos e novas apresentações de medicamentos, de que trata o art. 7º da Lei nº 10.742, de 6 de outubro de 2003, e sobre o procedimento para a apresentação de Documento Informativo de Preço - DIP.",
+      "url": "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/legislacao/copy3_of_RESOLUOCMEDN3DE29DEDEZEMBRODE2025.pdf",
+      "ano": 2025
+    },
+    {
+      "categoria": "Resoluções do Conselho de Ministros da Câmara de Regulação do Mercado de Medicamentos (CMED)",
+      "normativo": "Resolução CM-CMED nº 2, de 3 de junho de 2025",
+      "sumula": "Aprova o Regimento Interno da Câmara de Regulação do Mercado de Medicamentos - CMED e altera a Resolução CMED nº 2, de 5 de março de 2004.",
+      "url": "https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/cmed/legislacao/RESCM_2_2025.pdf",
+      "ano": 2025
+    }
+  ],
+  "data_quality": {
+    "source_rows": 4,
+    "exact_duplicate_occurrences": 0,
+    "overlap_with_cgis_records": 0,
+    "related_policy_id": "dial_missao2_normativos_cgis"
+  },
+  "competencia": "2026S2",
+  "data_aceitacao": "2026-10-13",
+  "geo": {
+    "nivel": "nacional",
+    "fallback": true,
+    "regiao": "Sudeste"
+  }
+}
