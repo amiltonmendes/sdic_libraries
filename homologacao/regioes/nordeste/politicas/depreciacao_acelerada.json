@@ -22,10 +22,10 @@
   "capa_kpi_secundario": {
     "id": "capa_da_bf",
     "label": "Benefício fiscal",
-    "display_value": "R$ 151,7 mi",
+    "display_value": "R$ 75,9 mi",
     "unit": "",
     "period": "2024-2026",
-    "value": 151723562.18
+    "value": 75861781.08
   },
   "story": {
     "escopo": "regiao",
@@ -53,8 +53,8 @@
     {
       "id": "beneficio",
       "label": "Benefício fiscal",
-      "value": 2976623738.41,
-      "display_value": "R$ 2,98 bi",
+      "value": 1488311869.2,
+      "display_value": "R$ 1,49 bi",
       "unit": "",
       "period": "2024-2026"
     },
@@ -652,7 +652,7 @@
       ]
     }
   ],
-  "_nota_metodologica": "Valor do BF recalculado como 34% fixo sobre Valor do Bem (não a coluna original da planilha, que é 17% constante em 100% das linhas — premissa simplificada, não cálculo tributário real/marginal). Taxa confirmada com o time por reconciliação com a versão anterior do indicador (recorte histórico de SP).",
+  "_nota_metodologica": "Benefício fiscal estimado como 17% fixo sobre o Valor do Bem, a mesma taxa constante da coluna 'Valor do BF' da planilha. Estimativa preliminar — premissa simplificada, não cálculo tributário real/marginal.",
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas agregados por UF/setor.",
   "competencia": "2026M09",
   "data_aceitacao": "2026-10-07",
@@ -676,7 +676,7 @@
       },
       {
         "tone": "neutral",
-        "text": "Benefício fiscal calculado com taxa fixa de 34%."
+        "text": "Benefício fiscal calculado com taxa fixa de 17%."
       }
     ]
   }

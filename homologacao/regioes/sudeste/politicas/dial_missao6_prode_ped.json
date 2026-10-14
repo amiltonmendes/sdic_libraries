@@ -10,7 +10,7 @@
   "capa_kpi": {
     "id": "capa",
     "label": "Produtos catalogados",
-    "display_value": "2463 produtos",
+    "display_value": "2459 produtos",
     "unit": "",
     "period": "acumulado",
     "delta": {
@@ -21,12 +21,12 @@
   },
   "story": {
     "escopo": "nacional",
-    "headline": "A Comissão Mista da Indústria de Defesa (CMID) catalogou 2463 produtos de 389 empresas, entre Produtos de Defesa (PRODE) e Produtos Estratégicos de Defesa (PED).",
+    "headline": "A Comissão Mista da Indústria de Defesa (CMID) catalogou 2459 produtos de 389 empresas, entre Produtos de Defesa (PRODE) e Produtos Estratégicos de Defesa (PED).",
     "lede": "Relação geral de produtos de defesa (PRODE) e produtos estratégicos de defesa (PED) da CMID. Dado o caráter estratégico dos itens, o JSON publica apenas contagens agregadas.",
     "highlights": [
       {
         "tone": "neutral",
-        "text": "2350 Produtos Estratégicos de Defesa (PED) e 113 Produtos de Defesa (PRODE)."
+        "text": "2346 Produtos Estratégicos de Defesa (PED) e 113 Produtos de Defesa (PRODE)."
       },
       {
         "tone": "neutral",
@@ -38,8 +38,8 @@
     {
       "id": "produtos",
       "label": "Produtos catalogados",
-      "value": 2463,
-      "display_value": "2463",
+      "value": 2459,
+      "display_value": "2459",
       "unit": "produtos",
       "period": "acumulado"
     },
@@ -54,8 +54,8 @@
     {
       "id": "ped",
       "label": "Produtos Estratégicos de Defesa (PED)",
-      "value": 2350,
-      "display_value": "2350",
+      "value": 2346,
+      "display_value": "2346",
       "unit": "produtos",
       "period": "acumulado"
     },
@@ -78,8 +78,8 @@
       "items": [
         {
           "name": "PED",
-          "value": 2350,
-          "display_value": "2350 produtos"
+          "value": 2346,
+          "display_value": "2346 produtos"
         },
         {
           "name": "PRODE",
@@ -92,11 +92,11 @@
   "charts": [],
   "breakdowns": [],
   "data_quality": {
-    "source_rows": 2463,
-    "source_rows_including_footers": 2465,
+    "source_rows": 2459,
+    "source_rows_including_footers": 2461,
     "footer_or_nonrecord_rows_excluded": 2,
-    "exact_duplicate_occurrences": 8,
-    "exact_duplicate_groups": 4,
+    "exact_duplicate_occurrences": 0,
+    "exact_duplicate_groups": 0,
     "duplicate_policy": "preserved_without_stable_source_identifier",
     "temporal_dimension_available": false
   },
