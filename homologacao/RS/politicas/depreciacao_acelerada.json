@@ -22,10 +22,10 @@
   "capa_kpi_secundario": {
     "id": "capa_da_bf",
     "label": "Benefício fiscal",
-    "display_value": "R$ 143,4 mi",
+    "display_value": "R$ 286,8 mi",
     "unit": "",
     "period": "2024-2026",
-    "value": 143418103.55
+    "value": 286836207.1
   },
   "story": {
     "escopo": "uf",
@@ -56,8 +56,8 @@
     {
       "id": "beneficio",
       "label": "Benefício fiscal",
-      "value": 1488311869.2,
-      "display_value": "R$ 1,49 bi",
+      "value": 2976623738.41,
+      "display_value": "R$ 2,98 bi",
       "unit": "",
       "period": "2024-2026"
     },
@@ -935,14 +935,14 @@
       ]
     }
   ],
-  "_nota_metodologica": "Benefício fiscal estimado como 17% fixo sobre o Valor do Bem, a mesma taxa constante da coluna 'Valor do BF' da planilha. Estimativa preliminar — premissa simplificada, não cálculo tributário real/marginal.",
+  "_nota_metodologica": "Benefício fiscal = 2 × a coluna 'Valor do BF' da planilha do DINTE, que traz um dos dois pagamentos previstos na política.",
   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas agregados por UF/setor.",
   "competencia": "2026M09",
   "data_aceitacao": "2026-10-07",
   "cobertura": "Pedidos deferidos de 2024 a 2026, base acumulada de deferimentos.",
   "ultima_referencia": "2026, parcial, sem data de corte informada",
   "ressalvas": [
-    "Benefício fiscal estimado a 17% do valor do bem: estimativa preliminar, não cálculo tributário real.",
+    "Benefício fiscal = os dois pagamentos previstos na política (o dobro do valor informado pelo DINTE por requerimento).",
     "2026 é parcial e não deve ser comparado diretamente com anos completos."
   ],
   "geo": {
@@ -966,7 +966,7 @@
       },
       {
         "tone": "neutral",
-        "text": "Benefício fiscal calculado com taxa fixa de 17%."
+        "text": "Benefício fiscal corresponde aos dois pagamentos previstos na política, a partir do valor informado pelo DINTE."
       }
     ]
   }
