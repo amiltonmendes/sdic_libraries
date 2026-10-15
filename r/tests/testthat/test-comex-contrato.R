@@ -50,3 +50,10 @@ test_that("filtro por seção aceita nome, letra e API nova ou antiga", {
     expect_equal(ncms(caso[[1]], "Agropecuária"), caso[[2]])
   }
 })
+
+test_that("ncm nulo continua NA (nivel_agregacao sem NCM)", {
+  df <- .comex_para_tibble(list(list(Ano = 2026, NCM = NULL, VLFob = 1), list(Ano = 2026, NCM = "02011000", VLFob = 2)))
+  expect_equal(df$ncm, c(NA_character_, "02011000"))
+  df <- .comex_para_tibble(list(list(Ano = 2026, NCM = NULL, VLFob = 1)))
+  expect_true(!"ncm" %in% names(df) || all(is.na(df$ncm)))
+})

@@ -51,3 +51,10 @@ def test_filtro_por_secao_aceita_nome_letra_e_api_nova_ou_antiga():
         cliente = Comex(api_key=None)
         cliente._ncm_isic_mapa_cache = mapa
         assert cliente._ncms_da_secao("A") == cliente._ncms_da_secao("Agropecuária") == {ncm}
+
+
+def test_ncm_nulo_continua_nulo():
+    """`nivel_agregacao` (setor/subsetor/produto) devolve NCM nulo; não pode virar "0000None"."""
+    df = _para_df([{"Ano": 2026, "NCM": None, "VLFob": 1}, {"Ano": 2026, "NCM": "02011000", "VLFob": 2}])
+    assert df["ncm"].isna().iloc[0] and df["ncm"].iloc[1] == "02011000"
+    assert _para_df([{"Ano": 2026, "NCM": None, "VLFob": 1}])["ncm"].isna().all()

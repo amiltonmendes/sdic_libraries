@@ -3,6 +3,22 @@
 Formato livre (sem [Keep a Changelog](https://keepachangelog.com) ainda) — o essencial é: o que
 muda pro usuário ao atualizar. Versionamento nas duas linguagens juntas; ver [AGENTS.md](AGENTS.md#versionamento).
 
+## [0.5.3] — 2026-10-15
+
+### Corrigido
+- Comex: `ncm` (e `divisao_isic_cod`) nulo continua nulo no DataFrame/tibble. Em
+  `get_exportacao_agrupamentos_pais_ncm`/`get_importacao_agrupamentos_pais_ncm` com
+  `nivel_agregacao='setor'|'subsetor'|'produto'`, a sdic_api não devolve NCM, e a coluna vinha com
+  lixo: `"0000None"` em Python e `"      NA"` em R. Agora vem `None`/`NA`.
+
+### Compatibilidade
+- Nenhuma mudança de função, parâmetro ou coluna nas funções que devolvem DataFrame/tibble.
+- A partir da próxima versão da sdic_api, `NCM` passa a vir como **texto de 8 dígitos** (`"02011000"`) também
+  em `/exportacao_agrupamentos_pais_ncm`, `/importacao_agrupamentos_pais_ncm` e
+  `/importacoes_detalhadas_pais_ncm`. Antes vinha como número, e os capítulos 01 a 09 perdiam o zero à esquerda. As funções
+  que devolvem DataFrame/tibble já entregavam `ncm` como texto e não mudam. Quem usa os métodos crus da classe
+  `Comex` (Python, `List[Dict]`) passa a receber `item['NCM']` como `str`, não `int`.
+
 ## [0.5.2] — 2026-10-09
 
 ### Corrigido

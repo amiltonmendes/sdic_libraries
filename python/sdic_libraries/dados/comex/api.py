@@ -116,7 +116,7 @@ class Comex:
         self.session = requests.Session()
         self.logger = logging.getLogger(__name__)
 
-        version = os.getenv('SDIC_VERSION', '0.5.2')
+        version = os.getenv('SDIC_VERSION', '0.5.3')
         self.session.headers.update({
             'User-Agent': f'sdic-libraries/{version}',
             'Accept': 'application/json',
@@ -599,8 +599,8 @@ def _para_df(itens: List[Dict[str, Any]], mapa: bool = False) -> pd.DataFrame:
             renomear['SecaoISIC'] = 'secao_isic_cod'
     df = df.rename(columns=renomear)
     for col, largura in (('ncm', 8), ('divisao_isic_cod', 2)):
-        if col in df:
-            df[col] = df[col].astype(str).str.zfill(largura)
+        if col in df:  # nulo (ex.: `nivel_agregacao` sem NCM) continua nulo, não vira "0000None"
+            df[col] = df[col].where(df[col].isna(), df[col].astype(str).str.zfill(largura))
     if 'ano' in df:  # o mapa NCM x ISIC é um catálogo, sem período
         if 'mes' not in df:
             df['mes'] = None

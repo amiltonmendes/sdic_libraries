@@ -54,7 +54,7 @@ Comex <- R6::R6Class(
       resolved_api_key <- api_key %||% Sys.getenv("COMEX_API_KEY", "")
       self$api_key <- if (nzchar(resolved_api_key)) resolved_api_key else NULL
 
-      version <- Sys.getenv("SDIC_VERSION", "0.5.2")
+      version <- Sys.getenv("SDIC_VERSION", "0.5.3")
       cli::cli_alert_success(
         "API de Comex inicializada (v{version}) - configuração carregada automaticamente"
       )
@@ -115,7 +115,7 @@ Comex <- R6::R6Class(
       }
       req <- httr2::req_headers(
         req,
-        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.2")),
+        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.3")),
         "Accept" = "application/json",
         "Content-Type" = "application/json"
       )
@@ -151,7 +151,7 @@ Comex <- R6::R6Class(
       }
       req <- httr2::req_headers(
         req,
-        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.2")),
+        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.3")),
         "Accept" = "application/json",
         "Content-Type" = "application/json"
       )
@@ -606,8 +606,9 @@ Comex <- R6::R6Class(
   }
   renomear <- names(df) %in% names(mapeamento)
   names(df)[renomear] <- unname(mapeamento[names(df)[renomear]])
-  if ("ncm" %in% names(df)) df$ncm <- sprintf("%08.0f", as.numeric(df$ncm))
-  if ("divisao_isic_cod" %in% names(df)) df$divisao_isic_cod <- sprintf("%02.0f", as.numeric(df$divisao_isic_cod))
+  # nulo (ex.: `nivel_agregacao` sem NCM) continua NA, não vira "      NA"
+  if ("ncm" %in% names(df)) df$ncm <- ifelse(is.na(df$ncm), NA_character_, sprintf("%08.0f", as.numeric(df$ncm)))
+  if ("divisao_isic_cod" %in% names(df)) df$divisao_isic_cod <- ifelse(is.na(df$divisao_isic_cod), NA_character_, sprintf("%02.0f", as.numeric(df$divisao_isic_cod)))
   if ("ano" %in% names(df)) {  # o mapa NCM x ISIC é um catálogo, sem período
     if (!"mes" %in% names(df)) df$mes <- NA
     df$ano <- as.integer(df$ano)
