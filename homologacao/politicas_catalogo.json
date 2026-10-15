@@ -1,9 +1,29 @@
 {
-  "schema_version": "1.2",
+  "schema_version": "1.3",
   "updated_at": "2026-10-13",
+  "manifesto": {
+    "schema_version": "1.0",
+    "publicador": "gaia_nib/politicas_sdic",
+    "rotulo_fonte": "SDIC — publicação GAIA/NIB",
+    "diretorias_exibidas": [
+      "DEIN",
+      "DIBEN",
+      "DINTE",
+      "DECOS",
+      "DIAL",
+      "CNDI"
+    ],
+    "notas": [
+      {
+        "id": "agregacao",
+        "texto": "Cada política tem período e unidade próprios (R$, empresas, projetos); valores de políticas diferentes não são somados."
+      }
+    ]
+  },
   "politicas_catalogo": [
     {
       "id": "b_mais_p",
+      "departamento": "DEIN",
       "file": "politicas/b_mais_p.json",
       "nome": "Brasil Mais Produtivo",
       "sigla": "B+P",
@@ -13,6 +33,7 @@
     },
     {
       "id": "construa_brasil",
+      "departamento": "DIBEN",
       "file": "politicas/construa_brasil.json",
       "nome": "Construa Brasil",
       "sigla": "Construa Brasil",
@@ -22,6 +43,7 @@
     },
     {
       "id": "construa_brasil_bim_na_pratica",
+      "departamento": "DIBEN",
       "file": "politicas/construa_brasil_bim_na_pratica.json",
       "nome": "Construção 4.0 — BIM na Prática",
       "sigla": "BIM na Prática",
@@ -31,6 +53,7 @@
     },
     {
       "id": "depreciacao_acelerada",
+      "departamento": "DINTE",
       "file": "politicas/depreciacao_acelerada.json",
       "nome": "Depreciação Acelerada",
       "sigla": "DA",
@@ -40,6 +63,7 @@
     },
     {
       "id": "decos_ecommerce_br",
+      "departamento": "DECOS",
       "file": "politicas/decos_ecommerce_br.json",
       "nome": "E-commerce.BR",
       "sigla": "E-commerce.BR",
@@ -49,6 +73,7 @@
     },
     {
       "id": "decos_empreendedoras_tech",
+      "departamento": "DECOS",
       "file": "politicas/decos_empreendedoras_tech.json",
       "nome": "Empreendedoras Tech",
       "sigla": "Empreendedoras Tech",
@@ -58,6 +83,7 @@
     },
     {
       "id": "dial_missao2_pdp",
+      "departamento": "DIAL",
       "file": "politicas/dial_missao2_pdp.json",
       "nome": "Parcerias para o Desenvolvimento Produtivo — Saúde",
       "sigla": "PDP Saúde",
@@ -67,6 +93,7 @@
     },
     {
       "id": "dial_missao2_pdil",
+      "departamento": "DIAL",
       "file": "politicas/dial_missao2_pdil.json",
       "nome": "Programa de Desenvolvimento e Inovação Local",
       "sigla": "PDIL",
@@ -76,6 +103,7 @@
     },
     {
       "id": "dial_missao2_normativos_cgis",
+      "departamento": "DIAL",
       "file": "politicas/dial_missao2_normativos_cgis.json",
       "nome": "Marco normativo do Complexo Econômico-Industrial da Saúde",
       "sigla": "Normativos CEIS",
@@ -85,6 +113,7 @@
     },
     {
       "id": "dial_missao2_cmed_normativos",
+      "departamento": "DIAL",
       "file": "politicas/dial_missao2_cmed_normativos.json",
       "nome": "Normativos CMED",
       "sigla": "Norm-CMED",
@@ -101,6 +130,7 @@
     },
     {
       "id": "dial_missao2_cmed_processos",
+      "departamento": "DIAL",
       "file": "politicas/dial_missao2_cmed_processos.json",
       "nome": "Processos CMED relatados pelo MDIC",
       "sigla": "Proc-CMED",
@@ -117,6 +147,7 @@
     },
     {
       "id": "dial_missao4_lei_tics",
+      "departamento": "DIAL",
       "file": "politicas/dial_missao4_lei_tics.json",
       "nome": "Lei de Informática (Lei de TICs)",
       "sigla": "Lei de TICs",
@@ -126,6 +157,7 @@
     },
     {
       "id": "dial_missao4_padis",
+      "departamento": "DIAL",
       "file": "politicas/dial_missao4_padis.json",
       "nome": "PADIS — Semicondutores e Componentes",
       "sigla": "PADIS",
@@ -135,6 +167,7 @@
     },
     {
       "id": "dial_missao4_ppb",
+      "departamento": "DIAL",
       "file": "politicas/dial_missao4_ppb.json",
       "nome": "Processo Produtivo Básico",
       "sigla": "PPB",
@@ -144,6 +177,7 @@
     },
     {
       "id": "dial_missao6_ed_eed",
+      "departamento": "DIAL",
       "file": "politicas/dial_missao6_ed_eed.json",
       "nome": "Empresas Credenciadas — Material de Defesa (ED/EED)",
       "sigla": "ED/EED",
@@ -160,6 +194,7 @@
     },
     {
       "id": "dial_missao6_prode_ped",
+      "departamento": "DIAL",
       "file": "politicas/dial_missao6_prode_ped.json",
       "nome": "Produtos de Defesa e Produtos Estratégicos de Defesa (CMID)",
       "sigla": "PRODE/PED",
@@ -176,6 +211,7 @@
     },
     {
       "id": "fgi",
+      "departamento": "DIBEN",
       "file": "politicas/fgi.json",
       "nome": "FGI — Fundo Garantidor para Investimentos",
       "sigla": "FGI",
@@ -185,6 +221,7 @@
     },
     {
       "id": "fgo",
+      "departamento": "DIBEN",
       "file": "politicas/fgo.json",
       "nome": "FGO — Fundo Garantidor de Operações",
       "sigla": "FGO",
@@ -194,6 +231,7 @@
     },
     {
       "id": "p_mais_p",
+      "departamento": "CNDI",
       "file": "politicas/p_mais_p.json",
       "nome": "Plano Mais Produção",
       "sigla": "P+P",
@@ -203,6 +241,7 @@
     },
     {
       "id": "reiq",
+      "departamento": "DINTE",
       "file": "politicas/reiq.json",
       "nome": "REIQ — Regime Especial da Indústria Química",
       "sigla": "REIQ",
@@ -212,6 +251,7 @@
     },
     {
       "id": "acoes_diben",
+      "departamento": "DIBEN",
       "file": "politicas/acoes_diben.json",
       "nome": "Ações DIBEN",
       "sigla": "Ações DIBEN",
@@ -221,6 +261,7 @@
     },
     {
       "id": "capacitacao_textil_senai_rn",
+      "departamento": "DIBEN",
       "file": "politicas/capacitacao_textil_senai_rn.json",
       "nome": "Capacitação Têxtil — Convênio SENAI-RN",
       "sigla": "Capacitação Têxtil RN",
@@ -230,6 +271,7 @@
     },
     {
       "id": "construcao_galpoes_industriais",
+      "departamento": "DIBEN",
       "file": "politicas/construcao_galpoes_industriais.json",
       "nome": "Construção de Galpões Industriais",
       "sigla": "Galpões Industriais",
@@ -239,6 +281,7 @@
     },
     {
       "id": "naval",
+      "departamento": "DIAM",
       "file": "politicas/naval.json",
       "nome": "Depreciação Acelerada — Indústria Naval",
       "sigla": "Naval",
@@ -248,6 +291,7 @@
     },
     {
       "id": "ex_tarifario_autopecas",
+      "departamento": "DIAM",
       "file": "politicas/ex_tarifario_autopecas.json",
       "nome": "Ex-Tarifário — Autopeças",
       "sigla": "Ex-Tarifário Autopeças",
@@ -257,6 +301,7 @@
     },
     {
       "id": "ex_tarifario_bk_bit",
+      "departamento": "DIAM",
       "file": "politicas/ex_tarifario_bk_bit.json",
       "nome": "Ex-Tarifário — Bens de Capital e Bens de Informática/Telecom",
       "sigla": "Ex-Tarifário BK/BIT",
@@ -266,6 +311,7 @@
     },
     {
       "id": "move_brasil",
+      "departamento": "DIAM",
       "file": "politicas/move_brasil.json",
       "nome": "Move Brasil",
       "sigla": "Move Brasil",
@@ -275,6 +321,7 @@
     },
     {
       "id": "mover",
+      "departamento": "DIAM",
       "file": "politicas/mover.json",
       "nome": "Mover — Mobilidade Verde e Inovação",
       "sigla": "MOVER",
@@ -284,6 +331,7 @@
     },
     {
       "id": "padr",
+      "departamento": "DIAM",
       "file": "politicas/padr.json",
       "nome": "Política Automotiva de Desenvolvimento Regional",
       "sigla": "PADR",
@@ -293,6 +341,7 @@
     },
     {
       "id": "dial_missao6_tles",
+      "departamento": "DIAL",
       "file": "politicas/dial_missao6_tles.json",
       "nome": "Termos de Licitação Especial (TLE) Autorizados",
       "sigla": "TLE",
