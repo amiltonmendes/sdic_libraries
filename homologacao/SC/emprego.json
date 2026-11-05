@@ -3,12 +3,12 @@
   "section_id": "emprego",
   "title": "Emprego",
   "source": "Novo CAGED / MTE",
-  "reference": "Ago/2026",
-  "updated_at": "2026-10-01",
+  "reference": "Set/2026",
+  "updated_at": "2026-11-05",
   "capa_kpi": {
     "id": "capa_emprego",
     "label": "Saldo CAGED 12m",
-    "display_value": "+41.638",
+    "display_value": "+36.877",
     "unit": "vagas",
     "period": "12 meses",
     "delta": {
@@ -34,7 +34,7 @@
       },
       {
         "tone": "pos",
-        "text": "Atividade com maior saldo: Serviços para edifícios e atividades paisagísticas (+4.861 vagas)."
+        "text": "Atividade com maior saldo: Serviços para edifícios e atividades paisagísticas (+5.132 vagas)."
       }
     ]
   },
@@ -42,26 +42,26 @@
     {
       "id": "saldo_mensal",
       "label": "Saldo mensal",
-      "value": 4452,
-      "display_value": "+4.452",
+      "value": 7086,
+      "display_value": "+7.086",
       "unit": "vagas",
-      "period": "Ago/2026"
+      "period": "Set/2026"
     },
     {
       "id": "saldo_12m",
       "label": "Saldo 12 meses",
-      "value": 41638,
-      "display_value": "+41.638",
+      "value": 36877,
+      "display_value": "+36.877",
       "unit": "vagas",
       "period": "12 meses"
     },
     {
       "id": "saldo_ano",
       "label": "Saldo no ano",
-      "value": 66907,
-      "display_value": "+66.907",
+      "value": 73572,
+      "display_value": "+73.572",
       "unit": "vagas",
-      "period": "2026 (até Ago)",
+      "period": "2026 (até Set)",
       "partial": true
     },
     {
@@ -94,60 +94,60 @@
           "label": "Saldo",
           "points": [
             {
-              "t": "202509",
-              "v": 11400
-            },
-            {
               "t": "202510",
-              "v": 6801
+              "v": 6793
             },
             {
               "t": "202511",
-              "v": 5125
+              "v": 5113
             },
             {
               "t": "202512",
-              "v": -48594
+              "v": -48601
             },
             {
               "t": "202601",
-              "v": 19902
+              "v": 19884
             },
             {
               "t": "202602",
-              "v": 22747
+              "v": 22729
             },
             {
               "t": "202603",
-              "v": 16990
+              "v": 16985
             },
             {
               "t": "202604",
-              "v": 2778
+              "v": 2769
             },
             {
               "t": "202605",
-              "v": -94
+              "v": -73
             },
             {
               "t": "202606",
-              "v": 639
+              "v": 588
             },
             {
               "t": "202607",
-              "v": -508
+              "v": -448
             },
             {
               "t": "202608",
-              "v": 4452
+              "v": 4052
+            },
+            {
+              "t": "202609",
+              "v": 7086
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202608",
-          "label": "+4.452 vagas"
+          "t": "202609",
+          "label": "+7.086 vagas"
         }
       ]
     },
@@ -163,60 +163,60 @@
           "label": "Acumulado 12m",
           "points": [
             {
-              "t": "202509",
-              "v": 71451
-            },
-            {
               "t": "202510",
-              "v": 68027
+              "v": 68035
             },
             {
               "t": "202511",
-              "v": 64237
+              "v": 64233
             },
             {
               "t": "202512",
-              "v": 58943
+              "v": 58927
             },
             {
               "t": "202601",
-              "v": 55037
+              "v": 55009
             },
             {
               "t": "202602",
-              "v": 47227
+              "v": 47196
             },
             {
               "t": "202603",
-              "v": 53658
+              "v": 53598
             },
             {
               "t": "202604",
-              "v": 47270
+              "v": 47199
             },
             {
               "t": "202605",
-              "v": 47330
+              "v": 47292
             },
             {
               "t": "202606",
-              "v": 41661
+              "v": 41556
             },
             {
               "t": "202607",
-              "v": 37963
+              "v": 37927
             },
             {
               "t": "202608",
-              "v": 41641
+              "v": 41202
+            },
+            {
+              "t": "202609",
+              "v": 36877
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202608",
-          "label": "+41.641 vagas"
+          "t": "202609",
+          "label": "+36.877 vagas"
         }
       ]
     }
@@ -231,28 +231,28 @@
       "items": [
         {
           "name": "Serviços para edifícios e atividades paisagísticas",
-          "value": 4861,
-          "display_value": "+4.861"
-        },
-        {
-          "name": "Fabricação de produtos alimentícios",
-          "value": 4740,
-          "display_value": "+4.740"
-        },
-        {
-          "name": "Publicidade e pesquisa de mercado",
-          "value": 3795,
-          "display_value": "+3.795"
+          "value": 5132,
+          "display_value": "+5.132"
         },
         {
           "name": "Atividades de atenção à saúde humana",
-          "value": 3673,
-          "display_value": "+3.673"
+          "value": 4520,
+          "display_value": "+4.520"
+        },
+        {
+          "name": "Fabricação de produtos alimentícios",
+          "value": 4383,
+          "display_value": "+4.383"
         },
         {
           "name": "Serviços de escritório, de apoio administrativo e outros serviços prestados às empresas",
-          "value": 3323,
-          "display_value": "+3.323"
+          "value": 3311,
+          "display_value": "+3.311"
+        },
+        {
+          "name": "Publicidade e pesquisa de mercado",
+          "value": 3158,
+          "display_value": "+3.158"
         }
       ]
     },
@@ -265,28 +265,28 @@
       "items": [
         {
           "name": "Confecção de artigos do vestuário e acessórios",
-          "value": -4569,
-          "display_value": "−4.569"
-        },
-        {
-          "name": "Fabricação de produtos de madeira",
-          "value": -1390,
-          "display_value": "−1.390"
-        },
-        {
-          "name": "Fabricação de móveis",
-          "value": -1316,
-          "display_value": "−1.316"
-        },
-        {
-          "name": "Fabricação de produtos de minerais não metálicos",
-          "value": -841,
-          "display_value": "−841"
+          "value": -5238,
+          "display_value": "−5.238"
         },
         {
           "name": "Fabricação de produtos têxteis",
-          "value": -791,
-          "display_value": "−791"
+          "value": -1144,
+          "display_value": "−1.144"
+        },
+        {
+          "name": "Fabricação de móveis",
+          "value": -1038,
+          "display_value": "−1.038"
+        },
+        {
+          "name": "Fabricação de produtos de minerais não metálicos",
+          "value": -940,
+          "display_value": "−940"
+        },
+        {
+          "name": "Fabricação de produtos de madeira",
+          "value": -855,
+          "display_value": "−855"
         }
       ]
     },

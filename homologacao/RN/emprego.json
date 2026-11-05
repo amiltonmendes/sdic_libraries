@@ -3,12 +3,12 @@
   "section_id": "emprego",
   "title": "Emprego",
   "source": "Novo CAGED / MTE",
-  "reference": "Ago/2026",
-  "updated_at": "2026-10-01",
+  "reference": "Set/2026",
+  "updated_at": "2026-11-05",
   "capa_kpi": {
     "id": "capa_emprego",
     "label": "Saldo CAGED 12m",
-    "display_value": "+7.046",
+    "display_value": "+4.601",
     "unit": "vagas",
     "period": "12 meses",
     "delta": {
@@ -34,7 +34,7 @@
       },
       {
         "tone": "pos",
-        "text": "Atividade com maior saldo: Comércio varejista (+1.359 vagas)."
+        "text": "Atividade com maior saldo: Comércio varejista (+1.097 vagas)."
       }
     ]
   },
@@ -42,26 +42,26 @@
     {
       "id": "saldo_mensal",
       "label": "Saldo mensal",
-      "value": 4890,
-      "display_value": "+4.890",
+      "value": 879,
+      "display_value": "+879",
       "unit": "vagas",
-      "period": "Ago/2026"
+      "period": "Set/2026"
     },
     {
       "id": "saldo_12m",
       "label": "Saldo 12 meses",
-      "value": 7046,
-      "display_value": "+7.046",
+      "value": 4601,
+      "display_value": "+4.601",
       "unit": "vagas",
       "period": "12 meses"
     },
     {
       "id": "saldo_ano",
       "label": "Saldo no ano",
-      "value": 6649,
-      "display_value": "+6.649",
+      "value": 7430,
+      "display_value": "+7.430",
       "unit": "vagas",
-      "period": "2026 (até Ago)",
+      "period": "2026 (até Set)",
       "partial": true
     },
     {
@@ -94,60 +94,60 @@
           "label": "Saldo",
           "points": [
             {
-              "t": "202509",
-              "v": 3222
-            },
-            {
               "t": "202510",
-              "v": 1204
+              "v": 1206
             },
             {
               "t": "202511",
-              "v": 1509
+              "v": 1514
             },
             {
               "t": "202512",
-              "v": -5539
+              "v": -5549
             },
             {
               "t": "202601",
-              "v": 1389
+              "v": 1391
             },
             {
               "t": "202602",
-              "v": -2083
+              "v": -2074
             },
             {
               "t": "202603",
-              "v": 1280
+              "v": 1222
             },
             {
               "t": "202604",
-              "v": -293
+              "v": -300
             },
             {
               "t": "202605",
-              "v": 235
+              "v": 252
             },
             {
               "t": "202606",
-              "v": 324
+              "v": 311
             },
             {
               "t": "202607",
-              "v": 908
+              "v": 898
             },
             {
               "t": "202608",
-              "v": 4890
+              "v": 4851
+            },
+            {
+              "t": "202609",
+              "v": 879
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202608",
-          "label": "+4.890 vagas"
+          "t": "202609",
+          "label": "+879 vagas"
         }
       ]
     },
@@ -163,60 +163,60 @@
           "label": "Acumulado 12m",
           "points": [
             {
-              "t": "202509",
-              "v": 21211
-            },
-            {
               "t": "202510",
-              "v": 19575
+              "v": 19583
             },
             {
               "t": "202511",
-              "v": 18708
+              "v": 18727
             },
             {
               "t": "202512",
-              "v": 16006
+              "v": 16012
             },
             {
               "t": "202601",
-              "v": 17728
+              "v": 17736
             },
             {
               "t": "202602",
-              "v": 12996
+              "v": 13015
             },
             {
               "t": "202603",
-              "v": 16168
+              "v": 16130
             },
             {
               "t": "202604",
-              "v": 13188
+              "v": 13142
             },
             {
               "t": "202605",
-              "v": 11271
+              "v": 11235
             },
             {
               "t": "202606",
-              "v": 10113
+              "v": 10075
             },
             {
               "t": "202607",
-              "v": 7583
+              "v": 7523
             },
             {
               "t": "202608",
-              "v": 7042
+              "v": 6946
+            },
+            {
+              "t": "202609",
+              "v": 4601
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202608",
-          "label": "+7.042 vagas"
+          "t": "202609",
+          "label": "+4.601 vagas"
         }
       ]
     }
@@ -231,28 +231,28 @@
       "items": [
         {
           "name": "Comércio varejista",
-          "value": 1359,
-          "display_value": "+1.359"
-        },
-        {
-          "name": "Construção de edifícios",
-          "value": 1337,
-          "display_value": "+1.337"
+          "value": 1097,
+          "display_value": "+1.097"
         },
         {
           "name": "Comércio por atacado, exceto veículos automotores e motocicletas",
-          "value": 1209,
-          "display_value": "+1.209"
+          "value": 1075,
+          "display_value": "+1.075"
         },
         {
           "name": "Atividades de atenção à saúde humana",
-          "value": 1006,
-          "display_value": "+1.006"
+          "value": 1003,
+          "display_value": "+1.003"
         },
         {
-          "name": "Alimentação",
-          "value": 645,
-          "display_value": "+645"
+          "name": "Construção de edifícios",
+          "value": 949,
+          "display_value": "+949"
+        },
+        {
+          "name": "Serviços de escritório, de apoio administrativo e outros serviços prestados às empresas",
+          "value": 906,
+          "display_value": "+906"
         }
       ]
     },
@@ -265,28 +265,28 @@
       "items": [
         {
           "name": "Serviços para edifícios e atividades paisagísticas",
-          "value": -2122,
-          "display_value": "−2.122"
+          "value": -2840,
+          "display_value": "−2.840"
         },
         {
           "name": "Obras de infraestrutura",
-          "value": -1426,
-          "display_value": "−1.426"
+          "value": -1074,
+          "display_value": "−1.074"
         },
         {
           "name": "Serviços especializados para construção",
-          "value": -754,
-          "display_value": "−754"
+          "value": -934,
+          "display_value": "−934"
         },
         {
-          "name": "Agricultura, pecuária e serviços relacionados",
-          "value": -473,
-          "display_value": "−473"
+          "name": "Atividades de vigilância, segurança e investigação",
+          "value": -825,
+          "display_value": "−825"
         },
         {
-          "name": "Fabricação de coque, de produtos derivados do petróleo e de biocombustíveis",
-          "value": -323,
-          "display_value": "−323"
+          "name": "Confecção de artigos do vestuário e acessórios",
+          "value": -525,
+          "display_value": "−525"
         }
       ]
     },

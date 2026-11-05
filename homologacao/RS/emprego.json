@@ -3,12 +3,12 @@
   "section_id": "emprego",
   "title": "Emprego",
   "source": "Novo CAGED / MTE",
-  "reference": "Ago/2026",
-  "updated_at": "2026-10-01",
+  "reference": "Set/2026",
+  "updated_at": "2026-11-05",
   "capa_kpi": {
     "id": "capa_emprego",
     "label": "Saldo CAGED 12m",
-    "display_value": "+8.582",
+    "display_value": "+1.688",
     "unit": "vagas",
     "period": "12 meses",
     "delta": {
@@ -34,7 +34,7 @@
       },
       {
         "tone": "pos",
-        "text": "Atividade com maior saldo: Fabricação de produtos alimentícios (+5.323 vagas)."
+        "text": "Atividade com maior saldo: Fabricação de produtos alimentícios (+4.881 vagas)."
       }
     ]
   },
@@ -42,26 +42,26 @@
     {
       "id": "saldo_mensal",
       "label": "Saldo mensal",
-      "value": -1611,
-      "display_value": "-1.611",
+      "value": -2937,
+      "display_value": "-2.937",
       "unit": "vagas",
-      "period": "Ago/2026"
+      "period": "Set/2026"
     },
     {
       "id": "saldo_12m",
       "label": "Saldo 12 meses",
-      "value": 8582,
-      "display_value": "+8.582",
+      "value": 1688,
+      "display_value": "+1.688",
       "unit": "vagas",
       "period": "12 meses"
     },
     {
       "id": "saldo_ano",
       "label": "Saldo no ano",
-      "value": 38058,
-      "display_value": "+38.058",
+      "value": 35018,
+      "display_value": "+35.018",
       "unit": "vagas",
-      "period": "2026 (até Ago)",
+      "period": "2026 (até Set)",
       "partial": true
     },
     {
@@ -94,20 +94,16 @@
           "label": "Saldo",
           "points": [
             {
-              "t": "202509",
-              "v": 3819
-            },
-            {
               "t": "202510",
-              "v": 138
+              "v": 125
             },
             {
               "t": "202511",
-              "v": 4306
+              "v": 4299
             },
             {
               "t": "202512",
-              "v": -37735
+              "v": -37754
             },
             {
               "t": "202601",
@@ -115,39 +111,43 @@
             },
             {
               "t": "202602",
-              "v": 24825
+              "v": 24800
             },
             {
               "t": "202603",
-              "v": 4019
+              "v": 4013
             },
             {
               "t": "202604",
-              "v": -1867
+              "v": -1882
             },
             {
               "t": "202605",
-              "v": -5252
+              "v": -5253
             },
             {
               "t": "202606",
-              "v": 1061
+              "v": 1029
             },
             {
               "t": "202607",
-              "v": -1071
+              "v": -1055
             },
             {
               "t": "202608",
-              "v": -1611
+              "v": -1647
+            },
+            {
+              "t": "202609",
+              "v": -2937
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202608",
-          "label": "+-1.611 vagas"
+          "t": "202609",
+          "label": "+-2.937 vagas"
         }
       ]
     },
@@ -163,60 +163,60 @@
           "label": "Acumulado 12m",
           "points": [
             {
-              "t": "202509",
-              "v": 75457
-            },
-            {
               "t": "202510",
-              "v": 61429
+              "v": 61418
             },
             {
               "t": "202511",
-              "v": 53966
+              "v": 53945
             },
             {
               "t": "202512",
-              "v": 45118
+              "v": 45090
             },
             {
               "t": "202601",
-              "v": 35676
+              "v": 35638
             },
             {
               "t": "202602",
-              "v": 29811
+              "v": 29747
             },
             {
               "t": "202603",
-              "v": 24652
+              "v": 24580
             },
             {
               "t": "202604",
-              "v": 15820
+              "v": 15735
             },
             {
               "t": "202605",
-              "v": 10673
+              "v": 10590
             },
             {
               "t": "202606",
-              "v": 10196
+              "v": 10081
             },
             {
               "t": "202607",
-              "v": 8663
+              "v": 8558
             },
             {
               "t": "202608",
-              "v": 8583
+              "v": 8440
+            },
+            {
+              "t": "202609",
+              "v": 1688
             }
           ]
         }
       ],
       "annotations": [
         {
-          "t": "202608",
-          "label": "+8.583 vagas"
+          "t": "202609",
+          "label": "+1.688 vagas"
         }
       ]
     }
@@ -231,28 +231,28 @@
       "items": [
         {
           "name": "Fabricação de produtos alimentícios",
-          "value": 5323,
-          "display_value": "+5.323"
-        },
-        {
-          "name": "Serviços de escritório, de apoio administrativo e outros serviços prestados às empresas",
-          "value": 4622,
-          "display_value": "+4.622"
+          "value": 4881,
+          "display_value": "+4.881"
         },
         {
           "name": "Atividades de atenção à saúde humana",
-          "value": 3369,
-          "display_value": "+3.369"
+          "value": 4822,
+          "display_value": "+4.822"
+        },
+        {
+          "name": "Serviços de escritório, de apoio administrativo e outros serviços prestados às empresas",
+          "value": 3813,
+          "display_value": "+3.813"
         },
         {
           "name": "Atividades de organizações associativas",
-          "value": 2397,
-          "display_value": "+2.397"
+          "value": 2173,
+          "display_value": "+2.173"
         },
         {
-          "name": "Fabricação de produtos do fumo",
-          "value": 2185,
-          "display_value": "+2.185"
+          "name": "Atividades dos serviços de tecnologia da informação",
+          "value": 1865,
+          "display_value": "+1.865"
         }
       ]
     },
@@ -265,28 +265,28 @@
       "items": [
         {
           "name": "Preparação de couros e fabricação de artefatos de couro",
-          "value": -6157,
-          "display_value": "−6.157"
+          "value": -6222,
+          "display_value": "−6.222"
         },
         {
           "name": "Fabricação de máquinas e equipamentos",
-          "value": -4470,
-          "display_value": "−4.470"
+          "value": -4446,
+          "display_value": "−4.446"
         },
         {
           "name": "Comércio varejista",
-          "value": -2545,
-          "display_value": "−2.545"
+          "value": -4088,
+          "display_value": "−4.088"
         },
         {
           "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
-          "value": -1351,
-          "display_value": "−1.351"
+          "value": -1332,
+          "display_value": "−1.332"
         },
         {
-          "name": "Fabricação de produtos de borracha e de material plástico",
-          "value": -1028,
-          "display_value": "−1.028"
+          "name": "Construção de edifícios",
+          "value": -1273,
+          "display_value": "−1.273"
         }
       ]
     },
