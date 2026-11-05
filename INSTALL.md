@@ -154,11 +154,11 @@ Rscript testes_consolidados.R
 
 ## 🌍 Configuração de Ambiente
 
-> ℹ️ **Funciona out-of-the-box:** o endpoint público (DNS próprio) já vem embutido e também
-> no `.env` versionado da raiz — não é preciso configurar nada para começar. Para sobrescrever,
+> ℹ️ **Funciona out-of-the-box:** o endpoint público (DNS próprio) já vem embutido
+> no código — não é preciso configurar nada para começar. Para sobrescrever,
 > defina `EMPLOYMENT_API_BASE_URL` (env do SO, `.env` ou `/etc/sdic/.env`).
 >
-> 🔒 **Segredos nunca no repositório:** o `.env` versionado guarda só a URL pública. Se a API
+> 🔒 **Segredos nunca no repositório:** a URL pública já vem embutida no código. Se a API
 > exigir `EMPLOYMENT_API_KEY`, coloque-a em **`.env.local`** (ignorado pelo git) ou como
 > *secret* do pipeline em CI/CD — nunca em arquivos versionados.
 

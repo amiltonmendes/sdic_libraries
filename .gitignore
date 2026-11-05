@@ -99,8 +99,8 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-# .env É VERSIONADO de propósito: contém apenas a URL pública (DNS), sem segredos.
-# Segredos (ex.: EMPLOYMENT_API_KEY) NUNCA vão no .env — use .env.local (ignorado abaixo).
+# Configuração local e segredos (ex.: EMPLOYMENT_API_KEY) nunca são versionados.
+.env
 .env.local
 .env.*.local
 *.local

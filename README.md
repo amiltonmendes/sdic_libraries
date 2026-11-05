@@ -238,13 +238,13 @@ GCP) já vem embutido. Ordem de precedência: **parâmetro explícito no código
 
 | Variável | Obrigatória | Onde fica | Descrição |
 |---|---|---|---|
-| `EMPLOYMENT_API_BASE_URL` | Não | `.env` versionado | Endpoint da API de emprego. |
-| `COMEX_API_BASE_URL` | Não | `.env` versionado | Endpoint da API de comex (mesmo host, outro router). |
+| `EMPLOYMENT_API_BASE_URL` | Não | ambiente ou `.env` local | Endpoint da API de emprego. |
+| `COMEX_API_BASE_URL` | Não | ambiente ou `.env` local | Endpoint da API de comex (mesmo host, outro router). |
 | `EMPLOYMENT_API_KEY` / `COMEX_API_KEY` | Não | **`.env.local`** (git-ignorado) | Token, se a API exigir. |
 | `API_TIMEOUT` | Não | `.env` | Timeout em segundos (padrão 30). |
 | `SDIC_CACHE_TTL` | Não | ambiente | Liga o cache local — ver 💾 acima. |
 
-🔒 **Segredos nunca no `.env` versionado.** Só `.env.local` (git-ignorado) ou secret de CI/CD. A
+🔒 **Segredos nunca em arquivos versionados.** Só `.env.local` (git-ignorado) ou secret de CI/CD. A
 lib também lê `/etc/sdic/.env` (config de máquina inteira) e `~/.env`, nessa ordem de prioridade.
 
 ```python
