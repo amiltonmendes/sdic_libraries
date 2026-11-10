@@ -1,7 +1,7 @@
 """Cobertura completa dos métodos da API de emprego (RAIS/CAGED) via sdic_libraries.
 
 Objetivo: garantir que TODO endpoint com a tag "Emprego" na sdic_api (mais
-`/data_bases`, tag "Domínio" mas ligado ao bug do RAIS já corrigido) tem pelo
+`get_date_bases`, que desde a API 4.0.0 combina rotas de comex, CAGED e RAIS) tem pelo
 menos um método na biblioteca que o exercita com sucesso contra uma API real.
 
 Bate numa sdic_api real (`EMPLOYMENT_API_BASE_URL`, padrão

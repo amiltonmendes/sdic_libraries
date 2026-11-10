@@ -116,7 +116,7 @@ class Comex:
         self.session = requests.Session()
         self.logger = logging.getLogger(__name__)
 
-        version = os.getenv('SDIC_VERSION', '0.5.3')
+        version = os.getenv('SDIC_VERSION', '0.5.4')
         self.session.headers.update({
             'User-Agent': f'sdic-libraries/{version}',
             'Accept': 'application/json',
@@ -341,7 +341,7 @@ class Comex:
     def get_exportacao_isic_divisao_nacional_mensal(self, ano_minimo: int = None, mes_maximo: int = None,
                                                       secao: str = None, divisao: int = None,
                                                       agregado_ano: bool = False) -> List[Dict[str, Any]]:
-        """Exportações nacionais por divisão ISIC (`/exportacao_isic_divisao_gcloud`)."""
+        """Exportações nacionais por divisão ISIC (`/exportacao_isic_divisao`)."""
         params: Dict[str, Any] = {
             'ano_minimo': ano_minimo or 0,
             'mes_maximo': mes_maximo or 0,
@@ -350,12 +350,12 @@ class Comex:
         }
         if divisao is not None:
             params['divisao'] = divisao
-        return self._fetch_all_paginated_get('/exportacao_isic_divisao_gcloud', params)
+        return self._fetch_all_paginated_get('/exportacao_isic_divisao', params)
 
     def get_importacao_isic_divisao_nacional_mensal(self, ano_minimo: int = None, mes_maximo: int = None,
                                                       secao: str = None, divisao: int = None,
                                                       agregado_ano: bool = False) -> List[Dict[str, Any]]:
-        """Importações nacionais por divisão ISIC (`/importacao_isic_divisao_gcloud`)."""
+        """Importações nacionais por divisão ISIC (`/importacao_isic_divisao`)."""
         params: Dict[str, Any] = {
             'ano_minimo': ano_minimo or 0,
             'mes_maximo': mes_maximo or 0,
@@ -364,7 +364,7 @@ class Comex:
         }
         if divisao is not None:
             params['divisao'] = divisao
-        return self._fetch_all_paginated_get('/importacao_isic_divisao_gcloud', params)
+        return self._fetch_all_paginated_get('/importacao_isic_divisao', params)
 
     # ========== ISIC DIVISÃO (estadual, por país) ==========
 
@@ -373,7 +373,7 @@ class Comex:
                                                        secao: str = None, divisao: int = None,
                                                        bloco: int = None, agregado_ano: bool = False,
                                                        agregado_pais: bool = False) -> List[Dict[str, Any]]:
-        """Exportações por UF, país e divisão ISIC (`/exportacao_uf_isic_divisao_gcloud`).
+        """Exportações por UF, país e divisão ISIC (`/exportacao_uf_isic_divisao`).
 
         `bloco`: código de bloco econômico (`pais_bloco.CO_BLOCO`, ex. `22`
         para União Europeia) para filtrar por um recorte de países sem listar
@@ -395,14 +395,14 @@ class Comex:
             params['divisao'] = divisao
         if bloco is not None:
             params['bloco'] = bloco
-        return self._fetch_all_paginated_get('/exportacao_uf_isic_divisao_gcloud', params)
+        return self._fetch_all_paginated_get('/exportacao_uf_isic_divisao', params)
 
     def get_importacao_isic_divisao_estadual_mensal(self, estado: str = None, pais: str = None,
                                                        ano_minimo: int = None, mes_maximo: int = None,
                                                        secao: str = None, divisao: int = None,
                                                        bloco: int = None, agregado_ano: bool = False,
                                                        agregado_pais: bool = False) -> List[Dict[str, Any]]:
-        """Importações por UF, país e divisão ISIC (`/importacao_uf_isic_divisao_gcloud`). Ver `get_exportacao_isic_divisao_estadual_mensal`."""
+        """Importações por UF, país e divisão ISIC (`/importacao_uf_isic_divisao`). Ver `get_exportacao_isic_divisao_estadual_mensal`."""
         params: Dict[str, Any] = {
             'ano_minimo': ano_minimo or 0,
             'mes_maximo': mes_maximo or 0,
@@ -416,14 +416,14 @@ class Comex:
             params['divisao'] = divisao
         if bloco is not None:
             params['bloco'] = bloco
-        return self._fetch_all_paginated_get('/importacao_uf_isic_divisao_gcloud', params)
+        return self._fetch_all_paginated_get('/importacao_uf_isic_divisao', params)
 
     # ========== PAÍS (nacional) ==========
 
     def get_exportacao_pais_nacional_mensal(self, pais: str = None, secao: str = None,
                                              ano_minimo: int = None, mes_maximo: int = None,
                                              agregado_ano: bool = False) -> List[Dict[str, Any]]:
-        """Exportações nacionais por país (`/exportacao_pais_gcloud`)."""
+        """Exportações nacionais por país (`/exportacao_pais`)."""
         params: Dict[str, Any] = {
             'ano_minimo': ano_minimo or 0,
             'mes_maximo': mes_maximo or 0,
@@ -431,12 +431,12 @@ class Comex:
             'secao': secao or '',
             'agregado_ano': agregado_ano,
         }
-        return self._fetch_all_paginated_get('/exportacao_pais_gcloud', params)
+        return self._fetch_all_paginated_get('/exportacao_pais', params)
 
     def get_importacao_pais_nacional_mensal(self, pais: str = None, secao: str = None,
                                              ano_minimo: int = None, mes_maximo: int = None,
                                              agregado_ano: bool = False) -> List[Dict[str, Any]]:
-        """Importações nacionais por país (`/importacao_pais_gcloud`)."""
+        """Importações nacionais por país (`/importacao_pais`)."""
         params: Dict[str, Any] = {
             'ano_minimo': ano_minimo or 0,
             'mes_maximo': mes_maximo or 0,
@@ -444,18 +444,18 @@ class Comex:
             'secao': secao or '',
             'agregado_ano': agregado_ano,
         }
-        return self._fetch_all_paginated_get('/importacao_pais_gcloud', params)
+        return self._fetch_all_paginated_get('/importacao_pais', params)
 
     # ========== CATÁLOGO NCM -> ISIC ==========
 
     def get_ncm_isic_mapa(self) -> List[Dict[str, Any]]:
-        """Catálogo NCM -> ISIC (divisão e seção), `/ncm_isic_mapa_gcloud`.
+        """Catálogo NCM -> ISIC (divisão e seção), `/ncm_isic_mapa`.
 
         Catálogo estático (~13 mil códigos) — buscado uma vez e cacheado em
         memória na instância; chamadas seguintes não fazem nova requisição.
         """
         if self._ncm_isic_mapa_cache is None:
-            self._ncm_isic_mapa_cache = self._fetch_all_paginated_get('/ncm_isic_mapa_gcloud', {})
+            self._ncm_isic_mapa_cache = self._fetch_all_paginated_get('/ncm_isic_mapa', {})
         return self._ncm_isic_mapa_cache
 
     # ========== AGRUPAMENTOS ==========

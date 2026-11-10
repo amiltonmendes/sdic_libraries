@@ -245,7 +245,7 @@ o endpoint de NCM (\verb{/exportacao_agregada_ncm}) espera \code{pagina}/
 \if{html}{\out{<a id="method-Comex-get_ncm_isic_mapa"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-get_ncm_isic_mapa}{}}}
 \subsection{Method \code{get_ncm_isic_mapa()}}{
-Catálogo NCM -> ISIC (divisão e seção), \verb{/ncm_isic_mapa_gcloud}.
+Catálogo NCM -> ISIC (divisão e seção), \verb{/ncm_isic_mapa}.
 Catálogo estático (~13 mil códigos) — buscado uma vez e cacheado em
 memória na instância.
 \subsection{Usage}{
@@ -588,7 +588,7 @@ Importações nacionais agregadas por NCM (\verb{/importacao_agregada_ncm}). Ver
 \if{html}{\out{<a id="method-Comex-get_exportacao_isic_divisao_nacional_mensal"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-get_exportacao_isic_divisao_nacional_mensal}{}}}
 \subsection{Method \code{get_exportacao_isic_divisao_nacional_mensal()}}{
-Exportações nacionais por divisão ISIC (\verb{/exportacao_isic_divisao_gcloud}).
+Exportações nacionais por divisão ISIC (\verb{/exportacao_isic_divisao}).
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{Comex$get_exportacao_isic_divisao_nacional_mensal(
   ano_minimo = NULL,
@@ -619,7 +619,7 @@ Exportações nacionais por divisão ISIC (\verb{/exportacao_isic_divisao_gcloud
 \if{html}{\out{<a id="method-Comex-get_importacao_isic_divisao_nacional_mensal"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-get_importacao_isic_divisao_nacional_mensal}{}}}
 \subsection{Method \code{get_importacao_isic_divisao_nacional_mensal()}}{
-Importações nacionais por divisão ISIC (\verb{/importacao_isic_divisao_gcloud}).
+Importações nacionais por divisão ISIC (\verb{/importacao_isic_divisao}).
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{Comex$get_importacao_isic_divisao_nacional_mensal(
   ano_minimo = NULL,
@@ -650,7 +650,7 @@ Importações nacionais por divisão ISIC (\verb{/importacao_isic_divisao_gcloud
 \if{html}{\out{<a id="method-Comex-get_exportacao_isic_divisao_estadual_mensal"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-get_exportacao_isic_divisao_estadual_mensal}{}}}
 \subsection{Method \code{get_exportacao_isic_divisao_estadual_mensal()}}{
-Exportações por UF, país e divisão ISIC (\verb{/exportacao_uf_isic_divisao_gcloud}).
+Exportações por UF, país e divisão ISIC (\verb{/exportacao_uf_isic_divisao}).
 \code{bloco}: código de bloco econômico (\code{pais_bloco.CO_BLOCO}, ex. \code{22}
 para União Europeia) para filtrar por um recorte de países.
 \subsection{Usage}{
@@ -695,7 +695,7 @@ para União Europeia) para filtrar por um recorte de países.
 \if{html}{\out{<a id="method-Comex-get_importacao_isic_divisao_estadual_mensal"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-get_importacao_isic_divisao_estadual_mensal}{}}}
 \subsection{Method \code{get_importacao_isic_divisao_estadual_mensal()}}{
-Importações por UF, país e divisão ISIC (\verb{/importacao_uf_isic_divisao_gcloud}). Ver \code{get_exportacao_isic_divisao_estadual_mensal}.
+Importações por UF, país e divisão ISIC (\verb{/importacao_uf_isic_divisao}). Ver \code{get_exportacao_isic_divisao_estadual_mensal}.
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{Comex$get_importacao_isic_divisao_estadual_mensal(
   estado = NULL,
@@ -738,7 +738,7 @@ Importações por UF, país e divisão ISIC (\verb{/importacao_uf_isic_divisao_g
 \if{html}{\out{<a id="method-Comex-get_exportacao_pais_nacional_mensal"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-get_exportacao_pais_nacional_mensal}{}}}
 \subsection{Method \code{get_exportacao_pais_nacional_mensal()}}{
-Exportações nacionais por país (\verb{/exportacao_pais_gcloud}).
+Exportações nacionais por país (\verb{/exportacao_pais}).
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{Comex$get_exportacao_pais_nacional_mensal(
   pais = NULL,
@@ -769,7 +769,7 @@ Exportações nacionais por país (\verb{/exportacao_pais_gcloud}).
 \if{html}{\out{<a id="method-Comex-get_importacao_pais_nacional_mensal"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-get_importacao_pais_nacional_mensal}{}}}
 \subsection{Method \code{get_importacao_pais_nacional_mensal()}}{
-Importações nacionais por país (\verb{/importacao_pais_gcloud}).
+Importações nacionais por país (\verb{/importacao_pais}).
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{Comex$get_importacao_pais_nacional_mensal(
   pais = NULL,

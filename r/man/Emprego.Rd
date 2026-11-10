@@ -809,13 +809,13 @@ Lista com TODOS os dados do índice Potec
 \if{html}{\out{<a id="method-Emprego-get_date_bases"></a>}}
 \if{latex}{\out{\hypertarget{method-Emprego-get_date_bases}{}}}
 \subsection{Method \code{get_date_bases()}}{
-Obter a data da última atualização de cada base (ComexStat, CAGED, RAIS).
+Obter o período mais recente de cada base (ComexStat, CAGED, RAIS), a partir das rotas de comex, CAGED e RAIS (a sdic_api 4.0.0 não tem mais \verb{/data_bases}).
 \subsection{Usage}{
 \if{html}{\out{<div class="r">}}\preformatted{Emprego$get_date_bases()}\if{html}{\out{</div>}}
 }
 
 \subsection{Returns}{
-Lista com uma entrada por base ('Base' e 'DataUltimaAtualizacao')
+Lista com uma entrada por base ('Base' e 'DataUltimaAtualizacao', AAAA-MM-DD)
 }
 }
 \if{html}{\out{<hr>}}

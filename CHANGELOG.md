@@ -3,6 +3,23 @@
 Formato livre (sem [Keep a Changelog](https://keepachangelog.com) ainda) — o essencial é: o que
 muda pro usuário ao atualizar. Versionamento nas duas linguagens juntas; ver [AGENTS.md](AGENTS.md#versionamento).
 
+## [0.5.4] — 2026-11-10
+
+Necessária para a sdic_api 4.0.0. As versões anteriores param de funcionar quando a 4.0.0 entrar no ar.
+
+### Corrigido
+- Comex: os métodos usam os nomes de rota da sdic_api 4.0.0, que tirou o sufixo `_gcloud`
+  (`/exportacao_isic_divisao`, `/importacao_isic_divisao`, `/exportacao_uf_isic_divisao`,
+  `/importacao_uf_isic_divisao`, `/exportacao_pais`, `/importacao_pais`, `/ncm_isic_mapa`).
+- `get_date_bases`: a sdic_api 4.0.0 não tem mais `/data_bases`. A função continua com o mesmo retorno
+  (`Base`, `DataUltimaAtualizacao`) e agora lê o período mais recente da 1ª linha de uma rota de cada
+  base (3 chamadas pequenas). ComexStat e CAGED: 1º dia do último mês; RAIS: 31/12 do último ano.
+  Uma base que falhar fica de fora, com aviso.
+
+### Compatibilidade
+- Nenhuma mudança de função, parâmetro ou coluna. A sdic_api 4.0.0 também passa a exigir chave
+  individual: grave-a em `COMEX_API_KEY` e `EMPLOYMENT_API_KEY`.
+
 ## [0.5.3] — 2026-10-15
 
 ### Corrigido

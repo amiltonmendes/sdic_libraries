@@ -135,7 +135,7 @@ class Emprego:
         self.logger = logging.getLogger(__name__)
         
         # Auto-detectar versão para User-Agent
-        version = os.getenv('SDIC_VERSION', '0.5.3')
+        version = os.getenv('SDIC_VERSION', '0.5.4')
         self.session.headers.update({
             'User-Agent': f'sdic-libraries/{version}',
             'Accept': 'application/json',
@@ -871,18 +871,34 @@ class Emprego:
 
     def get_date_bases(self) -> List[Dict[str, Any]]:
         """
-        Obter a data da última atualização de cada base (ComexStat, CAGED, RAIS).
+        Obter o período mais recente de cada base (ComexStat, CAGED, RAIS).
+
+        Desde a sdic_api 4.0.0 não há rota própria (`/data_bases` saiu): cada data vem da 1ª linha
+        de uma rota que já ordena do período mais recente para o mais antigo. ComexStat e CAGED:
+        1º dia do último mês; RAIS: 31/12 do último ano. Base que falhar fica de fora (com aviso).
 
         Returns:
-            List[Dict[str, Any]]: Uma entrada por base, com 'Base' e 'DataUltimaAtualizacao'
-
-        Raises:
-            EmpregoAPIError: Se a requisição da API falhar
+            List[Dict[str, Any]]: Uma entrada por base, com 'Base' e 'DataUltimaAtualizacao' (AAAA-MM-DD)
         """
-        response = self._make_request('/data_bases')
-        if isinstance(response, list):
-            return response
-        return self._extract_items(response)
+        from datetime import date
+        ano_comex = date.today().year - 1  # limita a leitura; o ano anterior sempre existe
+        consultas = [
+            ('ComexStat', '/exportacao_isic_divisao', {'ano_minimo': ano_comex},
+             lambda r: f"{r['Ano']:04d}-{r['Mes']:02d}-01"),
+            ('CAGED', '/saldo_caged/nacional/divisao', {}, lambda r: str(r['mes_referencia'])[:10]),
+            ('RAIS', '/get_estoque_emprego_nacional/', {}, lambda r: f"{r['ano']}-12-31"),
+        ]
+        bases = []
+        for nome, rota, params, data in consultas:
+            try:
+                itens = self._extract_items(self._make_request(rota, {**params, 'pagina': 1, 'tamanho_pagina': 1}))
+                if itens:
+                    bases.append({'Base': nome, 'DataUltimaAtualizacao': data(itens[0])})
+            except (EmpregoAPIError, KeyError, TypeError) as e:
+                self.logger.warning("get_date_bases: sem data de %s (%s)", nome, e)
+        if not bases:
+            raise EmpregoAPIError("Não foi possível obter a data de nenhuma base")
+        return bases
 
     def get_estoque_emprego_nacional_lista_cnae(self,
                                                codigos_cnae: List[str],

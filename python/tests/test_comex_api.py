@@ -57,7 +57,7 @@ class TestRequisicoesEUrl:
             cliente.get_exportacao_isic_divisao_nacional_mensal(ano_minimo=2023, secao="C")
 
         url_chamada, kwargs = mock_get.call_args
-        assert url_chamada[0] == "https://sdicapi.teste/exportacao_isic_divisao_gcloud"
+        assert url_chamada[0] == "https://sdicapi.teste/exportacao_isic_divisao"
         assert kwargs["params"]["ano_minimo"] == 2023
         assert kwargs["params"]["secao"] == "C"
         assert kwargs["params"]["pagina"] == 1
@@ -87,7 +87,7 @@ class TestPaginacao:
         pagina_2 = _mock_response({"count": 3, "items": [{"a": 3}]})
 
         with patch.object(cliente.session, "get", side_effect=[pagina_1, pagina_2]) as mock_get:
-            itens = cliente._fetch_all_paginated_get("/exportacao_pais_gcloud", {"ano_minimo": 2023, "tamanho_pagina": 2})
+            itens = cliente._fetch_all_paginated_get("/exportacao_pais", {"ano_minimo": 2023, "tamanho_pagina": 2})
 
         assert itens == [{"a": 1}, {"a": 2}, {"a": 3}]
         assert mock_get.call_count == 2
