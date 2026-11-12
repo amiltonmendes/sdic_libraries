@@ -54,7 +54,7 @@ Comex <- R6::R6Class(
       resolved_api_key <- api_key %||% Sys.getenv("COMEX_API_KEY", "")
       self$api_key <- if (nzchar(resolved_api_key)) resolved_api_key else NULL
 
-      version <- Sys.getenv("SDIC_VERSION", "0.5.3")
+      version <- Sys.getenv("SDIC_VERSION", "0.5.4")
       cli::cli_alert_success(
         "API de Comex inicializada (v{version}) - configuração carregada automaticamente"
       )
@@ -115,7 +115,7 @@ Comex <- R6::R6Class(
       }
       req <- httr2::req_headers(
         req,
-        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.3")),
+        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.4")),
         "Accept" = "application/json",
         "Content-Type" = "application/json"
       )
@@ -151,7 +151,7 @@ Comex <- R6::R6Class(
       }
       req <- httr2::req_headers(
         req,
-        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.3")),
+        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.4")),
         "Accept" = "application/json",
         "Content-Type" = "application/json"
       )
@@ -273,12 +273,12 @@ Comex <- R6::R6Class(
     # ========== CATÁLOGO NCM -> ISIC ==========
 
     #' @description
-    #' Catálogo NCM -> ISIC (divisão e seção), `/ncm_isic_mapa_gcloud`.
+    #' Catálogo NCM -> ISIC (divisão e seção), `/ncm_isic_mapa`.
     #' Catálogo estático (~13 mil códigos) — buscado uma vez e cacheado em
     #' memória na instância.
     get_ncm_isic_mapa = function() {
       if (is.null(private$.ncm_isic_mapa_cache)) {
-        private$.ncm_isic_mapa_cache <- self$.fetch_all_paginated_get("/ncm_isic_mapa_gcloud", list())
+        private$.ncm_isic_mapa_cache <- self$.fetch_all_paginated_get("/ncm_isic_mapa", list())
       }
       return(private$.ncm_isic_mapa_cache)
     },
@@ -447,7 +447,7 @@ Comex <- R6::R6Class(
     # ========== ISIC DIVISÃO (nacional) ==========
 
     #' @description
-    #' Exportações nacionais por divisão ISIC (`/exportacao_isic_divisao_gcloud`).
+    #' Exportações nacionais por divisão ISIC (`/exportacao_isic_divisao`).
     #' @param ano_minimo Ano mínimo (opcional)
     #' @param mes_maximo Mês máximo (opcional)
     #' @param secao Seção ISIC (opcional)
@@ -456,11 +456,11 @@ Comex <- R6::R6Class(
     get_exportacao_isic_divisao_nacional_mensal = function(ano_minimo = NULL, mes_maximo = NULL, secao = NULL, divisao = NULL, agregado_ano = FALSE) {
       params <- list(ano_minimo = ano_minimo %||% 0, mes_maximo = mes_maximo %||% 0, secao = secao %||% "", agregado_ano = agregado_ano)
       if (!is.null(divisao)) params$divisao <- divisao
-      self$.fetch_all_paginated_get("/exportacao_isic_divisao_gcloud", params)
+      self$.fetch_all_paginated_get("/exportacao_isic_divisao", params)
     },
 
     #' @description
-    #' Importações nacionais por divisão ISIC (`/importacao_isic_divisao_gcloud`).
+    #' Importações nacionais por divisão ISIC (`/importacao_isic_divisao`).
     #' @param ano_minimo Ano mínimo (opcional)
     #' @param mes_maximo Mês máximo (opcional)
     #' @param secao Seção ISIC (opcional)
@@ -469,13 +469,13 @@ Comex <- R6::R6Class(
     get_importacao_isic_divisao_nacional_mensal = function(ano_minimo = NULL, mes_maximo = NULL, secao = NULL, divisao = NULL, agregado_ano = FALSE) {
       params <- list(ano_minimo = ano_minimo %||% 0, mes_maximo = mes_maximo %||% 0, secao = secao %||% "", agregado_ano = agregado_ano)
       if (!is.null(divisao)) params$divisao <- divisao
-      self$.fetch_all_paginated_get("/importacao_isic_divisao_gcloud", params)
+      self$.fetch_all_paginated_get("/importacao_isic_divisao", params)
     },
 
     # ========== ISIC DIVISÃO (estadual, por país) ==========
 
     #' @description
-    #' Exportações por UF, país e divisão ISIC (`/exportacao_uf_isic_divisao_gcloud`).
+    #' Exportações por UF, país e divisão ISIC (`/exportacao_uf_isic_divisao`).
     #' `bloco`: código de bloco econômico (`pais_bloco.CO_BLOCO`, ex. `22`
     #' para União Europeia) para filtrar por um recorte de países.
     #' @param estado Nome da UF (opcional)
@@ -491,11 +491,11 @@ Comex <- R6::R6Class(
       params <- list(ano_minimo = ano_minimo %||% 0, mes_maximo = mes_maximo %||% 0, estado = estado %||% "", pais = pais %||% "", secao = secao %||% "", agregado_ano = agregado_ano, agregado_pais = agregado_pais)
       if (!is.null(divisao)) params$divisao <- divisao
       if (!is.null(bloco)) params$bloco <- bloco
-      self$.fetch_all_paginated_get("/exportacao_uf_isic_divisao_gcloud", params)
+      self$.fetch_all_paginated_get("/exportacao_uf_isic_divisao", params)
     },
 
     #' @description
-    #' Importações por UF, país e divisão ISIC (`/importacao_uf_isic_divisao_gcloud`). Ver `get_exportacao_isic_divisao_estadual_mensal`.
+    #' Importações por UF, país e divisão ISIC (`/importacao_uf_isic_divisao`). Ver `get_exportacao_isic_divisao_estadual_mensal`.
     #' @param estado Nome da UF (opcional)
     #' @param pais Nome do país (opcional)
     #' @param ano_minimo Ano mínimo (opcional)
@@ -509,13 +509,13 @@ Comex <- R6::R6Class(
       params <- list(ano_minimo = ano_minimo %||% 0, mes_maximo = mes_maximo %||% 0, estado = estado %||% "", pais = pais %||% "", secao = secao %||% "", agregado_ano = agregado_ano, agregado_pais = agregado_pais)
       if (!is.null(divisao)) params$divisao <- divisao
       if (!is.null(bloco)) params$bloco <- bloco
-      self$.fetch_all_paginated_get("/importacao_uf_isic_divisao_gcloud", params)
+      self$.fetch_all_paginated_get("/importacao_uf_isic_divisao", params)
     },
 
     # ========== PAÍS (nacional) ==========
 
     #' @description
-    #' Exportações nacionais por país (`/exportacao_pais_gcloud`).
+    #' Exportações nacionais por país (`/exportacao_pais`).
     #' @param pais Nome do país (opcional)
     #' @param secao Seção ISIC (opcional)
     #' @param ano_minimo Ano mínimo (opcional)
@@ -523,11 +523,11 @@ Comex <- R6::R6Class(
     #' @param agregado_ano Se TRUE, agrega por ano (sem mês)
     get_exportacao_pais_nacional_mensal = function(pais = NULL, secao = NULL, ano_minimo = NULL, mes_maximo = NULL, agregado_ano = FALSE) {
       params <- list(ano_minimo = ano_minimo %||% 0, mes_maximo = mes_maximo %||% 0, pais = pais %||% "", secao = secao %||% "", agregado_ano = agregado_ano)
-      self$.fetch_all_paginated_get("/exportacao_pais_gcloud", params)
+      self$.fetch_all_paginated_get("/exportacao_pais", params)
     },
 
     #' @description
-    #' Importações nacionais por país (`/importacao_pais_gcloud`).
+    #' Importações nacionais por país (`/importacao_pais`).
     #' @param pais Nome do país (opcional)
     #' @param secao Seção ISIC (opcional)
     #' @param ano_minimo Ano mínimo (opcional)
@@ -535,7 +535,7 @@ Comex <- R6::R6Class(
     #' @param agregado_ano Se TRUE, agrega por ano (sem mês)
     get_importacao_pais_nacional_mensal = function(pais = NULL, secao = NULL, ano_minimo = NULL, mes_maximo = NULL, agregado_ano = FALSE) {
       params <- list(ano_minimo = ano_minimo %||% 0, mes_maximo = mes_maximo %||% 0, pais = pais %||% "", secao = secao %||% "", agregado_ano = agregado_ano)
-      self$.fetch_all_paginated_get("/importacao_pais_gcloud", params)
+      self$.fetch_all_paginated_get("/importacao_pais", params)
     }
   ),
   private = list(

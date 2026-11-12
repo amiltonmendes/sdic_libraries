@@ -16,7 +16,7 @@ Este documento descreve como são construídos o **porte do estabelecimento** e 
 | `rais_agregado_renda` | `/get_renda_media_emprego/` | `get_renda_media_emprego` | idem |
 | `rais_potec` | `/get_potec_emprego/` | `get_potec_emprego` | idem |
 | `rais_agregado_estoque_intensidade_pavitt` (view) | **não exposto pela API** | — | — |
-| (metadado) data de atualização das bases | `/data_bases` | `get_date_bases` | idem |
+| (metadado) período mais recente de cada base | 1ª linha de `/exportacao_isic_divisao`, `/saldo_caged/nacional/divisao` e `/get_estoque_emprego_nacional/` (sdic_api 4.0.0 sem `/data_bases`) | `get_date_bases` | idem |
 
 Convenção de códigos CNAE 2.0 no dataset: **divisão = 2 dígitos, grupo = 3,
 classe = 4** (sem dígito verificador), subclasse = 7. Os dados por CNAE 2.0

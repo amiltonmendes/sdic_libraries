@@ -58,7 +58,7 @@ Emprego <- R6::R6Class(
       self$api_key <- api_key %||% Sys.getenv("EMPLOYMENT_API_KEY", "")
       
       # Mostrar mensagem de inicialização
-      version <- Sys.getenv("SDIC_VERSION", "0.5.3")
+      version <- Sys.getenv("SDIC_VERSION", "0.5.4")
       cli::cli_alert_success(
         "API de Emprego inicializada (v{version}) - configuração carregada automaticamente"
       )
@@ -125,7 +125,7 @@ Emprego <- R6::R6Class(
       
       req <- httr2::req_headers(
         req,
-        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.3")),
+        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.4")),
         "Accept" = "application/json",
         "Content-Type" = "application/json"
       )
@@ -354,7 +354,7 @@ Emprego <- R6::R6Class(
       
       req <- httr2::req_headers(
         req,
-        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.3")),
+        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.4")),
         "Accept" = "application/json",
         "Content-Type" = "application/json"
       )
@@ -872,11 +872,32 @@ Emprego <- R6::R6Class(
     },
 
     #' @description
-    #' Obter a data da última atualização de cada base (ComexStat, CAGED, RAIS).
-    #' @return Lista com uma entrada por base ('Base' e 'DataUltimaAtualizacao')
+    #' Obter o período mais recente de cada base (ComexStat, CAGED, RAIS). Desde a sdic_api 4.0.0
+    #' não há rota própria (/data_bases saiu): cada data vem da 1ª linha de uma rota que ordena do
+    #' período mais recente para o mais antigo. ComexStat e CAGED: 1º dia do último mês; RAIS:
+    #' 31/12 do último ano. Base que falhar fica de fora (com aviso).
+    #' @return Lista com uma entrada por base ('Base' e 'DataUltimaAtualizacao', AAAA-MM-DD)
     get_date_bases = function() {
-      response <- self$.make_request("/data_bases")
-      return(lapply(response, self$.normalize_response_item))
+      ano_comex <- as.integer(format(Sys.Date(), "%Y")) - 1L  # limita a leitura; o ano anterior sempre existe
+      consultas <- list(
+        list(base = "ComexStat", rota = "/exportacao_isic_divisao", params = list(ano_minimo = ano_comex),
+             data = function(r) sprintf("%04d-%02d-01", as.integer(r$Ano), as.integer(r$Mes))),
+        list(base = "CAGED", rota = "/saldo_caged/nacional/divisao", params = list(),
+             data = function(r) substr(as.character(r$mes_referencia), 1, 10)),
+        list(base = "RAIS", rota = "/get_estoque_emprego_nacional/", params = list(),
+             data = function(r) paste0(r$ano, "-12-31"))
+      )
+      bases <- list()
+      for (q in consultas) {
+        tryCatch({
+          itens <- self$.extract_items(self$.make_request(q$rota, c(q$params, list(pagina = 1, tamanho_pagina = 1))))
+          if (length(itens) > 0) {
+            bases[[length(bases) + 1]] <- list(Base = q$base, DataUltimaAtualizacao = q$data(itens[[1]]))
+          }
+        }, error = function(e) warning(sprintf("get_date_bases: sem data de %s (%s)", q$base, conditionMessage(e))))
+      }
+      if (length(bases) == 0) stop("Não foi possível obter a data de nenhuma base")
+      bases
     },
 
     #' @description

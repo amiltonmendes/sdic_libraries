@@ -27,7 +27,7 @@ test_that("get_exportacao_isic_divisao_nacional_mensal monta url e params", {
 
   expect_equal(length(registro$chamadas), 1)
   url <- registro$chamadas[[1]]$url
-  expect_true(grepl("^https://sdicapi\\.teste/exportacao_isic_divisao_gcloud", url))
+  expect_true(grepl("^https://sdicapi\\.teste/exportacao_isic_divisao", url))
   expect_true(grepl("ano_minimo=2023", url))
   expect_true(grepl("secao=C", url))
 })
@@ -60,7 +60,7 @@ test_that(".fetch_all_paginated_get consolida paginas", {
   )
 
   api <- Comex$new(base_url = "https://sdicapi.teste")
-  itens <- api$.fetch_all_paginated_get("/exportacao_pais_gcloud", list(ano_minimo = 2023, tamanho_pagina = 2))
+  itens <- api$.fetch_all_paginated_get("/exportacao_pais", list(ano_minimo = 2023, tamanho_pagina = 2))
 
   expect_equal(length(itens), 3)
   expect_equal(length(registro$chamadas), 2)
