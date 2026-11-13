@@ -21,58 +21,14 @@ from typing import Any, Dict, List, Optional, Union
 import pandas as pd
 import requests
 
-from ...utils.cache import com_cache
-from ...utils.erros import detalhe_api
+from ...transporte import ClienteAPI, SdicErro
 
 
-class ComexAPIError(Exception):
-    """Exceção personalizada para erros da API de Comex"""
-    pass
+class ComexAPIError(SdicErro):
+    """Erro da API de Comex (tem `status_code` e `endpoint`)."""
 
 
-def _get_user_friendly_error_message(error: Exception, status_code: int = None) -> str:
-    """Converte erros técnicos em mensagens amigáveis, sem expor URLs/detalhes internos."""
-    error_str = str(error).lower()
-    resposta = getattr(error, 'response', None)
-    # `e.response` de um 4xx/5xx é falso em contexto booleano (Response.__bool__ = .ok):
-    # os chamadores passavam status_code=None; obtém aqui da própria resposta.
-    status_code = status_code or getattr(resposta, 'status_code', None)
-
-    # 400/422: a sdic_api explica o que está errado (ex.: formato de data) — repasse.
-    if status_code in (400, 422):
-        detalhe = detalhe_api(resposta)
-        if detalhe:
-            return f"Parâmetros inválidos: {detalhe}"
-
-    if any(x in error_str for x in ['connection', 'conexão', 'timeout', 'timed out']):
-        return ("Problema de conectividade detectado. "
-                "Verifique sua conexão com a internet e tente novamente em alguns minutos.")
-
-    if status_code == 404 or '404' in error_str:
-        return ("Serviço temporariamente indisponível. "
-                "Aguarde alguns minutos e tente novamente.")
-
-    if status_code and 500 <= status_code < 600:
-        return ("O serviço está temporariamente em manutenção. "
-                "Tente novamente em alguns minutos.")
-
-    if status_code == 400 or '400' in error_str:
-        return ("Parâmetros inválidos fornecidos. "
-                "Verifique os códigos e datas informados.")
-
-    if status_code in [401, 403] or any(x in error_str for x in ['401', '403', 'unauthorized', 'forbidden']):
-        return ("Problema de autenticação. "
-                "Verifique a chave de API configurada (COMEX_API_KEY).")
-
-    if 'json' in error_str:
-        return ("Resposta inválida recebida do serviço. "
-                "Tente novamente em alguns minutos.")
-
-    return ("Erro temporário no serviço. "
-            "Verifique os parâmetros e tente novamente em alguns minutos.")
-
-
-class Comex:
+class Comex(ClienteAPI):
     """
     Cliente para acessar dados de comércio exterior (comex) via sdic_api.
 
@@ -82,210 +38,18 @@ class Comex:
         session (requests.Session): Sessão HTTP para pool de conexões
     """
 
-    def __init__(self, base_url: str = None, timeout: int = 30, api_key: str = None):
+    erro = ComexAPIError
+    _paginacao_no_corpo = True  # `/exportacao_agregada_ncm` espera `pagina` também no corpo
+
+    def __init__(self, base_url: Optional[str] = None, timeout: Optional[int] = None, api_key: Optional[str] = None):
         """
-        Inicializar cliente da API de Comex.
-
-        Variáveis de ambiente são carregadas automaticamente de:
-        1. Variáveis de ambiente do sistema
-        2. Arquivo .env no diretório atual (se existir)
-        3. Arquivo .env no diretório home do usuário (se existir)
-        4. /etc/sdic/.env (configuração do sistema)
-
         Args:
-            base_url (str, optional): Sobrescrever URL base da API auto-detectada
-            timeout (int): Timeout das requisições em segundos. Padrão 30.
-            api_key (str, optional): Sobrescrever chave da API auto-detectada
+            base_url (str, optional): URL da sdic_api (padrão: `SDIC_API_URL` ou o endereço público).
+            timeout (int, optional): segundos por requisição (padrão: `SDIC_TIMEOUT` ou 30).
+            api_key (str, optional): chave individual (padrão: `SDIC_API_KEY`).
         """
-        self._load_env_files()
-
-        self.base_url = (
-            base_url or
-            os.getenv('COMEX_API_BASE_URL') or
-            "https://sdicapi.dados.ninja"
-        )
-
-        self.timeout = int(os.getenv('API_TIMEOUT', str(timeout)))
-        self.cache_ttl = int(os.getenv('SDIC_CACHE_TTL', '0'))  # segundos; 0 = sem cache (ver utils/cache.py)
-        self.api_key = api_key or os.getenv('COMEX_API_KEY')
-
-        log_level = os.getenv('LOG_LEVEL', 'INFO').upper()
-        if hasattr(logging, log_level):
-            logging.getLogger().setLevel(getattr(logging, log_level))
-
-        self.session = requests.Session()
-        self.logger = logging.getLogger(__name__)
-
-        version = os.getenv('SDIC_VERSION', '0.5.4')
-        self.session.headers.update({
-            'User-Agent': f'sdic-libraries/{version}',
-            'Accept': 'application/json',
-            'Content-Type': 'application/json',
-        })
-
-        if self.api_key:
-            # A sdic_api valida hoje via header `x-api-key` (ver
-            # api/security/api_key.py); `Authorization: Bearer` é enviado
-            # também para não quebrar caso o mecanismo evolua para checá-lo.
-            self.session.headers.update({
-                'Authorization': f'Bearer {self.api_key}',
-                'x-api-key': self.api_key,
-            })
-
+        super().__init__(base_url=base_url, timeout=timeout, api_key=api_key)
         self._ncm_isic_mapa_cache: Optional[List[Dict[str, Any]]] = None
-
-    def _make_request(self, endpoint: str, params: Dict[str, Any] = None) -> Dict[str, Any]:
-        url = f"{self.base_url.rstrip('/')}/{endpoint.lstrip('/')}"
-        try:
-            def buscar():
-                response = self.session.get(url, params=params, timeout=self.timeout)
-                response.raise_for_status()
-                return response.json()
-
-            return com_cache(self.cache_ttl, ('GET', url, params, None), buscar)
-        except requests.exceptions.RequestException as e:
-            self.logger.error(f"Falha na requisição da API: {e}")
-            status_code = getattr(e.response, 'status_code', None) if hasattr(e, 'response') and e.response else None
-            raise ComexAPIError(_get_user_friendly_error_message(e, status_code))
-        except ValueError as e:
-            self.logger.error(f"Resposta JSON inválida: {e}")
-            raise ComexAPIError(_get_user_friendly_error_message(e))
-
-    def _make_post_request(self, endpoint: str, body: Any, params: Dict[str, Any] = None) -> Dict[str, Any]:
-        url = f"{self.base_url.rstrip('/')}/{endpoint.lstrip('/')}"
-        try:
-            def buscar():
-                response = self.session.post(url, json=body, params=params, timeout=self.timeout)
-                response.raise_for_status()
-                return response.json()
-
-            return com_cache(self.cache_ttl, ('POST', url, params, body), buscar)
-        except requests.exceptions.RequestException as e:
-            self.logger.error(f"Falha na requisição da API: {e}")
-            status_code = getattr(e.response, 'status_code', None) if hasattr(e, 'response') and e.response else None
-            raise ComexAPIError(_get_user_friendly_error_message(e, status_code))
-        except ValueError as e:
-            self.logger.error(f"Resposta JSON inválida: {e}")
-            raise ComexAPIError(_get_user_friendly_error_message(e))
-
-    def _extract_items(self, response: Any) -> List[Dict[str, Any]]:
-        if isinstance(response, list):
-            return [item for item in response if isinstance(item, dict)]
-        if not isinstance(response, dict):
-            raise ComexAPIError("Formato de resposta inesperado da API")
-        items = response.get('items')
-        if isinstance(items, list):
-            return [item for item in items if isinstance(item, dict)]
-        return []
-
-    def _get_total_count(self, response: Any) -> Optional[int]:
-        if not isinstance(response, dict):
-            return None
-        value = response.get('count')
-        return value if isinstance(value, int) and value >= 0 else None
-
-    def _fetch_all_paginated_get(self, endpoint: str, params: Dict[str, Any]) -> List[Dict[str, Any]]:
-        """Consolida automaticamente todas as páginas de um endpoint GET."""
-        all_items: List[Dict[str, Any]] = []
-        pagina = 1
-        total_count: Optional[int] = None
-
-        while True:
-            request_params = dict(params)
-            request_params['pagina'] = pagina
-            request_params.setdefault('tamanho_pagina', 5000)
-            page_size = int(request_params.get('tamanho_pagina', 5000) or 1000)
-
-            response = self._make_request(endpoint, request_params)
-            items = self._extract_items(response)
-            if not items:
-                break
-
-            all_items.extend(items)
-
-            if total_count is None:
-                total_count = self._get_total_count(response)
-
-            if total_count is not None and len(all_items) >= total_count:
-                break
-            if len(items) < page_size:
-                break
-
-            pagina += 1
-
-        return all_items
-
-    def _fetch_all_paginated_post(self, endpoint: str, body: Dict[str, Any], params: Dict[str, Any]) -> List[Dict[str, Any]]:
-        """Consolida automaticamente todas as páginas de um endpoint POST.
-
-        A paginação é embutida tanto no corpo quanto nos parâmetros de query:
-        o endpoint de NCM (`/exportacao_agregada_ncm`) espera `pagina`/
-        `tamanho_pagina` dentro do corpo JSON, diferente do padrão GET.
-        """
-        all_items: List[Dict[str, Any]] = []
-        pagina = 1
-        total_count: Optional[int] = None
-
-        while True:
-            request_params = dict(params)
-            request_params['pagina'] = pagina
-            request_params.setdefault('tamanho_pagina', 5000)
-            page_size = int(request_params.get('tamanho_pagina', 5000) or 1000)
-
-            request_body = dict(body)
-            request_body['pagina'] = pagina
-            request_body.setdefault('tamanho_pagina', page_size)
-
-            response = self._make_post_request(endpoint, request_body, params=request_params)
-            items = self._extract_items(response)
-            if not items:
-                break
-
-            all_items.extend(items)
-
-            if total_count is None:
-                total_count = self._get_total_count(response)
-
-            if total_count is not None and len(all_items) >= total_count:
-                break
-            if len(items) < page_size:
-                break
-
-            pagina += 1
-
-        return all_items
-
-    def _load_env_files(self):
-        try:
-            from dotenv import load_dotenv
-            env_locations = [Path.cwd() / '.env', Path.home() / '.env', Path('/etc/sdic/.env')]
-            for env_file in env_locations:
-                if env_file.exists():
-                    load_dotenv(env_file, override=False)
-                    break
-        except ImportError:
-            env_locations = [Path.cwd() / '.env', Path.home() / '.env', Path('/etc/sdic/.env')]
-            for env_file in env_locations:
-                if env_file.exists():
-                    self._load_env_file(env_file)
-                    break
-
-    def _load_env_file(self, env_file_path: Path):
-        try:
-            with open(env_file_path, 'r', encoding='utf-8') as f:
-                for line in f:
-                    line = line.strip()
-                    if line and not line.startswith('#') and '=' in line:
-                        key, value = line.split('=', 1)
-                        key, value = key.strip(), value.strip()
-                        if value.startswith('"') and value.endswith('"'):
-                            value = value[1:-1]
-                        elif value.startswith("'") and value.endswith("'"):
-                            value = value[1:-1]
-                        if key not in os.environ:
-                            os.environ[key] = value
-        except Exception:
-            pass
 
     # ========== NCM (nacional) ==========
 

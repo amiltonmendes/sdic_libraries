@@ -1,0 +1,1456 @@
+{
+ "versao_catalogo": 1,
+ "_como_manter": "Fonte única do catálogo. Edite este arquivo e rode `python scripts/documentar.py`, que o copia para os dois pacotes e gera CATALOGO.md e docs/. Não edite as cópias.",
+ "origens": {
+  "api": {
+   "url": "https://sdicapi.dados.ninja",
+   "variavel": "SDIC_API_URL",
+   "tipo": "api",
+   "descricao": "sdic_api (BigQuery), com chave individual"
+  },
+  "dados": {
+   "url": "https://storage.googleapis.com/fast-sdic-dados",
+   "variavel": "SDIC_DADOS_URL",
+   "tipo": "arquivo",
+   "descricao": "JSON publicados pelo job publicar-dados (carga_base/publicacao)"
+  },
+  "politicas": {
+   "url": "https://amiltonmendes.github.io/sdic_libraries",
+   "variavel": "SDIC_PAGES_URL",
+   "tipo": "arquivo",
+   "descricao": "JSON das políticas publicados pelo gaia_nib"
+  }
+ },
+ "ambientes": [
+  "producao",
+  "homologacao"
+ ],
+ "bases": {
+  "rais": {
+   "titulo": "Estoque de emprego formal (RAIS)",
+   "origem": "api",
+   "fonte": "MTE, RAIS",
+   "periodicidade": "anual (carga manual)",
+   "dataset": "mte_rais",
+   "carga": null,
+   "documentacao": "carga_base/docs/BASES.md"
+  },
+  "caged": {
+   "titulo": "Saldo de emprego formal (Novo CAGED)",
+   "origem": "api",
+   "fonte": "MTE, Novo CAGED",
+   "periodicidade": "mensal",
+   "dataset": "mte_caged",
+   "carga": "caged",
+   "documentacao": "carga_base/caged/DOCUMENTACAO.md"
+  },
+  "rais_caged": {
+   "titulo": "Estoque estimado (RAIS + saldo do CAGED)",
+   "origem": "api",
+   "fonte": "MTE, RAIS e Novo CAGED; estimativa da biblioteca",
+   "periodicidade": "mensal",
+   "dataset": "mte_rais, mte_caged",
+   "carga": "caged",
+   "documentacao": "METODOLOGIA.md"
+  },
+  "comexstat": {
+   "titulo": "Comércio exterior (ComexStat)",
+   "origem": "api",
+   "fonte": "MDIC/Secex, ComexStat",
+   "periodicidade": "mensal",
+   "dataset": "secex_comexstat",
+   "carga": "comex",
+   "documentacao": "carga_base/comex/DOCUMENTACAO.md"
+  },
+  "atualizacao": {
+   "titulo": "Período mais recente de cada base",
+   "origem": "api",
+   "fonte": "sdic_api",
+   "periodicidade": "a cada carga",
+   "dataset": null,
+   "carga": null,
+   "documentacao": "METODOLOGIA.md"
+  },
+  "series": {
+   "titulo": "Séries da sdic_api (/series)",
+   "origem": "api",
+   "caminho": "/series/{nome}",
+   "fonte": "IBGE (SIDRA, Contas Regionais), MDIC (ComexStat) e indicadores oficiais; a lista atual vem de listar_series()",
+   "periodicidade": "conforme a série",
+   "dataset": "ibge_sidra_producao, ibge_sidra_pib, ibge_contas_regionais, secex_comexstat",
+   "carga": "sidra_producao, sidra_pib, contas_regionais, comex",
+   "documentacao": "carga_base/docs/BASES.md"
+  },
+  "secoes_publicadas": {
+   "titulo": "Seções publicadas (JSON do portal e dos subsídios)",
+   "origem": "dados",
+   "caminho": "{ambiente}/{uf}/{arquivo}.json",
+   "fonte": "carga_base/publicacao (job publicar-dados), a partir do BigQuery",
+   "periodicidade": "a cada carga publicada",
+   "dataset": "visões portal_* e cache_*",
+   "carga": "comex, caged, sidra_producao, sidra_pib, contas_regionais",
+   "documentacao": "carga_base/publicacao/publicar/README.md",
+   "esquema": "contrato v1.1 (schema_version)"
+  },
+  "politicas": {
+   "titulo": "Políticas da SDIC",
+   "origem": "politicas",
+   "caminho": "{ambiente}/{uf|nacional}/politicas/{id}.json",
+   "fonte": "gaia_nib/politicas_sdic",
+   "periodicidade": "a cada publicação do gaia_nib",
+   "dataset": null,
+   "carga": null,
+   "documentacao": "gaia_nib/politicas_sdic/PUBLICACAO.md"
+  },
+  "emprego_portal_antigo": {
+   "titulo": "Cache de emprego no layout antigo do Pages",
+   "origem": "politicas",
+   "caminho": "{ambiente}/cache/{uf}/emprego_cache.json",
+   "fonte": "cgid_cargas (desligado)",
+   "periodicidade": "não atualiza mais",
+   "dataset": null,
+   "carga": null,
+   "documentacao": null,
+   "depreciada": "Use get_kpis_publicados(uf, 'emprego') e as demais funções de seções publicadas."
+  }
+ },
+ "secoes": {
+  "emprego": {
+   "arquivo": "emprego",
+   "titulo": "Emprego",
+   "unidades": "UF e BRASIL",
+   "fonte": "Novo CAGED e RAIS (MTE)"
+  },
+  "pib_estadual": {
+   "arquivo": "pib_estadual",
+   "titulo": "PIB estadual",
+   "unidades": "UF e BRASIL",
+   "fonte": "IBGE, Contas Regionais e SIDRA"
+  },
+  "comercio": {
+   "arquivo": "comercio",
+   "titulo": "Comércio exterior",
+   "unidades": "UF e BRASIL",
+   "fonte": "MDIC, ComexStat"
+  },
+  "comercio_ue": {
+   "arquivo": "comercio_ue",
+   "titulo": "Comércio exterior com a União Europeia",
+   "unidades": "UF e BRASIL",
+   "fonte": "MDIC, ComexStat"
+  },
+  "producao_industrial": {
+   "arquivo": "producao_industrial",
+   "titulo": "Produção industrial",
+   "unidades": "UF e BRASIL",
+   "fonte": "IBGE, PIM-PF e PIA"
+  },
+  "pib_nacional": {
+   "arquivo": "pib_nacional",
+   "titulo": "PIB nacional",
+   "unidades": "BRASIL",
+   "fonte": "IBGE, Contas Nacionais"
+  }
+ },
+ "colunas": {
+  "listar_series": [
+   [
+    "nome",
+    "texto",
+    "nome a passar em get_serie"
+   ],
+   [
+    "descricao",
+    "texto",
+    ""
+   ],
+   [
+    "fonte",
+    "texto",
+    ""
+   ],
+   [
+    "colunas",
+    "texto",
+    "colunas devolvidas, separadas por vírgula"
+   ],
+   [
+    "filtros",
+    "texto",
+    "colunas aceitas como filtro"
+   ],
+   [
+    "obrigatorios",
+    "texto",
+    "filtros sem os quais a consulta é recusada"
+   ],
+   [
+    "periodo",
+    "texto",
+    "coluna a que `desde` e `ate` se aplicam"
+   ],
+   [
+    "dimensoes",
+    "texto",
+    "dimensões com nomes, para get_dimensao_serie"
+   ]
+  ],
+  "get_serie": [
+   [
+    "(colunas da série)",
+    "",
+    "as de listar_series(); códigos sempre como texto, `valor` numérico"
+   ],
+   [
+    "*_nome",
+    "texto",
+    "com `com_nomes`: nome de cada código que tenha dimensão"
+   ]
+  ],
+  "get_kpis_publicados": [
+   [
+    "secao",
+    "texto",
+    "id da seção"
+   ],
+   [
+    "uf",
+    "texto",
+    "sigla da UF ou BRASIL"
+   ],
+   [
+    "id",
+    "texto",
+    "id do indicador"
+   ],
+   [
+    "rotulo",
+    "texto",
+    "nome exibido"
+   ],
+   [
+    "valor",
+    "número",
+    "valor numérico (nulo se só houver texto)"
+   ],
+   [
+    "valor_exibido",
+    "texto",
+    "valor formatado como no portal"
+   ],
+   [
+    "unidade",
+    "texto",
+    ""
+   ],
+   [
+    "periodo",
+    "texto",
+    ""
+   ],
+   [
+    "capa",
+    "lógico",
+    "verdadeiro para o indicador de capa"
+   ],
+   [
+    "variacao_direcao",
+    "texto",
+    "up, down ou flat"
+   ],
+   [
+    "variacao_rotulo",
+    "texto",
+    ""
+   ],
+   [
+    "fonte",
+    "texto",
+    "fonte da seção"
+   ],
+   [
+    "referencia",
+    "texto",
+    "período de referência da seção"
+   ],
+   [
+    "atualizado_em",
+    "texto",
+    "data da publicação (AAAA-MM-DD)"
+   ]
+  ],
+  "get_series_publicadas": [
+   [
+    "secao",
+    "texto",
+    ""
+   ],
+   [
+    "uf",
+    "texto",
+    ""
+   ],
+   [
+    "grafico",
+    "texto",
+    "id do gráfico"
+   ],
+   [
+    "grafico_titulo",
+    "texto",
+    ""
+   ],
+   [
+    "unidade",
+    "texto",
+    ""
+   ],
+   [
+    "serie",
+    "texto",
+    "id da série"
+   ],
+   [
+    "serie_rotulo",
+    "texto",
+    ""
+   ],
+   [
+    "t",
+    "texto",
+    "período como publicado (AAAAMM, AAAA ou rótulo)"
+   ],
+   [
+    "v",
+    "número",
+    "valor"
+   ]
+  ],
+  "get_ranking_publicado": [
+   [
+    "secao",
+    "texto",
+    ""
+   ],
+   [
+    "uf",
+    "texto",
+    ""
+   ],
+   [
+    "lista",
+    "texto",
+    "id da lista"
+   ],
+   [
+    "titulo",
+    "texto",
+    ""
+   ],
+   [
+    "metrica",
+    "texto",
+    ""
+   ],
+   [
+    "unidade",
+    "texto",
+    ""
+   ],
+   [
+    "tom",
+    "texto",
+    "pos, neg ou neutro"
+   ],
+   [
+    "posicao",
+    "inteiro",
+    "ordem publicada, a partir de 1"
+   ],
+   [
+    "nome",
+    "texto",
+    ""
+   ],
+   [
+    "valor",
+    "número",
+    ""
+   ],
+   [
+    "valor_exibido",
+    "texto",
+    ""
+   ]
+  ],
+  "get_detalhamento_publicado": [
+   [
+    "secao",
+    "texto",
+    ""
+   ],
+   [
+    "uf",
+    "texto",
+    ""
+   ],
+   [
+    "detalhamento",
+    "texto",
+    "id"
+   ],
+   [
+    "titulo",
+    "texto",
+    ""
+   ],
+   [
+    "dimensao",
+    "texto",
+    ""
+   ],
+   [
+    "unidade",
+    "texto",
+    ""
+   ],
+   [
+    "periodo",
+    "texto",
+    ""
+   ],
+   [
+    "nome",
+    "texto",
+    ""
+   ],
+   [
+    "valor",
+    "número",
+    ""
+   ],
+   [
+    "valor_exibido",
+    "texto",
+    ""
+   ],
+   [
+    "participacao",
+    "número",
+    "fração do total (0 a 1), quando publicada"
+   ]
+  ],
+  "get_destaques_publicados": [
+   [
+    "secao",
+    "texto",
+    ""
+   ],
+   [
+    "uf",
+    "texto",
+    ""
+   ],
+   [
+    "tipo",
+    "texto",
+    "titulo, apoio ou destaque"
+   ],
+   [
+    "tom",
+    "texto",
+    "pos, neg, neutro (só destaques)"
+   ],
+   [
+    "texto",
+    "texto",
+    "com os valores já preenchidos"
+   ]
+  ],
+  "listar_secoes_publicadas": [
+   [
+    "secao",
+    "texto",
+    "nome a passar em `secao`"
+   ],
+   [
+    "titulo",
+    "texto",
+    ""
+   ],
+   [
+    "unidades",
+    "texto",
+    "para quem existe"
+   ],
+   [
+    "fonte",
+    "texto",
+    ""
+   ]
+  ],
+  "get_atualizacao_publicada": [
+   [
+    "carga",
+    "texto",
+    "carga do carga_base"
+   ],
+   [
+    "publicado_em",
+    "texto",
+    "data e hora (UTC) da carga publicada"
+   ],
+   [
+    "ambiente",
+    "texto",
+    ""
+   ]
+  ],
+  "listar_politicas": [
+   [
+    "id",
+    "texto",
+    "id a passar em get_politica"
+   ],
+   [
+    "nome",
+    "texto",
+    ""
+   ],
+   [
+    "sigla",
+    "texto",
+    ""
+   ],
+   [
+    "departamento",
+    "texto",
+    ""
+   ],
+   [
+    "categoria",
+    "texto",
+    ""
+   ],
+   [
+    "regionalizavel",
+    "lógico",
+    "tem arquivo por UF"
+   ],
+   [
+    "ordem",
+    "inteiro",
+    "ordem publicada"
+   ],
+   [
+    "file",
+    "texto",
+    "caminho do arquivo"
+   ],
+   [
+    "permitida",
+    "lógico",
+    "está em politicas_permitidas.json"
+   ]
+  ],
+  "get_politica": [
+   [
+    "policy_id",
+    "texto",
+    ""
+   ],
+   [
+    "nome",
+    "texto",
+    ""
+   ],
+   [
+    "sigla",
+    "texto",
+    ""
+   ],
+   [
+    "uf",
+    "texto",
+    "sigla ou BRASIL"
+   ],
+   [
+    "papel",
+    "texto",
+    "capa, secundario ou modalidade"
+   ],
+   [
+    "id",
+    "texto",
+    "id do indicador"
+   ],
+   [
+    "rotulo",
+    "texto",
+    ""
+   ],
+   [
+    "valor",
+    "número",
+    ""
+   ],
+   [
+    "valor_exibido",
+    "texto",
+    ""
+   ],
+   [
+    "unidade",
+    "texto",
+    "não some indicadores de unidades diferentes"
+   ],
+   [
+    "periodo",
+    "texto",
+    ""
+   ],
+   [
+    "variacao_rotulo",
+    "texto",
+    ""
+   ],
+   [
+    "fonte",
+    "texto",
+    ""
+   ],
+   [
+    "referencia",
+    "texto",
+    ""
+   ],
+   [
+    "atualizado_em",
+    "texto",
+    ""
+   ]
+  ],
+  "get_resumo_politicas": [
+   [
+    "uf",
+    "texto",
+    ""
+   ],
+   [
+    "nome_uf",
+    "texto",
+    ""
+   ],
+   [
+    "n_politicas",
+    "inteiro",
+    ""
+   ],
+   [
+    "recursos",
+    "número",
+    "R$"
+   ],
+   [
+    "recursos_exibido",
+    "texto",
+    ""
+   ],
+   [
+    "atendimentos",
+    "número",
+    ""
+   ],
+   [
+    "atendimentos_exibido",
+    "texto",
+    ""
+   ],
+   [
+    "ranking_posicao",
+    "inteiro",
+    ""
+   ],
+   [
+    "ranking_de",
+    "inteiro",
+    ""
+   ],
+   [
+    "ranking_exibido",
+    "texto",
+    ""
+   ],
+   [
+    "nota_agregacao",
+    "texto",
+    "leia antes de usar os totais"
+   ]
+  ],
+  "get_municipios_elegiveis": [
+   [
+    "ibge",
+    "texto",
+    "código IBGE de 7 dígitos"
+   ],
+   [
+    "municipio",
+    "texto",
+    ""
+   ],
+   [
+    "uf",
+    "texto",
+    ""
+   ]
+  ],
+  "get_manifesto_politicas": [
+   [
+    "campo",
+    "texto",
+    "rotulo_fonte, diretoria ou nota"
+   ],
+   [
+    "id",
+    "texto",
+    "id da nota (vazio nos demais)"
+   ],
+   [
+    "valor",
+    "texto",
+    ""
+   ]
+  ],
+  "sdic_config": [
+   [
+    "item",
+    "texto",
+    ""
+   ],
+   [
+    "valor",
+    "texto",
+    "a chave nunca é mostrada"
+   ],
+   [
+    "variavel",
+    "texto",
+    "variável de ambiente correspondente"
+   ],
+   [
+    "de_onde",
+    "texto",
+    "argumento, variável, arquivo ou padrão"
+   ]
+  ],
+  "get_politicas_estado": [
+   [
+    "policy_id",
+    "texto",
+    ""
+   ],
+   [
+    "nome",
+    "texto",
+    ""
+   ],
+   [
+    "sigla",
+    "texto",
+    ""
+   ],
+   [
+    "uf",
+    "texto",
+    "sigla ou BRASIL"
+   ],
+   [
+    "papel",
+    "texto",
+    "capa, secundario ou modalidade"
+   ],
+   [
+    "id",
+    "texto",
+    "id do indicador"
+   ],
+   [
+    "rotulo",
+    "texto",
+    ""
+   ],
+   [
+    "valor",
+    "número",
+    ""
+   ],
+   [
+    "valor_exibido",
+    "texto",
+    ""
+   ],
+   [
+    "unidade",
+    "texto",
+    "não some indicadores de unidades diferentes"
+   ],
+   [
+    "periodo",
+    "texto",
+    ""
+   ],
+   [
+    "variacao_rotulo",
+    "texto",
+    ""
+   ],
+   [
+    "fonte",
+    "texto",
+    ""
+   ],
+   [
+    "referencia",
+    "texto",
+    ""
+   ],
+   [
+    "atualizado_em",
+    "texto",
+    ""
+   ]
+  ]
+ },
+ "funcoes": [
+  {
+   "tema": "emprego",
+   "subtema": "estoque",
+   "nivel": "nacional",
+   "funcao": "get_estoque_emprego_nacional",
+   "descricao": "Estoque de vínculos ativos (31/12) por divisão ou grupo CNAE.",
+   "exemplo_py": "get_estoque_emprego_nacional(codigos_cnae=['10'], nivel_cnae=2)",
+   "exemplo_r": "get_estoque_emprego_nacional(codigos_cnae = '10', nivel_cnae = 2)",
+   "base": "rais"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "estoque",
+   "nivel": "estadual",
+   "funcao": "get_estoque_emprego_estadual",
+   "descricao": "Igual ao nacional, por UF.",
+   "exemplo_py": "get_estoque_emprego_estadual(uf='SP', codigos_cnae=['10'])",
+   "exemplo_r": "get_estoque_emprego_estadual(sigla_uf = 'SP', codigos_cnae = '10')",
+   "base": "rais"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "estoque",
+   "nivel": "nacional",
+   "funcao": "get_estoque_emprego_nacional_agrupado",
+   "descricao": "Estoque somado para uma lista de CNAEs sob um nome de grupo (ex.: 'TI').",
+   "exemplo_py": "get_estoque_emprego_nacional_agrupado('TI', ['620', '631'])",
+   "exemplo_r": "get_estoque_emprego_nacional_agrupado('TI', c('620', '631'))",
+   "base": "rais"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "estoque",
+   "nivel": "estadual",
+   "funcao": "get_estoque_emprego_estadual_agrupado",
+   "descricao": "Igual ao agrupado nacional, por UF.",
+   "exemplo_py": "get_estoque_emprego_estadual_agrupado(sigla_uf='SP', nome_grupo='TI', lista_cnae=['620'])",
+   "exemplo_r": "get_estoque_emprego_estadual_agrupado(sigla_uf = 'SP', nome_grupo = 'TI', lista_cnae = '620')",
+   "base": "rais"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "estoque_estimado",
+   "nivel": "nacional",
+   "funcao": "get_estoque_emprego_estimado_nacional_anual",
+   "descricao": "Estoque real (RAIS) + projeção com o saldo CAGED acumulado até o ano corrente (coluna 'origem': Real/Estimação).",
+   "exemplo_py": "get_estoque_emprego_estimado_nacional_anual(codigo_cnae='10')",
+   "exemplo_r": "get_estoque_emprego_estimado_nacional_anual(codigo_cnae = '10')",
+   "base": "rais_caged"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "estoque_estimado",
+   "nivel": "estadual",
+   "funcao": "get_estoque_emprego_estimado_estadual_anual",
+   "descricao": "Igual ao estimado nacional, por UF.",
+   "exemplo_py": "get_estoque_emprego_estimado_estadual_anual(sigla_uf='SP', codigo_cnae='10')",
+   "exemplo_r": "get_estoque_emprego_estimado_estadual_anual(sigla_uf = 'SP', codigo_cnae = '10')",
+   "base": "rais_caged"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "estoque_estimado",
+   "nivel": "municipal",
+   "funcao": "get_estoque_emprego_estimado_municipal_anual",
+   "descricao": "Igual ao estimado nacional, por município.",
+   "exemplo_py": "get_estoque_emprego_estimado_municipal_anual(sigla_uf='SP', codigo_municipio=3550308, codigo_cnae='10')",
+   "exemplo_r": "get_estoque_emprego_estimado_municipal_anual(sigla_uf = 'SP', codigo_municipio = 3550308, codigo_cnae = '10')",
+   "base": "rais_caged"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "estoque_porte",
+   "nivel": "nacional",
+   "funcao": "get_estoque_emprego_porte_nacional",
+   "descricao": "Estoque por porte do estabelecimento (Sebrae/DIEESE) e setor (Indústria x Comércio/Serviços).",
+   "exemplo_py": "get_estoque_emprego_porte_nacional('divisao', codigos_cnae=['10'], setor='Indústria')",
+   "exemplo_r": "get_estoque_emprego_porte_nacional('divisao', codigos_cnae = '10', setor = 'Indústria')",
+   "base": "rais"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "estoque_porte",
+   "nivel": "estadual",
+   "funcao": "get_estoque_emprego_porte_estadual",
+   "descricao": "Igual ao porte nacional, por UF.",
+   "exemplo_py": "get_estoque_emprego_porte_estadual(uf='SP', nivel_cnae='divisao', porte=['Microempresa'])",
+   "exemplo_r": "get_estoque_emprego_porte_estadual(uf = 'SP', nivel_cnae = 'divisao', porte = 'Microempresa')",
+   "base": "rais"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "estoque_classe",
+   "nivel": "nacional",
+   "funcao": "get_estoque_emprego_classe_cnae_nacional",
+   "descricao": "Estoque por classe CNAE (4 dígitos, mais fino que divisão/grupo).",
+   "exemplo_py": "get_estoque_emprego_classe_cnae_nacional(codigos_classe=['1011'])",
+   "exemplo_r": "get_estoque_emprego_classe_cnae_nacional(codigos_classe = '1011')",
+   "base": "rais"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "estoque_classe",
+   "nivel": "estadual",
+   "funcao": "get_estoque_emprego_classe_cnae_estadual",
+   "descricao": "Igual ao classe nacional, por UF.",
+   "exemplo_py": "get_estoque_emprego_classe_cnae_estadual(uf='SP', codigos_classe=['1011'])",
+   "exemplo_r": "get_estoque_emprego_classe_cnae_estadual(uf = 'SP', codigos_classe = '1011')",
+   "base": "rais"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "estoque_ocupacao",
+   "nivel": "estadual",
+   "funcao": "get_estoque_emprego_uf_cbo",
+   "descricao": "Estoque por UF, classe CNAE e ocupação (CBO). Endpoint pesado: sempre filtre siglas_uf e codigos_classe.",
+   "exemplo_py": "get_estoque_emprego_uf_cbo(siglas_uf=['SP'], codigos_classe=['4711'])",
+   "exemplo_r": "get_estoque_emprego_uf_cbo(siglas_uf = 'SP', codigos_classe = '4711')",
+   "base": "rais"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "renda",
+   "nivel": "nacional",
+   "funcao": "get_renda_media_emprego",
+   "descricao": "Remuneração média (RAIS) por divisão/grupo CNAE ou geral.",
+   "exemplo_py": "get_renda_media_emprego(tipos=['Divisao'], codigos=['10'])",
+   "exemplo_r": "get_renda_media_emprego(tipos = 'Divisao', codigos = '10')",
+   "base": "rais"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "potec",
+   "nivel": "nacional",
+   "funcao": "get_potec_emprego",
+   "descricao": "Índice Potec: fração de pessoal ocupado técnico-científico por classe CNAE (proxy de P&D da PINTEC).",
+   "exemplo_py": "get_potec_emprego(codigos_classe=['7210'])",
+   "exemplo_r": "get_potec_emprego(codigos_classe = '7210')",
+   "base": "rais"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "metadados",
+   "nivel": "-",
+   "funcao": "get_date_bases",
+   "descricao": "Data da última atualização de cada base (CAGED, RAIS, ComexStat).",
+   "exemplo_py": "get_date_bases()",
+   "exemplo_r": "get_date_bases()",
+   "base": "atualizacao"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "saldo_caged",
+   "nivel": "nacional",
+   "funcao": "get_saldo_emprego_nacional_mensal",
+   "descricao": "Saldo mensal (admissões − desligamentos) por divisão/grupo/subclasse CNAE.",
+   "exemplo_py": "get_saldo_emprego_nacional_mensal(nivel_cnae='divisao', codigo_cnae='10')",
+   "exemplo_r": "get_saldo_emprego_nacional_mensal(nivel_cnae = 'divisao', codigo_cnae = '10')",
+   "base": "caged"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "saldo_caged",
+   "nivel": "nacional",
+   "funcao": "get_saldo_emprego_nacional_anual",
+   "descricao": "Saldo somado por ano, mesmo recorte do mensal.",
+   "exemplo_py": "get_saldo_emprego_nacional_anual(nivel_cnae='divisao', codigo_cnae='10')",
+   "exemplo_r": "get_saldo_emprego_nacional_anual(nivel_cnae = 'divisao', codigo_cnae = '10')",
+   "base": "caged"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "saldo_caged",
+   "nivel": "nacional",
+   "funcao": "get_saldo_emprego_nacional_mensal_agrupado",
+   "descricao": "Saldo mensal somado para uma lista de CNAEs sob um nome de grupo.",
+   "exemplo_py": "get_saldo_emprego_nacional_mensal_agrupado('TI', ['620', '631'])",
+   "exemplo_r": "get_saldo_emprego_nacional_mensal_agrupado('TI', c('620', '631'))",
+   "base": "caged"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "saldo_caged",
+   "nivel": "estadual",
+   "funcao": "get_saldo_emprego_estadual_mensal",
+   "descricao": "Igual ao saldo mensal nacional, por UF.",
+   "exemplo_py": "get_saldo_emprego_estadual_mensal(sigla_uf='SP', nivel_cnae='divisao', codigo_cnae='10')",
+   "exemplo_r": "get_saldo_emprego_estadual_mensal(sigla_uf = 'SP', nivel_cnae = 'divisao', codigo_cnae = '10')",
+   "base": "caged"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "saldo_caged",
+   "nivel": "estadual",
+   "funcao": "get_saldo_emprego_estadual_anual",
+   "descricao": "Igual ao saldo anual nacional, por UF.",
+   "exemplo_py": "get_saldo_emprego_estadual_anual(sigla_uf='SP', nivel_cnae='divisao', codigo_cnae='10')",
+   "exemplo_r": "get_saldo_emprego_estadual_anual(sigla_uf = 'SP', nivel_cnae = 'divisao', codigo_cnae = '10')",
+   "base": "caged"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "saldo_caged",
+   "nivel": "estadual",
+   "funcao": "get_saldo_emprego_estadual_mensal_agrupado",
+   "descricao": "Igual ao saldo agrupado nacional, por UF.",
+   "exemplo_py": "get_saldo_emprego_estadual_mensal_agrupado(sigla_uf='SP', nome_grupo='TI', lista_cnae=['620'])",
+   "exemplo_r": "get_saldo_emprego_estadual_mensal_agrupado(sigla_uf = 'SP', nome_grupo = 'TI', lista_cnae = '620')",
+   "base": "caged"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "saldo_caged",
+   "nivel": "municipal",
+   "funcao": "get_saldo_emprego_municipal_mensal",
+   "descricao": "Igual ao saldo mensal nacional, por município.",
+   "exemplo_py": "get_saldo_emprego_municipal_mensal(sigla_uf='SP', codigo_municipio=3550308, nivel_cnae='divisao', codigo_cnae='10')",
+   "exemplo_r": "get_saldo_emprego_municipal_mensal(sigla_uf = 'SP', codigo_municipio = 3550308, nivel_cnae = 'divisao', codigo_cnae = '10')",
+   "base": "caged"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "saldo_caged",
+   "nivel": "municipal",
+   "funcao": "get_saldo_emprego_municipal_anual",
+   "descricao": "Igual ao saldo anual nacional, por município.",
+   "exemplo_py": "get_saldo_emprego_municipal_anual(sigla_uf='SP', codigo_municipio=3550308, nivel_cnae='divisao', codigo_cnae='10')",
+   "exemplo_r": "get_saldo_emprego_municipal_anual(sigla_uf = 'SP', codigo_municipio = 3550308, nivel_cnae = 'divisao', codigo_cnae = '10')",
+   "base": "caged"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "saldo_caged",
+   "nivel": "municipal",
+   "funcao": "get_saldo_emprego_municipal_mensal_agrupado",
+   "descricao": "Igual ao saldo agrupado nacional, por município.",
+   "exemplo_py": "get_saldo_emprego_municipal_mensal_agrupado(sigla_uf='SP', codigo_municipio=3550308, nome_grupo='TI', lista_cnae=['620'])",
+   "exemplo_r": "get_saldo_emprego_municipal_mensal_agrupado(sigla_uf = 'SP', codigo_municipio = 3550308, nome_grupo = 'TI', lista_cnae = '620')",
+   "base": "caged"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "portal_cache",
+   "nivel": "estadual",
+   "funcao": "get_relatorio_emprego_saldo_estadual",
+   "descricao": "Saldo CAGED mensal por UF, lido do cache já publicado (GitHub Pages) — não chama a API ao vivo.",
+   "exemplo_py": "get_relatorio_emprego_saldo_estadual(uf='SP')",
+   "exemplo_r": "get_relatorio_emprego_saldo_estadual(uf = 'SP')",
+   "base": "emprego_portal_antigo"
+  },
+  {
+   "tema": "emprego",
+   "subtema": "portal_cache",
+   "nivel": "estadual",
+   "funcao": "get_relatorio_emprego_estoque_estadual",
+   "descricao": "Estoque RAIS por UF, lido do cache já publicado — não chama a API ao vivo.",
+   "exemplo_py": "get_relatorio_emprego_estoque_estadual(uf='SP')",
+   "exemplo_r": "get_relatorio_emprego_estoque_estadual(uf = 'SP')",
+   "base": "emprego_portal_antigo"
+  },
+  {
+   "tema": "comex",
+   "subtema": "comercio_ncm",
+   "nivel": "nacional",
+   "funcao": "get_exportacao_ncm_nacional_mensal",
+   "descricao": "Exportações mensais por NCM (produto), com filtro opcional por seção ISIC.",
+   "exemplo_py": "get_exportacao_ncm_nacional_mensal(ano_minimo=2024, secao='Indústria de Transformação')",
+   "exemplo_r": "get_exportacao_ncm_nacional_mensal(ano_minimo = 2024, secao = 'Indústria de Transformação')",
+   "base": "comexstat"
+  },
+  {
+   "tema": "comex",
+   "subtema": "comercio_ncm",
+   "nivel": "nacional",
+   "funcao": "get_importacao_ncm_nacional_mensal",
+   "descricao": "Igual ao NCM de exportação, para importações.",
+   "exemplo_py": "get_importacao_ncm_nacional_mensal(ano_minimo=2024)",
+   "exemplo_r": "get_importacao_ncm_nacional_mensal(ano_minimo = 2024)",
+   "base": "comexstat"
+  },
+  {
+   "tema": "comex",
+   "subtema": "comercio_isic",
+   "nivel": "nacional",
+   "funcao": "get_exportacao_isic_divisao_nacional_mensal",
+   "descricao": "Exportações mensais por divisão ISIC (setor) — a chave para juntar com emprego (juntar_emprego_comex).",
+   "exemplo_py": "get_exportacao_isic_divisao_nacional_mensal(ano_minimo=2024, agregado_ano=True)",
+   "exemplo_r": "get_exportacao_isic_divisao_nacional_mensal(ano_minimo = 2024, agregado_ano = TRUE)",
+   "base": "comexstat"
+  },
+  {
+   "tema": "comex",
+   "subtema": "comercio_isic",
+   "nivel": "nacional",
+   "funcao": "get_importacao_isic_divisao_nacional_mensal",
+   "descricao": "Igual ao ISIC de exportação, para importações.",
+   "exemplo_py": "get_importacao_isic_divisao_nacional_mensal(ano_minimo=2024, agregado_ano=True)",
+   "exemplo_r": "get_importacao_isic_divisao_nacional_mensal(ano_minimo = 2024, agregado_ano = TRUE)",
+   "base": "comexstat"
+  },
+  {
+   "tema": "comex",
+   "subtema": "comercio_isic",
+   "nivel": "estadual",
+   "funcao": "get_exportacao_isic_divisao_estadual_mensal",
+   "descricao": "Igual ao ISIC nacional, por UF (e opcionalmente por país/bloco).",
+   "exemplo_py": "get_exportacao_isic_divisao_estadual_mensal(estado='São Paulo', ano_minimo=2024)",
+   "exemplo_r": "get_exportacao_isic_divisao_estadual_mensal(estado = 'São Paulo', ano_minimo = 2024)",
+   "base": "comexstat"
+  },
+  {
+   "tema": "comex",
+   "subtema": "comercio_isic",
+   "nivel": "estadual",
+   "funcao": "get_importacao_isic_divisao_estadual_mensal",
+   "descricao": "Igual ao ISIC estadual de exportação, para importações.",
+   "exemplo_py": "get_importacao_isic_divisao_estadual_mensal(estado='São Paulo', ano_minimo=2024)",
+   "exemplo_r": "get_importacao_isic_divisao_estadual_mensal(estado = 'São Paulo', ano_minimo = 2024)",
+   "base": "comexstat"
+  },
+  {
+   "tema": "comex",
+   "subtema": "comercio_pais",
+   "nivel": "nacional",
+   "funcao": "get_exportacao_pais_nacional_mensal",
+   "descricao": "Exportações mensais por país de destino.",
+   "exemplo_py": "get_exportacao_pais_nacional_mensal(pais='Argentina', ano_minimo=2024)",
+   "exemplo_r": "get_exportacao_pais_nacional_mensal(pais = 'Argentina', ano_minimo = 2024)",
+   "base": "comexstat"
+  },
+  {
+   "tema": "comex",
+   "subtema": "comercio_pais",
+   "nivel": "nacional",
+   "funcao": "get_importacao_pais_nacional_mensal",
+   "descricao": "Igual ao país de exportação, para importações (país de origem).",
+   "exemplo_py": "get_importacao_pais_nacional_mensal(pais='Argentina', ano_minimo=2024)",
+   "exemplo_r": "get_importacao_pais_nacional_mensal(pais = 'Argentina', ano_minimo = 2024)",
+   "base": "comexstat"
+  },
+  {
+   "tema": "comex",
+   "subtema": "comercio_mapa",
+   "nivel": "-",
+   "funcao": "get_ncm_isic_mapa",
+   "descricao": "De-para NCM → divisão/seção ISIC (catálogo estático, ~13 mil códigos).",
+   "exemplo_py": "get_ncm_isic_mapa()",
+   "exemplo_r": "get_ncm_isic_mapa()",
+   "base": "comexstat"
+  },
+  {
+   "tema": "utilitarios",
+   "subtema": "transformacao",
+   "nivel": "-",
+   "funcao": "criar_indice",
+   "descricao": "Índice-base (ano_base = 100) para colunas numéricas de uma série temporal.",
+   "exemplo_py": "criar_indice(df, ano_base=2020, coluna_data='ano', colunas_valores=['estoque_trabalhadores'])",
+   "exemplo_r": "criar_indice(df, ano_base = 2020, coluna_data = 'ano', colunas_valores = 'estoque_trabalhadores')",
+   "base": null
+  },
+  {
+   "tema": "utilitarios",
+   "subtema": "transformacao",
+   "nivel": "-",
+   "funcao": "juntar_emprego_comex",
+   "descricao": "Une emprego e comércio exterior por divisão CNAE/ISIC e ano.",
+   "exemplo_py": "juntar_emprego_comex(df_emprego, df_comex)",
+   "exemplo_r": "juntar_emprego_comex(df_emprego, df_comex)",
+   "base": null
+  },
+  {
+   "tema": "comex",
+   "subtema": "comercio_agrupamentos",
+   "nivel": "nacional",
+   "funcao": "get_agrupamentos_disponiveis",
+   "descricao": "Agrupamentos de NCM da SDIC (nome, departamento e coordenação): use para descobrir o nome a passar em `agrupamento`.",
+   "exemplo_py": "get_agrupamentos_disponiveis()",
+   "exemplo_r": "get_agrupamentos_disponiveis()",
+   "base": "comexstat"
+  },
+  {
+   "tema": "comex",
+   "subtema": "comercio_agrupamentos",
+   "nivel": "nacional",
+   "funcao": "get_exportacao_agrupamentos",
+   "descricao": "Exportação mensal de um agrupamento de NCM da SDIC.",
+   "exemplo_py": "get_exportacao_agrupamentos(agrupamento='Complexo da Saúde', ano_minimo=2024)",
+   "exemplo_r": "get_exportacao_agrupamentos(agrupamento = 'Complexo da Saúde', ano_minimo = 2024)",
+   "base": "comexstat"
+  },
+  {
+   "tema": "comex",
+   "subtema": "comercio_agrupamentos",
+   "nivel": "nacional",
+   "funcao": "get_importacao_agrupamentos",
+   "descricao": "Importação mensal de um agrupamento de NCM da SDIC.",
+   "exemplo_py": "get_importacao_agrupamentos(agrupamento='Complexo da Saúde', ano_minimo=2024)",
+   "exemplo_r": "get_importacao_agrupamentos(agrupamento = 'Complexo da Saúde', ano_minimo = 2024)",
+   "base": "comexstat"
+  },
+  {
+   "tema": "comex",
+   "subtema": "comercio_agrupamentos",
+   "nivel": "nacional",
+   "funcao": "get_exportacao_agrupamentos_pais_ncm",
+   "descricao": "Exportação de um agrupamento por país e NCM, ou somada por setor, subsetor ou produto (`nivel_agregacao`).",
+   "exemplo_py": "get_exportacao_agrupamentos_pais_ncm(agrupamento='Complexo da Saúde', ano_minimo=2024, nivel_agregacao='setor')",
+   "exemplo_r": "get_exportacao_agrupamentos_pais_ncm(agrupamento = 'Complexo da Saúde', ano_minimo = 2024, nivel_agregacao = 'setor')",
+   "base": "comexstat"
+  },
+  {
+   "tema": "comex",
+   "subtema": "comercio_agrupamentos",
+   "nivel": "nacional",
+   "funcao": "get_importacao_agrupamentos_pais_ncm",
+   "descricao": "Importação de um agrupamento por país e NCM, ou somada por setor, subsetor ou produto (`nivel_agregacao`).",
+   "exemplo_py": "get_importacao_agrupamentos_pais_ncm(agrupamento='Complexo da Saúde', ano_minimo=2024, nivel_agregacao='setor')",
+   "exemplo_r": "get_importacao_agrupamentos_pais_ncm(agrupamento = 'Complexo da Saúde', ano_minimo = 2024, nivel_agregacao = 'setor')",
+   "base": "comexstat"
+  },
+  {
+   "tema": "series",
+   "subtema": "catalogo",
+   "nivel": "-",
+   "funcao": "listar_series",
+   "descricao": "Séries que a sdic_api publica em `/series` (bases do carga_base e indicadores oficiais): nome, descrição, fonte, filtros e dimensões.",
+   "exemplo_py": "listar_series()",
+   "exemplo_r": "listar_series()",
+   "base": "series"
+  },
+  {
+   "tema": "series",
+   "subtema": "valores",
+   "nivel": "-",
+   "funcao": "get_serie",
+   "descricao": "Valores de uma série, com filtros pelos nomes das colunas e período (`desde`, `ate`). `com_nomes` junta os nomes das dimensões.",
+   "exemplo_py": "get_serie('sidra_producao', cod_tabela=8888, cod_localidade='35', desde='2025-01-01')",
+   "exemplo_r": "get_serie('sidra_producao', cod_tabela = 8888, cod_localidade = '35', desde = '2025-01-01')",
+   "base": "series"
+  },
+  {
+   "tema": "series",
+   "subtema": "dimensoes",
+   "nivel": "-",
+   "funcao": "get_dimensao_serie",
+   "descricao": "Códigos e nomes de uma dimensão de uma série (variáveis, categorias, localidades, atividades).",
+   "exemplo_py": "get_dimensao_serie('sidra_producao', 'variavel')",
+   "exemplo_r": "get_dimensao_serie('sidra_producao', 'variavel')",
+   "base": "series"
+  },
+  {
+   "tema": "publicados",
+   "subtema": "catalogo",
+   "nivel": "-",
+   "funcao": "listar_secoes_publicadas",
+   "descricao": "Seções publicadas em JSON (as mesmas do portal) e para quais unidades existem.",
+   "exemplo_py": "listar_secoes_publicadas()",
+   "exemplo_r": "listar_secoes_publicadas()",
+   "base": "secoes_publicadas"
+  },
+  {
+   "tema": "publicados",
+   "subtema": "secao",
+   "nivel": "estadual",
+   "funcao": "get_kpis_publicados",
+   "descricao": "Indicadores de uma seção publicada, um por linha (inclui o indicador de capa), com fonte, referência e data.",
+   "exemplo_py": "get_kpis_publicados('SP', 'emprego')",
+   "exemplo_r": "get_kpis_publicados('SP', 'emprego')",
+   "base": "secoes_publicadas"
+  },
+  {
+   "tema": "publicados",
+   "subtema": "secao",
+   "nivel": "estadual",
+   "funcao": "get_series_publicadas",
+   "descricao": "Séries dos gráficos de uma seção publicada, em formato longo (gráfico, série, período, valor).",
+   "exemplo_py": "get_series_publicadas('SP', 'emprego')",
+   "exemplo_r": "get_series_publicadas('SP', 'emprego')",
+   "base": "secoes_publicadas"
+  },
+  {
+   "tema": "publicados",
+   "subtema": "secao",
+   "nivel": "estadual",
+   "funcao": "get_ranking_publicado",
+   "descricao": "Listas ordenadas de uma seção publicada (ex.: maiores saldos), um item por linha.",
+   "exemplo_py": "get_ranking_publicado('SP', 'emprego')",
+   "exemplo_r": "get_ranking_publicado('SP', 'emprego')",
+   "base": "secoes_publicadas"
+  },
+  {
+   "tema": "publicados",
+   "subtema": "secao",
+   "nivel": "estadual",
+   "funcao": "get_detalhamento_publicado",
+   "descricao": "Composições de uma seção publicada (ex.: por intensidade tecnológica), com valor e participação.",
+   "exemplo_py": "get_detalhamento_publicado('SP', 'emprego')",
+   "exemplo_r": "get_detalhamento_publicado('SP', 'emprego')",
+   "base": "secoes_publicadas"
+  },
+  {
+   "tema": "publicados",
+   "subtema": "secao",
+   "nivel": "estadual",
+   "funcao": "get_destaques_publicados",
+   "descricao": "Título, linha de apoio e destaques do texto de uma seção publicada, com os valores já preenchidos.",
+   "exemplo_py": "get_destaques_publicados('SP', 'emprego')",
+   "exemplo_r": "get_destaques_publicados('SP', 'emprego')",
+   "base": "secoes_publicadas"
+  },
+  {
+   "tema": "publicados",
+   "subtema": "secao",
+   "nivel": "estadual",
+   "funcao": "get_secao_publicada",
+   "descricao": "JSON completo de uma seção publicada (contrato v1.1), como dicionário/lista. Baixo nível: prefira as funções que devolvem tabela.",
+   "exemplo_py": "get_secao_publicada('SP', 'emprego')",
+   "exemplo_r": "get_secao_publicada('SP', 'emprego')",
+   "base": "secoes_publicadas"
+  },
+  {
+   "tema": "publicados",
+   "subtema": "metadados",
+   "nivel": "-",
+   "funcao": "get_atualizacao_publicada",
+   "descricao": "Quando cada carga foi publicada pela última vez nos JSON do ambiente.",
+   "exemplo_py": "get_atualizacao_publicada()",
+   "exemplo_r": "get_atualizacao_publicada()",
+   "base": "secoes_publicadas"
+  },
+  {
+   "tema": "politicas",
+   "subtema": "catalogo",
+   "nivel": "-",
+   "funcao": "listar_politicas",
+   "descricao": "Políticas publicadas pelo gaia_nib, na ordem do catálogo publicado, com a marca `permitida`.",
+   "exemplo_py": "listar_politicas()",
+   "exemplo_r": "listar_politicas()",
+   "base": "politicas"
+  },
+  {
+   "tema": "politicas",
+   "subtema": "politica",
+   "nivel": "estadual",
+   "funcao": "get_politica",
+   "descricao": "Indicadores de uma política (capa, secundário e modalidades), um por linha, para uma UF ou para o Brasil (`uf=None`).",
+   "exemplo_py": "get_politica('b_mais_p', uf='SP')",
+   "exemplo_r": "get_politica('b_mais_p', uf = 'SP')",
+   "base": "politicas"
+  },
+  {
+   "tema": "politicas",
+   "subtema": "politica",
+   "nivel": "estadual",
+   "funcao": "get_politicas_estado",
+   "descricao": "Indicadores de todas as políticas publicadas para uma UF, na ordem do catálogo. Não soma nem ordena políticas entre si.",
+   "exemplo_py": "get_politicas_estado('SP')",
+   "exemplo_r": "get_politicas_estado('SP')",
+   "base": "politicas"
+  },
+  {
+   "tema": "politicas",
+   "subtema": "politica",
+   "nivel": "estadual",
+   "funcao": "get_resumo_politicas",
+   "descricao": "Resumo publicado das políticas de uma UF ou do Brasil (`uf=None`): quantidade, recursos, atendimentos e posição.",
+   "exemplo_py": "get_resumo_politicas('SP')",
+   "exemplo_r": "get_resumo_politicas('SP')",
+   "base": "politicas"
+  },
+  {
+   "tema": "politicas",
+   "subtema": "catalogo",
+   "nivel": "municipal",
+   "funcao": "get_municipios_elegiveis",
+   "descricao": "Municípios com políticas publicadas (código IBGE, nome, UF).",
+   "exemplo_py": "get_municipios_elegiveis()",
+   "exemplo_r": "get_municipios_elegiveis()",
+   "base": "politicas"
+  },
+  {
+   "tema": "politicas",
+   "subtema": "catalogo",
+   "nivel": "-",
+   "funcao": "get_manifesto_politicas",
+   "descricao": "Rótulo da fonte, diretorias exibidas e notas publicadas junto com as políticas.",
+   "exemplo_py": "get_manifesto_politicas()",
+   "exemplo_r": "get_manifesto_politicas()",
+   "base": "politicas"
+  },
+  {
+   "tema": "politicas",
+   "subtema": "politica",
+   "nivel": "estadual",
+   "funcao": "get_politica_publicada",
+   "descricao": "JSON completo de uma política, como dicionário/lista. Baixo nível: prefira `get_politica`.",
+   "exemplo_py": "get_politica_publicada('b_mais_p', uf='SP')",
+   "exemplo_r": "get_politica_publicada('b_mais_p', uf = 'SP')",
+   "base": "politicas"
+  },
+  {
+   "tema": "utilitarios",
+   "subtema": "configuracao",
+   "nivel": "-",
+   "funcao": "sdic_config",
+   "descricao": "De onde a biblioteca está lendo (API, dados, políticas), ambiente, se há chave e de onde veio cada valor.",
+   "exemplo_py": "sdic_config()",
+   "exemplo_r": "sdic_config()",
+   "base": null
+  },
+  {
+   "tema": "utilitarios",
+   "subtema": "configuracao",
+   "nivel": "-",
+   "funcao": "descrever",
+   "descricao": "Ficha de uma base ou função do catálogo: origem, fonte, periodicidade, colunas e funções que a leem.",
+   "exemplo_py": "descrever('secoes_publicadas')",
+   "exemplo_r": "descrever('secoes_publicadas')",
+   "base": null
+  },
+  {
+   "tema": "utilitarios",
+   "subtema": "configuracao",
+   "nivel": "-",
+   "funcao": "ler_json_publicado",
+   "descricao": "Lê um JSON público de uma origem do catálogo. Último recurso: use quando não houver função pronta.",
+   "exemplo_py": "ler_json_publicado('dados', 'homologacao/SP/emprego.json')",
+   "exemplo_r": "ler_json_publicado('dados', 'homologacao/SP/emprego.json')",
+   "base": null
+  }
+ ]
+}

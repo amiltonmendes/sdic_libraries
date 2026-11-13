@@ -4,9 +4,9 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sdic-libraries"
-version = "0.5.4"
+version = "0.6.0"
 description = "Utility libraries for employment balance data and other statistical data access"
-readme = "README.md"
+readme = "../README.md"
 license = {text = "MIT"}
 authors = [
     {name = "SDIC Team", email = "sdic.dados@mdic.gov.br"}
@@ -40,11 +40,11 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/sdic-org/sdic_libraries"
-Documentation = "https://github.com/sdic-org/sdic_libraries#readme"
-Repository = "https://github.com/sdic-org/sdic_libraries.git"
-"Bug Reports" = "https://github.com/sdic-org/sdic_libraries/issues"
-Changelog = "https://github.com/sdic-org/sdic_libraries/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/amiltonmendes/sdic_libraries"
+Documentation = "https://github.com/amiltonmendes/sdic_libraries#readme"
+Repository = "https://github.com/amiltonmendes/sdic_libraries.git"
+"Bug Reports" = "https://github.com/amiltonmendes/sdic_libraries/issues"
+Changelog = "https://github.com/amiltonmendes/sdic_libraries/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
 dev = [
@@ -67,7 +67,7 @@ include = ["sdic_libraries*"]
 exclude = ["tests*"]
 
 [tool.setuptools.package-data]
-"*" = ["py.typed"]
+"*" = ["py.typed", "catalogo.json"]
 
 # Black code formatter configuration
 [tool.black]

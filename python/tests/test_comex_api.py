@@ -32,7 +32,8 @@ def cliente():
 
 class TestConfiguracao:
     def test_api_key_configura_headers(self, cliente):
-        assert cliente.session.headers["x-api-key"] == "chave-teste"
+        # só Authorization: x-api-key seguiria um redirecionamento para outro host
+        assert "x-api-key" not in cliente.session.headers
         assert cliente.session.headers["Authorization"] == "Bearer chave-teste"
 
     def test_base_url_default(self):
@@ -145,7 +146,7 @@ class TestErros:
 
     def test_500_reconhecido_sem_expor_detail(self, cliente):
         with patch.object(cliente.session, "get", return_value=self._resposta_real(500, {"detail": "SELECT * FROM x"})):
-            with pytest.raises(ComexAPIError, match="manutenção") as exc:
+            with pytest.raises(ComexAPIError, match="erro interno") as exc:
                 cliente.get_exportacao_pais_nacional_mensal()
         assert "SELECT" not in str(exc.value)
 

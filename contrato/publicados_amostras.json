@@ -1,0 +1,619 @@
+{
+ "_origem": "Arquivos reais de https://storage.googleapis.com/fast-sdic-dados/homologacao/ capturados em 2026-11-13. `arquivos` mapeia caminho (relativo à origem `dados`) -> conteúdo; os testes das duas linguagens servem esses arquivos no lugar do HTTP.",
+ "arquivos": {
+  "homologacao/SP/emprego.json": {
+   "schema_version": "1.1",
+   "section_id": "emprego",
+   "title": "Emprego",
+   "source": "Novo CAGED / MTE",
+   "reference": "Set/2026",
+   "updated_at": "2026-11-10",
+   "capa_kpi": {
+    "id": "capa_emprego",
+    "label": "Saldo CAGED 12m",
+    "display_value": "+142.078",
+    "unit": "vagas",
+    "period": "12 meses",
+    "delta": {
+     "dir": "up",
+     "label": "estoque de 16158 mil vínculos"
+    }
+   },
+   "story": {
+    "headline": "Mercado de trabalho formal soma {{kpis[saldo_12m].display_value}} {{kpis[saldo_12m].unit}} em 12 meses.",
+    "lede": "Emprego — dados do Novo CAGED (MTE/SDIC) com estoque de vínculos formais da RAIS. Narrativa atualiza automaticamente conforme novos dados disponibilizam.",
+    "highlights": [
+     {
+      "tone": "pos",
+      "text": "Saldo de {{kpis[saldo_mensal].display_value}} {{kpis[saldo_mensal].unit}} no mês mais recente."
+     },
+     {
+      "tone": "neutral",
+      "text": "Estoque formal de {{kpis[estoque].display_value}} {{kpis[estoque].unit}}."
+     },
+     {
+      "tone": "neutral",
+      "text": "Intensidade tecnológica concentra {{kpis[baixa_intensidade_share].display_value}}% do estoque em atividades de baixa intensidade."
+     },
+     {
+      "tone": "pos",
+      "text": "Atividade com maior saldo: Transporte terrestre (+50.111 vagas)."
+     }
+    ]
+   },
+   "kpis": [
+    {
+     "id": "saldo_mensal",
+     "label": "Saldo mensal",
+     "value": 19391,
+     "display_value": "+19.391",
+     "unit": "vagas",
+     "period": "Set/2026"
+    },
+    {
+     "id": "saldo_12m",
+     "label": "Saldo 12 meses",
+     "value": 142078,
+     "display_value": "+142.078",
+     "unit": "vagas",
+     "period": "12 meses"
+    },
+    {
+     "id": "saldo_ano",
+     "label": "Saldo no ano",
+     "value": 322551,
+     "display_value": "+322.551",
+     "unit": "vagas",
+     "period": "2026 (até Set)",
+     "partial": true
+    },
+    {
+     "id": "estoque",
+     "label": "Estoque formal",
+     "value": 16158390,
+     "display_value": "16.158",
+     "unit": "mil vínculos",
+     "period": "RAIS 2025"
+    },
+    {
+     "id": "baixa_intensidade_share",
+     "label": "Participação baixa intensidade",
+     "value": 55.6,
+     "display_value": "55,6",
+     "unit": "%",
+     "period": "RAIS 2025"
+    }
+   ],
+   "charts": [
+    {
+     "id": "saldo_mensal_serie",
+     "type": "diverging-bars",
+     "title": "Saldo mensal de vagas formais",
+     "subtitle": "Admissões − desligamentos, por mês",
+     "unit": "vagas",
+     "series": [
+      {
+       "id": "saldo",
+       "label": "Saldo",
+       "points": [
+        {
+         "t": "202510",
+         "v": 19801
+        },
+        {
+         "t": "202511",
+         "v": 28639
+        },
+        {
+         "t": "202512",
+         "v": -228913
+        },
+        {
+         "t": "202601",
+         "v": 15346
+        },
+        {
+         "t": "202602",
+         "v": 98966
+        },
+        {
+         "t": "202603",
+         "v": 66010
+        },
+        {
+         "t": "202604",
+         "v": 15414
+        },
+        {
+         "t": "202605",
+         "v": 19945
+        },
+        {
+         "t": "202606",
+         "v": 31086
+        },
+        {
+         "t": "202607",
+         "v": 16401
+        },
+        {
+         "t": "202608",
+         "v": 39992
+        },
+        {
+         "t": "202609",
+         "v": 19391
+        }
+       ]
+      }
+     ],
+     "annotations": [
+      {
+       "t": "202609",
+       "label": "+19.391 vagas"
+      }
+     ]
+    },
+    {
+     "id": "saldo_12m_serie",
+     "type": "area",
+     "title": "Saldo acumulado em 12 meses",
+     "subtitle": "Janela móvel — tendência do mercado de trabalho",
+     "unit": "vagas",
+     "series": [
+      {
+       "id": "acum",
+       "label": "Acumulado 12m",
+       "points": [
+        {
+         "t": "202510",
+         "v": 346008
+        },
+        {
+         "t": "202511",
+         "v": 336235
+        },
+        {
+         "t": "202512",
+         "v": 301353
+        },
+        {
+         "t": "202601",
+         "v": 279223
+        },
+        {
+         "t": "202602",
+         "v": 240615
+        },
+        {
+         "t": "202603",
+         "v": 270769
+        },
+        {
+         "t": "202604",
+         "v": 221284
+        },
+        {
+         "t": "202605",
+         "v": 208365
+        },
+        {
+         "t": "202606",
+         "v": 201911
+        },
+        {
+         "t": "202607",
+         "v": 175434
+        },
+        {
+         "t": "202608",
+         "v": 169874
+        },
+        {
+         "t": "202609",
+         "v": 142078
+        }
+       ]
+      }
+     ],
+     "annotations": [
+      {
+       "t": "202609",
+       "label": "+142.078 vagas"
+      }
+     ]
+    }
+   ],
+   "ranked_lists": [
+    {
+     "id": "saldos_pos",
+     "title": "Maiores saldos positivos",
+     "metric_label": "Saldo em 12 meses",
+     "unit": "vagas",
+     "tone": "pos",
+     "items": [
+      {
+       "name": "Transporte terrestre",
+       "value": 50111,
+       "display_value": "+50.111"
+      },
+      {
+       "name": "Atividades de atenção à saúde humana",
+       "value": 26842,
+       "display_value": "+26.842"
+      },
+      {
+       "name": "Serviços para edifícios e atividades paisagísticas",
+       "value": 17977,
+       "display_value": "+17.977"
+      },
+      {
+       "name": "Seleção, agenciamento e locação de mão de obra",
+       "value": 17651,
+       "display_value": "+17.651"
+      },
+      {
+       "name": "Alimentação",
+       "value": 16239,
+       "display_value": "+16.239"
+      }
+     ]
+    },
+    {
+     "id": "saldos_neg",
+     "title": "Maiores saldos negativos",
+     "metric_label": "Saldo em 12 meses",
+     "unit": "vagas",
+     "tone": "neg",
+     "items": [
+      {
+       "name": "Serviços de escritório, de apoio administrativo e outros serviços prestados às empresas",
+       "value": -12378,
+       "display_value": "−12.378"
+      },
+      {
+       "name": "Confecção de artigos do vestuário e acessórios",
+       "value": -7493,
+       "display_value": "−7.493"
+      },
+      {
+       "name": "Comércio varejista",
+       "value": -4778,
+       "display_value": "−4.778"
+      },
+      {
+       "name": "Fabricação de produtos de metal, exceto máquinas e equipamentos",
+       "value": -4193,
+       "display_value": "−4.193"
+      },
+      {
+       "name": "Fabricação de produtos têxteis",
+       "value": -3912,
+       "display_value": "−3.912"
+      }
+     ]
+    },
+    {
+     "id": "estoque_top",
+     "title": "Maiores estoques",
+     "metric_label": "Estoque formal",
+     "unit": "mil vínculos",
+     "period": "RAIS 2025",
+     "tone": "neutral",
+     "items": [
+      {
+       "name": "Comércio varejista",
+       "value": 2030996,
+       "display_value": "2.030"
+      },
+      {
+       "name": "Administração pública, defesa e seguridade social",
+       "value": 1404749,
+       "display_value": "1.404"
+      },
+      {
+       "name": "Educação",
+       "value": 1123637,
+       "display_value": "1.123"
+      },
+      {
+       "name": "Atividades de atenção à saúde humana",
+       "value": 939900,
+       "display_value": "939"
+      },
+      {
+       "name": "Serviços de escritório, de apoio administrativo e outros serviços prestados às empresas",
+       "value": 756255,
+       "display_value": "756"
+      }
+     ]
+    }
+   ],
+   "breakdowns": [
+    {
+     "id": "intensidade_tec",
+     "title": "Composição do mercado de trabalho por intensidade tecnológica",
+     "dimension_label": "Participação no estoque",
+     "unit": "mil vínculos",
+     "period": "RAIS 2025",
+     "items": [
+      {
+       "name": "Alta Intensidade Tecnológica",
+       "value": 131225,
+       "display_value": "131",
+       "share": 0.8
+      },
+      {
+       "name": "Média-Alta Intensidade Tecnológica",
+       "value": 1033705,
+       "display_value": "1.034",
+       "share": 6.4
+      },
+      {
+       "name": "Média Intensidade Tecnológica",
+       "value": 560745,
+       "display_value": "561",
+       "share": 3.5
+      },
+      {
+       "name": "Média-Baixa Intensidade Tecnológica",
+       "value": 1845673,
+       "display_value": "1.846",
+       "share": 11.4
+      },
+      {
+       "name": "Baixa Intensidade Tecnológica",
+       "value": 8976671,
+       "display_value": "8.977",
+       "share": 55.6
+      },
+      {
+       "name": "Não Classificada (Administração Pública, Educação e Saúde)",
+       "value": 3610371,
+       "display_value": "3.610",
+       "share": 22.3
+      }
+     ]
+    }
+   ]
+  },
+  "homologacao/BRASIL/pib_nacional.json": {
+   "schema_version": "1.1",
+   "section_id": "pib_nacional",
+   "title": "PIB Brasil",
+   "source": "Contas Nacionais / IBGE",
+   "reference": "2024",
+   "updated_at": "2026-11-09",
+   "capa_kpi": {
+    "id": "capa_pib_nacional",
+    "label": "PIB Brasil",
+    "display_value": "R$ 11.779,3 bi",
+    "unit": "",
+    "period": "2024",
+    "delta": {
+     "dir": "up",
+     "label": "PIB a preços de mercado"
+    }
+   },
+   "story": {
+    "headline": "PIB do Brasil soma {{kpis[pib_total].display_value}} {{kpis[pib_total].unit}}.",
+    "lede": "Produto Interno Bruto a preços de mercado (com impostos líquidos sobre produtos), pelas óticas da oferta e da demanda — Contas Nacionais/IBGE.",
+    "highlights": [
+     {
+      "tone": "neutral",
+      "text": "Maior setor: Serviços (68,9% do VAB)."
+     },
+     {
+      "tone": "neutral",
+      "text": "Consumo das famílias em {{kpis[consumo_familias].display_value}}% do PIB."
+     }
+    ]
+   },
+   "kpis": [
+    {
+     "id": "pib_total",
+     "label": "PIB Brasil",
+     "value": 11779.3,
+     "display_value": "11.779,3",
+     "unit": "bilhões de reais",
+     "period": "2024"
+    },
+    {
+     "id": "consumo_familias",
+     "label": "Consumo das famílias (% do PIB)",
+     "value": 64.0,
+     "display_value": "64,0",
+     "unit": "%",
+     "period": "2024"
+    },
+    {
+     "id": "taxa_investimento",
+     "label": "Taxa de investimento — FBCF (% do PIB)",
+     "value": 16.9,
+     "display_value": "16,9",
+     "unit": "%",
+     "period": "2024"
+    }
+   ],
+   "charts": [
+    {
+     "id": "pib_brasil_serie",
+     "type": "line",
+     "title": "Série do PIB Brasil",
+     "subtitle": "Produto Interno Bruto a preços de mercado",
+     "unit": "bilhões de reais",
+     "series": [
+      {
+       "id": "pib",
+       "label": "PIB",
+       "points": [
+        {
+         "t": 2020,
+         "v": 7609.6
+        },
+        {
+         "t": 2021,
+         "v": 9012.1
+        },
+        {
+         "t": 2022,
+         "v": 10079.7
+        },
+        {
+         "t": 2023,
+         "v": 10943.3
+        },
+        {
+         "t": 2024,
+         "v": 11779.3
+        }
+       ]
+      }
+     ],
+     "annotations": [
+      {
+       "t": 2024,
+       "label": "R$ 11.779,3 bi"
+      }
+     ]
+    }
+   ],
+   "ranked_lists": [],
+   "breakdowns": []
+  },
+  "homologacao/_publicado.json": {
+   "comex": "2026-11-06T18:35:51+00:00",
+   "caged": "2026-11-10T19:32:54+00:00",
+   "contas_regionais": "2026-11-13T13:01:11+00:00",
+   "sidra_producao": "2026-11-11T13:05:12+00:00",
+   "sidra_pib": "2026-11-06T15:17:09+00:00"
+  }
+ },
+ "esperado": {
+  "get_kpis_publicados": {
+   "args": {
+    "uf": "SP",
+    "secao": "emprego",
+    "ambiente": "homologacao"
+   },
+   "colunas": [
+    "secao",
+    "uf",
+    "id",
+    "rotulo",
+    "valor",
+    "valor_exibido",
+    "unidade",
+    "periodo",
+    "capa",
+    "variacao_direcao",
+    "variacao_rotulo",
+    "fonte",
+    "referencia",
+    "atualizado_em"
+   ],
+   "linhas": 6,
+   "primeira": {
+    "id": "capa_emprego",
+    "valor_exibido": "+142.078",
+    "capa": true,
+    "referencia": "Set/2026"
+   }
+  },
+  "get_series_publicadas": {
+   "args": {
+    "uf": "SP",
+    "secao": "emprego",
+    "ambiente": "homologacao"
+   },
+   "colunas": [
+    "secao",
+    "uf",
+    "grafico",
+    "grafico_titulo",
+    "unidade",
+    "serie",
+    "serie_rotulo",
+    "t",
+    "v"
+   ],
+   "linhas": 24
+  },
+  "get_ranking_publicado": {
+   "args": {
+    "uf": "SP",
+    "secao": "emprego",
+    "ambiente": "homologacao"
+   },
+   "colunas": [
+    "secao",
+    "uf",
+    "lista",
+    "titulo",
+    "metrica",
+    "unidade",
+    "tom",
+    "posicao",
+    "nome",
+    "valor",
+    "valor_exibido"
+   ],
+   "linhas": 15
+  },
+  "get_detalhamento_publicado": {
+   "args": {
+    "uf": "SP",
+    "secao": "emprego",
+    "ambiente": "homologacao"
+   },
+   "colunas": [
+    "secao",
+    "uf",
+    "detalhamento",
+    "titulo",
+    "dimensao",
+    "unidade",
+    "periodo",
+    "nome",
+    "valor",
+    "valor_exibido",
+    "participacao"
+   ],
+   "linhas": 6
+  },
+  "get_destaques_publicados": {
+   "args": {
+    "uf": "SP",
+    "secao": "emprego",
+    "ambiente": "homologacao"
+   },
+   "colunas": [
+    "secao",
+    "uf",
+    "tipo",
+    "tom",
+    "texto"
+   ],
+   "linhas": 6
+  },
+  "get_atualizacao_publicada": {
+   "args": {
+    "ambiente": "homologacao"
+   },
+   "colunas": [
+    "carga",
+    "publicado_em",
+    "ambiente"
+   ],
+   "linhas": 5
+  },
+  "brasil": {
+   "args": {
+    "uf": "BRASIL",
+    "secao": "pib_nacional",
+    "ambiente": "homologacao"
+   },
+   "linhas_kpis": 4
+  }
+ }
+}

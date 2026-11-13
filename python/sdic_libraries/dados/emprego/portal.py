@@ -1,47 +1,29 @@
-"""portal.py — leitura dos artefatos de emprego publicados no GitHub Pages.
+"""portal.py — DEPRECIADO: leitura do cache de emprego no layout antigo do GitHub Pages.
 
-Lado **leitor** do pipeline de emprego. O projeto `cgid_cargas` busca CAGED/RAIS
-(via a API desta biblioteca), gera dois artefatos por estado e os publica no
-GitHub Pages, em dois ambientes (`producao` e `homologacao`):
+Estes arquivos eram publicados pelo `cgid_cargas`, que foi desligado; o pipeline novo
+(`carga_base/publicacao`) não produz `cache/{UF}/emprego_cache.json`. As funções continuam
+funcionando enquanto os arquivos antigos existirem, com aviso de depreciação.
 
-    Portal    : <BASE>/{ambiente}/{UF}/emprego.json            (schema v1.1)
-    Relatório : <BASE>/{ambiente}/cache/{UF}/emprego_cache.json (schema 1.0)
-
-Este módulo lê esses JSONs de volta e os entrega como `dict`/`pandas.DataFrame`:
-
-  - **Relatório** (cache 1.0): dados brutos — `saldo` (CAGED mensal por divisão
-    CNAE), `estoque` (RAIS por divisão) e `acum12m_total`. Para análise.
-  - **Portal** (v1.1): payload pronto para apresentação — `capa_kpi`, `story`,
-    `kpis`, `charts`, `ranked_lists`, `breakdowns`, já em pt-BR.
-
-Configuração:
-    PORTAL_EMPREGO_BASE_URL   URL pública base (default abaixo).
-    PORTAL_EMPREGO_AMBIENTE   ambiente default ('producao' | 'homologacao').
-
-Uso:
-    from sdic_libraries.dados.emprego.portal import (
-        get_relatorio_emprego_saldo_estadual,
-        get_portal_emprego_estadual,
-    )
-    df = get_relatorio_emprego_saldo_estadual("SP")
-    payload = get_portal_emprego_estadual("SP", ambiente="homologacao")
+Use no lugar (em `sdic_libraries`): `get_kpis_publicados(uf, "emprego")`,
+`get_series_publicadas`, `get_ranking_publicado`, `get_detalhamento_publicado` e
+`get_secao_publicada`. Para saldo e estoque por divisão CNAE, use as funções da API
+(`get_saldo_emprego_estadual_mensal`, `get_estoque_emprego_estadual`). O arquivo
+`{UF}/emprego_relatorio.json` do bucket de dados não tem função: leia com
+`ler_json_publicado("dados", "<ambiente>/<UF>/emprego_relatorio.json")`.
 """
 from __future__ import annotations
 
-import logging
-import os
-from pathlib import Path
+import functools
+import warnings
 from typing import Any, Dict, List, Optional
 
 import pandas as pd
-import requests
 
-# Reaproveita a exceção e a tradução amigável de erros do cliente da API.
-from .api import EmpregoAPIError, _get_user_friendly_error_message
+from ... import config
+from ...transporte import NaoPublicado, SdicErro, ler_json_publicado
+from .api import EmpregoAPIError
 
-# URL pública base onde o `cgid_cargas` publica os artefatos de emprego.
-DEFAULT_PORTAL_BASE_URL = "https://amiltonmendes.github.io/sdic_libraries"
-AMBIENTES = ("producao", "homologacao")
+AMBIENTES = config.AMBIENTES
 
 UFS_27 = [
     "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS",
@@ -50,120 +32,44 @@ UFS_27 = [
 ]
 
 
+def _depreciada(substituta: str):
+    def decorar(funcao):
+        @functools.wraps(funcao)
+        def envolta(*args, **kwargs):
+            warnings.warn(f"{funcao.__name__} lê o layout antigo do Pages e será removida. Use {substituta}.",
+                          DeprecationWarning, stacklevel=2)
+            return funcao(*args, **kwargs)
+        return envolta
+    return decorar
+
+
 class PortalEmprego:
-    """Cliente de leitura dos artefatos de emprego publicados no GitHub Pages.
+    """Leitor dos artefatos antigos de emprego (origem `politicas` do catálogo, sem chave)."""
 
-    Attributes:
-        base_url (str): URL pública base (sem `/{ambiente}/...`).
-        ambiente (str): 'producao' (default) ou 'homologacao'.
-        timeout (int): timeout das requisições em segundos.
-        session (requests.Session): sessão HTTP com pool de conexões.
-    """
-
-    def __init__(
-        self,
-        base_url: Optional[str] = None,
-        ambiente: Optional[str] = None,
-        timeout: int = 30,
-    ):
-        self._load_env_files()
-
-        self.base_url = (
-            base_url
-            or os.getenv("PORTAL_EMPREGO_BASE_URL")
-            or DEFAULT_PORTAL_BASE_URL
-        ).rstrip("/")
-
-        self.ambiente = self._validar_ambiente(
-            ambiente or os.getenv("PORTAL_EMPREGO_AMBIENTE") or "producao"
-        )
-        self.timeout = int(os.getenv("API_TIMEOUT", str(timeout)))
-
-        log_level = os.getenv("LOG_LEVEL", "INFO").upper()
-        if hasattr(logging, log_level):
-            logging.getLogger().setLevel(getattr(logging, log_level))
-
-        self.session = requests.Session()
-        self.logger = logging.getLogger(__name__)
-        version = os.getenv("SDIC_VERSION", "0.5.4")
-        self.session.headers.update({
-            "User-Agent": f"sdic-libraries/{version}",
-            "Accept": "application/json",
-        })
-
-    # ── Contexto / env ────────────────────────────────────────────────────────
+    def __init__(self, base_url: Optional[str] = None, ambiente: Optional[str] = None, timeout: Optional[int] = None):
+        self.base_url = config.url("politicas", base_url)
+        self.ambiente = config.ambiente(ambiente)
+        self.timeout = config.timeout(timeout)
 
     def __enter__(self) -> "PortalEmprego":
         return self
 
     def __exit__(self, *exc) -> None:
-        self.session.close()
-
-    @staticmethod
-    def _validar_ambiente(ambiente: str) -> str:
-        amb = (ambiente or "").strip().lower()
-        if amb not in AMBIENTES:
-            raise ValueError(
-                f"ambiente inválido: {ambiente!r}. Use {' ou '.join(AMBIENTES)}."
-            )
-        return amb
-
-    def _load_env_files(self) -> None:
-        """Carrega `.env` automaticamente (mesma lógica do cliente da API)."""
-        env_locations = [
-            Path.cwd() / ".env",
-            Path.home() / ".env",
-            Path("/etc/sdic/.env"),
-        ]
-        try:
-            from dotenv import load_dotenv
-
-            for env_file in env_locations:
-                if env_file.exists():
-                    load_dotenv(env_file, override=False)
-                    break
-        except ImportError:
-            for env_file in env_locations:
-                if env_file.exists():
-                    self._load_env_file(env_file)
-                    break
-
-    def _load_env_file(self, env_file_path: Path) -> None:
-        try:
-            with open(env_file_path, "r", encoding="utf-8") as f:
-                for line in f:
-                    line = line.strip()
-                    if line and not line.startswith("#") and "=" in line:
-                        key, value = (p.strip() for p in line.split("=", 1))
-                        if value[:1] in {'"', "'"} and value[-1:] == value[:1]:
-                            value = value[1:-1]
-                        os.environ.setdefault(key, value)
-        except Exception:  # noqa: BLE001 — experiência fluida
-            pass
-
-    # ── HTTP ──────────────────────────────────────────────────────────────────
+        pass
 
     def _fetch_json(self, path: str, *, opcional: bool = False) -> Optional[dict]:
-        """GET de um JSON publicado. 404 → None se `opcional`, senão erro amigável."""
-        url = f"{self.base_url}/{path.lstrip('/')}"
+        """GET de um JSON publicado. Arquivo inexistente → None se `opcional`; outra falha é sempre erro."""
         try:
-            response = self.session.get(url, timeout=self.timeout)
-            if opcional and response.status_code == 404:
+            return ler_json_publicado("politicas", path, base_url=self.base_url, timeout=self.timeout)
+        except NaoPublicado as e:
+            if opcional:
                 return None
-            response.raise_for_status()
-            return response.json()
-        except requests.exceptions.RequestException as e:
-            status_code = getattr(getattr(e, "response", None), "status_code", None)
-            if opcional and status_code == 404:
-                return None
-            self.logger.error(f"Falha ao buscar {path}: {e}")
-            raise EmpregoAPIError(_get_user_friendly_error_message(e, status_code))
-        except ValueError as e:
-            self.logger.error(f"JSON inválido em {path}: {e}")
-            raise EmpregoAPIError(_get_user_friendly_error_message(e))
+            raise EmpregoAPIError(str(e), status_code=e.status_code, endpoint=e.endpoint) from e
+        except SdicErro as e:
+            raise EmpregoAPIError(str(e), status_code=e.status_code, endpoint=e.endpoint) from e
 
     def _ambiente(self, ambiente: Optional[str]) -> str:
-        return self._validar_ambiente(ambiente) if ambiente else self.ambiente
+        return config.ambiente(ambiente) if ambiente else self.ambiente
 
     # ── Caminhos ──────────────────────────────────────────────────────────────
 
@@ -221,7 +127,8 @@ def _acum12m(payload: Optional[dict]) -> Optional[int]:
 
 # ── Funções de módulo: RELATÓRIO (dados brutos do cache) ───────────────────────
 
-def get_relatorio_emprego_estadual(uf: str, ambiente: str = "producao") -> dict:
+@_depreciada('get_saldo_emprego_estadual_mensal/get_estoque_emprego_estadual (API) ou ler_json_publicado("dados", ".../emprego_relatorio.json")')
+def get_relatorio_emprego_estadual(uf: str, ambiente: Optional[str] = None) -> dict:
     """Relatório completo (cache 1.0) de uma UF.
 
     Args:
@@ -242,25 +149,29 @@ def get_relatorio_emprego_estadual(uf: str, ambiente: str = "producao") -> dict:
     }
 
 
-def get_relatorio_emprego_saldo_estadual(uf: str, ambiente: str = "producao") -> pd.DataFrame:
+@_depreciada('get_saldo_emprego_estadual_mensal/get_estoque_emprego_estadual (API) ou ler_json_publicado("dados", ".../emprego_relatorio.json")')
+def get_relatorio_emprego_saldo_estadual(uf: str, ambiente: Optional[str] = None) -> pd.DataFrame:
     """Saldo CAGED mensal por divisão CNAE (cache) de uma UF, como DataFrame."""
     with PortalEmprego(ambiente=ambiente) as p:
         return _df_saldo(p.relatorio(uf))
 
 
-def get_relatorio_emprego_estoque_estadual(uf: str, ambiente: str = "producao") -> pd.DataFrame:
+@_depreciada('get_saldo_emprego_estadual_mensal/get_estoque_emprego_estadual (API) ou ler_json_publicado("dados", ".../emprego_relatorio.json")')
+def get_relatorio_emprego_estoque_estadual(uf: str, ambiente: Optional[str] = None) -> pd.DataFrame:
     """Estoque RAIS por divisão CNAE (cache) de uma UF, como DataFrame."""
     with PortalEmprego(ambiente=ambiente) as p:
         return _df_estoque(p.relatorio(uf))
 
 
-def get_relatorio_emprego_metadata_estadual(uf: str, ambiente: str = "producao") -> dict:
+@_depreciada('get_saldo_emprego_estadual_mensal/get_estoque_emprego_estadual (API) ou ler_json_publicado("dados", ".../emprego_relatorio.json")')
+def get_relatorio_emprego_metadata_estadual(uf: str, ambiente: Optional[str] = None) -> dict:
     """Metadados do relatório (reference, fonte, gerado_em, ...) de uma UF."""
     with PortalEmprego(ambiente=ambiente) as p:
         return (p.relatorio(uf) or {}).get("metadata", {})
 
 
-def get_relatorio_emprego_saldo_todos_estados(ambiente: str = "producao") -> pd.DataFrame:
+@_depreciada('get_saldo_emprego_estadual_mensal/get_estoque_emprego_estadual (API) ou ler_json_publicado("dados", ".../emprego_relatorio.json")')
+def get_relatorio_emprego_saldo_todos_estados(ambiente: Optional[str] = None) -> pd.DataFrame:
     """Saldo de todas as UFs disponíveis, empilhado, com coluna `uf`."""
     frames = []
     with PortalEmprego(ambiente=ambiente) as p:
@@ -269,10 +180,15 @@ def get_relatorio_emprego_saldo_todos_estados(ambiente: str = "producao") -> pd.
             if not df.empty:
                 df.insert(0, "uf", uf)
                 frames.append(df)
+    faltam = sorted(set(UFS_27) - {f["uf"].iloc[0] for f in frames})
+    if faltam and frames:
+        warnings.warn(f"Sem arquivo publicado para {len(faltam)} UF(s): {', '.join(faltam)}. "
+                      "O resultado não cobre o país inteiro.", RuntimeWarning, stacklevel=3)
     return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
 
 
-def get_relatorio_emprego_estoque_todos_estados(ambiente: str = "producao") -> pd.DataFrame:
+@_depreciada('get_saldo_emprego_estadual_mensal/get_estoque_emprego_estadual (API) ou ler_json_publicado("dados", ".../emprego_relatorio.json")')
+def get_relatorio_emprego_estoque_todos_estados(ambiente: Optional[str] = None) -> pd.DataFrame:
     """Estoque de todas as UFs disponíveis, empilhado, com coluna `uf`."""
     frames = []
     with PortalEmprego(ambiente=ambiente) as p:
@@ -281,31 +197,39 @@ def get_relatorio_emprego_estoque_todos_estados(ambiente: str = "producao") -> p
             if not df.empty:
                 df.insert(0, "uf", uf)
                 frames.append(df)
+    faltam = sorted(set(UFS_27) - {f["uf"].iloc[0] for f in frames})
+    if faltam and frames:
+        warnings.warn(f"Sem arquivo publicado para {len(faltam)} UF(s): {', '.join(faltam)}. "
+                      "O resultado não cobre o país inteiro.", RuntimeWarning, stacklevel=3)
     return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
 
 
 # ── Funções de módulo: PORTAL (payload v1.1) ───────────────────────────────────
 
-def get_portal_emprego_estadual(uf: str, ambiente: str = "producao") -> dict:
+@_depreciada('get_kpis_publicados(uf, "emprego") e as demais funções de seções publicadas')
+def get_portal_emprego_estadual(uf: str, ambiente: Optional[str] = None) -> dict:
     """Payload completo do portal (v1.1) de uma UF — como publicado."""
     with PortalEmprego(ambiente=ambiente) as p:
         return p.portal(uf) or {}
 
 
-def get_portal_emprego_capa_estadual(uf: str, ambiente: str = "producao") -> dict:
+@_depreciada('get_kpis_publicados(uf, "emprego") e as demais funções de seções publicadas')
+def get_portal_emprego_capa_estadual(uf: str, ambiente: Optional[str] = None) -> dict:
     """KPI de capa (`capa_kpi`) — destaque do saldo 12m — de uma UF."""
     with PortalEmprego(ambiente=ambiente) as p:
         return (p.portal(uf) or {}).get("capa_kpi", {})
 
 
-def get_portal_emprego_kpis_estadual(uf: str, ambiente: str = "producao") -> pd.DataFrame:
+@_depreciada('get_kpis_publicados(uf, "emprego") e as demais funções de seções publicadas')
+def get_portal_emprego_kpis_estadual(uf: str, ambiente: Optional[str] = None) -> pd.DataFrame:
     """KPIs do portal de uma UF como DataFrame (id, label, value, display_value, ...)."""
     with PortalEmprego(ambiente=ambiente) as p:
         payload = p.portal(uf) or {}
     return pd.DataFrame(payload.get("kpis") or [])
 
 
-def get_portal_emprego_charts_estadual(uf: str, ambiente: str = "producao") -> Dict[str, pd.DataFrame]:
+@_depreciada('get_kpis_publicados(uf, "emprego") e as demais funções de seções publicadas')
+def get_portal_emprego_charts_estadual(uf: str, ambiente: Optional[str] = None) -> Dict[str, pd.DataFrame]:
     """Séries dos gráficos do portal. dict {chart_id: DataFrame[competencia, valor]}."""
     with PortalEmprego(ambiente=ambiente) as p:
         payload = p.portal(uf) or {}
@@ -319,7 +243,8 @@ def get_portal_emprego_charts_estadual(uf: str, ambiente: str = "producao") -> D
     return out
 
 
-def get_portal_emprego_ranked_lists_estadual(uf: str, ambiente: str = "producao") -> Dict[str, pd.DataFrame]:
+@_depreciada('get_kpis_publicados(uf, "emprego") e as demais funções de seções publicadas')
+def get_portal_emprego_ranked_lists_estadual(uf: str, ambiente: Optional[str] = None) -> Dict[str, pd.DataFrame]:
     """Rankings do portal (maiores saldos/estoques). dict {list_id: DataFrame[items]}."""
     with PortalEmprego(ambiente=ambiente) as p:
         payload = p.portal(uf) or {}
@@ -329,7 +254,8 @@ def get_portal_emprego_ranked_lists_estadual(uf: str, ambiente: str = "producao"
     }
 
 
-def get_portal_emprego_breakdowns_estadual(uf: str, ambiente: str = "producao") -> Dict[str, pd.DataFrame]:
+@_depreciada('get_kpis_publicados(uf, "emprego") e as demais funções de seções publicadas')
+def get_portal_emprego_breakdowns_estadual(uf: str, ambiente: Optional[str] = None) -> Dict[str, pd.DataFrame]:
     """Composições do portal (ex.: intensidade tecnológica). dict {id: DataFrame[items]}."""
     with PortalEmprego(ambiente=ambiente) as p:
         payload = p.portal(uf) or {}
@@ -339,7 +265,8 @@ def get_portal_emprego_breakdowns_estadual(uf: str, ambiente: str = "producao") 
     }
 
 
-def get_portal_emprego_kpis_todos_estados(ambiente: str = "producao") -> pd.DataFrame:
+@_depreciada('get_kpis_publicados(uf, "emprego") e as demais funções de seções publicadas')
+def get_portal_emprego_kpis_todos_estados(ambiente: Optional[str] = None) -> pd.DataFrame:
     """KPIs de todas as UFs disponíveis, empilhados, com coluna `uf` — comparação entre estados."""
     frames = []
     with PortalEmprego(ambiente=ambiente) as p:
@@ -349,12 +276,17 @@ def get_portal_emprego_kpis_todos_estados(ambiente: str = "producao") -> pd.Data
                 df = pd.DataFrame(payload["kpis"])
                 df.insert(0, "uf", uf)
                 frames.append(df)
+    faltam = sorted(set(UFS_27) - {f["uf"].iloc[0] for f in frames})
+    if faltam and frames:
+        warnings.warn(f"Sem arquivo publicado para {len(faltam)} UF(s): {', '.join(faltam)}. "
+                      "O resultado não cobre o país inteiro.", RuntimeWarning, stacklevel=3)
     return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
 
 
 # ── Descoberta ─────────────────────────────────────────────────────────────────
 
-def listar_estados_disponiveis(ambiente: str = "producao", tipo: str = "portal") -> List[str]:
+@_depreciada('listar_secoes_publicadas()')
+def listar_estados_disponiveis(ambiente: Optional[str] = None, tipo: str = "portal") -> List[str]:
     """Lista as UFs com artefato publicado.
 
     Args:

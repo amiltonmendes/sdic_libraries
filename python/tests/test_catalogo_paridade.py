@@ -1,23 +1,34 @@
-"""catalogo.py e catalogo.R têm que descrever as mesmas funções da mesma forma.
-
-Reusa o gerador (`scripts/gerar_catalogo_md.py`) em vez de reimplementar a checagem —
-ele já falha com uma mensagem útil quando diverge. Pula se `Rscript` não estiver
-disponível (ambiente sem R instalado).
-"""
+"""Um catálogo só: as cópias dentro dos pacotes têm que ser iguais a contrato/catalogo.json,
+e toda função catalogada tem que existir nas duas linguagens (Python: raiz do pacote; R: NAMESPACE)."""
 from __future__ import annotations
 
-import shutil
-import sys
+import json
+import re
 from pathlib import Path
 
-import pytest
+import sdic_libraries
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "scripts"))
+RAIZ = Path(__file__).resolve().parents[2]
+FONTE = RAIZ / "contrato" / "catalogo.json"
 
-pytestmark = pytest.mark.skipif(shutil.which("Rscript") is None, reason="Rscript não disponível")
+
+def test_copias_do_catalogo_iguais_a_fonte():
+    for copia in (RAIZ / "python" / "sdic_libraries" / "catalogo.json", RAIZ / "r" / "inst" / "catalogo.json"):
+        assert copia.read_bytes() == FONTE.read_bytes(), f"{copia} difere de contrato/catalogo.json: rode python scripts/documentar.py"
 
 
-def test_catalogo_python_e_r_em_paridade():
-    import gerar_catalogo_md as gerador
+def test_funcoes_do_catalogo_existem_em_python_e_em_r():
+    exportadas_r = set(re.findall(r"^export\((\w+)\)", (RAIZ / "r" / "NAMESPACE").read_text(), flags=re.M))
+    for f in json.loads(FONTE.read_text(encoding="utf-8"))["funcoes"]:
+        assert callable(getattr(sdic_libraries, f["funcao"])), f"{f['funcao']} não existe em Python"
+        assert f["funcao"] in exportadas_r, f"{f['funcao']} não é exportada pelo pacote R (r/NAMESPACE)"
 
-    gerador.conferir_paridade(gerador.catalogo_python(), gerador.catalogo_r())
+
+def test_toda_base_do_catalogo_tem_origem_valida_e_toda_funcao_aponta_para_base_existente():
+    cat = json.loads(FONTE.read_text(encoding="utf-8"))
+    for nome, base in cat["bases"].items():
+        assert base["origem"] in cat["origens"], nome
+    for f in cat["funcoes"]:
+        assert f["base"] is None or f["base"] in cat["bases"], f["funcao"]
+    for funcao in cat["colunas"]:
+        assert funcao in {f["funcao"] for f in cat["funcoes"]}, funcao

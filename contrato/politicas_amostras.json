@@ -1,0 +1,442 @@
+{
+ "_origem": "Arquivos reais de https://amiltonmendes.github.io/sdic_libraries/homologacao/ capturados em 2026-11-13, recortados: catálogo com 3 políticas e 5 municípios; payloads sem charts/ranked_lists/breakdowns/geo/kpis. A terceira política do catálogo não tem arquivo aqui de propósito (política sem dado para a unidade).",
+ "arquivos": {
+  "homologacao/politicas_catalogo.json": {
+   "schema_version": "1.3",
+   "updated_at": "2026-10-13",
+   "manifesto": {
+    "schema_version": "1.0",
+    "publicador": "gaia_nib/politicas_sdic",
+    "rotulo_fonte": "SDIC — publicação GAIA/NIB",
+    "diretorias_exibidas": [
+     "DEIN",
+     "DIBEN",
+     "DINTE",
+     "DECOS",
+     "DIAL",
+     "CNDI"
+    ],
+    "notas": [
+     {
+      "id": "agregacao",
+      "texto": "Cada política tem período e unidade próprios (R$, empresas, projetos); valores de políticas diferentes não são somados."
+     }
+    ]
+   },
+   "politicas_catalogo": [
+    {
+     "id": "b_mais_p",
+     "departamento": "DEIN",
+     "file": "politicas/b_mais_p.json",
+     "nome": "Brasil Mais Produtivo",
+     "sigla": "B+P",
+     "categoria": "Extensionismo industrial e ganho de produtividade",
+     "regionalizavel": true,
+     "ordem": 1
+    },
+    {
+     "id": "depreciacao_acelerada",
+     "departamento": "DINTE",
+     "file": "politicas/depreciacao_acelerada.json",
+     "nome": "Depreciação Acelerada",
+     "sigla": "DA",
+     "categoria": "Incentivo fiscal — renovação de máquinas e equipamentos",
+     "regionalizavel": true,
+     "ordem": 4
+    },
+    {
+     "id": "construa_brasil",
+     "departamento": "DIBEN",
+     "file": "politicas/construa_brasil.json",
+     "nome": "Construa Brasil",
+     "sigla": "Construa Brasil",
+     "categoria": "Capacitação em desburocratização, digitalização e industrialização — construção civil",
+     "regionalizavel": true,
+     "ordem": 2
+    }
+   ],
+   "municipios_elegiveis": [
+    {
+     "ibge": "1200013",
+     "municipio": "Acrelândia",
+     "uf": "AC"
+    },
+    {
+     "ibge": "1200104",
+     "municipio": "Brasiléia",
+     "uf": "AC"
+    },
+    {
+     "ibge": "1200138",
+     "municipio": "Bujari",
+     "uf": "AC"
+    },
+    {
+     "ibge": "1200203",
+     "municipio": "Cruzeiro do Sul",
+     "uf": "AC"
+    },
+    {
+     "ibge": "1200252",
+     "municipio": "Epitaciolândia",
+     "uf": "AC"
+    }
+   ]
+  },
+  "homologacao/politicas_permitidas.json": {
+   "schema_version": "1.0",
+   "politicas": [
+    "depreciacao_acelerada",
+    "reiq",
+    "dial_missao2_pdp",
+    "dial_missao2_pdil",
+    "dial_missao2_cmed_normativos",
+    "dial_missao2_cmed_processos",
+    "dial_missao2_normativos_cgis",
+    "dial_missao4_lei_tics",
+    "dial_missao4_ppb",
+    "dial_missao4_padis",
+    "dial_missao6_ed_eed",
+    "dial_missao6_prode_ped",
+    "decos_ecommerce_br",
+    "decos_empreendedoras_tech",
+    "b_mais_p",
+    "construa_brasil",
+    "construa_brasil_bim_na_pratica",
+    "fgi",
+    "fgo",
+    "p_mais_p"
+   ]
+  },
+  "homologacao/SP/politicas/b_mais_p.json": {
+   "schema_version": "1.1",
+   "policy_id": "b_mais_p",
+   "nome": "Brasil Mais Produtivo",
+   "sigla": "B+P",
+   "categoria": "Extensionismo industrial e ganho de produtividade",
+   "source": "SDIC/DEIN — SENAI / SEBRAE / EMBRAPII / BNDES / FINEP",
+   "reference": "2023-2026",
+   "updated_at": "2026-09-21",
+   "capa_kpi": {
+    "id": "capa_bp",
+    "label": "Empresas atendidas",
+    "display_value": "47.617 atendimentos",
+    "unit": "",
+    "period": "acumulado",
+    "delta": {
+     "dir": "up",
+     "label": "28,4% do total nacional · 1ª entre 27 UFs"
+    },
+    "value": 47617
+   },
+   "story": {
+    "escopo": "uf",
+    "uf": "SP",
+    "regra": "lider",
+    "headline": "São Paulo lidera o país: 47.617 atendimentos, 28,4% do total nacional.",
+    "lede": "São Paulo ocupa a 1ª posição entre as 27 UFs participantes do programa e responde por 28,4% do programa no país. Dentro do Sudeste, que soma 77.670 atendimentos, a participação de São Paulo é de 61,3%, a maior da região. As empresas atendidas pelo programa em São Paulo tiveram ganho médio de 29,5% em produtividade, conforme a modalidade de atendimento. Entre as que passaram por avaliação energética, a redução média no consumo foi de 20,7%. O Brasil Mais Produtivo é um programa nacional que objetiva elevar os níveis de produtividade, eficiência e digitalização das empresas brasileiras.",
+    "highlights": [
+     {
+      "tone": "pos",
+      "text": "1ª posição nacional entre as 27 UFs participantes do programa, com 28,4% do total."
+     },
+     {
+      "tone": "pos",
+      "text": "61,3% de tudo que o Sudeste registra no programa — maior participação da região."
+     }
+    ]
+   },
+   "capa_kpi_modalidades": [
+    {
+     "id": "senai",
+     "label": "SENAI — consultoria técnica (Lean)",
+     "value": 7568,
+     "unit": "atendimentos",
+     "display_value": "7.568 atendimentos",
+     "period": "acumulado"
+    },
+    {
+     "id": "sebrae",
+     "label": "SEBRAE/ALI — pequenos negócios",
+     "value": 39952,
+     "unit": "atendimentos",
+     "display_value": "39.952 atendimentos",
+     "period": "acumulado"
+    },
+    {
+     "id": "embrapii",
+     "label": "EMBRAPII — inovação aplicada",
+     "value": 97,
+     "unit": "projetos",
+     "display_value": "97 projetos",
+     "period": "acumulado",
+     "delta": {
+      "dir": "flat",
+      "label": "R$ 163,7 mi mobilizados"
+     }
+    },
+    {
+     "id": "bndes",
+     "label": "Financiamento à digitalização (BNDES + FINEP)",
+     "value": 68958941.1,
+     "unit": "",
+     "display_value": "R$ 69,0 mi",
+     "period": "acumulado",
+     "delta": {
+      "dir": "flat",
+      "label": "7 operações financiadas"
+     }
+    }
+   ],
+   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas contagens agregadas por UF, município ou nacionais.",
+   "competencia": "2026T3",
+   "data_aceitacao": "2026-09-21",
+   "cobertura": "Atendimentos de 2023 a 2026 (SENAI, SEBRAE, EMBRAPII, BNDES e FINEP).",
+   "ultima_referencia": "2026, parcial, sem data de corte informada",
+   "ressalvas": [
+    "2026 é parcial e não deve ser comparado diretamente com anos completos."
+   ]
+  },
+  "homologacao/nacional/politicas/depreciacao_acelerada.json": {
+   "schema_version": "1.1",
+   "policy_id": "depreciacao_acelerada",
+   "nome": "Depreciação Acelerada",
+   "sigla": "DA",
+   "categoria": "Incentivo fiscal — renovação de máquinas e equipamentos",
+   "source": "SDIC/DINTE — base bruta de deferimentos",
+   "reference": "2024-2026",
+   "updated_at": "2026-10-07",
+   "capa_kpi": {
+    "id": "capa_da",
+    "label": "Investimento incentivado",
+    "display_value": "R$ 8,75 bi",
+    "unit": "",
+    "period": "2024-2026",
+    "delta": {
+     "dir": "up",
+     "label": "7.376 pedidos deferidos"
+    },
+    "value": 8750000000.0
+   },
+   "capa_kpi_secundario": {
+    "id": "capa_da_bf",
+    "label": "Benefício fiscal",
+    "display_value": "R$ 2,98 bi",
+    "unit": "",
+    "period": "2024-2026",
+    "value": 2980000000.0
+   },
+   "story": {
+    "escopo": "nacional",
+    "headline": "Depreciação acelerada incentivou {{kpis[capex].display_value}} em máquinas e equipamentos entre 2024 e 2026, com {{kpis[beneficio].display_value}} de benefício fiscal.",
+    "lede": "Programa de depreciação acelerada — incentivo à renovação do parque de máquinas e equipamentos (âmbito do acordo Mercosul–UE). Investimento incentivado e benefício fiscal por UF e setor (CNAE).",
+    "highlights": [
+     {
+      "tone": "pos",
+      "text": "7.376 pedidos deferidos, de 754 empresas."
+     },
+     {
+      "tone": "neutral",
+      "text": "São Paulo concentra 29,1% do investimento nacional."
+     },
+     {
+      "tone": "neutral",
+      "text": "Benefício fiscal corresponde aos dois pagamentos previstos na política, a partir do valor informado pelo DINTE."
+     }
+    ]
+   },
+   "_nota_metodologica": "Benefício fiscal = 2 × a coluna 'Valor do BF' da planilha do DINTE, que traz um dos dois pagamentos previstos na política.",
+   "_nota_anonimizacao": "Sem CNPJ ou nome de empresa em nenhum nível do JSON — apenas agregados por UF/setor.",
+   "competencia": "2026M09",
+   "data_aceitacao": "2026-10-07",
+   "cobertura": "Pedidos deferidos de 2024 a 2026, base acumulada de deferimentos.",
+   "ultima_referencia": "2026, parcial, sem data de corte informada",
+   "ressalvas": [
+    "Benefício fiscal = os dois pagamentos previstos na política (o dobro do valor informado pelo DINTE por requerimento).",
+    "2026 é parcial e não deve ser comparado diretamente com anos completos."
+   ]
+  },
+  "homologacao/SP/resumo_politicas.json": {
+   "schema_version": "1.2",
+   "n_politicas": 10,
+   "recursos": {
+    "value": 225589074612.97,
+    "display_value": "R$ 225,59 bi"
+   },
+   "atendimentos": {
+    "value": 52579,
+    "display_value": "52.579"
+   },
+   "top_politicas": [
+    {
+     "id": "p_mais_p",
+     "sigla": "P+P",
+     "nome": "Plano Mais Produção",
+     "display_value": "R$ 222,92 bi"
+    },
+    {
+     "id": "depreciacao_acelerada",
+     "sigla": "DA",
+     "nome": "Depreciação Acelerada",
+     "display_value": "R$ 2,54 bi"
+    },
+    {
+     "id": "reiq",
+     "sigla": "REIQ",
+     "nome": "REIQ — Regime Especial da Indústria Química",
+     "display_value": "R$ 121,0 mi"
+    }
+   ],
+   "nota_agregacao": "Soma entre políticas de unidades diferentes: `recursos` soma o valor das políticas monetárias; `atendimentos` soma as contagens (projetos, empresas, habilitações) das não-monetárias. Não é um total contábil.",
+   "uf": "SP",
+   "nome_uf": "São Paulo",
+   "ranking_nacional": {
+    "metrica": "recursos",
+    "posicao": 1,
+    "de": 27,
+    "share": 31.81,
+    "display": "1º de 27 UFs em recursos mobilizados"
+   },
+   "story": {
+    "escopo": "uf",
+    "uf": "SP",
+    "regra": "com_recursos",
+    "headline": "São Paulo soma R$ 225,59 bi em 10 políticas da SDIC com dado próprio do estado.",
+    "lede": "São Paulo é o 1º do país em recursos mobilizados, com 31,8% do que as políticas registram em todas as UFs. As maiores são P+P (R$ 222,92 bi), DA (R$ 2,54 bi) e REIQ (R$ 121,0 mi). As políticas não monetárias somam 52.579 projetos, empresas e atendimentos registrados no estado. Só entram aqui os números que a fonte desagrega para o próprio estado.",
+    "highlights": [
+     {
+      "tone": "pos",
+      "text": "1ª posição nacional em recursos mobilizados (31,8% do total das UFs)."
+     }
+    ]
+   }
+  }
+ },
+ "esperado": {
+  "listar_politicas": {
+   "args": {
+    "ambiente": "homologacao"
+   },
+   "colunas_iniciais": [
+    "id",
+    "nome",
+    "sigla",
+    "departamento",
+    "categoria",
+    "regionalizavel",
+    "ordem",
+    "file"
+   ],
+   "ids": [
+    "b_mais_p",
+    "depreciacao_acelerada",
+    "construa_brasil"
+   ],
+   "permitidas": [
+    "b_mais_p",
+    "depreciacao_acelerada",
+    "construa_brasil"
+   ]
+  },
+  "get_politica": {
+   "args": {
+    "id": "b_mais_p",
+    "uf": "SP",
+    "ambiente": "homologacao"
+   },
+   "colunas": [
+    "policy_id",
+    "nome",
+    "sigla",
+    "uf",
+    "papel",
+    "id",
+    "rotulo",
+    "valor",
+    "valor_exibido",
+    "unidade",
+    "periodo",
+    "variacao_rotulo",
+    "fonte",
+    "referencia",
+    "atualizado_em"
+   ],
+   "linhas": 5,
+   "capa_valor_exibido": "47.617 atendimentos"
+  },
+  "get_politica_nacional": {
+   "args": {
+    "id": "depreciacao_acelerada",
+    "uf": null,
+    "ambiente": "homologacao"
+   },
+   "linhas": 2,
+   "papeis": [
+    "capa",
+    "secundario"
+   ]
+  },
+  "get_politica_ausente": {
+   "args": {
+    "id": "construa_brasil",
+    "uf": "SP",
+    "ambiente": "homologacao"
+   },
+   "linhas": 0
+  },
+  "get_politicas_estado": {
+   "args": {
+    "uf": "SP",
+    "ambiente": "homologacao"
+   },
+   "linhas": 5,
+   "policy_ids": [
+    "b_mais_p"
+   ]
+  },
+  "get_resumo_politicas": {
+   "args": {
+    "uf": "SP",
+    "ambiente": "homologacao"
+   },
+   "colunas": [
+    "uf",
+    "nome_uf",
+    "n_politicas",
+    "recursos",
+    "recursos_exibido",
+    "atendimentos",
+    "atendimentos_exibido",
+    "ranking_posicao",
+    "ranking_de",
+    "ranking_exibido",
+    "nota_agregacao"
+   ],
+   "n_politicas": 10,
+   "recursos_exibido": "R$ 225,59 bi"
+  },
+  "get_municipios_elegiveis": {
+   "args": {
+    "ambiente": "homologacao"
+   },
+   "colunas": [
+    "ibge",
+    "municipio",
+    "uf"
+   ],
+   "linhas": 5
+  },
+  "get_manifesto_politicas": {
+   "args": {
+    "ambiente": "homologacao"
+   },
+   "colunas": [
+    "campo",
+    "id",
+    "valor"
+   ],
+   "rotulo_fonte": "SDIC — publicação GAIA/NIB",
+   "linhas": 8
+  }
+ }
+}

@@ -1,0 +1,225 @@
+{
+ "_origem": "A RECAPTURAR: montado a partir do código da sdic_api (api/routers/series.py e api/cruds/series.py em 2026-11-13), não de uma chamada real, porque a API exige chave e não havia chave na sessão que escreveu este arquivo. Formato e nomes de coluna são os do código e do DDL do carga_base; os valores são ilustrativos. Recapture com `python scripts/capturar_series.py` (precisa de SDIC_API_KEY).",
+ "a_recapturar": true,
+ "respostas": {
+  "/series": [
+   {
+    "nome": "sidra_producao",
+    "descricao": "Produção industrial do IBGE (PIM-PF e PIA). Formato longo: uma linha por tabela, variável, localidade, categoria e período. Códigos em /series/{nome}/dimensoes/{metadados|variavel|categoria|localidade}.",
+    "fonte": "IBGE/SIDRA; carga_base/sidra, tema producao",
+    "colunas": [
+     "cod_tabela",
+     "cod_variavel",
+     "nivel",
+     "cod_localidade",
+     "periodo",
+     "competencia",
+     "cod_classificacao",
+     "cod_categoria",
+     "valor",
+     "simbolo"
+    ],
+    "filtros": {
+     "cod_tabela": "INT64",
+     "cod_variavel": "INT64",
+     "nivel": "STRING",
+     "cod_localidade": "STRING",
+     "cod_categoria": "INT64"
+    },
+    "obrigatorios": [
+     "cod_tabela"
+    ],
+    "periodo": "competencia",
+    "dimensoes": [
+     "categoria",
+     "localidade",
+     "metadados",
+     "variavel"
+    ]
+   },
+   {
+    "nome": "contas_regionais_vab",
+    "descricao": "Valor adicionado bruto por UF e atividade, em R$ milhões (IBGE, Contas Regionais).",
+    "fonte": "IBGE/Contas Regionais; carga_base/contas_regionais",
+    "colunas": [
+     "vintage",
+     "cod_uf",
+     "sg_uf",
+     "cod_atividade",
+     "ano",
+     "vab_mi"
+    ],
+    "filtros": {
+     "cod_uf": "STRING",
+     "sg_uf": "STRING",
+     "cod_atividade": "INT64",
+     "vintage": "INT64"
+    },
+    "obrigatorios": [],
+    "periodo": "ano",
+    "dimensoes": [
+     "atividade",
+     "metadados"
+    ]
+   }
+  ],
+  "/series/sidra_producao?pagina=1": {
+   "items": [
+    {
+     "cod_tabela": 8888,
+     "cod_variavel": 12606,
+     "nivel": "N3",
+     "cod_localidade": "35",
+     "periodo": "202501",
+     "competencia": "2025-01-01",
+     "cod_classificacao": 544,
+     "cod_categoria": 129314,
+     "valor": "98.7",
+     "simbolo": null
+    },
+    {
+     "cod_tabela": 8888,
+     "cod_variavel": 12606,
+     "nivel": "N3",
+     "cod_localidade": "35",
+     "periodo": "202502",
+     "competencia": "2025-02-01",
+     "cod_classificacao": 544,
+     "cod_categoria": 129314,
+     "valor": "101.2",
+     "simbolo": null
+    }
+   ],
+   "proxima_pagina": 2
+  },
+  "/series/sidra_producao?pagina=2": {
+   "items": [
+    {
+     "cod_tabela": 8888,
+     "cod_variavel": 12606,
+     "nivel": "N3",
+     "cod_localidade": "35",
+     "periodo": "202503",
+     "competencia": "2025-03-01",
+     "cod_classificacao": 544,
+     "cod_categoria": 129314,
+     "valor": null,
+     "simbolo": "..."
+    }
+   ],
+   "proxima_pagina": null
+  },
+  "/series/sidra_producao/dimensoes/variavel": [
+   {
+    "cod_tabela": 8888,
+    "cod_variavel": 12606,
+    "nome": "PIMPF - Número-índice (2022=100)",
+    "unidade": "Número-índice"
+   }
+  ],
+  "/series/sidra_producao/dimensoes/categoria": [
+   {
+    "cod_tabela": 8888,
+    "cod_classificacao": 544,
+    "classificacao": "Seções e atividades industriais (CNAE 2.0)",
+    "cod_categoria": 129314,
+    "categoria": "1 Indústria geral",
+    "nivel_categoria": 1
+   }
+  ],
+  "/series/sidra_producao/dimensoes/localidade": [
+   {
+    "nivel": "N3",
+    "cod_localidade": "35",
+    "nome": "São Paulo"
+   }
+  ],
+  "/series/sidra_producao/dimensoes/metadados": [
+   {
+    "cod_tabela": 8888,
+    "nome": "Produção Física Industrial, por seções e atividades industriais",
+    "pesquisa": "PIM-PF",
+    "assunto": "Indústria",
+    "frequencia": "mensal",
+    "periodo_inicial": "200201",
+    "periodo_final": "202509",
+    "ultima_modificacao": "2026-11-04",
+    "url": "https://sidra.ibge.gov.br/tabela/8888"
+   }
+  ]
+ },
+ "esperado": {
+  "listar_series": {
+   "colunas": [
+    "nome",
+    "descricao",
+    "fonte",
+    "colunas",
+    "filtros",
+    "obrigatorios",
+    "periodo",
+    "dimensoes"
+   ],
+   "nomes": [
+    "sidra_producao",
+    "contas_regionais_vab"
+   ]
+  },
+  "get_serie": {
+   "args": {
+    "nome": "sidra_producao",
+    "cod_tabela": 8888,
+    "cod_localidade": "35",
+    "desde": "2025-01-01"
+   },
+   "colunas": [
+    "cod_tabela",
+    "cod_variavel",
+    "nivel",
+    "cod_localidade",
+    "periodo",
+    "competencia",
+    "cod_classificacao",
+    "cod_categoria",
+    "valor",
+    "simbolo"
+   ],
+   "linhas": 3,
+   "paginas": 2,
+   "valores": [
+    98.7,
+    101.2,
+    null
+   ],
+   "cod_localidade": "35",
+   "query_esperada": {
+    "cod_tabela": "8888",
+    "cod_localidade": "35",
+    "desde": "2025-01-01"
+   }
+  },
+  "get_serie_com_nomes": {
+   "colunas_extras": [
+    "categoria_nome",
+    "localidade_nome",
+    "variavel_nome",
+    "unidade"
+   ],
+   "variavel_nome": "PIMPF - Número-índice (2022=100)",
+   "localidade_nome": "São Paulo"
+  },
+  "get_dimensao_serie": {
+   "args": {
+    "nome": "sidra_producao",
+    "dimensao": "variavel"
+   },
+   "colunas": [
+    "cod_tabela",
+    "cod_variavel",
+    "nome",
+    "unidade"
+   ],
+   "linhas": 1
+  }
+ }
+}

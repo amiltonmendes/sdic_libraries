@@ -1,9 +1,8 @@
-"""Catálogo das funções públicas da biblioteca, por tema.
+"""Catálogo das funções e das bases da biblioteca.
 
-Não sabe qual função usar? ``listar_bases()`` devolve um DataFrame com uma linha por
-função: tema, o que ela traz, nível de agregação e um exemplo mínimo de chamada. Todas
-as funções listadas são de :mod:`sdic_libraries.dados.emprego`, :mod:`sdic_libraries.dados.comex`
-ou :mod:`sdic_libraries.utils` — o catálogo só aponta para elas, não reimplementa nada.
+Tudo vem de `catalogo.json` (cópia de `contrato/catalogo.json`, a fonte única lida também
+pelo pacote R). Não sabe qual função usar? `listar_bases()`. Quer saber de onde vem um dado
+e que colunas ele tem? `descrever(nome)`.
 """
 from __future__ import annotations
 
@@ -11,146 +10,81 @@ from typing import Optional
 
 import pandas as pd
 
-COLUNAS = ["tema", "subtema", "nivel", "funcao", "descricao", "exemplo"]
+from .config import CATALOGO, ORIGENS
 
-# tema, subtema, nivel, funcao, descricao, exemplo
-_CATALOGO = [
-    # ---- emprego / estoque (RAIS) ----
-    ("emprego", "estoque", "nacional", "get_estoque_emprego_nacional",
-     "Estoque de vínculos ativos (31/12) por divisão ou grupo CNAE.",
-     "get_estoque_emprego_nacional(codigos_cnae=['10'], nivel_cnae=2)"),
-    ("emprego", "estoque", "estadual", "get_estoque_emprego_estadual",
-     "Igual ao nacional, por UF.",
-     "get_estoque_emprego_estadual(uf='SP', codigos_cnae=['10'])"),
-    ("emprego", "estoque", "nacional", "get_estoque_emprego_nacional_agrupado",
-     "Estoque somado para uma lista de CNAEs sob um nome de grupo (ex.: 'TI').",
-     "get_estoque_emprego_nacional_agrupado('TI', ['620', '631'])"),
-    ("emprego", "estoque", "estadual", "get_estoque_emprego_estadual_agrupado",
-     "Igual ao agrupado nacional, por UF.",
-     "get_estoque_emprego_estadual_agrupado(sigla_uf='SP', nome_grupo='TI', lista_cnae=['620'])"),
-    ("emprego", "estoque_estimado", "nacional", "get_estoque_emprego_estimado_nacional_anual",
-     "Estoque real (RAIS) + projeção com o saldo CAGED acumulado até o ano corrente (coluna 'origem': Real/Estimação).",
-     "get_estoque_emprego_estimado_nacional_anual(codigo_cnae='10')"),
-    ("emprego", "estoque_estimado", "estadual", "get_estoque_emprego_estimado_estadual_anual",
-     "Igual ao estimado nacional, por UF.",
-     "get_estoque_emprego_estimado_estadual_anual(sigla_uf='SP', codigo_cnae='10')"),
-    ("emprego", "estoque_estimado", "municipal", "get_estoque_emprego_estimado_municipal_anual",
-     "Igual ao estimado nacional, por município.",
-     "get_estoque_emprego_estimado_municipal_anual(sigla_uf='SP', codigo_municipio=3550308, codigo_cnae='10')"),
-    ("emprego", "estoque_porte", "nacional", "get_estoque_emprego_porte_nacional",
-     "Estoque por porte do estabelecimento (Sebrae/DIEESE) e setor (Indústria x Comércio/Serviços).",
-     "get_estoque_emprego_porte_nacional('divisao', codigos_cnae=['10'], setor='Indústria')"),
-    ("emprego", "estoque_porte", "estadual", "get_estoque_emprego_porte_estadual",
-     "Igual ao porte nacional, por UF.",
-     "get_estoque_emprego_porte_estadual(uf='SP', nivel_cnae='divisao', porte=['Microempresa'])"),
-    ("emprego", "estoque_classe", "nacional", "get_estoque_emprego_classe_cnae_nacional",
-     "Estoque por classe CNAE (4 dígitos, mais fino que divisão/grupo).",
-     "get_estoque_emprego_classe_cnae_nacional(codigos_classe=['1011'])"),
-    ("emprego", "estoque_classe", "estadual", "get_estoque_emprego_classe_cnae_estadual",
-     "Igual ao classe nacional, por UF.",
-     "get_estoque_emprego_classe_cnae_estadual(uf='SP', codigos_classe=['1011'])"),
-    ("emprego", "estoque_ocupacao", "estadual", "get_estoque_emprego_uf_cbo",
-     "Estoque por UF, classe CNAE e ocupação (CBO). Endpoint pesado: sempre filtre siglas_uf e codigos_classe.",
-     "get_estoque_emprego_uf_cbo(siglas_uf=['SP'], codigos_classe=['4711'])"),
-    ("emprego", "renda", "nacional", "get_renda_media_emprego",
-     "Remuneração média (RAIS) por divisão/grupo CNAE ou geral.",
-     "get_renda_media_emprego(tipos=['Divisao'], codigos=['10'])"),
-    ("emprego", "potec", "nacional", "get_potec_emprego",
-     "Índice Potec: fração de pessoal ocupado técnico-científico por classe CNAE (proxy de P&D da PINTEC).",
-     "get_potec_emprego(codigos_classe=['7210'])"),
-    ("emprego", "metadados", "-", "get_date_bases",
-     "Data da última atualização de cada base (CAGED, RAIS, ComexStat).",
-     "get_date_bases()"),
-    # ---- emprego / saldo (Novo CAGED) ----
-    ("emprego", "saldo_caged", "nacional", "get_saldo_emprego_nacional_mensal",
-     "Saldo mensal (admissões − desligamentos) por divisão/grupo/subclasse CNAE.",
-     "get_saldo_emprego_nacional_mensal(nivel_cnae='divisao', codigo_cnae='10')"),
-    ("emprego", "saldo_caged", "nacional", "get_saldo_emprego_nacional_anual",
-     "Saldo somado por ano, mesmo recorte do mensal.",
-     "get_saldo_emprego_nacional_anual(nivel_cnae='divisao', codigo_cnae='10')"),
-    ("emprego", "saldo_caged", "nacional", "get_saldo_emprego_nacional_mensal_agrupado",
-     "Saldo mensal somado para uma lista de CNAEs sob um nome de grupo.",
-     "get_saldo_emprego_nacional_mensal_agrupado('TI', ['620', '631'])"),
-    ("emprego", "saldo_caged", "estadual", "get_saldo_emprego_estadual_mensal",
-     "Igual ao saldo mensal nacional, por UF.",
-     "get_saldo_emprego_estadual_mensal(sigla_uf='SP', nivel_cnae='divisao', codigo_cnae='10')"),
-    ("emprego", "saldo_caged", "estadual", "get_saldo_emprego_estadual_anual",
-     "Igual ao saldo anual nacional, por UF.",
-     "get_saldo_emprego_estadual_anual(sigla_uf='SP', nivel_cnae='divisao', codigo_cnae='10')"),
-    ("emprego", "saldo_caged", "estadual", "get_saldo_emprego_estadual_mensal_agrupado",
-     "Igual ao saldo agrupado nacional, por UF.",
-     "get_saldo_emprego_estadual_mensal_agrupado(sigla_uf='SP', nome_grupo='TI', lista_cnae=['620'])"),
-    ("emprego", "saldo_caged", "municipal", "get_saldo_emprego_municipal_mensal",
-     "Igual ao saldo mensal nacional, por município.",
-     "get_saldo_emprego_municipal_mensal(sigla_uf='SP', codigo_municipio=3550308, nivel_cnae='divisao', codigo_cnae='10')"),
-    ("emprego", "saldo_caged", "municipal", "get_saldo_emprego_municipal_anual",
-     "Igual ao saldo anual nacional, por município.",
-     "get_saldo_emprego_municipal_anual(sigla_uf='SP', codigo_municipio=3550308, nivel_cnae='divisao', codigo_cnae='10')"),
-    ("emprego", "saldo_caged", "municipal", "get_saldo_emprego_municipal_mensal_agrupado",
-     "Igual ao saldo agrupado nacional, por município.",
-     "get_saldo_emprego_municipal_mensal_agrupado(sigla_uf='SP', codigo_municipio=3550308, nome_grupo='TI', lista_cnae=['620'])"),
-    # ---- emprego / portal (cache já publicado, sem chamar a API) ----
-    ("emprego", "portal_cache", "estadual", "get_relatorio_emprego_saldo_estadual",
-     "Saldo CAGED mensal por UF, lido do cache já publicado (GitHub Pages) — não chama a API ao vivo.",
-     "get_relatorio_emprego_saldo_estadual(uf='SP')"),
-    ("emprego", "portal_cache", "estadual", "get_relatorio_emprego_estoque_estadual",
-     "Estoque RAIS por UF, lido do cache já publicado — não chama a API ao vivo.",
-     "get_relatorio_emprego_estoque_estadual(uf='SP')"),
-    # ---- comex ----
-    ("comex", "comercio_ncm", "nacional", "get_exportacao_ncm_nacional_mensal",
-     "Exportações mensais por NCM (produto), com filtro opcional por seção ISIC.",
-     "get_exportacao_ncm_nacional_mensal(ano_minimo=2024, secao='Indústria de Transformação')"),
-    ("comex", "comercio_ncm", "nacional", "get_importacao_ncm_nacional_mensal",
-     "Igual ao NCM de exportação, para importações.",
-     "get_importacao_ncm_nacional_mensal(ano_minimo=2024)"),
-    ("comex", "comercio_isic", "nacional", "get_exportacao_isic_divisao_nacional_mensal",
-     "Exportações mensais por divisão ISIC (setor) — a chave para juntar com emprego (juntar_emprego_comex).",
-     "get_exportacao_isic_divisao_nacional_mensal(ano_minimo=2024, agregado_ano=True)"),
-    ("comex", "comercio_isic", "nacional", "get_importacao_isic_divisao_nacional_mensal",
-     "Igual ao ISIC de exportação, para importações.",
-     "get_importacao_isic_divisao_nacional_mensal(ano_minimo=2024, agregado_ano=True)"),
-    ("comex", "comercio_isic", "estadual", "get_exportacao_isic_divisao_estadual_mensal",
-     "Igual ao ISIC nacional, por UF (e opcionalmente por país/bloco).",
-     "get_exportacao_isic_divisao_estadual_mensal(estado='São Paulo', ano_minimo=2024)"),
-    ("comex", "comercio_isic", "estadual", "get_importacao_isic_divisao_estadual_mensal",
-     "Igual ao ISIC estadual de exportação, para importações.",
-     "get_importacao_isic_divisao_estadual_mensal(estado='São Paulo', ano_minimo=2024)"),
-    ("comex", "comercio_pais", "nacional", "get_exportacao_pais_nacional_mensal",
-     "Exportações mensais por país de destino.",
-     "get_exportacao_pais_nacional_mensal(pais='Argentina', ano_minimo=2024)"),
-    ("comex", "comercio_pais", "nacional", "get_importacao_pais_nacional_mensal",
-     "Igual ao país de exportação, para importações (país de origem).",
-     "get_importacao_pais_nacional_mensal(pais='Argentina', ano_minimo=2024)"),
-    ("comex", "comercio_mapa", "-", "get_ncm_isic_mapa",
-     "De-para NCM → divisão/seção ISIC (catálogo estático, ~13 mil códigos).",
-     "get_ncm_isic_mapa()"),
-    # ---- utilitários (transformam o que as funções acima devolvem) ----
-    ("utilitarios", "transformacao", "-", "criar_indice",
-     "Índice-base (ano_base = 100) para colunas numéricas de uma série temporal.",
-     "criar_indice(df, ano_base=2020, coluna_data='ano', colunas_valores=['estoque_trabalhadores'])"),
-    ("utilitarios", "transformacao", "-", "juntar_emprego_comex",
-     "Une emprego e comércio exterior por divisão CNAE/ISIC e ano.",
-     "juntar_emprego_comex(df_emprego, df_comex)"),
-]
+COLUNAS = ["tema", "subtema", "nivel", "funcao", "descricao", "exemplo"]
 
 
 def listar_bases(tema: Optional[str] = None, subtema: Optional[str] = None) -> pd.DataFrame:
     """Catálogo das funções públicas da biblioteca, opcionalmente filtrado.
 
     Args:
-        tema (str, optional): 'emprego', 'comex' ou 'utilitarios'.
-        subtema (str, optional): ex. 'estoque', 'saldo_caged', 'comercio_ncm' —
-            veja ``listar_bases()['subtema'].unique()`` para todos os valores.
+        tema (str, optional): 'emprego', 'comex', 'series', 'publicados', 'politicas' ou 'utilitarios'.
+        subtema (str, optional): veja ``listar_bases()['subtema'].unique()``.
 
     Returns:
-        pd.DataFrame: colunas tema, subtema, nivel, funcao, descricao, exemplo —
-        uma linha por função pronta para usar (``from sdic_libraries.dados.emprego import
-        <funcao>`` ou ``from sdic_libraries.dados.comex import <funcao>``; utilitários
-        vêm de ``sdic_libraries.utils``).
+        pd.DataFrame: colunas `tema`, `subtema`, `nivel`, `funcao`, `descricao`, `exemplo`,
+        uma linha por função. Todas se importam de ``sdic_libraries`` (ou de
+        ``sdic_libraries.dados.emprego`` / ``.comex``, como antes).
+
+    Example:
+        >>> from sdic_libraries import listar_bases
+        >>> listar_bases(tema="publicados")
     """
-    df = pd.DataFrame(_CATALOGO, columns=COLUNAS)
-    if tema:
-        df = df[df["tema"] == tema]
-    if subtema:
-        df = df[df["subtema"] == subtema]
+    df = pd.DataFrame(CATALOGO["funcoes"]).rename(columns={"exemplo_py": "exemplo"})[COLUNAS]
+    for coluna, valor in (("tema", tema), ("subtema", subtema)):
+        if valor:
+            if valor not in set(df[coluna]):
+                raise ValueError(f"{coluna} desconhecido: {valor!r}. Valores: {sorted(set(df[coluna]))}.")
+            df = df[df[coluna] == valor]
     return df.reset_index(drop=True)
+
+
+def descrever(nome: str) -> pd.DataFrame:
+    """Ficha de uma base ou de uma função do catálogo.
+
+    Args:
+        nome (str): nome de uma base (ex.: 'secoes_publicadas', 'comexstat', 'politicas') ou de
+            uma função (ex.: 'get_kpis_publicados'). Para uma série da API, use `listar_series()`.
+
+    Returns:
+        pd.DataFrame: colunas `campo`, `valor`. Para uma função: descrição, exemplo, base que
+        lê, origem, e uma linha `coluna: <nome>` por coluna devolvida (tipo e significado). Para
+        uma base: título, origem e endereço em uso, fonte, periodicidade, carga e funções.
+
+    Example:
+        >>> from sdic_libraries import descrever
+        >>> descrever("get_kpis_publicados")
+    """
+    from . import config
+
+    funcoes = {f["funcao"]: f for f in CATALOGO["funcoes"]}
+    bases = CATALOGO["bases"]
+    linhas = []
+
+    def ficha_base(nome_base: str) -> None:
+        b = bases[nome_base]
+        linhas.append(("base", f"{nome_base}: {b['titulo']}"))
+        linhas.append(("origem", f"{b['origem']} ({ORIGENS[b['origem']]['descricao']})"))
+        linhas.append(("endereço em uso", config.url(b["origem"]) + (b.get("caminho") or "")
+                       if not (b.get("caminho") or "").startswith("{") else f"{config.url(b['origem'])}/{b['caminho']}"))
+        for campo, chave in (("fonte", "fonte"), ("periodicidade", "periodicidade"), ("dataset no BigQuery", "dataset"),
+                             ("carga (painel de cargas)", "carga"), ("documentação", "documentacao"),
+                             ("esquema", "esquema"), ("depreciada", "depreciada")):
+            if b.get(chave):
+                linhas.append((campo, b[chave]))
+
+    if nome in funcoes:
+        f = funcoes[nome]
+        linhas += [("função", nome), ("descrição", f["descricao"]), ("exemplo", f["exemplo_py"])]
+        if f.get("base"):
+            ficha_base(f["base"])
+        for coluna, tipo, significado in CATALOGO["colunas"].get(nome, []):
+            linhas.append((f"coluna: {coluna}", " — ".join(p for p in (tipo, significado) if p)))
+    elif nome in bases:
+        ficha_base(nome)
+        linhas += [("função", f["funcao"]) for f in CATALOGO["funcoes"] if f.get("base") == nome]
+    else:
+        raise ValueError(f"{nome!r} não está no catálogo. Bases: {sorted(bases)}. "
+                         "Funções: listar_bases(). Séries da API: listar_series().")
+    return pd.DataFrame(linhas, columns=["campo", "valor"])
