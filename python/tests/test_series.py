@@ -4,7 +4,8 @@ from __future__ import annotations
 import pytest
 import requests
 
-from sdic_libraries import SdicErro, get_dimensao_serie, get_serie, listar_series
+from sdic_libraries import (SdicErro, get_dimensao_serie, get_referencia, get_serie, listar_referencias,
+                            listar_series)
 
 from conftest import Resposta, amostras
 
@@ -72,3 +73,11 @@ def test_get_dimensao_serie(api):
     e = C["esperado"]["get_dimensao_serie"]
     df = get_dimensao_serie(**e["args"])
     assert list(df.columns) == e["colunas"] and len(df) == e["linhas"]
+
+
+def test_referencias(api):
+    lista = listar_referencias()
+    assert list(lista.columns) == C["esperado"]["listar_referencias"]["colunas"]
+    e = C["esperado"]["get_referencia"]
+    df = get_referencia(**e["args"])
+    assert len(df) == e["linhas"] and df.iloc[0, 0] == e["primeiro_codigo"]  # texto: zero à esquerda preservado

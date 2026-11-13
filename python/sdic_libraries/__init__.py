@@ -28,7 +28,7 @@ from .politicas import (get_manifesto_politicas, get_municipios_elegiveis, get_p
 from .publicados import (get_atualizacao_publicada, get_destaques_publicados, get_detalhamento_publicado,
                          get_kpis_publicados, get_ranking_publicado, get_secao_publicada, get_series_publicadas,
                          listar_secoes_publicadas)
-from .series import get_dimensao_serie, get_serie, listar_series
+from .series import get_dimensao_serie, get_referencia, get_serie, listar_referencias, listar_series
 from .transporte import NaoPublicado, SdicErro, ler_json_publicado
 
 # `data_access` foi renomeado para `dados` (0.4.0). O módulo de compatibilidade só é carregado
@@ -36,7 +36,7 @@ from .transporte import NaoPublicado, SdicErro, ler_json_publicado
 
 _NOVAS = [
     "listar_bases", "descrever", "sdic_config", "ler_json_publicado",
-    "listar_series", "get_serie", "get_dimensao_serie",
+    "listar_series", "get_serie", "get_dimensao_serie", "listar_referencias", "get_referencia",
     "listar_secoes_publicadas", "get_secao_publicada", "get_kpis_publicados", "get_series_publicadas",
     "get_ranking_publicado", "get_detalhamento_publicado", "get_destaques_publicados", "get_atualizacao_publicada",
     "listar_politicas", "get_politica", "get_politicas_estado", "get_politica_publicada", "get_resumo_politicas",

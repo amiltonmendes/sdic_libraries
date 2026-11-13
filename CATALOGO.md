@@ -61,6 +61,8 @@ Mesmo conteúdo de `listar_bases()` (Python e R). Detalhe de cada função: [doc
 | `listar_series` | catalogo | - | Séries que a sdic_api publica em `/series` (bases do carga_base e indicadores oficiais): nome, descrição, fonte, filtros e dimensões. | Python: `listar_series()`<br>R: `listar_series()` |
 | `get_serie` | valores | - | Valores de uma série, com filtros pelos nomes das colunas e período (`desde`, `ate`). `com_nomes` junta os nomes das dimensões. | Python: `get_serie('sidra_producao', cod_tabela=8888, cod_localidade='35', desde='2025-01-01')`<br>R: `get_serie('sidra_producao', cod_tabela = 8888, cod_localidade = '35', desde = '2025-01-01')` |
 | `get_dimensao_serie` | dimensoes | - | Códigos e nomes de uma dimensão de uma série (variáveis, categorias, localidades, atividades). | Python: `get_dimensao_serie('sidra_producao', 'variavel')`<br>R: `get_dimensao_serie('sidra_producao', 'variavel')` |
+| `listar_referencias` | referencias | - | Tabelas de de-para disponíveis (CNAE, ISIC, municípios, intensidade tecnológica, agrupamentos NCM). | Python: `listar_referencias()`<br>R: `listar_referencias()` |
+| `get_referencia` | referencias | - | Uma tabela de de-para inteira, com todos os códigos como texto. | Python: `get_referencia('isic_cnae')`<br>R: `get_referencia('isic_cnae')` |
 
 ## Seções publicadas (JSON do portal)
 

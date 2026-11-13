@@ -146,6 +146,26 @@
     "ultima_modificacao": "2026-11-04",
     "url": "https://sidra.ibge.gov.br/tabela/8888"
    }
+  ],
+  "/referencias": [
+   {
+    "nome": "cnae",
+    "descricao": "CNAE 2.3, de subclasse a seção, com descrições."
+   },
+   {
+    "nome": "isic_cnae",
+    "descricao": "Correspondência entre divisão CNAE 2.0 e divisão ISIC Rev.4."
+   }
+  ],
+  "/referencias/isic_cnae": [
+   {
+    "cnae_divisao": "01",
+    "isic_divisao": "01"
+   },
+   {
+    "cnae_divisao": "10",
+    "isic_divisao": "10"
+   }
   ]
  },
  "esperado": {
@@ -220,6 +240,20 @@
     "unidade"
    ],
    "linhas": 1
+  },
+  "listar_referencias": {
+   "colunas": [
+    "nome",
+    "descricao"
+   ],
+   "linhas": 2
+  },
+  "get_referencia": {
+   "args": {
+    "nome": "isic_cnae"
+   },
+   "linhas": 2,
+   "primeiro_codigo": "01"
   }
  }
 }

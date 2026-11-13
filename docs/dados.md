@@ -137,6 +137,19 @@ Três endereços, cada um com uma variável de ambiente para trocá-lo. `sdic_co
 | Atualização | não atualiza mais |
 | Funções que leem | `get_relatorio_emprego_saldo_estadual`, `get_relatorio_emprego_estoque_estadual` |
 
+<a id="referencias"></a>
+
+### Tabelas de de-para (CNAE, ISIC, municípios, intensidade tecnológica, agrupamentos NCM) (`referencias`)
+
+|  |  |
+|---|---|
+| Origem | `api`, caminho `/referencias/{nome}` |
+| Fonte | carga_base/referencias (CSVs versionados) |
+| Atualização | quando um mapeamento muda |
+| No BigQuery | `referencias` |
+| Documentação da base | `carga_base/docs/MAPEAMENTOS.md` |
+| Funções que leem | `listar_referencias`, `get_referencia` |
+
 ## Seções publicadas
 
 Arquivos `{ambiente}/{UF ou BRASIL}/{seção}.json`, no contrato v1.1, os mesmos que o portal e os subsídios leem.

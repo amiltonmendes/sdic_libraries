@@ -894,6 +894,53 @@ Assinatura (Python): `get_dimensao_serie(nome: 'str', dimensao: 'str') -> 'pd.Da
 
 Dados consultados: [Séries da sdic_api (/series)](dados.md#series).
 
+### `listar_referencias`
+
+Tabelas de de-para disponíveis (CNAE, ISIC, municípios, intensidade tecnológica, agrupamentos NCM).
+
+```python
+# Python
+from sdic_libraries import listar_referencias
+listar_referencias()
+```
+
+```r
+# R
+library(sdic.libraries)
+listar_referencias()
+```
+
+Assinatura (Python): `listar_referencias() -> 'pd.DataFrame'`
+
+Dados consultados: [Tabelas de de-para (CNAE, ISIC, municípios, intensidade tecnológica, agrupamentos NCM)](dados.md#referencias).
+
+Colunas devolvidas:
+
+| Coluna | Tipo | Significado |
+|---|---|---|
+| `nome` | texto | nome a passar em get_referencia |
+| `descricao` | texto |  |
+
+### `get_referencia`
+
+Uma tabela de de-para inteira, com todos os códigos como texto.
+
+```python
+# Python
+from sdic_libraries import get_referencia
+get_referencia('isic_cnae')
+```
+
+```r
+# R
+library(sdic.libraries)
+get_referencia('isic_cnae')
+```
+
+Assinatura (Python): `get_referencia(nome: 'str') -> 'pd.DataFrame'`
+
+Dados consultados: [Tabelas de de-para (CNAE, ISIC, municípios, intensidade tecnológica, agrupamentos NCM)](dados.md#referencias).
+
 ## Seções publicadas (JSON do portal)
 
 ### `listar_secoes_publicadas`

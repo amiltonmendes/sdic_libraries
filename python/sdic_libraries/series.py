@@ -132,3 +132,34 @@ def get_dimensao_serie(nome: str, dimensao: str) -> pd.DataFrame:
     """
     with ClienteAPI() as cliente:
         return pd.DataFrame(cliente._make_request(f"/series/{nome}/dimensoes/{dimensao}"))
+
+
+def listar_referencias() -> pd.DataFrame:
+    """Tabelas de de-para disponíveis na API (dataset `referencias`, mantido em `carga_base/referencias`).
+
+    Returns:
+        pd.DataFrame: colunas `nome`, `descricao`.
+
+    Example:
+        >>> from sdic_libraries import listar_referencias
+        >>> listar_referencias()
+    """
+    with ClienteAPI() as cliente:
+        return pd.DataFrame(cliente._make_request("/referencias"), columns=["nome", "descricao"])
+
+
+def get_referencia(nome: str) -> pd.DataFrame:
+    """Uma tabela de de-para inteira: CNAE, ISIC, CNAE x ISIC, municípios, intensidade tecnológica, agrupamentos NCM.
+
+    Args:
+        nome (str): um dos nomes de `listar_referencias()`, ex.: 'cnae', 'isic_cnae', 'municipio'.
+
+    Returns:
+        pd.DataFrame: as colunas da tabela, todas como texto (códigos com zeros à esquerda preservados).
+
+    Example:
+        >>> from sdic_libraries import get_referencia
+        >>> get_referencia("isic_cnae")
+    """
+    with ClienteAPI() as cliente:
+        return pd.DataFrame(cliente._make_request(f"/referencias/{nome}")).astype("string")
