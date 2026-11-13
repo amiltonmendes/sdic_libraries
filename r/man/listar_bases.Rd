@@ -7,22 +7,25 @@
 listar_bases(tema = NULL, subtema = NULL)
 }
 \arguments{
-\item{tema}{Filtro por tema: "emprego", "comex" ou "utilitarios" (opcional)}
+\item{tema}{Filtro por tema: \code{"emprego"}, \code{"comex"}, \code{"series"}, \code{"publicados"},
+\code{"politicas"} ou \code{"utilitarios"} (opcional).}
 
-\item{subtema}{Filtro adicional, ex. "estoque", "saldo_caged", "comercio_ncm" -
-veja \code{unique(listar_bases()$subtema)} para todos os valores (opcional)}
+\item{subtema}{Filtro por subtema, ex.: \code{"estoque"}, \code{"saldo_caged"}, \code{"comercio_ncm"};
+veja \code{unique(listar_bases()$subtema)} (opcional).}
 }
 \value{
-tibble com colunas tema, subtema, nivel, funcao, descricao, exemplo
+tibble com as colunas \code{tema}, \code{subtema}, \code{nivel}, \code{funcao}, \code{descricao}, \code{exemplo},
+uma linha por função. Tema ou subtema inexistente gera erro que lista os valores válidos.
 }
 \description{
-Não sabe qual função usar? \code{listar_bases()} devolve um tibble com uma linha por
-função: tema, o que ela traz, nível de agregação e um exemplo mínimo de chamada.
+Não sabe qual função usar? \code{listar_bases()} devolve uma linha por função: tema, o que ela
+traz, nível de agregação e um exemplo mínimo de chamada. O conteúdo é o mesmo do pacote
+Python (\code{contrato/catalogo.json}).
 }
 \examples{
 \dontrun{
 listar_bases()
-listar_bases(tema = "comex")
+listar_bases(tema = "publicados")
 listar_bases(subtema = "saldo_caged")
 }
 }

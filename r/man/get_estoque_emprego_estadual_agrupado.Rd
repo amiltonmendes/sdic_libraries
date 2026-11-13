@@ -12,8 +12,6 @@ get_estoque_emprego_estadual_agrupado(sigla_uf, nome_grupo, lista_cnae)
 \item{nome_grupo}{Nome para o grupo CNAE}
 
 \item{lista_cnae}{Vetor de códigos CNAE (mesmo número de dígitos)}
-
-\item{ano_minimo}{Ano mínimo para filtrar dados (opcional)}
 }
 \value{
 Tibble com dados anuais agrupados por CNAE

@@ -2,18 +2,19 @@
 % Please edit documentation in R/portal.R
 \name{get_portal_emprego_estadual}
 \alias{get_portal_emprego_estadual}
-\title{Payload completo do portal (v1.1) de uma UF}
+\title{Payload completo do portal (v1.1) de uma UF — depreciada}
 \usage{
-get_portal_emprego_estadual(uf, ambiente = "producao")
+get_portal_emprego_estadual(uf, ambiente = NULL)
 }
 \arguments{
 \item{uf}{Sigla da UF (ex.: "SP").}
 
-\item{ambiente}{"producao" (default) ou "homologacao".}
+\item{ambiente}{\code{"producao"} ou \code{"homologacao"} (padrão: \code{SDIC_AMBIENTE}, depois
+\code{"producao"}).}
 }
 \value{
 Lista com o payload do portal, como publicado.
 }
 \description{
-Payload completo do portal (v1.1) de uma UF
+Use \code{\link[=get_secao_publicada]{get_secao_publicada()}} e as demais funções de seções publicadas.
 }

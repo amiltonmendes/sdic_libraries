@@ -2,18 +2,19 @@
 % Please edit documentation in R/portal.R
 \name{listar_estados_disponiveis}
 \alias{listar_estados_disponiveis}
-\title{Lista as UFs com artefato publicado}
+\title{Lista as UFs com artefato publicado — depreciada}
 \usage{
-listar_estados_disponiveis(ambiente = "producao", tipo = "portal")
+listar_estados_disponiveis(ambiente = NULL, tipo = "portal")
 }
 \arguments{
-\item{ambiente}{"producao" (default) ou "homologacao".}
+\item{ambiente}{\code{"producao"} ou \code{"homologacao"} (padrão: \code{SDIC_AMBIENTE}, depois
+\code{"producao"}).}
 
 \item{tipo}{"portal" (emprego.json) ou "relatorio" (cache).}
 }
 \value{
-Vetor de siglas de UF disponiveis.
+Vetor de siglas de UF disponíveis.
 }
 \description{
-Lista as UFs com artefato publicado
+Use \code{\link[=listar_secoes_publicadas]{listar_secoes_publicadas()}}.
 }

@@ -2,18 +2,19 @@
 % Please edit documentation in R/portal.R
 \name{get_portal_emprego_charts_estadual}
 \alias{get_portal_emprego_charts_estadual}
-\title{Series dos graficos do portal de uma UF}
+\title{Séries dos gráficos do portal de uma UF — depreciada}
 \usage{
-get_portal_emprego_charts_estadual(uf, ambiente = "producao")
+get_portal_emprego_charts_estadual(uf, ambiente = NULL)
 }
 \arguments{
 \item{uf}{Sigla da UF (ex.: "SP").}
 
-\item{ambiente}{"producao" (default) ou "homologacao".}
+\item{ambiente}{\code{"producao"} ou \code{"homologacao"} (padrão: \code{SDIC_AMBIENTE}, depois
+\code{"producao"}).}
 }
 \value{
 Lista nomeada \code{{chart_id: tibble(competencia, valor)}}.
 }
 \description{
-Series dos graficos do portal de uma UF
+Use \code{\link[=get_series_publicadas]{get_series_publicadas()}}.
 }

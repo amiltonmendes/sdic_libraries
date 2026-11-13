@@ -2,18 +2,21 @@
 % Please edit documentation in R/portal.R
 \name{get_relatorio_emprego_estadual}
 \alias{get_relatorio_emprego_estadual}
-\title{Relatorio completo de emprego de uma UF (cache 1.0)}
+\title{Relatório completo de emprego de uma UF (cache 1.0) — depreciada}
 \usage{
-get_relatorio_emprego_estadual(uf, ambiente = "producao")
+get_relatorio_emprego_estadual(uf, ambiente = NULL)
 }
 \arguments{
 \item{uf}{Sigla da UF (ex.: "SP").}
 
-\item{ambiente}{"producao" (default) ou "homologacao".}
+\item{ambiente}{\code{"producao"} ou \code{"homologacao"} (padrão: \code{SDIC_AMBIENTE}, depois
+\code{"producao"}).}
 }
 \value{
 \code{list(saldo, estoque, acum12m_total, metadata)}.
 }
 \description{
-Relatorio completo de emprego de uma UF (cache 1.0)
+Lê o layout antigo do Pages e será removida. Use \code{\link[=get_saldo_emprego_estadual_mensal]{get_saldo_emprego_estadual_mensal()}} e
+\code{\link[=get_estoque_emprego_estadual]{get_estoque_emprego_estadual()}} (API) ou
+\code{ler_json_publicado("dados", "<ambiente>/<UF>/emprego_relatorio.json")}.
 }

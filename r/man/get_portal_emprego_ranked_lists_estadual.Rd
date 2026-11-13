@@ -2,18 +2,19 @@
 % Please edit documentation in R/portal.R
 \name{get_portal_emprego_ranked_lists_estadual}
 \alias{get_portal_emprego_ranked_lists_estadual}
-\title{Rankings do portal (maiores saldos/estoques) de uma UF}
+\title{Rankings do portal (maiores saldos/estoques) de uma UF — depreciada}
 \usage{
-get_portal_emprego_ranked_lists_estadual(uf, ambiente = "producao")
+get_portal_emprego_ranked_lists_estadual(uf, ambiente = NULL)
 }
 \arguments{
 \item{uf}{Sigla da UF (ex.: "SP").}
 
-\item{ambiente}{"producao" (default) ou "homologacao".}
+\item{ambiente}{\code{"producao"} ou \code{"homologacao"} (padrão: \code{SDIC_AMBIENTE}, depois
+\code{"producao"}).}
 }
 \value{
 Lista nomeada \code{{list_id: tibble(items)}}.
 }
 \description{
-Rankings do portal (maiores saldos/estoques) de uma UF
+Use \code{\link[=get_ranking_publicado]{get_ranking_publicado()}}.
 }

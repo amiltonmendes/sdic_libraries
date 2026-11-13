@@ -1,27 +1,27 @@
 Package: sdic.libraries
 Type: Package
-Title: SDIC Utility Libraries for Employment Data Access
-Version: 0.5.4
-Date: 2026-11-10
+Title: Leitura dos Dados da Plataforma da SDIC em Tabelas
+Version: 0.6.0
+Date: 2026-11-13
 Authors@R: 
     person(given = "SDIC",
            family = "Team",
            role = c("aut", "cre"),
            email = "sdic.dados@mdic.gov.br",
            )
-Description: Modern utility libraries for accessing Brazilian employment balance 
-    data (saldo de emprego detalhado) from government statistical sources.
-    Provides R6 classes and high-level functions with comprehensive error handling, 
-    intelligent geographic and CNAE filtering, automatic column management, and 
-    validation. Supports national, state, and municipal level data aggregation 
-    with both individual and grouped analysis methods for Brazilian employment statistics.
+Description: Uma porta única para os dados da plataforma da SDIC, com o mesmo nome 
+    de função em R e em Python: emprego (RAIS e Novo CAGED) e comércio exterior 
+    (ComexStat) pela sdic_api; séries e tabelas de de-para da API; seções publicadas 
+    em JSON, as mesmas do portal; e políticas da SDIC publicadas pelo gaia_nib. 
+    As funções devolvem tibbles; as classes R6 'Emprego' e 'Comex' dão o acesso de 
+    baixo nível. 'listar_bases()' mostra o que existe, 'descrever()' de onde vem cada 
+    dado e 'sdic_config()' o que está configurado.
 License: MIT + file LICENSE
-URL: https://github.com/sdic-org/sdic_libraries
-BugReports: https://github.com/sdic-org/sdic_libraries/issues
+URL: https://github.com/amiltonmendes/sdic_libraries
+BugReports: https://github.com/amiltonmendes/sdic_libraries/issues
 Encoding: UTF-8
-Language: en-US
+Language: pt-BR
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.3
 Config/testthat/edition: 3
 Depends: 
     R (>= 4.1.0)
@@ -33,13 +33,16 @@ Imports:
     tibble (>= 3.2.0),
     lubridate (>= 1.9.0),
     cli (>= 3.6.0),
-    rlang (>= 1.1.0)
+    rlang (>= 1.1.0),
+    tools,
+    utils
 Suggests:
     testthat (>= 3.1.0),
+    withr,
     knitr (>= 1.42),
     rmarkdown (>= 2.20),
     covr (>= 3.6.0),
     pkgdown (>= 2.0.0),
     devtools (>= 2.4.0),
     usethis (>= 2.1.0)
-VignetteBuilder: knitr
+Config/roxygen2/version: 8.0.0

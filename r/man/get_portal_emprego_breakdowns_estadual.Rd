@@ -2,18 +2,19 @@
 % Please edit documentation in R/portal.R
 \name{get_portal_emprego_breakdowns_estadual}
 \alias{get_portal_emprego_breakdowns_estadual}
-\title{Composicoes do portal (ex.: intensidade tecnologica) de uma UF}
+\title{Composições do portal (ex.: intensidade tecnológica) de uma UF — depreciada}
 \usage{
-get_portal_emprego_breakdowns_estadual(uf, ambiente = "producao")
+get_portal_emprego_breakdowns_estadual(uf, ambiente = NULL)
 }
 \arguments{
 \item{uf}{Sigla da UF (ex.: "SP").}
 
-\item{ambiente}{"producao" (default) ou "homologacao".}
+\item{ambiente}{\code{"producao"} ou \code{"homologacao"} (padrão: \code{SDIC_AMBIENTE}, depois
+\code{"producao"}).}
 }
 \value{
 Lista nomeada \code{{id: tibble(items)}}.
 }
 \description{
-Composicoes do portal (ex.: intensidade tecnologica) de uma UF
+Use \code{\link[=get_detalhamento_publicado]{get_detalhamento_publicado()}}.
 }

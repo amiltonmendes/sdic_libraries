@@ -64,7 +64,7 @@ test_that("4xx traz o detail da sdic_api na mensagem e não é gravado no cache"
     body = charToRaw(as.character(jsonlite::toJSON(corpo, auto_unbox = TRUE))))
   testthat::local_mocked_bindings(.package = "httr2",
     req_perform = resposta(422, list(detail = "data_minima: '2025-01' inválida; use o formato AAAA-MM-DD")))
-  expect_error(novo_cliente()$.make_request("/saldo"), "HTTP 422: data_minima.*AAAA-MM-DD")
+  expect_error(novo_cliente()$.make_request("/saldo"), "Parâmetros inválidos: data_minima.*AAAA-MM-DD.*HTTP 422")
   expect_length(list.files(pasta), 0)
 
   testthat::local_mocked_bindings(.package = "httr2", req_perform = resposta(422,

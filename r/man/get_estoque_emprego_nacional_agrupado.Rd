@@ -12,8 +12,6 @@ get_estoque_emprego_nacional_agrupado(nome_grupo, lista_cnae, agregado = TRUE)
 \item{lista_cnae}{Vetor de códigos CNAE (mesmo número de dígitos)}
 
 \item{agregado}{Se TRUE, agrega todos os estados}
-
-\item{ano_minimo}{Ano mínimo para filtrar dados (opcional)}
 }
 \value{
 Tibble com dados anuais agrupados por CNAE

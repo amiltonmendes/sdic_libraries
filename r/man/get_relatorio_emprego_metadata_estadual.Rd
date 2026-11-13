@@ -2,18 +2,19 @@
 % Please edit documentation in R/portal.R
 \name{get_relatorio_emprego_metadata_estadual}
 \alias{get_relatorio_emprego_metadata_estadual}
-\title{Metadados do relatorio (reference, fonte, gerado_em, ...) de uma UF}
+\title{Metadados do relatório (reference, fonte, gerado_em, ...) de uma UF — depreciada}
 \usage{
-get_relatorio_emprego_metadata_estadual(uf, ambiente = "producao")
+get_relatorio_emprego_metadata_estadual(uf, ambiente = NULL)
 }
 \arguments{
 \item{uf}{Sigla da UF (ex.: "SP").}
 
-\item{ambiente}{"producao" (default) ou "homologacao".}
+\item{ambiente}{\code{"producao"} ou \code{"homologacao"} (padrão: \code{SDIC_AMBIENTE}, depois
+\code{"producao"}).}
 }
 \value{
 Lista de metadados.
 }
 \description{
-Metadados do relatorio (reference, fonte, gerado_em, ...) de uma UF
+Metadados do relatório (reference, fonte, gerado_em, ...) de uma UF — depreciada
 }

@@ -40,6 +40,11 @@ API, as seções publicadas em JSON e as políticas. Configuração e HTTP ficam
 - Python: `codigos_cnae='10'` consultava os códigos `1` e `0`; texto, número ou lista são aceitos.
 - `PORTAL_EMPREGO_AMBIENTE` era ignorada pelas funções; o ambiente agora vem de `SDIC_AMBIENTE` quando não é informado.
 - Página sem lista de itens no meio da paginação é erro (era tratada como fim); resultado menor que o `count` gera aviso.
+- R: `%>%` e `last()` não eram importados no pacote; sem `library(dplyr)` carregado, o cálculo anual do estoque
+  estimado podia falhar e o erro era engolido, devolvendo só o estoque real. Agora são importados e a falha aparece.
+  **Os resultados de `get_estoque_emprego_estimado_*` em R podem mudar** (não reproduzido contra a API).
+- R: o cache gravava `.rds` com a requisição inteira (incluindo a chave, no comex); agora grava só o corpo, em `.json`,
+  em pasta `0700`. **Apague a pasta de cache antiga** (`tools::R_user_dir("sdic.libraries", "cache")`).
 
 ### Mudou (pode exigir ajuste)
 - `listar_bases(tema="inexistente")` gera erro listando os temas (devolvia tabela vazia).
@@ -55,6 +60,8 @@ API, as seções publicadas em JSON e as políticas. Configuração e HTTP ficam
   `PORTAL_EMPREGO_BASE_URL`, `PORTAL_EMPREGO_AMBIENTE`, `API_TIMEOUT`: use as `SDIC_*`.
 
 ### Removido
+- R: scripts soltos fora do pacote (`r/test_*.R`, `r/testes_consolidados.R`, `r/validacao_final.R`, `r/install.R`,
+  `r/install_github.R`) e os métodos `.load_env_files`/`.load_env_file` das classes.
 - `SDIC_VERSION` e `LOG_LEVEL` (não são mais lidas). Instaladores `setup.py` (raiz), `python/setup.py`,
   `python/install.py`, `python/install_github.py`: instale com `pip` e `remotes` (ver INSTALL.md).
 

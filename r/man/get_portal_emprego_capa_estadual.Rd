@@ -2,18 +2,19 @@
 % Please edit documentation in R/portal.R
 \name{get_portal_emprego_capa_estadual}
 \alias{get_portal_emprego_capa_estadual}
-\title{KPI de capa (\code{capa_kpi}) de uma UF}
+\title{KPI de capa (\code{capa_kpi}) de uma UF — depreciada}
 \usage{
-get_portal_emprego_capa_estadual(uf, ambiente = "producao")
+get_portal_emprego_capa_estadual(uf, ambiente = NULL)
 }
 \arguments{
 \item{uf}{Sigla da UF (ex.: "SP").}
 
-\item{ambiente}{"producao" (default) ou "homologacao".}
+\item{ambiente}{\code{"producao"} ou \code{"homologacao"} (padrão: \code{SDIC_AMBIENTE}, depois
+\code{"producao"}).}
 }
 \value{
 Lista com o KPI de capa.
 }
 \description{
-KPI de capa (\code{capa_kpi}) de uma UF
+Use \code{\link[=get_kpis_publicados]{get_kpis_publicados()}}.
 }

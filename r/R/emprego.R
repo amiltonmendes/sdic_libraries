@@ -1,7 +1,12 @@
-#' Emprego API Client para R
+#' Cliente da sdic_api para emprego (RAIS e Novo CAGED)
 #'
-#' Uma classe R6 para acessar dados de saldo de emprego
-#' de fontes estatísticas governamentais brasileiras.
+#' Classe R6 de baixo nível: uma requisição por chamada (com todas as páginas) e resposta
+#' como lista de registros. Para tabelas (`tibble`), use as funções `get_*` de emprego
+#' (veja `listar_bases(tema = "emprego")`).
+#'
+#' Endereço, chave e tempo limite vêm de [sdic_config()] (`SDIC_API_URL`, `SDIC_API_KEY`,
+#' `SDIC_TIMEOUT`, em variável de ambiente ou `.env.local`); os argumentos de `$new()` têm
+#' precedência. A chave fica em campo privado e não aparece em `print()`.
 #'
 #' @docType class
 #' @importFrom R6 R6Class
@@ -10,149 +15,46 @@
 #' @importFrom dplyr bind_rows
 #' @importFrom tibble as_tibble tibble
 #' @importFrom lubridate as_date
-#' @importFrom cli cli_abort cli_inform
 #' @importFrom rlang abort inform
 #' @export
 #' @keywords emprego, dados, api, saldo
-#' @return Objeto R6 para interagir com APIs de saldo de emprego
-#' @format \code{\link{R6Class}} object.
+#' @return Objeto R6 para interagir com as rotas de emprego da sdic_api
+#' @format Classe [R6::R6Class], herdeira de `ClienteAPI`.
 #' @examples
 #' \dontrun{
-#' # Criar cliente da API
 #' api <- Emprego$new()
-#' 
-#' # Obter dados nacionais de saldo de emprego
+#' api  # mostra a URL e se há chave; a chave nunca é impressa
+#'
+#' # Saldo nacional e de São Paulo
 #' dados <- api$get_saldo_emprego_detalhado("nacional")
-#' 
-#' # Obter dados estaduais para São Paulo
 #' dados_sp <- api$get_saldo_emprego_detalhado("estadual", sigla_uf = "SP")
 #' }
 Emprego <- R6::R6Class(
-  "Emprego", 
+  "Emprego",
+  inherit = ClienteAPI,
   public = list(
-    #' @field base_url A URL base para a API de emprego
-    base_url = NULL,
-    
-    #' @field timeout Timeout das requisições em segundos
-    timeout = NULL,
-    
-    #' @field api_key Chave da API para autenticação
-    api_key = NULL,
-    
     #' @description
-    #' Inicializar cliente da API de Emprego com configuração automática
-    #' Variáveis de ambiente são carregadas automaticamente - nenhuma ação do usuário necessária!
-    #' @param base_url Sobrescrever URL base da API auto-detectada
-    #' @param timeout Timeout das requisições. Padrão 30 segundos.
-    #' @param api_key Sobrescrever chave da API auto-detectada
-    initialize = function(base_url = NULL, timeout = 30, api_key = NULL) {
-      # Carregar arquivos de ambiente automaticamente (funciona pronto para uso)
-      self$.load_env_files()
-      
-      # Configuração inteligente com fallbacks
-      self$base_url <- base_url %||%
-                       Sys.getenv("EMPLOYMENT_API_BASE_URL",
-                                  "https://sdicapi.dados.ninja")  # Endpoint público (DNS próprio)
-      
-      self$timeout <- as.numeric(Sys.getenv("API_TIMEOUT", as.character(timeout)))
-      self$api_key <- api_key %||% Sys.getenv("EMPLOYMENT_API_KEY", "")
-      
-      # Mostrar mensagem de inicialização
-      version <- Sys.getenv("SDIC_VERSION", "0.5.4")
-      cli::cli_alert_success(
-        "API de Emprego inicializada (v{version}) - configuração carregada automaticamente"
-      )
-    },
-    
-    #' @description
-    #' Carregar automaticamente arquivos .env (experiência fluida)
-    .load_env_files = function() {
-      env_locations <- c(
-        file.path(getwd(), ".env"),          # Diretório atual
-        file.path(Sys.getenv("HOME"), ".env"), # Home do usuário
-        "/etc/sdic/.env"                      # Sistema
-      )
-      
-      for (env_file in env_locations) {
-        if (file.exists(env_file)) {
-          self$.load_env_file(env_file)
-          break  # Usar o primeiro encontrado
-        }
+    #' Todas as páginas de uma rota GET, com a faixa de anos conferida no cliente.
+    #' @param endpoint Endpoint da API
+    #' @param params Lista de parâmetros de query
+    #' @return Lista consolidada de itens
+    .fetch_all_paginated_get = function(endpoint, params = list()) {
+      all_items <- super$.fetch_all_paginated_get(endpoint, params)
+
+      # Garante ano_minimo/ano_maximo no cliente: uma sdic_api implantada antes desses filtros
+      # os ignora sem avisar e devolve a série inteira (2006+). Idempotente com a API nova.
+      minimo <- params$ano_minimo
+      maximo <- params$ano_maximo
+      if (!is.null(minimo) || !is.null(maximo)) {
+        all_items <- Filter(function(item) {
+          ano <- suppressWarnings(as.integer(item$ano %||% item$Ano))
+          length(ano) == 0 || is.na(ano) || ((is.null(minimo) || ano >= minimo) && (is.null(maximo) || ano <= maximo))
+        }, all_items)
       }
+
+      return(all_items)
     },
-    
-    #' @description
-    #' Carregar arquivo .env único
-    .load_env_file = function(env_file_path) {
-      tryCatch({
-        lines <- readLines(env_file_path, warn = FALSE)
-        for (line in lines) {
-          line <- trimws(line)
-          if (nchar(line) > 0 && !startsWith(line, "#") && grepl("=", line)) {
-            parts <- strsplit(line, "=", fixed = TRUE)[[1]]
-            if (length(parts) >= 2) {
-              key <- trimws(parts[1])
-              value <- trimws(paste(parts[-1], collapse = "="))
-              
-              if ((startsWith(value, '"') && endsWith(value, '"')) ||
-                  (startsWith(value, "'") && endsWith(value, "'"))) {
-                value <- substr(value, 2, nchar(value) - 1)
-              }
-              
-              if (Sys.getenv(key, "") == "") {
-                Sys.setenv(setNames(value, key))
-              }
-            }
-          }
-        }
-      }, error = function(e) {
-        invisible(NULL)
-      })
-    },
-    
-    #' @description
-    #' Fazer uma requisição HTTP para a API usando httr2 moderno
-    #' @param endpoint Caminho do endpoint da API
-    #' @param params Parâmetros de query (opcional)
-    .make_request = function(endpoint, params = NULL) {
-      url <- paste0(gsub("/$", "", self$base_url), "/", gsub("^/", "", endpoint))
-      
-      req <- httr2::request(url)
-      
-      if (!is.null(params)) {
-        req <- httr2::req_url_query(req, !!!params, .multi = "explode")
-      }
-      
-      req <- httr2::req_headers(
-        req,
-        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.4")),
-        "Accept" = "application/json",
-        "Content-Type" = "application/json"
-      )
-      
-      if (!is.null(self$api_key)) {
-        req <- httr2::req_headers(req, "Authorization" = paste("Bearer", self$api_key))
-      }
-      
-      req <- httr2::req_timeout(req, self$timeout)
-      
-      tryCatch({
-        resp <- .req_perform_cache(req)
-        
-        if (httr2::resp_status(resp) != 200) {
-          cli::cli_abort(
-            "Falha na requisição da API com código: {httr2::resp_status(resp)}"
-          )
-        }
-        
-        result <- httr2::resp_body_json(resp)
-        return(result)
-        
-      }, error = function(e) {
-        cli::cli_abort("Falha na requisição da API: {e$message}")
-      })
-    },
-    
+
     #' @description
     #' Obter dados detalhados de saldo de emprego - SEMPRE RETORNA TODOS OS REGISTROS
     #' Loop automático através de todas as páginas
@@ -339,54 +241,6 @@ Emprego <- R6::R6Class(
     },
     
     #' @description
-    #' Fazer uma requisição HTTP POST para a API usando httr2 moderno
-    #' @param endpoint Caminho do endpoint da API
-    #' @param body Corpo da requisição (será convertido para JSON)
-    #' @param params Parâmetros de query (opcional)
-    .make_post_request = function(endpoint, body = NULL, params = NULL) {
-      url <- paste0(gsub("/$", "", self$base_url), "/", gsub("^/", "", endpoint))
-      
-      req <- httr2::request(url)
-      
-      if (!is.null(params)) {
-        req <- httr2::req_url_query(req, !!!params, .multi = "explode")
-      }
-      
-      req <- httr2::req_headers(
-        req,
-        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.4")),
-        "Accept" = "application/json",
-        "Content-Type" = "application/json"
-      )
-      
-      if (!is.null(self$api_key)) {
-        req <- httr2::req_headers(req, "Authorization" = paste("Bearer", self$api_key))
-      }
-      
-      req <- httr2::req_timeout(req, self$timeout)
-      
-      if (!is.null(body)) {
-        req <- httr2::req_body_json(req, body)
-      }
-      
-      tryCatch({
-        resp <- .req_perform_cache(req)
-        
-        if (httr2::resp_status(resp) != 200) {
-          cli::cli_abort(
-            "Falha na requisição da API com código: {httr2::resp_status(resp)}"
-          )
-        }
-        
-        result <- httr2::resp_body_json(resp)
-        return(result)
-        
-      }, error = function(e) {
-        cli::cli_abort("Falha na requisição da API: {e$message}")
-      })
-    },
-
-    #' @description
     #' Normalizar aliases de campos para manter compatibilidade entre versões da API
     #' @param item Item individual da resposta
     #' @return Item normalizado
@@ -417,152 +271,6 @@ Emprego <- R6::R6Class(
       }
 
       return(item)
-    },
-
-    #' @description
-    #' Extrair itens de respostas paginadas e não paginadas
-    #' @param response Resposta da API
-    #' @return Lista de itens
-    .extract_items = function(response) {
-      if (is.list(response) && !is.null(response$items)) {
-        return(lapply(response$items %||% list(), self$.normalize_response_item))
-      }
-
-      if (is.list(response) && !is.null(response$data)) {
-        return(lapply(response$data %||% list(), self$.normalize_response_item))
-      }
-
-      if (is.list(response) && !is.null(response$results)) {
-        return(lapply(response$results %||% list(), self$.normalize_response_item))
-      }
-
-      if (is.list(response) && !is.null(response$records)) {
-        return(lapply(response$records %||% list(), self$.normalize_response_item))
-      }
-
-      if (is.list(response) && is.null(names(response))) {
-        return(lapply(response, self$.normalize_response_item))
-      }
-
-      return(list())
-    },
-
-    #' @description
-    #' Ler total de páginas quando disponível
-    #' @param response Resposta da API
-    #' @return Número total de páginas ou NULL
-    .get_total_pages = function(response) {
-      if (!is.list(response)) return(NULL)
-
-      for (key in c("pages", "total_pages", "paginas", "totalPaginas")) {
-        value <- response[[key]]
-        if (!is.null(value) && is.numeric(value) && value > 0) {
-          return(as.integer(value))
-        }
-      }
-
-      return(NULL)
-    },
-
-    #' @description
-    #' Ler total de registros quando disponível (API 2.0 usa count/items)
-    #' @param response Resposta da API
-    #' @return Contagem total ou NULL
-    .get_total_count = function(response) {
-      if (!is.list(response)) return(NULL)
-
-      value <- response$count
-      if (!is.null(value) && is.numeric(value) && value >= 0) {
-        return(as.integer(value))
-      }
-
-      return(NULL)
-    },
-
-    #' @description
-    #' Consolidar automaticamente todas as páginas de endpoints GET
-    #' @param endpoint Endpoint da API
-    #' @param params Lista de parâmetros de query
-    #' @return Lista consolidada de itens
-    .fetch_all_paginated_get = function(endpoint, params = list()) {
-      all_items <- list()
-      pagina <- 1
-      total_count <- NULL
-
-      repeat {
-        request_params <- params
-        request_params$pagina <- pagina
-        if (is.null(request_params$tamanho_pagina)) request_params$tamanho_pagina <- 5000
-        page_size <- as.integer(request_params$tamanho_pagina %||% 5000)
-
-        response <- self$.make_request(endpoint, request_params)
-        items <- self$.extract_items(response)
-        if (length(items) == 0) break
-
-        all_items <- c(all_items, items)
-
-        if (is.null(total_count)) {
-          total_count <- self$.get_total_count(response)
-        }
-
-        total_pages <- self$.get_total_pages(response)
-        if (!is.null(total_pages) && pagina >= total_pages) break
-        if (!is.null(total_count) && length(all_items) >= total_count) break
-        if (length(items) < page_size) break
-
-        pagina <- pagina + 1
-      }
-
-      # Garante ano_minimo/ano_maximo no cliente: uma sdic_api implantada antes desses filtros
-      # os ignora sem avisar e devolve a série inteira (2006+). Idempotente com a API nova.
-      minimo <- params$ano_minimo
-      maximo <- params$ano_maximo
-      if (!is.null(minimo) || !is.null(maximo)) {
-        all_items <- Filter(function(item) {
-          ano <- suppressWarnings(as.integer(item$ano %||% item$Ano))
-          length(ano) == 0 || is.na(ano) || ((is.null(minimo) || ano >= minimo) && (is.null(maximo) || ano <= maximo))
-        }, all_items)
-      }
-
-      return(all_items)
-    },
-
-    #' @description
-    #' Consolidar automaticamente todas as páginas de endpoints POST
-    #' @param endpoint Endpoint da API
-    #' @param body Corpo da requisição
-    #' @param params Lista de parâmetros de query
-    #' @return Lista consolidada de itens
-    .fetch_all_paginated_post = function(endpoint, body, params = list()) {
-      all_items <- list()
-      pagina <- 1
-      total_count <- NULL
-
-      repeat {
-        request_params <- params
-        request_params$pagina <- pagina
-        if (is.null(request_params$tamanho_pagina)) request_params$tamanho_pagina <- 5000
-        page_size <- as.integer(request_params$tamanho_pagina %||% 5000)
-
-        response <- self$.make_post_request(endpoint, body, request_params)
-        items <- self$.extract_items(response)
-        if (length(items) == 0) break
-
-        all_items <- c(all_items, items)
-
-        if (is.null(total_count)) {
-          total_count <- self$.get_total_count(response)
-        }
-
-        total_pages <- self$.get_total_pages(response)
-        if (!is.null(total_pages) && pagina >= total_pages) break
-        if (!is.null(total_count) && length(all_items) >= total_count) break
-        if (length(items) < page_size) break
-
-        pagina <- pagina + 1
-      }
-
-      return(all_items)
     },
 
     #' @description
@@ -666,6 +374,7 @@ Emprego <- R6::R6Class(
     #' @description
     #' Obter dados de estoque de emprego estadual - SEMPRE RETORNA TODOS OS REGISTROS
     #' Loop automático através de todas as páginas
+    #' @param ufs Sigla de UF ou vetor de siglas (opcional)
     #' @param sigla_uf Sigla da UF (ex: 'SP', 'RJ')
     #' @param uf Alias legado para sigla_uf
     #' @param codigos_cnae Vetor de códigos CNAE (opcional)
@@ -903,6 +612,7 @@ Emprego <- R6::R6Class(
     #' @description
     #' Obter dados de estoque de emprego para lista de códigos CNAE
     #' SEMPRE RETORNA TODOS OS REGISTROS - loop automático através de todas as páginas
+    #' @param ufs Sigla de UF ou vetor de siglas (opcional)
     #' @param codigos_cnae Vetor de códigos CNAE
     #' @param nivel_cnae Nível CNAE (2=divisão, 3=grupo)
     #' @param agregado Se TRUE, agrega todos os estados (nacional)
@@ -942,6 +652,7 @@ Emprego <- R6::R6Class(
     #' @description
     #' Obter dados de estoque de emprego para grupos de códigos CNAE
     #' SEMPRE RETORNA TODOS OS REGISTROS - loop automático através de todas as páginas
+    #' @param ufs Sigla de UF ou vetor de siglas (opcional)
     #' @param grupos_cnae Lista de grupos com nome_grupo e codigos_cnae
     #' @param nivel_cnae Nível CNAE (2=divisão, 3=grupo)
     #' @param agregado Se TRUE, agrega todos os estados (nacional)
@@ -1154,14 +865,11 @@ Emprego <- R6::R6Class(
 
 # CAMADA DE ABSTRAÇÃO - Funções públicas simplificadas para usuários finais
 
-# Operador null coalescing
-`%||%` <- function(x, y) {
-  if (is.null(x)) y else x
-}
 
 #' Validar e converter nível CNAE string para int da API
 #' @param nivel_cnae String do nível CNAE ('subclasse', 'divisao', 'grupo') 
 #' @return Valor inteiro ou NULL correspondente
+#' @noRd
 .validate_cnae_level <- function(nivel_cnae) {
   nivel_map <- list(
     'subclasse' = NULL,
@@ -1180,6 +888,7 @@ Emprego <- R6::R6Class(
 #' Validar códigos CNAE e determinar nível automaticamente
 #' @param codigos_cnae Vetor de códigos CNAE
 #' @return String do nível determinado
+#' @noRd
 .validate_cnae_codes <- function(codigos_cnae) {
   if (is.null(codigos_cnae) || length(codigos_cnae) == 0) {
     stop("Lista de códigos CNAE não pode estar vazia")
@@ -1209,6 +918,7 @@ Emprego <- R6::R6Class(
 #' @param df Tibble com dados
 #' @param nivel_agregacao Nível de agregação
 #' @return Tibble filtrado
+#' @noRd
 .filter_columns_by_aggregation <- function(df, nivel_agregacao) {
   if (nrow(df) == 0) {
     return(df)
@@ -1237,6 +947,7 @@ Emprego <- R6::R6Class(
 #' @param df Tibble com dados
 #' @param nivel_agregacao Nível de agregação  
 #' @return Tibble filtrado
+#' @noRd
 .filter_cnae_columns_for_grouped_methods <- function(df, nivel_agregacao) {
   if (nrow(df) == 0) {
     return(df)
@@ -1268,6 +979,7 @@ Emprego <- R6::R6Class(
 #' @param df Tibble com dados
 #' @param nivel_cnae Nível CNAE
 #' @return Tibble filtrado
+#' @noRd
 .filter_cnae_columns_by_level <- function(df, nivel_cnae) {
   if (nrow(df) == 0) {
     return(df)
@@ -1315,6 +1027,7 @@ Emprego <- R6::R6Class(
 #' @param df Tibble com dados
 #' @param nivel_cnae Nível CNAE
 #' @return Tibble verificado
+#' @noRd
 .ensure_hierarchical_cnae_columns <- function(df, nivel_cnae) {
   if (nrow(df) == 0) {
     return(df)
@@ -1341,6 +1054,7 @@ Emprego <- R6::R6Class(
 #' Normalizar colunas temporais de saldo para compatibilidade entre versões da API
 #' @param df Tibble com dados de saldo
 #' @return Tibble com competencia/mes_referencia e ano padronizados
+#' @noRd
 .ensure_temporal_columns_saldo <- function(df) {
   if (nrow(df) == 0) {
     return(df)
@@ -1384,6 +1098,7 @@ Emprego <- R6::R6Class(
 #' Converter dados mensais de estoque para anuais (último valor de dez/ano)
 #' @param df Tibble com dados de estoque (coluna Ano como data)
 #' @return Tibble com dados anuais
+#' @noRd
 .convert_monthly_to_annual_estoque <- function(df) {
   if (nrow(df) == 0) {
     return(df)
@@ -1409,7 +1124,7 @@ Emprego <- R6::R6Class(
   df_anual <- df %>%
     dplyr::group_by(dplyr::across(dplyr::all_of(cols_non_num))) %>%
     dplyr::summarise(
-      dplyr::across(dplyr::all_of(cols_numericas), \(x) last(x[!is.na(x)])),
+      dplyr::across(dplyr::all_of(cols_numericas), \(x) dplyr::last(x[!is.na(x)])),
       .groups = 'drop'
     ) %>%
     dplyr::rename(Ano = .ano_num)
@@ -1925,7 +1640,6 @@ get_estoque_emprego_nacional <- function(codigos_cnae = NULL,
 #'
 #' @param nome_grupo Nome para o grupo CNAE
 #' @param lista_cnae Vetor de códigos CNAE (mesmo número de dígitos)
-#' @param ano_minimo Ano mínimo para filtrar dados (opcional)
 #' @param agregado Se TRUE, agrega todos os estados
 #' @return Tibble com dados anuais agrupados por CNAE
 #' @export
@@ -2228,7 +1942,6 @@ get_date_bases <- function() {
 #' @param sigla_uf Sigla da UF ('SP', 'RJ', etc.)
 #' @param nome_grupo Nome para o grupo CNAE
 #' @param lista_cnae Vetor de códigos CNAE (mesmo número de dígitos)
-#' @param ano_minimo Ano mínimo para filtrar dados (opcional)
 #' @return Tibble com dados anuais agrupados por CNAE
 #' @export
 get_estoque_emprego_estadual_agrupado <- function(sigla_uf,
@@ -2573,83 +2286,77 @@ get_estoque_emprego_estimado_municipal_anual_agrupado <- function(sigla_uf,
 
 # ========== FUNÇÕES AUXILIARES PARA ESTOQUE ESTIMADO ==========
 
+# Sem o saldo de um ano, o acumulado dos anos seguintes sairia errado: melhor falhar.
+.falha_saldo_do_ano <- function(ano, e) {
+  .sdic_abortar(sprintf("Estoque estimado: não foi possível obter o saldo de %s (%s).", ano, conditionMessage(e)),
+                status_code = e$status_code, endpoint = e$endpoint)
+}
+
 # Função auxiliar para obter dados anuais de saldo
-.get_annual_saldo_data <- function(nivel_agregacao, nivel_cnae, codigo_cnae, 
+.get_annual_saldo_data <- function(nivel_agregacao, nivel_cnae, codigo_cnae,
                                    ano_inicio, ano_limite, sigla_uf = NULL) {
   dfs_saldo <- list()
-  
+
   for (ano in ano_inicio:ano_limite) {
-    tryCatch({
+    df_saldo_anual <- tryCatch({
       if (nivel_agregacao == 'nacional') {
-        df_saldo_anual <- get_saldo_emprego_nacional_anual(nivel_cnae, codigo_cnae, ano)
-      } else if (nivel_agregacao == 'estadual') {
-        df_saldo_anual <- get_saldo_emprego_estadual_anual(sigla_uf, nivel_cnae, codigo_cnae, ano)
+        get_saldo_emprego_nacional_anual(nivel_cnae, codigo_cnae, ano)
+      } else {
+        get_saldo_emprego_estadual_anual(sigla_uf, nivel_cnae, codigo_cnae, ano)
       }
-      
+    }, error = function(e) .falha_saldo_do_ano(ano, e))
+
+    if (nrow(df_saldo_anual) > 0) {
+      df_saldo_anual <- df_saldo_anual[df_saldo_anual$ano == ano, ]
       if (nrow(df_saldo_anual) > 0) {
-        df_saldo_anual <- df_saldo_anual[df_saldo_anual$ano == ano, ]
-        if (nrow(df_saldo_anual) > 0) {
-          dfs_saldo[[length(dfs_saldo) + 1]] <- df_saldo_anual
-        }
+        dfs_saldo[[length(dfs_saldo) + 1]] <- df_saldo_anual
       }
-    }, error = function(e) {
-      # Se falhar para algum ano, continua
-    })
+    }
   }
-  
+
   if (length(dfs_saldo) == 0) {
     return(tibble::tibble())
   }
-  
+
   return(dplyr::bind_rows(dfs_saldo))
 }
 
 # Função auxiliar para obter dados anuais agrupados de saldo
-.get_grouped_annual_saldo_data <- function(nivel_agregacao, nome_grupo, lista_cnae, 
+.get_grouped_annual_saldo_data <- function(nivel_agregacao, nome_grupo, lista_cnae,
                                            ano_inicio, ano_limite, sigla_uf = NULL) {
   dfs_saldo <- list()
-  
+
   for (ano in ano_inicio:ano_limite) {
-    tryCatch({
+    df_mensal <- tryCatch({
       if (nivel_agregacao == 'nacional') {
-        df_mensal <- get_saldo_emprego_nacional_mensal_agrupado(nome_grupo, lista_cnae, 
-                                                               paste0(ano, "-01-01"))
-      } else if (nivel_agregacao == 'estadual') {
-        df_mensal <- get_saldo_emprego_estadual_mensal_agrupado(sigla_uf, nome_grupo, lista_cnae, 
-                                                              paste0(ano, "-01-01"))
+        get_saldo_emprego_nacional_mensal_agrupado(nome_grupo, lista_cnae, paste0(ano, "-01-01"))
+      } else {
+        get_saldo_emprego_estadual_mensal_agrupado(sigla_uf, nome_grupo, lista_cnae, paste0(ano, "-01-01"))
       }
-      
-      if (nrow(df_mensal) > 0) {
-        # Filtrar apenas o ano atual e agregar para anual
-        df_mensal$competencia <- lubridate::as_date(df_mensal$competencia)
-        df_mensal <- df_mensal[lubridate::year(df_mensal$competencia) == ano, ]
-        
-        if (nrow(df_mensal) > 0) {
-          # Agregar para anual
-          df_mensal$ano <- ano
-          cols_numericas <- names(df_mensal)[grepl("(saldo|admiss|deslig)", tolower(names(df_mensal)))]
-          cols_agrupamento <- c('ano', 'nome_grupo')
-          if ('sigla_uf' %in% names(df_mensal)) {
-            cols_agrupamento <- c(cols_agrupamento, 'sigla_uf')
-          }
-          
-          df_anual <- df_mensal %>%
-            dplyr::group_by_at(cols_agrupamento) %>%
-            dplyr::summarise_at(cols_numericas, sum, na.rm = TRUE) %>%
-            dplyr::ungroup()
-          
-          dfs_saldo[[length(dfs_saldo) + 1]] <- df_anual
-        }
-      }
-    }, error = function(e) {
-      # Continue on error
-    })
+    }, error = function(e) .falha_saldo_do_ano(ano, e))
+
+    if (nrow(df_mensal) == 0 || !"competencia" %in% names(df_mensal)) next
+
+    # Filtrar apenas o ano atual e agregar para anual
+    df_mensal$competencia <- lubridate::as_date(df_mensal$competencia)
+    df_mensal <- df_mensal[lubridate::year(df_mensal$competencia) == ano, ]
+    if (nrow(df_mensal) == 0) next
+
+    df_mensal$ano <- ano
+    cols_numericas <- names(df_mensal)[grepl("(saldo|admiss|deslig)", tolower(names(df_mensal)))]
+    cols_agrupamento <- intersect(c('ano', 'nome_grupo', 'sigla_uf'), names(df_mensal))
+
+    df_anual <- df_mensal |>
+      dplyr::group_by(dplyr::across(dplyr::all_of(cols_agrupamento))) |>
+      dplyr::summarise(dplyr::across(dplyr::all_of(cols_numericas), \(x) sum(x, na.rm = TRUE)), .groups = "drop")
+
+    dfs_saldo[[length(dfs_saldo) + 1]] <- df_anual
   }
-  
+
   if (length(dfs_saldo) == 0) {
     return(tibble::tibble())
   }
-  
+
   return(dplyr::bind_rows(dfs_saldo))
 }
 

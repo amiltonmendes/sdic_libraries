@@ -1,20 +1,22 @@
-#' Comex API Client para R
+#' Cliente da sdic_api para comércio exterior (ComexStat)
 #'
-#' Uma classe R6 para acessar dados de comércio exterior (comex) da sdic_api,
-#' centralizando o acesso que hoje está espalhado em chamadas diretas à API
-#' pública do MDIC (ComexStat) em múltiplos consumidores da unidade.
+#' Classe R6 de baixo nível: uma requisição por chamada (com todas as páginas) e resposta
+#' como lista de registros, com as colunas como a API devolve. Para tabelas (`tibble`) no
+#' esquema padrão da biblioteca, use as funções `get_*` de comex (veja
+#' `listar_bases(tema = "comex")`). A biblioteca só consulta a sdic_api, nunca o ComexStat
+#' diretamente.
 #'
-#' Mesma estrutura de \code{\link{Emprego}} (mesmo padrão de configuração via
-#' \code{.env}, tratamento de erro e paginação automática).
+#' Endereço, chave e tempo limite vêm de [sdic_config()] (`SDIC_API_URL`, `SDIC_API_KEY`,
+#' `SDIC_TIMEOUT`, em variável de ambiente ou `.env.local`); os argumentos de `$new()` têm
+#' precedência. A chave fica em campo privado e não aparece em `print()`.
 #'
 #' @docType class
 #' @importFrom R6 R6Class
 #' @importFrom httr2 request req_url_query req_headers req_timeout req_perform resp_body_json resp_status req_body_json
-#' @importFrom cli cli_abort cli_alert_success
 #' @export
 #' @keywords comex, comercio exterior, dados, api
-#' @return Objeto R6 para interagir com a API de comex
-#' @format \code{\link{R6Class}} object.
+#' @return Objeto R6 para interagir com as rotas de comex da sdic_api
+#' @format Classe [R6::R6Class], herdeira de `ClienteAPI`.
 #' @examples
 #' \dontrun{
 #' api <- Comex$new()
@@ -27,249 +29,8 @@
 #' }
 Comex <- R6::R6Class(
   "Comex",
+  inherit = ClienteAPI,
   public = list(
-    #' @field base_url A URL base para a sdic_api
-    base_url = NULL,
-
-    #' @field timeout Timeout das requisições em segundos
-    timeout = NULL,
-
-    #' @field api_key Chave da API para autenticação
-    api_key = NULL,
-
-    #' @description
-    #' Inicializar cliente da API de Comex com configuração automática.
-    #' Variáveis de ambiente são carregadas automaticamente - nenhuma ação do usuário necessária.
-    #' @param base_url Sobrescrever URL base da API auto-detectada
-    #' @param timeout Timeout das requisições. Padrão 30 segundos.
-    #' @param api_key Sobrescrever chave da API auto-detectada
-    initialize = function(base_url = NULL, timeout = 30, api_key = NULL) {
-      self$.load_env_files()
-
-      self$base_url <- base_url %||%
-                       Sys.getenv("COMEX_API_BASE_URL",
-                                  "https://sdicapi.dados.ninja")
-
-      self$timeout <- as.numeric(Sys.getenv("API_TIMEOUT", as.character(timeout)))
-      resolved_api_key <- api_key %||% Sys.getenv("COMEX_API_KEY", "")
-      self$api_key <- if (nzchar(resolved_api_key)) resolved_api_key else NULL
-
-      version <- Sys.getenv("SDIC_VERSION", "0.5.4")
-      cli::cli_alert_success(
-        "API de Comex inicializada (v{version}) - configuração carregada automaticamente"
-      )
-
-      private$.ncm_isic_mapa_cache <- NULL
-    },
-
-    #' @description
-    #' Carregar automaticamente arquivos .env (experiência fluida)
-    .load_env_files = function() {
-      env_locations <- c(
-        file.path(getwd(), ".env"),
-        file.path(Sys.getenv("HOME"), ".env"),
-        "/etc/sdic/.env"
-      )
-      for (env_file in env_locations) {
-        if (file.exists(env_file)) {
-          self$.load_env_file(env_file)
-          break
-        }
-      }
-    },
-
-    #' @description
-    #' Carregar arquivo .env único
-    .load_env_file = function(env_file_path) {
-      tryCatch({
-        lines <- readLines(env_file_path, warn = FALSE)
-        for (line in lines) {
-          line <- trimws(line)
-          if (nchar(line) > 0 && !startsWith(line, "#") && grepl("=", line)) {
-            parts <- strsplit(line, "=", fixed = TRUE)[[1]]
-            if (length(parts) >= 2) {
-              key <- trimws(parts[1])
-              value <- trimws(paste(parts[-1], collapse = "="))
-              if ((startsWith(value, '"') && endsWith(value, '"')) ||
-                  (startsWith(value, "'") && endsWith(value, "'"))) {
-                value <- substr(value, 2, nchar(value) - 1)
-              }
-              if (Sys.getenv(key, "") == "") {
-                Sys.setenv(setNames(value, key))
-              }
-            }
-          }
-        }
-      }, error = function(e) invisible(NULL))
-    },
-
-    #' @description
-    #' Fazer uma requisição HTTP GET para a API usando httr2
-    #' @param endpoint Caminho do endpoint da API
-    #' @param params Parâmetros de query (opcional)
-    .make_request = function(endpoint, params = NULL) {
-      url <- paste0(gsub("/$", "", self$base_url), "/", gsub("^/", "", endpoint))
-      req <- httr2::request(url)
-      if (!is.null(params)) {
-        req <- httr2::req_url_query(req, !!!params, .multi = "comma")
-      }
-      req <- httr2::req_headers(
-        req,
-        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.4")),
-        "Accept" = "application/json",
-        "Content-Type" = "application/json"
-      )
-      if (!is.null(self$api_key)) {
-        req <- httr2::req_headers(req,
-          "Authorization" = paste("Bearer", self$api_key),
-          "x-api-key" = self$api_key
-        )
-      }
-      req <- httr2::req_timeout(req, self$timeout)
-
-      tryCatch({
-        resp <- .req_perform_cache(req)
-        if (httr2::resp_status(resp) != 200) {
-          cli::cli_abort("Falha na requisição da API com código: {httr2::resp_status(resp)}")
-        }
-        httr2::resp_body_json(resp)
-      }, error = function(e) {
-        cli::cli_abort("Falha na requisição da API: {e$message}")
-      })
-    },
-
-    #' @description
-    #' Fazer uma requisição HTTP POST para a API usando httr2
-    #' @param endpoint Caminho do endpoint da API
-    #' @param body Corpo da requisição (será convertido para JSON)
-    #' @param params Parâmetros de query (opcional)
-    .make_post_request = function(endpoint, body = NULL, params = NULL) {
-      url <- paste0(gsub("/$", "", self$base_url), "/", gsub("^/", "", endpoint))
-      req <- httr2::request(url)
-      if (!is.null(params)) {
-        req <- httr2::req_url_query(req, !!!params, .multi = "comma")
-      }
-      req <- httr2::req_headers(
-        req,
-        "User-Agent" = paste0("sdic-libraries-r/", Sys.getenv("SDIC_VERSION", "0.5.4")),
-        "Accept" = "application/json",
-        "Content-Type" = "application/json"
-      )
-      if (!is.null(self$api_key)) {
-        req <- httr2::req_headers(req,
-          "Authorization" = paste("Bearer", self$api_key),
-          "x-api-key" = self$api_key
-        )
-      }
-      req <- httr2::req_timeout(req, self$timeout)
-      if (!is.null(body)) {
-        req <- httr2::req_body_json(req, body)
-      }
-
-      tryCatch({
-        resp <- .req_perform_cache(req)
-        if (httr2::resp_status(resp) != 200) {
-          cli::cli_abort("Falha na requisição da API com código: {httr2::resp_status(resp)}")
-        }
-        httr2::resp_body_json(resp)
-      }, error = function(e) {
-        cli::cli_abort("Falha na requisição da API: {e$message}")
-      })
-    },
-
-    #' @description
-    #' Extrair itens de respostas paginadas
-    #' @param response Resposta da API
-    .extract_items = function(response) {
-      if (is.list(response) && !is.null(response$items)) {
-        return(response$items %||% list())
-      }
-      if (is.list(response) && is.null(names(response))) {
-        return(response)
-      }
-      return(list())
-    },
-
-    #' @description
-    #' Ler total de registros quando disponível (`count`)
-    #' @param response Resposta da API
-    .get_total_count = function(response) {
-      if (!is.list(response)) return(NULL)
-      value <- response$count
-      if (!is.null(value) && is.numeric(value) && value >= 0) return(as.integer(value))
-      return(NULL)
-    },
-
-    #' @description
-    #' Consolidar automaticamente todas as páginas de endpoints GET
-    #' @param endpoint Endpoint da API
-    #' @param params Lista de parâmetros de query
-    .fetch_all_paginated_get = function(endpoint, params = list()) {
-      all_items <- list()
-      pagina <- 1
-      total_count <- NULL
-
-      repeat {
-        request_params <- params
-        request_params$pagina <- pagina
-        if (is.null(request_params$tamanho_pagina)) request_params$tamanho_pagina <- 5000
-        page_size <- as.integer(request_params$tamanho_pagina %||% 5000)
-
-        response <- self$.make_request(endpoint, request_params)
-        items <- self$.extract_items(response)
-        if (length(items) == 0) break
-
-        all_items <- c(all_items, items)
-
-        if (is.null(total_count)) total_count <- self$.get_total_count(response)
-        if (!is.null(total_count) && length(all_items) >= total_count) break
-        if (length(items) < page_size) break
-
-        pagina <- pagina + 1
-      }
-
-      return(all_items)
-    },
-
-    #' @description
-    #' Consolidar automaticamente todas as páginas de endpoints POST.
-    #' A paginação é embutida tanto no corpo quanto nos parâmetros de query —
-    #' o endpoint de NCM (`/exportacao_agregada_ncm`) espera `pagina`/
-    #' `tamanho_pagina` dentro do corpo JSON, diferente do padrão GET.
-    #' @param endpoint Endpoint da API
-    #' @param body Corpo da requisição
-    #' @param params Lista de parâmetros de query
-    .fetch_all_paginated_post = function(endpoint, body, params = list()) {
-      all_items <- list()
-      pagina <- 1
-      total_count <- NULL
-
-      repeat {
-        request_params <- params
-        request_params$pagina <- pagina
-        if (is.null(request_params$tamanho_pagina)) request_params$tamanho_pagina <- 5000
-        page_size <- as.integer(request_params$tamanho_pagina %||% 5000)
-
-        request_body <- body
-        request_body$pagina <- pagina
-        if (is.null(request_body$tamanho_pagina)) request_body$tamanho_pagina <- page_size
-
-        response <- self$.make_post_request(endpoint, request_body, request_params)
-        items <- self$.extract_items(response)
-        if (length(items) == 0) break
-
-        all_items <- c(all_items, items)
-
-        if (is.null(total_count)) total_count <- self$.get_total_count(response)
-        if (!is.null(total_count) && length(all_items) >= total_count) break
-        if (length(items) < page_size) break
-
-        pagina <- pagina + 1
-      }
-
-      return(all_items)
-    },
-
     # ========== CATÁLOGO NCM -> ISIC ==========
 
     #' @description
@@ -540,6 +301,8 @@ Comex <- R6::R6Class(
   ),
   private = list(
     .ncm_isic_mapa_cache = NULL,
+    multi = "comma",            # vetor em parâmetro de query vira "a,b"
+    paginacao_no_corpo = TRUE,  # `/exportacao_agregada_ncm` espera `pagina`/`tamanho_pagina` também no corpo
 
     .get_ncm_nacional_mensal = function(endpoint, ano_minimo, mes_maximo, anos, lista_ncms, secao, agregado_ano = FALSE) {
       body <- list(

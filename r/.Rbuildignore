@@ -9,3 +9,9 @@
 ^codecov\.yml$
 ^\.pre-commit-config\.yaml$
 ^data-raw$
+^test_.*\.R$
+^testes_consolidados\.R$
+^validacao_final\.R$
+^install.*\.R$
+^examples$
+^\.env.*$

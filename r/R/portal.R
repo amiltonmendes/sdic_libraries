@@ -1,97 +1,63 @@
-#' Leitura dos artefatos de emprego publicados no GitHub Pages
-#'
-#' Lado leitor do pipeline de emprego. O projeto `cgid_cargas` busca CAGED/RAIS
-#' (via a API desta biblioteca), gera dois artefatos por estado e os publica no
-#' GitHub Pages, em dois ambientes (`producao` e `homologacao`):
-#'
-#' \preformatted{
-#'   Portal    : <BASE>/{ambiente}/{UF}/emprego.json             (schema v1.1)
-#'   Relatorio : <BASE>/{ambiente}/cache/{UF}/emprego_cache.json (schema 1.0)
-#' }
-#'
-#' Estas funcoes leem esses JSONs de volta e os entregam como `tibble`/`list`:
-#'   - Relatorio (cache 1.0): dados brutos `saldo` (CAGED mensal por divisao
-#'     CNAE), `estoque` (RAIS por divisao) e `acum12m_total`. Para analise.
-#'   - Portal (v1.1): payload pronto para apresentacao (`capa_kpi`, `kpis`,
-#'     `charts`, `ranked_lists`, `breakdowns`), ja em pt-BR.
-#'
-#' Configuracao via variaveis de ambiente:
-#'   `PORTAL_EMPREGO_BASE_URL` (URL base) e `PORTAL_EMPREGO_AMBIENTE` (ambiente).
-#'
-#' @importFrom httr2 request req_timeout req_headers req_error req_perform resp_status resp_body_json
-#' @importFrom tibble as_tibble tibble
-#' @importFrom rlang abort
-#' @name portal_emprego
-NULL
+# portal.R — DEPRECIADO: leitura do cache de emprego no layout antigo do GitHub Pages.
+#
+# Estes arquivos eram publicados pelo `cgid_cargas`, que foi desligado; o pipeline novo
+# (`carga_base/publicacao`) não produz `cache/{UF}/emprego_cache.json`. As funções continuam
+# funcionando enquanto os arquivos antigos existirem, com aviso de depreciação.
+#
+# Use no lugar: `get_kpis_publicados(uf, "emprego")`, `get_series_publicadas`,
+# `get_ranking_publicado`, `get_detalhamento_publicado` e `get_secao_publicada`. Para saldo e
+# estoque por divisão CNAE, use as funções da API (`get_saldo_emprego_estadual_mensal`,
+# `get_estoque_emprego_estadual`). O arquivo `{UF}/emprego_relatorio.json` do bucket de dados
+# não tem função: leia com `ler_json_publicado("dados", "<ambiente>/<UF>/emprego_relatorio.json")`.
+# Espelho de `python/sdic_libraries/dados/emprego/portal.py`.
 
-# URL publica base onde o cgid_cargas publica os artefatos de emprego.
-.PORTAL_EMPREGO_BASE_URL_DEFAULT <- "https://amiltonmendes.github.io/sdic_libraries"
 .PORTAL_EMPREGO_UFS_27 <- c(
   "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS",
   "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC",
   "SP", "SE", "TO"
 )
+.PORTAL_SUBSTITUTA_RELATORIO <- paste0(
+  "get_saldo_emprego_estadual_mensal/get_estoque_emprego_estadual (API) ou ",
+  "ler_json_publicado(\"dados\", \".../emprego_relatorio.json\")")
+.PORTAL_SUBSTITUTA_PORTAL <- "get_kpis_publicados(uf, \"emprego\") e as demais funções de seções publicadas"
 
 # ── Helpers internos ──────────────────────────────────────────────────────────
 
-.portal_emprego_base_url <- function() {
-  url <- Sys.getenv("PORTAL_EMPREGO_BASE_URL", unset = "")
-  if (!nzchar(url)) url <- .PORTAL_EMPREGO_BASE_URL_DEFAULT
-  sub("/+$", "", url)
+.portal_depreciada <- function(funcao, substituta) {
+  .Deprecated(msg = sprintf("%s lê o layout antigo do Pages e será removida. Use %s.", funcao, substituta))
 }
 
-.portal_emprego_validar_ambiente <- function(ambiente) {
-  amb <- tolower(trimws(ambiente %||% "producao"))
-  if (!amb %in% c("producao", "homologacao")) {
-    rlang::abort(sprintf(
-      "ambiente invalido: '%s'. Use 'producao' ou 'homologacao'.", ambiente
-    ))
-  }
-  amb
-}
-
-.portal_emprego_path_portal <- function(uf, ambiente) {
-  sprintf("%s/%s/emprego.json", ambiente, toupper(uf))
-}
-
-.portal_emprego_path_relatorio <- function(uf, ambiente) {
-  sprintf("%s/cache/%s/emprego_cache.json", ambiente, toupper(uf))
-}
-
-# GET de um JSON publicado. 404 -> NULL se opcional, senao erro.
+# GET de um JSON publicado (origem `politicas`, sem chave). Arquivo inexistente -> NULL se
+# `opcional`; qualquer outra falha (rede, 5xx) é sempre erro.
 .portal_emprego_fetch_json <- function(path, opcional = FALSE) {
-  timeout <- as.integer(Sys.getenv("API_TIMEOUT", unset = "30"))
-  version <- Sys.getenv("SDIC_VERSION", unset = "0.5.4")
-  url <- paste0(.portal_emprego_base_url(), "/", sub("^/+", "", path))
-
-  resp <- tryCatch(
-    httr2::request(url) |>
-      httr2::req_timeout(timeout) |>
-      httr2::req_headers(
-        Accept = "application/json",
-        `User-Agent` = paste0("sdic-libraries/", version)
-      ) |>
-      httr2::req_error(is_error = function(resp) FALSE) |>
-      httr2::req_perform(),
-    error = function(e) {
-      if (opcional) return(NULL)
-      rlang::abort(paste0(
-        "Problema de conectividade ao buscar dados publicados. ",
-        "Verifique sua conexao e tente novamente."
-      ))
-    }
+  tryCatch(
+    .sdic_json_publicado("politicas", path, simplifyVector = TRUE),
+    sdic_nao_publicado = function(e) if (opcional) NULL else stop(e)
   )
-  if (is.null(resp)) return(NULL)
+}
 
-  status <- httr2::resp_status(resp)
-  if (status == 404) {
-    if (opcional) return(NULL)
-    rlang::abort(sprintf("Artefato nao encontrado (404): %s", path))
+.portal_emprego_relatorio <- function(uf, ambiente, opcional = FALSE) {
+  .portal_emprego_fetch_json(sprintf("%s/cache/%s/emprego_cache.json", ambiente, toupper(uf)), opcional)
+}
+
+.portal_emprego_portal <- function(uf, ambiente, opcional = FALSE) {
+  .portal_emprego_fetch_json(sprintf("%s/%s/emprego.json", ambiente, toupper(uf)), opcional)
+}
+
+# Empilha as UFs que têm arquivo, com a coluna `uf`, e avisa quais faltaram.
+.portal_emprego_todos_estados <- function(por_uf) {
+  frames <- list()
+  for (uf in .PORTAL_EMPREGO_UFS_27) {
+    df <- por_uf(uf)
+    if (!is.null(df) && nrow(df) > 0) frames[[uf]] <- cbind(uf = uf, df)
   }
-  if (status >= 400) {
-    rlang::abort(sprintf("Falha ao buscar artefato publicado (HTTP %s).", status))
+  if (length(frames) == 0) return(tibble::tibble())
+  faltam <- sort(setdiff(.PORTAL_EMPREGO_UFS_27, names(frames)))
+  if (length(faltam) > 0) {
+    warning(sprintf("Sem arquivo publicado para %d UF(s): %s. O resultado não cobre o país inteiro.",
+                    length(faltam), paste(faltam, collapse = ", ")), call. = FALSE)
   }
-  httr2::resp_body_json(resp, simplifyVector = TRUE)
+  tibble::as_tibble(dplyr::bind_rows(frames))
 }
 
 # Reforca dtypes do saldo (competencia/cnae_divisao como character com zero a esquerda).
@@ -145,15 +111,20 @@ NULL
 
 # ── RELATORIO (cache 1.0 — dados brutos) ──────────────────────────────────────
 
-#' Relatorio completo de emprego de uma UF (cache 1.0)
+#' Relatório completo de emprego de uma UF (cache 1.0) — depreciada
+#'
+#' Lê o layout antigo do Pages e será removida. Use [get_saldo_emprego_estadual_mensal()] e
+#' [get_estoque_emprego_estadual()] (API) ou
+#' `ler_json_publicado("dados", "<ambiente>/<UF>/emprego_relatorio.json")`.
 #'
 #' @param uf Sigla da UF (ex.: "SP").
-#' @param ambiente "producao" (default) ou "homologacao".
+#' @param ambiente `"producao"` ou `"homologacao"` (padrão: `SDIC_AMBIENTE`, depois
+#'   `"producao"`).
 #' @return `list(saldo, estoque, acum12m_total, metadata)`.
 #' @export
-get_relatorio_emprego_estadual <- function(uf, ambiente = "producao") {
-  amb <- .portal_emprego_validar_ambiente(ambiente)
-  payload <- .portal_emprego_fetch_json(.portal_emprego_path_relatorio(uf, amb))
+get_relatorio_emprego_estadual <- function(uf, ambiente = NULL) {
+  .portal_depreciada("get_relatorio_emprego_estadual", .PORTAL_SUBSTITUTA_RELATORIO)
+  payload <- .portal_emprego_relatorio(uf, .sdic_ambiente(ambiente))
   acum <- if (is.null(payload$acum12m_total)) NULL else as.integer(payload$acum12m_total)
   list(
     saldo = .portal_emprego_df_saldo(payload),
@@ -163,110 +134,108 @@ get_relatorio_emprego_estadual <- function(uf, ambiente = "producao") {
   )
 }
 
-#' Saldo CAGED mensal por divisao CNAE (cache) de uma UF
+#' Saldo CAGED mensal por divisão CNAE (cache) de uma UF — depreciada
+#'
+#' Use [get_saldo_emprego_estadual_mensal()].
 #' @inheritParams get_relatorio_emprego_estadual
 #' @return Tibble com o saldo mensal.
 #' @export
-get_relatorio_emprego_saldo_estadual <- function(uf, ambiente = "producao") {
-  amb <- .portal_emprego_validar_ambiente(ambiente)
-  payload <- .portal_emprego_fetch_json(.portal_emprego_path_relatorio(uf, amb))
-  .portal_emprego_df_saldo(payload)
+get_relatorio_emprego_saldo_estadual <- function(uf, ambiente = NULL) {
+  .portal_depreciada("get_relatorio_emprego_saldo_estadual", .PORTAL_SUBSTITUTA_RELATORIO)
+  .portal_emprego_df_saldo(.portal_emprego_relatorio(uf, .sdic_ambiente(ambiente)))
 }
 
-#' Estoque RAIS por divisao CNAE (cache) de uma UF
+#' Estoque RAIS por divisão CNAE (cache) de uma UF — depreciada
+#'
+#' Use [get_estoque_emprego_estadual()].
 #' @inheritParams get_relatorio_emprego_estadual
 #' @return Tibble com o estoque.
 #' @export
-get_relatorio_emprego_estoque_estadual <- function(uf, ambiente = "producao") {
-  amb <- .portal_emprego_validar_ambiente(ambiente)
-  payload <- .portal_emprego_fetch_json(.portal_emprego_path_relatorio(uf, amb))
-  .portal_emprego_df_estoque(payload)
+get_relatorio_emprego_estoque_estadual <- function(uf, ambiente = NULL) {
+  .portal_depreciada("get_relatorio_emprego_estoque_estadual", .PORTAL_SUBSTITUTA_RELATORIO)
+  .portal_emprego_df_estoque(.portal_emprego_relatorio(uf, .sdic_ambiente(ambiente)))
 }
 
-#' Metadados do relatorio (reference, fonte, gerado_em, ...) de uma UF
+#' Metadados do relatório (reference, fonte, gerado_em, ...) de uma UF — depreciada
 #' @inheritParams get_relatorio_emprego_estadual
 #' @return Lista de metadados.
 #' @export
-get_relatorio_emprego_metadata_estadual <- function(uf, ambiente = "producao") {
-  amb <- .portal_emprego_validar_ambiente(ambiente)
-  payload <- .portal_emprego_fetch_json(.portal_emprego_path_relatorio(uf, amb))
-  payload$metadata %||% list()
+get_relatorio_emprego_metadata_estadual <- function(uf, ambiente = NULL) {
+  .portal_depreciada("get_relatorio_emprego_metadata_estadual", .PORTAL_SUBSTITUTA_RELATORIO)
+  .portal_emprego_relatorio(uf, .sdic_ambiente(ambiente))$metadata %||% list()
 }
 
-#' Saldo de todas as UFs disponiveis, empilhado, com coluna `uf`
-#' @param ambiente "producao" (default) ou "homologacao".
+#' Saldo de todas as UFs disponíveis, empilhado, com coluna `uf` — depreciada
+#'
+#' Avisa quais UFs não têm arquivo publicado. Falha de rede é erro (só arquivo inexistente é
+#' tratado como UF ausente).
+#' @inheritParams get_relatorio_emprego_estadual
 #' @return Tibble empilhado.
 #' @export
-get_relatorio_emprego_saldo_todos_estados <- function(ambiente = "producao") {
-  amb <- .portal_emprego_validar_ambiente(ambiente)
-  frames <- list()
-  for (uf in .PORTAL_EMPREGO_UFS_27) {
-    payload <- .portal_emprego_fetch_json(.portal_emprego_path_relatorio(uf, amb), opcional = TRUE)
-    df <- .portal_emprego_df_saldo(payload)
-    if (nrow(df) > 0) {
-      df <- cbind(uf = uf, df)
-      frames[[length(frames) + 1]] <- df
-    }
-  }
-  if (length(frames) == 0) return(tibble::tibble())
-  tibble::as_tibble(dplyr::bind_rows(frames))
+get_relatorio_emprego_saldo_todos_estados <- function(ambiente = NULL) {
+  .portal_depreciada("get_relatorio_emprego_saldo_todos_estados", .PORTAL_SUBSTITUTA_RELATORIO)
+  amb <- .sdic_ambiente(ambiente)
+  .portal_emprego_todos_estados(function(uf) .portal_emprego_df_saldo(.portal_emprego_relatorio(uf, amb, opcional = TRUE)))
 }
 
-#' Estoque de todas as UFs disponiveis, empilhado, com coluna `uf`
-#' @param ambiente "producao" (default) ou "homologacao".
+#' Estoque de todas as UFs disponíveis, empilhado, com coluna `uf` — depreciada
+#'
+#' Avisa quais UFs não têm arquivo publicado. Falha de rede é erro.
+#' @inheritParams get_relatorio_emprego_estadual
 #' @return Tibble empilhado.
 #' @export
-get_relatorio_emprego_estoque_todos_estados <- function(ambiente = "producao") {
-  amb <- .portal_emprego_validar_ambiente(ambiente)
-  frames <- list()
-  for (uf in .PORTAL_EMPREGO_UFS_27) {
-    payload <- .portal_emprego_fetch_json(.portal_emprego_path_relatorio(uf, amb), opcional = TRUE)
-    df <- .portal_emprego_df_estoque(payload)
-    if (nrow(df) > 0) {
-      df <- cbind(uf = uf, df)
-      frames[[length(frames) + 1]] <- df
-    }
-  }
-  if (length(frames) == 0) return(tibble::tibble())
-  tibble::as_tibble(dplyr::bind_rows(frames))
+get_relatorio_emprego_estoque_todos_estados <- function(ambiente = NULL) {
+  .portal_depreciada("get_relatorio_emprego_estoque_todos_estados", .PORTAL_SUBSTITUTA_RELATORIO)
+  amb <- .sdic_ambiente(ambiente)
+  .portal_emprego_todos_estados(function(uf) .portal_emprego_df_estoque(.portal_emprego_relatorio(uf, amb, opcional = TRUE)))
 }
 
 # ── PORTAL (payload v1.1) ─────────────────────────────────────────────────────
 
-#' Payload completo do portal (v1.1) de uma UF
+#' Payload completo do portal (v1.1) de uma UF — depreciada
+#'
+#' Use [get_secao_publicada()] e as demais funções de seções publicadas.
 #' @inheritParams get_relatorio_emprego_estadual
 #' @return Lista com o payload do portal, como publicado.
 #' @export
-get_portal_emprego_estadual <- function(uf, ambiente = "producao") {
-  amb <- .portal_emprego_validar_ambiente(ambiente)
-  .portal_emprego_fetch_json(.portal_emprego_path_portal(uf, amb)) %||% list()
+get_portal_emprego_estadual <- function(uf, ambiente = NULL) {
+  .portal_depreciada("get_portal_emprego_estadual", .PORTAL_SUBSTITUTA_PORTAL)
+  .portal_emprego_portal(uf, .sdic_ambiente(ambiente)) %||% list()
 }
 
-#' KPI de capa (`capa_kpi`) de uma UF
+#' KPI de capa (`capa_kpi`) de uma UF — depreciada
+#'
+#' Use [get_kpis_publicados()].
 #' @inheritParams get_relatorio_emprego_estadual
 #' @return Lista com o KPI de capa.
 #' @export
-get_portal_emprego_capa_estadual <- function(uf, ambiente = "producao") {
-  payload <- get_portal_emprego_estadual(uf, ambiente)
-  payload$capa_kpi %||% list()
+get_portal_emprego_capa_estadual <- function(uf, ambiente = NULL) {
+  .portal_depreciada("get_portal_emprego_capa_estadual", .PORTAL_SUBSTITUTA_PORTAL)
+  .portal_emprego_portal(uf, .sdic_ambiente(ambiente))$capa_kpi %||% list()
 }
 
-#' KPIs do portal de uma UF como tibble
+#' KPIs do portal de uma UF como tibble — depreciada
+#'
+#' Use [get_kpis_publicados()].
 #' @inheritParams get_relatorio_emprego_estadual
 #' @return Tibble de KPIs.
 #' @export
-get_portal_emprego_kpis_estadual <- function(uf, ambiente = "producao") {
-  payload <- get_portal_emprego_estadual(uf, ambiente)
+get_portal_emprego_kpis_estadual <- function(uf, ambiente = NULL) {
+  .portal_depreciada("get_portal_emprego_kpis_estadual", .PORTAL_SUBSTITUTA_PORTAL)
+  payload <- .portal_emprego_portal(uf, .sdic_ambiente(ambiente))
   if (is.null(payload$kpis) || length(payload$kpis) == 0) return(tibble::tibble())
   tibble::as_tibble(payload$kpis)
 }
 
-#' Series dos graficos do portal de uma UF
+#' Séries dos gráficos do portal de uma UF — depreciada
+#'
+#' Use [get_series_publicadas()].
 #' @inheritParams get_relatorio_emprego_estadual
 #' @return Lista nomeada `{chart_id: tibble(competencia, valor)}`.
 #' @export
-get_portal_emprego_charts_estadual <- function(uf, ambiente = "producao") {
-  payload <- get_portal_emprego_estadual(uf, ambiente)
+get_portal_emprego_charts_estadual <- function(uf, ambiente = NULL) {
+  .portal_depreciada("get_portal_emprego_charts_estadual", .PORTAL_SUBSTITUTA_PORTAL)
+  payload <- .portal_emprego_portal(uf, .sdic_ambiente(ambiente))
   charts <- payload$charts
   out <- list()
   if (is.null(charts) || length(charts) == 0) return(out)
@@ -308,61 +277,57 @@ get_portal_emprego_charts_estadual <- function(uf, ambiente = "producao") {
   out
 }
 
-#' Rankings do portal (maiores saldos/estoques) de uma UF
+#' Rankings do portal (maiores saldos/estoques) de uma UF — depreciada
+#'
+#' Use [get_ranking_publicado()].
 #' @inheritParams get_relatorio_emprego_estadual
 #' @return Lista nomeada `{list_id: tibble(items)}`.
 #' @export
-get_portal_emprego_ranked_lists_estadual <- function(uf, ambiente = "producao") {
-  payload <- get_portal_emprego_estadual(uf, ambiente)
+get_portal_emprego_ranked_lists_estadual <- function(uf, ambiente = NULL) {
+  .portal_depreciada("get_portal_emprego_ranked_lists_estadual", .PORTAL_SUBSTITUTA_PORTAL)
+  payload <- .portal_emprego_portal(uf, .sdic_ambiente(ambiente))
   .portal_emprego_named_tibbles(payload$ranked_lists, "items", "rank")
 }
 
-#' Composicoes do portal (ex.: intensidade tecnologica) de uma UF
+#' Composições do portal (ex.: intensidade tecnológica) de uma UF — depreciada
+#'
+#' Use [get_detalhamento_publicado()].
 #' @inheritParams get_relatorio_emprego_estadual
 #' @return Lista nomeada `{id: tibble(items)}`.
 #' @export
-get_portal_emprego_breakdowns_estadual <- function(uf, ambiente = "producao") {
-  payload <- get_portal_emprego_estadual(uf, ambiente)
+get_portal_emprego_breakdowns_estadual <- function(uf, ambiente = NULL) {
+  .portal_depreciada("get_portal_emprego_breakdowns_estadual", .PORTAL_SUBSTITUTA_PORTAL)
+  payload <- .portal_emprego_portal(uf, .sdic_ambiente(ambiente))
   .portal_emprego_named_tibbles(payload$breakdowns, "items", "breakdown")
 }
 
-#' KPIs de todas as UFs disponiveis, empilhados, com coluna `uf`
-#' @param ambiente "producao" (default) ou "homologacao".
-#' @return Tibble empilhado — comparacao entre estados.
+#' KPIs de todas as UFs disponíveis, empilhados, com coluna `uf` — depreciada
+#'
+#' Avisa quais UFs não têm arquivo publicado. Falha de rede é erro.
+#' @inheritParams get_relatorio_emprego_estadual
+#' @return Tibble empilhado — comparação entre estados.
 #' @export
-get_portal_emprego_kpis_todos_estados <- function(ambiente = "producao") {
-  amb <- .portal_emprego_validar_ambiente(ambiente)
-  frames <- list()
-  for (uf in .PORTAL_EMPREGO_UFS_27) {
-    payload <- .portal_emprego_fetch_json(.portal_emprego_path_portal(uf, amb), opcional = TRUE)
-    if (!is.null(payload$kpis) && length(payload$kpis) > 0) {
-      df <- cbind(uf = uf, tibble::as_tibble(payload$kpis))
-      frames[[length(frames) + 1]] <- df
-    }
-  }
-  if (length(frames) == 0) return(tibble::tibble())
-  tibble::as_tibble(dplyr::bind_rows(frames))
+get_portal_emprego_kpis_todos_estados <- function(ambiente = NULL) {
+  .portal_depreciada("get_portal_emprego_kpis_todos_estados", .PORTAL_SUBSTITUTA_PORTAL)
+  amb <- .sdic_ambiente(ambiente)
+  .portal_emprego_todos_estados(function(uf) {
+    kpis <- .portal_emprego_portal(uf, amb, opcional = TRUE)$kpis
+    if (is.null(kpis) || length(kpis) == 0) NULL else tibble::as_tibble(kpis)
+  })
 }
 
 # ── Descoberta ────────────────────────────────────────────────────────────────
 
-#' Lista as UFs com artefato publicado
+#' Lista as UFs com artefato publicado — depreciada
 #'
-#' @param ambiente "producao" (default) ou "homologacao".
+#' Use [listar_secoes_publicadas()].
+#' @inheritParams get_relatorio_emprego_estadual
 #' @param tipo "portal" (emprego.json) ou "relatorio" (cache).
-#' @return Vetor de siglas de UF disponiveis.
+#' @return Vetor de siglas de UF disponíveis.
 #' @export
-listar_estados_disponiveis <- function(ambiente = "producao", tipo = "portal") {
-  amb <- .portal_emprego_validar_ambiente(ambiente)
-  disponiveis <- character(0)
-  for (uf in .PORTAL_EMPREGO_UFS_27) {
-    path <- if (identical(tipo, "relatorio")) {
-      .portal_emprego_path_relatorio(uf, amb)
-    } else {
-      .portal_emprego_path_portal(uf, amb)
-    }
-    payload <- .portal_emprego_fetch_json(path, opcional = TRUE)
-    if (!is.null(payload)) disponiveis <- c(disponiveis, uf)
-  }
-  disponiveis
+listar_estados_disponiveis <- function(ambiente = NULL, tipo = "portal") {
+  .portal_depreciada("listar_estados_disponiveis", "listar_secoes_publicadas()")
+  amb <- .sdic_ambiente(ambiente)
+  ler <- if (identical(tipo, "relatorio")) .portal_emprego_relatorio else .portal_emprego_portal
+  Filter(function(uf) !is.null(ler(uf, amb, opcional = TRUE)), .PORTAL_EMPREGO_UFS_27)
 }

@@ -2,16 +2,17 @@
 % Please edit documentation in R/portal.R
 \name{get_relatorio_emprego_estoque_todos_estados}
 \alias{get_relatorio_emprego_estoque_todos_estados}
-\title{Estoque de todas as UFs disponiveis, empilhado, com coluna \code{uf}}
+\title{Estoque de todas as UFs disponíveis, empilhado, com coluna \code{uf} — depreciada}
 \usage{
-get_relatorio_emprego_estoque_todos_estados(ambiente = "producao")
+get_relatorio_emprego_estoque_todos_estados(ambiente = NULL)
 }
 \arguments{
-\item{ambiente}{"producao" (default) ou "homologacao".}
+\item{ambiente}{\code{"producao"} ou \code{"homologacao"} (padrão: \code{SDIC_AMBIENTE}, depois
+\code{"producao"}).}
 }
 \value{
 Tibble empilhado.
 }
 \description{
-Estoque de todas as UFs disponiveis, empilhado, com coluna \code{uf}
+Avisa quais UFs não têm arquivo publicado. Falha de rede é erro.
 }

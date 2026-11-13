@@ -2,18 +2,19 @@
 % Please edit documentation in R/portal.R
 \name{get_portal_emprego_kpis_estadual}
 \alias{get_portal_emprego_kpis_estadual}
-\title{KPIs do portal de uma UF como tibble}
+\title{KPIs do portal de uma UF como tibble — depreciada}
 \usage{
-get_portal_emprego_kpis_estadual(uf, ambiente = "producao")
+get_portal_emprego_kpis_estadual(uf, ambiente = NULL)
 }
 \arguments{
 \item{uf}{Sigla da UF (ex.: "SP").}
 
-\item{ambiente}{"producao" (default) ou "homologacao".}
+\item{ambiente}{\code{"producao"} ou \code{"homologacao"} (padrão: \code{SDIC_AMBIENTE}, depois
+\code{"producao"}).}
 }
 \value{
 Tibble de KPIs.
 }
 \description{
-KPIs do portal de uma UF como tibble
+Use \code{\link[=get_kpis_publicados]{get_kpis_publicados()}}.
 }

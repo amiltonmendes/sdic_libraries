@@ -2,18 +2,19 @@
 % Please edit documentation in R/portal.R
 \name{get_relatorio_emprego_estoque_estadual}
 \alias{get_relatorio_emprego_estoque_estadual}
-\title{Estoque RAIS por divisao CNAE (cache) de uma UF}
+\title{Estoque RAIS por divisão CNAE (cache) de uma UF — depreciada}
 \usage{
-get_relatorio_emprego_estoque_estadual(uf, ambiente = "producao")
+get_relatorio_emprego_estoque_estadual(uf, ambiente = NULL)
 }
 \arguments{
 \item{uf}{Sigla da UF (ex.: "SP").}
 
-\item{ambiente}{"producao" (default) ou "homologacao".}
+\item{ambiente}{\code{"producao"} ou \code{"homologacao"} (padrão: \code{SDIC_AMBIENTE}, depois
+\code{"producao"}).}
 }
 \value{
 Tibble com o estoque.
 }
 \description{
-Estoque RAIS por divisao CNAE (cache) de uma UF
+Use \code{\link[=get_estoque_emprego_estadual]{get_estoque_emprego_estadual()}}.
 }

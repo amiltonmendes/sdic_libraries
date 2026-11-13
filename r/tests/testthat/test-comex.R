@@ -3,13 +3,23 @@
 # travados de métodos R6 de um pacote instalado).
 # `mock_response`/`mock_req_perform`: ver helper-comex.R.
 
-test_that("api_key fica disponivel no objeto", {
+test_that("api_key fica em campo privado e vai so no Authorization: Bearer", {
+  registro <- new.env()
+  registro$chamadas <- list()
+  testthat::local_mocked_bindings(
+    req_perform = mock_req_perform(list(mock_response(list(count = 0, items = list()))), registro),
+    .package = "httr2"
+  )
   api <- Comex$new(base_url = "https://sdicapi.teste", api_key = "chave-teste")
-  expect_equal(api$api_key, "chave-teste")
+  expect_null(api$api_key)
+  api$.make_request("/x")
+  cabecalhos <- cabecalhos_da_requisicao(registro$chamadas[[1]])
+  expect_equal(cabecalhos$Authorization, "Bearer chave-teste")
+  expect_false("x-api-key" %in% tolower(names(cabecalhos)))
 })
 
 test_that("base_url default e o host publico", {
-  withr::local_envvar(c(COMEX_API_BASE_URL = NA))
+  withr::local_envvar(c(SDIC_API_URL = NA, COMEX_API_BASE_URL = NA, EMPLOYMENT_API_BASE_URL = NA))
   api <- Comex$new(api_key = NULL)
   expect_equal(api$base_url, "https://sdicapi.dados.ninja")
 })

@@ -1,149 +1,109 @@
-# Catálogo das funções públicas da biblioteca, por tema.
+# Catálogo das funções e das bases da biblioteca.
 #
-# Não sabe qual função usar? listar_bases() devolve um tibble com uma linha por
-# função: tema, o que ela traz, nível de agregação e um exemplo mínimo de chamada.
-# Todas as funções listadas são as já exportadas pelo pacote (emprego.R/comex.R) —
-# o catálogo só aponta para elas, não reimplementa nada.
+# Tudo vem de `inst/catalogo.json` (cópia de `contrato/catalogo.json`, a fonte única lida
+# também pelo pacote Python). Não sabe qual função usar? `listar_bases()`. Quer saber de onde
+# vem um dado e que colunas ele tem? `descrever(nome)`.
 
-# tema, subtema, nivel, funcao, descricao, exemplo
-.catalogo_linhas <- list(
-  # ---- emprego / estoque (RAIS) ----
-  list(tema = "emprego", subtema = "estoque", nivel = "nacional", funcao = "get_estoque_emprego_nacional",
-       descricao = "Estoque de vínculos ativos (31/12) por divisão ou grupo CNAE.",
-       exemplo = "get_estoque_emprego_nacional(codigos_cnae = '10', nivel_cnae = 2)"),
-  list(tema = "emprego", subtema = "estoque", nivel = "estadual", funcao = "get_estoque_emprego_estadual",
-       descricao = "Igual ao nacional, por UF.",
-       exemplo = "get_estoque_emprego_estadual(sigla_uf = 'SP', codigos_cnae = '10')"),
-  list(tema = "emprego", subtema = "estoque", nivel = "nacional", funcao = "get_estoque_emprego_nacional_agrupado",
-       descricao = "Estoque somado para uma lista de CNAEs sob um nome de grupo (ex.: 'TI').",
-       exemplo = "get_estoque_emprego_nacional_agrupado('TI', c('620', '631'))"),
-  list(tema = "emprego", subtema = "estoque", nivel = "estadual", funcao = "get_estoque_emprego_estadual_agrupado",
-       descricao = "Igual ao agrupado nacional, por UF.",
-       exemplo = "get_estoque_emprego_estadual_agrupado(sigla_uf = 'SP', nome_grupo = 'TI', lista_cnae = '620')"),
-  list(tema = "emprego", subtema = "estoque_estimado", nivel = "nacional", funcao = "get_estoque_emprego_estimado_nacional_anual",
-       descricao = "Estoque real (RAIS) + projeção com o saldo CAGED acumulado até o ano corrente (coluna 'origem': Real/Estimação).",
-       exemplo = "get_estoque_emprego_estimado_nacional_anual(codigo_cnae = '10')"),
-  list(tema = "emprego", subtema = "estoque_estimado", nivel = "estadual", funcao = "get_estoque_emprego_estimado_estadual_anual",
-       descricao = "Igual ao estimado nacional, por UF.",
-       exemplo = "get_estoque_emprego_estimado_estadual_anual(sigla_uf = 'SP', codigo_cnae = '10')"),
-  list(tema = "emprego", subtema = "estoque_estimado", nivel = "municipal", funcao = "get_estoque_emprego_estimado_municipal_anual",
-       descricao = "Igual ao estimado nacional, por município.",
-       exemplo = "get_estoque_emprego_estimado_municipal_anual(sigla_uf = 'SP', codigo_municipio = 3550308, codigo_cnae = '10')"),
-  list(tema = "emprego", subtema = "estoque_porte", nivel = "nacional", funcao = "get_estoque_emprego_porte_nacional",
-       descricao = "Estoque por porte do estabelecimento (Sebrae/DIEESE) e setor (Indústria x Comércio/Serviços).",
-       exemplo = "get_estoque_emprego_porte_nacional('divisao', codigos_cnae = '10', setor = 'Indústria')"),
-  list(tema = "emprego", subtema = "estoque_porte", nivel = "estadual", funcao = "get_estoque_emprego_porte_estadual",
-       descricao = "Igual ao porte nacional, por UF.",
-       exemplo = "get_estoque_emprego_porte_estadual(uf = 'SP', nivel_cnae = 'divisao', porte = 'Microempresa')"),
-  list(tema = "emprego", subtema = "estoque_classe", nivel = "nacional", funcao = "get_estoque_emprego_classe_cnae_nacional",
-       descricao = "Estoque por classe CNAE (4 dígitos, mais fino que divisão/grupo).",
-       exemplo = "get_estoque_emprego_classe_cnae_nacional(codigos_classe = '1011')"),
-  list(tema = "emprego", subtema = "estoque_classe", nivel = "estadual", funcao = "get_estoque_emprego_classe_cnae_estadual",
-       descricao = "Igual ao classe nacional, por UF.",
-       exemplo = "get_estoque_emprego_classe_cnae_estadual(uf = 'SP', codigos_classe = '1011')"),
-  list(tema = "emprego", subtema = "estoque_ocupacao", nivel = "estadual", funcao = "get_estoque_emprego_uf_cbo",
-       descricao = "Estoque por UF, classe CNAE e ocupação (CBO). Endpoint pesado: sempre filtre siglas_uf e codigos_classe.",
-       exemplo = "get_estoque_emprego_uf_cbo(siglas_uf = 'SP', codigos_classe = '4711')"),
-  list(tema = "emprego", subtema = "renda", nivel = "nacional", funcao = "get_renda_media_emprego",
-       descricao = "Remuneração média (RAIS) por divisão/grupo CNAE ou geral.",
-       exemplo = "get_renda_media_emprego(tipos = 'Divisao', codigos = '10')"),
-  list(tema = "emprego", subtema = "potec", nivel = "nacional", funcao = "get_potec_emprego",
-       descricao = "Índice Potec: fração de pessoal ocupado técnico-científico por classe CNAE (proxy de P&D da PINTEC).",
-       exemplo = "get_potec_emprego(codigos_classe = '7210')"),
-  list(tema = "emprego", subtema = "metadados", nivel = "-", funcao = "get_date_bases",
-       descricao = "Data da última atualização de cada base (CAGED, RAIS, ComexStat).",
-       exemplo = "get_date_bases()"),
-  # ---- emprego / saldo (Novo CAGED) ----
-  list(tema = "emprego", subtema = "saldo_caged", nivel = "nacional", funcao = "get_saldo_emprego_nacional_mensal",
-       descricao = "Saldo mensal (admissões − desligamentos) por divisão/grupo/subclasse CNAE.",
-       exemplo = "get_saldo_emprego_nacional_mensal(nivel_cnae = 'divisao', codigo_cnae = '10')"),
-  list(tema = "emprego", subtema = "saldo_caged", nivel = "nacional", funcao = "get_saldo_emprego_nacional_anual",
-       descricao = "Saldo somado por ano, mesmo recorte do mensal.",
-       exemplo = "get_saldo_emprego_nacional_anual(nivel_cnae = 'divisao', codigo_cnae = '10')"),
-  list(tema = "emprego", subtema = "saldo_caged", nivel = "nacional", funcao = "get_saldo_emprego_nacional_mensal_agrupado",
-       descricao = "Saldo mensal somado para uma lista de CNAEs sob um nome de grupo.",
-       exemplo = "get_saldo_emprego_nacional_mensal_agrupado('TI', c('620', '631'))"),
-  list(tema = "emprego", subtema = "saldo_caged", nivel = "estadual", funcao = "get_saldo_emprego_estadual_mensal",
-       descricao = "Igual ao saldo mensal nacional, por UF.",
-       exemplo = "get_saldo_emprego_estadual_mensal(sigla_uf = 'SP', nivel_cnae = 'divisao', codigo_cnae = '10')"),
-  list(tema = "emprego", subtema = "saldo_caged", nivel = "estadual", funcao = "get_saldo_emprego_estadual_anual",
-       descricao = "Igual ao saldo anual nacional, por UF.",
-       exemplo = "get_saldo_emprego_estadual_anual(sigla_uf = 'SP', nivel_cnae = 'divisao', codigo_cnae = '10')"),
-  list(tema = "emprego", subtema = "saldo_caged", nivel = "estadual", funcao = "get_saldo_emprego_estadual_mensal_agrupado",
-       descricao = "Igual ao saldo agrupado nacional, por UF.",
-       exemplo = "get_saldo_emprego_estadual_mensal_agrupado(sigla_uf = 'SP', nome_grupo = 'TI', lista_cnae = '620')"),
-  list(tema = "emprego", subtema = "saldo_caged", nivel = "municipal", funcao = "get_saldo_emprego_municipal_mensal",
-       descricao = "Igual ao saldo mensal nacional, por município.",
-       exemplo = "get_saldo_emprego_municipal_mensal(sigla_uf = 'SP', codigo_municipio = 3550308, nivel_cnae = 'divisao', codigo_cnae = '10')"),
-  list(tema = "emprego", subtema = "saldo_caged", nivel = "municipal", funcao = "get_saldo_emprego_municipal_anual",
-       descricao = "Igual ao saldo anual nacional, por município.",
-       exemplo = "get_saldo_emprego_municipal_anual(sigla_uf = 'SP', codigo_municipio = 3550308, nivel_cnae = 'divisao', codigo_cnae = '10')"),
-  list(tema = "emprego", subtema = "saldo_caged", nivel = "municipal", funcao = "get_saldo_emprego_municipal_mensal_agrupado",
-       descricao = "Igual ao saldo agrupado nacional, por município.",
-       exemplo = "get_saldo_emprego_municipal_mensal_agrupado(sigla_uf = 'SP', codigo_municipio = 3550308, nome_grupo = 'TI', lista_cnae = '620')"),
-  # ---- emprego / portal (cache já publicado, sem chamar a API) ----
-  list(tema = "emprego", subtema = "portal_cache", nivel = "estadual", funcao = "get_relatorio_emprego_saldo_estadual",
-       descricao = "Saldo CAGED mensal por UF, lido do cache já publicado (GitHub Pages) — não chama a API ao vivo.",
-       exemplo = "get_relatorio_emprego_saldo_estadual(uf = 'SP')"),
-  list(tema = "emprego", subtema = "portal_cache", nivel = "estadual", funcao = "get_relatorio_emprego_estoque_estadual",
-       descricao = "Estoque RAIS por UF, lido do cache já publicado — não chama a API ao vivo.",
-       exemplo = "get_relatorio_emprego_estoque_estadual(uf = 'SP')"),
-  # ---- comex ----
-  list(tema = "comex", subtema = "comercio_ncm", nivel = "nacional", funcao = "get_exportacao_ncm_nacional_mensal",
-       descricao = "Exportações mensais por NCM (produto), com filtro opcional por seção ISIC.",
-       exemplo = "get_exportacao_ncm_nacional_mensal(ano_minimo = 2024, secao = 'Indústria de Transformação')"),
-  list(tema = "comex", subtema = "comercio_ncm", nivel = "nacional", funcao = "get_importacao_ncm_nacional_mensal",
-       descricao = "Igual ao NCM de exportação, para importações.",
-       exemplo = "get_importacao_ncm_nacional_mensal(ano_minimo = 2024)"),
-  list(tema = "comex", subtema = "comercio_isic", nivel = "nacional", funcao = "get_exportacao_isic_divisao_nacional_mensal",
-       descricao = "Exportações mensais por divisão ISIC (setor) — a chave para juntar com emprego (juntar_emprego_comex).",
-       exemplo = "get_exportacao_isic_divisao_nacional_mensal(ano_minimo = 2024, agregado_ano = TRUE)"),
-  list(tema = "comex", subtema = "comercio_isic", nivel = "nacional", funcao = "get_importacao_isic_divisao_nacional_mensal",
-       descricao = "Igual ao ISIC de exportação, para importações.",
-       exemplo = "get_importacao_isic_divisao_nacional_mensal(ano_minimo = 2024, agregado_ano = TRUE)"),
-  list(tema = "comex", subtema = "comercio_isic", nivel = "estadual", funcao = "get_exportacao_isic_divisao_estadual_mensal",
-       descricao = "Igual ao ISIC nacional, por UF (e opcionalmente por país/bloco).",
-       exemplo = "get_exportacao_isic_divisao_estadual_mensal(estado = 'São Paulo', ano_minimo = 2024)"),
-  list(tema = "comex", subtema = "comercio_isic", nivel = "estadual", funcao = "get_importacao_isic_divisao_estadual_mensal",
-       descricao = "Igual ao ISIC estadual de exportação, para importações.",
-       exemplo = "get_importacao_isic_divisao_estadual_mensal(estado = 'São Paulo', ano_minimo = 2024)"),
-  list(tema = "comex", subtema = "comercio_pais", nivel = "nacional", funcao = "get_exportacao_pais_nacional_mensal",
-       descricao = "Exportações mensais por país de destino.",
-       exemplo = "get_exportacao_pais_nacional_mensal(pais = 'Argentina', ano_minimo = 2024)"),
-  list(tema = "comex", subtema = "comercio_pais", nivel = "nacional", funcao = "get_importacao_pais_nacional_mensal",
-       descricao = "Igual ao país de exportação, para importações (país de origem).",
-       exemplo = "get_importacao_pais_nacional_mensal(pais = 'Argentina', ano_minimo = 2024)"),
-  list(tema = "comex", subtema = "comercio_mapa", nivel = "-", funcao = "get_ncm_isic_mapa",
-       descricao = "De-para NCM → divisão/seção ISIC (catálogo estático, ~13 mil códigos).",
-       exemplo = "get_ncm_isic_mapa()"),
-  # ---- utilitários (transformam o que as funções acima devolvem) ----
-  list(tema = "utilitarios", subtema = "transformacao", nivel = "-", funcao = "criar_indice",
-       descricao = "Índice-base (ano_base = 100) para colunas numéricas de uma série temporal.",
-       exemplo = "criar_indice(df, ano_base = 2020, coluna_data = 'ano', colunas_valores = 'estoque_trabalhadores')"),
-  list(tema = "utilitarios", subtema = "transformacao", nivel = "-", funcao = "juntar_emprego_comex",
-       descricao = "Une emprego e comércio exterior por divisão CNAE/ISIC e ano.",
-       exemplo = "juntar_emprego_comex(df_emprego, df_comex)")
-)
+.sdic_colunas_de <- function(funcao) {
+  vapply(.sdic_catalogo()$colunas[[funcao]], function(c) c[[1]], character(1))
+}
 
 #' Catálogo das funções públicas da biblioteca
 #'
-#' Não sabe qual função usar? `listar_bases()` devolve um tibble com uma linha por
-#' função: tema, o que ela traz, nível de agregação e um exemplo mínimo de chamada.
+#' Não sabe qual função usar? `listar_bases()` devolve uma linha por função: tema, o que ela
+#' traz, nível de agregação e um exemplo mínimo de chamada. O conteúdo é o mesmo do pacote
+#' Python (`contrato/catalogo.json`).
 #'
-#' @param tema Filtro por tema: "emprego", "comex" ou "utilitarios" (opcional)
-#' @param subtema Filtro adicional, ex. "estoque", "saldo_caged", "comercio_ncm" -
-#'   veja `unique(listar_bases()$subtema)` para todos os valores (opcional)
-#' @return tibble com colunas tema, subtema, nivel, funcao, descricao, exemplo
+#' @param tema Filtro por tema: `"emprego"`, `"comex"`, `"series"`, `"publicados"`,
+#'   `"politicas"` ou `"utilitarios"` (opcional).
+#' @param subtema Filtro por subtema, ex.: `"estoque"`, `"saldo_caged"`, `"comercio_ncm"`;
+#'   veja `unique(listar_bases()$subtema)` (opcional).
+#' @return tibble com as colunas `tema`, `subtema`, `nivel`, `funcao`, `descricao`, `exemplo`,
+#'   uma linha por função. Tema ou subtema inexistente gera erro que lista os valores válidos.
 #' @export
 #' @examples
 #' \dontrun{
 #' listar_bases()
-#' listar_bases(tema = "comex")
+#' listar_bases(tema = "publicados")
 #' listar_bases(subtema = "saldo_caged")
 #' }
 listar_bases <- function(tema = NULL, subtema = NULL) {
-  df <- tibble::as_tibble(dplyr::bind_rows(.catalogo_linhas))
-  if (!is.null(tema)) df <- df[df$tema == tema, ]
-  if (!is.null(subtema)) df <- df[df$subtema == subtema, ]
+  funcoes <- .sdic_catalogo()$funcoes
+  campo <- function(nome) vapply(funcoes, function(f) f[[nome]] %||% NA_character_, character(1))
+  df <- tibble::tibble(tema = campo("tema"), subtema = campo("subtema"), nivel = campo("nivel"),
+                       funcao = campo("funcao"), descricao = campo("descricao"), exemplo = campo("exemplo_r"))
+  filtros <- list(tema = tema, subtema = subtema)
+  for (coluna in names(filtros)) {
+    valor <- filtros[[coluna]]
+    if (is.null(valor) || !nzchar(valor)) next
+    if (!valor %in% df[[coluna]]) {
+      .sdic_invalido(sprintf("%s desconhecido: '%s'. Valores: %s.", coluna, valor,
+                             paste(sort(unique(df[[coluna]]), method = "radix"), collapse = ", ")))
+    }
+    df <- df[df[[coluna]] == valor, ]
+  }
   df
+}
+
+#' Ficha de uma base ou de uma função do catálogo
+#'
+#' Diz de onde vem um dado (origem, endereço em uso, fonte, periodicidade, carga) e, para uma
+#' função, que colunas ela devolve.
+#'
+#' @param nome Nome de uma base (ex.: `"secoes_publicadas"`, `"comexstat"`, `"politicas"`) ou
+#'   de uma função (ex.: `"get_kpis_publicados"`). Para uma série da API, use
+#'   [listar_series()].
+#' @return tibble com as colunas `campo`, `valor`. Para uma função: descrição, exemplo, base
+#'   que lê, origem e uma linha `coluna: <nome>` por coluna devolvida (tipo e significado).
+#'   Para uma base: título, origem e endereço em uso, fonte, periodicidade, carga e funções.
+#'   Nome fora do catálogo gera erro que lista as bases.
+#' @export
+#' @examples
+#' \dontrun{
+#' descrever("get_kpis_publicados")
+#' descrever("secoes_publicadas")
+#' }
+descrever <- function(nome) {
+  catalogo <- .sdic_catalogo()
+  funcoes <- catalogo$funcoes
+  nomes_funcoes <- vapply(funcoes, function(f) f$funcao, character(1))
+  bases <- catalogo$bases
+  campos <- character()
+  valores <- character()
+  linha <- function(campo, valor) {
+    campos <<- c(campos, campo)
+    valores <<- c(valores, as.character(valor))
+  }
+  ficha_base <- function(nome_base) {
+    b <- bases[[nome_base]]
+    caminho <- b$caminho %||% ""
+    linha("base", paste0(nome_base, ": ", b$titulo))
+    linha("origem", sprintf("%s (%s)", b$origem, catalogo$origens[[b$origem]]$descricao))
+    linha("endereço em uso", paste0(.sdic_url(b$origem), if (startsWith(caminho, "{")) "/", caminho))
+    rotulos <- c(fonte = "fonte", periodicidade = "periodicidade", `dataset no BigQuery` = "dataset",
+                 `carga (painel de cargas)` = "carga", `documentação` = "documentacao", esquema = "esquema",
+                 depreciada = "depreciada")
+    for (campo in names(rotulos)) {
+      valor <- b[[rotulos[[campo]]]]
+      if (!is.null(valor) && !isFALSE(valor) && nzchar(as.character(valor))) linha(campo, valor)
+    }
+  }
+  if (is.character(nome) && length(nome) == 1 && nome %in% nomes_funcoes) {
+    f <- funcoes[[match(nome, nomes_funcoes)]]
+    linha("função", nome)
+    linha("descrição", f$descricao)
+    linha("exemplo", f$exemplo_r)
+    if (!is.null(f$base)) ficha_base(f$base)
+    for (coluna in catalogo$colunas[[nome]]) {
+      partes <- Filter(nzchar, c(coluna[[2]], coluna[[3]]))
+      linha(paste0("coluna: ", coluna[[1]]), paste(partes, collapse = " — "))
+    }
+  } else if (is.character(nome) && length(nome) == 1 && nome %in% names(bases)) {
+    ficha_base(nome)
+    for (f in funcoes) if (identical(f$base, nome)) linha("função", f$funcao)
+  } else {
+    .sdic_invalido(sprintf("'%s' não está no catálogo. Bases: %s. Funções: listar_bases(). Séries da API: listar_series().",
+                           paste(nome, collapse = ", "), paste(sort(names(bases), method = "radix"), collapse = ", ")))
+  }
+  tibble::tibble(campo = campos, valor = valores)
 }

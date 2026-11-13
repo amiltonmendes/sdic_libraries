@@ -3,25 +3,23 @@
 \docType{class}
 \name{Comex}
 \alias{Comex}
-\title{Comex API Client para R}
+\title{Cliente da sdic_api para comércio exterior (ComexStat)}
 \format{
-\code{\link{R6Class}} object.
+Classe \link[R6:R6Class]{R6::R6Class}, herdeira de \code{ClienteAPI}.
 }
 \value{
-Objeto R6 para interagir com a API de comex
+Objeto R6 para interagir com as rotas de comex da sdic_api
 }
 \description{
-Comex API Client para R
+Classe R6 de baixo nível: uma requisição por chamada (com todas as páginas) e resposta
+como lista de registros, com as colunas como a API devolve. Para tabelas (\code{tibble}) no
+esquema padrão da biblioteca, use as funções \verb{get_*} de comex (veja
+\code{listar_bases(tema = "comex")}). A biblioteca só consulta a sdic_api, nunca o ComexStat
+diretamente.
 
-Comex API Client para R
-}
-\details{
-Uma classe R6 para acessar dados de comércio exterior (comex) da sdic_api,
-centralizando o acesso que hoje está espalhado em chamadas diretas à API
-pública do MDIC (ComexStat) em múltiplos consumidores da unidade.
-
-Mesma estrutura de \code{\link{Emprego}} (mesmo padrão de configuração via
-\code{.env}, tratamento de erro e paginação automática).
+Endereço, chave e tempo limite vêm de \code{\link[=sdic_config]{sdic_config()}} (\code{SDIC_API_URL}, \code{SDIC_API_KEY},
+\code{SDIC_TIMEOUT}, em variável de ambiente ou \code{.env.local}); os argumentos de \verb{$new()} têm
+precedência. A chave fica em campo privado e não aparece em \code{print()}.
 }
 \examples{
 \dontrun{
@@ -39,324 +37,159 @@ dados_ue <- api$get_exportacao_isic_divisao_estadual_mensal(ano_minimo = 2023, b
 \keyword{comex,}
 \keyword{dados,}
 \keyword{exterior,}
-\section{Public fields}{
-\if{html}{\out{<div class="r6-fields">}}
-\describe{
-\item{\code{base_url}}{A URL base para a sdic_api}
-
-\item{\code{timeout}}{Timeout das requisições em segundos}
-
-\item{\code{api_key}}{Chave da API para autenticação}
-}
-\if{html}{\out{</div>}}
+\section{Super class}{
+\code{\link[sdic.libraries:ClienteAPI]{ClienteAPI}} -> \code{Comex}
 }
 \section{Methods}{
 \subsection{Public methods}{
-\itemize{
-\item \href{#method-Comex-new}{\code{Comex$new()}}
-\item \href{#method-Comex-.load_env_files}{\code{Comex$.load_env_files()}}
-\item \href{#method-Comex-.load_env_file}{\code{Comex$.load_env_file()}}
-\item \href{#method-Comex-.make_request}{\code{Comex$.make_request()}}
-\item \href{#method-Comex-.make_post_request}{\code{Comex$.make_post_request()}}
-\item \href{#method-Comex-.extract_items}{\code{Comex$.extract_items()}}
-\item \href{#method-Comex-.get_total_count}{\code{Comex$.get_total_count()}}
-\item \href{#method-Comex-.fetch_all_paginated_get}{\code{Comex$.fetch_all_paginated_get()}}
-\item \href{#method-Comex-.fetch_all_paginated_post}{\code{Comex$.fetch_all_paginated_post()}}
-\item \href{#method-Comex-get_ncm_isic_mapa}{\code{Comex$get_ncm_isic_mapa()}}
-\item \href{#method-Comex-get_exportacao_agrupamentos}{\code{Comex$get_exportacao_agrupamentos()}}
-\item \href{#method-Comex-get_importacao_agrupamentos}{\code{Comex$get_importacao_agrupamentos()}}
-\item \href{#method-Comex-.movimentacoes_agrupamentos}{\code{Comex$.movimentacoes_agrupamentos()}}
-\item \href{#method-Comex-get_exportacao_agrupamentos_pais_ncm}{\code{Comex$get_exportacao_agrupamentos_pais_ncm()}}
-\item \href{#method-Comex-get_importacao_agrupamentos_pais_ncm}{\code{Comex$get_importacao_agrupamentos_pais_ncm()}}
-\item \href{#method-Comex-.movimentacoes_agrupamentos_pais_ncm}{\code{Comex$.movimentacoes_agrupamentos_pais_ncm()}}
-\item \href{#method-Comex-get_agrupamentos_disponiveis}{\code{Comex$get_agrupamentos_disponiveis()}}
-\item \href{#method-Comex-.ncms_da_secao}{\code{Comex$.ncms_da_secao()}}
-\item \href{#method-Comex-get_exportacao_ncm_nacional_mensal}{\code{Comex$get_exportacao_ncm_nacional_mensal()}}
-\item \href{#method-Comex-get_importacao_ncm_nacional_mensal}{\code{Comex$get_importacao_ncm_nacional_mensal()}}
-\item \href{#method-Comex-get_exportacao_isic_divisao_nacional_mensal}{\code{Comex$get_exportacao_isic_divisao_nacional_mensal()}}
-\item \href{#method-Comex-get_importacao_isic_divisao_nacional_mensal}{\code{Comex$get_importacao_isic_divisao_nacional_mensal()}}
-\item \href{#method-Comex-get_exportacao_isic_divisao_estadual_mensal}{\code{Comex$get_exportacao_isic_divisao_estadual_mensal()}}
-\item \href{#method-Comex-get_importacao_isic_divisao_estadual_mensal}{\code{Comex$get_importacao_isic_divisao_estadual_mensal()}}
-\item \href{#method-Comex-get_exportacao_pais_nacional_mensal}{\code{Comex$get_exportacao_pais_nacional_mensal()}}
-\item \href{#method-Comex-get_importacao_pais_nacional_mensal}{\code{Comex$get_importacao_pais_nacional_mensal()}}
-\item \href{#method-Comex-clone}{\code{Comex$clone()}}
+  \itemize{
+    \item \href{#method-Comex-get_ncm_isic_mapa}{\code{Comex$get_ncm_isic_mapa()}}
+    \item \href{#method-Comex-get_exportacao_agrupamentos}{\code{Comex$get_exportacao_agrupamentos()}}
+    \item \href{#method-Comex-get_importacao_agrupamentos}{\code{Comex$get_importacao_agrupamentos()}}
+    \item \href{#method-Comex-.movimentacoes_agrupamentos}{\code{Comex$.movimentacoes_agrupamentos()}}
+    \item \href{#method-Comex-get_exportacao_agrupamentos_pais_ncm}{\code{Comex$get_exportacao_agrupamentos_pais_ncm()}}
+    \item \href{#method-Comex-get_importacao_agrupamentos_pais_ncm}{\code{Comex$get_importacao_agrupamentos_pais_ncm()}}
+    \item \href{#method-Comex-.movimentacoes_agrupamentos_pais_ncm}{\code{Comex$.movimentacoes_agrupamentos_pais_ncm()}}
+    \item \href{#method-Comex-get_agrupamentos_disponiveis}{\code{Comex$get_agrupamentos_disponiveis()}}
+    \item \href{#method-Comex-.ncms_da_secao}{\code{Comex$.ncms_da_secao()}}
+    \item \href{#method-Comex-get_exportacao_ncm_nacional_mensal}{\code{Comex$get_exportacao_ncm_nacional_mensal()}}
+    \item \href{#method-Comex-get_importacao_ncm_nacional_mensal}{\code{Comex$get_importacao_ncm_nacional_mensal()}}
+    \item \href{#method-Comex-get_exportacao_isic_divisao_nacional_mensal}{\code{Comex$get_exportacao_isic_divisao_nacional_mensal()}}
+    \item \href{#method-Comex-get_importacao_isic_divisao_nacional_mensal}{\code{Comex$get_importacao_isic_divisao_nacional_mensal()}}
+    \item \href{#method-Comex-get_exportacao_isic_divisao_estadual_mensal}{\code{Comex$get_exportacao_isic_divisao_estadual_mensal()}}
+    \item \href{#method-Comex-get_importacao_isic_divisao_estadual_mensal}{\code{Comex$get_importacao_isic_divisao_estadual_mensal()}}
+    \item \href{#method-Comex-get_exportacao_pais_nacional_mensal}{\code{Comex$get_exportacao_pais_nacional_mensal()}}
+    \item \href{#method-Comex-get_importacao_pais_nacional_mensal}{\code{Comex$get_importacao_pais_nacional_mensal()}}
+    \item \href{#method-Comex-clone}{\code{Comex$clone()}}
+  }
 }
-}
-\if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-Comex-new"></a>}}
-\if{latex}{\out{\hypertarget{method-Comex-new}{}}}
-\subsection{Method \code{new()}}{
-Inicializar cliente da API de Comex com configuração automática.
-Variáveis de ambiente são carregadas automaticamente - nenhuma ação do usuário necessária.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$new(base_url = NULL, timeout = 30, api_key = NULL)}\if{html}{\out{</div>}}
-}
-
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{base_url}}{Sobrescrever URL base da API auto-detectada}
-
-\item{\code{timeout}}{Timeout das requisições. Padrão 30 segundos.}
-
-\item{\code{api_key}}{Sobrescrever chave da API auto-detectada}
-}
-\if{html}{\out{</div>}}
-}
-}
-\if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-Comex-.load_env_files"></a>}}
-\if{latex}{\out{\hypertarget{method-Comex-.load_env_files}{}}}
-\subsection{Method \code{.load_env_files()}}{
-Carregar automaticamente arquivos .env (experiência fluida)
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$.load_env_files()}\if{html}{\out{</div>}}
-}
-
-}
-\if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-Comex-.load_env_file"></a>}}
-\if{latex}{\out{\hypertarget{method-Comex-.load_env_file}{}}}
-\subsection{Method \code{.load_env_file()}}{
-Carregar arquivo .env único
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$.load_env_file(env_file_path)}\if{html}{\out{</div>}}
-}
-
-}
-\if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-Comex-.make_request"></a>}}
-\if{latex}{\out{\hypertarget{method-Comex-.make_request}{}}}
-\subsection{Method \code{.make_request()}}{
-Fazer uma requisição HTTP GET para a API usando httr2
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$.make_request(endpoint, params = NULL)}\if{html}{\out{</div>}}
-}
-
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{endpoint}}{Caminho do endpoint da API}
-
-\item{\code{params}}{Parâmetros de query (opcional)}
-}
-\if{html}{\out{</div>}}
-}
-}
-\if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-Comex-.make_post_request"></a>}}
-\if{latex}{\out{\hypertarget{method-Comex-.make_post_request}{}}}
-\subsection{Method \code{.make_post_request()}}{
-Fazer uma requisição HTTP POST para a API usando httr2
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$.make_post_request(endpoint, body = NULL, params = NULL)}\if{html}{\out{</div>}}
-}
-
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{endpoint}}{Caminho do endpoint da API}
-
-\item{\code{body}}{Corpo da requisição (será convertido para JSON)}
-
-\item{\code{params}}{Parâmetros de query (opcional)}
-}
-\if{html}{\out{</div>}}
-}
-}
-\if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-Comex-.extract_items"></a>}}
-\if{latex}{\out{\hypertarget{method-Comex-.extract_items}{}}}
-\subsection{Method \code{.extract_items()}}{
-Extrair itens de respostas paginadas
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$.extract_items(response)}\if{html}{\out{</div>}}
-}
-
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{response}}{Resposta da API}
-}
-\if{html}{\out{</div>}}
-}
-}
-\if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-Comex-.get_total_count"></a>}}
-\if{latex}{\out{\hypertarget{method-Comex-.get_total_count}{}}}
-\subsection{Method \code{.get_total_count()}}{
-Ler total de registros quando disponível (\code{count})
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$.get_total_count(response)}\if{html}{\out{</div>}}
-}
-
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{response}}{Resposta da API}
-}
-\if{html}{\out{</div>}}
-}
-}
-\if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-Comex-.fetch_all_paginated_get"></a>}}
-\if{latex}{\out{\hypertarget{method-Comex-.fetch_all_paginated_get}{}}}
-\subsection{Method \code{.fetch_all_paginated_get()}}{
-Consolidar automaticamente todas as páginas de endpoints GET
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$.fetch_all_paginated_get(endpoint, params = list())}\if{html}{\out{</div>}}
-}
-
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{endpoint}}{Endpoint da API}
-
-\item{\code{params}}{Lista de parâmetros de query}
-}
-\if{html}{\out{</div>}}
-}
-}
-\if{html}{\out{<hr>}}
-\if{html}{\out{<a id="method-Comex-.fetch_all_paginated_post"></a>}}
-\if{latex}{\out{\hypertarget{method-Comex-.fetch_all_paginated_post}{}}}
-\subsection{Method \code{.fetch_all_paginated_post()}}{
-Consolidar automaticamente todas as páginas de endpoints POST.
-A paginação é embutida tanto no corpo quanto nos parâmetros de query —
-o endpoint de NCM (\verb{/exportacao_agregada_ncm}) espera \code{pagina}/
-\code{tamanho_pagina} dentro do corpo JSON, diferente do padrão GET.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$.fetch_all_paginated_post(endpoint, body, params = list())}\if{html}{\out{</div>}}
-}
-
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{endpoint}}{Endpoint da API}
-
-\item{\code{body}}{Corpo da requisição}
-
-\item{\code{params}}{Lista de parâmetros de query}
-}
-\if{html}{\out{</div>}}
-}
-}
+\if{html}{\out{<details><summary>Inherited methods</summary>
+<ul>
+  <li><span class="pkg-link" data-pkg="sdic.libraries" data-topic="ClienteAPI" data-id=".extract_items"><a href='../../sdic.libraries/html/ClienteAPI.html#method-ClienteAPI-.extract_items'><code>ClienteAPI$.extract_items()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="sdic.libraries" data-topic="ClienteAPI" data-id=".fetch_all_paginated_get"><a href='../../sdic.libraries/html/ClienteAPI.html#method-ClienteAPI-.fetch_all_paginated_get'><code>ClienteAPI$.fetch_all_paginated_get()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="sdic.libraries" data-topic="ClienteAPI" data-id=".fetch_all_paginated_post"><a href='../../sdic.libraries/html/ClienteAPI.html#method-ClienteAPI-.fetch_all_paginated_post'><code>ClienteAPI$.fetch_all_paginated_post()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="sdic.libraries" data-topic="ClienteAPI" data-id=".get_total_count"><a href='../../sdic.libraries/html/ClienteAPI.html#method-ClienteAPI-.get_total_count'><code>ClienteAPI$.get_total_count()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="sdic.libraries" data-topic="ClienteAPI" data-id=".get_total_pages"><a href='../../sdic.libraries/html/ClienteAPI.html#method-ClienteAPI-.get_total_pages'><code>ClienteAPI$.get_total_pages()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="sdic.libraries" data-topic="ClienteAPI" data-id=".make_post_request"><a href='../../sdic.libraries/html/ClienteAPI.html#method-ClienteAPI-.make_post_request'><code>ClienteAPI$.make_post_request()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="sdic.libraries" data-topic="ClienteAPI" data-id=".make_request"><a href='../../sdic.libraries/html/ClienteAPI.html#method-ClienteAPI-.make_request'><code>ClienteAPI$.make_request()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="sdic.libraries" data-topic="ClienteAPI" data-id=".normalize_response_item"><a href='../../sdic.libraries/html/ClienteAPI.html#method-ClienteAPI-.normalize_response_item'><code>ClienteAPI$.normalize_response_item()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="sdic.libraries" data-topic="ClienteAPI" data-id="format"><a href='../../sdic.libraries/html/ClienteAPI.html#method-ClienteAPI-format'><code>ClienteAPI$format()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="sdic.libraries" data-topic="ClienteAPI" data-id="initialize"><a href='../../sdic.libraries/html/ClienteAPI.html#method-ClienteAPI-initialize'><code>ClienteAPI$initialize()</code></a></span></li>
+  <li><span class="pkg-link" data-pkg="sdic.libraries" data-topic="ClienteAPI" data-id="print"><a href='../../sdic.libraries/html/ClienteAPI.html#method-ClienteAPI-print'><code>ClienteAPI$print()</code></a></span></li>
+</ul>
+</details>}}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-Comex-get_ncm_isic_mapa"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-get_ncm_isic_mapa}{}}}
-\subsection{Method \code{get_ncm_isic_mapa()}}{
-Catálogo NCM -> ISIC (divisão e seção), \verb{/ncm_isic_mapa}.
+\subsection{\code{Comex$get_ncm_isic_mapa()}}{
+  Catálogo NCM -> ISIC (divisão e seção), \verb{/ncm_isic_mapa}.
 Catálogo estático (~13 mil códigos) — buscado uma vez e cacheado em
 memória na instância.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$get_ncm_isic_mapa()}\if{html}{\out{</div>}}
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{Comex$get_ncm_isic_mapa()}
+    \if{html}{\out{</div>}}
+  }
 }
 
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-Comex-get_exportacao_agrupamentos"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-get_exportacao_agrupamentos}{}}}
-\subsection{Method \code{get_exportacao_agrupamentos()}}{
-Exportações anuais por Agrupamento/Setor/Subsetor/Produto (\verb{/exportacao_agrupamentos})
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$get_exportacao_agrupamentos(
+\subsection{\code{Comex$get_exportacao_agrupamentos()}}{
+  Exportações anuais por Agrupamento/Setor/Subsetor/Produto (\verb{/exportacao_agrupamentos})
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{Comex$get_exportacao_agrupamentos(
   agrupamento,
   ano_minimo = NULL,
   anos = NULL,
   departamento = NULL,
   cg = NULL
-)}\if{html}{\out{</div>}}
+)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{agrupamento}}{Nome do agrupamento (ver \code{get_agrupamentos_disponiveis()})}
+      \item{\code{ano_minimo}}{Ano mínimo (opcional)}
+      \item{\code{anos}}{Vetor de anos específicos (opcional)}
+      \item{\code{departamento}}{Filtro por departamento responsável (opcional)}
+      \item{\code{cg}}{Filtro por coordenação-geral responsável (opcional)}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{agrupamento}}{Nome do agrupamento (ver \code{get_agrupamentos_disponiveis()})}
-
-\item{\code{ano_minimo}}{Ano mínimo (opcional)}
-
-\item{\code{anos}}{Vetor de anos específicos (opcional)}
-
-\item{\code{departamento}}{Filtro por departamento responsável (opcional)}
-
-\item{\code{cg}}{Filtro por coordenação-geral responsável (opcional)}
-}
-\if{html}{\out{</div>}}
-}
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-Comex-get_importacao_agrupamentos"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-get_importacao_agrupamentos}{}}}
-\subsection{Method \code{get_importacao_agrupamentos()}}{
-Importações anuais por Agrupamento/Setor/Subsetor/Produto (\verb{/importacao_agrupamentos}). Ver \code{get_exportacao_agrupamentos}.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$get_importacao_agrupamentos(
+\subsection{\code{Comex$get_importacao_agrupamentos()}}{
+  Importações anuais por Agrupamento/Setor/Subsetor/Produto (\verb{/importacao_agrupamentos}). Ver \code{get_exportacao_agrupamentos}.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{Comex$get_importacao_agrupamentos(
   agrupamento,
   ano_minimo = NULL,
   anos = NULL,
   departamento = NULL,
   cg = NULL
-)}\if{html}{\out{</div>}}
+)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{agrupamento}}{Nome do agrupamento}
+      \item{\code{ano_minimo}}{Ano mínimo (opcional)}
+      \item{\code{anos}}{Vetor de anos específicos (opcional)}
+      \item{\code{departamento}}{Filtro por departamento responsável (opcional)}
+      \item{\code{cg}}{Filtro por coordenação-geral responsável (opcional)}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{agrupamento}}{Nome do agrupamento}
-
-\item{\code{ano_minimo}}{Ano mínimo (opcional)}
-
-\item{\code{anos}}{Vetor de anos específicos (opcional)}
-
-\item{\code{departamento}}{Filtro por departamento responsável (opcional)}
-
-\item{\code{cg}}{Filtro por coordenação-geral responsável (opcional)}
-}
-\if{html}{\out{</div>}}
-}
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-Comex-.movimentacoes_agrupamentos"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-.movimentacoes_agrupamentos}{}}}
-\subsection{Method \code{.movimentacoes_agrupamentos()}}{
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$.movimentacoes_agrupamentos(
+\subsection{\code{Comex$.movimentacoes_agrupamentos()}}{
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{Comex$.movimentacoes_agrupamentos(
   endpoint,
   agrupamento,
   ano_minimo,
   anos,
   departamento,
   cg
-)}\if{html}{\out{</div>}}
+)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{endpoint}}{Endpoint (interno)}
+      \item{\code{agrupamento}}{Nome do agrupamento (interno)}
+      \item{\code{ano_minimo}}{Ano mínimo (interno)}
+      \item{\code{anos}}{Vetor de anos (interno)}
+      \item{\code{departamento}}{Departamento (interno)}
+      \item{\code{cg}}{CG (interno)}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{endpoint}}{Endpoint (interno)}
-
-\item{\code{agrupamento}}{Nome do agrupamento (interno)}
-
-\item{\code{ano_minimo}}{Ano mínimo (interno)}
-
-\item{\code{anos}}{Vetor de anos (interno)}
-
-\item{\code{departamento}}{Departamento (interno)}
-
-\item{\code{cg}}{CG (interno)}
-}
-\if{html}{\out{</div>}}
-}
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-Comex-get_exportacao_agrupamentos_pais_ncm"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-get_exportacao_agrupamentos_pais_ncm}{}}}
-\subsection{Method \code{get_exportacao_agrupamentos_pais_ncm()}}{
-Exportações por Agrupamento, desagregadas por país e NCM (\verb{/exportacao_agrupamentos_pais_ncm}).
+\subsection{\code{Comex$get_exportacao_agrupamentos_pais_ncm()}}{
+  Exportações por Agrupamento, desagregadas por país e NCM (\verb{/exportacao_agrupamentos_pais_ncm}).
 \code{nivel_agregacao}: NULL (detalhe completo, com país e NCM) ou "setor"/"subsetor"/"produto"
 (soma nesse nível, sem país nem NCM). \code{posicao}: ranking por VLFob dentro de cada grupo.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$get_exportacao_agrupamentos_pais_ncm(
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{Comex$get_exportacao_agrupamentos_pais_ncm(
   agrupamento,
   ano_minimo = NULL,
   mes_maximo = NULL,
@@ -365,38 +198,33 @@ Exportações por Agrupamento, desagregadas por país e NCM (\verb{/exportacao_a
   posicao = NULL,
   departamento = NULL,
   cg = NULL
-)}\if{html}{\out{</div>}}
+)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{agrupamento}}{Nome do agrupamento}
+      \item{\code{ano_minimo}}{Ano mínimo (opcional)}
+      \item{\code{mes_maximo}}{Mês máximo (opcional)}
+      \item{\code{nivel_agregacao}}{NULL, "setor", "subsetor" ou "produto" (opcional)}
+      \item{\code{agregado_ano}}{Se TRUE, soma no BigQuery (1 linha por ano) (opcional)}
+      \item{\code{posicao}}{Ranking por VLFob dentro de cada grupo (opcional)}
+      \item{\code{departamento}}{Filtro por departamento responsável (opcional)}
+      \item{\code{cg}}{Filtro por coordenação-geral responsável (opcional)}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{agrupamento}}{Nome do agrupamento}
-
-\item{\code{ano_minimo}}{Ano mínimo (opcional)}
-
-\item{\code{mes_maximo}}{Mês máximo (opcional)}
-
-\item{\code{nivel_agregacao}}{NULL, "setor", "subsetor" ou "produto" (opcional)}
-
-\item{\code{agregado_ano}}{Se TRUE, soma no BigQuery (1 linha por ano) (opcional)}
-
-\item{\code{posicao}}{Ranking por VLFob dentro de cada grupo (opcional)}
-
-\item{\code{departamento}}{Filtro por departamento responsável (opcional)}
-
-\item{\code{cg}}{Filtro por coordenação-geral responsável (opcional)}
-}
-\if{html}{\out{</div>}}
-}
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-Comex-get_importacao_agrupamentos_pais_ncm"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-get_importacao_agrupamentos_pais_ncm}{}}}
-\subsection{Method \code{get_importacao_agrupamentos_pais_ncm()}}{
-Importações por Agrupamento, desagregadas por país e NCM (\verb{/importacao_agrupamentos_pais_ncm}). Ver \code{get_exportacao_agrupamentos_pais_ncm}.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$get_importacao_agrupamentos_pais_ncm(
+\subsection{\code{Comex$get_importacao_agrupamentos_pais_ncm()}}{
+  Importações por Agrupamento, desagregadas por país e NCM (\verb{/importacao_agrupamentos_pais_ncm}). Ver \code{get_exportacao_agrupamentos_pais_ncm}.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{Comex$get_importacao_agrupamentos_pais_ncm(
   agrupamento,
   ano_minimo = NULL,
   mes_maximo = NULL,
@@ -405,37 +233,32 @@ Importações por Agrupamento, desagregadas por país e NCM (\verb{/importacao_a
   posicao = NULL,
   departamento = NULL,
   cg = NULL
-)}\if{html}{\out{</div>}}
+)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{agrupamento}}{Nome do agrupamento}
+      \item{\code{ano_minimo}}{Ano mínimo (opcional)}
+      \item{\code{mes_maximo}}{Mês máximo (opcional)}
+      \item{\code{nivel_agregacao}}{NULL, "setor", "subsetor" ou "produto" (opcional)}
+      \item{\code{agregado_ano}}{Se TRUE, soma no BigQuery (1 linha por ano) (opcional)}
+      \item{\code{posicao}}{Ranking por VLFob dentro de cada grupo (opcional)}
+      \item{\code{departamento}}{Filtro por departamento responsável (opcional)}
+      \item{\code{cg}}{Filtro por coordenação-geral responsável (opcional)}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{agrupamento}}{Nome do agrupamento}
-
-\item{\code{ano_minimo}}{Ano mínimo (opcional)}
-
-\item{\code{mes_maximo}}{Mês máximo (opcional)}
-
-\item{\code{nivel_agregacao}}{NULL, "setor", "subsetor" ou "produto" (opcional)}
-
-\item{\code{agregado_ano}}{Se TRUE, soma no BigQuery (1 linha por ano) (opcional)}
-
-\item{\code{posicao}}{Ranking por VLFob dentro de cada grupo (opcional)}
-
-\item{\code{departamento}}{Filtro por departamento responsável (opcional)}
-
-\item{\code{cg}}{Filtro por coordenação-geral responsável (opcional)}
-}
-\if{html}{\out{</div>}}
-}
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-Comex-.movimentacoes_agrupamentos_pais_ncm"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-.movimentacoes_agrupamentos_pais_ncm}{}}}
-\subsection{Method \code{.movimentacoes_agrupamentos_pais_ncm()}}{
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$.movimentacoes_agrupamentos_pais_ncm(
+\subsection{\code{Comex$.movimentacoes_agrupamentos_pais_ncm()}}{
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{Comex$.movimentacoes_agrupamentos_pais_ncm(
   endpoint,
   agrupamento,
   ano_minimo,
@@ -445,216 +268,203 @@ Importações por Agrupamento, desagregadas por país e NCM (\verb{/importacao_a
   posicao,
   departamento,
   cg
-)}\if{html}{\out{</div>}}
+)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{endpoint}}{Endpoint (interno)}
+      \item{\code{agrupamento}}{Nome do agrupamento (interno)}
+      \item{\code{ano_minimo}}{Ano mínimo (interno)}
+      \item{\code{mes_maximo}}{Mês máximo (interno)}
+      \item{\code{nivel_agregacao}}{Nível de agregação (interno)}
+      \item{\code{agregado_ano}}{Agregar por ano (interno)}
+      \item{\code{posicao}}{Posição/ranking (interno)}
+      \item{\code{departamento}}{Departamento (interno)}
+      \item{\code{cg}}{CG (interno)}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{endpoint}}{Endpoint (interno)}
-
-\item{\code{agrupamento}}{Nome do agrupamento (interno)}
-
-\item{\code{ano_minimo}}{Ano mínimo (interno)}
-
-\item{\code{mes_maximo}}{Mês máximo (interno)}
-
-\item{\code{nivel_agregacao}}{Nível de agregação (interno)}
-
-\item{\code{agregado_ano}}{Agregar por ano (interno)}
-
-\item{\code{posicao}}{Posição/ranking (interno)}
-
-\item{\code{departamento}}{Departamento (interno)}
-
-\item{\code{cg}}{CG (interno)}
-}
-\if{html}{\out{</div>}}
-}
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-Comex-get_agrupamentos_disponiveis"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-get_agrupamentos_disponiveis}{}}}
-\subsection{Method \code{get_agrupamentos_disponiveis()}}{
-Catálogo de agrupamentos de comex (\verb{/agrupamentos_disponiveis}), 1 registro por
+\subsection{\code{Comex$get_agrupamentos_disponiveis()}}{
+  Catálogo de agrupamentos de comex (\verb{/agrupamentos_disponiveis}), 1 registro por
 (Agrupamento, Departamento, CG) — use para descobrir o nome a passar em
 \verb{agrupamento=} nos outros métodos de agrupamentos, opcionalmente já filtrado.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$get_agrupamentos_disponiveis(departamento = NULL, cg = NULL)}\if{html}{\out{</div>}}
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{Comex$get_agrupamentos_disponiveis(departamento = NULL, cg = NULL)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{departamento}}{Filtro por departamento responsável (opcional)}
+      \item{\code{cg}}{Filtro por coordenação-geral responsável (opcional)}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{departamento}}{Filtro por departamento responsável (opcional)}
-
-\item{\code{cg}}{Filtro por coordenação-geral responsável (opcional)}
-}
-\if{html}{\out{</div>}}
-}
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-Comex-.ncms_da_secao"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-.ncms_da_secao}{}}}
-\subsection{Method \code{.ncms_da_secao()}}{
-Códigos NCM pertencentes a uma seção ISIC (aceita a letra, ex. \code{C},
+\subsection{\code{Comex$.ncms_da_secao()}}{
+  Códigos NCM pertencentes a uma seção ISIC (aceita a letra, ex. \code{C},
 ou o nome por extenso, ex. \verb{Indústria de Transformação}).
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$.ncms_da_secao(secao)}\if{html}{\out{</div>}}
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{Comex$.ncms_da_secao(secao)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{secao}}{Seção ISIC (letra ou nome por extenso)}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{secao}}{Seção ISIC (letra ou nome por extenso)}
-}
-\if{html}{\out{</div>}}
-}
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-Comex-get_exportacao_ncm_nacional_mensal"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-get_exportacao_ncm_nacional_mensal}{}}}
-\subsection{Method \code{get_exportacao_ncm_nacional_mensal()}}{
-Exportações nacionais agregadas por NCM (\verb{/exportacao_agregada_ncm}).
+\subsection{\code{Comex$get_exportacao_ncm_nacional_mensal()}}{
+  Exportações nacionais agregadas por NCM (\verb{/exportacao_agregada_ncm}).
 \code{secao}, quando informada, filtra os NCMs pela seção ISIC correspondente
 (via \code{get_ncm_isic_mapa}, cacheado em memória) — o endpoint de origem
 não carrega essa informação.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$get_exportacao_ncm_nacional_mensal(
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{Comex$get_exportacao_ncm_nacional_mensal(
   ano_minimo = NULL,
   mes_maximo = NULL,
   anos = NULL,
   lista_ncms = NULL,
   secao = NULL,
   agregado_ano = FALSE
-)}\if{html}{\out{</div>}}
-}
-
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{ano_minimo}}{Ano mínimo (opcional)}
-
-\item{\code{mes_maximo}}{Mês máximo (opcional)}
-
-\item{\code{anos}}{Vetor de anos específicos (opcional)}
-
-\item{\code{lista_ncms}}{Vetor de códigos NCM (opcional)}
-
-\item{\code{secao}}{Seção ISIC para filtrar (opcional)}
-
-\item{\code{agregado_ano}}{Se TRUE, soma no BigQuery e devolve 1 linha por
+)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{ano_minimo}}{Ano mínimo (opcional)}
+      \item{\code{mes_maximo}}{Mês máximo (opcional)}
+      \item{\code{anos}}{Vetor de anos específicos (opcional)}
+      \item{\code{lista_ncms}}{Vetor de códigos NCM (opcional)}
+      \item{\code{secao}}{Seção ISIC para filtrar (opcional)}
+      \item{\code{agregado_ano}}{Se TRUE, soma no BigQuery e devolve 1 linha por
 (ano, NCM) em vez de por (ano, mês, NCM) — bem mais barato quando só
 o total anual interessa.}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
-\if{html}{\out{</div>}}
-}
-}
+
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-Comex-get_importacao_ncm_nacional_mensal"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-get_importacao_ncm_nacional_mensal}{}}}
-\subsection{Method \code{get_importacao_ncm_nacional_mensal()}}{
-Importações nacionais agregadas por NCM (\verb{/importacao_agregada_ncm}). Ver \code{get_exportacao_ncm_nacional_mensal}.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$get_importacao_ncm_nacional_mensal(
+\subsection{\code{Comex$get_importacao_ncm_nacional_mensal()}}{
+  Importações nacionais agregadas por NCM (\verb{/importacao_agregada_ncm}). Ver \code{get_exportacao_ncm_nacional_mensal}.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{Comex$get_importacao_ncm_nacional_mensal(
   ano_minimo = NULL,
   mes_maximo = NULL,
   anos = NULL,
   lista_ncms = NULL,
   secao = NULL,
   agregado_ano = FALSE
-)}\if{html}{\out{</div>}}
+)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{ano_minimo}}{Ano mínimo (opcional)}
+      \item{\code{mes_maximo}}{Mês máximo (opcional)}
+      \item{\code{anos}}{Vetor de anos específicos (opcional)}
+      \item{\code{lista_ncms}}{Vetor de códigos NCM (opcional)}
+      \item{\code{secao}}{Seção ISIC para filtrar (opcional)}
+      \item{\code{agregado_ano}}{Se TRUE, agrega por ano (sem mês)}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{ano_minimo}}{Ano mínimo (opcional)}
-
-\item{\code{mes_maximo}}{Mês máximo (opcional)}
-
-\item{\code{anos}}{Vetor de anos específicos (opcional)}
-
-\item{\code{lista_ncms}}{Vetor de códigos NCM (opcional)}
-
-\item{\code{secao}}{Seção ISIC para filtrar (opcional)}
-
-\item{\code{agregado_ano}}{Se TRUE, agrega por ano (sem mês)}
-}
-\if{html}{\out{</div>}}
-}
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-Comex-get_exportacao_isic_divisao_nacional_mensal"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-get_exportacao_isic_divisao_nacional_mensal}{}}}
-\subsection{Method \code{get_exportacao_isic_divisao_nacional_mensal()}}{
-Exportações nacionais por divisão ISIC (\verb{/exportacao_isic_divisao}).
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$get_exportacao_isic_divisao_nacional_mensal(
+\subsection{\code{Comex$get_exportacao_isic_divisao_nacional_mensal()}}{
+  Exportações nacionais por divisão ISIC (\verb{/exportacao_isic_divisao}).
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{Comex$get_exportacao_isic_divisao_nacional_mensal(
   ano_minimo = NULL,
   mes_maximo = NULL,
   secao = NULL,
   divisao = NULL,
   agregado_ano = FALSE
-)}\if{html}{\out{</div>}}
+)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{ano_minimo}}{Ano mínimo (opcional)}
+      \item{\code{mes_maximo}}{Mês máximo (opcional)}
+      \item{\code{secao}}{Seção ISIC (opcional)}
+      \item{\code{divisao}}{Código de divisão ISIC (opcional)}
+      \item{\code{agregado_ano}}{Se TRUE, agrega por ano (sem mês)}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{ano_minimo}}{Ano mínimo (opcional)}
-
-\item{\code{mes_maximo}}{Mês máximo (opcional)}
-
-\item{\code{secao}}{Seção ISIC (opcional)}
-
-\item{\code{divisao}}{Código de divisão ISIC (opcional)}
-
-\item{\code{agregado_ano}}{Se TRUE, agrega por ano (sem mês)}
-}
-\if{html}{\out{</div>}}
-}
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-Comex-get_importacao_isic_divisao_nacional_mensal"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-get_importacao_isic_divisao_nacional_mensal}{}}}
-\subsection{Method \code{get_importacao_isic_divisao_nacional_mensal()}}{
-Importações nacionais por divisão ISIC (\verb{/importacao_isic_divisao}).
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$get_importacao_isic_divisao_nacional_mensal(
+\subsection{\code{Comex$get_importacao_isic_divisao_nacional_mensal()}}{
+  Importações nacionais por divisão ISIC (\verb{/importacao_isic_divisao}).
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{Comex$get_importacao_isic_divisao_nacional_mensal(
   ano_minimo = NULL,
   mes_maximo = NULL,
   secao = NULL,
   divisao = NULL,
   agregado_ano = FALSE
-)}\if{html}{\out{</div>}}
+)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{ano_minimo}}{Ano mínimo (opcional)}
+      \item{\code{mes_maximo}}{Mês máximo (opcional)}
+      \item{\code{secao}}{Seção ISIC (opcional)}
+      \item{\code{divisao}}{Código de divisão ISIC (opcional)}
+      \item{\code{agregado_ano}}{Se TRUE, agrega por ano (sem mês)}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{ano_minimo}}{Ano mínimo (opcional)}
-
-\item{\code{mes_maximo}}{Mês máximo (opcional)}
-
-\item{\code{secao}}{Seção ISIC (opcional)}
-
-\item{\code{divisao}}{Código de divisão ISIC (opcional)}
-
-\item{\code{agregado_ano}}{Se TRUE, agrega por ano (sem mês)}
-}
-\if{html}{\out{</div>}}
-}
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-Comex-get_exportacao_isic_divisao_estadual_mensal"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-get_exportacao_isic_divisao_estadual_mensal}{}}}
-\subsection{Method \code{get_exportacao_isic_divisao_estadual_mensal()}}{
-Exportações por UF, país e divisão ISIC (\verb{/exportacao_uf_isic_divisao}).
+\subsection{\code{Comex$get_exportacao_isic_divisao_estadual_mensal()}}{
+  Exportações por UF, país e divisão ISIC (\verb{/exportacao_uf_isic_divisao}).
 \code{bloco}: código de bloco econômico (\code{pais_bloco.CO_BLOCO}, ex. \code{22}
 para União Europeia) para filtrar por um recorte de países.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$get_exportacao_isic_divisao_estadual_mensal(
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{Comex$get_exportacao_isic_divisao_estadual_mensal(
   estado = NULL,
   pais = NULL,
   ano_minimo = NULL,
@@ -664,40 +474,34 @@ para União Europeia) para filtrar por um recorte de países.
   bloco = NULL,
   agregado_ano = FALSE,
   agregado_pais = FALSE
-)}\if{html}{\out{</div>}}
+)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{estado}}{Nome da UF (opcional)}
+      \item{\code{pais}}{Nome do país (opcional)}
+      \item{\code{ano_minimo}}{Ano mínimo (opcional)}
+      \item{\code{mes_maximo}}{Mês máximo (opcional)}
+      \item{\code{secao}}{Seção ISIC (opcional)}
+      \item{\code{divisao}}{Código de divisão ISIC (opcional)}
+      \item{\code{bloco}}{Código de bloco econômico (opcional)}
+      \item{\code{agregado_ano}}{Se TRUE, agrega por ano (sem mês)}
+      \item{\code{agregado_pais}}{Se TRUE, soma entre países (sem a coluna Pais)}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{estado}}{Nome da UF (opcional)}
-
-\item{\code{pais}}{Nome do país (opcional)}
-
-\item{\code{ano_minimo}}{Ano mínimo (opcional)}
-
-\item{\code{mes_maximo}}{Mês máximo (opcional)}
-
-\item{\code{secao}}{Seção ISIC (opcional)}
-
-\item{\code{divisao}}{Código de divisão ISIC (opcional)}
-
-\item{\code{bloco}}{Código de bloco econômico (opcional)}
-
-\item{\code{agregado_ano}}{Se TRUE, agrega por ano (sem mês)}
-
-\item{\code{agregado_pais}}{Se TRUE, soma entre países (sem a coluna Pais)}
-}
-\if{html}{\out{</div>}}
-}
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-Comex-get_importacao_isic_divisao_estadual_mensal"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-get_importacao_isic_divisao_estadual_mensal}{}}}
-\subsection{Method \code{get_importacao_isic_divisao_estadual_mensal()}}{
-Importações por UF, país e divisão ISIC (\verb{/importacao_uf_isic_divisao}). Ver \code{get_exportacao_isic_divisao_estadual_mensal}.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$get_importacao_isic_divisao_estadual_mensal(
+\subsection{\code{Comex$get_importacao_isic_divisao_estadual_mensal()}}{
+  Importações por UF, país e divisão ISIC (\verb{/importacao_uf_isic_divisao}). Ver \code{get_exportacao_isic_divisao_estadual_mensal}.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{Comex$get_importacao_isic_divisao_estadual_mensal(
   estado = NULL,
   pais = NULL,
   ano_minimo = NULL,
@@ -707,110 +511,101 @@ Importações por UF, país e divisão ISIC (\verb{/importacao_uf_isic_divisao})
   bloco = NULL,
   agregado_ano = FALSE,
   agregado_pais = FALSE
-)}\if{html}{\out{</div>}}
+)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{estado}}{Nome da UF (opcional)}
+      \item{\code{pais}}{Nome do país (opcional)}
+      \item{\code{ano_minimo}}{Ano mínimo (opcional)}
+      \item{\code{mes_maximo}}{Mês máximo (opcional)}
+      \item{\code{secao}}{Seção ISIC (opcional)}
+      \item{\code{divisao}}{Código de divisão ISIC (opcional)}
+      \item{\code{bloco}}{Código de bloco econômico (opcional)}
+      \item{\code{agregado_ano}}{Se TRUE, agrega por ano (sem mês)}
+      \item{\code{agregado_pais}}{Se TRUE, soma entre países (sem a coluna Pais)}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{estado}}{Nome da UF (opcional)}
-
-\item{\code{pais}}{Nome do país (opcional)}
-
-\item{\code{ano_minimo}}{Ano mínimo (opcional)}
-
-\item{\code{mes_maximo}}{Mês máximo (opcional)}
-
-\item{\code{secao}}{Seção ISIC (opcional)}
-
-\item{\code{divisao}}{Código de divisão ISIC (opcional)}
-
-\item{\code{bloco}}{Código de bloco econômico (opcional)}
-
-\item{\code{agregado_ano}}{Se TRUE, agrega por ano (sem mês)}
-
-\item{\code{agregado_pais}}{Se TRUE, soma entre países (sem a coluna Pais)}
-}
-\if{html}{\out{</div>}}
-}
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-Comex-get_exportacao_pais_nacional_mensal"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-get_exportacao_pais_nacional_mensal}{}}}
-\subsection{Method \code{get_exportacao_pais_nacional_mensal()}}{
-Exportações nacionais por país (\verb{/exportacao_pais}).
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$get_exportacao_pais_nacional_mensal(
+\subsection{\code{Comex$get_exportacao_pais_nacional_mensal()}}{
+  Exportações nacionais por país (\verb{/exportacao_pais}).
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{Comex$get_exportacao_pais_nacional_mensal(
   pais = NULL,
   secao = NULL,
   ano_minimo = NULL,
   mes_maximo = NULL,
   agregado_ano = FALSE
-)}\if{html}{\out{</div>}}
+)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{pais}}{Nome do país (opcional)}
+      \item{\code{secao}}{Seção ISIC (opcional)}
+      \item{\code{ano_minimo}}{Ano mínimo (opcional)}
+      \item{\code{mes_maximo}}{Mês máximo (opcional)}
+      \item{\code{agregado_ano}}{Se TRUE, agrega por ano (sem mês)}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{pais}}{Nome do país (opcional)}
-
-\item{\code{secao}}{Seção ISIC (opcional)}
-
-\item{\code{ano_minimo}}{Ano mínimo (opcional)}
-
-\item{\code{mes_maximo}}{Mês máximo (opcional)}
-
-\item{\code{agregado_ano}}{Se TRUE, agrega por ano (sem mês)}
-}
-\if{html}{\out{</div>}}
-}
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-Comex-get_importacao_pais_nacional_mensal"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-get_importacao_pais_nacional_mensal}{}}}
-\subsection{Method \code{get_importacao_pais_nacional_mensal()}}{
-Importações nacionais por país (\verb{/importacao_pais}).
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$get_importacao_pais_nacional_mensal(
+\subsection{\code{Comex$get_importacao_pais_nacional_mensal()}}{
+  Importações nacionais por país (\verb{/importacao_pais}).
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{Comex$get_importacao_pais_nacional_mensal(
   pais = NULL,
   secao = NULL,
   ano_minimo = NULL,
   mes_maximo = NULL,
   agregado_ano = FALSE
-)}\if{html}{\out{</div>}}
+)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{pais}}{Nome do país (opcional)}
+      \item{\code{secao}}{Seção ISIC (opcional)}
+      \item{\code{ano_minimo}}{Ano mínimo (opcional)}
+      \item{\code{mes_maximo}}{Mês máximo (opcional)}
+      \item{\code{agregado_ano}}{Se TRUE, agrega por ano (sem mês)}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{pais}}{Nome do país (opcional)}
-
-\item{\code{secao}}{Seção ISIC (opcional)}
-
-\item{\code{ano_minimo}}{Ano mínimo (opcional)}
-
-\item{\code{mes_maximo}}{Mês máximo (opcional)}
-
-\item{\code{agregado_ano}}{Se TRUE, agrega por ano (sem mês)}
-}
-\if{html}{\out{</div>}}
-}
-}
 \if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-Comex-clone"></a>}}
 \if{latex}{\out{\hypertarget{method-Comex-clone}{}}}
-\subsection{Method \code{clone()}}{
-The objects of this class are cloneable with this method.
-\subsection{Usage}{
-\if{html}{\out{<div class="r">}}\preformatted{Comex$clone(deep = FALSE)}\if{html}{\out{</div>}}
+\subsection{\code{Comex$clone()}}{
+  The objects of this class are cloneable with this method.
+  \subsection{Usage}{
+    \if{html}{\out{<div class="r">}}
+    \preformatted{Comex$clone(deep = FALSE)}
+    \if{html}{\out{</div>}}
+  }
+  \subsection{Arguments}{
+    \if{html}{\out{<div class="arguments">}}
+    \describe{
+      \item{\code{deep}}{Whether to make a deep clone.}
+    }
+    \if{html}{\out{</div>}}
+  }
 }
 
-\subsection{Arguments}{
-\if{html}{\out{<div class="arguments">}}
-\describe{
-\item{\code{deep}}{Whether to make a deep clone.}
-}
-\if{html}{\out{</div>}}
-}
-}
 }

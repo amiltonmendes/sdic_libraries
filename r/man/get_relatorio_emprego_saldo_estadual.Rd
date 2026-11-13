@@ -2,18 +2,19 @@
 % Please edit documentation in R/portal.R
 \name{get_relatorio_emprego_saldo_estadual}
 \alias{get_relatorio_emprego_saldo_estadual}
-\title{Saldo CAGED mensal por divisao CNAE (cache) de uma UF}
+\title{Saldo CAGED mensal por divisão CNAE (cache) de uma UF — depreciada}
 \usage{
-get_relatorio_emprego_saldo_estadual(uf, ambiente = "producao")
+get_relatorio_emprego_saldo_estadual(uf, ambiente = NULL)
 }
 \arguments{
 \item{uf}{Sigla da UF (ex.: "SP").}
 
-\item{ambiente}{"producao" (default) ou "homologacao".}
+\item{ambiente}{\code{"producao"} ou \code{"homologacao"} (padrão: \code{SDIC_AMBIENTE}, depois
+\code{"producao"}).}
 }
 \value{
 Tibble com o saldo mensal.
 }
 \description{
-Saldo CAGED mensal por divisao CNAE (cache) de uma UF
+Use \code{\link[=get_saldo_emprego_estadual_mensal]{get_saldo_emprego_estadual_mensal()}}.
 }
