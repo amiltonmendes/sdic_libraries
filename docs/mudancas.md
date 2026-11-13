@@ -4,7 +4,7 @@
 
 
 Formato livre (sem [Keep a Changelog](https://keepachangelog.com) ainda) — o essencial é: o que
-muda pro usuário ao atualizar. Versionamento nas duas linguagens juntas; ver [AGENTS.md](AGENTS.md#versionamento).
+muda pro usuário ao atualizar. Versionamento nas duas linguagens juntas; ver [AGENTS.md](../AGENTS.md#versionamento).
 
 ## [0.6.0] — 2026-11-13
 

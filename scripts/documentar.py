@@ -303,7 +303,9 @@ def gerar() -> dict[Path, str]:
         docs / "referencia.md": referencia_md(cat),
         docs / "dados.md": dados_md(cat),
         docs / "configuracao.md": CONFIG.format(aviso=AVISO.strip(), variaveis=variaveis),
-        docs / "mudancas.md": "# Mudanças\n\n" + AVISO + (RAIZ / "CHANGELOG.md").read_text(encoding="utf-8").split("\n", 1)[1],
+        # links do CHANGELOG são relativos à raiz do repositório; docs/ fica um nível abaixo
+        docs / "mudancas.md": "# Mudanças\n\n" + AVISO + (RAIZ / "CHANGELOG.md").read_text(encoding="utf-8").split("\n", 1)[1]
+        .replace("](AGENTS.md", "](../AGENTS.md").replace("](INSTALL.md", "](../INSTALL.md"),
     }
 
 
