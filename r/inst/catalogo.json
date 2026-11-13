@@ -112,6 +112,16 @@
    "carga": null,
    "documentacao": null,
    "depreciada": "Use get_kpis_publicados(uf, 'emprego') e as demais funções de seções publicadas."
+  },
+  "referencias": {
+   "titulo": "Tabelas de de-para (CNAE, ISIC, municípios, intensidade tecnológica, agrupamentos NCM)",
+   "origem": "api",
+   "caminho": "/referencias/{nome}",
+   "fonte": "carga_base/referencias (CSVs versionados)",
+   "periodicidade": "quando um mapeamento muda",
+   "dataset": "referencias",
+   "carga": null,
+   "documentacao": "carga_base/docs/MAPEAMENTOS.md"
   }
  },
  "secoes": {
@@ -819,6 +829,18 @@
     "texto",
     ""
    ]
+  ],
+  "listar_referencias": [
+   [
+    "nome",
+    "texto",
+    "nome a passar em get_referencia"
+   ],
+   [
+    "descricao",
+    "texto",
+    ""
+   ]
   ]
  },
  "funcoes": [
@@ -1271,6 +1293,26 @@
    "exemplo_py": "get_dimensao_serie('sidra_producao', 'variavel')",
    "exemplo_r": "get_dimensao_serie('sidra_producao', 'variavel')",
    "base": "series"
+  },
+  {
+   "tema": "series",
+   "subtema": "referencias",
+   "nivel": "-",
+   "funcao": "listar_referencias",
+   "descricao": "Tabelas de de-para disponíveis (CNAE, ISIC, municípios, intensidade tecnológica, agrupamentos NCM).",
+   "exemplo_py": "listar_referencias()",
+   "exemplo_r": "listar_referencias()",
+   "base": "referencias"
+  },
+  {
+   "tema": "series",
+   "subtema": "referencias",
+   "nivel": "-",
+   "funcao": "get_referencia",
+   "descricao": "Uma tabela de de-para inteira, com todos os códigos como texto.",
+   "exemplo_py": "get_referencia('isic_cnae')",
+   "exemplo_r": "get_referencia('isic_cnae')",
+   "base": "referencias"
   },
   {
    "tema": "publicados",
