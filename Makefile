@@ -1,82 +1,28 @@
-# Makefile para instalação automática da biblioteca SDIC
+# sdic_libraries: comandos de desenvolvimento
+PYTHON ?= python
+.PHONY: help documentar conferir test test-python test-r clean
 
-.PHONY: help install install-python install-r test test-python test-r clean
-
-# Default target
 help:
-	@echo "📦 Biblioteca SDIC - Comandos de Instalação"
-	@echo "==========================================="
-	@echo ""
-	@echo "Principais comandos:"
-	@echo "  install          Instalar ambas as linguagens (Python + R)"
-	@echo "  install-python   Instalar apenas Python"
-	@echo "  install-r        Instalar apenas R"
-	@echo "  test             Testar ambas as linguagens"
-	@echo "  test-python      Testar apenas Python"
-	@echo "  test-r           Testar apenas R"
-	@echo "  clean            Limpar arquivos temporários"
-	@echo ""
-	@echo "Uso:"
-	@echo "  make install     # Instalação completa"
-	@echo "  make test        # Testes completos"
+	@echo "make documentar   copia contrato/catalogo.json para os pacotes, gera CATALOGO.md, docs/ e a ajuda do R"
+	@echo "make conferir     falha se algo gerado estiver desatualizado"
+	@echo "make test         testes das duas linguagens + conferir"
+	@echo "make test-python | make test-r"
 
-# Instalação completa (Python + R)
-install: install-python install-r
-	@echo ""
-	@echo "🎉 Instalação completa da biblioteca SDIC finalizada!"
-	@echo "📖 Consulte INSTALL.md para instruções de uso"
+documentar:
+	$(PYTHON) scripts/documentar.py
+	Rscript -e 'roxygen2::roxygenise("r")'
 
-# Instalação Python
-install-python:
-	@echo "🐍 Instalando biblioteca SDIC Python..."
-	cd python && python install.py
+conferir:
+	$(PYTHON) scripts/documentar.py --conferir
 
-# Instalação R  
-install-r:
-	@echo "📊 Instalando biblioteca SDIC R..."
-	cd r && Rscript install.R
+test: conferir test-python test-r
 
-# Testes completos
-test: test-python test-r
-	@echo "✅ Todos os testes concluídos!"
-
-# Teste Python
 test-python:
-	@echo "🧪 Testando biblioteca Python..."
-	cd python && python -c "from sdic_libraries.data_access.emprego import Emprego; print('✅ Python OK')"
+	cd python && $(PYTHON) -m pytest -q
 
-# Teste R
 test-r:
-	@echo "🧪 Testando biblioteca R..."
-	cd r && Rscript -e "source('R/data_access/emprego.R'); api <- Emprego\$$new(); cat('✅ R OK\n')"
+	Rscript -e 'r <- as.data.frame(testthat::test_local("r", reporter = "summary", stop_on_failure = FALSE)); if (sum(r$$failed) + sum(r$$error) > 0) quit(status = 1)'
 
-# Limpeza
 clean:
-	@echo "🧹 Limpando arquivos temporários..."
-	find . -name "*.pyc" -delete
-	find . -name "__pycache__" -delete
-	find . -name ".pytest_cache" -delete
-	rm -rf python/build/
-	rm -rf python/dist/
-	rm -rf python/sdic_libraries.egg-info/
-	@echo "✅ Limpeza concluída"
-
-# Instalação para desenvolvimento
-dev: install
-	@echo "🔧 Configurando ambiente de desenvolvimento..."
-	cd python && pip install -r requirements-dev.txt
-	cd r && Rscript -e "install.packages(c('testthat', 'devtools', 'pkgdown', 'usethis'))"
-	@echo "✅ Ambiente de desenvolvimento configurado"
-
-# Docker build (futuro)
-docker:
-	@echo "🐳 Funcionalidade Docker em desenvolvimento..."
-
-# Verificação rápida
-check:
-	@echo "🔍 Verificação rápida da instalação..."
-	@echo "Python:" 
-	@cd python && python -c "import sys; print(f'  ✅ Python {sys.version}')" 2>/dev/null || echo "  ❌ Python não encontrado"
-	@echo "R:"
-	@Rscript -e "cat('  ✅ R', R.version\$$version.string, '\n')" 2>/dev/null || echo "  ❌ R não encontrado"
-	@echo ""
+	find . -name "__pycache__" -prune -exec rm -rf {} +
+	rm -rf python/build python/dist python/*.egg-info python/.pytest_cache

@@ -1,0 +1,33 @@
+name: testes
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -e "python/[dev]"
+      - run: python scripts/documentar.py --conferir
+      - run: cd python && python -m pytest -q
+  r:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-r@v2
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          working-directory: r
+          extra-packages: any::testthat, any::roxygen2
+      - name: Ajuda do R em dia com o roxygen
+        run: |
+          Rscript -e 'roxygen2::roxygenise("r")'
+          git diff --exit-code -- r/man r/NAMESPACE
+      - name: Testes
+        run: Rscript -e 'r <- as.data.frame(testthat::test_local("r", reporter = "summary", stop_on_failure = FALSE)); if (sum(r$failed) + sum(r$error) > 0) quit(status = 1)'

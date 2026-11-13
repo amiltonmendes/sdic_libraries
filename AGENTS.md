@@ -6,12 +6,20 @@ junto da regra para que você possa julgar exceções sozinho em vez de só obed
 
 ## O que é este repositório
 
-Biblioteca Python + R que espelha a **sdic_api** (BigQuery, via `https://sdicapi.dados.ninja`)
-para dados de emprego (RAIS/CAGED) e comércio exterior (ComexStat, via sdic_api). Nunca chama
-o ComexStat/MDIC nem nenhuma outra fonte diretamente — só a sdic_api. Consumida por outros
-repositórios do ecossistema SDIC (`cgid_cargas`, `report_cgid`/`cgid_reports_r`, `portal_cgid`,
-`produtividade_trabalho`); ver `[[sdic-ecossistema-repos]]` na memória se disponível, ou pergunte
-antes de assumir que um repositório irmão não usa uma função.
+Biblioteca Python + R que é a **porta única de leitura** dos dados da plataforma da SDIC, para
+relatórios e analistas. Três origens, declaradas em `contrato/catalogo.json`:
+
+- `api`: a **sdic_api** (BigQuery, `https://sdicapi.dados.ninja`) — emprego (RAIS/CAGED), comércio
+  exterior (ComexStat) e `/series` (bases do `carga_base` e indicadores oficiais);
+- `dados`: os JSON publicados pelo job `publicar-dados` do `carga_base` (bucket), os mesmos do portal;
+- `politicas`: os JSON das políticas publicados pelo `gaia_nib` (Pages). **Só leitura:** o `gaia_nib`
+  é dono do conteúdo, da ordem e do recorte permitido; a biblioteca nunca soma, ordena ou compara
+  políticas de unidades diferentes.
+
+Nunca chama o ComexStat/MDIC, o SIDRA nem outra fonte primária, e nunca lê o BigQuery direto.
+Consumidores conhecidos (confira com `git grep` antes de assumir): `carga_base/publicacao` (fontes
+antigas `fonte.py`, classes `Emprego`/`Comex`), `sejaninja`, `cgid_reports` (subsídios e relatórios),
+`report_conjuntura_nacional_cgid` (alias `data_access`). O `cgid_cargas` está sendo desligado.
 
 ## Backlog
 
@@ -41,11 +49,31 @@ antes de assumir que um repositório irmão não usa uma função.
   linhas reais da sdic_api (capturadas ao vivo) + o esquema esperado; `python/tests/test_*_contrato.py`
   e `r/tests/testthat/test-*-contrato.R` leem o MESMO arquivo. Mudou uma coluna/tipo da API ou da
   biblioteca? Atualize o contrato (com uma chamada real, não um exemplo inventado) antes do código.
-- **`listar_bases()`** (Python: `from sdic_libraries import listar_bases`; R: exportada) é o
-  catálogo curado das funções recomendadas — não é gerado automaticamente. Adicionou, renomeou ou
-  aposentou uma função pública? Atualize `python/sdic_libraries/catalogo.py` e `r/R/catalogo.R`
-  juntos (mesmas linhas, mesmas duas colunas de exemplo). Os testes de catálogo conferem que toda
-  função listada existe de verdade — não conferem que o catálogo está completo.
+  `series_amostras.json` é a exceção temporária: foi montado do código da API (`a_recapturar: true`)
+  porque não havia chave; `python scripts/capturar_series.py` o recaptura com uma chave.
+- **Um catálogo só: `contrato/catalogo.json`.** Funções (tema, descrição, exemplo em Python e em R),
+  bases (origem, caminho, fonte, periodicidade), origens (endereço padrão e variável) e colunas
+  devolvidas. `listar_bases()` e `descrever()` das duas linguagens leem cópias desse arquivo
+  (`python/sdic_libraries/catalogo.json`, `r/inst/catalogo.json`), e `CATALOGO.md` e `docs/` são
+  gerados dele. Adicionou, renomeou ou aposentou uma função pública? Edite **só** o
+  `contrato/catalogo.json` e rode `make documentar`. Os testes falham se uma cópia divergir, se uma
+  função catalogada não existir numa das linguagens ou se uma função nova ficar fora do catálogo.
+- **Um lugar para configuração e um para HTTP, por linguagem:** `config.py`/`config.R` (único leitor
+  de variável de ambiente e de `.env`; nunca grava no ambiente do processo nem mexe no logger de quem
+  usa) e `transporte.py`/`transporte.R` (único ponto de requisição: chave, repetição, erro,
+  paginação, cache, leitura de arquivo publicado). `Emprego` e `Comex` herdam/delegam. **Não escreva
+  `os.getenv`, `Sys.getenv`, `requests` ou `httr2` fora desses dois arquivos.** Cliente novo = uma
+  função sobre `ClienteAPI`/`ler_json_publicado`, não uma cópia do transporte.
+- **O usuário passa nomes, nunca endereços.** Trocar o endereço da API, do bucket ou do Pages é uma
+  linha em `origens` do catálogo; mover uma base de arquivo para API é trocar a `origem` da base. Se
+  uma função nova precisar receber URL do usuário, o desenho está errado.
+- **A chave é individual e não pode vazar:** só no cabeçalho `Authorization` (nunca `x-api-key`, que
+  segue redirecionamento para outro host), só para `https://`, fora de `repr`/`print`, de mensagens de
+  erro, de `sdic_config()` e do cache (que guarda só o corpo da resposta e separa as respostas por um
+  hash da chave). Há teste para cada um desses pontos: não os remova.
+- **Erro nunca é engolido para devolver tabela parcial.** Falha em uma página, em um ano ou em uma UF
+  vira erro (ou aviso explícito dizendo o que faltou, nas funções `*_todos_estados`). Arquivo não
+  publicado no ambiente pedido é `NaoPublicado`, e a função nunca cai em outro ambiente sozinha.
 
 ## Antes de remover ou "simplificar" qualquer função pública
 
@@ -116,30 +144,15 @@ antes de assumir que um repositório irmão não usa uma função.
 
 ## Versionamento
 
-Semver, e **sempre as duas linguagens juntas na mesma mudança** — nunca uma versão Python sem a R
-correspondente (e vice-versa), mesmo que a mudança tenha afetado só uma delas. Lugares a bumpar
-(todos, numa mudança só; `git grep -n "0\.5\.0"` no exemplo abaixo pra achar todos os pontos da
-versão atual antes de bumpar a próxima):
+Semver, e **sempre as duas linguagens juntas na mesma mudança**. A versão está em três lugares:
+`python/pyproject.toml` (`version =`), `python/sdic_libraries/__init__.py` (`__version__`) e
+`r/DESCRIPTION` (`Version:` e `Date:`). O `User-Agent` usa esses valores (nada de versão escrita em
+cliente). Depois rode `make documentar` (a versão aparece em `docs/index.md`) e acrescente a entrada no
+`CHANGELOG.md` (Adicionado/Corrigido/Descontinuado/Removido).
 
-- `python/pyproject.toml` (`version =`) e `python/sdic_libraries/__init__.py` (`__version__`) —
-  `python/setup.py` lê a versão dali, não precisa editar os dois.
-- `r/DESCRIPTION` (`Version:` e `Date:`).
-- Os `os.getenv('SDIC_VERSION', '<versão>')` / `Sys.getenv("SDIC_VERSION", "<versão>")` em
-  `dados/emprego/api.py`, `dados/comex/api.py`, `dados/emprego/portal.py` (Python) e
-  `R/emprego.R`, `R/comex.R`, `R/portal.R` (R) — é o valor default do `User-Agent` enviado à
-  sdic_api quando `SDIC_VERSION` não está no ambiente; desatualizado, a API vê a versão errada do
-  cliente.
-- `.env.example` (raiz) e os comentários em `python/.env.example`/`r/.env.example`.
-- Footer do `README.md` (`**Versão**:`).
-- `CHANGELOG.md` — uma entrada nova por versão (Adicionado/Corrigido/Descontinuado/Removido); é o
-  que deixa o usuário decidir se vale a pena atualizar sem ler o diff. Referenciado em
-  `python/pyproject.toml` (`Changelog =`) — não deixe esse link apontar pra um arquivo inexistente.
-- Não mude o texto de blocos `.. deprecated:: <versão>` (Python) já publicados — eles marcam a
-  versão em que aquele aviso específico passou a existir, não a versão atual.
-
-Minor (`0.x.0`) para função nova ou depreciação (aviso, sem quebrar); patch (`0.x.y`) para
-correção sem mudar API; major só com quebra de compatibilidade real (e aí, siga a seção "Antes de
-remover ou simplificar" antes de sequer cogitar).
+Minor (`0.x.0`) para função nova ou depreciação; patch (`0.x.y`) para correção sem mudar API; major só
+com quebra de compatibilidade (siga "Antes de remover ou simplificar"). Não mude o texto de blocos
+`.. deprecated:: <versão>` já publicados.
 
 ## Deploy e segurança
 
@@ -153,12 +166,13 @@ remover ou simplificar" antes de sequer cogitar).
 
 ## Ao terminar qualquer mudança
 
-Rode as duas suítes antes de considerar terminado:
-
 ```bash
-cd python && python -m pytest tests/ -q --ignore=tests/test_emprego_cobertura_completa.py
-cd ../r  && Rscript -e 'testthat::test_local(".", reporter="summary")'
+make documentar   # se mexeu no catálogo, em docstring/roxygen de função pública ou na versão
+make test         # conferência do que é gerado + as duas suítes
 ```
+
+O CI (`.github/workflows/testes.yml`) roda o mesmo em todo PR. Depois do merge no `main`, publique a
+documentação no painel de cargas: `../painel_cargas/deploy.sh docs` (ou `servico`).
 
 Testes marcados como pulados ("sdic_api indisponível em 127.0.0.1:8123") são esperados sem uma
 API local rodando — não são falha.

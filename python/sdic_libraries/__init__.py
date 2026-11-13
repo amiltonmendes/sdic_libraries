@@ -45,6 +45,25 @@ _NOVAS = [
 __all__ = ["dados", "utils", "SdicErro", "NaoPublicado", "__version__"] + _NOVAS
 
 
+def _anexar_exemplos() -> None:
+    """`help(funcao)` mostra o exemplo do catálogo quando o docstring não tem um."""
+    from .config import CATALOGO
+    from .dados import comex, emprego
+    for f in CATALOGO["funcoes"]:
+        for modulo in (emprego, comex, utils):
+            objeto = getattr(modulo, f["funcao"], None)
+            doc = getattr(objeto, "__doc__", None)
+            if callable(objeto) and doc and "Example" not in doc and ">>>" not in doc:
+                try:
+                    objeto.__doc__ = f"{doc.rstrip()}\n\n    Example:\n        >>> {f['exemplo_py']}\n"
+                except (AttributeError, TypeError):
+                    pass
+                break
+
+
+_anexar_exemplos()
+
+
 def __getattr__(nome: str):
     """`from sdic_libraries import get_saldo_emprego_nacional_mensal` também funciona: as funções
     de emprego e comex ficam acessíveis pela raiz, sem precisar saber o submódulo."""

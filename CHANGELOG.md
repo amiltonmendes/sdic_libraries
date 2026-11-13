@@ -3,6 +3,58 @@
 Formato livre (sem [Keep a Changelog](https://keepachangelog.com) ainda) — o essencial é: o que
 muda pro usuário ao atualizar. Versionamento nas duas linguagens juntas; ver [AGENTS.md](AGENTS.md#versionamento).
 
+## [0.6.0] — 2026-11-13
+
+A biblioteca passa a ser a porta única de leitura da plataforma: além de emprego e comex, lê as séries da
+API, as seções publicadas em JSON e as políticas. Configuração e HTTP ficam num lugar só por linguagem.
+
+### Adicionado
+- **Séries da API:** `listar_series()`, `get_serie(nome, desde, ate, com_nomes, **filtros)`, `get_dimensao_serie()`.
+- **Seções publicadas** (os JSON do portal e dos subsídios): `listar_secoes_publicadas()`, `get_kpis_publicados()`,
+  `get_series_publicadas()`, `get_ranking_publicado()`, `get_detalhamento_publicado()`, `get_destaques_publicados()`,
+  `get_atualizacao_publicada()`, `get_secao_publicada()`.
+- **Políticas** (gaia_nib): `listar_politicas()`, `get_politica()`, `get_politicas_estado()`, `get_resumo_politicas()`,
+  `get_municipios_elegiveis()`, `get_manifesto_politicas()`, `get_politica_publicada()`.
+- `sdic_config()` (o que está configurado e de onde veio), `descrever(nome)` (ficha de base ou função, com colunas),
+  `ler_json_publicado(origem, caminho)`.
+- Uma variável por coisa: `SDIC_API_KEY`, `SDIC_API_URL`, `SDIC_DADOS_URL`, `SDIC_PAGES_URL`, `SDIC_AMBIENTE`, `SDIC_TIMEOUT`.
+- `.env.local` passa a ser lido (era documentado e ignorado). Em R, o `.env` passa a funcionar (a leitura falhava em silêncio).
+- Repetição automática em falha transitória (HTTP 429, 502, 503, 504).
+- Erros com `status_code` e `endpoint` (`SdicErro`; `EmpregoAPIError` e `ComexAPIError` derivam dela).
+- Python: todas as funções também se importam da raiz (`from sdic_libraries import get_serie`).
+- Documentação em `docs/`, gerada do catálogo; `listar_bases()` cobre também os agrupamentos do comex.
+
+### Corrigido
+- **Segurança da chave:** só `Authorization: Bearer` (o `x-api-key` seguia redirecionamento para outro host); a chave
+  só é enviada para `https://`; não aparece no `print()` dos clientes R nem no cache em disco do R; o cache separa as
+  respostas por chave.
+- **Dado errado sem aviso:** o estoque estimado agrupado engolia a falha de um ano e devolvia os anos seguintes com o
+  acumulado faltando; agora falha. As funções `*_todos_estados` avisam quais UFs faltaram.
+- O argumento `timeout` vence a variável de ambiente (era o contrário).
+- Criar um cliente não altera mais o logger raiz do processo nem grava o `.env` inteiro no ambiente.
+- Mensagens de erro decididas pelo código HTTP: um 401 com `1400100` na URL virava "parâmetros inválidos"; 404 e 429
+  viravam "aguarde". O detalhe devolvido pela API é repassado.
+- Python: `codigos_cnae='10'` consultava os códigos `1` e `0`; texto, número ou lista são aceitos.
+- `PORTAL_EMPREGO_AMBIENTE` era ignorada pelas funções; o ambiente agora vem de `SDIC_AMBIENTE` quando não é informado.
+- Página sem lista de itens no meio da paginação é erro (era tratada como fim); resultado menor que o `count` gera aviso.
+
+### Mudou (pode exigir ajuste)
+- `listar_bases(tema="inexistente")` gera erro listando os temas (devolvia tabela vazia).
+- Cabeçalho `x-api-key` deixou de ser enviado. A sdic_api 4.0.0 aceita `Authorization: Bearer`.
+- R: `Emprego$new()$api_key` e `Comex$new()$api_key` não existem mais (campo privado); a mensagem "API inicializada"
+  deixou de ser impressa.
+- Textos das mensagens de erro mudaram; trate erros por `status_code`, não pelo texto.
+
+### Descontinuado (continua funcionando, com aviso)
+- `get_portal_emprego_*`, `get_relatorio_emprego_*` e `listar_estados_disponiveis` (layout antigo do Pages, que o
+  pipeline novo não produz): use as funções de seções publicadas.
+- Variáveis `EMPLOYMENT_API_KEY`, `COMEX_API_KEY`, `EMPLOYMENT_API_BASE_URL`, `COMEX_API_BASE_URL`,
+  `PORTAL_EMPREGO_BASE_URL`, `PORTAL_EMPREGO_AMBIENTE`, `API_TIMEOUT`: use as `SDIC_*`.
+
+### Removido
+- `SDIC_VERSION` e `LOG_LEVEL` (não são mais lidas). Instaladores `setup.py` (raiz), `python/setup.py`,
+  `python/install.py`, `python/install_github.py`: instale com `pip` e `remotes` (ver INSTALL.md).
+
 ## [0.5.4] — 2026-11-10
 
 Necessária para a sdic_api 4.0.0. As versões anteriores param de funcionar quando a 4.0.0 entrar no ar.

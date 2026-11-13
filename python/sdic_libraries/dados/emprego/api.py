@@ -18,7 +18,7 @@ from typing import Any, Dict, List, Optional, Union
 import pandas as pd
 import requests
 
-from ...transporte import ClienteAPI, SdicErro
+from ...transporte import ClienteAPI, SdicErro, em_lista
 
 
 class EmpregoAPIError(SdicErro):
@@ -224,7 +224,7 @@ class Emprego(ClienteAPI):
         }
         
         if codigos_cnae:
-            params['codigos_cnae'] = ','.join(codigos_cnae)
+            params['codigos_cnae'] = ','.join(em_lista(codigos_cnae))
         
         if ano_minimo is not None:
             params['ano_minimo'] = ano_minimo
@@ -260,7 +260,7 @@ class Emprego(ClienteAPI):
         if nivel_cnae not in [2, 3]:
             raise ValueError("nivel_cnae deve ser 2 (divisão) ou 3 (grupo)")
 
-        ufs_str = ','.join(ufs) if isinstance(ufs, list) else ufs
+        ufs_str = ','.join(em_lista(ufs))
 
         # Construir parâmetros base
         params: Dict[str, Any] = {
@@ -270,7 +270,7 @@ class Emprego(ClienteAPI):
         }
         
         if codigos_cnae:
-            params['codigos_cnae'] = ','.join(codigos_cnae)
+            params['codigos_cnae'] = ','.join(em_lista(codigos_cnae))
         
         if ano_minimo is not None:
             params['ano_minimo'] = ano_minimo
@@ -314,9 +314,9 @@ class Emprego(ClienteAPI):
 
         params: Dict[str, Any] = {'nivel_cnae': nivel_cnae, 'tamanho_pagina': 5000}
         if codigos_cnae:
-            params['codigos_cnae'] = ','.join(codigos_cnae)
+            params['codigos_cnae'] = ','.join(em_lista(codigos_cnae))
         if porte:
-            params['porte'] = ','.join(porte)
+            params['porte'] = ','.join(em_lista(porte))
         if setor:
             params['setor'] = setor
 
@@ -357,12 +357,12 @@ class Emprego(ClienteAPI):
         if nivel_cnae not in ('divisao', 'grupo', 'classe'):
             raise ValueError("nivel_cnae deve ser 'divisao', 'grupo' ou 'classe'")
 
-        ufs_str = ','.join(ufs) if isinstance(ufs, list) else ufs
+        ufs_str = ','.join(em_lista(ufs))
         params: Dict[str, Any] = {'ufs': ufs_str, 'nivel_cnae': nivel_cnae, 'tamanho_pagina': 5000}
         if codigos_cnae:
-            params['codigos_cnae'] = ','.join(codigos_cnae)
+            params['codigos_cnae'] = ','.join(em_lista(codigos_cnae))
         if porte:
-            params['porte'] = ','.join(porte)
+            params['porte'] = ','.join(em_lista(porte))
         if setor:
             params['setor'] = setor
 
@@ -392,7 +392,7 @@ class Emprego(ClienteAPI):
         """
         params: Dict[str, Any] = {'tamanho_pagina': 5000}
         if codigos_classe:
-            params['codigos_classe'] = ','.join(codigos_classe)
+            params['codigos_classe'] = ','.join(em_lista(codigos_classe))
 
         if ano_minimo is not None:
             params['ano_minimo'] = ano_minimo
@@ -417,10 +417,10 @@ class Emprego(ClienteAPI):
         Returns:
             List[Dict[str, Any]]: Todos os registros de estoque por classe CNAE
         """
-        ufs_str = ','.join(ufs) if isinstance(ufs, list) else ufs
+        ufs_str = ','.join(em_lista(ufs))
         params: Dict[str, Any] = {'ufs': ufs_str, 'tamanho_pagina': 5000}
         if codigos_classe:
-            params['codigos_classe'] = ','.join(codigos_classe)
+            params['codigos_classe'] = ','.join(em_lista(codigos_classe))
 
         if ano_minimo is not None:
             params['ano_minimo'] = ano_minimo
@@ -452,11 +452,11 @@ class Emprego(ClienteAPI):
         """
         params: Dict[str, Any] = {'tamanho_pagina': 5000}
         if siglas_uf:
-            params['siglas_uf'] = ','.join(siglas_uf)
+            params['siglas_uf'] = ','.join(em_lista(siglas_uf))
         if codigos_classe:
-            params['codigos_classe'] = ','.join(codigos_classe)
+            params['codigos_classe'] = ','.join(em_lista(codigos_classe))
         if codigos_cbo:
-            params['codigos_cbo'] = ','.join(codigos_cbo)
+            params['codigos_cbo'] = ','.join(em_lista(codigos_cbo))
 
         if ano_minimo is not None:
             params['ano_minimo'] = ano_minimo
@@ -485,9 +485,9 @@ class Emprego(ClienteAPI):
         """
         params: Dict[str, Any] = {'tamanho_pagina': 5000}
         if tipos:
-            params['tipos'] = ','.join(tipos)
+            params['tipos'] = ','.join(em_lista(tipos))
         if codigos:
-            params['codigos'] = ','.join(codigos)
+            params['codigos'] = ','.join(em_lista(codigos))
 
         if ano_minimo is not None:
             params['ano_minimo'] = ano_minimo
@@ -516,7 +516,7 @@ class Emprego(ClienteAPI):
         """
         params: Dict[str, Any] = {'tamanho_pagina': 5000}
         if codigos_classe:
-            params['codigos_classe'] = ','.join(codigos_classe)
+            params['codigos_classe'] = ','.join(em_lista(codigos_classe))
 
         if ano_minimo is not None:
             params['ano_minimo'] = ano_minimo
@@ -655,7 +655,7 @@ class Emprego(ClienteAPI):
         if nivel_cnae not in [2, 3]:
             raise ValueError("nivel_cnae deve ser 2 (divisão) ou 3 (grupo)")
 
-        ufs_str = ','.join(ufs) if isinstance(ufs, list) else ufs
+        ufs_str = ','.join(em_lista(ufs))
 
         query_params: Dict[str, Any] = {
             'ufs': ufs_str,
@@ -695,7 +695,7 @@ class Emprego(ClienteAPI):
         if nivel_cnae not in [2, 3]:
             raise ValueError("nivel_cnae deve ser 2 (divisão) ou 3 (grupo)")
 
-        ufs_str = ','.join(ufs) if isinstance(ufs, list) else ufs
+        ufs_str = ','.join(em_lista(ufs))
 
         query_params: Dict[str, Any] = {
             'ufs': ufs_str,

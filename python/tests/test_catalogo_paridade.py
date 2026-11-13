@@ -32,3 +32,10 @@ def test_toda_base_do_catalogo_tem_origem_valida_e_toda_funcao_aponta_para_base_
         assert f["base"] is None or f["base"] in cat["bases"], f["funcao"]
     for funcao in cat["colunas"]:
         assert funcao in {f["funcao"] for f in cat["funcoes"]}, funcao
+
+
+def test_tudo_que_e_gerado_do_catalogo_esta_em_dia():
+    import subprocess
+    import sys
+    r = subprocess.run([sys.executable, str(RAIZ / "scripts" / "documentar.py"), "--conferir"], capture_output=True, text=True)
+    assert r.returncode == 0, r.stderr

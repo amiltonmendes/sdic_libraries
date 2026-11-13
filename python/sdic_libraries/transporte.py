@@ -86,6 +86,16 @@ def mensagem_de_erro(erro: Exception, endpoint: str, variavel_chave: str = "SDIC
     return f"Falha na requisição: {type(erro).__name__}.{sufixo}"
 
 
+def em_lista(valor: Any) -> List[str]:
+    """Um código ou vários, como texto: `'10'`, `10` e `['10', 11]` viram `['10']`, `['10']` e `['10', '11']`.
+    (Sem isto, `','.join('10')` consultava os códigos `1` e `0`.)"""
+    if valor is None:
+        return []
+    if isinstance(valor, (str, int, float)):
+        return [str(valor)]
+    return [str(v) for v in valor]
+
+
 class ClienteAPI:
     """Base dos clientes da sdic_api: configuração, sessão, requisição, paginação e cache."""
 

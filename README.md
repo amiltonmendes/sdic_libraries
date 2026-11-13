@@ -1,45 +1,45 @@
-# Biblioteca SDIC — Dados de Emprego e Comércio Exterior
+# Biblioteca SDIC — leitura dos dados da plataforma
 
-Biblioteca Python + R para acessar dados de emprego (RAIS/CAGED) e comércio exterior brasileiro
-(ComexStat) via **sdic_api**, sempre como `DataFrame`/`tibble` já com esquema padronizado — nunca
-lista/JSON cru. Ver [AGENTS.md](AGENTS.md) para arquitetura e decisões de design (leitura
-obrigatória antes de mudar código aqui).
+Biblioteca Python (`sdic_libraries`) + R (`sdic.libraries`), com as mesmas funções nas duas linguagens, para
+ler os dados da plataforma da SDIC sempre como tabela (`DataFrame`/`tibble`):
+
+- **emprego** (RAIS, Novo CAGED) e **comércio exterior** (ComexStat), pela `sdic_api`;
+- **séries** das bases do `carga_base` (SIDRA, Contas Regionais, comex por UF) e indicadores oficiais (`get_serie`);
+- **seções publicadas** em JSON, as mesmas do portal e dos subsídios (`get_kpis_publicados` e afins);
+- **políticas** da SDIC publicadas pelo `gaia_nib` (`listar_politicas`, `get_politica`).
+
+Documentação completa em [docs/](docs/index.md) (também no painel de cargas, em `/docs/biblioteca`).
+[AGENTS.md](AGENTS.md) é leitura obrigatória antes de mudar código aqui.
 
 ## 🧭 Por onde começar
 
-1. **Instale** (abaixo) — funciona sem nenhuma configuração; o endpoint público já vem embutido.
-2. **Descubra a função certa** com `listar_bases()` (seção seguinte) ou o
-   [catálogo completo](CATALOGO.md) — não precisa ler este README inteiro.
-3. **Copie um exemplo** de "Uso Básico" e troque os parâmetros pelos seus.
-4. **Travou?** `help(<funcao>)` (Python) / `?<funcao>` (R) tem a assinatura completa; "Solução de
-   Problemas" no fim deste README cobre os erros mais comuns; `get_date_bases()` mostra se a base
-   está desatualizada.
+1. **Instale** (abaixo) e defina a chave da API em `.env.local` (`SDIC_API_KEY=...`). Seções publicadas e
+   políticas são arquivos públicos e dispensam chave.
+2. **Descubra a função** com `listar_bases()`, o [catálogo](CATALOGO.md) ou [Qual função usar](docs/qual_funcao_usar.md).
+3. **Veja de onde vem o dado** e que colunas ele tem: `descrever("get_kpis_publicados")`.
+4. **Travou?** `help(<funcao>)` / `?<funcao>`; `sdic_config()` mostra de onde a biblioteca está lendo;
+   erros comuns em [docs/configuracao.md](docs/configuracao.md).
 
 ## 🚀 Instalação
 
-### Python
-
 ```bash
-cd sdic_libraries/python
-pip install -e .                                                              # desenvolvimento local
-pip install git+https://github.com/amiltonmendes/sdic_libraries.git#subdirectory=python  # direto
+pip install "git+https://github.com/amiltonmendes/sdic_libraries.git#subdirectory=python"   # Python
+pip install -e python/                                                                      # desenvolvimento local
 ```
-
-### R
 
 ```r
-source("sdic_libraries/r/install.R")                                    # source local
-devtools::install_github("amiltonmendes/sdic_libraries", subdir = "r")  # direto do GitHub
+remotes::install_github("amiltonmendes/sdic_libraries", subdir = "r")   # R
+devtools::load_all("r")                                                  # desenvolvimento local
 ```
 
-Guia detalhado (pré-requisitos, passo a passo, verificação): [INSTALL.md](INSTALL.md).
+Pré-requisitos e verificação: [INSTALL.md](INSTALL.md).
 
 ## 🔎 Catálogo: qual função eu uso?
 
 `listar_bases()` devolve uma tabela com toda função pública, o que ela traz, o nível de
 agregação e um exemplo — filtre por tema ou assunto em vez de ler o README inteiro. Mesmo
-conteúdo, em página: [CATALOGO.md](CATALOGO.md) (gerado de `catalogo.py`/`catalogo.R`, sempre
-sincronizado entre as duas linguagens).
+conteúdo, em página: [CATALOGO.md](CATALOGO.md) (gerado de `contrato/catalogo.json`, a fonte única
+lida pelas duas linguagens).
 
 ```python
 from sdic_libraries import listar_bases
@@ -170,26 +170,26 @@ Chave = método + endereço + parâmetros + corpo; erros nunca são gravados. Pa
 `SDIC_CACHE_DIR` ou `~/.cache/sdic_libraries` (Python) / `tools::R_user_dir("sdic.libraries", "cache")`
 (R) — apague para limpar. Dados atualizam mensalmente: use validade curta se precisar do mais recente.
 
-## 🗂️ Relatórios e portal de emprego por estado (`dados.emprego.portal`)
-
-Além da API ao vivo, a biblioteca lê os artefatos já publicados no GitHub Pages pelo `cgid_cargas`:
-**relatório** (cache bruto: `saldo`, `estoque`, `acum12m_total`) e **portal** (payload pronto para
-apresentação: `kpis`, `charts`, `ranked_lists`, `breakdowns`, em pt-BR). Dois ambientes
-(`producao`/`homologacao`); URL configurável por `PORTAL_EMPREGO_BASE_URL`.
+## 📰 Seções publicadas, séries e políticas
 
 ```python
-from sdic_libraries.dados.emprego.portal import (
-    get_relatorio_emprego_saldo_estadual, get_portal_emprego_kpis_estadual, listar_estados_disponiveis,
-)
-saldo = get_relatorio_emprego_saldo_estadual("SP")          # DataFrame, dados brutos
-kpis = get_portal_emprego_kpis_estadual("SP")                # DataFrame, payload pronto
-ufs = listar_estados_disponiveis(ambiente="homologacao")     # ['AC', 'AL', ...]
+from sdic_libraries import get_kpis_publicados, get_series_publicadas, get_serie, get_politicas_estado
+
+get_kpis_publicados("SP", "emprego", ambiente="homologacao")     # os números do portal, um por linha
+get_series_publicadas("SP", "comercio", ambiente="homologacao")  # séries dos gráficos, formato longo
+get_serie("sidra_producao", cod_tabela=8888, cod_localidade="35", desde="2025-01-01", com_nomes=True)
+get_politicas_estado("SP", ambiente="homologacao")               # ordem publicada; não some unidades diferentes
 ```
 ```r
-saldo <- get_relatorio_emprego_saldo_estadual("SP")           # tibble
-kpis  <- get_portal_emprego_kpis_estadual("SP")
-ufs   <- listar_estados_disponiveis(ambiente = "homologacao")
+get_kpis_publicados("SP", "emprego", ambiente = "homologacao")
+get_series_publicadas("SP", "comercio", ambiente = "homologacao")
+get_serie("sidra_producao", cod_tabela = 8888, cod_localidade = "35", desde = "2025-01-01", com_nomes = TRUE)
+get_politicas_estado("SP", ambiente = "homologacao")
 ```
+
+`listar_secoes_publicadas()`, `listar_series()` e `listar_politicas()` dizem o que existe. O ambiente padrão é
+`producao` (`SDIC_AMBIENTE` ou o argumento `ambiente` mudam). As funções `get_portal_emprego_*` e
+`get_relatorio_emprego_*` (layout antigo do Pages) estão depreciadas.
 
 ## 📐 Convenções e comportamento
 
@@ -232,45 +232,31 @@ em nível `classe` sem `codigos_cnae` também retorna dezenas de milhares de lin
 
 ## ⚙️ Configuração
 
-Funciona **out-of-the-box** — o endpoint público (DNS próprio, sem expor conta de serviço/projeto
-GCP) já vem embutido. Ordem de precedência: **parâmetro explícito no código** (`Emprego(base_url=...)`)
-→ **variável de ambiente / `.env`** → **default embutido**.
+Uma chave e três endereços, resolvidos num lugar só (`config.py` / `config.R`). Precedência: argumento da
+função, variável de ambiente, `.env.local`, `.env`, `~/.env`, `/etc/sdic/.env`, padrão do catálogo.
 
-| Variável | Obrigatória | Onde fica | Descrição |
-|---|---|---|---|
-| `EMPLOYMENT_API_BASE_URL` | Não | ambiente ou `.env` local | Endpoint da API de emprego. |
-| `COMEX_API_BASE_URL` | Não | ambiente ou `.env` local | Endpoint da API de comex (mesmo host, outro router). |
-| `EMPLOYMENT_API_KEY` / `COMEX_API_KEY` | Não | **`.env.local`** (git-ignorado) | Token, se a API exigir. |
-| `API_TIMEOUT` | Não | `.env` | Timeout em segundos (padrão 30). |
-| `SDIC_CACHE_TTL` | Não | ambiente | Liga o cache local — ver 💾 acima. |
+| Variável | Descrição | Padrão |
+|---|---|---|
+| `SDIC_API_KEY` | Chave individual da API. Guarde em **`.env.local`** (fora do git) | sem chave |
+| `SDIC_AMBIENTE` | `producao` ou `homologacao` (seções publicadas e políticas) | `producao` |
+| `SDIC_API_URL`, `SDIC_DADOS_URL`, `SDIC_PAGES_URL` | Endereço da API, dos JSON publicados e das políticas | os do catálogo |
+| `SDIC_TIMEOUT` | Segundos por requisição | 30 |
+| `SDIC_CACHE_TTL`, `SDIC_CACHE_DIR` | Cache local — ver 💾 acima | desligado |
 
-🔒 **Segredos nunca em arquivos versionados.** Só `.env.local` (git-ignorado) ou secret de CI/CD. A
-lib também lê `/etc/sdic/.env` (config de máquina inteira) e `~/.env`, nessa ordem de prioridade.
-
-```python
-api = Emprego(base_url="https://sdicapi.dados.ninja", timeout=60, api_key="...")  # tudo opcional
-```
-```r
-api <- Emprego$new(base_url = "https://sdicapi.dados.ninja", timeout = 60, api_key = "...")
-```
+`sdic_config()` mostra o que está valendo e de onde veio cada valor. Os nomes antigos (`EMPLOYMENT_API_KEY`,
+`COMEX_API_KEY`, `*_API_BASE_URL`, `PORTAL_EMPREGO_*`, `API_TIMEOUT`) continuam aceitos, com aviso. Detalhes,
+segurança da chave e erros comuns: [docs/configuracao.md](docs/configuracao.md).
 
 ## 🧪 Testes
 
 ```bash
-cd python && python -m pytest tests/ -q --ignore=tests/test_emprego_cobertura_completa.py
-```
-```r
-testthat::test_local("r", reporter = "summary")
+make test          # as duas linguagens e a conferência do que é gerado
+cd python && python -m pytest -q
+Rscript -e 'testthat::test_local("r", reporter = "summary")'
 ```
 
-Testes de contrato (`test_*_contrato.py`/`test-*-contrato.R`) rodam offline, contra amostras reais
-capturadas em `contrato/*.json`. Os que chamam a **API de verdade**
-(`test_emprego_cobertura_completa.py`, `test-emprego-cobertura.R`, ...) apontam por padrão para
-`http://127.0.0.1:8123` e são **pulados** se ela não responder — não é falha:
-
-```bash
-EMPLOYMENT_API_BASE_URL=https://sdicapi.dados.ninja pytest python/tests
-```
+Os testes rodam sem rede, contra amostras em `contrato/*.json` lidas pelas duas linguagens. Os que chamam a
+**API de verdade** apontam para `http://127.0.0.1:8123` e são **pulados** se ela não responder.
 
 ## 📦 Atualizando
 
@@ -278,7 +264,7 @@ EMPLOYMENT_API_BASE_URL=https://sdicapi.dados.ninja pytest python/tests
 pip install --upgrade git+https://github.com/amiltonmendes/sdic_libraries.git#subdirectory=python
 ```
 ```r
-devtools::install_github("amiltonmendes/sdic_libraries", subdir = "r", force = TRUE)
+remotes::install_github("amiltonmendes/sdic_libraries", subdir = "r", force = TRUE)
 ```
 
 O que mudou entre versões: [CHANGELOG.md](CHANGELOG.md). Funções depreciadas continuam
@@ -291,8 +277,7 @@ função para a substituta recomendada.
 ## 🔧 Solução de problemas
 
 - **Erro de conectividade:** confira a rede e se a API está no ar (`get_date_bases()` funciona
-  mesmo sem outros parâmetros). `EMPLOYMENT_API_BASE_URL`/`COMEX_API_BASE_URL` apontam pra onde
-  você espera?
+  mesmo sem outros parâmetros). `sdic_config()` mostra para onde a biblioteca está apontando.
 - **Erro de importação:** reinstale (`pip install -e python/` / `devtools::load_all("r")`);
   Python precisa de `pandas`/`requests`; R precisa de `httr2`/`R6`/`dplyr`/`tibble`/`cli`/`rlang`.
 - **Dados vazios:** confira o código CNAE/NCM (zeros à esquerda importam — `"01"`, não `"1"`) e se
@@ -318,5 +303,5 @@ MIT — veja [LICENSE](LICENSE).
 
 ---
 
-**Versão**: 0.5.4 · **Compatibilidade**: Python 3.8+ | R 4.0+ · [AGENTS.md](AGENTS.md) ·
+**Versão**: 0.6.0 · **Compatibilidade**: Python 3.8+ | R 4.0+ · [AGENTS.md](AGENTS.md) ·
 [CATALOGO.md](CATALOGO.md) · [CHANGELOG.md](CHANGELOG.md)
