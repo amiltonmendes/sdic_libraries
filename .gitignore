@@ -152,7 +152,7 @@ vignettes/*.pdf
 *.utf8.md
 *.knit.md
 .Renviron
-docs/
+# docs/ é versionada: páginas geradas por scripts/documentar.py, publicadas no painel de cargas
 po/*~
 Meta/
 Doc/
@@ -207,4 +207,4 @@ python/examples/*.png
 python/examples/*.executed.ipynb
 python/examples/fbcf_analise_pib_v5_comexstat.ipynb
 python/examples/ipea_api_samples.json
-python/examples/ipea_metadata.xml
+python/examples/ipea_metadata.xmlpython/examples/saida/
