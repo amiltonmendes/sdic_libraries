@@ -49,8 +49,8 @@ antigas `fonte.py`, classes `Emprego`/`Comex`), `sejaninja`, `cgid_reports` (sub
   linhas reais da sdic_api (capturadas ao vivo) + o esquema esperado; `python/tests/test_*_contrato.py`
   e `r/tests/testthat/test-*-contrato.R` leem o MESMO arquivo. Mudou uma coluna/tipo da API ou da
   biblioteca? Atualize o contrato (com uma chamada real, não um exemplo inventado) antes do código.
-  `series_amostras.json` é a exceção temporária: foi montado do código da API (`a_recapturar: true`)
-  porque não havia chave; `python scripts/capturar_series.py` o recaptura com uma chave.
+  `series_amostras.json` (séries e de-para) é recapturado da API com `python scripts/capturar_series.py`
+  (precisa de `SDIC_API_KEY`); os testes leem o `esperado` dele, sem valores fixos no código.
 - **Um catálogo só: `contrato/catalogo.json`.** Funções (tema, descrição, exemplo em Python e em R),
   bases (origem, caminho, fonte, periodicidade), origens (endereço padrão e variável) e colunas
   devolvidas. `listar_bases()` e `descrever()` das duas linguagens leem cópias desse arquivo

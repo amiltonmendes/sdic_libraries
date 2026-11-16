@@ -35,9 +35,11 @@ def _tabela(cabecalho: list[str], linhas: list[list[str]]) -> str:
 def _assinatura(nome: str) -> str:
     import sdic_libraries
     try:
-        return f"{nome}{inspect.signature(getattr(sdic_libraries, nome))}"
+        texto = f"{nome}{inspect.signature(getattr(sdic_libraries, nome))}"
     except (TypeError, ValueError, AttributeError):
         return f"{nome}(...)"
+    # o pandas 3 mostra `pandas.DataFrame`; o 2, `pandas.core.frame.DataFrame`: igual em qualquer versão
+    return texto.replace("pandas.core.frame.DataFrame", "pandas.DataFrame")
 
 
 def catalogo_md(cat: dict) -> str:

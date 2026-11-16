@@ -548,7 +548,7 @@ library(sdic.libraries)
 get_exportacao_ncm_nacional_mensal(ano_minimo = 2024, secao = 'Indústria de Transformação')
 ```
 
-Assinatura (Python): `get_exportacao_ncm_nacional_mensal(*, ano_minimo: 'int' = None, mes_maximo: 'int' = None, anos: 'List[int]' = None, lista_ncms: 'List[Union[int, str]]' = None, secao: 'str' = None, agregado_ano: 'bool' = False) -> pandas.core.frame.DataFrame`
+Assinatura (Python): `get_exportacao_ncm_nacional_mensal(*, ano_minimo: 'int' = None, mes_maximo: 'int' = None, anos: 'List[int]' = None, lista_ncms: 'List[Union[int, str]]' = None, secao: 'str' = None, agregado_ano: 'bool' = False) -> pandas.DataFrame`
 
 Dados consultados: [Comércio exterior (ComexStat)](dados.md#comexstat).
 
@@ -568,7 +568,7 @@ library(sdic.libraries)
 get_importacao_ncm_nacional_mensal(ano_minimo = 2024)
 ```
 
-Assinatura (Python): `get_importacao_ncm_nacional_mensal(*, ano_minimo: 'int' = None, mes_maximo: 'int' = None, anos: 'List[int]' = None, lista_ncms: 'List[Union[int, str]]' = None, secao: 'str' = None, agregado_ano: 'bool' = False) -> pandas.core.frame.DataFrame`
+Assinatura (Python): `get_importacao_ncm_nacional_mensal(*, ano_minimo: 'int' = None, mes_maximo: 'int' = None, anos: 'List[int]' = None, lista_ncms: 'List[Union[int, str]]' = None, secao: 'str' = None, agregado_ano: 'bool' = False) -> pandas.DataFrame`
 
 Dados consultados: [Comércio exterior (ComexStat)](dados.md#comexstat).
 
@@ -588,7 +588,7 @@ library(sdic.libraries)
 get_exportacao_isic_divisao_nacional_mensal(ano_minimo = 2024, agregado_ano = TRUE)
 ```
 
-Assinatura (Python): `get_exportacao_isic_divisao_nacional_mensal(*, ano_minimo: 'int' = None, mes_maximo: 'int' = None, secao: 'str' = None, divisao: 'int' = None, agregado_ano: 'bool' = False) -> pandas.core.frame.DataFrame`
+Assinatura (Python): `get_exportacao_isic_divisao_nacional_mensal(*, ano_minimo: 'int' = None, mes_maximo: 'int' = None, secao: 'str' = None, divisao: 'int' = None, agregado_ano: 'bool' = False) -> pandas.DataFrame`
 
 Dados consultados: [Comércio exterior (ComexStat)](dados.md#comexstat).
 
@@ -608,7 +608,7 @@ library(sdic.libraries)
 get_importacao_isic_divisao_nacional_mensal(ano_minimo = 2024, agregado_ano = TRUE)
 ```
 
-Assinatura (Python): `get_importacao_isic_divisao_nacional_mensal(*, ano_minimo: 'int' = None, mes_maximo: 'int' = None, secao: 'str' = None, divisao: 'int' = None, agregado_ano: 'bool' = False) -> pandas.core.frame.DataFrame`
+Assinatura (Python): `get_importacao_isic_divisao_nacional_mensal(*, ano_minimo: 'int' = None, mes_maximo: 'int' = None, secao: 'str' = None, divisao: 'int' = None, agregado_ano: 'bool' = False) -> pandas.DataFrame`
 
 Dados consultados: [Comércio exterior (ComexStat)](dados.md#comexstat).
 
@@ -628,7 +628,7 @@ library(sdic.libraries)
 get_exportacao_isic_divisao_estadual_mensal(estado = 'São Paulo', ano_minimo = 2024)
 ```
 
-Assinatura (Python): `get_exportacao_isic_divisao_estadual_mensal(*, estado: 'str' = None, pais: 'str' = None, ano_minimo: 'int' = None, mes_maximo: 'int' = None, secao: 'str' = None, divisao: 'int' = None, bloco: 'int' = None, agregado_ano: 'bool' = False, agregado_pais: 'bool' = False) -> pandas.core.frame.DataFrame`
+Assinatura (Python): `get_exportacao_isic_divisao_estadual_mensal(*, estado: 'str' = None, pais: 'str' = None, ano_minimo: 'int' = None, mes_maximo: 'int' = None, secao: 'str' = None, divisao: 'int' = None, bloco: 'int' = None, agregado_ano: 'bool' = False, agregado_pais: 'bool' = False) -> pandas.DataFrame`
 
 Dados consultados: [Comércio exterior (ComexStat)](dados.md#comexstat).
 
@@ -648,7 +648,7 @@ library(sdic.libraries)
 get_importacao_isic_divisao_estadual_mensal(estado = 'São Paulo', ano_minimo = 2024)
 ```
 
-Assinatura (Python): `get_importacao_isic_divisao_estadual_mensal(*, estado: 'str' = None, pais: 'str' = None, ano_minimo: 'int' = None, mes_maximo: 'int' = None, secao: 'str' = None, divisao: 'int' = None, bloco: 'int' = None, agregado_ano: 'bool' = False, agregado_pais: 'bool' = False) -> pandas.core.frame.DataFrame`
+Assinatura (Python): `get_importacao_isic_divisao_estadual_mensal(*, estado: 'str' = None, pais: 'str' = None, ano_minimo: 'int' = None, mes_maximo: 'int' = None, secao: 'str' = None, divisao: 'int' = None, bloco: 'int' = None, agregado_ano: 'bool' = False, agregado_pais: 'bool' = False) -> pandas.DataFrame`
 
 Dados consultados: [Comércio exterior (ComexStat)](dados.md#comexstat).
 
@@ -668,7 +668,7 @@ library(sdic.libraries)
 get_exportacao_pais_nacional_mensal(pais = 'Argentina', ano_minimo = 2024)
 ```
 
-Assinatura (Python): `get_exportacao_pais_nacional_mensal(*, pais: 'str' = None, secao: 'str' = None, ano_minimo: 'int' = None, mes_maximo: 'int' = None, agregado_ano: 'bool' = False) -> pandas.core.frame.DataFrame`
+Assinatura (Python): `get_exportacao_pais_nacional_mensal(*, pais: 'str' = None, secao: 'str' = None, ano_minimo: 'int' = None, mes_maximo: 'int' = None, agregado_ano: 'bool' = False) -> pandas.DataFrame`
 
 Dados consultados: [Comércio exterior (ComexStat)](dados.md#comexstat).
 
@@ -688,7 +688,7 @@ library(sdic.libraries)
 get_importacao_pais_nacional_mensal(pais = 'Argentina', ano_minimo = 2024)
 ```
 
-Assinatura (Python): `get_importacao_pais_nacional_mensal(*, pais: 'str' = None, secao: 'str' = None, ano_minimo: 'int' = None, mes_maximo: 'int' = None, agregado_ano: 'bool' = False) -> pandas.core.frame.DataFrame`
+Assinatura (Python): `get_importacao_pais_nacional_mensal(*, pais: 'str' = None, secao: 'str' = None, ano_minimo: 'int' = None, mes_maximo: 'int' = None, agregado_ano: 'bool' = False) -> pandas.DataFrame`
 
 Dados consultados: [Comércio exterior (ComexStat)](dados.md#comexstat).
 
@@ -708,7 +708,7 @@ library(sdic.libraries)
 get_ncm_isic_mapa()
 ```
 
-Assinatura (Python): `get_ncm_isic_mapa() -> pandas.core.frame.DataFrame`
+Assinatura (Python): `get_ncm_isic_mapa() -> pandas.DataFrame`
 
 Dados consultados: [Comércio exterior (ComexStat)](dados.md#comexstat).
 
@@ -728,7 +728,7 @@ library(sdic.libraries)
 get_agrupamentos_disponiveis()
 ```
 
-Assinatura (Python): `get_agrupamentos_disponiveis(*, departamento: 'str' = None, cg: 'str' = None) -> pandas.core.frame.DataFrame`
+Assinatura (Python): `get_agrupamentos_disponiveis(*, departamento: 'str' = None, cg: 'str' = None) -> pandas.DataFrame`
 
 Dados consultados: [Comércio exterior (ComexStat)](dados.md#comexstat).
 
@@ -748,7 +748,7 @@ library(sdic.libraries)
 get_exportacao_agrupamentos(agrupamento = 'Complexo da Saúde', ano_minimo = 2024)
 ```
 
-Assinatura (Python): `get_exportacao_agrupamentos(*, agrupamento: 'str', ano_minimo: 'int' = None, anos: 'List[int]' = None, departamento: 'str' = None, cg: 'str' = None) -> pandas.core.frame.DataFrame`
+Assinatura (Python): `get_exportacao_agrupamentos(*, agrupamento: 'str', ano_minimo: 'int' = None, anos: 'List[int]' = None, departamento: 'str' = None, cg: 'str' = None) -> pandas.DataFrame`
 
 Dados consultados: [Comércio exterior (ComexStat)](dados.md#comexstat).
 
@@ -768,7 +768,7 @@ library(sdic.libraries)
 get_importacao_agrupamentos(agrupamento = 'Complexo da Saúde', ano_minimo = 2024)
 ```
 
-Assinatura (Python): `get_importacao_agrupamentos(*, agrupamento: 'str', ano_minimo: 'int' = None, anos: 'List[int]' = None, departamento: 'str' = None, cg: 'str' = None) -> pandas.core.frame.DataFrame`
+Assinatura (Python): `get_importacao_agrupamentos(*, agrupamento: 'str', ano_minimo: 'int' = None, anos: 'List[int]' = None, departamento: 'str' = None, cg: 'str' = None) -> pandas.DataFrame`
 
 Dados consultados: [Comércio exterior (ComexStat)](dados.md#comexstat).
 
@@ -788,7 +788,7 @@ library(sdic.libraries)
 get_exportacao_agrupamentos_pais_ncm(agrupamento = 'Complexo da Saúde', ano_minimo = 2024, nivel_agregacao = 'setor')
 ```
 
-Assinatura (Python): `get_exportacao_agrupamentos_pais_ncm(*, agrupamento: 'str', ano_minimo: 'int' = None, mes_maximo: 'int' = None, nivel_agregacao: 'str' = None, agregado_ano: 'bool' = False, posicao: 'int' = None, departamento: 'str' = None, cg: 'str' = None) -> pandas.core.frame.DataFrame`
+Assinatura (Python): `get_exportacao_agrupamentos_pais_ncm(*, agrupamento: 'str', ano_minimo: 'int' = None, mes_maximo: 'int' = None, nivel_agregacao: 'str' = None, agregado_ano: 'bool' = False, posicao: 'int' = None, departamento: 'str' = None, cg: 'str' = None) -> pandas.DataFrame`
 
 Dados consultados: [Comércio exterior (ComexStat)](dados.md#comexstat).
 
@@ -808,7 +808,7 @@ library(sdic.libraries)
 get_importacao_agrupamentos_pais_ncm(agrupamento = 'Complexo da Saúde', ano_minimo = 2024, nivel_agregacao = 'setor')
 ```
 
-Assinatura (Python): `get_importacao_agrupamentos_pais_ncm(*, agrupamento: 'str', ano_minimo: 'int' = None, mes_maximo: 'int' = None, nivel_agregacao: 'str' = None, agregado_ano: 'bool' = False, posicao: 'int' = None, departamento: 'str' = None, cg: 'str' = None) -> pandas.core.frame.DataFrame`
+Assinatura (Python): `get_importacao_agrupamentos_pais_ncm(*, agrupamento: 'str', ano_minimo: 'int' = None, mes_maximo: 'int' = None, nivel_agregacao: 'str' = None, agregado_ano: 'bool' = False, posicao: 'int' = None, departamento: 'str' = None, cg: 'str' = None) -> pandas.DataFrame`
 
 Dados consultados: [Comércio exterior (ComexStat)](dados.md#comexstat).
 

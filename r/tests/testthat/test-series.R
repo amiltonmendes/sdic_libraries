@@ -40,8 +40,8 @@ test_that("get_serie junta páginas, tipa e envia filtros", {
   expect_equal(names(df), unlist(e$colunas))
   expect_equal(nrow(df), e$linhas)
   expect_equal(df$valor[1:2], unlist(e$valores[1:2]))
-  expect_equal(is.na(df$valor), c(FALSE, FALSE, TRUE))
-  expect_identical(df$cod_localidade, rep(e$cod_localidade, 3))  # texto, não número
+  expect_equal(is.na(df$valor), vapply(e$valores, is.null, logical(1)))
+  expect_identical(df$cod_localidade, rep(e$cod_localidade, e$linhas))  # texto, não número
   expect_type(df$cod_tabela, "integer")
   paginas <- paginas_de(registro, "/series/sidra_producao")
   expect_length(paginas, e$paginas)
@@ -64,7 +64,7 @@ test_that("get_serie com_nomes", {
   e <- C$esperado$get_serie_com_nomes
   df <- get_serie("sidra_producao", cod_tabela = 8888, com_nomes = TRUE)
   expect_true(all(unlist(e$colunas_extras) %in% names(df)))
-  expect_equal(nrow(df), 3)
+  expect_equal(nrow(df), C$esperado$get_serie$linhas)
   expect_equal(df$variavel_nome[1], e$variavel_nome)
   expect_equal(df$localidade_nome[1], e$localidade_nome)
 })
@@ -103,6 +103,6 @@ test_that("referências", {
   e <- C$esperado$get_referencia
   df <- do.call(get_referencia, e$args)
   expect_equal(nrow(df), e$linhas)
-  expect_identical(df[[1]][1], e$primeiro_codigo)  # texto: zero à esquerda preservado
+  expect_identical(df[[e$coluna_codigo]][1], e$primeiro_codigo)  # texto: zero à esquerda preservado
   expect_true(all(vapply(df, is.character, logical(1))))
 })

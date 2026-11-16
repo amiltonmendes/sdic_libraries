@@ -1,6 +1,6 @@
 {
- "_origem": "A RECAPTURAR: montado a partir do código da sdic_api (api/routers/series.py e api/cruds/series.py em 2026-11-13), não de uma chamada real, porque a API exige chave e não havia chave na sessão que escreveu este arquivo. Formato e nomes de coluna são os do código e do DDL do carga_base; os valores são ilustrativos. Recapture com `python scripts/capturar_series.py` (precisa de SDIC_API_KEY).",
- "a_recapturar": true,
+ "_origem": "Respostas reais da sdic_api capturadas por scripts/capturar_series.py (filtros: {'cod_tabela': 8888, 'cod_localidade': '35', 'cod_variavel': 12606, 'desde': '2025-01-01', 'ate': '2025-03-31'}).",
+ "a_recapturar": false,
  "respostas": {
   "/series": [
    {
@@ -38,8 +38,110 @@
     ]
    },
    {
+    "nome": "sidra_pib",
+    "descricao": "PIB do IBGE, nacional e estadual. Formato longo: uma linha por tabela, variável, localidade, categoria e período. Códigos em /series/{nome}/dimensoes/{metadados|variavel|categoria|localidade}.",
+    "fonte": "IBGE/SIDRA; carga_base/sidra, tema pib",
+    "colunas": [
+     "cod_tabela",
+     "cod_variavel",
+     "nivel",
+     "cod_localidade",
+     "periodo",
+     "competencia",
+     "cod_classificacao",
+     "cod_categoria",
+     "valor",
+     "simbolo"
+    ],
+    "filtros": {
+     "cod_tabela": "INT64",
+     "cod_variavel": "INT64",
+     "nivel": "STRING",
+     "cod_localidade": "STRING",
+     "cod_categoria": "INT64"
+    },
+    "obrigatorios": [
+     "cod_tabela"
+    ],
+    "periodo": "competencia",
+    "dimensoes": [
+     "categoria",
+     "localidade",
+     "metadados",
+     "variavel"
+    ]
+   },
+   {
+    "nome": "sidra_precos",
+    "descricao": "Índice de Preços ao Produtor do IBGE (IPP): por atividade, grande categoria econômica e grupos industriais. Formato longo: uma linha por tabela, variável, localidade, categoria e período. Códigos em /series/{nome}/dimensoes/{metadados|variavel|categoria|localidade}.",
+    "fonte": "IBGE/SIDRA; carga_base/sidra, tema precos",
+    "colunas": [
+     "cod_tabela",
+     "cod_variavel",
+     "nivel",
+     "cod_localidade",
+     "periodo",
+     "competencia",
+     "cod_classificacao",
+     "cod_categoria",
+     "valor",
+     "simbolo"
+    ],
+    "filtros": {
+     "cod_tabela": "INT64",
+     "cod_variavel": "INT64",
+     "nivel": "STRING",
+     "cod_localidade": "STRING",
+     "cod_categoria": "INT64"
+    },
+    "obrigatorios": [
+     "cod_tabela"
+    ],
+    "periodo": "competencia",
+    "dimensoes": [
+     "categoria",
+     "localidade",
+     "metadados",
+     "variavel"
+    ]
+   },
+   {
+    "nome": "sidra_cnt",
+    "descricao": "Contas Nacionais Trimestrais do IBGE: taxas de variação, índices de volume e valores. Formato longo: uma linha por tabela, variável, localidade, categoria e período. Códigos em /series/{nome}/dimensoes/{metadados|variavel|categoria|localidade}.",
+    "fonte": "IBGE/SIDRA; carga_base/sidra, tema cnt",
+    "colunas": [
+     "cod_tabela",
+     "cod_variavel",
+     "nivel",
+     "cod_localidade",
+     "periodo",
+     "competencia",
+     "cod_classificacao",
+     "cod_categoria",
+     "valor",
+     "simbolo"
+    ],
+    "filtros": {
+     "cod_tabela": "INT64",
+     "cod_variavel": "INT64",
+     "nivel": "STRING",
+     "cod_localidade": "STRING",
+     "cod_categoria": "INT64"
+    },
+    "obrigatorios": [
+     "cod_tabela"
+    ],
+    "periodo": "competencia",
+    "dimensoes": [
+     "categoria",
+     "localidade",
+     "metadados",
+     "variavel"
+    ]
+   },
+   {
     "nome": "contas_regionais_vab",
-    "descricao": "Valor adicionado bruto por UF e atividade, em R$ milhões (IBGE, Contas Regionais).",
+    "descricao": "Valor adicionado bruto por UF e atividade, em R$ milhões (IBGE, Contas Regionais). `vintage` é o ano da publicação; sem filtro, vêm todas. Atividades em /series/contas_regionais_vab/dimensoes/atividade.",
     "fonte": "IBGE/Contas Regionais; carga_base/contas_regionais",
     "colunas": [
      "vintage",
@@ -61,6 +163,35 @@
      "atividade",
      "metadados"
     ]
+   },
+   {
+    "nome": "comex_uf_isic_divisao_mensal",
+    "descricao": "Exportação (`tx_fluxo=EXP`) e importação (`IMP`) mensais por UF e divisão ISIC, em US$ FOB e kg (ComexStat, desde 2017). `fl_ue=true` é o comércio com a União Europeia e `false` o resto do mundo: o total é a soma dos dois.",
+    "fonte": "MDIC/ComexStat; carga_base/comex",
+    "colunas": [
+     "tx_fluxo",
+     "nr_ano",
+     "nr_mes",
+     "sg_uf",
+     "cd_isic_secao",
+     "cd_isic_divisao",
+     "tx_isic_divisao",
+     "fl_ue",
+     "vl_fob",
+     "qt_kg_liquido"
+    ],
+    "filtros": {
+     "tx_fluxo": "STRING",
+     "sg_uf": "STRING",
+     "cd_isic_secao": "STRING",
+     "cd_isic_divisao": "STRING",
+     "fl_ue": "BOOL"
+    },
+    "obrigatorios": [
+     "tx_fluxo"
+    ],
+    "periodo": "nr_ano",
+    "dimensoes": []
    }
   ],
   "/series/sidra_producao?pagina=1": {
@@ -73,8 +204,8 @@
      "periodo": "202501",
      "competencia": "2025-01-01",
      "cod_classificacao": 544,
-     "cod_categoria": 129314,
-     "valor": "98.7",
+     "cod_categoria": 56689,
+     "valor": "97.71802",
      "simbolo": null
     },
     {
@@ -85,8 +216,8 @@
      "periodo": "202502",
      "competencia": "2025-02-01",
      "cod_classificacao": 544,
-     "cod_categoria": 129314,
-     "valor": "101.2",
+     "cod_categoria": 56689,
+     "valor": "95.56368",
      "simbolo": null
     }
    ],
@@ -102,9 +233,21 @@
      "periodo": "202503",
      "competencia": "2025-03-01",
      "cod_classificacao": 544,
+     "cod_categoria": 56689,
+     "valor": "101.11423",
+     "simbolo": null
+    },
+    {
+     "cod_tabela": 8888,
+     "cod_variavel": 12606,
+     "nivel": "N3",
+     "cod_localidade": "35",
+     "periodo": "202501",
+     "competencia": "2025-01-01",
+     "cod_classificacao": 544,
      "cod_categoria": 129314,
-     "valor": null,
-     "simbolo": "..."
+     "valor": "87.43122",
+     "simbolo": null
     }
    ],
    "proxima_pagina": null
@@ -124,7 +267,15 @@
     "classificacao": "Seções e atividades industriais (CNAE 2.0)",
     "cod_categoria": 129314,
     "categoria": "1 Indústria geral",
-    "nivel_categoria": 1
+    "nivel_categoria": 0
+   },
+   {
+    "cod_tabela": 8888,
+    "cod_classificacao": 544,
+    "classificacao": "Seções e atividades industriais (CNAE 2.0)",
+    "cod_categoria": 56689,
+    "categoria": "3.20 Fabricação de produtos químicos",
+    "nivel_categoria": 0
    }
   ],
   "/series/sidra_producao/dimensoes/localidade": [
@@ -138,12 +289,12 @@
    {
     "cod_tabela": 8888,
     "nome": "Produção Física Industrial, por seções e atividades industriais",
-    "pesquisa": "PIM-PF",
+    "pesquisa": "Pesquisa Industrial Mensal - Produção Física",
     "assunto": "Indústria",
     "frequencia": "mensal",
     "periodo_inicial": "200201",
-    "periodo_final": "202509",
-    "ultima_modificacao": "2026-11-04",
+    "periodo_final": "202609",
+    "ultima_modificacao": "2026-11-11",
     "url": "https://sidra.ibge.gov.br/tabela/8888"
    }
   ],
@@ -153,18 +304,73 @@
     "descricao": "CNAE 2.3, de subclasse a seção, com descrições."
    },
    {
+    "nome": "municipio",
+    "descricao": "Municípios do IBGE (códigos de 7 e 6 dígitos), nome e UF."
+   },
+   {
+    "nome": "uf",
+    "descricao": "Unidades da Federação."
+   },
+   {
+    "nome": "isic",
+    "descricao": "ISIC Rev.4 por divisão, com nomes em inglês e português."
+   },
+   {
     "nome": "isic_cnae",
     "descricao": "Correspondência entre divisão CNAE 2.0 e divisão ISIC Rev.4."
+   },
+   {
+    "nome": "intensidade_tecnologica",
+    "descricao": "Intensidade tecnológica (OCDE 2016): regra por divisão e exceções por grupo."
+   },
+   {
+    "nome": "intensidade_cnae_grupo",
+    "descricao": "Intensidade tecnológica de cada grupo CNAE."
+   },
+   {
+    "nome": "intensidade_isic_grupo",
+    "descricao": "Intensidade tecnológica de cada grupo ISIC."
+   },
+   {
+    "nome": "agrupamento_ncm",
+    "descricao": "Agrupamentos de NCM da SDIC, com departamento e coordenação-geral."
    }
   ],
   "/referencias/isic_cnae": [
    {
+    "isic_secao": "A",
+    "isic_divisao": "01",
     "cnae_divisao": "01",
-    "isic_divisao": "01"
+    "cnae_descricao": "Agricultura; pecuária e serviços relacionados",
+    "nota": "Equivalência direta CNAE 2.0 ↔ ISIC Rev.4"
    },
    {
-    "cnae_divisao": "10",
-    "isic_divisao": "10"
+    "isic_secao": "A",
+    "isic_divisao": "02",
+    "cnae_divisao": "02",
+    "cnae_descricao": "Produção florestal",
+    "nota": "Equivalência direta CNAE 2.0 ↔ ISIC Rev.4"
+   },
+   {
+    "isic_secao": "A",
+    "isic_divisao": "03",
+    "cnae_divisao": "03",
+    "cnae_descricao": "Pesca e aquicultura",
+    "nota": "Equivalência direta CNAE 2.0 ↔ ISIC Rev.4"
+   },
+   {
+    "isic_secao": "B",
+    "isic_divisao": "05",
+    "cnae_divisao": "05",
+    "cnae_descricao": "Extração de carvão mineral",
+    "nota": "Equivalência direta CNAE 2.0 ↔ ISIC Rev.4"
+   },
+   {
+    "isic_secao": "B",
+    "isic_divisao": "06",
+    "cnae_divisao": "06",
+    "cnae_descricao": "Extração de petróleo e gás natural",
+    "nota": "Equivalência direta CNAE 2.0 ↔ ISIC Rev.4"
    }
   ]
  },
@@ -182,7 +388,11 @@
    ],
    "nomes": [
     "sidra_producao",
-    "contas_regionais_vab"
+    "sidra_pib",
+    "sidra_precos",
+    "sidra_cnt",
+    "contas_regionais_vab",
+    "comex_uf_isic_divisao_mensal"
    ]
   },
   "get_serie": {
@@ -190,7 +400,9 @@
     "nome": "sidra_producao",
     "cod_tabela": 8888,
     "cod_localidade": "35",
-    "desde": "2025-01-01"
+    "cod_variavel": 12606,
+    "desde": "2025-01-01",
+    "ate": "2025-03-31"
    },
    "colunas": [
     "cod_tabela",
@@ -204,18 +416,21 @@
     "valor",
     "simbolo"
    ],
-   "linhas": 3,
+   "linhas": 4,
    "paginas": 2,
    "valores": [
-    98.7,
-    101.2,
-    null
+    97.71802,
+    95.56368,
+    101.11423,
+    87.43122
    ],
    "cod_localidade": "35",
    "query_esperada": {
     "cod_tabela": "8888",
     "cod_localidade": "35",
-    "desde": "2025-01-01"
+    "cod_variavel": "12606",
+    "desde": "2025-01-01",
+    "ate": "2025-03-31"
    }
   },
   "get_serie_com_nomes": {
@@ -246,14 +461,15 @@
     "nome",
     "descricao"
    ],
-   "linhas": 2
+   "linhas": 9
   },
   "get_referencia": {
    "args": {
     "nome": "isic_cnae"
    },
-   "linhas": 2,
-   "primeiro_codigo": "01"
+   "linhas": 5,
+   "primeiro_codigo": "01",
+   "coluna_codigo": "cnae_divisao"
   }
  }
 }

@@ -39,8 +39,9 @@ def test_get_serie_junta_paginas_tipa_e_envia_filtros(api):
     e = C["esperado"]["get_serie"]
     df = get_serie(**e["args"])
     assert list(df.columns) == e["colunas"] and len(df) == e["linhas"]
-    assert df["valor"].tolist()[:2] == e["valores"][:2] and df["valor"].isna().tolist() == [False, False, True]
-    assert df["cod_localidade"].tolist() == [e["cod_localidade"]] * 3  # texto, não número
+    assert df["valor"].tolist()[:2] == e["valores"][:2]
+    assert df["valor"].isna().tolist() == [v is None for v in e["valores"]]
+    assert df["cod_localidade"].tolist() == [e["cod_localidade"]] * e["linhas"]  # texto, não número
     paginas = [p for c, p in api if c == "/series/sidra_producao"]
     assert len(paginas) == e["paginas"]
     assert {k: paginas[0][k] for k in e["query_esperada"]} == e["query_esperada"]
@@ -54,7 +55,7 @@ def test_get_serie_lista_de_valores_vira_filtro_separado_por_virgula(api):
 def test_get_serie_com_nomes(api):
     e = C["esperado"]["get_serie_com_nomes"]
     df = get_serie("sidra_producao", cod_tabela=8888, com_nomes=True)
-    assert set(e["colunas_extras"]) <= set(df.columns) and len(df) == 3
+    assert set(e["colunas_extras"]) <= set(df.columns) and len(df) == C["esperado"]["get_serie"]["linhas"]
     assert df["variavel_nome"].iloc[0] == e["variavel_nome"] and df["localidade_nome"].iloc[0] == e["localidade_nome"]
 
 
@@ -80,4 +81,4 @@ def test_referencias(api):
     assert list(lista.columns) == C["esperado"]["listar_referencias"]["colunas"]
     e = C["esperado"]["get_referencia"]
     df = get_referencia(**e["args"])
-    assert len(df) == e["linhas"] and df.iloc[0, 0] == e["primeiro_codigo"]  # texto: zero à esquerda preservado
+    assert len(df) == e["linhas"] and df[e["coluna_codigo"]].iloc[0] == e["primeiro_codigo"]  # texto: zero à esquerda preservado
