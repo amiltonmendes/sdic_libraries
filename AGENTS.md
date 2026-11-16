@@ -171,6 +171,11 @@ make documentar   # se mexeu no catálogo, em docstring/roxygen de função púb
 make test         # conferência do que é gerado + as duas suítes
 ```
 
+O `make documentar` usa o roxygen2 instalado na máquina. Use a versão de `Config/roxygen2/version` em
+`r/DESCRIPTION` (hoje 8.1.1; `remotes::install_version("roxygen2", "8.1.1")`): outra versão muda o formato do
+`NAMESPACE` e dos `.Rd`, e o CI, que fixa essa mesma versão, falha. Para subir o roxygen, mude as duas coisas juntas
+(`DESCRIPTION` e `roxygen2@` em `.github/workflows/testes.yml`) e versione o que ele regenerar.
+
 O CI (`.github/workflows/testes.yml`) roda o mesmo em todo PR. Depois do merge no `main`, publique a
 documentação no painel de cargas: `../painel_cargas/deploy.sh docs` (ou `servico`).
 

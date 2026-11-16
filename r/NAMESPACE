@@ -98,20 +98,28 @@ export(salvar_chave)
 export(sdic_config)
 importFrom(R6,R6Class)
 importFrom(cli,cli_inform)
-importFrom(dplyr,"%>%")
-importFrom(dplyr,bind_rows)
-importFrom(httr2,req_body_json)
-importFrom(httr2,req_headers)
-importFrom(httr2,req_perform)
-importFrom(httr2,req_timeout)
-importFrom(httr2,req_url_query)
-importFrom(httr2,request)
-importFrom(httr2,resp_body_json)
-importFrom(httr2,resp_status)
+importFrom(dplyr,
+  "%>%",
+  bind_rows
+)
+importFrom(httr2,
+  req_body_json,
+  req_headers,
+  req_perform,
+  req_timeout,
+  req_url_query,
+  request,
+  resp_body_json,
+  resp_status
+)
 importFrom(jsonlite,fromJSON)
 importFrom(lubridate,as_date)
-importFrom(rlang,.data)
-importFrom(rlang,abort)
-importFrom(rlang,inform)
-importFrom(tibble,as_tibble)
-importFrom(tibble,tibble)
+importFrom(rlang,
+  .data,
+  abort,
+  inform
+)
+importFrom(tibble,
+  as_tibble,
+  tibble
+)

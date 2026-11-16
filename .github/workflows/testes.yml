@@ -24,9 +24,12 @@ jobs:
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           working-directory: r
-          extra-packages: any::testthat, any::roxygen2
+          # roxygen2 fixado na versão de Config/roxygen2/version (r/DESCRIPTION): uma versão nova muda o formato do
+          # que é gerado (a 8.1.1 agrupou os importFrom do NAMESPACE) e quebraria a conferência sem mudança de código.
+          extra-packages: any::testthat, roxygen2@8.1.1
       - name: Ajuda do R em dia com o roxygen
         run: |
+          grep -qx 'Config/roxygen2/version: 8.1.1' r/DESCRIPTION || { echo "Atualize roxygen2@ no CI junto com Config/roxygen2/version"; exit 1; }
           Rscript -e 'roxygen2::roxygenise("r")'
           git diff --exit-code -- r/man r/NAMESPACE
       - name: Testes
