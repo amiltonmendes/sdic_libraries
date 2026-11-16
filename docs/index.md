@@ -25,7 +25,9 @@ remotes::install_github("amiltonmendes/sdic_libraries", subdir = "r")
 
 ## Chave da API
 
-A API exige uma chave individual (peça ao dono do projeto). Guarde-a uma vez, com a própria biblioteca:
+A API exige uma chave individual. Quem tem perfil admin no portal da SDIC gera a própria em **Administração →
+Chaves da API**; os demais pedem a um master do portal, que cria a chave e a entrega por canal privado. A chave
+aparece uma única vez. Guarde-a uma vez, com a própria biblioteca:
 
 ```python
 from sdic_libraries import salvar_chave
