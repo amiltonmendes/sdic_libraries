@@ -5,6 +5,8 @@
 """
 from __future__ import annotations
 
+import re
+
 from typing import Any, Optional
 
 import pandas as pd
@@ -51,6 +53,24 @@ def _como_lista(v: Any) -> str:
     return str(v)
 
 
+# Colunas que identificam a linha (não são medida), além dos filtros e da coluna de período da série.
+_IDENTIFICADORES = {"periodo", "competencia", "nivel", "simbolo"}
+
+
+def _e_medida(coluna: str, definicao: dict) -> bool:
+    """Medida: o que não é filtro, período nem código (`cod_`, `cd_`, `sg_`, `tx_`, `fl_`, `nr_`)."""
+    return (coluna not in (definicao.get("filtros") or {}) and coluna != definicao.get("periodo")
+            and coluna not in _IDENTIFICADORES and not re.match(r"(cod|cd|sg|tx|fl|nr)_", coluna))
+
+
+def _numero_se_todos(serie: pd.Series) -> pd.Series:
+    """A API devolve o NUMERIC do BigQuery como texto: vira número se todo valor presente for número."""
+    if pd.api.types.is_numeric_dtype(serie):
+        return serie
+    numeros = pd.to_numeric(serie, errors="coerce")
+    return numeros if numeros.isna().equals(serie.isna()) else serie
+
+
 def get_serie(nome: str, desde: Optional[Any] = None, ate: Optional[Any] = None,
               com_nomes: bool = False, **filtros: Any) -> pd.DataFrame:
     """Valores de uma série de `/series`, com todas as páginas.
@@ -95,6 +115,8 @@ def get_serie(nome: str, desde: Optional[Any] = None, ate: Optional[Any] = None,
                 df[coluna] = df[coluna].astype(_TIPOS_PANDAS[tipo])
         if "valor" in df.columns:
             df["valor"] = pd.to_numeric(df["valor"], errors="coerce")
+        for coluna in [c for c in df.columns if c != "valor" and _e_medida(c, definicao)]:
+            df[coluna] = _numero_se_todos(df[coluna])
         if com_nomes:
             for dimensao in definicao.get("dimensoes") or []:
                 df = _juntar_nomes(df, dimensao, cliente._make_request(f"/series/{nome}/dimensoes/{dimensao}"))

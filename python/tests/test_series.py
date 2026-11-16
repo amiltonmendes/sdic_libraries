@@ -1,6 +1,7 @@
 """Séries (/series). As respostas vêm de contrato/series_amostras.json, o mesmo arquivo dos testes em R."""
 from __future__ import annotations
 
+import pandas as pd
 import pytest
 import requests
 
@@ -82,3 +83,14 @@ def test_referencias(api):
     e = C["esperado"]["get_referencia"]
     df = get_referencia(**e["args"])
     assert len(df) == e["linhas"] and df[e["coluna_codigo"]].iloc[0] == e["primeiro_codigo"]  # texto: zero à esquerda preservado
+
+
+def test_get_serie_medida_em_texto_vira_numero_e_codigo_continua_texto(api, monkeypatch):
+    # A API devolve o NUMERIC do BigQuery (vab_mi) como texto, como na resposta real de contas_regionais_vab.
+    itens = [{"vintage": 2024, "cod_uf": "35", "sg_uf": "SP", "cod_atividade": 1, "ano": 2024, "vab_mi": "3083048.463844719"},
+             {"vintage": 2024, "cod_uf": "35", "sg_uf": "SP", "cod_atividade": 2, "ano": 2024, "vab_mi": "87178.593535979"}]
+    monkeypatch.setitem(C["respostas"], "/series/contas_regionais_vab?pagina=1", {"items": itens, "proxima_pagina": None})
+    df = get_serie("contas_regionais_vab", sg_uf="SP")
+    assert pd.api.types.is_float_dtype(df["vab_mi"]) and df["vab_mi"].tolist() == [3083048.463844719, 87178.593535979]
+    assert df["cod_uf"].tolist() == ["35", "35"] and df["sg_uf"].tolist() == ["SP", "SP"]
+    assert df.sort_values("vab_mi", ascending=False)["cod_atividade"].tolist() == [1, 2]

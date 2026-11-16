@@ -3,7 +3,7 @@
 <!-- Gerado por scripts/documentar.py a partir de contrato/catalogo.json. Não edite à mão. -->
 
 Uma porta única para ler os dados da plataforma, com as mesmas funções em **Python** (`sdic_libraries`) e em
-**R** (`sdic.libraries`). Toda função devolve uma tabela (`DataFrame` ou `tibble`). Versão 0.7.0.
+**R** (`sdic.libraries`). Toda função devolve uma tabela (`DataFrame` ou `tibble`). Versão 0.7.1.
 
 - [Qual função usar](qual_funcao_usar.md)
 - [Referência das funções](referencia.md)

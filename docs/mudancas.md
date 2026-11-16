@@ -6,6 +6,14 @@
 Formato livre (sem [Keep a Changelog](https://keepachangelog.com) ainda) — o essencial é: o que
 muda pro usuário ao atualizar. Versionamento nas duas linguagens juntas; ver [AGENTS.md](../AGENTS.md#versionamento).
 
+## [0.7.1] — 2026-11-16
+
+### Corrigido
+- `get_serie()`: colunas de medida que a API devolve como texto (o NUMERIC do BigQuery, como `vab_mi` de
+  `contas_regionais_vab`) viram número, nas duas linguagens. Antes só `valor` era convertida: a coluna ficava texto,
+  e ordenar ou somar dava resultado errado sem aviso. Códigos (`cod_`, `cd_`, `sg_`, `tx_`, `fl_`, `nr_`), filtros e
+  período não mudam; uma coluna só é convertida se todos os valores forem números.
+
 ## [0.7.0] — 2026-11-16
 
 ### Adicionado

@@ -106,3 +106,18 @@ test_that("referências", {
   expect_identical(df[[e$coluna_codigo]][1], e$primeiro_codigo)  # texto: zero à esquerda preservado
   expect_true(all(vapply(df, is.character, logical(1))))
 })
+
+test_that("get_serie: medida em texto vira número; código continua texto", {
+  skip_if(is.null(C)); ambiente_limpo()
+  # A API devolve o NUMERIC do BigQuery (vab_mi) como texto, como na resposta real de contas_regionais_vab.
+  respostas <- C$respostas
+  respostas[["/series/contas_regionais_vab?pagina=1"]] <- list(proxima_pagina = NULL, items = list(
+    list(vintage = 2024, cod_uf = "35", sg_uf = "SP", cod_atividade = 1, ano = 2024, vab_mi = "3083048.463844719"),
+    list(vintage = 2024, cod_uf = "35", sg_uf = "SP", cod_atividade = 2, ano = 2024, vab_mi = "87178.593535979")))
+  api_falsa(respostas)
+  df <- get_serie("contas_regionais_vab", sg_uf = "SP")
+  expect_type(df$vab_mi, "double")
+  expect_equal(df$vab_mi, c(3083048.463844719, 87178.593535979))
+  expect_identical(df$cod_uf, c("35", "35"))
+  expect_identical(df$sg_uf, c("SP", "SP"))
+})

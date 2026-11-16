@@ -14,7 +14,7 @@ vai em `SDIC_API_KEY` (variável de ambiente ou `.env.local`).
 
 from __future__ import annotations
 
-__version__ = "0.7.0"
+__version__ = "0.7.1"
 __author__ = "SDIC Team"
 __email__ = "sdic.dados@mdic.gov.br"
 __license__ = "MIT"

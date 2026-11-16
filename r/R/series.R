@@ -30,6 +30,19 @@
   )
 }
 
+# Medida: o que não é filtro, período nem código (`cod_`, `cd_`, `sg_`, `tx_`, `fl_`, `nr_`).
+.series_e_medida <- function(coluna, definicao) {
+  identificadores <- c(names(definicao$filtros), unlist(definicao$periodo), "periodo", "competencia", "nivel", "simbolo")
+  !coluna %in% identificadores && !grepl("^(cod|cd|sg|tx|fl|nr)_", coluna)
+}
+
+# A API devolve o NUMERIC do BigQuery como texto: vira número se todo valor presente for número.
+.series_numero_se_todos <- function(x) {
+  if (is.numeric(x)) return(x)
+  n <- .sdic_numerico(x)
+  if (identical(is.na(n), is.na(x))) n else x
+}
+
 # Acrescenta `<dimensao>_nome` (e `unidade`, na dimensão de variáveis) pelas colunas em comum.
 .series_juntar_nomes <- function(df, dimensao, linhas) {
   dim <- .sdic_tabela(linhas)
@@ -101,6 +114,9 @@ get_serie <- function(nome, desde = NULL, ate = NULL, com_nomes = FALSE, ...) {
     df[[coluna]] <- .series_tipar(df[[coluna]], definicao$filtros[[coluna]])
   }
   if ("valor" %in% names(df)) df$valor <- .sdic_numerico(df$valor)
+  for (coluna in Filter(function(c) c != "valor" && .series_e_medida(c, definicao), names(df))) {
+    df[[coluna]] <- .series_numero_se_todos(df[[coluna]])
+  }
   if (isTRUE(com_nomes)) {
     for (dimensao in unlist(definicao$dimensoes)) {
       df <- .series_juntar_nomes(df, dimensao, cliente$.make_request(paste0(rota, "/dimensoes/", dimensao)))
