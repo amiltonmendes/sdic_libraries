@@ -1,14 +1,16 @@
 """Configuração da biblioteca: o único lugar que lê variável de ambiente e arquivo `.env`.
 
 Cada valor é resolvido nesta ordem: argumento da função, variável de ambiente, `.env.local`,
-`.env` (diretório atual), `~/.env`, `/etc/sdic/.env`, padrão do catálogo. Os arquivos são só
-lidos: nada é gravado em `os.environ`, e só os nomes desta biblioteca são considerados.
+`.env` (diretório atual), o arquivo do usuário gravado por `salvar_chave()` (`~/.config/sdic/.env`),
+`~/.env`, `/etc/sdic/.env`, padrão do catálogo. Fora `salvar_chave()`, os arquivos são só lidos: nada é gravado
+em `os.environ`, e só os nomes desta biblioteca são considerados.
 `sdic_config()` mostra o que está valendo e de onde veio.
 """
 from __future__ import annotations
 
 import json
 import os
+import re
 import warnings
 from pathlib import Path
 from typing import Dict, Optional, Tuple
@@ -32,8 +34,18 @@ PADROES = {"SDIC_TIMEOUT": "30", "SDIC_CACHE_TTL": "0", "SDIC_AMBIENTE": "produc
 _avisados: set = set()
 
 
+def arquivo_do_usuario() -> Path:
+    """Arquivo de configuração do usuário, o que `salvar_chave()` grava. O mesmo em Python e em R:
+    `%APPDATA%/sdic/.env` no Windows; `$XDG_CONFIG_HOME/sdic/.env` (padrão `~/.config/sdic/.env`) nos demais."""
+    if os.name == "nt" and os.environ.get("APPDATA"):
+        return Path(os.environ["APPDATA"]) / "sdic" / ".env"
+    base = os.environ.get("XDG_CONFIG_HOME") or str(Path.home() / ".config")
+    return Path(base) / "sdic" / ".env"
+
+
 def _arquivos() -> Tuple[Path, ...]:
-    return (Path.cwd() / ".env.local", Path.cwd() / ".env", Path.home() / ".env", Path("/etc/sdic/.env"))
+    return (Path.cwd() / ".env.local", Path.cwd() / ".env", arquivo_do_usuario(), Path.home() / ".env",
+            Path("/etc/sdic/.env"))
 
 
 def _ler_env(arquivo: Path) -> Dict[str, str]:
@@ -114,6 +126,79 @@ def conferir_destino_da_chave(base_url: str) -> None:
     if partes.scheme != "https" and partes.hostname not in ("localhost", "127.0.0.1", "::1"):
         raise ValueError(f"A chave da API não é enviada para {base_url!r}: a URL precisa ser https://. "
                          "Confira SDIC_API_URL (sdic_config() mostra de onde o valor veio).")
+
+
+def _gravar_privado(arquivo: Path, conteudo: str) -> None:
+    """Grava `conteudo` legível só pelo dono (pasta 700, arquivo 600), trocando o arquivo de uma vez."""
+    arquivo.parent.mkdir(parents=True, exist_ok=True)
+    if os.name != "nt":
+        os.chmod(arquivo.parent, 0o700)
+    temporario = arquivo.with_name(arquivo.name + ".tmp")
+    descritor = os.open(temporario, os.O_WRONLY | os.O_CREAT | os.O_TRUNC, 0o600)
+    with os.fdopen(descritor, "w", encoding="utf-8") as f:
+        f.write(conteudo)
+    os.replace(temporario, arquivo)
+    if os.name != "nt":
+        os.chmod(arquivo, 0o600)
+
+
+def _testar_chave(chave: str) -> None:
+    from .transporte import SdicErro, nova_sessao  # import tardio: transporte importa config
+    base = url("api")
+    conferir_destino_da_chave(base)
+    try:
+        resposta = nova_sessao(chave).get(f"{base}/series", timeout=timeout())
+    except Exception as erro:  # noqa: BLE001 - a mensagem original pode trazer a URL; não a chave
+        raise SdicErro(f"Não foi possível falar com a API ({base}) para conferir a chave: {type(erro).__name__}. "
+                       "Nada foi salvo. Sem rede, use salvar_chave(..., testar=False).", endpoint="/series") from None
+    if resposta.status_code in (401, 403):
+        raise ValueError(f"A API recusou a chave (HTTP {resposta.status_code}). Nada foi salvo.")
+    if resposta.status_code >= 400:
+        raise SdicErro(f"A API respondeu HTTP {resposta.status_code} ao conferir a chave. Nada foi salvo.",
+                       status_code=resposta.status_code, endpoint="/series")
+
+
+def salvar_chave(chave: Optional[str] = None, testar: bool = True) -> str:
+    """Guarda a chave da sdic_api no arquivo de configuração do usuário, legível só por ele.
+
+    Sem `chave`, pergunta sem mostrar o que é digitado (melhor do que escrever a chave no código, que fica no
+    histórico). Com `testar=True`, confere a chave na API antes de gravar: chave recusada não é salva. O arquivo é
+    `~/.config/sdic/.env` (`%APPDATA%\\sdic\\.env` no Windows), com permissão só do dono, e vale para Python e
+    para R. Chamar de novo troca a chave. Uma `SDIC_API_KEY` em variável de ambiente ou no `.env.local`/`.env`
+    da pasta atual continua tendo precedência (há aviso quando isso acontece).
+
+    Args:
+        chave: a chave individual; se omitida, é pedida no terminal.
+        testar: conferir a chave na API antes de salvar.
+
+    Returns:
+        str: o caminho do arquivo gravado.
+
+    Example:
+        >>> from sdic_libraries import salvar_chave, sdic_config
+        >>> salvar_chave()          # pergunta a chave
+        >>> sdic_config()           # "chave da API: definida", com o arquivo de onde veio
+    """
+    if chave is None:
+        import getpass
+        chave = getpass.getpass("Chave da sdic_api (não aparece na tela): ")
+    chave = (chave or "").strip()
+    if len(chave) < 16 or any(c.isspace() or c in "=#\"'" for c in chave):
+        raise ValueError("Chave inválida: esperava o texto recebido do dono do projeto, sem espaços. Nada foi salvo.")
+    if testar:
+        _testar_chave(chave)
+    arquivo = arquivo_do_usuario()
+    try:
+        linhas = arquivo.read_text(encoding="utf-8").splitlines()
+    except OSError:
+        linhas = []
+    linhas = [l for l in linhas if re.sub(r"^\s*export\s+", "", l).split("=", 1)[0].strip() != "SDIC_API_KEY"]
+    _gravar_privado(arquivo, "\n".join(linhas + [f"SDIC_API_KEY={chave}"]) + "\n")
+    _, de_onde = valor("SDIC_API_KEY")
+    if not de_onde.startswith(str(arquivo)):
+        warnings.warn(f"Chave salva em {arquivo}, mas vale a de {de_onde}, que tem precedência. Apague-a de lá para "
+                      "usar a salva.", UserWarning, stacklevel=2)
+    return str(arquivo)
 
 
 def sdic_config() -> pd.DataFrame:

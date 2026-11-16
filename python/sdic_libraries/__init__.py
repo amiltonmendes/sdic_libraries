@@ -14,7 +14,7 @@ vai em `SDIC_API_KEY` (variável de ambiente ou `.env.local`).
 
 from __future__ import annotations
 
-__version__ = "0.6.0"
+__version__ = "0.7.0"
 __author__ = "SDIC Team"
 __email__ = "sdic.dados@mdic.gov.br"
 __license__ = "MIT"
@@ -22,7 +22,7 @@ __copyright__ = "Copyright 2026, SDIC Team"
 
 from . import dados, utils
 from .catalogo import descrever, listar_bases
-from .config import sdic_config
+from .config import salvar_chave, sdic_config
 from .politicas import (get_manifesto_politicas, get_municipios_elegiveis, get_politica, get_politica_publicada,
                         get_politicas_estado, get_resumo_politicas, listar_politicas)
 from .publicados import (get_atualizacao_publicada, get_destaques_publicados, get_detalhamento_publicado,
@@ -35,7 +35,7 @@ from .transporte import NaoPublicado, SdicErro, ler_json_publicado
 # (e só avisa) quando importado explicitamente.
 
 _NOVAS = [
-    "listar_bases", "descrever", "sdic_config", "ler_json_publicado",
+    "listar_bases", "descrever", "sdic_config", "salvar_chave", "ler_json_publicado",
     "listar_series", "get_serie", "get_dimensao_serie", "listar_referencias", "get_referencia",
     "listar_secoes_publicadas", "get_secao_publicada", "get_kpis_publicados", "get_series_publicadas",
     "get_ranking_publicado", "get_detalhamento_publicado", "get_destaques_publicados", "get_atualizacao_publicada",

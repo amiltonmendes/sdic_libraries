@@ -1478,6 +1478,16 @@
    "tema": "utilitarios",
    "subtema": "configuracao",
    "nivel": "-",
+   "funcao": "salvar_chave",
+   "descricao": "Guarda a chave da API num arquivo só do usuário (~/.config/sdic/.env), depois de conferi-la na API; vale para Python e R.",
+   "exemplo_py": "salvar_chave()",
+   "exemplo_r": "salvar_chave()",
+   "base": null
+  },
+  {
+   "tema": "utilitarios",
+   "subtema": "configuracao",
+   "nivel": "-",
    "funcao": "descrever",
    "descricao": "Ficha de uma base ou função do catálogo: origem, fonte, periodicidade, colunas e funções que a leem.",
    "exemplo_py": "descrever('secoes_publicadas')",

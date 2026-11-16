@@ -6,6 +6,7 @@ import os
 import warnings
 
 import pytest
+import requests
 
 from sdic_libraries import config, sdic_config
 from sdic_libraries.dados.comex import Comex
@@ -89,3 +90,61 @@ def test_sdic_config_nunca_mostra_a_chave(monkeypatch):
     assert "segredo-123" not in df.to_string()
     assert df.loc[df["item"] == "chave da API", "valor"].item() == "definida"
     assert "segredo-123" not in repr(Emprego()) + repr(Comex())
+
+
+# ── salvar_chave ────────────────────────────────────────────────────────────────────────────────
+CHAVE = "abcdef0123456789abcdef0123456789"
+
+
+def test_salvar_chave_grava_so_para_o_dono_e_passa_a_valer(tmp_path):
+    from sdic_libraries import salvar_chave
+    arquivo = salvar_chave(CHAVE, testar=False)
+    assert arquivo == str(tmp_path / ".config" / "sdic" / ".env")
+    if os.name != "nt":
+        assert oct(os.stat(arquivo).st_mode & 0o777) == "0o600"
+        assert oct(os.stat(os.path.dirname(arquivo)).st_mode & 0o777) == "0o700"
+    assert config.chave() == CHAVE
+    linha = sdic_config().set_index("item").loc["chave da API"]
+    assert linha["valor"] == "definida" and linha["de_onde"].startswith(arquivo)
+    assert CHAVE not in sdic_config().to_string()
+
+
+def test_salvar_chave_troca_a_anterior_e_mantem_o_resto(tmp_path, monkeypatch):
+    from sdic_libraries import salvar_chave
+    monkeypatch.setenv("XDG_CONFIG_HOME", str(tmp_path / "cfg"))
+    (tmp_path / "cfg" / "sdic").mkdir(parents=True)
+    (tmp_path / "cfg" / "sdic" / ".env").write_text("SDIC_AMBIENTE=homologacao\nexport SDIC_API_KEY=velha0123456789abc\n")
+    arquivo = salvar_chave(CHAVE, testar=False)
+    assert open(arquivo).read() == f"SDIC_AMBIENTE=homologacao\nSDIC_API_KEY={CHAVE}\n"
+    assert config.ambiente() == "homologacao"
+
+
+@pytest.mark.parametrize("ruim", ["", "curta", "tem espaco no meio 0123456789", "a=b0123456789abcdef"])
+def test_salvar_chave_recusa_chave_mal_formada(ruim, tmp_path):
+    from sdic_libraries import salvar_chave
+    with pytest.raises(ValueError, match="Nada foi salvo"):
+        salvar_chave(ruim, testar=False)
+    assert not (tmp_path / ".config" / "sdic" / ".env").exists()
+
+
+def test_salvar_chave_recusada_pela_api_nao_grava(monkeypatch, tmp_path):
+    from sdic_libraries import salvar_chave, transporte
+    pedidos = []
+
+    def get(self, url, timeout=None):
+        pedidos.append((url, self.headers.get("Authorization")))
+        r = requests.Response()
+        r.status_code = 401
+        return r
+    monkeypatch.setattr(transporte.requests.Session, "get", get)
+    with pytest.raises(ValueError, match="recusou a chave"):
+        salvar_chave(CHAVE)
+    assert pedidos == [("https://sdicapi.dados.ninja/series", f"Bearer {CHAVE}")]
+    assert not (tmp_path / ".config" / "sdic" / ".env").exists()
+
+
+def test_salvar_chave_avisa_quando_outra_tem_precedencia(monkeypatch):
+    from sdic_libraries import salvar_chave
+    monkeypatch.setenv("SDIC_API_KEY", "da-variavel-0123456789")
+    with pytest.warns(UserWarning, match="tem precedência"):
+        salvar_chave(CHAVE, testar=False)

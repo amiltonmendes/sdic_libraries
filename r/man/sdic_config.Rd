@@ -12,7 +12,8 @@ mostrada: só se existe.
 }
 \description{
 Cada configuração é resolvida nesta ordem: argumento da função, variável de ambiente,
-\code{./.env.local}, \code{./.env}, \verb{~/.env}, \verb{/etc/sdic/.env}, padrão do catálogo. Os arquivos são
+\code{./.env.local}, \code{./.env}, \verb{~/.config/sdic/.env} (gravado por \code{\link[=salvar_chave]{salvar_chave()}}), \verb{~/.env},
+\verb{/etc/sdic/.env}, padrão do catálogo. Os arquivos são
 só lidos (o ambiente do processo não é alterado). Variáveis: \code{SDIC_API_KEY},
 \code{SDIC_API_URL}, \code{SDIC_DADOS_URL}, \code{SDIC_PAGES_URL}, \code{SDIC_AMBIENTE}, \code{SDIC_TIMEOUT},
 \code{SDIC_CACHE_TTL} e \code{SDIC_CACHE_DIR}. Os nomes antigos (\code{EMPLOYMENT_API_KEY},

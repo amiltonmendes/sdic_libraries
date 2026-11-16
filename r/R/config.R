@@ -1,9 +1,9 @@
 # Configuração da biblioteca: o único lugar que lê variável de ambiente e arquivo `.env`.
 #
 # Cada valor é resolvido nesta ordem: argumento da função, variável de ambiente, `.env.local`,
-# `.env` (diretório atual), `~/.env`, `/etc/sdic/.env`, padrão do catálogo. Os arquivos são só
-# lidos: nada é gravado no ambiente do processo (`Sys.setenv`), e só os nomes desta biblioteca
-# são considerados. `sdic_config()` mostra o que está valendo e de onde veio.
+# `.env` (diretório atual), o arquivo do usuário gravado por `salvar_chave()` (`~/.config/sdic/.env`),
+# `~/.env`, `/etc/sdic/.env`, padrão do catálogo. Fora `salvar_chave()`, os arquivos são só lidos:
+# nada é gravado no ambiente do processo (`Sys.setenv`), e só os nomes desta biblioteca são considerados. `sdic_config()` mostra o que está valendo e de onde veio.
 # Espelho de `python/sdic_libraries/config.py`.
 
 # Estado do pacote: catálogo já lido e nomes antigos que já geraram aviso.
@@ -47,8 +47,17 @@
 }
 
 .sdic_arquivos_env <- function() {
-  c(file.path(getwd(), ".env.local"), file.path(getwd(), ".env"),
+  c(file.path(getwd(), ".env.local"), file.path(getwd(), ".env"), .sdic_arquivo_do_usuario(),
     file.path(.sdic_home(), ".env"), "/etc/sdic/.env")
+}
+
+# Arquivo de configuração do usuário, o que `salvar_chave()` grava. O mesmo do Python:
+# `%APPDATA%/sdic/.env` no Windows; `$XDG_CONFIG_HOME/sdic/.env` (padrão `~/.config/sdic/.env`) nos demais.
+.sdic_arquivo_do_usuario <- function() {
+  appdata <- Sys.getenv("APPDATA")
+  if (.Platform$OS.type == "windows" && nzchar(appdata)) return(file.path(appdata, "sdic", ".env"))
+  xdg <- Sys.getenv("XDG_CONFIG_HOME")
+  file.path(if (nzchar(xdg)) xdg else file.path(.sdic_home(), ".config"), "sdic", ".env")
 }
 
 # Lê um `.env` e devolve os pares nome/valor. Nunca altera o ambiente do processo.
@@ -153,7 +162,8 @@
 #' O que a biblioteca está usando agora e de onde veio cada valor
 #'
 #' Cada configuração é resolvida nesta ordem: argumento da função, variável de ambiente,
-#' `./.env.local`, `./.env`, `~/.env`, `/etc/sdic/.env`, padrão do catálogo. Os arquivos são
+#' `./.env.local`, `./.env`, `~/.config/sdic/.env` (gravado por [salvar_chave()]), `~/.env`,
+#' `/etc/sdic/.env`, padrão do catálogo. Os arquivos são
 #' só lidos (o ambiente do processo não é alterado). Variáveis: `SDIC_API_KEY`,
 #' `SDIC_API_URL`, `SDIC_DADOS_URL`, `SDIC_PAGES_URL`, `SDIC_AMBIENTE`, `SDIC_TIMEOUT`,
 #' `SDIC_CACHE_TTL` e `SDIC_CACHE_DIR`. Os nomes antigos (`EMPLOYMENT_API_KEY`,
@@ -191,4 +201,81 @@ sdic_config <- function() {
   v <- .sdic_valor("SDIC_CACHE_DIR")
   acrescentar("pasta do cache", .sdic_pasta_cache(), "SDIC_CACHE_DIR", v$de_onde)
   tibble::as_tibble(dplyr::bind_rows(linhas))
+}
+
+# Pede a chave sem mostrar o que é digitado, quando há como (RStudio ou pacote askpass).
+.sdic_perguntar_chave <- function() {
+  if (!interactive()) .sdic_invalido("Informe a chave: salvar_chave(\"...\") (sessão não interativa).")
+  pergunta <- "Chave da sdic_api (não aparece na tela): "
+  if (requireNamespace("rstudioapi", quietly = TRUE) && rstudioapi::isAvailable()) {
+    return(rstudioapi::askForPassword(pergunta))
+  }
+  if (requireNamespace("askpass", quietly = TRUE)) return(askpass::askpass(pergunta))
+  cli::cli_alert_warning("Sem RStudio nem o pacote askpass, a chave aparece na tela enquanto é digitada.")
+  readline(pergunta)
+}
+
+.sdic_testar_chave <- function(chave) {
+  base <- .sdic_url("api")
+  .sdic_conferir_destino_da_chave(base)
+  resp <- tryCatch(httr2::req_perform(.sdic_requisicao(paste0(base, "/series"), .sdic_timeout(), chave)),
+                   error = function(e) e)
+  if (inherits(resp, "error")) {
+    .sdic_abortar(sprintf(paste0("Não foi possível falar com a API (%s) para conferir a chave. Nada foi salvo. ",
+                                 "Sem rede, use salvar_chave(..., testar = FALSE)."), base), endpoint = "/series")
+  }
+  status <- httr2::resp_status(resp)
+  if (status %in% c(401L, 403L)) .sdic_invalido(sprintf("A API recusou a chave (HTTP %s). Nada foi salvo.", status))
+  if (status >= 400) {
+    .sdic_abortar(sprintf("A API respondeu HTTP %s ao conferir a chave. Nada foi salvo.", status),
+                  status_code = status, endpoint = "/series")
+  }
+  invisible(TRUE)
+}
+
+#' Guarda a chave da sdic_api no arquivo de configuração do usuário
+#'
+#' Sem `chave`, pergunta sem mostrar o que é digitado (no RStudio ou com o pacote `askpass`):
+#' é melhor do que escrever a chave no código, que fica no histórico. Com `testar = TRUE`, confere
+#' a chave na API antes de gravar; chave recusada não é salva. O arquivo é
+#' `~/.config/sdic/.env` (`%APPDATA%/sdic/.env` no Windows), legível só pelo dono, e vale para R
+#' e para Python. Chamar de novo troca a chave. Uma `SDIC_API_KEY` em variável de ambiente ou no
+#' `.env.local`/`.env` da pasta atual continua tendo precedência (há aviso quando isso acontece).
+#'
+#' @param chave A chave individual. Se omitida, é pedida.
+#' @param testar Conferir a chave na API antes de salvar.
+#' @return O caminho do arquivo gravado, invisível.
+#' @examples
+#' \dontrun{
+#' salvar_chave()   # pergunta a chave
+#' sdic_config()    # "chave da API: definida", com o arquivo de onde veio
+#' }
+#' @export
+salvar_chave <- function(chave = NULL, testar = TRUE) {
+  if (is.null(chave)) chave <- .sdic_perguntar_chave()
+  chave <- trimws(as.character(chave %||% ""))
+  if (length(chave) != 1 || is.na(chave) || nchar(chave) < 16 || grepl("[[:space:]=#\"']", chave)) {
+    .sdic_invalido("Chave inválida: esperava o texto recebido do dono do projeto, sem espaços. Nada foi salvo.")
+  }
+  if (isTRUE(testar)) .sdic_testar_chave(chave)
+  arquivo <- .sdic_arquivo_do_usuario()
+  pasta <- dirname(arquivo)
+  dir.create(pasta, recursive = TRUE, showWarnings = FALSE, mode = "0700")
+  Sys.chmod(pasta, "0700")
+  linhas <- if (file.exists(arquivo)) readLines(arquivo, warn = FALSE, encoding = "UTF-8") else character()
+  nomes <- trimws(sub("=.*$", "", sub("^\\s*export\\s+", "", linhas)))
+  linhas <- c(linhas[nomes != "SDIC_API_KEY"], paste0("SDIC_API_KEY=", chave))
+  temporario <- paste0(arquivo, ".tmp")
+  file.create(temporario)
+  Sys.chmod(temporario, "0600")  # antes de escrever: a chave nunca fica num arquivo aberto a outros
+  writeLines(linhas, temporario, useBytes = TRUE)
+  if (!file.rename(temporario, arquivo)) .sdic_invalido(sprintf("Não foi possível gravar %s.", arquivo))
+  Sys.chmod(arquivo, "0600")
+  de_onde <- .sdic_valor("SDIC_API_KEY")$de_onde
+  if (!startsWith(de_onde, arquivo)) {
+    warning(sprintf("Chave salva em %s, mas vale a de %s, que tem precedência. Apague-a de lá para usar a salva.",
+                    arquivo, de_onde), call. = FALSE)
+  }
+  cli::cli_alert_success("Chave salva em {.path {arquivo}} (só você pode ler). {.code sdic_config()} mostra de onde ela vem.")
+  invisible(arquivo)
 }

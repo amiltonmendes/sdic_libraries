@@ -14,16 +14,18 @@
 #' - [sdic_config()]: de onde a biblioteca está lendo (endereços, ambiente, se há chave).
 #'
 #' @section Como configurar a chave:
-#' A sdic_api exige uma chave individual. Coloque-a em `SDIC_API_KEY`, numa variável de
-#' ambiente (por exemplo no `~/.Renviron`) ou num arquivo `.env.local` na pasta do projeto
-#' (não versione esse arquivo):
+#' A sdic_api exige uma chave individual. Guarde-a uma vez com [salvar_chave()], que pergunta
+#' a chave sem mostrá-la, confere na API e grava num arquivo só seu (vale também para Python).
+#' Alternativas: a variável `SDIC_API_KEY` (por exemplo no `~/.Renviron`) ou um arquivo
+#' `.env.local` na pasta do projeto (não versione esse arquivo):
 #'
 #' ```
 #' SDIC_API_KEY=sua-chave
 #' ```
 #'
 #' Cada configuração é resolvida nesta ordem: argumento da função, variável de ambiente,
-#' `./.env.local`, `./.env`, `~/.env`, `/etc/sdic/.env`, padrão. Os arquivos são só lidos. As
+#' `./.env.local`, `./.env`, `~/.config/sdic/.env` (gravado por [salvar_chave()]), `~/.env`,
+#' `/etc/sdic/.env`, padrão. Os arquivos são só lidos. As
 #' seções publicadas e as políticas não usam chave; o ambiente (`"producao"` ou
 #' `"homologacao"`) vem de `SDIC_AMBIENTE` ou do argumento `ambiente`.
 #'

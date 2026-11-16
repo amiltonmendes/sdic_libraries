@@ -13,7 +13,7 @@ Documentação completa em [docs/](docs/index.md) (também no painel de cargas, 
 
 ## 🧭 Por onde começar
 
-1. **Instale** (abaixo) e defina a chave da API em `.env.local` (`SDIC_API_KEY=...`). Seções publicadas e
+1. **Instale** (abaixo) e guarde a chave da API com `salvar_chave()`. Seções publicadas e
    políticas são arquivos públicos e dispensam chave.
 2. **Descubra a função** com `listar_bases()`, o [catálogo](CATALOGO.md) ou [Qual função usar](docs/qual_funcao_usar.md).
 3. **Veja de onde vem o dado** e que colunas ele tem: `descrever("get_kpis_publicados")`.
@@ -233,11 +233,12 @@ em nível `classe` sem `codigos_cnae` também retorna dezenas de milhares de lin
 ## ⚙️ Configuração
 
 Uma chave e três endereços, resolvidos num lugar só (`config.py` / `config.R`). Precedência: argumento da
-função, variável de ambiente, `.env.local`, `.env`, `~/.env`, `/etc/sdic/.env`, padrão do catálogo.
+função, variável de ambiente, `.env.local`, `.env`, `~/.config/sdic/.env` (gravado por `salvar_chave()`), `~/.env`,
+`/etc/sdic/.env`, padrão do catálogo.
 
 | Variável | Descrição | Padrão |
 |---|---|---|
-| `SDIC_API_KEY` | Chave individual da API. Guarde em **`.env.local`** (fora do git) | sem chave |
+| `SDIC_API_KEY` | Chave individual da API. Guarde com **`salvar_chave()`** (ou em `.env.local`, fora do git) | sem chave |
 | `SDIC_AMBIENTE` | `producao` ou `homologacao` (seções publicadas e políticas) | `producao` |
 | `SDIC_API_URL`, `SDIC_DADOS_URL`, `SDIC_PAGES_URL` | Endereço da API, dos JSON publicados e das políticas | os do catálogo |
 | `SDIC_TIMEOUT` | Segundos por requisição | 30 |

@@ -28,15 +28,17 @@ Uma porta única, com o mesmo nome de função em R e em Python (\code{sdic_libr
 
 \section{Como configurar a chave}{
 
-A sdic_api exige uma chave individual. Coloque-a em \code{SDIC_API_KEY}, numa variável de
-ambiente (por exemplo no \verb{~/.Renviron}) ou num arquivo \code{.env.local} na pasta do projeto
-(não versione esse arquivo):
+A sdic_api exige uma chave individual. Guarde-a uma vez com \code{\link[=salvar_chave]{salvar_chave()}}, que pergunta
+a chave sem mostrá-la, confere na API e grava num arquivo só seu (vale também para Python).
+Alternativas: a variável \code{SDIC_API_KEY} (por exemplo no \verb{~/.Renviron}) ou um arquivo
+\code{.env.local} na pasta do projeto (não versione esse arquivo):
 
 \if{html}{\out{<div class="sourceCode">}}\preformatted{SDIC_API_KEY=sua-chave
 }\if{html}{\out{</div>}}
 
 Cada configuração é resolvida nesta ordem: argumento da função, variável de ambiente,
-\code{./.env.local}, \code{./.env}, \verb{~/.env}, \verb{/etc/sdic/.env}, padrão. Os arquivos são só lidos. As
+\code{./.env.local}, \code{./.env}, \verb{~/.config/sdic/.env} (gravado por \code{\link[=salvar_chave]{salvar_chave()}}), \verb{~/.env},
+\verb{/etc/sdic/.env}, padrão. Os arquivos são só lidos. As
 seções publicadas e as políticas não usam chave; o ambiente (\code{"producao"} ou
 \code{"homologacao"}) vem de \code{SDIC_AMBIENTE} ou do argumento \code{ambiente}.
 }

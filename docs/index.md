@@ -3,7 +3,7 @@
 <!-- Gerado por scripts/documentar.py a partir de contrato/catalogo.json. Não edite à mão. -->
 
 Uma porta única para ler os dados da plataforma, com as mesmas funções em **Python** (`sdic_libraries`) e em
-**R** (`sdic.libraries`). Toda função devolve uma tabela (`DataFrame` ou `tibble`). Versão 0.6.0.
+**R** (`sdic.libraries`). Toda função devolve uma tabela (`DataFrame` ou `tibble`). Versão 0.7.0.
 
 - [Qual função usar](qual_funcao_usar.md)
 - [Referência das funções](referencia.md)
@@ -25,12 +25,22 @@ remotes::install_github("amiltonmendes/sdic_libraries", subdir = "r")
 
 ## Chave da API
 
-A API exige uma chave individual (peça ao dono do projeto). Grave-a em um arquivo `.env.local` na pasta do seu
-projeto (o `.gitignore` deve ignorá-lo) ou em uma variável de ambiente:
+A API exige uma chave individual (peça ao dono do projeto). Guarde-a uma vez, com a própria biblioteca:
 
+```python
+from sdic_libraries import salvar_chave
+salvar_chave()          # pergunta a chave sem mostrá-la, confere na API e grava
 ```
-SDIC_API_KEY=sua-chave
+
+```r
+library(sdic.libraries)
+salvar_chave()
 ```
+
+A chave vai para `~/.config/sdic/.env` (`%APPDATA%\sdic\.env` no Windows), legível só por você, e vale para
+Python e para R. Para trocar, chame de novo. Alternativas: a variável de ambiente `SDIC_API_KEY`, ou um arquivo
+`.env.local` na pasta do projeto (fora do git) com `SDIC_API_KEY=sua-chave`. `sdic_config()` mostra se a chave
+foi encontrada e de onde veio, sem exibi-la.
 
 As seções publicadas e as políticas são arquivos públicos e não precisam de chave.
 

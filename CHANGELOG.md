@@ -3,6 +3,18 @@
 Formato livre (sem [Keep a Changelog](https://keepachangelog.com) ainda) — o essencial é: o que
 muda pro usuário ao atualizar. Versionamento nas duas linguagens juntas; ver [AGENTS.md](AGENTS.md#versionamento).
 
+## [0.7.0] — 2026-11-16
+
+### Adicionado
+- `salvar_chave(chave, testar)`: guarda a chave da API num arquivo só do usuário (`~/.config/sdic/.env`;
+  `%APPDATA%\sdic\.env` no Windows; pasta 700 e arquivo 600), o mesmo para Python e R. Sem argumento, pergunta a
+  chave sem mostrá-la; com `testar=True` (padrão), confere na API e não grava chave recusada. Avisa quando uma
+  `SDIC_API_KEY` de variável de ambiente ou do `.env.local` da pasta tem precedência.
+
+### Mudou
+- A ordem de leitura da configuração ganha o arquivo do usuário, depois do `.env` da pasta e antes do `~/.env`.
+  Quem não usa `salvar_chave()` não percebe diferença.
+
 ## [0.6.0] — 2026-11-13
 
 A biblioteca passa a ser a porta única de leitura da plataforma: além de emprego e comex, lê as séries da

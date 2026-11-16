@@ -1488,6 +1488,24 @@ Colunas devolvidas:
 | `variavel` | texto | variável de ambiente correspondente |
 | `de_onde` | texto | argumento, variável, arquivo ou padrão |
 
+### `salvar_chave`
+
+Guarda a chave da API num arquivo só do usuário (~/.config/sdic/.env), depois de conferi-la na API; vale para Python e R.
+
+```python
+# Python
+from sdic_libraries import salvar_chave
+salvar_chave()
+```
+
+```r
+# R
+library(sdic.libraries)
+salvar_chave()
+```
+
+Assinatura (Python): `salvar_chave(chave: 'Optional[str]' = None, testar: 'bool' = True) -> 'str'`
+
 ### `descrever`
 
 Ficha de uma base ou função do catálogo: origem, fonte, periodicidade, colunas e funções que a leem.

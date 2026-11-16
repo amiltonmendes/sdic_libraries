@@ -115,3 +115,57 @@ test_that("criar o cliente não imprime nada", {
   expect_silent(Emprego$new())
   expect_silent(Comex$new())
 })
+
+# salvar_chave ---------------------------------------------------------------------------------
+chave_teste <- "abcdef0123456789abcdef0123456789"
+
+test_that("salvar_chave grava só para o dono e passa a valer", {
+  pasta <- ambiente_limpo()
+  arquivo <- suppressMessages(salvar_chave(chave_teste, testar = FALSE))
+  expect_equal(normalizePath(arquivo), normalizePath(file.path(pasta, ".config", "sdic", ".env")))
+  if (.Platform$OS.type != "windows") {
+    expect_equal(format(file.info(arquivo)$mode), "600")
+    expect_equal(format(file.info(dirname(arquivo))$mode), "700")
+  }
+  expect_equal(.sdic_chave(), chave_teste)
+  cfg <- sdic_config()
+  expect_equal(cfg$valor[cfg$item == "chave da API"], "definida")
+  expect_true(startsWith(cfg$de_onde[cfg$item == "chave da API"], arquivo))
+  expect_false(any(grepl(chave_teste, unlist(cfg), fixed = TRUE)))
+})
+
+test_that("salvar_chave troca a anterior e mantém o resto (arquivo comum ao Python)", {
+  pasta <- ambiente_limpo()
+  withr::local_envvar(XDG_CONFIG_HOME = file.path(pasta, "cfg"))
+  dir.create(file.path(pasta, "cfg", "sdic"), recursive = TRUE)
+  writeLines(c("SDIC_AMBIENTE=homologacao", "export SDIC_API_KEY=velha0123456789abc"), file.path(pasta, "cfg", "sdic", ".env"))
+  arquivo <- suppressMessages(salvar_chave(chave_teste, testar = FALSE))
+  expect_equal(readLines(arquivo), c("SDIC_AMBIENTE=homologacao", paste0("SDIC_API_KEY=", chave_teste)))
+  expect_equal(.sdic_ambiente(), "homologacao")
+})
+
+test_that("salvar_chave recusa chave mal formada e não grava", {
+  pasta <- ambiente_limpo()
+  for (ruim in c("", "curta", "tem espaco no meio 0123456789", "a=b0123456789abcdef")) {
+    expect_error(salvar_chave(ruim, testar = FALSE), "Nada foi salvo", class = "sdic_valor_invalido")
+  }
+  expect_false(file.exists(file.path(pasta, ".config", "sdic", ".env")))
+})
+
+test_that("salvar_chave recusada pela API não grava", {
+  pasta <- ambiente_limpo()
+  pedidos <- list()
+  local_mocked_bindings(req_perform = function(req, ...) {
+    pedidos[[length(pedidos) + 1]] <<- req
+    httr2::response(status_code = 401L, url = req$url)
+  }, .package = "httr2")
+  expect_error(salvar_chave(chave_teste), "recusou a chave", class = "sdic_valor_invalido")
+  expect_equal(pedidos[[1]]$url, "https://sdicapi.dados.ninja/series")
+  expect_false(file.exists(file.path(pasta, ".config", "sdic", ".env")))
+})
+
+test_that("salvar_chave avisa quando outra chave tem precedência", {
+  ambiente_limpo()
+  withr::local_envvar(SDIC_API_KEY = "da-variavel-0123456789")
+  expect_warning(suppressMessages(salvar_chave(chave_teste, testar = FALSE)), "tem preced")
+})

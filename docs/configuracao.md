@@ -17,8 +17,8 @@
 
 
 Cada valor é procurado nesta ordem, e o primeiro encontrado vale: argumento da função, variável de ambiente,
-`.env.local` e `.env` da pasta atual, `~/.env`, `/etc/sdic/.env`, padrão. Os arquivos são apenas lidos: a
-biblioteca não altera o ambiente do processo nem a configuração de log de quem a usa. `sdic_config()` mostra
+`.env.local` e `.env` da pasta atual, `~/.config/sdic/.env` (gravado por `salvar_chave()`), `~/.env`,
+`/etc/sdic/.env`, padrão. Fora `salvar_chave()`, os arquivos são apenas lidos: a biblioteca não altera o ambiente do processo nem a configuração de log de quem a usa. `sdic_config()` mostra
 o que está valendo e de onde veio (a chave nunca é exibida).
 
 Nomes antigos ainda aceitos, com aviso de depreciação: `EMPLOYMENT_API_KEY` e `COMEX_API_KEY` (use
@@ -40,7 +40,8 @@ Quem usa a biblioteca não muda nada no código: as funções recebem nomes (`"s
 
 - A chave vai só no cabeçalho `Authorization`, e só para endereços `https://` (ou para a própria máquina, em teste).
 - Não aparece em mensagens de erro, em `print()` dos clientes, em `sdic_config()` nem nos arquivos de cache.
-- Guarde-a em `.env.local` (fora do git) ou em variável de ambiente; nunca em `.env` versionado.
+- Guarde-a com `salvar_chave()` (arquivo do usuário, permissão só do dono), em `.env.local` (fora do git) ou em
+  variável de ambiente; nunca em `.env` versionado nem no código do relatório.
 
 ## Cache
 
@@ -52,7 +53,7 @@ expirar. Para limpar, apague a pasta.
 
 | Mensagem | Causa | O que fazer |
 |---|---|---|
-| `Chave da API ausente, inválida ou sem acesso` (HTTP 401 ou 403) | Sem `SDIC_API_KEY`, ou chave revogada | Definir a chave; `sdic_config()` diz se ela está sendo encontrada |
+| `Chave da API ausente, inválida ou sem acesso` (HTTP 401 ou 403) | Sem `SDIC_API_KEY`, ou chave revogada | `salvar_chave()`; `sdic_config()` diz se ela está sendo encontrada e de onde vem |
 | `não está publicada em 'producao'` | A seção ou as políticas ainda não foram promovidas | Usar `ambiente="homologacao"`, ou aguardar a promoção |
 | `Parâmetros inválidos: ...` (HTTP 422) | Filtro desconhecido, obrigatório ausente ou valor em formato errado | A mensagem repete o que a API explicou; em séries, ver `listar_series()` |
 | `Rota ou recurso não encontrado` (HTTP 404) | Série inexistente ou biblioteca desatualizada em relação à API | `listar_series()`; atualizar a biblioteca |
