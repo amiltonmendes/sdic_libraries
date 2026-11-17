@@ -10,7 +10,7 @@ Biblioteca Python + R que é a **porta única de leitura** dos dados da platafor
 relatórios e analistas. Três origens, declaradas em `contrato/catalogo.json`:
 
 - `api`: a **sdic_api** (BigQuery, `https://sdicapi.dados.ninja`) — emprego (RAIS/CAGED), comércio
-  exterior (ComexStat) e `/series` (bases do `carga_base` e indicadores oficiais);
+  exterior (ComexStat) e `/series` (bases do `carga_base`);
 - `dados`: os JSON publicados pelo job `publicar-dados` do `carga_base` (bucket), os mesmos do portal;
 - `politicas`: os JSON das políticas publicados pelo `gaia_nib` (Pages). **Só leitura:** o `gaia_nib`
   é dono do conteúdo, da ordem e do recorte permitido; a biblioteca nunca soma, ordena ou compara

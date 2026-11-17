@@ -13,7 +13,7 @@
 | `SDIC_PAGES_URL` | Endereço dos JSON das políticas | https://amiltonmendes.github.io/sdic_libraries |
 | `SDIC_TIMEOUT` | Segundos por requisição | 30 |
 | `SDIC_CACHE_TTL` | Segundos de validade do cache em disco (0 desliga) | 0 |
-| `SDIC_CACHE_DIR` | Pasta do cache | `~/.cache/sdic_libraries` |
+| `SDIC_CACHE_DIR` | Pasta do cache | `~/.cache/sdic_libraries` (Python); pasta de cache do usuário (R) |
 
 
 Cada valor é procurado nesta ordem, e o primeiro encontrado vale: argumento da função, variável de ambiente,
@@ -46,7 +46,7 @@ Quem usa a biblioteca não muda nada no código: as funções recebem nomes (`"s
 ## Cache
 
 Desligado por padrão. `SDIC_CACHE_TTL=3600` guarda as respostas por uma hora em `SDIC_CACHE_DIR`
-(padrão `~/.cache/sdic_libraries`). Use valores curtos: depois de uma carga, o cache serve o dado antigo até
+(padrão: `~/.cache/sdic_libraries` no Python; no R, a pasta de cache do usuário, `tools::R_user_dir("sdic.libraries", "cache")`). Use valores curtos: depois de uma carga, o cache serve o dado antigo até
 expirar. Para limpar, apague a pasta.
 
 ## Erros comuns

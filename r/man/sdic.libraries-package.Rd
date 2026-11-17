@@ -11,7 +11,7 @@ Uma porta única, com o mesmo nome de função em R e em Python (\code{sdic_libr
 \details{
 \itemize{
 \item emprego (RAIS, Novo CAGED) e comércio exterior (ComexStat), pela sdic_api;
-\item séries das bases do \code{carga_base} e indicadores oficiais (\code{\link[=listar_series]{listar_series()}},
+\item séries das bases do \code{carga_base} (\code{\link[=listar_series]{listar_series()}},
 \code{\link[=get_serie]{get_serie()}}) e tabelas de de-para (\code{\link[=listar_referencias]{listar_referencias()}}, \code{\link[=get_referencia]{get_referencia()}});
 \item seções publicadas em JSON, as mesmas do portal (\code{\link[=get_kpis_publicados]{get_kpis_publicados()}} e afins);
 \item políticas da SDIC publicadas pelo \code{gaia_nib} (\code{\link[=listar_politicas]{listar_politicas()}}, \code{\link[=get_politica]{get_politica()}}).

@@ -4,7 +4,7 @@ Biblioteca Python (`sdic_libraries`) + R (`sdic.libraries`), com as mesmas funç
 ler os dados da plataforma da SDIC sempre como tabela (`DataFrame`/`tibble`):
 
 - **emprego** (RAIS, Novo CAGED) e **comércio exterior** (ComexStat), pela `sdic_api`;
-- **séries** das bases do `carga_base` (SIDRA, Contas Regionais, comex por UF) e indicadores oficiais (`get_serie`);
+- **séries** das bases do `carga_base` (SIDRA, Contas Regionais, comex por UF) (`get_serie`);
 - **seções publicadas** em JSON, as mesmas do portal e dos subsídios (`get_kpis_publicados` e afins);
 - **políticas** da SDIC publicadas pelo `gaia_nib` (`listar_politicas`, `get_politica`).
 

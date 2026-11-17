@@ -3,7 +3,7 @@
 #' Uma porta única, com o mesmo nome de função em R e em Python (`sdic_libraries`):
 #'
 #' - emprego (RAIS, Novo CAGED) e comércio exterior (ComexStat), pela sdic_api;
-#' - séries das bases do `carga_base` e indicadores oficiais ([listar_series()],
+#' - séries das bases do `carga_base` ([listar_series()],
 #'   [get_serie()]) e tabelas de de-para ([listar_referencias()], [get_referencia()]);
 #' - seções publicadas em JSON, as mesmas do portal ([get_kpis_publicados()] e afins);
 #' - políticas da SDIC publicadas pelo `gaia_nib` ([listar_politicas()], [get_politica()]).

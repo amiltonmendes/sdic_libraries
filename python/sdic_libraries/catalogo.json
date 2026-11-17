@@ -75,7 +75,7 @@
    "titulo": "Séries da sdic_api (/series)",
    "origem": "api",
    "caminho": "/series/{nome}",
-   "fonte": "IBGE (SIDRA, Contas Regionais), MDIC (ComexStat) e indicadores oficiais; a lista atual vem de listar_series()",
+   "fonte": "IBGE (SIDRA, Contas Regionais) e MDIC (ComexStat); a lista atual vem de listar_series()",
    "periodicidade": "conforme a série",
    "dataset": "ibge_sidra_producao, ibge_sidra_pib, ibge_contas_regionais, secex_comexstat",
    "carga": "sidra_producao, sidra_pib, contas_regionais, comex",
@@ -1269,7 +1269,7 @@
    "subtema": "catalogo",
    "nivel": "-",
    "funcao": "listar_series",
-   "descricao": "Séries que a sdic_api publica em `/series` (bases do carga_base e indicadores oficiais): nome, descrição, fonte, filtros e dimensões.",
+   "descricao": "Séries que a sdic_api publica em `/series` (bases do carga_base): nome, descrição, fonte, filtros e dimensões.",
    "exemplo_py": "listar_series()",
    "exemplo_r": "listar_series()",
    "base": "series"

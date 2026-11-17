@@ -3,7 +3,7 @@
 Uma porta única, com o mesmo nome de função em Python e em R (`sdic.libraries`):
 
 - emprego (RAIS, Novo CAGED) e comércio exterior (ComexStat), pela sdic_api;
-- séries das bases do `carga_base` e indicadores oficiais (`listar_series`, `get_serie`);
+- séries das bases do `carga_base` (`listar_series`, `get_serie`);
 - seções publicadas em JSON, as mesmas do portal (`get_kpis_publicados` e afins);
 - políticas da SDIC publicadas pelo `gaia_nib` (`listar_politicas`, `get_politica`).
 

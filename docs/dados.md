@@ -90,7 +90,7 @@ Três endereços, cada um com uma variável de ambiente para trocá-lo. `sdic_co
 |  |  |
 |---|---|
 | Origem | `api`, caminho `/series/{nome}` |
-| Fonte | IBGE (SIDRA, Contas Regionais), MDIC (ComexStat) e indicadores oficiais; a lista atual vem de listar_series() |
+| Fonte | IBGE (SIDRA, Contas Regionais) e MDIC (ComexStat); a lista atual vem de listar_series() |
 | Atualização | conforme a série |
 | No BigQuery | `ibge_sidra_producao, ibge_sidra_pib, ibge_contas_regionais, secex_comexstat` |
 | Carga (painel de cargas) | `sidra_producao, sidra_pib, contas_regionais, comex` |

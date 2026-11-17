@@ -816,7 +816,7 @@ Dados consultados: [Comércio exterior (ComexStat)](dados.md#comexstat).
 
 ### `listar_series`
 
-Séries que a sdic_api publica em `/series` (bases do carga_base e indicadores oficiais): nome, descrição, fonte, filtros e dimensões.
+Séries que a sdic_api publica em `/series` (bases do carga_base): nome, descrição, fonte, filtros e dimensões.
 
 ```python
 # Python

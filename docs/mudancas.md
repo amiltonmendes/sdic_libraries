@@ -6,6 +6,14 @@
 Formato livre (sem [Keep a Changelog](https://keepachangelog.com) ainda) — o essencial é: o que
 muda pro usuário ao atualizar. Versionamento nas duas linguagens juntas; ver [AGENTS.md](../AGENTS.md#versionamento).
 
+## [Não lançado]
+
+### Corrigido (documentação e contrato; o código não muda)
+- A descrição das séries não promete mais indicadores oficiais: a `sdic_api` ainda não os publica em `/series`.
+- `contrato/comex_amostras.json`: as amostras de agrupamentos, antes escritas à mão, são linhas reais da API
+  (inclui a coluna `posicao` de `get_*_agrupamentos_pais_ncm`).
+- Pasta padrão do cache em R corrigida na página de configuração.
+
 ## [0.7.1] — 2026-11-16
 
 ### Corrigido
