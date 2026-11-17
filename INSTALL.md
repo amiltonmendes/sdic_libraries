@@ -24,14 +24,9 @@ Desenvolvimento local: `devtools::load_all("r")`.
 
 ## Chave da API
 
-A API exige uma chave individual. Crie `.env.local` na pasta do seu projeto (e ponha `.env.local` no
-`.gitignore`) com:
-
-```
-SDIC_API_KEY=sua-chave
-```
-
-Ou defina a variável de ambiente `SDIC_API_KEY`. `sdic_config()` mostra se a chave foi encontrada (sem exibi-la).
+A API exige uma chave individual, gerada no portal (**Administração → Chaves da API**; quem não é admin pede a um
+master). Guarde-a uma vez com `salvar_chave()`, em R ou Python: ela é conferida na API e gravada num arquivo que só
+você lê. Detalhes e alternativas (`SDIC_API_KEY`, `.env.local`): [docs/configuracao.md](docs/configuracao.md).
 As seções publicadas e as políticas não precisam de chave.
 
 ## Conferir

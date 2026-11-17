@@ -122,9 +122,8 @@ antigas `fonte.py`, classes `Emprego`/`Comex`), `sejaninja`, `cgid_reports` (sub
 ## Simplicidade de uso (o critério é "alguém que nunca programou acha a função certa")
 
 - Toda função pública nova entra em `listar_bases()`/`catalogo.py`/`catalogo.R` no mesmo commit —
-  se não é fácil de achar, não está pronta. Rode `python scripts/gerar_catalogo_md.py` depois:
-  ele regenera `CATALOGO.md` e falha se `catalogo.py`/`catalogo.R` divergirem (mesma checagem do
-  teste `python/tests/test_catalogo_paridade.py`).
+  se não é fácil de achar, não está pronta. Rode `python scripts/documentar.py` depois: ele
+  regenera o `CATALOGO.md` e as páginas de `docs/` a partir do `contrato/catalogo.json`.
 - Prefira estender parâmetros de uma função existente a criar `..._v2`/`..._novo`/`..._alt`.
 - Exemplos no README e nos docstrings usam sempre `ano_minimo`/filtro no exemplo mais simples
   possível primeiro; parâmetros avançados vêm depois, não misturados.

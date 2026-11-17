@@ -154,7 +154,7 @@ Necessária para a sdic_api 4.0.0. As versões anteriores param de funcionar qua
 
 ### Adicionado
 - `listar_bases()` (Python e R): catálogo das funções públicas, filtrável por `tema`/`subtema`.
-  [CATALOGO.md](CATALOGO.md) tem o mesmo conteúdo em página, gerado de `catalogo.py`/`catalogo.R`.
+  [CATALOGO.md](../CATALOGO.md) tem o mesmo conteúdo em página, gerado de `catalogo.py`/`catalogo.R`.
 - Comex: funções de módulo (`get_exportacao_*`, `get_importacao_*`, `get_ncm_isic_mapa`) devolvendo
   `DataFrame`/`tibble` já padronizado — antes só a classe `Comex` (registros crus) existia.
 - `juntar_emprego_comex()`: une emprego e comércio exterior por divisão CNAE/ISIC e ano.

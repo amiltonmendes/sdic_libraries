@@ -32,7 +32,8 @@ remotes::install_github("amiltonmendes/sdic_libraries", subdir = "r")   # R
 devtools::load_all("r")                                                  # desenvolvimento local
 ```
 
-Pré-requisitos e verificação: [INSTALL.md](INSTALL.md).
+Chave da API, verificação e primeiro uso: [docs/index.md](docs/index.md). Para fixar uma versão, acrescente a tag
+(`@v0.7.1` no `pip`, `ref = "v0.7.1"` no R); as versões estão no [CHANGELOG.md](CHANGELOG.md).
 
 ## 🔎 Catálogo: qual função eu uso?
 
@@ -304,5 +305,5 @@ MIT — veja [LICENSE](LICENSE).
 
 ---
 
-**Versão**: 0.6.0 · **Compatibilidade**: Python 3.8+ | R 4.0+ · [AGENTS.md](AGENTS.md) ·
+**Compatibilidade**: Python 3.8+ | R 4.1+ · [AGENTS.md](AGENTS.md) ·
 [CATALOGO.md](CATALOGO.md) · [CHANGELOG.md](CHANGELOG.md)
